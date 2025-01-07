@@ -21,6 +21,11 @@
             "Camp backgrounds will match with the mode: nighttime for dark mode and daytime for light mode.",
             false
         ],
+		"new accessories": [
+            "New Accessories",
+            "Enable RainGen accessories",
+            true
+        ],
         "fullscreen scaling": [
             "Ignore fullscreen scaling rules",
             "If enabled, fullscreen will display as large as possible (toggle fullscreen to update). This may include visual artifacts.",

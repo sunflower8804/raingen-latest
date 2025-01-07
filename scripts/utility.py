@@ -978,6 +978,8 @@ def create_new_cat(
                     new_cat.pelt.scars.append("NOPAW")
                 elif chosen_condition in ["lost their tail", "born without a tail"]:
                     new_cat.pelt.scars.append("NOTAIL")
+                elif chosen_condition in ["rotplague"]:
+                    new_cat.pelt.scars.append("ROTRIDDEN")
 
         if outside:
             new_cat.outside = True
@@ -2298,7 +2300,7 @@ def leader_ceremony_text_adjust(
     used to adjust the text for leader ceremonies
     """
     replace_dict = {
-        "m_c_star": (str(leader.name.prefix + "star"), choice(leader.pronouns)),
+        "m_c_star": (str(leader.name.prefix + " The Leader"), choice(leader.pronouns)),
         "m_c": (str(leader.name.prefix + leader.name.suffix), choice(leader.pronouns)),
     }
 
@@ -2784,14 +2786,16 @@ def generate_sprite(
                 sprites.sprites["white" + cat.pelt.vitiligo + cat_sprite], (0, 0)
             )
 
-        # draw eyes & scars1
-        eyes = sprites.sprites["eyes" + cat.pelt.eye_colour + cat_sprite].copy()
-        if cat.pelt.eye_colour2 != None:
-            eyes.blit(
-                sprites.sprites["eyes2" + cat.pelt.eye_colour2 + cat_sprite], (0, 0)
-            )
-        new_sprite.blit(eyes, (0, 0))
+        # draw non-boba eyes
+        if cat.pelt.eye_colour not in Pelt.riveye_colours:
+            eyes = sprites.sprites["eyes" + cat.pelt.eye_colour + cat_sprite].copy()
+            if cat.pelt.eye_colour2 != None:
+                eyes.blit(
+                    sprites.sprites["eyes2" + cat.pelt.eye_colour2 + cat_sprite], (0, 0)
+                )
+            new_sprite.blit(eyes, (0, 0))
 
+        # draw scars1
         if not scars_hidden:
             for scar in cat.pelt.scars:
                 if scar in cat.pelt.scars1:
@@ -2818,6 +2822,16 @@ def generate_sprite(
             new_sprite.blit(sprites.sprites["lineartdf" + cat_sprite], (0, 0))
         elif dead:
             new_sprite.blit(sprites.sprites["lineartdead" + cat_sprite], (0, 0))
+
+        # draw riv boba eyes
+        if cat.pelt.eye_colour in Pelt.riveye_colours:
+            eyes = sprites.sprites["eyes" + cat.pelt.eye_colour + cat_sprite].copy()
+            if cat.pelt.eye_colour2 != None:
+                eyes.blit(
+                    sprites.sprites["eyes2" + cat.pelt.eye_colour2 + cat_sprite], (0, 0)
+                )
+            new_sprite.blit(eyes, (0, 0))
+
         # draw skin and scars2
         blendmode = pygame.BLEND_RGBA_MIN
         new_sprite.blit(sprites.sprites["skin" + cat.pelt.skin + cat_sprite], (0, 0))
@@ -2832,21 +2846,136 @@ def generate_sprite(
                     )
 
         # draw accessories
-        if not acc_hidden:
-            if cat.pelt.accessory in cat.pelt.plant_accessories:
-                new_sprite.blit(
-                    sprites.sprites["acc_herbs" + cat.pelt.accessory + cat_sprite],
-                    (0, 0),
-                )
-            elif cat.pelt.accessory in cat.pelt.wild_accessories:
-                new_sprite.blit(
-                    sprites.sprites["acc_wild" + cat.pelt.accessory + cat_sprite],
-                    (0, 0),
-                )
-            elif cat.pelt.accessory in cat.pelt.collars:
-                new_sprite.blit(
-                    sprites.sprites["collars" + cat.pelt.accessory + cat_sprite], (0, 0)
-                )
+        clangen_accessories = ['MAPLE LEAF',
+                            'HOLLY',
+                            'BLUE BERRIES',
+                            'FORGET ME NOTS',
+                            'RYE STALK',
+                            'LAUREL',
+                            'BLUEBELLS',
+                            'NETTLE',
+                            'POPPY',
+                            'LAVENDER',
+                            'HERBS',
+                            'PETALS',
+                            'OAK LEAVES',
+                            'CATMINT',
+                            'MAPLE SEED',
+                            'JUNIPER',
+                            'DRY HERBS',
+                            'RED FEATHERS',
+                            'BLUE FEATHERS',
+                            'JAY FEATHERS',
+                            'MOTH WINGS',
+                            'CICADA WINGS',
+                            'CRIMSON',
+                            'BLUE',
+                            'YELLOW',
+                            'CYAN',
+                            'RED',
+                            'LIME',
+                            'GREEN',
+                            'RAINBOW',
+                            'BLACK',
+                            'SPIKES',
+                            'WHITE',
+                            'PINK',
+                            'PURPLE',
+                            'MULTI',
+                            'INDIGO',
+                            'CRIMSONBELL',
+                            'BLUEBELL',
+                            'YELLOWBELL',
+                            'CYANBELL',
+                            'REDBELL',
+                            'LIMEBELL',
+                            'GREENBELL',
+                            'RAINBOWBELL',
+                            'BLACKBELL',
+                            'SPIKESBELL',
+                            'WHITEBELL',
+                            'PINKBELL',
+                            'PURPLEBELL',
+                            'MULTIBELL',
+                            'INDIGOBELL',
+                            'CRIMSONBOW',
+                            'BLUEBOW',
+                            'YELLOWBOW',
+                            'CYANBOW',
+                            'REDBOW',
+                            'LIMEBOW',
+                            'GREENBOW',
+                            'RAINBOWBOW',
+                            'BLACKBOW',
+                            'SPIKESBOW',
+                            'WHITEBOW',
+                            'PINKBOW',
+                            'PURPLEBOW',
+                            'MULTIBOW',
+                            'INDIGOBOW',
+                            'CRIMSONNYLON',
+                            'BLUENYLON',
+                            'YELLOWNYLON',
+                            'CYANNYLON',
+                            'REDNYLON',
+                            'LIMENYLON',
+                            'GREENNYLON',
+                            'RAINBOWNYLON',
+                            'BLACKNYLON',
+                            'SPIKESNYLON',
+                            'WHITENYLON',
+                            'PINKNYLON',
+                            'PURPLENYLON',
+                            'MULTINYLON',
+                            'INDIGONYLON'
+                            ]
+
+        for i in cat.pelt.accessories:
+            if i not in clangen_accessories and game.settings['new accessories'] is False:
+                continue
+            if not acc_hidden:
+                try:
+                    if i in cat.pelt.plant_accessories:
+                        new_sprite.blit(sprites.sprites['acc_herbs' + i + cat_sprite], (0, 0))
+                    elif i in cat.pelt.wild_accessories:
+                        new_sprite.blit(sprites.sprites['acc_wild' + i + cat_sprite], (0, 0))
+                    elif i in cat.pelt.collars:
+                        new_sprite.blit(sprites.sprites['collars' + i + cat_sprite], (0, 0))
+                    elif i in cat.pelt.lizards:
+                        new_sprite.blit(sprites.sprites['lizards' + i + cat_sprite], (0, 0))
+                    elif i in cat.pelt.muddypaws:
+                        new_sprite.blit(sprites.sprites['muddypaws' + i + cat_sprite], (0, 0))
+                    elif i in cat.pelt.herbs2:
+                        new_sprite.blit(sprites.sprites['herbs2' + i + cat_sprite], (0, 0))
+                    elif i in cat.pelt.newaccs:
+                        new_sprite.blit(sprites.sprites['newaccs' + i + cat_sprite], (0, 0))
+                    elif i in cat.pelt.newaccs2:
+                        new_sprite.blit(sprites.sprites['newaccs2' + i + cat_sprite], (0, 0))
+                    elif i in cat.pelt.insectwings:
+                        new_sprite.blit(sprites.sprites['insectwings' + i + cat_sprite], (0, 0))
+                    elif i in cat.pelt.buddies:
+                        new_sprite.blit(sprites.sprites['buddies' + i + cat_sprite], (0, 0))
+                    elif i in cat.pelt.bodypaint:
+                        new_sprite.blit(sprites.sprites['bodypaint' + i + cat_sprite], (0, 0))
+                    elif i in cat.pelt.implant:
+                        new_sprite.blit(sprites.sprites['implant' + i + cat_sprite], (0, 0))
+                    elif i in cat.pelt.magic:
+                        new_sprite.blit(sprites.sprites['magic' + i + cat_sprite], (0, 0))
+                    elif i in cat.pelt.necklaces:
+                        new_sprite.blit(sprites.sprites['necklaces' + i + cat_sprite], (0, 0))
+                    elif i in cat.pelt.drapery:
+                        new_sprite.blit(sprites.sprites['drapery' + i + cat_sprite], (0, 0))
+                    elif i in cat.pelt.pridedrapery:
+                        new_sprite.blit(sprites.sprites['pridedrapery' + i + cat_sprite], (0, 0))
+                    elif i in cat.pelt.eyepatches:
+                        new_sprite.blit(sprites.sprites['eyepatches' + i + cat_sprite], (0, 0))
+                    elif i in cat.pelt.larsaccs:
+                        new_sprite.blit(sprites.sprites['larsaccs' + i + cat_sprite], (0, 0))
+                    elif i in cat.pelt.harleyaccs:
+                        new_sprite.blit(sprites.sprites['harleyaccs' + i + cat_sprite], (0, 0))
+               
+                except:
+                    continue
 
         # Apply fading fog
         if (
