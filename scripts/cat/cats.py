@@ -228,6 +228,7 @@ class Cat:
         self.permanent_condition = {}
         self.df = False
         self.experience_level = None
+        self.inventory = []
 
         # Various behavior toggles
         self.no_kits = False
@@ -727,23 +728,23 @@ class Cat:
                 # These minor grief message will be applied as thoughts.
                 minor_grief_messages = (
                     "Told a fond story at r_c's vigil",
-                    "Bargains with StarClan, begging them to send r_c back",
+                    "Bargains with the Ascended, begging them to send r_c back",
                     "Sat all night at r_c's vigil",
                     "Will never forget r_c",
-                    "Prays that r_c is safe in StarClan",
+                    "Prays that r_c is safe in the Void",
                     "Misses the warmth that r_c brought to {PRONOUN/m_c/poss} life",
                     "Is mourning r_c",
                     "Can't stop coming to tears each time r_c is mentioned",
                     "Stayed the longest at r_c's vigil",
                     "Left r_c's vigil early due to grief",
-                    "Lashes out at any cat who checks on {PRONOUN/m_c/object} after r_c's death",
+                    "Lashes out at any slugcat who checks on {PRONOUN/m_c/object} after r_c's death",
                     "Took a long walk on {PRONOUN/m_c/poss} own to mourn r_c in private",
                     "Is busying {PRONOUN/m_c/self} with too much work to forget about r_c's death",
                     "Does {PRONOUN/m_c/poss} best to console {PRONOUN/m_c/poss} clanmates about r_c's death",
                     "Takes a part of r_c's nest to put with {PRONOUN/m_c/poss} own, clinging to the fading scent",
                     "Sleeps in r_c's nest tonight",
                     "Defensively states that {PRONOUN/m_c/subject} {VERB/m_c/don't/doesn't} need any comfort about r_c's death",
-                    "Wonders why StarClan had to take r_c so soon",
+                    "Wonders why the Void had to take r_c so soon",
                     "Still needs r_c even though they're gone",
                     "Doesn't think {PRONOUN/m_c/subject} will ever be the same without r_c",
                     "Was seen crying in {PRONOUN/m_c/poss} nest after r_c's vigil",
@@ -987,6 +988,9 @@ class Cat:
         colour = str(self.pelt.eye_colour).lower()
         colour2 = str(self.pelt.eye_colour2).lower()
 
+        if self.pelt.eye_colour in Pelt.riveye_colours:
+            colour = colour.replace("riv", "")
+
         if colour == "palegreen":
             colour = "pale green"
         elif colour == "darkblue":
@@ -1003,6 +1007,13 @@ class Cat:
             colour = "sunlit ice"
         elif colour == "greenyellow":
             colour = "green-yellow"
+
+        if self.pelt.eye_colour in Pelt.riveye_colours:
+            colour = "big " + colour
+            
+        if self.pelt.eye_colour2 in Pelt.multi_eyes:
+            colour = "multi-eyed " + colour
+
         if self.pelt.eye_colour2:
             if colour2 == "palegreen":
                 colour2 = "pale green"
@@ -1924,6 +1935,8 @@ class Cat:
             return
         if name == "torn ear" and "NOEAR" in self.pelt.scars:
             return
+        if name == "the rot" and "ROTMARKED" in self.pelt.scars:
+            return
 
         injury = INJURIES[name]
         mortality = injury["mortality"][self.age]
@@ -2041,26 +2054,19 @@ class Cat:
             return
 
         # remove accessories if need be
-        if "NOTAIL" in self.pelt.scars and self.pelt.accessory in [
-            "RED FEATHERS",
-            "BLUE FEATHERS",
-            "JAY FEATHERS",
-            "GULL FEATHERS",
-            "SPARROW FEATHERS",
-            "CLOVER",
-            "DAISY",
-        ]:
-            self.pelt.accessory = None
-        if "HALFTAIL" in self.pelt.scars and self.pelt.accessory in [
-            "RED FEATHERS",
-            "BLUE FEATHERS",
-            "JAY FEATHERS",
-            "GULL FEATHERS",
-            "SPARROW FEATHERS",
-            "CLOVER",
-            "DAISY",
-        ]:
-            self.pelt.accessory = None
+        if 'NOTAIL' in self.pelt.scars or 'HALFTAIL' in self.pelt.scars:
+            for acc in [
+                'RED FEATHERS', 'BLUE FEATHERS',
+                'JAY FEATHERS', "SEAWEED",
+                "DAISY CORSAGE", "GULL FEATHERS",
+                "SPARROW FEATHERS", "CLOVER",
+                "DAISY", "MUSHROOMS",
+                "FLOWEREDMOSS", "MOSS"
+                ]:
+                if acc in self.pelt.accessories:
+                    self.pelt.inventory.remove(acc)
+                if acc in self.pelt.inventory:
+                    self.pelt.inventory.remove(acc)
 
         condition = PERMANENT[name]
         new_condition = False
@@ -3435,6 +3441,8 @@ class Cat:
                 "tortie_pattern": self.pelt.tortiepattern,
                 "skin": self.pelt.skin,
                 "tint": self.pelt.tint,
+                'accessories': self.pelt.accessories if self.pelt.accessories else [],
+                "inventory": self.pelt.inventory if self.pelt.inventory else [],
                 "skill_dict": self.skills.get_skill_dict(),
                 "scars": self.pelt.scars or [],
                 "accessory": self.pelt.accessory,
@@ -3518,6 +3526,11 @@ def create_cat(status, moons=None, biome=None):
         "NOLEFTEAR",
         "NORIGHTEAR",
         "MANLEG",
+        "ROTRIDDEN", 
+        "ROTMARKED", 
+        "FULLBODYBURNS",
+        "HALFFACELEFT", 
+        "HALFFACERIGHT"
     ]
 
     for scar in new_cat.pelt.scars:

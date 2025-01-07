@@ -30,7 +30,7 @@ class Pelt:
         'Vulture': 'vulture',
         'Banana': 'banana',
         'Centipede': 'centipede',
-        'Conductor': 'conductor',
+        'Con': 'con',
         'Lizard': 'lizard',
         'Lantern': 'lantern',
         'Leviathan': 'leviathan',
@@ -98,7 +98,7 @@ class Pelt:
                       'BRIE', 'BELOVED', 'BODY', 'SHILOH', 'FRECKLED', 'HEARTBEAT']
     tortiebases = ['single', 'tabby', 'bengal', 'marbled', 'ticked', 'smoke', 'rosette', 'speckled', 'mackerel',
                 'classic', 'sokoke', 'agouti', 'singlestripe', 'masked', 'gravel', 'collared', 'slimemold',
-                'cyanlizard', 'vulture', 'banana', 'centipede', 'conductor', 'lizard', 'lantern', 'leviathan',
+                'cyanlizard', 'vulture', 'banana', 'centipede', 'con', 'lizard', 'lantern', 'leviathan',
                 'fluffy', 'amoeba', 'yeek', 'rusted', 'envoy', 'drizzle', 'solace', 'leafy', 'scaled', 'dragonfruit', 
                 'necklace', 'dreamer', 'duskdawn', 'seer', 'rotten', 'fire', 'countershaded', 'sunset', 'oldgrowth', 
                 'sparklecat', 'wolf', 'cherry', 'hypnotist', 'ringed', 'skinny', 'sparse', 'impish', 'sporty', 
@@ -286,7 +286,7 @@ class Pelt:
     ]
 
     tabbies = ["Tabby", "Ticked", "Classic", "Sokoke", "Agouti", "Masked", "Vulture", "Envoy", "Drizzle", "Necklace", "Leviathan", "Rotten", "Fire", "Solace"]
-    spotted = ["Speckled", "Rosette", "Gravel", "Banana", "Conductor", "Bengal", "Dreamer", "Oldgrowth", "Cherry", "Sparse", "Impish", "Ringed", "Mold"]
+    spotted = ["Speckled", "Rosette", "Gravel", "Banana", "Con", "Bengal", "Dreamer", "Oldgrowth", "Cherry", "Sparse", "Impish", "Ringed", "Mold"]
     plain = ["SingleColour", "TwoColour", "Smoke", "Singlestripe", "Collared", "Lizard", "Slimemold", "Fluffy", "Yeek", "Rusted", "Leafy", "Scaled", "Countershaded", "Sunset", "Skinny", "Sporty", "Skeleton", "Shred"]
     exotic = ["Mackerel", "Marbled", "Cyanlizard", "Centipede", "Lantern", "Amoeba", "Seaslug", "Dragonfruit", "Duskdawn", "Seer", "Wolf", "Sparklecat", "Hypnotist", "Fizzy", "Glowing"]
     torties = ["Tortie", "Calico"]
