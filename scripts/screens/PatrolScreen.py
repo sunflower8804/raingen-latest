@@ -367,7 +367,7 @@ class PatrolScreen(Screens):
             if self.selected_cat in self.current_patrol:
                 self.elements["add_remove_cat"] = UISurfaceImageButton(
                     ui_scale(pygame.Rect((0, 460), (127, 30))),
-                    "Remove Cat",
+                    "Remove scug",
                     get_button_dict(ButtonStyles.SQUOVAL, (127, 30)),
                     object_id="@buttonstyles_squoval",
                     manager=MANAGER,
@@ -376,7 +376,7 @@ class PatrolScreen(Screens):
             elif self.selected_cat is None or len(self.current_patrol) >= 6:
                 self.elements["add_remove_cat"] = UISurfaceImageButton(
                     ui_scale(pygame.Rect((0, 460), (98, 30))),
-                    "Add Cat",
+                    "Add scug",
                     get_button_dict(ButtonStyles.SQUOVAL, (98, 30)),
                     object_id="@buttonstyles_squoval",
                     manager=MANAGER,
@@ -386,7 +386,7 @@ class PatrolScreen(Screens):
             else:
                 self.elements["add_remove_cat"] = UISurfaceImageButton(
                     ui_scale(pygame.Rect((0, 460), (98, 30))),
-                    "Add Cat",
+                    "Add scug",
                     get_button_dict(ButtonStyles.SQUOVAL, (98, 30)),
                     object_id="@buttonstyles_squoval",
                     manager=MANAGER,
@@ -570,7 +570,7 @@ class PatrolScreen(Screens):
         # Buttons
         self.elements["add_remove_cat"] = UISurfaceImageButton(
             ui_scale(pygame.Rect((0, 460), (98, 30))),
-            "Add Cat",
+            "Add scug",
             get_button_dict(ButtonStyles.SQUOVAL, (98, 30)),
             object_id="@buttonstyles_squoval",
             manager=MANAGER,

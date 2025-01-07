@@ -70,7 +70,7 @@ def rebuild_core(*, should_rebuild_bgs=True):
     )
     menu_buttons["catlist_screen"] = UISurfaceImageButton(
         ui_scale(pygame.Rect((0, 60), (88, 30))),
-        "Cat List",
+        "Scug List",
         get_button_dict(ButtonStyles.MENU_MIDDLE, (88, 30)),
         visible=False,
         object_id="@buttonstyles_menu_middle",
@@ -207,9 +207,9 @@ def rebuild_core(*, should_rebuild_bgs=True):
         starting_height=6,
     )
     menu_buttons["med_cat_den"] = UISurfaceImageButton(
-        ui_scale(pygame.Rect((25, 140), (151, 28))),
-        "medicine cat den",
-        get_button_dict(ButtonStyles.ROUNDED_RECT, (151, 28)),
+        ui_scale(pygame.Rect((25, 140), (90, 28))),
+        "cleric den",
+        get_button_dict(ButtonStyles.ROUNDED_RECT, (90, 28)),
         object_id="@buttonstyles_rounded_rect",
         visible=False,
         manager=MANAGER,

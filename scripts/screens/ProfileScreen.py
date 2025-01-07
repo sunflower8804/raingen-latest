@@ -673,9 +673,9 @@ class ProfileScreen(Screens):
 
         # if cat is a med or med app, show button for their den
         self.profile_elements["med_den"] = UISurfaceImageButton(
-            ui_scale(pygame.Rect((100, 380), (151, 28))),
-            "medicine cat den",
-            get_button_dict(ButtonStyles.ROUNDED_RECT, (151, 28)),
+            ui_scale(pygame.Rect((100, 380), (90, 28))),
+            "cleric den",
+            get_button_dict(ButtonStyles.ROUNDED_RECT, (90, 28)),
             object_id="@buttonstyles_rounded_rect",
             manager=MANAGER,
             starting_height=2,

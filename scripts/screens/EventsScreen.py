@@ -285,7 +285,7 @@ class EventsScreen(Screens):
 
         self.timeskip_button = UISurfaceImageButton(
             ui_scale(pygame.Rect((310, 218), (180, 30))),
-            "Timeskip One Moon",
+            "Timeskip One Cycle",
             get_button_dict(ButtonStyles.SQUOVAL, (180, 30)),
             object_id="@buttonstyles_squoval",
             starting_height=1,
@@ -573,9 +573,9 @@ class EventsScreen(Screens):
         # UPDATE CLAN INFO
         self.clan_info["season"].set_text(f"Current season: {game.clan.current_season}")
         if game.clan.age == 1:
-            self.clan_info["age"].set_text(f"Clan age: {game.clan.age} moon")
+            self.clan_info["age"].set_text(f"Clan age: {game.clan.age} cycle")
         else:
-            self.clan_info["age"].set_text(f"Clan age: {game.clan.age} moons")
+            self.clan_info["age"].set_text(f"Clan age: {game.clan.age} cycles")
 
         self.make_event_scrolling_container()
 
