@@ -862,6 +862,43 @@ def create_new_cat(
                     adoptive_parents=adoptive_parents if adoptive_parents else [],
                 )
 
+        if age > 12:
+            if not randint(0, 50):   #0 = trans
+                print('TRANS!!!!')
+                if not randint(0, 2):   #0 = nonbinary
+                    if _gender == "male":
+                        new_cat.genderalign = "trans female"
+                        new_cat.pronouns = [new_cat.default_pronouns[1].copy()]
+                    else:
+                        new_cat.genderalign = "trans male"
+                        new_cat.pronouns = [new_cat.default_pronouns[2].copy()]
+                else:
+                    new_cat.genderalign = "nonbinary"
+                    new_cat.pronouns = [new_cat.default_pronouns[0].copy()]
+        else:
+            new_cat.genderalign = _gender
+
+        mutilation_scars = [
+            "CUTOPEN",
+            "BESIEGED",
+            "VIVISECTION", 
+            "LABRATCHEST", 
+            "LABRATLIMBS", 
+            "RESTITCHEDUPPER", 
+            "RESTITCHEDLOWER", 
+            "STITCHEDHEAD",
+            "EXTRACTIONTWO", 
+            "MESSIAH", 
+            "ENVOYCHEST"
+        ]
+
+        if kittypet:
+            if new_cat.genderalign == "trans male" or new_cat.genderalign == "nonbinary":
+                new_cat.pelt.scars.append("TOPSURGERY")
+
+            if not randint(0, 10): #1 out of 5
+                new_cat.pelt.scars.append(choice(mutilation_scars)) 
+                
         # give em a collar if they got one
         if accessory:
             new_cat.pelt.accessory = accessory
@@ -883,10 +920,18 @@ def create_new_cat(
             "NOLEFTEAR",
             "NORIGHTEAR",
             "MANLEG",
+            "ROTRIDDEN",
+            "FULLBODYBURNS", 
+            "HALFFACELEFT", 
+            "HALFFACERIGHT"
         ]
         for scar in new_cat.pelt.scars:
             if scar in not_allowed:
                 new_cat.pelt.scars.remove(scar)
+        if age < 6:
+            for scar in new_cat.pelt.scars:
+                if scar in mutilation_scars:
+                    new_cat.pelt.scars.remove(scar)
 
         # chance to give the new cat a permanent condition, higher chance for found kits and litters
         if kit or litter:

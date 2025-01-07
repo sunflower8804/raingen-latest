@@ -45,7 +45,6 @@
   {
     "dilute": [20, 20, 20],
     "warmdilute": [25, 15, 7],
-    "cooldilute": [7, 15, 25],
-    "none": null
+    "cooldilute": [7, 15, 25]
   }
 }

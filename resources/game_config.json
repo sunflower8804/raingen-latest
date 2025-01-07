@@ -181,9 +181,11 @@
 	},
 	"cat_generation": {
 		"base_permanent_condition": 90,
-		"base_male_tortie": 13,
+		"base_male_tortie": 4,
 		"base_female_tortie": 4,
-		"base_heterochromia": 120,
+		"base_heterochromia": 25,
+		"base_multieyes": 50,
+		"base_riveyes": 10,
 		"direct_inheritance": 15,
 		"wildcard_tortie": 9,
 		"vit_chance": 8,
@@ -197,6 +199,16 @@
 			"This overrides the chances of it otherwise. If cats can't find a pelt color, they will choose from normal_prefixes",
 			"So as not to cause an error - false by default",
 			"allow_eye_names allows cats to be named after the color of their eyes - true by default"
+		]
+	},
+	"feature_generation": {
+		"feature_chances": [30, 13, 13, 6, 4, 12, 10, 2, 3, 2, 2, 1, 2, 12, 12, 10, 10, 2, 6],
+		"comment": [
+			"These are the chances of each feature. They (NO LONGER) add up to 100 so they can be viewed as percenages, but you can make them any number.",
+			"The higher the number - the more common the feature is. If a feature's chance is 0 - it doesn't spawn.",
+			"The order is:",
+			"empty, gills, tongues, spearholes, claws, antennae, glowspots, ramhorns, scavhorns, elitehorns, sharphorns, dragonhorns, unihorns, moth, whiskers, lizardfins, lizardneedles, cyanwings, cyanfeatures",
+			"The default chances are 30, 13, 13, 6, 4, 12, 10, 2, 3, 2, 2, 1, 2"
 		]
 	},
 	"accessory_generation": {
@@ -289,7 +301,7 @@
 		"war_injury_modifier": 100
 	},
 	"clan_creation": {
-		"rerolls": 3,
+		"rerolls": -1,
 		"comment": "Set this to -1 for it to be infinite"
 	},
 	"graduation": {
