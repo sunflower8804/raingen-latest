@@ -16,6 +16,7 @@ import os
 import platform
 import subprocess
 import traceback
+from random import randrange
 from html import escape
 
 import pygame
@@ -52,10 +53,31 @@ class StartScreen(Screens):
     def __init__(self, name=None):
         super().__init__(name)
         self.warning_label = None
-
         self.social_buttons = {}
-
         self.error_open = False
+        if game.settings["dark mode"]:
+            menunumber = randrange(0,37)
+            self.bg = pygame.image.load(f"resources/images/menu_art_dark/menu{menunumber}.png").convert()
+        else:
+            menunumber = randrange(0,58)
+            self.bg = pygame.image.load(f"resources/images/menu_art/menu{menunumber}.png").convert()
+        self.add_bgs(
+            {"mainmenu_bg": self.bg},
+        )
+        self.set_bg("mainmenu_bg")
+
+    #def choose_random_menu(self, folder_path):
+    #    files = os.listdir(folder_path)
+    #    png_files = [file for file in files if file.endswith('.png')]
+    #
+    #    if png_files:
+    #        chosen_file = random.choice(png_files)
+    #        if game.settings["dark mode"]:
+    #            return "resources/images/menu_art_dark/" + chosen_file
+    #        else:
+    #            return "resources/images/menu_art/" + chosen_file
+    #    else:
+    #        return "resources/images/menu.png"
 
     def handle_event(self, event):
         """This is where events that occur on this page are handled.
@@ -94,6 +116,7 @@ class StartScreen(Screens):
                 self.error_open = False
                 # game.switches['error_message'] = ''
                 # game.switches['traceback'] = ''
+
             elif event.ui_element == self.update_button:
                 UpdateAvailablePopup(game.switches["last_screen"])
             elif event.ui_element == self.quit:
@@ -105,28 +128,28 @@ class StartScreen(Screens):
                     os.system(f"start \"\" {'https://discord.gg/clangen'}")
                 elif platform.system() == "Linux":
                     subprocess.Popen(["xdg-open", "https://discord.gg/clangen"])
-            elif event.ui_element == self.social_buttons["tumblr_button"]:
-                if platform.system() == "Darwin":
-                    subprocess.Popen(
-                        ["open", "-u", "https://officialclangen.tumblr.com/"]
-                    )
-                elif platform.system() == "Windows":
-                    os.system(f"start \"\" {'https://officialclangen.tumblr.com/'}")
-                elif platform.system() == "Linux":
-                    subprocess.Popen(
-                        ["xdg-open", "https://officialclangen.tumblr.com/"]
-                    )
-            elif event.ui_element == self.social_buttons["twitter_button"]:
-                if platform.system() == "Darwin":
-                    subprocess.Popen(
-                        ["open", "-u", "https://twitter.com/OfficialClangen"]
-                    )
-                elif platform.system() == "Windows":
-                    os.system(f"start \"\" {'https://twitter.com/OfficialClangen'}")
-                elif platform.system() == "Linux":
-                    subprocess.Popen(
-                        ["xdg-open", "https://twitter.com/OfficialClangen"]
-                    )
+
+            elif event.ui_element == self.social_buttons["menurandom_button"]:
+                if game.settings["dark mode"]:
+                    menunumber = randrange(0,37)
+                    self.bg = pygame.image.load(f"resources/images/menu_art_dark/menu{menunumber}.png").convert()
+                else:
+                    menunumber = randrange(0,58)
+                    self.bg = pygame.image.load(f"resources/images/menu_art/menu{menunumber}.png").convert()
+                self.add_bgs(
+                    {"mainmenu_bg": self.bg},
+                )
+                self.set_bg("mainmenu_bg")
+            
+            #elif event.ui_element == self.social_buttons["menurandom_button"]:
+            #    if game.settings["dark mode"]:
+            #        bg = pygame.image.load(
+            #            self.choose_random_menu("resources/images/menu_art_dark")).convert()
+            #    else:
+            #        bg = pygame.image.load(
+            #            self.choose_random_menu("resources/images/menu_art")).convert()
+
+
         elif event.type == pygame.KEYDOWN and game.settings["keybinds"]:
             if (
                 event.key == pygame.K_RETURN or event.key == pygame.K_SPACE
@@ -167,88 +190,122 @@ class StartScreen(Screens):
         # this is the only screen that has to check its own music, other screens handle that in the screen change
         music_manager.check_music("start screen")
 
-        bg = pygame.image.load("resources/images/menu.png").convert()
-        if game.settings["dark mode"]:
-            bg.fill(
-                game.config["theme"]["fullscreen_background"]["dark"]["mainmenu_tint"],
-                bg.get_rect(),
-                pygame.BLEND_MULT,
-            )
-        self.add_bgs(
-            {"mainmenu_bg": bg},
-        )
-        self.set_bg("mainmenu_bg")
+        #lifegen
+        #if game.settings["dark mode"]:
+        #    bg = pygame.image.load(
+        #        self.choose_random_menu("resources/images/menu_art_dark")).convert()
+        #else:
+        #    bg = pygame.image.load(
+        #        self.choose_random_menu("resources/images/menu_art")).convert()
+        
+        #clangen
+        #if game.settings["dark mode"]:
+        #    bg.fill(
+        #        game.config["theme"]["fullscreen_background"]["dark"]["mainmenu_tint"],
+        #        bg.get_rect(),
+        #        pygame.BLEND_MULT,
+        #    )
+
+
+        #self.add_bgs(
+        #    {"mainmenu_bg": self.bg},
+        #)
+        #self.set_bg("mainmenu_bg")
 
         # Make those unslightly menu button hide away
         self.hide_menu_buttons()
         Screens.show_mute_buttons()
 
         # Create buttons
+        # CLANGEN 0.12.2
+        #self.continue_button = UISurfaceImageButton(
+        #    ui_scale(pygame.Rect((70, 310), (200, 30))),
+        #    "continue",
+        #    image_dict=get_button_dict(ButtonStyles.MAINMENU, (200, 30)),
+        #    object_id="@buttonstyles_mainmenu",
+        #    manager=MANAGER,
+        #)
+        #self.switch_clan_button = UISurfaceImageButton(
+        #    ui_scale(pygame.Rect((70, 15), (200, 30))),
+        #    "switch clan",
+        #    image_dict=get_button_dict(ButtonStyles.MAINMENU, (200, 30)),
+        #    object_id="@buttonstyles_mainmenu",
+        #    manager=MANAGER,
+        #    anchors={"top_target": self.continue_button},
+        #)
+        #self.new_clan_button = UISurfaceImageButton(
+        #    ui_scale(pygame.Rect((70, 15), (200, 30))),
+        #    "new clan",
+        #    image_dict=get_button_dict(ButtonStyles.MAINMENU, (200, 30)),
+        #    object_id="@buttonstyles_mainmenu",
+        #    manager=MANAGER,
+        #    anchors={"top_target": self.switch_clan_button},
+        #)
+        #self.settings_button = UISurfaceImageButton(
+        #    ui_scale(pygame.Rect((70, 15), (200, 30))),
+        #    "settings + info",
+        #    image_dict=get_button_dict(ButtonStyles.MAINMENU, (200, 30)),
+        #    object_id="@buttonstyles_mainmenu",
+        #    manager=MANAGER,
+        #    anchors={"top_target": self.new_clan_button},
+        #)
+        #self.quit = UISurfaceImageButton(
+        #    ui_scale(pygame.Rect((70, 15), (200, 30))),
+        #    "quit",
+        #    image_dict=get_button_dict(ButtonStyles.MAINMENU, (200, 30)),
+        #    object_id="@buttonstyles_mainmenu",
+        #    manager=MANAGER,
+        #    anchors={"top_target": self.settings_button},
+        #)
 
-        self.continue_button = UISurfaceImageButton(
-            ui_scale(pygame.Rect((70, 310), (200, 30))),
-            "continue",
-            image_dict=get_button_dict(ButtonStyles.MAINMENU, (200, 30)),
-            object_id="@buttonstyles_mainmenu",
-            manager=MANAGER,
-        )
-        self.switch_clan_button = UISurfaceImageButton(
-            ui_scale(pygame.Rect((70, 15), (200, 30))),
-            "switch clan",
-            image_dict=get_button_dict(ButtonStyles.MAINMENU, (200, 30)),
-            object_id="@buttonstyles_mainmenu",
-            manager=MANAGER,
-            anchors={"top_target": self.continue_button},
-        )
-        self.new_clan_button = UISurfaceImageButton(
-            ui_scale(pygame.Rect((70, 15), (200, 30))),
-            "new clan",
-            image_dict=get_button_dict(ButtonStyles.MAINMENU, (200, 30)),
-            object_id="@buttonstyles_mainmenu",
-            manager=MANAGER,
-            anchors={"top_target": self.switch_clan_button},
-        )
-        self.settings_button = UISurfaceImageButton(
-            ui_scale(pygame.Rect((70, 15), (200, 30))),
-            "settings + info",
-            image_dict=get_button_dict(ButtonStyles.MAINMENU, (200, 30)),
-            object_id="@buttonstyles_mainmenu",
-            manager=MANAGER,
-            anchors={"top_target": self.new_clan_button},
-        )
-        self.quit = UISurfaceImageButton(
-            ui_scale(pygame.Rect((70, 15), (200, 30))),
-            "quit",
-            image_dict=get_button_dict(ButtonStyles.MAINMENU, (200, 30)),
-            object_id="@buttonstyles_mainmenu",
-            manager=MANAGER,
-            anchors={"top_target": self.settings_button},
-        )
-
-        self.social_buttons["twitter_button"] = UIImageButton(
-            ui_scale(pygame.Rect((12, 647), (40, 40))),
+        #SUNNY-RAINGEN-TESTS
+        self.continue_button = UIImageButton(
+            ui_scale(pygame.Rect((70, 300), (192, 40))),
             "",
-            object_id="#twitter_button",
+            object_id="#continue_button",
             manager=MANAGER,
-            tool_tip_text="Check out our Twitter!",
         )
-        self.social_buttons["tumblr_button"] = UIImageButton(
-            ui_scale(pygame.Rect((5, 647), (40, 40))),
+        self.switch_clan_button = UIImageButton(
+            ui_scale(pygame.Rect((70, 345), (192, 40))),
             "",
-            object_id="#tumblr_button",
+            object_id="#switch_clan_button",
             manager=MANAGER,
-            tool_tip_text="Check out our Tumblr!",
-            anchors={"left_target": self.social_buttons["twitter_button"]},
+        )
+        self.new_clan_button = UIImageButton(
+            ui_scale(pygame.Rect((70, 390), (192, 40))),
+            "",
+            object_id="#new_clan_button",
+            manager=MANAGER,
+        )
+        self.settings_button = UIImageButton(
+            ui_scale(pygame.Rect((70, 435), (192, 40))),
+            "",
+            object_id="#settings_button",
+            manager=MANAGER,
+        )
+        self.quit = UIImageButton(
+            ui_scale(pygame.Rect((70, 480), (192, 40))),
+            "",
+            object_id="#quit_button",
+            manager=MANAGER,
         )
 
         self.social_buttons["discord_button"] = UIImageButton(
-            ui_scale(pygame.Rect((7, 647), (40, 40))),
+            ui_scale(pygame.Rect((12, 647), (48, 42))),
             "",
             object_id="#discord_button",
             manager=MANAGER,
-            tool_tip_text="Join our Discord!",
-            anchors={"left_target": self.social_buttons["tumblr_button"]},
+            tool_tip_text="Join our Discord!"
         )
+        
+        self.social_buttons["menurandom_button"] = UIImageButton(
+            ui_scale(pygame.Rect((140, 535), (57, 57))),
+            "",
+            object_id="#menurandom_button",
+            manager=MANAGER,
+            tool_tip_text="Randomize menu screen"
+        )
+
         errorimg = image_cache.load_image(
             "resources/images/errormsg.png"
         ).convert_alpha()

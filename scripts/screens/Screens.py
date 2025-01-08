@@ -644,15 +644,15 @@ class Screens:
 
         if self.active_blur_bg == "default" or self.active_blur_bg == season:
             blur_bg = season_bg
-        elif self.name in [
-            "start screen",
-            "settings screen",
-            "switch clan screen",
-        ]:
-            # if we're in the main menu levels, display the main menu bg
-            blur_bg = scripts.screens.screens_core.screens_core.default_fullscreen_bgs[
-                theme
-            ]["mainmenu_bg"]
+        #elif self.name in [
+        #    "start screen",
+        #    "settings screen",
+        #    "switch clan screen",
+        #]:
+        #    # if we're in the main menu levels, display the main menu bg
+        #    blur_bg = scripts.screens.screens_core.screens_core.default_fullscreen_bgs[
+        #        theme
+        #    ]["mainmenu_bg"]
         elif self.active_blur_bg in self.fullscreen_bgs:
             blur_bg = self.fullscreen_bgs[self.active_blur_bg]
         elif (
