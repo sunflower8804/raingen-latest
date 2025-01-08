@@ -1157,7 +1157,15 @@ class MakeClanScreen(Screens):
         if selected is not None:
             if self.sub_screen == "choose leader":
                 self.elements["cat_name"].set_text(
-                    str(selected.name) + " --> " + selected.name.prefix + "star"
+                    str(selected.name) + " --> " + selected.name.prefix + " The Leader"
+                )
+            elif self.sub_screen == "choose deputy":
+                self.elements["cat_name"].set_text(
+                    str(selected.name) + " --> " + selected.name.prefix + " The Deputy"
+                )
+            elif self.sub_screen == "choose med cat":
+                self.elements["cat_name"].set_text(
+                    str(selected.name) + " --> " + selected.name.prefix + " The Cleric"
                 )
             else:
                 self.elements["cat_name"].set_text(str(selected.name))
@@ -2004,7 +2012,7 @@ class MakeClanScreen(Screens):
         )
         self.text["leader"] = pygame_gui.elements.UILabel(
             ui_scale(pygame.Rect((0, 5), (-1, -1))),
-            text=f"Leader name: {self.leader.name.prefix}star",
+            text=f"Leader name: {self.leader.name.prefix} The Leader",
             container=self.elements["text_container"],
             object_id=get_text_box_theme("#text_box_30_horizleft"),
             manager=MANAGER,
@@ -2228,7 +2236,7 @@ class MakeClanScreen(Screens):
     def create_cat_info(self):
         self.elements["cat_name"] = pygame_gui.elements.UITextBox(
             "",
-            ui_scale(pygame.Rect((0, 10), (250, 60))),
+            ui_scale(pygame.Rect((0, 10), (500, 60))),
             visible=False,
             object_id=get_text_box_theme("#text_box_30_horizcenter"),
             manager=MANAGER,
