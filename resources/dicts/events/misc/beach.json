@@ -63,15 +63,16 @@
     ]
   },
   {
-    "event_id": "bch_misc_any_gull_accessory",
+    "event_id": "bch_misc_any_yeekfind",
     "location": ["any"],
     "season": ["any"],
     "sub_type": ["accessory"],
-    "weight": 5,
-    "event_text":  "m_c finds an old seagull nest while out hunting. It seems to be long abandoned, but some pretty feathers have remained intact! m_c decides to take some with {PRONOUN/m_c/object}.",
-    "new_accessory": ["GULL FEATHERS"],
+    "weight": 15,
+    "event_text":  "m_c went for a walk and found a cute acc_singular. It now lives in the camp, though it was hard for m_c to convince {PRONOUN/m_c/poss} Clanmates not to eat {PRONOUN/m_c/poss} friend.",
+    "new_accessory": ["YEEKRED", "YEEKBLUE", "SNAILGREEN", "SNAILBLUE", "SNAILRED", "SNAILPURPLE"],
     "m_c": {
-        "age": ["adolescent", "young adult", "adult", "senior adult", "senior"]
+      "age": ["adolescent", "young adult", "adult", "senior adult", "senior"],
+      "not_trait": ["cold", "strict", "grumpy", "bloodthirsty", "fierce"]
     }
   }
 ]

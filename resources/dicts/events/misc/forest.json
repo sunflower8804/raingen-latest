@@ -66,12 +66,16 @@
     ]
   },
   {
-    "event_id": "fst_misc_sparrow_accessory",
-    "location": ["any"],
-    "season": ["newleaf","greenleaf"],
-    "subtype": ["accessory"],
+    "event_id": "fst_misc_any_grapplesave",
+    "location": ["forest"],
+    "season": ["any"],
+    "sub_type": ["accessory"],
     "weight": 20,
-    "event_text": "A small flock of sparrows has decided to start frequenting the branches high above camp and, much to the annoyance of most, have dropped plenty of feathers everwhere as they preen. m_c thinks they're pretty though and decides to keep some.",
-    "new_accessory": ["SPARROW FEATHERS"]
+    "event_text":  "m_c fell from a cliff but survived and came back with a tale of a brave grapple worm that will from now on be {PRONOUN/m_c/poss} best friend.",
+    "new_accessory": ["GRAPPLE"],
+    "m_c": {
+        "age": ["adolescent", "young adult", "adult"],
+      "trait": ["childish", "playful", "adventurous"]
+    }
   }
 ]

@@ -50,24 +50,16 @@
     }
   },
   {
-    "event_id": "mtn_misc_any_patch_accessory",
-    "location": ["any"],
+    "event_id": "mtn_misc_any_grapplesave",
+    "location": ["mountainous"],
     "season": ["any"],
     "sub_type": ["accessory"],
-    "weight": 5,
-    "event_text":  "r_c found a little patch of acc_plural and decided to gift them to m_c.",
-    "new_accessory": ["POPPY", "ORANGE POPPY", "CYAN POPPY", "WHITE POPPY", "PINK POPPY", "BULB WHITE"],
-    "r_c": {
-        "age": ["any"],
-    "relationships": [
-        {
-          "cats_to": ["m_c"],
-            "cats_from": ["r_c"],
-            "mutual": true,
-            "values": ["comfort", "trust", "platonic"],
-          "amount": 5
-        }
-    ]
+    "weight": 20,
+    "event_text":  "m_c fell from a cliff but survived and came back with a tale of a brave grapple worm that will from now on be {PRONOUN/m_c/poss} best friend.",
+    "new_accessory": ["GRAPPLE"],
+    "m_c": {
+        "age": ["adolescent", "young adult", "adult"],
+      "trait": ["childish", "playful", "adventurous"]
     }
   }
 ]
