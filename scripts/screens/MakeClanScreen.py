@@ -486,6 +486,15 @@ class MakeClanScreen(Screens):
         elif event.ui_element == self.tabs["tab4"]:
             self.selected_camp_tab = 4
             self.refresh_selected_camp()
+        elif event.ui_element == self.tabs["tab5"]:
+            self.selected_camp_tab = 5
+            self.refresh_selected_camp()
+        elif event.ui_element == self.tabs["tab6"]:
+            self.selected_camp_tab = 6
+            self.refresh_selected_camp()
+        elif event.ui_element == self.tabs["tab7"]:
+            self.selected_camp_tab = 7
+            self.refresh_selected_camp()
         elif event.ui_element == self.tabs["newleaf_tab"]:
             self.selected_season = "Newleaf"
             self.refresh_text_and_buttons()
@@ -501,10 +510,12 @@ class MakeClanScreen(Screens):
         elif event.ui_element == self.elements["random_background"]:
             # Select a random biome and background
             self.biome_selected = self.random_biome_selection()
-            if self.biome_selected in ["Forest", "Mountainous"]:
-                self.selected_camp_tab = randrange(1, 5)
-            else:
+            if self.biome_selected in ["Forest"]:
+                self.selected_camp_tab = randrange(1, 8)
+            elif self.biome_selected in ["Plains"]:
                 self.selected_camp_tab = randrange(1, 4)
+            else:
+                self.selected_camp_tab = randrange(1, 5)
             self.refresh_selected_camp()
             self.refresh_text_and_buttons()
         elif event.ui_element == self.elements["next_step"]:
@@ -824,6 +835,9 @@ class MakeClanScreen(Screens):
         self.tabs["tab2"].kill()
         self.tabs["tab3"].kill()
         self.tabs["tab4"].kill()
+        self.tabs["tab5"].kill()
+        self.tabs["tab6"].kill()
+        self.tabs["tab7"].kill()
 
         if self.biome_selected == "Forest":
             tab_rect = ui_scale(pygame.Rect((0, 0), (85, 30)))
@@ -864,7 +878,6 @@ class MakeClanScreen(Screens):
                     "top_target": self.tabs["tab2"],
                 },
             )
-
             tab_rect.size = ui_scale_dimensions((100, 30))
             tab_rect.topright = ui_scale_offset((5, 5))
             self.tabs["tab4"] = UISurfaceImageButton(
@@ -879,6 +892,49 @@ class MakeClanScreen(Screens):
                     "top_target": self.tabs["tab3"],
                 },
             )
+            tab_rect = ui_scale(pygame.Rect((0, 0), (140, 30)))
+            tab_rect.topright = ui_scale_offset((5, 5))
+            self.tabs["tab5"] = UISurfaceImageButton(
+                tab_rect,
+                "Outer Expanse",
+                get_button_dict(ButtonStyles.VERTICAL_TAB, (140, 30)),
+                object_id="@buttonstyles_vertical_tab",
+                manager=MANAGER,
+                anchors={
+                    "right": "right",
+                    "right_target": self.elements["art_frame"],
+                    "top_target": self.tabs["tab4"],
+                },
+            )
+            tab_rect = ui_scale(pygame.Rect((0, 0), (100, 30)))
+            tab_rect.topright = ui_scale_offset((5, 5))
+            self.tabs["tab6"] = UISurfaceImageButton(
+                tab_rect,
+                "Outskirts",
+                get_button_dict(ButtonStyles.VERTICAL_TAB, (100, 30)),
+                object_id="@buttonstyles_vertical_tab",
+                manager=MANAGER,
+                anchors={
+                    "right": "right",
+                    "right_target": self.elements["art_frame"],
+                    "top_target": self.tabs["tab5"],
+                },
+            )
+            tab_rect = ui_scale(pygame.Rect((0, 0), (140, 30)))
+            tab_rect.topright = ui_scale_offset((5, 5))
+            self.tabs["tab7"] = UISurfaceImageButton(
+                tab_rect,
+                "Shaded Citadel",
+                get_button_dict(ButtonStyles.VERTICAL_TAB, (140, 30)),
+                object_id="@buttonstyles_vertical_tab",
+                manager=MANAGER,
+                anchors={
+                    "right": "right",
+                    "right_target": self.elements["art_frame"],
+                    "top_target": self.tabs["tab6"],
+                },
+            )
+
         elif self.biome_selected == "Mountainous":
             tab_rect = ui_scale(pygame.Rect((0, 0), (70, 30)))
             tab_rect.topright = ui_scale_offset((5, 180))
@@ -1041,6 +1097,15 @@ class MakeClanScreen(Screens):
         ].enable()
         self.tabs["tab4"].disable() if self.selected_camp_tab == 4 else self.tabs[
             "tab4"
+        ].enable()
+        self.tabs["tab5"].disable() if self.selected_camp_tab == 5 else self.tabs[
+            "tab5"
+        ].enable()
+        self.tabs["tab6"].disable() if self.selected_camp_tab == 6 else self.tabs[
+            "tab6"
+        ].enable()
+        self.tabs["tab7"].disable() if self.selected_camp_tab == 7 else self.tabs[
+            "tab7"
         ].enable()
 
         # I have to do this for proper layering.
@@ -1266,10 +1331,12 @@ class MakeClanScreen(Screens):
     def random_quick_start(self):
         self.clan_name = self.random_clan_name()
         self.biome_selected = self.random_biome_selection()
-        if self.biome_selected in ["Forest", "Mountainous"]:
-            self.selected_camp_tab = randrange(1, 5)
-        else:
+        if self.biome_selected in ["Forest"]:
+            self.selected_camp_tab = randrange(1, 8)
+        elif self.biome_selected in ["Plains"]:
             self.selected_camp_tab = randrange(1, 4)
+        else:
+            self.selected_camp_tab = randrange(1, 5)
         if f"symbol{self.clan_name.upper()}0" in sprites.clan_symbols:
             # Use recommended symbol if it exists
             self.symbol_selected = f"symbol{self.clan_name.upper()}0"
@@ -1828,6 +1895,15 @@ class MakeClanScreen(Screens):
         self.tabs["tab4"] = UIImageButton(
             ui_scale(pygame.Rect((0, 0), (0, 0))), "", visible=False, manager=MANAGER
         )
+        self.tabs["tab5"] = UIImageButton(
+            ui_scale(pygame.Rect((0, 0), (0, 0))), "", visible=False, manager=MANAGER
+        )
+        self.tabs["tab6"] = UIImageButton(
+            ui_scale(pygame.Rect((0, 0), (0, 0))), "", visible=False, manager=MANAGER
+        )
+        self.tabs["tab7"] = UIImageButton(
+            ui_scale(pygame.Rect((0, 0), (0, 0))), "", visible=False, manager=MANAGER
+        )
 
         self.tabs["newleaf_tab"] = UISurfaceImageButton(
             ui_scale(pygame.Rect((625, 275), (39, 34))),
@@ -2099,7 +2175,7 @@ class MakeClanScreen(Screens):
         game.cat_to_fade.clear()
         Cat.outside_cats.clear()
         Patrol.used_patrols.clear()
-        convert_camp = {1: "camp1", 2: "camp2", 3: "camp3", 4: "camp4"}
+        convert_camp = {1: "camp1", 2: "camp2", 3: "camp3", 4: "camp4", 5: "camp5", 6: "camp6", 7: "camp7"}
         game.clan = Clan(
             name=self.clan_name,
             leader=self.leader,
