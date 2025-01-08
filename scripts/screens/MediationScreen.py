@@ -226,14 +226,14 @@ class MediationScreen(Screens):
 
         self.deselect_1 = UISurfaceImageButton(
             ui_scale(pygame.Rect((68, 434), (127, 30))),
-            "Remove Cat",
+            "Remove Scug",
             get_button_dict(ButtonStyles.SQUOVAL, (127, 30)),
             object_id="@buttonstyles_squoval",
             manager=MANAGER,
         )
         self.deselect_2 = UISurfaceImageButton(
             ui_scale(pygame.Rect((605, 434), (127, 30))),
-            "Remove Cat",
+            "Remove Scug",
             get_button_dict(ButtonStyles.SQUOVAL, (127, 30)),
             object_id="@buttonstyles_squoval",
             manager=MANAGER,
@@ -331,11 +331,11 @@ class MediationScreen(Screens):
             text = mediator.personality.trait + "\n" + mediator.experience_level
 
             if mediator.not_working():
-                text += "\nThis cat isn't able to work"
+                text += "\nThis scug isn't able to work"
                 self.mediate_button.disable()
                 self.sabotage_button.disable()
             else:
-                text += "\nThis cat can work"
+                text += "\nThis scug can work"
                 self.mediate_button.enable()
                 self.sabotage_button.enable()
 
@@ -542,9 +542,9 @@ class MediationScreen(Screens):
 
         col1 = str(cat.moons)
         if cat.moons == 1:
-            col1 += " moon"
+            col1 += " cycle"
         else:
-            col1 += " moons"
+            col1 += " cycles"
         if len(cat.personality.trait) > 15:
             _t = cat.personality.trait[:13] + ".."
         else:
@@ -886,10 +886,10 @@ class MediationScreen(Screens):
         if self.selected_mediator is not None:
             if self.mediators[self.selected_mediator].not_working():
                 invalid_mediator = True
-                error_message += "This mediator can't work this moon. "
+                error_message += "This mediator can't work this cycle. "
             elif self.mediators[self.selected_mediator].ID in game.patrolled:
                 invalid_mediator = True
-                error_message += "This mediator has already worked this moon. "
+                error_message += "This mediator has already worked this cycle. "
         else:
             invalid_mediator = True
 
@@ -898,7 +898,7 @@ class MediationScreen(Screens):
             for x in game.mediated:
                 if self.selected_cat_1.ID in x and self.selected_cat_2.ID in x:
                     invalid_pair = True
-                    error_message += "This pair has already been mediated this moon. "
+                    error_message += "This pair has already been mediated this cycle. "
                     break
         else:
             invalid_pair = True

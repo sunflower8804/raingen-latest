@@ -114,11 +114,11 @@ class ListScreen(Screens):
             if element == self.cat_list_bar_elements["fav_toggle"]:
                 if "#fav_cat_toggle_on" in event.ui_element.get_object_ids():
                     element.change_object_id("#fav_cat_toggle_off")
-                    element.tool_tip_text = "show favorite cat indicators"
+                    element.tool_tip_text = "show favorite scug indicators"
                     game.clan.clan_settings["show fav"] = False
                 else:
                     element.change_object_id("#fav_cat_toggle_on")
-                    element.tool_tip_text = "hide favorite cat indicators"
+                    element.tool_tip_text = "hide favorite scug indicators"
                     game.clan.clan_settings["show fav"] = True
                 self.update_cat_list(
                     self.cat_list_bar_elements["search_bar_entry"].get_text()
@@ -407,9 +407,9 @@ class ListScreen(Screens):
 
         y_pos = 0
         for name, object_id in (
-            ["StarClan", "#view_starclan_button"],
+            ["Ascended", "#view_starclan_button"],
             ["Unknown Residence", "#view_unknown_residence_button"],
-            ["Dark Forest", "#view_dark_forest_button"],
+            ["RotWound", "#view_dark_forest_button"],
         ):
             self.choose_group_buttons[object_id.strip("#")] = UISurfaceImageButton(
                 ui_scale(pygame.Rect((0, y_pos), (190, 34))),
@@ -735,16 +735,16 @@ class ListScreen(Screens):
             self.update_heading_text(self.clan_name)
         elif self.current_group == "cotc":
             self.set_bg(None)
-            self.update_heading_text("Cats Outside the Clan")
+            self.update_heading_text("Scugs Outside the Clan")
         elif self.current_group == "sc":
             self.set_bg("sc")
-            self.update_heading_text("StarClan")
+            self.update_heading_text("Ascended")
         elif self.current_group == "ur":
             self.set_bg("ur")
             self.update_heading_text("Unknown Residence")
         elif self.current_group == "df":
             self.set_bg("df")
-            self.update_heading_text("Dark Forest")
+            self.update_heading_text("RotWound")
 
     def get_cat_list(self):
         """

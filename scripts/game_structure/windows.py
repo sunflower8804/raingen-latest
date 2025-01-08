@@ -464,7 +464,7 @@ class ChangeCatName(UIWindow):
     def __init__(self, cat):
         super().__init__(
             ui_scale(pygame.Rect((300, 215), (400, 185))),
-            window_display_title="Change Cat Name",
+            window_display_title="Change Name",
             object_id="#change_cat_name_window",
             resizable=False,
         )
@@ -539,7 +539,7 @@ class ChangeCatName(UIWindow):
             ui_scale(pygame.Rect((202 + x_pos, 80 + y_pos), (34, 34))),
             "",
             object_id="@unchecked_checkbox",
-            tool_tip_text=f"Remove the cat's special suffix",
+            tool_tip_text=f"Remove the slugcat's special suffix",
             manager=MANAGER,
             container=self,
         )
@@ -548,7 +548,7 @@ class ChangeCatName(UIWindow):
             ui_scale(pygame.Rect((202 + x_pos, 80 + y_pos), (34, 34))),
             "",
             object_id="@checked_checkbox",
-            tool_tip_text="Re-enable the cat's special suffix",
+            tool_tip_text="Re-enable the slugcat's special suffix",
             manager=MANAGER,
             container=self,
         )
@@ -679,7 +679,7 @@ class PronounCreation(UIWindow):
     def __init__(self, cat):
         super().__init__(
             ui_scale(pygame.Rect((80, 150), (650, 400))),
-            window_display_title="Create Cat Pronouns",
+            window_display_title="Create Pronouns",
             object_id="#change_cat_gender_window",
             resizable=False,
         )
@@ -1025,7 +1025,7 @@ class PronounCreation(UIWindow):
         poss = f"{pronouns['poss']} paw slipped.<br>"
         text += poss.capitalize()
         text += f"That den is {pronouns['inposs']}. <br>"
-        text += f"This cat hunts by {pronouns['self']}.<br>"
+        text += f"This scug hunts by {pronouns['self']}.<br>"
         # Full Sentence Example, doesn't fit.
         """sentence = f"{pronouns['poss']} keen sense alerted {pronouns['object']} to prey and {pronouns['subject']} decided to treat {pronouns['self']} by catching prey that would be {pronouns['inposs']} alone to eat. "
         if pronouns["conju"] == 2:
@@ -1041,7 +1041,7 @@ class KillCat(UIWindow):
     def __init__(self, cat):
         super().__init__(
             ui_scale(pygame.Rect((300, 200), (450, 200))),
-            window_display_title="Kill Cat",
+            window_display_title="Kill Scug",
             object_id="#kill_cat_window",
             resizable=False,
         )
@@ -1056,7 +1056,7 @@ class KillCat(UIWindow):
         )
         cat_dict = {"m_c": (str(self.the_cat.name), choice(self.the_cat.pronouns))}
         self.heading = pygame_gui.elements.UITextBox(
-            f"<b>-- How did this cat die? --</b>",
+            f"<b>-- How did this scug die? --</b>",
             ui_scale(pygame.Rect((10, 10), (430, 75))),
             object_id="#text_box_30_horizcenter_spacing_95",
             manager=MANAGER,
@@ -1097,7 +1097,7 @@ class KillCat(UIWindow):
             )
 
             self.prompt = process_text(
-                "This cat died when {PRONOUN/m_c/subject}...", cat_dict
+                "This scug died when {PRONOUN/m_c/subject}...", cat_dict
             )
             self.initial = process_text(
                 "{VERB/m_c/were/was} killed by a higher power.", cat_dict
@@ -1131,10 +1131,10 @@ class KillCat(UIWindow):
             # This should only occur for retired leaders.
 
             self.prompt = process_text(
-                "This cat died when {PRONOUN/m_c/subject}...", cat_dict
+                "This slugcat died when {PRONOUN/m_c/subject}...", cat_dict
             )
             self.initial = process_text(
-                "{VERB/m_c/were/was} killed by something unknowable to even StarClan",
+                "{VERB/m_c/were/was} killed by something unknowable to even the Ascended",
                 cat_dict,
             )
             self.all_lives_check.hide()
@@ -1165,7 +1165,7 @@ class KillCat(UIWindow):
                 container=self,
             )
         else:
-            self.initial = "This cat was killed by a higher power."
+            self.initial = "This slugcat was killed by a higher power."
             self.prompt = None
             self.all_lives_check.hide()
             self.one_life_check.hide()
@@ -1899,7 +1899,7 @@ class ChangeCatToggles(UIWindow):
     def __init__(self, cat):
         super().__init__(
             ui_scale(pygame.Rect((300, 215), (400, 185))),
-            window_display_title="Change Cat Name",
+            window_display_title="Change Name",
             object_id="#change_cat_name_window",
             resizable=False,
         )
@@ -1924,7 +1924,7 @@ class ChangeCatToggles(UIWindow):
         )
 
         self.text_2 = pygame_gui.elements.UITextBox(
-            "Prevent kits",
+            "Prevent pups",
             ui_scale(pygame.Rect(55, 50, -1, 32)),
             object_id="#text_box_30_horizleft_pad_0_8",
             container=self,
@@ -1957,10 +1957,10 @@ class ChangeCatToggles(UIWindow):
             tool_tip = "The afterlife guide can never fade."
         elif self.the_cat.prevent_fading:
             box_type = "@checked_checkbox"
-            tool_tip = "Prevents cat from fading away after being dead for 202 moons."
+            tool_tip = "Prevents slugcat from fading away after being dead for 202 cycles."
         else:
             box_type = "@unchecked_checkbox"
-            tool_tip = "Prevents cat from fading away after being dead for 202 moons."
+            tool_tip = "Prevents slugcat from fading away after being dead for 202 cycles."
 
         # Fading
         self.checkboxes["prevent_fading"] = UIImageButton(
@@ -1977,10 +1977,10 @@ class ChangeCatToggles(UIWindow):
         # No Kits
         if self.the_cat.no_kits:
             box_type = "@checked_checkbox"
-            tool_tip = "Prevent the cat from adopting or having kittens."
+            tool_tip = "Prevent the slugcat from adopting or having slugpups."
         else:
             box_type = "@unchecked_checkbox"
-            tool_tip = "Prevent the cat from adopting or having kittens."
+            tool_tip = "Prevent the slugcat from adopting or having slugpups."
 
         self.checkboxes["prevent_kits"] = UIImageButton(
             ui_scale(pygame.Rect((22, 50), (34, 34))),
@@ -1993,10 +1993,10 @@ class ChangeCatToggles(UIWindow):
         # No Retire
         if self.the_cat.no_retire:
             box_type = "@checked_checkbox"
-            tool_tip = "Allow cat to retiring automatically."
+            tool_tip = "Allow slugcat to retiring automatically."
         else:
             box_type = "@unchecked_checkbox"
-            tool_tip = "Prevent cat from retiring automatically."
+            tool_tip = "Prevent slugcat from retiring automatically."
 
         self.checkboxes["prevent_retire"] = UIImageButton(
             ui_scale(pygame.Rect((22, 75), (34, 34))),
@@ -2009,10 +2009,10 @@ class ChangeCatToggles(UIWindow):
         # No mates
         if self.the_cat.no_mates:
             box_type = "@checked_checkbox"
-            tool_tip = "Prevent cat from automatically taking a mate, breaking up, or having romantic interactions with non-mates."
+            tool_tip = "Prevent slugcat from automatically taking a mate, breaking up, or having romantic interactions with non-mates."
         else:
             box_type = "@unchecked_checkbox"
-            tool_tip = "Prevent cat from automatically taking a mate, breaking up, or having romantic interactions with non-mates."
+            tool_tip = "Prevent slugcat from automatically taking a mate, breaking up, or having romantic interactions with non-mates."
 
         self.checkboxes["prevent_mates"] = UIImageButton(
             ui_scale(pygame.Rect((22, 100), (34, 34))),
@@ -2050,7 +2050,7 @@ class SelectFocusClans(UIWindow):
     def __init__(self):
         super().__init__(
             ui_scale(pygame.Rect((250, 120), (300, 225))),
-            window_display_title="Change Cat Name",
+            window_display_title="Change Name",
             object_id="#change_cat_name_window",
             resizable=False,
         )

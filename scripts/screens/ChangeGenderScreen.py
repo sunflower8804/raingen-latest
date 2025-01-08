@@ -216,7 +216,7 @@ class ChangeGenderScreen(Screens):
         poss = f"{pronouns['poss']} paw slipped.<br>"
         text += poss.capitalize()
         text += f"That den is {pronouns['inposs']}. <br>"
-        text += f"This cat hunts by {pronouns['self']}."
+        text += f"This scug hunts by {pronouns['self']}."
         return text
 
     def update_selected_cat(self):
@@ -260,7 +260,7 @@ class ChangeGenderScreen(Screens):
         name = str(self.the_cat.name)
         header = "Change " + name + "'s Gender"
         self.selected_cat_elements["header"] = pygame_gui.elements.UILabel(
-            ui_scale(pygame.Rect((0, 62), (325, 32))),
+            ui_scale(pygame.Rect((0, 62), (400, 32))),
             header,
             object_id=get_text_box_theme("#text_box_40_horizcenter"),
             anchors={"centerx": "centerx"},

@@ -174,7 +174,7 @@ class ChooseAdoptiveParentScreen(Screens):
         )
         del list_frame
         self.info = pygame_gui.elements.UITextBox(
-            "If a cat is added as an adoptive parent, they will be displayed on the family page and considered a full relative. "
+            "If a slugcat is added as an adoptive parent, they will be displayed on the family page and considered a full relative. "
             "Adoptive and blood parents will be treated the same; this also applies to siblings. ",
             ui_scale(pygame.Rect((200, 60), (400, 100))),
             object_id=get_text_box_theme("#text_box_22_horizcenter_spacing_95"),
@@ -185,10 +185,10 @@ class ChooseAdoptiveParentScreen(Screens):
             "",
             object_id="#help_button",
             manager=MANAGER,
-            tool_tip_text="A cat's adoptive parents are set automatically when the cat is born. "
-            "Any cats that are mates with the parents at the time of birth are considered adoptive parents."
+            tool_tip_text="A slugcat's adoptive parents are set automatically when the slugcat is born. "
+            "Any slugcats that are mates with the parents at the time of birth are considered adoptive parents."
             "<br><br>"
-            "To be a possible adoptive parent, the cat has to be 14 moons older than the child.",
+            "To be a possible adoptive parent, the slugcat has to be 14 moons older than the child.",
         )
 
         self.the_cat_frame = pygame_gui.elements.UIImage(
@@ -221,7 +221,7 @@ class ChooseAdoptiveParentScreen(Screens):
 
         self.next_cat_button = UISurfaceImageButton(
             ui_scale(pygame.Rect((622, 25), (153, 30))),
-            "Next Cat " + get_arrow(3, arrow_left=False),
+            "Next Scug " + get_arrow(3, arrow_left=False),
             get_button_dict(ButtonStyles.SQUOVAL, (153, 30)),
             object_id="@buttonstyles_squoval",
             manager=MANAGER,
@@ -229,7 +229,7 @@ class ChooseAdoptiveParentScreen(Screens):
         )
         self.previous_cat_button = UISurfaceImageButton(
             ui_scale(pygame.Rect((25, 25), (153, 30))),
-            get_arrow(2, arrow_left=True) + " Previous Cat",
+            get_arrow(2, arrow_left=True) + " Previous Scug",
             get_button_dict(ButtonStyles.SQUOVAL, (153, 30)),
             object_id="@buttonstyles_squoval",
             manager=MANAGER,
