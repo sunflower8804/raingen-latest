@@ -269,11 +269,11 @@ class Thoughts:
 
         status = status.replace(" ", "_")
         # match status:
-        #     case "medicine cat apprentice":
+        #     case "cleric apprentice":
         #         status = "medicine_cat_apprentice"
         #     case "mediator apprentice":
         #         status = "mediator_apprentice"
-        #     case "medicine cat":
+        #     case "cleric":
         #         status = "medicine_cat"
         #     case 'former Clancat':
         #         status = 'former_Clancat'
@@ -320,6 +320,8 @@ class Thoughts:
             # checks if the cat is Rick Astley to give the rickroll thought, otherwise proceed as usual
             if (main_cat.name.prefix+main_cat.name.suffix).replace(" ", "").lower() == "rickastley":
                 return "Never going to give r_c up, never going to let {PRONOUN/r_c/object} down, never going to run around and desert {PRONOUN/r_c/object}."
+            elif (main_cat.name.prefix+main_cat.name.suffix).replace(" ", "").lower() == "fivepebbles":
+                return "...is this reaching you? A little animal, on the floor of my chamber. I think i know what you are looking for. You're stuck in a cycle, a repeating pattern. You want a way out. Know that this does not make you special - every living creature shares that same frustration. From the microbes in my processing strata to me, who am, if you excuse me, godlike in comparison. The good news first. In a way, I am what you are searching for. Me and my kind have as our purpose to solve that very oscillating claustrophobia in the chests of you and countless others. A strange charity - you the unknowing recipient, i the reluctant gift. The noble benefactors? Gone. The bad news is that no defiitive solution has been found. And every moment the equipment erodes to a new state of decay. I cannot help you collectively, or individually, I can't even help myself. For you though, there is another way. The old path. Go west past the Farm Arrays, and then down into the earth where the land fissures, as deep as you can reach, where the ancients built their temples and danced their silly rituals. The mark i gave you will let you through. Not that it solves anyone's problem but yours."
             else:
                 chosen_thought_group = choice(Thoughts.load_thoughts(main_cat, other_cat, game_mode, biome, season, camp))
                 chosen_thought = choice(chosen_thought_group["thoughts"])

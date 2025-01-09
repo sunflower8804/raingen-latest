@@ -30,7 +30,7 @@
 - PRONOUNS: Wow! The cats have pronouns other than they/them? Yes it's true! Cats can now naturally generate with they/them, he/him, or she/her pronouns. Want a cat to have different pronouns than those options? You can do that to! Check out their profile page and the Change Gender option to add any pronoun under the sun. These pronouns will be used in text throughout the game when referring to that cat (give a big hand to our writing team for the monumental amount of work they did to get pronouns integrated into all the text!) Please note a new game setting to revert the game to only generating they/them pronouns for all cats.
 - LEADER'S DEN: You can now access the Leader's Den to view the other Clans neighboring your Clan as well as the known Outsiders. Decide how you want to interact with these other cats: will you appease the hostile Clans? Or antagonize them further? Will you hunt down that one pesky rogue? Or perhaps you've decided an exiled Clanmate should be allowed a second chance...
 - CLAN SYMBOLS: You can now choose a Clan symbol during Clan creation. Other Clans also generate with symbols, which you will see in the Leader's Den. There are currently 484 symbols available to choose from, a roster that we plan to continue expanding with each stable update. Please note that old Clan saves will not be able to choose a Clan symbol in-game, though save editing to change the symbol is relatively simple. When loading an old save, the game will attempt to assign a symbol matching with it's prefix, if no symbol exists then it will randomly choose a symbol.
-- CLASSIC CONDITIONS: Classic mode can now access illnesses, injuries, and permanent conditions!  Please note that this still differs in some ways from Expanded mode. In Classic Mode, a single medicine cat can care for the entire Clan, specific herb amounts are not displayed on the med den screen, an herb will treat a condition regardless of the Clan's actual herb amounts, the Clan's herb supply is randomly generated and is not dependent on events.
+- CLASSIC CONDITIONS: Classic mode can now access illnesses, injuries, and permanent conditions!  Please note that this still differs in some ways from Expanded mode. In Classic Mode, a single cleric can care for the entire Clan, specific herb amounts are not displayed on the med den screen, an herb will treat a condition regardless of the Clan's actual herb amounts, the Clan's herb supply is randomly generated and is not dependent on events.
 - AUDIO: What in StarClan?? Clangen with sound!? Clangen now comes with shiny new sound effects and one very lovely music track that plays during Clan creation. More music is on the horizon... and don't worry! There is a handy dandy mute button in the corner of the screen and audio settings to control music/ambiance and sound effects volume separately.
 
 <b>QoL</b>
@@ -90,7 +90,7 @@
 - Long term conditions, like wasting disease, will now display in leader's history if they took a life
 - When leaders are lost on patrol, patrol result text no longer mentions them by their warrior name
 - Litters can no longer spawn with duplicate names (i.e. two kits named Stonekit)
-- Medicine cats captured by twolegs no longer have their role erased
+- clerics captured by twolegs no longer have their role erased
 - Cat history no longer lists cats as murdering themselves
 - Kicked cats out of the walls (fixed some possible cat positionings on camp screen)
 - Adolescents can no longer be considered "normal adults" in patrols simply because they graduated to warrior early.

@@ -10,7 +10,7 @@
         "max_cats": 6,
         "min_max_status": {
             "apprentice": [-1, -1],
-            "medicine cat": [1, 6],
+            "cleric": [1, 6],
             "healer cats": [1, 6],
             "normal adult": [-1, -1]
         },
@@ -382,11 +382,11 @@
         "min_cats": 2,
         "max_cats": 6,
         "min_max_status": {
-            "medicine cat": [1, 6],
+            "cleric": [1, 6],
             "healer cats": [1, 6]
         },
         "weight": 5,
-        "intro_text": "As the medicine cats' patrol pads out into c_n territory, r_c tells p_l about the dream {PRONOUN/r_c/subject} had last night, and what the StarClan vision could mean for c_n.",
+        "intro_text": "As the clerics' patrol pads out into c_n territory, r_c tells p_l about the dream {PRONOUN/r_c/subject} had last night, and what the StarClan vision could mean for c_n.",
         "decline_text": "The cats don't talk about the vision, mouths too full of herbs.",
         "chance_of_success": 40,
         "success_outcomes": [
@@ -420,7 +420,7 @@
                 ]
             },
             {
-                "text": "p_l takes r_c aside, giving {PRONOUN/r_c/object} the full benefits of p_l's experience as they discuss r_c's vision, which contained clair_list/r_c. As a medicine cat, {PRONOUN/p_l/subject} {VERB/p_l/don't/doesn't} take the responsibility lightly, and both of them work together to divine the vision's meaning.",
+                "text": "p_l takes r_c aside, giving {PRONOUN/r_c/object} the full benefits of p_l's experience as they discuss r_c's vision, which contained clair_list/r_c. As a cleric, {PRONOUN/p_l/subject} {VERB/p_l/don't/doesn't} take the responsibility lightly, and both of them work together to divine the vision's meaning.",
                 "exp": 20,
                 "weight": 5,
                 "herbs": ["random_herbs"],
@@ -464,7 +464,7 @@
                 ]
             },
             {
-                "text": "s_c chooses to pad pelt-to-pelt with r_c, the spiritual medicine cat gently guiding the conversation. r_c feels deeply privileged, and far more at peace, after confiding in {PRONOUN/s_c/object}. {PRONOUN/r_c/subject/CAP} {VERB/r_c/know/knows} that c_n is in safe paws.",
+                "text": "s_c chooses to pad pelt-to-pelt with r_c, the spiritual cleric gently guiding the conversation. r_c feels deeply privileged, and far more at peace, after confiding in {PRONOUN/s_c/object}. {PRONOUN/r_c/subject/CAP} {VERB/r_c/know/knows} that c_n is in safe paws.",
                 "exp": 20,
                 "weight": 20,
                 "herbs": ["random_herbs"],
@@ -695,7 +695,7 @@
         "min_cats": 1,
         "max_cats": 1,
         "min_max_status": {
-            "medicine cat": [1, 6],
+            "cleric": [1, 6],
             "healer cats": [1, 6]
         },
         "weight": 5,
@@ -812,8 +812,8 @@
         "min_cats": 2,
         "max_cats": 2,
         "min_max_status": {
-            "medicine cat apprentice": [1, 1],
-            "medicine cat": [1, 1],
+            "cleric apprentice": [1, 1],
+            "cleric": [1, 1],
             "warrior": [-1, -1],
             "apprentice":[-1, -1]
         },
@@ -908,7 +908,7 @@
                 ]
             },
             {
-                "text": "s_c chooses to pad pelt-to-pelt with app1, the more experienced medicine cat gently guiding the conversation. r_c feels deeply privileged, and far more at peace, after confiding in {PRONOUN/s_c/object}, and {PRONOUN/r_c/subject} {VERB/r_c/know/knows} that c_n is in safe paws. It also proves to be a valuable learning experience.",
+                "text": "s_c chooses to pad pelt-to-pelt with app1, the more experienced cleric gently guiding the conversation. r_c feels deeply privileged, and far more at peace, after confiding in {PRONOUN/s_c/object}, and {PRONOUN/r_c/subject} {VERB/r_c/know/knows} that c_n is in safe paws. It also proves to be a valuable learning experience.",
                 "exp": 20,
                 "weight": 20,
                 "art": "gen_train_talkingMA",
@@ -1145,7 +1145,7 @@
         "min_cats": 1,
         "max_cats": 1,
         "min_max_status": {
-            "medicine cat": [1, 6],
+            "cleric": [1, 6],
             "healer cats": [1, 6],
             "all apprentices": [-1, -1]
         },
@@ -1203,7 +1203,7 @@
                 "weight": 20
             },
             {
-                "text": "p_l sits to greet the presence, but it vanishes, leaving the medicine cat to wonder if {PRONOUN/p_l/subject} {VERB/p_l/have/has} done something wrong.",
+                "text": "p_l sits to greet the presence, but it vanishes, leaving the cleric to wonder if {PRONOUN/p_l/subject} {VERB/p_l/have/has} done something wrong.",
                 "exp": 0,
                 "weight": 20
             },
@@ -1402,7 +1402,7 @@
         "min_cats": 1,
         "max_cats": 1,
         "min_max_status": {
-            "medicine cat apprentice": [1, 6]
+            "cleric apprentice": [1, 6]
         },
         "weight": 5,
         "intro_text": "As app1 pads through c_n territory, {PRONOUN/app1/subject} {VERB/app1/feel/feels} a presence join {PRONOUN/app1/object}.",
@@ -1469,8 +1469,8 @@
         "max_cats": 6,
         "min_max_status": {
             "apprentice": [-1, -1],
-            "medicine cat": [1, 6],
-            "medicine cat apprentice": [1, 6],
+            "cleric": [1, 6],
+            "cleric apprentice": [1, 6],
             "healer cats": [1, 6],
             "normal adult": [-1, -1]
         },
@@ -1593,7 +1593,7 @@
         "min_cats": 2,
         "max_cats": 2,
         "min_max_status": {
-            "medicine cat": [1, 6],
+            "cleric": [1, 6],
             "healer cats": [1, 6],
             "all apprentices": [-1, -1],
             "normal adult": [1, 6]
@@ -1677,7 +1677,7 @@
         "min_cats": 2,
         "max_cats": 2,
         "min_max_status": {
-            "medicine cat": [1, 6],
+            "cleric": [1, 6],
             "healer cats": [1, 6],
             "all apprentices": [-1, -1],
             "normal adult": [1, 6]
@@ -1703,7 +1703,7 @@
                 ]
             },
             {
-                "text": "p_l knows why this bothers s_c so much. Being a medicine cat gives p_l a connection to StarClan and allows {PRONOUN/p_l/object} to understand how {PRONOUN/p_l/poss} legacy would be told again and again to kits in the future. But p_l does {PRONOUN/p_l/poss} best to ease s_c's worries. To c_n, s_c would be a legend worth remembering one day. s_c brightens up at that remark, and the two go back to their herb hunt.",
+                "text": "p_l knows why this bothers s_c so much. Being a cleric gives p_l a connection to StarClan and allows {PRONOUN/p_l/object} to understand how {PRONOUN/p_l/poss} legacy would be told again and again to kits in the future. But p_l does {PRONOUN/p_l/poss} best to ease s_c's worries. To c_n, s_c would be a legend worth remembering one day. s_c brightens up at that remark, and the two go back to their herb hunt.",
                 "exp": 10,
                 "weight": 20,
                 "stat_trait": ["ambitious", "bloodthirsty", "insecure"],
@@ -1748,12 +1748,12 @@
         "max_cats": 6,
         "min_max_status": {
             "apprentice": [-1, -1],
-            "medicine cat": [1, 6],
+            "cleric": [1, 6],
             "healer cats": [1, 6],
             "normal adult": [-1, -1]
         },
         "weight": 5,
-        "intro_text": "The gaggle of medicine cats strolls through c_n's territory, chatting amicably amongst themselves. It's a rare opportunity for all of them to be out like this together, and each cat plans to make the most of it.",
+        "intro_text": "The gaggle of clerics strolls through c_n's territory, chatting amicably amongst themselves. It's a rare opportunity for all of them to be out like this together, and each cat plans to make the most of it.",
         "decline_text": "Before they get very far, one of their Clanmates catches up to inform them of a small emergency back at camp that needs their attention. Oh well, maybe they'll get the chance again another day.",
         "chance_of_success": 20,
         "success_outcomes": [
@@ -1806,7 +1806,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "The medicine cats are too caught up in chatting with one another - they don't collect a single leaf.",
+                "text": "The clerics are too caught up in chatting with one another - they don't collect a single leaf.",
                 "exp": 0,
                 "weight": 20
             },
@@ -1829,13 +1829,13 @@
         "max_cats": 6,
         "min_max_status": {
             "apprentice": [-1, -1],
-            "medicine cat apprentice": [1, 6],
+            "cleric apprentice": [1, 6],
             "healer cats": [1, 6],
             "all apprentices": [3, 6],
             "normal adult": [-1, -1]
         },
         "weight": 5,
-        "intro_text": "The apprentices stroll through c_n's territory, chatting amicably amongst themselves. The senior medicine cats are all busy back at camp, so the young cats get the chance to be out on their own today, which has everyone excited!",
+        "intro_text": "The apprentices stroll through c_n's territory, chatting amicably amongst themselves. The senior clerics are all busy back at camp, so the young cats get the chance to be out on their own today, which has everyone excited!",
         "decline_text": "Before they get very far, one of their Clanmates catches up to inform them that they're wanted back at camp. Oh well, maybe they'll get the chance again another day.",
         "chance_of_success": 30,
         "success_outcomes": [
@@ -1906,13 +1906,13 @@
         "min_cats": 2,
         "max_cats": 2,
         "min_max_status": {
-            "medicine cat apprentice": [1, 6],
+            "cleric apprentice": [1, 6],
             "healer cats": [1, 6],
             "normal adult": [1, 6]
         },
         "weight": 5,
         "intro_text": "p_l eyes the warrior chosen to escort {PRONOUN/p_l/object} to fetch herbs, feeling a little bit giddy. Apprentices getting to boss around warriors is something that almost never happens, and p_l is going to make sure {PRONOUN/p_l/subject} {VERB/p_l/make/makes} the most of it.",
-        "decline_text": "Just as they're about to leave, r_c is called off to help on a hunting patrol instead. p_l lashes {PRONOUN/p_l/poss} tail in frustration but doesn't protest, heading back to the medicine cat den alone.",
+        "decline_text": "Just as they're about to leave, r_c is called off to help on a hunting patrol instead. p_l lashes {PRONOUN/p_l/poss} tail in frustration but doesn't protest, heading back to the cleric den alone.",
         "chance_of_success": 50,
         "success_outcomes": [
             {
@@ -1975,7 +1975,7 @@
         "max_cats": 2,
         "min_max_status": {
             "apprentice": [1, 1],
-            "medicine cat apprentice": [1, 1],
+            "cleric apprentice": [1, 1],
             "all apprentices": [2, 2]
         },
         "weight": 20,
@@ -1985,7 +1985,7 @@
         "relationship_constraint": ["siblings", "platonic_20"],
         "success_outcomes": [
             {
-                "text": "p_l and app2 walk with their tails entwined and pelts brushing together, thrilled to be able to patrol together. p_l doesn't regret becoming a medicine cat, but {PRONOUN/p_l/subject} {VERB/p_l/do/does} feel secluded at times, watching app2 train and patrol with everyone. The siblings make the most of their time together, returning home side-by-side with their jaws full of herbs.",
+                "text": "p_l and app2 walk with their tails entwined and pelts brushing together, thrilled to be able to patrol together. p_l doesn't regret becoming a cleric, but {PRONOUN/p_l/subject} {VERB/p_l/do/does} feel secluded at times, watching app2 train and patrol with everyone. The siblings make the most of their time together, returning home side-by-side with their jaws full of herbs.",
                 "exp": 20,
                 "weight": 20,
                 "art": "gen_app_siblings",
@@ -2078,7 +2078,7 @@
         "min_cats": 2,
         "max_cats": 2,
         "min_max_status": {
-            "medicine cat": [1, 1],
+            "cleric": [1, 1],
             "healer cats": [1, 1],
             "normal adult": [1, 1]
         },
@@ -2089,7 +2089,7 @@
         "relationship_constraint": ["siblings", "platonic_20"],
         "success_outcomes": [
             {
-                "text": "p_l and r_c walk with their tails entwined and pelts brushing together, thrilled to be able to patrol together. p_l doesn't regret becoming a medicine cat, but {PRONOUN/p_l/subject} {VERB/p_l/do/does} feel secluded at times, watching r_c train and patrol with everyone. The siblings make the most of their time together, returning home side-by-side with their jaws full of herbs.",
+                "text": "p_l and r_c walk with their tails entwined and pelts brushing together, thrilled to be able to patrol together. p_l doesn't regret becoming a cleric, but {PRONOUN/p_l/subject} {VERB/p_l/do/does} feel secluded at times, watching r_c train and patrol with everyone. The siblings make the most of their time together, returning home side-by-side with their jaws full of herbs.",
                 "exp": 20,
                 "weight": 20,
                 "herbs": ["random_herbs"],
@@ -2194,7 +2194,7 @@
         "max_cats": 2,
         "min_max_status": {
             "apprentice": [1, 1],
-            "medicine cat": [1, 1],
+            "cleric": [1, 1],
             "healer cats": [1,1],
             "all apprentices": [1, 1]
         },
@@ -2417,7 +2417,7 @@
         "min_cats": 2,
         "max_cats": 2,
         "min_max_status": {
-            "medicine cat": [1, 6],
+            "cleric": [1, 6],
             "all apprentices": [-1, -1],
             "normal adult": [-1, -1]
         },
@@ -2612,7 +2612,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "The two medicine cats walk in circles for a while before realizing that they've completely forgotten where the herb patch is since it's been so long. How embarrassing!",
+                "text": "The two clerics walk in circles for a while before realizing that they've completely forgotten where the herb patch is since it's been so long. How embarrassing!",
                 "exp": 0,
                 "weight": 20,
                 "relationships": [
@@ -2690,7 +2690,7 @@
         "max_cats": 2,
         "min_max_status": {
             "apprentice": [1, 6],
-            "medicine cat apprentice": [1, 6],
+            "cleric apprentice": [1, 6],
             "all apprentices": [2, 2]
         },
         "weight": 5,
@@ -2843,7 +2843,7 @@
         "max_cats": 2,
         "min_max_status": {
             "apprentice": [-1, -1],
-            "medicine cat": [1, 6],
+            "cleric": [1, 6],
             "normal adult": [-1, -1]
         },
         "weight": 5,
@@ -2928,7 +2928,7 @@
         "min_cats": 2,
         "max_cats": 2,
         "min_max_status": {
-            "medicine cat": [1, 6],
+            "cleric": [1, 6],
             "healer cats": [1, 6],
             "all apprentices": [-1, -1],
             "normal adult": [1, 6]
@@ -3021,7 +3021,7 @@
     	"max_cats": 6,
     	"min_max_status": {
         	"normal adult": [1, 5],
-	        "medicine cat": [1, 1]
+	        "cleric": [1, 1]
     	},
     	"weight": 40,
     	"intro_text": "p_l is out alone in c_n's territory when a shiver runs down {PRONOUN/p_l/poss} spine. {PRONOUN/p_l/subject/CAP} {VERB/p_l/stop/stops}. {PRONOUN/p_l/subject/CAP} slowly {VERB/p_l/turn/turns} {PRONOUN/p_l/poss} head. On the rosemary bush next to {PRONOUN/p_l/object}, the moth lazily stretches its wings, the Twoleg skull on its back grinning.",
@@ -3068,7 +3068,7 @@
         "max_cats": 2,
         "min_max_status": {
             "all apprentices": [-1, -1],
-            "medicine cat": [1, 1],
+            "cleric": [1, 1],
             "normal adult": [1, 1]
         },
         "weight": 20,
@@ -3110,7 +3110,7 @@
         "min_cats": 2,
         "max_cats": 2,
         "min_max_status": {
-            "medicine cat": [1, 6]
+            "cleric": [1, 6]
         },
         "weight": 20,
         "intro_text": "p_l is hoping to find some herbs growing in defiance of the weather, which is becoming increasingly cold. r_c offered to come along to help search. After some back and forth, they decide to see what's growing among the fields near a Twoleg farm.",
@@ -3291,16 +3291,16 @@
         "max_cats": 2,
         "min_max_status": {
             "apprentice": [-1, -1],
-            "medicine cat apprentice": [-1, -1],
-            "medicine cat": [1, 1]
+            "cleric apprentice": [-1, -1],
+            "cleric": [1, 1]
         },
         "weight": 20,
-        "intro_text": "While out collecting herbs with p_l, r_c can't help but notice just how hard the medicine cat is pushing {PRONOUN/p_l/self}.",
+        "intro_text": "While out collecting herbs with p_l, r_c can't help but notice just how hard the cleric is pushing {PRONOUN/p_l/self}.",
         "decline_text": "{PRONOUN/r_c/subject/CAP} {VERB/r_c/decide/decides} to keep {PRONOUN/r_c/poss} thoughts to {PRONOUN/r_c/self}.",
         "chance_of_success": 60,
         "success_outcomes": [
             {
-                "text": "Without a single word, r_c drapes {PRONOUN/r_c/poss} tail over p_l's shoulders, letting out a comforting purr as the medicine cat leans against {PRONOUN/r_c/object}.",
+                "text": "Without a single word, r_c drapes {PRONOUN/r_c/poss} tail over p_l's shoulders, letting out a comforting purr as the cleric leans against {PRONOUN/r_c/object}.",
                 "exp": 20,
                 "weight": 20,
                 "herbs": ["random_herbs"],
@@ -3331,7 +3331,7 @@
                 ]
             },
             {
-                "text": "The patrol continues on as normal, but when p_l returns to the medicine cat den later that day, {PRONOUN/p_l/subject} {VERB/p_l/find/finds} something special waiting for {PRONOUN/p_l/object} in {PRONOUN/p_l/poss} nest.",
+                "text": "The patrol continues on as normal, but when p_l returns to the cleric den later that day, {PRONOUN/p_l/subject} {VERB/p_l/find/finds} something special waiting for {PRONOUN/p_l/object} in {PRONOUN/p_l/poss} nest.",
                 "exp": 20,
                 "weight": 20,
                 "stat_skill": ["HUNTER,1", "SENSE,2"],
@@ -3397,15 +3397,15 @@
         "min_cats": 2,
         "max_cats": 2,
         "min_max_status": {
-            "medicine cat": [2, 2]
+            "cleric": [2, 2]
         },
         "weight": 20,
-        "intro_text": "While out collecting herbs with p_l, r_c can't help but notice just how hard {PRONOUN/r_c/poss} fellow medicine cat is pushing {PRONOUN/p_l/self}.",
+        "intro_text": "While out collecting herbs with p_l, r_c can't help but notice just how hard {PRONOUN/r_c/poss} fellow cleric is pushing {PRONOUN/p_l/self}.",
         "decline_text": "{PRONOUN/r_c/subject/CAP} {VERB/r_c/decide/decides} to keep {PRONOUN/r_c/poss} thoughts to {PRONOUN/r_c/self}.",
         "chance_of_success": 60,
         "success_outcomes": [
             {
-                "text": "Without a single word, r_c drapes {PRONOUN/r_c/poss} tail over p_l's shoulders, letting out a comforting purr as the other medicine cat leans against {PRONOUN/r_c/object}.",
+                "text": "Without a single word, r_c drapes {PRONOUN/r_c/poss} tail over p_l's shoulders, letting out a comforting purr as the other cleric leans against {PRONOUN/r_c/object}.",
                 "exp": 20,
                 "weight": 20,
                 "herbs": ["random_herbs"],
@@ -3436,7 +3436,7 @@
                 ]
             },
             {
-                "text": "The patrol continues on as normal, but when p_l returns to the medicine cat den later that day, {PRONOUN/p_l/subject} {VERB/p_l/find/finds} something special waiting for {PRONOUN/p_l/object} in {PRONOUN/p_l/poss} nest.",
+                "text": "The patrol continues on as normal, but when p_l returns to the cleric den later that day, {PRONOUN/p_l/subject} {VERB/p_l/find/finds} something special waiting for {PRONOUN/p_l/object} in {PRONOUN/p_l/poss} nest.",
                 "exp": 20,
                 "weight": 20,
                 "stat_skill": ["HUNTER,1", "SENSE,2"],
@@ -3503,8 +3503,8 @@
         "max_cats": 2,
         "min_max_status": {
             "apprentice": [-1, -1],
-            "medicine cat apprentice": [-1, -1],
-            "medicine cat": [1, 1]
+            "cleric apprentice": [-1, -1],
+            "cleric": [1, 1]
         },
         "weight": 20,
         "intro_text": "While out collecting herbs with r_c, p_l can't help but notice just how hard {PRONOUN/p_l/poss} companion is pushing {PRONOUN/r_c/self}.",
@@ -3609,16 +3609,16 @@
         "min_cats": 2,
         "max_cats": 2,
         "min_max_status": {
-            "medicine cat apprentice": [1, 1],
-            "medicine cat": [1, 1]
+            "cleric apprentice": [1, 1],
+            "cleric": [1, 1]
         },
         "weight": 20,
-        "intro_text": "While out collecting herbs, p_l notices how quiet and dejected app1 is acting. After p_l asks {PRONOUN/app1/object} what's wrong, app1 admits {PRONOUN/app1/subject} {VERB/app1/do/does}n't feel cut out to be a medicine cat.",
+        "intro_text": "While out collecting herbs, p_l notices how quiet and dejected app1 is acting. After p_l asks {PRONOUN/app1/object} what's wrong, app1 admits {PRONOUN/app1/subject} {VERB/app1/do/does}n't feel cut out to be a cleric.",
 	    "decline_text": "Unsure of what to say, p_l continues the herb patrol as usual, leaving app1 to {PRONOUN/app1/poss} sour mood.",
         "chance_of_success": 60,
         "success_outcomes": [
             {
-                "text": "Smiling softly, s_c reassures app1 that {PRONOUN/s_c/subject} didn't feel ready to be a medicine cat, either, when {PRONOUN/s_c/subject} {VERB/s_c/were/was} an apprentice. s_c tells app1 a story from {PRONOUN/s_c/poss} own apprenticeship, when {PRONOUN/s_c/subject} accidentally swapped all the thyme for yarrow. Great StarClan was {PRONOUN/s_c/poss} mentor unhappy when all their patients started throwing up! Before long, app1 is laughing at s_c's own mishaps, {PRONOUN/app1/poss} own troubles forgotten.",
+                "text": "Smiling softly, s_c reassures app1 that {PRONOUN/s_c/subject} didn't feel ready to be a cleric, either, when {PRONOUN/s_c/subject} {VERB/s_c/were/was} an apprentice. s_c tells app1 a story from {PRONOUN/s_c/poss} own apprenticeship, when {PRONOUN/s_c/subject} accidentally swapped all the thyme for yarrow. Great StarClan was {PRONOUN/s_c/poss} mentor unhappy when all their patients started throwing up! Before long, app1 is laughing at s_c's own mishaps, {PRONOUN/app1/poss} own troubles forgotten.",
                 "exp": 20,
                 "weight": 20,
 		        "stat_trait": [
@@ -3688,7 +3688,7 @@
                 ]
             },
 			{
-				"text": "p_l reassures app1 that it's completely okay to feel unsure in the path {PRONOUN/app1/subject} chose. Being a medicine cat comes with so many ups and downs, it can be hard not to doubt yourself. Whatever choice app1 makes, p_l will support {PRONOUN/app1/object}. With glistening eyes, app1 huddles against {PRONOUN/app1/poss} mentor, thanking {PRONOUN/p_l/object} profusely for the support.",
+				"text": "p_l reassures app1 that it's completely okay to feel unsure in the path {PRONOUN/app1/subject} chose. Being a cleric comes with so many ups and downs, it can be hard not to doubt yourself. Whatever choice app1 makes, p_l will support {PRONOUN/app1/object}. With glistening eyes, app1 huddles against {PRONOUN/app1/poss} mentor, thanking {PRONOUN/p_l/object} profusely for the support.",
 				"exp": 20,
 				"weight": 20,
 				"herbs": ["random_herbs"],
@@ -3735,7 +3735,7 @@
                 ]
             },
             {
-                "text": "Fine, s_c tells app1. Medicine cats had to work hard to learn the skills they needed - if app1 didn't want to spend moons memorising herbs, trying {PRONOUN/app1/poss} best and making mistakes, then {PRONOUN/app1/subject} should go find an easier role. Walking away from app1, s_c is pleased to hear the apprentice eagerly bounding after {PRONOUN/s_c/object}.",
+                "text": "Fine, s_c tells app1. clerics had to work hard to learn the skills they needed - if app1 didn't want to spend moons memorising herbs, trying {PRONOUN/app1/poss} best and making mistakes, then {PRONOUN/app1/subject} should go find an easier role. Walking away from app1, s_c is pleased to hear the apprentice eagerly bounding after {PRONOUN/s_c/object}.",
                 "exp": 20,
                 "weight": 20,
                 "stat_trait": ["ambitious", "bold", "cold", "competitive", "cunning", "daring", "fierce", "grumpy", "strict", "strange", "sneaky", "lonesome"],
@@ -3759,7 +3759,7 @@
                 ]
             },
 	    {
-                "text": "Tail lashing, s_c snaps that {PRONOUN/s_c/subject} didn't train app1 just for them to give up. s_c had <i>chosen</i> app1 to be {PRONOUN/s_c/poss} apprentice, so app1 better pull {PRONOUN/app1/self} together and deal with it! Snapped out of {PRONOUN/app1/poss} gloom, app1 looks at {PRONOUN/app1/poss} intelligent, imposing mentor, and realises {PRONOUN/s_c/subject}{VERB/s_c/'re/'s} right - s_c wouldn't have chosen just anycat to be {PRONOUN/s_c/poss} apprentice. s_c knew app1 could be a great medicine cat, and now app1 realised it, too.",
+                "text": "Tail lashing, s_c snaps that {PRONOUN/s_c/subject} didn't train app1 just for them to give up. s_c had <i>chosen</i> app1 to be {PRONOUN/s_c/poss} apprentice, so app1 better pull {PRONOUN/app1/self} together and deal with it! Snapped out of {PRONOUN/app1/poss} gloom, app1 looks at {PRONOUN/app1/poss} intelligent, imposing mentor, and realises {PRONOUN/s_c/subject}{VERB/s_c/'re/'s} right - s_c wouldn't have chosen just anycat to be {PRONOUN/s_c/poss} apprentice. s_c knew app1 could be a great cleric, and now app1 realised it, too.",
                 "exp": 20,
                 "weight": 20,
                 "stat_trait": ["arrogant", "bloodthirsty", "confident", "gloomy", "vengeful", "sneaky"],
@@ -3836,7 +3836,7 @@
         "max_cats": 2,
         "min_max_status": {
             "normal adult": [1, 1],
-            "medicine cat": [1, 1]
+            "cleric": [1, 1]
         },
 	    "relationship_constraint": ["child/parent"],
         "weight": 40,
@@ -3909,7 +3909,7 @@
                 ]
             },
             {
-                "text": "Though s_c may not always understand the path of a medicine cat, {PRONOUN/s_c/subject} wants p_l to know that {PRONOUN/s_c/subject}{VERB/s_c/'re/'s} proud of {PRONOUN/p_l/object} anyway, and is glad p_l is happy in {PRONOUN/p_l/poss} role. Surprised - but appreciative - of the reassurance, p_l smiles and promises s_c that just because they walk different paths doesn't mean {PRONOUN/p_l/subject}'ll stop needing s_c.",
+                "text": "Though s_c may not always understand the path of a cleric, {PRONOUN/s_c/subject} wants p_l to know that {PRONOUN/s_c/subject}{VERB/s_c/'re/'s} proud of {PRONOUN/p_l/object} anyway, and is glad p_l is happy in {PRONOUN/p_l/poss} role. Surprised - but appreciative - of the reassurance, p_l smiles and promises s_c that just because they walk different paths doesn't mean {PRONOUN/p_l/subject}'ll stop needing s_c.",
                 "exp": 20,
                 "weight": 20,
                 "stat_trait": ["ambitious", "adventurous", "arrogant", "bloodthirsty", "bold", "daring", "confident", "cold", "cunning", "daring", "fierce", "oblivious", "shameless", "sneaky", "strict", "vengeful"],
@@ -4007,7 +4007,7 @@
         "max_cats": 2,
         "min_max_status": {
             "apprentice": [1, 1],
-            "medicine cat apprentice": [1, 1]
+            "cleric apprentice": [1, 1]
         },
         "weight": 20,
         "chance_of_success": 50,

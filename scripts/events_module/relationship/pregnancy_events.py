@@ -442,12 +442,12 @@ class Pregnancy_Events:
             possible_events = events["birth"]["death"]
             # just makin sure meds aren't mentioned if they aren't around or if they are a parent
             meds = get_alive_status_cats(
-                Cat, ["medicine cat", "medicine cat apprentice"], sort=True
+                Cat, ["cleric", "cleric apprentice"], sort=True
             )
             mate_is_med = [mate_id for mate_id in cat.mate if mate_id in meds]
             if not meds or cat in meds or len(mate_is_med) > 0:
                 for event in possible_events:
-                    if "medicine cat" in event:
+                    if "cleric" in event:
                         possible_events.remove(event)
 
             if cat.outside:
@@ -475,12 +475,12 @@ class Pregnancy_Events:
                 possible_events = events["birth"]["difficult_birth"]
                 # just makin sure meds aren't mentioned if they aren't around or if they are a parent
                 meds = get_alive_status_cats(
-                    Cat, ["medicine cat", "medicine cat apprentice"]
+                    Cat, ["cleric", "cleric apprentice"]
                 )
                 mate_is_med = [mate_id for mate_id in cat.mate if mate_id in meds]
                 if not meds or cat in meds or len(mate_is_med) > 0:
                     for event in possible_events:
-                        if "medicine cat" in event:
+                        if "cleric" in event:
                             possible_events.remove(event)
 
                 event_list.append(choice(possible_events))

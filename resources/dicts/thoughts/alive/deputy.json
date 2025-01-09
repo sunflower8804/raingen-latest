@@ -275,7 +275,7 @@
             "HEALER,1"
         ],
         "random_status_constraint": [
-            "medicine cat"
+            "cleric"
         ],
         "random_living_status": [
             "living"

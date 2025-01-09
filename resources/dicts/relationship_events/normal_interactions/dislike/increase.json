@@ -179,8 +179,8 @@
 			"warrior",
 			"mediator apprentice",
 			"mediator",
-			"medicine cat apprentice",
-			"medicine cat",
+			"cleric apprentice",
+			"cleric",
 			"deputy",
 			"leader"
 		],
@@ -246,8 +246,8 @@
 			"m_c claims to accidentally have given r_c the wrong herb."
 		],
 		"main_status_constraint": [
-			"medicine cat apprentice",
-			"medicine cat"
+			"cleric apprentice",
+			"cleric"
 		],
 		"reaction_random_cat": {
 			"dislike": "increase"
@@ -364,7 +364,7 @@
 			"m_c claims {PRONOUN/m_c/subject} spoke with StarClan and heard bad things about r_c."
 		],
 		"main_status_constraint": [
-			"medicine cat",
+			"cleric",
 			"deputy",
 			"leader"
 		],
@@ -437,7 +437,7 @@
 		"id": "dislike_kit_inc_med3",
 		"interactions": [
 			"m_c whines that r_c won't play with {PRONOUN/m_c/object}, even though {PRONOUN/r_c/subject}{VERB/r_c/'re/'s} always around camp.",
-			"m_c doesn't understand why r_c won't let {PRONOUN/m_c/object} play in the medicine cat den."
+			"m_c doesn't understand why r_c won't let {PRONOUN/m_c/object} play in the cleric den."
 		],
 		"main_status_constraint": [
 			"kitten"
@@ -445,7 +445,7 @@
 		"random_status_constraint": [
 			"elder",
 			"mediator apprentice",
-			"medicine cat apprentice"
+			"cleric apprentice"
 		]
 	}
 ]

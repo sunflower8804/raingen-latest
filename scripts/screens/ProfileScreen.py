@@ -681,7 +681,7 @@ class ProfileScreen(Screens):
             starting_height=2,
         )
         if not (self.the_cat.dead or self.the_cat.outside) and (
-            self.the_cat.status in ["medicine cat", "medicine cat apprentice"]
+            self.the_cat.status in ["cleric", "cleric apprentice"]
             or self.the_cat.is_ill()
             or self.the_cat.is_injured()
         ):
@@ -1376,7 +1376,7 @@ class ProfileScreen(Screens):
             influence_history = "This slugcat has not begun training."
         elif self.the_cat.status in [
             "apprentice",
-            "medicine cat apprentice",
+            "cleric apprentice",
             "mediator apprentice",
         ]:
             influence_history = "This slugcat has not finished training."
@@ -2203,7 +2203,7 @@ class ProfileScreen(Screens):
                 self.manage_roles.enable()
             if (
                 self.the_cat.status
-                not in ["apprentice", "medicine cat apprentice", "mediator apprentice"]
+                not in ["apprentice", "cleric apprentice", "mediator apprentice"]
                 or self.the_cat.dead
                 or self.the_cat.outside
             ):

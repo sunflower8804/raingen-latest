@@ -352,19 +352,19 @@ class PatrolOutcome:
             # First, the blanket requirements
             if "app" in self.can_have_stat and kitty.status not in [
                 "apprentice",
-                "medicine cat apprentice",
+                "cleric apprentice",
             ]:
                 continue
 
             if "adult" in self.can_have_stat and kitty.status in [
                 "apprentice",
-                "medicine cat apprentice",
+                "cleric apprentice",
             ]:
                 continue
 
             if "healer" in self.can_have_stat and kitty.status not in [
-                "medicine cat",
-                "medicine cat apprentice",
+                "cleric",
+                "cleric apprentice",
             ]:
                 continue
 
@@ -445,7 +445,7 @@ class PatrolOutcome:
 
         if gained_exp or app_exp:
             for cat in patrol.patrol_cats:
-                if cat.status in ["apprentice", "medicine cat apprentice"]:
+                if cat.status in ["apprentice", "cleric apprentice"]:
                     cat.experience = cat.experience + app_exp
                 else:
                     cat.experience = cat.experience + gained_exp

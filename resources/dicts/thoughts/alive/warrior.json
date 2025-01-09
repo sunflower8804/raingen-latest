@@ -61,7 +61,7 @@
             "Is helping to escort the cleric to gather herbs"
         ],
         "random_status_constraint": [
-            "medicine cat"
+            "cleric"
         ],
         "random_living_status": [
             "living"
@@ -228,8 +228,8 @@
             "Is asking the cleric for herbs that may help {PRONOUN/m_c/object} in battle"
         ],
         "random_status_constraint": [
-            "medicine cat",
-            "medicine cat apprentice"
+            "cleric",
+            "cleric apprentice"
         ],
         "main_trait_constraint": [
             "fierce"

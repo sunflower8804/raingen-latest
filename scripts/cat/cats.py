@@ -78,8 +78,8 @@ class Cat:
         "warrior",
         "mediator apprentice",
         "mediator",
-        "medicine cat apprentice",
-        "medicine cat",
+        "cleric apprentice",
+        "cleric",
         "deputy",
         "leader",
     ]
@@ -293,7 +293,7 @@ class Cat:
             elif status in [
                 "apprentice",
                 "mediator apprentice",
-                "medicine cat apprentice",
+                "cleric apprentice",
             ]:
                 self.age = "adolescent"
             else:
@@ -869,8 +869,8 @@ class Cat:
 
     def status_change(self, new_status, resort=False):
         """Changes the status of a cat. Additional functions are needed if you want to make a cat a leader or deputy.
-        new_status = The new status of a cat. Can be 'apprentice', 'medicine cat apprentice', 'warrior'
-                    'medicine cat', 'elder'.
+        new_status = The new status of a cat. Can be 'apprentice', 'cleric apprentice', 'warrior'
+                    'cleric', 'elder'.
         resort = If sorting type is 'rank', and resort is True, it will resort the cat list. This should
                 only be true for non-timeskip status changes."""
         old_status = self.status
@@ -884,14 +884,14 @@ class Cat:
                 fetched_cat.update_mentor()
 
         # If they have any apprentices, make sure they are still valid:
-        if old_status == "medicine cat":
+        if old_status == "cleric":
             game.clan.remove_med_cat(self)
 
         # updates mentors
         if self.status == "apprentice":
             pass
 
-        elif self.status == "medicine cat apprentice":
+        elif self.status == "cleric apprentice":
             pass
 
         elif self.status == "warrior":
@@ -904,7 +904,7 @@ class Cat:
                 game.clan.deputy = None
                 game.clan.deputy_predecessors += 1
 
-        elif self.status == "medicine cat":
+        elif self.status == "cleric":
             if game.clan is not None:
                 game.clan.new_medicine_cat(self)
 
@@ -937,7 +937,7 @@ class Cat:
     def rank_change_traits_skill(self, mentor):
         """Updates trait and skill upon ceremony"""
 
-        if self.status in ["warrior", "medicine cat", "mediator"]:
+        if self.status in ["warrior", "cleric", "mediator"]:
             # Give a couple doses of mentor influence:
             if mentor:
                 max_influence = randint(0, 2)
@@ -1537,7 +1537,7 @@ class Cat:
         if self.status in [
             "apprentice",
             "mediator apprentice",
-            "medicine cat apprentice",
+            "cleric apprentice",
         ]:
             self.update_mentor()
 
@@ -1991,7 +1991,7 @@ class Cat:
             avoided = False
             if (
                 "blood loss" in new_injury.also_got
-                and len(get_alive_status_cats(Cat, ["medicine cat"], working=True)) != 0
+                and len(get_alive_status_cats(Cat, ["cleric"], working=True)) != 0
             ):
                 clan_herbs = set()
                 needed_herbs = {"horsetail", "raspberry", "marigold", "cobwebs"}
@@ -2149,7 +2149,7 @@ class Cat:
         # Note that although you can un-retire cats, they will be a full warrior/med_cat/mediator
         if self.moons > 6 and self.status in [
             "apprentice",
-            "medicine cat apprentice",
+            "cleric apprentice",
             "mediator apprentice",
         ]:
             _ment = Cat.fetch_cat(self.mentor) if self.mentor else None
@@ -2289,8 +2289,8 @@ class Cat:
             return False
         # Match jobs
         if (
-            self.status == "medicine cat apprentice"
-            and potential_mentor.status != "medicine cat"
+            self.status == "cleric apprentice"
+            and potential_mentor.status != "cleric"
         ):
             return False
         if self.status == "apprentice" and potential_mentor.status not in [
@@ -2351,7 +2351,7 @@ class Cat:
             or self.outside
             or self.exiled
             or self.status
-            not in ["apprentice", "mediator apprentice", "medicine cat apprentice"]
+            not in ["apprentice", "mediator apprentice", "cleric apprentice"]
         )
         if illegible_for_mentor:
             self.__remove_mentor()

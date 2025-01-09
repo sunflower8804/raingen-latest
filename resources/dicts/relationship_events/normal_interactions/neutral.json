@@ -51,7 +51,7 @@
 			"m_c is checking on r_c."
 		],
 		"main_status_constraint": [
-			"medicine cat",
+			"cleric",
 			"deputy",
 			"leader"
 		],
@@ -59,7 +59,7 @@
 			"kitten",
 			"apprentice",
 			"mediator apprentice",
-			"medicine cat apprentice",
+			"cleric apprentice",
 			"warrior",
 			"mediator"
 		]

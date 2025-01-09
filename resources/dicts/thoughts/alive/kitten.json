@@ -114,8 +114,8 @@
             "Won't stay still while r_c tries to treat {PRONOUN/m_c/object}"
         ],
         "random_status_constraint": [
-            "medicine cat",
-            "medicine cat apprentice"
+            "cleric",
+            "cleric apprentice"
         ],
         "random_living_status": [
             "living"
@@ -215,10 +215,10 @@
         ],
         "random_status_constraint": [
             "apprentice",
-            "medicine cat apprentice",
+            "cleric apprentice",
             "mediator apprentice",
             "warrior",
-            "medicine cat",
+            "cleric",
             "mediator",
             "deputy",
             "leader",
@@ -757,7 +757,7 @@
             "Wonders if {PRONOUN/m_c/subject} should be a cleric like r_c"
         ],
         "random_status_constraint": [
-            "medicine cat"
+            "cleric"
         ],
         "relationship_constraint": [
             "child/parent"

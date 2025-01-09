@@ -176,8 +176,8 @@
             "Is watching c_n, ready to send an omen"
         ],
         "main_status_constraint": [
-            "medicine cat",
-            "medicine cat apprentice"
+            "cleric",
+            "cleric apprentice"
         ]
     },
     {
@@ -193,12 +193,12 @@
             "Led r_c to a hidden patch of herbs the Clan is running low on"
         ],
         "main_status_constraint": [
-            "medicine cat",
-            "medicine cat apprentice"
+            "cleric",
+            "cleric apprentice"
         ],
         "random_status_constraint": [
-            "medicine cat",
-            "medicine cat apprentice"
+            "cleric",
+            "cleric apprentice"
         ],
         "random_living_status": [
             "living"
@@ -210,8 +210,8 @@
             "Sends an omen of things to come to r_c"
         ],
         "main_status_constraint": [
-            "medicine cat",
-            "medicine cat apprentice"
+            "cleric",
+            "cleric apprentice"
         ],
         "random_living_status": [
             "living"
@@ -224,8 +224,8 @@
             "Is discussing Clan matters with r_c"
         ],
         "main_status_constraint": [
-            "medicine cat",
-            "medicine cat apprentice"
+            "cleric",
+            "cleric apprentice"
         ],
         "random_living_status": [
             "starclan"
@@ -238,8 +238,8 @@
             "Hums calming melodies to soothe r_c"
         ],
         "main_status_constraint": [
-            "medicine cat",
-            "medicine cat apprentice"
+            "cleric",
+            "cleric apprentice"
         ],
         "random_living_status": [
             "starclan"
@@ -372,7 +372,7 @@
         ],
         "main_status_constraint": [
             "apprentice",
-            "medicine cat apprentice",
+            "cleric apprentice",
             "mediator apprentice"
         ]
     },
@@ -385,7 +385,7 @@
         ],
         "main_status_constraint": [
             "apprentice",
-            "medicine cat apprentice",
+            "cleric apprentice",
             "mediator apprentice"
         ],
         "random_living_status": [
@@ -400,7 +400,7 @@
         ],
         "main_status_constraint": [
             "apprentice",
-            "medicine cat apprentice",
+            "cleric apprentice",
             "mediator apprentice"
         ],
         "relationship_constraint": [
@@ -411,7 +411,7 @@
         ],
         "random_status_constraint": [
             "apprentice",
-            "medicine cat apprentice",
+            "cleric apprentice",
             "mediator apprentice"
         ]
     },
@@ -422,7 +422,7 @@
         ],
         "main_status_constraint": [
             "apprentice",
-            "medicine cat apprentice",
+            "cleric apprentice",
             "mediator apprentice"
         ],
         "relationship_constraint": [
@@ -445,7 +445,7 @@
         "random_status_constraint": [
             "apprentice",
             "mediator apprentice",
-            "medicine cat apprentice"
+            "cleric apprentice"
         ],
         "random_living_status": [
             "living"

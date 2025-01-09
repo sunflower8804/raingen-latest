@@ -117,7 +117,7 @@ class Clan:
 
         self.med_cat_number = len(
             self.med_cat_list
-        )  # Must do this after the medicine cat is added to the list.
+        )  # Must do this after the cleric is added to the list.
         self.herbs = {}
         self.age = 0
         self.current_season = "Newleaf"
@@ -193,8 +193,8 @@ class Clan:
         if self.medicine_cat is not None:
             self.clan_cats.append(self.medicine_cat.ID)
             self.med_cat_list.append(self.medicine_cat.ID)
-            if self.medicine_cat.status != "medicine cat":
-                Cat.all_cats[self.medicine_cat.ID].status_change("medicine cat")
+            if self.medicine_cat.status != "cleric":
+                Cat.all_cats[self.medicine_cat.ID].status_change("cleric")
 
     def create_clan(self):
         """
@@ -207,9 +207,9 @@ class Clan:
                 [
                     "apprentice",
                     "mediator apprentice",
-                    "medicine cat apprentice",
+                    "cleric apprentice",
                     "warrior",
-                    "medicine cat",
+                    "cleric",
                     "leader",
                     "mediator",
                     "deputy",
@@ -424,8 +424,8 @@ class Clan:
         TODO: DOCS
         """
         if medicine_cat:
-            if medicine_cat.status != "medicine cat":
-                Cat.all_cats[medicine_cat.ID].status_change("medicine cat")
+            if medicine_cat.status != "cleric":
+                Cat.all_cats[medicine_cat.ID].status_change("cleric")
             if medicine_cat.ID not in self.med_cat_list:
                 self.med_cat_list.append(medicine_cat.ID)
             medicine_cat = self.med_cat_list[0]

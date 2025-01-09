@@ -36,7 +36,7 @@
         "random_status_constraint": [
             "apprentice",
             "mediator apprentice",
-            "medicine cat apprentice"
+            "cleric apprentice"
         ],
         "random_living_status": [
             "living"
@@ -74,7 +74,7 @@
             "Asks r_c how to tell the difference between a sprain and a dislocated joint"
         ],
         "random_status_constraint": [
-            "medicine cat"
+            "cleric"
         ],
         "random_living_status": [
             "living"
@@ -153,7 +153,7 @@
             "fierce"
         ],
         "random_status_constraint": [
-            "medicine cat"
+            "cleric"
         ],
         "random_living_status": [
             "living"
@@ -178,7 +178,7 @@
             "fierce"
         ],
         "random_status_constraint": [
-            "medicine cat"
+            "cleric"
         ],
         "main_trait_constraint": [
             "bloodthirsty",
@@ -205,7 +205,7 @@
             "sincere"
         ],
         "random_status_constraint": [
-            "medicine cat"
+            "cleric"
         ],
         "main_trait_constraint": [
             "bloodthirsty",
@@ -293,7 +293,7 @@
         "random_status_constraint": [
             "apprentice",
             "mediator apprentice",
-            "medicine cat apprentice"
+            "cleric apprentice"
         ],
         "random_living_status": [
             "starclan"

@@ -25,10 +25,10 @@ def medical_cats_condition_fulfilled(all_cats,
     
     medical_cats = [i for i in all_cats if not i.dead and not i.outside and not
                                             i.not_working() and i.status in 
-                                            ["medicine cat", 
-                                             "medicine cat apprentice"]]
-    full_med = [i for i in medical_cats if i.status == "medicine cat"]
-    apprentices = [i for i in medical_cats if i.status == "medicine cat apprentice"]
+                                            ["cleric", 
+                                             "cleric apprentice"]]
+    full_med = [i for i in medical_cats if i.status == "cleric"]
+    apprentices = [i for i in medical_cats if i.status == "cleric apprentice"]
     
     total_exp = 0
     for cat in medical_cats:
@@ -36,7 +36,7 @@ def medical_cats_condition_fulfilled(all_cats,
     total_exp = total_exp * 0.003
     
     # Determine the total med number. Med cats with certain skill counts 
-    # as "more" of a med cat.  Only full medicine cat can have their skills have effect
+    # as "more" of a med cat.  Only full cleric can have their skills have effect
     total_med_number = len(apprentices) / 2
     for cat in full_med:
         if cat.skills.meets_skill_requirement(SkillPath.HEALER, 3):

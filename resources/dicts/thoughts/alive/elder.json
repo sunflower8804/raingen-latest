@@ -782,7 +782,7 @@
             "sincere"
         ],
         "random_status_constraint": [
-            "medicine cat"
+            "cleric"
         ]
     },
     {
@@ -1170,7 +1170,7 @@
             "elder"
         ],
         "random_status_constraint": [
-            "medicine cat"
+            "cleric"
         ],
         "random_living_status": [
             "living"
@@ -1214,8 +1214,8 @@
             "elder"
         ],
         "random_status_constraint": [
-            "medicine cat apprentice",
-            "medicine cat"
+            "cleric apprentice",
+            "cleric"
         ],
         "random_living_status": [
             "living"
@@ -1322,8 +1322,8 @@
             "adolescent"
         ],
         "random_status_constraint": [
-            "medicine cat apprentice",
-            "medicine cat"
+            "cleric apprentice",
+            "cleric"
         ],
         "random_living_status": [
             "living"
@@ -1373,7 +1373,7 @@
         ],
         "random_status_constraint": [
             "apprentice",
-            "medicine cat apprentice",
+            "cleric apprentice",
             "mediator apprentice"
         ],
         "random_living_status": [
@@ -1397,8 +1397,8 @@
             "adolescent"
         ],
         "random_status_constraint": [
-            "medicine cat apprentice",
-            "medicine cat"
+            "cleric apprentice",
+            "cleric"
         ],
         "random_living_status": [
             "living"
@@ -1439,8 +1439,8 @@
             "elder"
         ],
         "random_status_constraint": [
-            "medicine cat apprentice",
-            "medicine cat"
+            "cleric apprentice",
+            "cleric"
         ],
         "random_living_status": [
             "living"
@@ -1487,7 +1487,7 @@
         ],
         "random_status_constraint": [
             "apprentice",
-            "medicine cat apprentice",
+            "cleric apprentice",
             "mediator apprentice"
         ]
     },
@@ -1537,7 +1537,7 @@
         ],
         "random_status_constraint": [
             "apprentice",
-            "medicine cat apprentice",
+            "cleric apprentice",
             "mediator apprentice"
         ]
     },
@@ -1843,8 +1843,8 @@
             "elder"
         ],
         "random_status_constraint": [
-            "medicine cat",
-            "medicine cat apprentice"
+            "cleric",
+            "cleric apprentice"
         ],
         "random_living_status": [
             "living"

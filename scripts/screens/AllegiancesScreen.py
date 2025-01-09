@@ -138,7 +138,7 @@ class AllegiancesScreen(Screens):
         living_kits = []
         living_elders = []
         for cat in living_cats:
-            if cat.status == "medicine cat":
+            if cat.status == "cleric":
                 living_meds.append(cat)
             elif cat.status == "warrior":
                 living_warriors.append(cat)
@@ -146,7 +146,7 @@ class AllegiancesScreen(Screens):
                 living_mediators.append(cat)
             elif cat.status in [
                 "apprentice",
-                "medicine cat apprentice",
+                "cleric apprentice",
                 "mediator apprentice",
             ]:
                 living_apprentices.append(cat)
@@ -182,13 +182,13 @@ class AllegiancesScreen(Screens):
                 ["<b><u>DEPUTY</u></b>", self.generate_one_entry(game.clan.deputy)]
             )
 
-        # Medicine Cat Box:
+        # cleric Box:
         if living_meds:
             _box = ["", ""]
             if len(living_meds) == 1:
-                _box[0] = "<b><u>MEDICINE CAT</u></b>"
+                _box[0] = "<b><u>cleric</u></b>"
             else:
-                _box[0] = "<b><u>MEDICINE CATS</u></b>"
+                _box[0] = "<b><u>clericS</u></b>"
 
             _box[1] = "\n".join([self.generate_one_entry(i) for i in living_meds])
             outputs.append(_box)

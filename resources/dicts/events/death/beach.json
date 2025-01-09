@@ -203,8 +203,8 @@
                 "deputy",
                 "mediator",
                 "mediator apprentice",
-                "medicine cat",
-                "medicine cat apprentice"
+                "cleric",
+                "cleric apprentice"
             ],
             "dies": true
         },

@@ -48,8 +48,8 @@
 		"random_status_constraint": [
 			"mediator apprentice",
 			"apprentice",
-			"medicine cat apprentice",
-			"medicine cat",
+			"cleric apprentice",
+			"cleric",
 			"warrior",
 			"mediator",
 			"deputy"
@@ -129,7 +129,7 @@
 		"main_status_constraint": [
 			"apprentice",
 			"mediator apprentice",
-			"medicine cat apprentice"
+			"cleric apprentice"
 		],
 		"random_status_constraint": [
 			"kitten"
@@ -142,10 +142,10 @@
 		"id": "jel_inc_high1",
 		"intensity": "high",
 		"interactions": [
-			"m_c is jealous that r_c gets to do cool super secret medicine cat things.",
+			"m_c is jealous that r_c gets to do cool super secret cleric things.",
 			"m_c wants to commune with StarClan like r_c does.",
-			"r_c refuses to tell m_c too much about {PRONOUN/r_c/poss} medicine cat training.",
-			"m_c feels like r_c's life is easier as a medicine cat apprentice.",
+			"r_c refuses to tell m_c too much about {PRONOUN/r_c/poss} cleric training.",
+			"m_c feels like r_c's life is easier as a cleric apprentice.",
 			"m_c tries to get free catmint from r_c, but gets snitched on instead.",
 			"m_c thinks r_c's training sounds way easier than what m_c does now.",
 			"m_c thinks it's unfair that r_c always gets to go to Gatherings."
@@ -155,7 +155,7 @@
 			"mediator apprentice"
 		],
 		"random_status_constraint": [
-			"medicine cat apprentice"
+			"cleric apprentice"
 		]
 	},
 	{
@@ -185,8 +185,8 @@
 		"main_status_constraint": [
 			"mediator apprentice",
 			"apprentice",
-			"medicine cat apprentice",
-			"medicine cat",
+			"cleric apprentice",
+			"cleric",
 			"warrior",
 			"mediator",
 			"deputy"

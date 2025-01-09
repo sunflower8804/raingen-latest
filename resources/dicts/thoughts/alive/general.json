@@ -102,10 +102,10 @@
         ],
         "main_status_constraint": [
             "apprentice",
-            "medicine cat apprentice",
+            "cleric apprentice",
             "mediator apprentice",
             "warrior",
-            "medicine cat",
+            "cleric",
             "mediator",
             "deputy",
             "leader",
@@ -141,7 +141,7 @@
             "Wishes {PRONOUN/m_c/subject} understood what r_c is doing"
         ],
         "random_status_constraint": [
-            "medicine cat"
+            "cleric"
         ]
     },
     {
@@ -156,7 +156,7 @@
             "Wishes {PRONOUN/m_c/subject} understood what r_c is doing"
         ],
         "random_status_constraint": [
-            "medicine cat apprentice"
+            "cleric apprentice"
         ]
     },
     {
@@ -178,10 +178,10 @@
         ],
         "main_status_constraint": [
             "apprentice",
-            "medicine cat apprentice",
+            "cleric apprentice",
             "mediator apprentice",
             "warrior",
-            "medicine cat",
+            "cleric",
             "mediator",
             "deputy",
             "leader",
@@ -212,10 +212,10 @@
         ],
         "main_status_constraint": [
             "apprentice",
-            "medicine cat apprentice",
+            "cleric apprentice",
             "mediator apprentice",
             "warrior",
-            "medicine cat",
+            "cleric",
             "mediator",
             "deputy",
             "leader",
@@ -244,10 +244,10 @@
         "main_status_constraint": [
             "kitten",
             "apprentice",
-            "medicine cat apprentice",
+            "cleric apprentice",
             "mediator apprentice",
             "warrior",
-            "medicine cat",
+            "cleric",
             "mediator",
             "deputy",
             "leader",
@@ -272,17 +272,17 @@
         "main_status_constraint": [
             "kitten",
             "apprentice",
-            "medicine cat apprentice",
+            "cleric apprentice",
             "mediator apprentice",
             "warrior",
-            "medicine cat",
+            "cleric",
             "mediator",
             "deputy",
             "leader",
             "elder"
         ],
         "random_status_constraint": [
-            "medicine cat apprentice"
+            "cleric apprentice"
         ],
         "random_living_status": [
             "living"
@@ -325,17 +325,17 @@
         "main_status_constraint": [
             "kitten",
             "apprentice",
-            "medicine cat apprentice",
+            "cleric apprentice",
             "mediator apprentice",
             "warrior",
-            "medicine cat",
+            "cleric",
             "mediator",
             "deputy",
             "leader",
             "elder"
         ],
         "random_status_constraint": [
-            "medicine cat"
+            "cleric"
         ],
         "random_living_status": [
             "living"
@@ -353,10 +353,10 @@
         ],
         "main_status_constraint": [
             "apprentice",
-            "medicine cat apprentice",
+            "cleric apprentice",
             "mediator apprentice",
             "warrior",
-            "medicine cat",
+            "cleric",
             "mediator",
             "deputy",
             "leader",
@@ -398,10 +398,10 @@
         "main_status_constraint": [
             "kitten",
             "apprentice",
-            "medicine cat apprentice",
+            "cleric apprentice",
             "mediator apprentice",
             "warrior",
-            "medicine cat",
+            "cleric",
             "mediator"
         ],
         "random_status_constraint": [
@@ -422,10 +422,10 @@
         ],
         "main_status_constraint": [
             "apprentice",
-            "medicine cat apprentice",
+            "cleric apprentice",
             "mediator apprentice",
             "warrior",
-            "medicine cat",
+            "cleric",
             "mediator",
             "deputy",
             "leader",
@@ -448,10 +448,10 @@
         "main_status_constraint": [
             "kitten",
             "apprentice",
-            "medicine cat apprentice",
+            "cleric apprentice",
             "mediator apprentice",
             "warrior",
-            "medicine cat",
+            "cleric",
             "mediator",
             "deputy",
             "leader",
@@ -515,7 +515,7 @@
             "any"
         ],
         "random_status_constraint": [
-            "medicine cat apprentice"
+            "cleric apprentice"
         ],
         "random_living_status": [
             "starclan"
@@ -567,7 +567,7 @@
             "any"
         ],
         "random_status_constraint": [
-            "medicine cat"
+            "cleric"
         ],
         "random_living_status": [
             "starclan"
@@ -844,8 +844,8 @@
             "bold"
         ],
         "random_status_constraint": [
-            "medicine cat",
-            "medicine cat apprentice"
+            "cleric",
+            "cleric apprentice"
         ],
         "random_living_status": [
             "living"
@@ -927,7 +927,7 @@
         ],
         "main_status_constraint": [
             "warrior",
-            "medicine cat",
+            "cleric",
             "mediator",
             "deputy",
             "leader",
@@ -954,8 +954,8 @@
             "careful"
         ],
         "random_status_constraint": [
-            "medicine cat",
-            "medicine cat apprentice"
+            "cleric",
+            "cleric apprentice"
         ],
         "random_living_status": [
             "living"
@@ -1013,7 +1013,7 @@
         "main_status_constraint": [
             "apprentice",
             "warrior",
-            "medicine cat",
+            "cleric",
             "mediator",
             "deputy",
             "leader",
@@ -1022,7 +1022,7 @@
         "random_status_constraint": [
             "kitten",
             "apprentice",
-            "medicine cat apprentice",
+            "cleric apprentice",
             "mediator apprentice"
         ],
         "random_living_status": [
@@ -1148,14 +1148,14 @@
         ],
         "main_status_constraint": [
             "warrior",
-            "medicine cat",
+            "cleric",
             "mediator",
             "deputy",
             "leader",
             "elder"],
         "random_status_constraint": [
             "apprentice",
-            "medicine cat apprentice",
+            "cleric apprentice",
             "mediator apprentice"
         ],
         "main_trait_constraint": [
@@ -1217,10 +1217,10 @@
         ],
         "main_status_constraint": [
             "apprentice",
-            "medicine cat apprentice",
+            "cleric apprentice",
             "mediator apprentice",
             "warrior",
-            "medicine cat",
+            "cleric",
             "mediator",
             "deputy",
             "leader"
@@ -1315,10 +1315,10 @@
         ],
         "main_status_constraint": [
             "apprentice",
-            "medicine cat apprentice",
+            "cleric apprentice",
             "mediator apprentice",
             "warrior",
-            "medicine cat",
+            "cleric",
             "mediator",
             "deputy",
             "leader" 
@@ -1598,8 +1598,8 @@
             "warrior",
             "mediator apprentice",
             "mediator",
-            "medicine cat",
-            "medicine cat apprentice",
+            "cleric",
+            "cleric apprentice",
             "deputy",
             "leader"
         ],
@@ -1644,7 +1644,7 @@
         ],
         "main_status_constraint": [
             "warrior",
-            "medicine cat",
+            "cleric",
             "mediator",
             "deputy",
             "leader",
@@ -1652,7 +1652,7 @@
         ],
         "random_status_constraint": [
             "apprentice",
-            "medicine cat apprentice",
+            "cleric apprentice",
             "mediator apprentice"
         ],
         "main_trait_constraint": [
@@ -1686,10 +1686,10 @@
         ],
         "main_status_constraint": [
             "apprentice",
-            "medicine cat apprentice",
+            "cleric apprentice",
             "mediator apprentice",
             "warrior",
-            "medicine cat",
+            "cleric",
             "mediator",
             "deputy",
             "leader"
@@ -1712,8 +1712,8 @@
         "main_status_constraint": [
             "apprentice",
             "warrior",
-            "medicine cat",
-            "medicine cat apprentice",
+            "cleric",
+            "cleric apprentice",
             "deputy",
             "leader"
         ],
@@ -1864,10 +1864,10 @@
         ],
         "main_status_constraint": [
             "apprentice",
-            "medicine cat apprentice",
+            "cleric apprentice",
             "mediator apprentice",
             "warrior",
-            "medicine cat",
+            "cleric",
             "mediator",
             "deputy",
             "elder"
@@ -1913,7 +1913,7 @@
         ],
         "main_status_constraint": [
             "warrior",
-            "medicine cat",
+            "cleric",
             "mediator",
             "deputy",
             "leader",
@@ -2149,7 +2149,7 @@
         ],
         "main_status_constraint": [
             "warrior",
-            "medicine cat",
+            "cleric",
             "mediator",
             "deputy",
             "leader",
@@ -2169,7 +2169,7 @@
         ],
         "main_status_constraint": [
             "warrior",
-            "medicine cat",
+            "cleric",
             "mediator",
             "deputy",
             "leader",
@@ -2201,7 +2201,7 @@
             "thoughtful"
         ],
         "random_status_constraint": [
-            "medicine cat"
+            "cleric"
         ],
         "random_living_status": [
             "living"
@@ -2239,8 +2239,8 @@
             "Is grumbling as {PRONOUN/m_c/subject} {VERB/m_c/carry/carries} out a task for the cleric"
         ],
         "random_status_constraint": [
-            "medicine cat",
-            "medicine cat apprentice"
+            "cleric",
+            "cleric apprentice"
         ],
         "main_trait_constraint": [
             "troublesome"
@@ -2256,7 +2256,7 @@
         ],
         "main_status_constraint": [
             "warrior",
-            "medicine cat",
+            "cleric",
             "mediator",
             "deputy",
             "leader",
@@ -2264,7 +2264,7 @@
         ],
         "random_status_constraint": [
             "apprentice",
-            "medicine cat apprentice",
+            "cleric apprentice",
             "mediator apprentice"
         ],
         "main_trait_constraint": [
@@ -2345,7 +2345,7 @@
         ],
         "random_status_constraint": [
             "apprentice",
-            "medicine cat apprentice",
+            "cleric apprentice",
             "mediator apprentice"
         ],
         "main_trait_constraint": [
@@ -2362,10 +2362,10 @@
         ],
         "main_status_constraint": [
             "apprentice",
-            "medicine cat apprentice",
+            "cleric apprentice",
             "mediator apprentice",
             "warrior",
-            "medicine cat",
+            "cleric",
             "mediator",
             "deputy",
             "leader"
@@ -2406,9 +2406,9 @@
         ],
         "main_status_constraint": [
             "apprentice",
-            "medicine cat apprentice",
+            "cleric apprentice",
             "warrior",
-            "medicine cat",
+            "cleric",
             "deputy",
             "leader",
             "elder"
@@ -2443,8 +2443,8 @@
             "STAR,1"
         ],
         "random_status_constraint": [
-            "medicine cat",
-            "medicine cat apprentice"
+            "cleric",
+            "cleric apprentice"
         ],
         "random_living_status": [
             "living"
@@ -2509,7 +2509,7 @@
             "Offers to help r_c with {PRONOUN/r_c/poss} patients"
         ],
         "random_status_constraint": [
-            "medicine cat"
+            "cleric"
         ],
         "random_living_status": [
             "living"
@@ -2547,10 +2547,10 @@
         ],
         "main_status_constraint": [
             "apprentice",
-            "medicine cat apprentice",
+            "cleric apprentice",
             "mediator apprentice",
             "warrior",
-            "medicine cat",
+            "cleric",
             "mediator",
             "deputy",
             "leader",
@@ -2558,10 +2558,10 @@
         ],
         "random_status_constraint": [
             "apprentice",
-            "medicine cat apprentice",
+            "cleric apprentice",
             "mediator apprentice",
             "warrior",
-            "medicine cat",
+            "cleric",
             "mediator",
             "deputy",
             "leader",
@@ -2597,10 +2597,10 @@
         ],
         "main_status_constraint": [
             "apprentice",
-            "medicine cat apprentice",
+            "cleric apprentice",
             "mediator apprentice",
             "warrior",
-            "medicine cat",
+            "cleric",
             "mediator",
             "deputy",
             "leader",
@@ -2615,10 +2615,10 @@
         ],
         "main_status_constraint": [
             "apprentice",
-            "medicine cat apprentice",
+            "cleric apprentice",
             "mediator apprentice",
             "warrior",
-            "medicine cat",
+            "cleric",
             "mediator",
             "deputy",
             "leader",
@@ -2635,10 +2635,10 @@
         ],
         "main_status_constraint": [
             "apprentice",
-            "medicine cat apprentice",
+            "cleric apprentice",
             "mediator apprentice",
             "warrior",
-            "medicine cat",
+            "cleric",
             "mediator",
             "deputy",
             "elder"
@@ -2659,10 +2659,10 @@
         ],
         "main_status_constraint": [
             "apprentice",
-            "medicine cat apprentice",
+            "cleric apprentice",
             "mediator apprentice",
             "warrior",
-            "medicine cat",
+            "cleric",
             "mediator",
             "deputy",
             "leader",
@@ -2682,10 +2682,10 @@
         ],
         "main_status_constraint": [
             "apprentice",
-            "medicine cat apprentice",
+            "cleric apprentice",
             "mediator apprentice",
             "warrior",
-            "medicine cat",
+            "cleric",
             "mediator",
             "deputy",
             "leader",
@@ -2706,10 +2706,10 @@
         ],
         "main_status_constraint": [
             "apprentice",
-            "medicine cat apprentice",
+            "cleric apprentice",
             "mediator apprentice",
             "warrior",
-            "medicine cat",
+            "cleric",
             "mediator",
             "deputy",
             "elder"
@@ -2778,7 +2778,7 @@
         ],
         "main_backstory_constraint": ["kittypet1", "kittypet2", "kittypet3", "kittypet4", "refugee3", "tragedy_survivor3", "guided1"],
         "main_status_constraint": [
-            "medicine cat"]
+            "cleric"]
     },
     {
         "id": "gen_former_kittypet_deputy",
@@ -2815,8 +2815,8 @@
             "Is visiting the nursery to give r_c a checkup"
         ],
         "main_status_constraint": [
-            "medicine cat",
-            "medicine cat apprentice"
+            "cleric",
+            "cleric apprentice"
         ],  
         "random_status_constraint": [
             "kitten"
@@ -2828,8 +2828,8 @@
             "Is checking up on the warriors"
         ],
         "main_status_constraint": [
-            "medicine cat",
-            "medicine cat apprentice"
+            "cleric",
+            "cleric apprentice"
         ],
         "random_status_constraint": [
             "warrior"
@@ -2862,7 +2862,7 @@
         "main_status_constraint": [
             "apprentice",
             "mediator apprentice",
-            "medicine cat apprentice"
+            "cleric apprentice"
         ]
     },
     {
@@ -2872,7 +2872,7 @@
         ],
         "main_status_constraint": [
             "apprentice",
-            "medicine cat apprentice",
+            "cleric apprentice",
             "mediator apprentice"
         ],
         "random_status_constraint":[
@@ -2897,7 +2897,7 @@
         "main_status_constraint": [
             "apprentice",
             "mediator apprentice",
-            "medicine cat apprentice"
+            "cleric apprentice"
         ],
         "relationship_constraint":[
             "app/mentor"
@@ -2910,7 +2910,7 @@
         ],
         "main_status_constraint": [
             "apprentice",
-            "medicine cat apprentice",
+            "cleric apprentice",
             "mediator apprentice"
         ],
         "random_status_constraint": [
@@ -2929,7 +2929,7 @@
         ],
         "main_status_constraint": [
             "apprentice",
-            "medicine cat apprentice",
+            "cleric apprentice",
             "mediator apprentice"
         ],
         "random_status_constraint": [
@@ -2949,7 +2949,7 @@
             "mediator apprentice"
         ],
         "random_status_constraint": [
-            "medicine cat"
+            "cleric"
         ]
     },
     {
@@ -2963,7 +2963,7 @@
             "mediator apprentice"
         ],
         "random_status_constraint": [
-            "medicine cat apprentice"
+            "cleric apprentice"
         ],
         "random_living_status": [
             "living"
@@ -2983,7 +2983,7 @@
         ],
         "main_status_constraint": [
             "apprentice",
-            "medicine cat apprentice",
+            "cleric apprentice",
             "mediator apprentice"
         ],
         "random_status_constraint": [
@@ -3001,7 +3001,7 @@
         ],
         "main_status_constraint": [
             "apprentice",
-            "medicine cat apprentice",
+            "cleric apprentice",
             "mediator apprentice"
         ],
         "random_status_constraint": [
@@ -3018,7 +3018,7 @@
         ],
         "main_status_constraint": [
             "apprentice",
-            "medicine cat apprentice",
+            "cleric apprentice",
             "mediator apprentice"
         ],
         "random_status_constraint": [
@@ -3039,8 +3039,8 @@
             "mediator apprentice"
         ],
         "random_status_constraint": [
-            "medicine cat",
-            "medicine cat apprentice"
+            "cleric",
+            "cleric apprentice"
         ],
         "random_living_status": [
             "starclan"
@@ -3054,11 +3054,11 @@
         "main_status_constraint": [
             "apprentice",
             "mediator apprentice",
-            "medicine cat apprentice"
+            "cleric apprentice"
         ],
         "random_status_constraint": [
             "apprentice",
-            "medicine cat apprentice",
+            "cleric apprentice",
             "mediator apprentice"
         ],
         "main_age_constraint": [
@@ -3089,7 +3089,7 @@
         "main_status_constraint": [
             "apprentice",
             "mediator apprentice",
-            "medicine cat apprentice"
+            "cleric apprentice"
         ],
         "random_status_constraint": [
             "kitten"
@@ -3110,7 +3110,7 @@
         "main_status_constraint": [
             "apprentice",
             "mediator apprentice",
-            "medicine cat apprentice"
+            "cleric apprentice"
         ],
         "main_backstory_constraint": ["rogue1", "rogue2", "rogue3", "refugee4", "tragedy_survivor2", "guided2"]
     },
@@ -3123,7 +3123,7 @@
         "main_status_constraint": [
             "apprentice",
             "mediator apprentice",
-            "medicine cat apprentice"
+            "cleric apprentice"
         ],
         "main_backstory_constraint": ["rogue1", "rogue2", "rogue3", "refugee4", "tragedy_survivor2", "guided2"],
         "relationship_constraint": [
@@ -3143,7 +3143,7 @@
         "main_status_constraint": [
             "apprentice",
             "mediator apprentice",
-            "medicine cat apprentice"
+            "cleric apprentice"
         ],
         "main_backstory_constraint": ["rogue1", "rogue2", "rogue3", "refugee4", "tragedy_survivor2", "guided2"],
         "random_status_constraint": [
@@ -3163,7 +3163,7 @@
         "main_status_constraint": [
             "apprentice",
             "mediator apprentice",
-            "medicine cat apprentice"
+            "cleric apprentice"
         ],
         "main_trait_constraint": [
             "troublesome"
@@ -3178,7 +3178,7 @@
         "main_status_constraint": [
             "apprentice",
             "mediator apprentice",
-            "medicine cat apprentice"
+            "cleric apprentice"
         ],
         "main_trait_constraint": [
             "vengeful"
@@ -3199,7 +3199,7 @@
         "main_status_constraint": [
             "apprentice",
             "mediator apprentice",
-            "medicine cat apprentice"
+            "cleric apprentice"
         ],
         "main_trait_constraint": [
             "wise"
@@ -3213,7 +3213,7 @@
         "main_status_constraint": [
             "apprentice",
             "mediator apprentice",
-            "medicine cat apprentice"
+            "cleric apprentice"
         ],
         "main_trait_constraint": [
             "shameless"
@@ -3229,7 +3229,7 @@
         "main_status_constraint": [
             "apprentice",
             "mediator apprentice",
-            "medicine cat apprentice"
+            "cleric apprentice"
         ],
         "main_trait_constraint": [
             "sneaky"
@@ -3245,7 +3245,7 @@
         "main_status_constraint": [
             "apprentice",
             "mediator apprentice",
-            "medicine cat apprentice"
+            "cleric apprentice"
         ],
         "main_trait_constraint": [
             "strange"
@@ -3260,7 +3260,7 @@
         "main_status_constraint": [
             "apprentice",
             "mediator apprentice",
-            "medicine cat apprentice"
+            "cleric apprentice"
         ],
         "main_trait_constraint": [
             "strict"
@@ -3276,7 +3276,7 @@
         "main_status_constraint": [
             "apprentice",
             "mediator apprentice",
-            "medicine cat apprentice"
+            "cleric apprentice"
         ],
         "main_trait_constraint": [
             "playful"
@@ -3291,7 +3291,7 @@
         "main_status_constraint": [
             "apprentice",
             "mediator apprentice",
-            "medicine cat apprentice"
+            "cleric apprentice"
         ],
         "main_trait_constraint": [
             "responsible"
@@ -3305,7 +3305,7 @@
         "main_status_constraint": [
             "apprentice",
             "mediator apprentice",
-            "medicine cat apprentice"
+            "cleric apprentice"
         ],
         "main_trait_constraint": [
             "righteous"
@@ -3321,7 +3321,7 @@
         "main_status_constraint": [
             "apprentice",
             "mediator apprentice",
-            "medicine cat apprentice"
+            "cleric apprentice"
         ],
         "main_trait_constraint": [
             "lonesome"
@@ -3335,14 +3335,14 @@
         "main_status_constraint": [
             "apprentice",
             "mediator apprentice",
-            "medicine cat apprentice"
+            "cleric apprentice"
         ],
         "main_trait_constraint": [
             "loving"
         ],
         "random_status_constraint":[
             "apprentice",
-            "medicine cat apprentice",
+            "cleric apprentice",
             "mediator apprentice"
         ]
     },
@@ -3355,7 +3355,7 @@
         "main_status_constraint": [
             "apprentice",
             "mediator apprentice",
-            "medicine cat apprentice"
+            "cleric apprentice"
         ],
         "main_trait_constraint": [
             "loyal"
@@ -3373,7 +3373,7 @@
         "main_status_constraint": [
             "apprentice",
             "mediator apprentice",
-            "medicine cat apprentice"
+            "cleric apprentice"
         ],
         "main_trait_constraint": [
             "nervous"
@@ -3389,7 +3389,7 @@
         "main_status_constraint": [
             "apprentice",
             "mediator apprentice",
-            "medicine cat apprentice"
+            "cleric apprentice"
         ],
         "main_trait_constraint": [
             "bold"
@@ -3403,11 +3403,11 @@
         "main_status_constraint": [
             "apprentice",
             "mediator apprentice",
-            "medicine cat apprentice"
+            "cleric apprentice"
         ],
         "random_status_constraint":[
             "apprentice",
-            "medicine cat apprentice",
+            "cleric apprentice",
             "mediator apprentice"
         ],
         "main_trait_constraint": [
@@ -3422,7 +3422,7 @@
         "main_status_constraint": [
             "apprentice",
             "mediator apprentice",
-            "medicine cat apprentice"
+            "cleric apprentice"
         ],
         "main_trait_constraint": [
             "careful"
@@ -3438,12 +3438,12 @@
         "main_status_constraint": [
             "apprentice",
             "mediator apprentice",
-            "medicine cat apprentice"
+            "cleric apprentice"
         ],
         "random_status_constraint": [
             "apprentice",
             "mediator apprentice",
-            "medicine cat apprentice"
+            "cleric apprentice"
         ],
         "main_trait_constraint": [
             "charismatic"
@@ -3457,12 +3457,12 @@
         "main_status_constraint": [
             "apprentice",
             "mediator apprentice",
-            "medicine cat apprentice"
+            "cleric apprentice"
         ],
         "random_status_constraint": [
             "apprentice",
             "mediator apprentice",
-            "medicine cat apprentice"
+            "cleric apprentice"
         ],
         "main_trait_constraint": [
             "childish"
@@ -3493,7 +3493,7 @@
         "main_status_constraint": [
             "apprentice",
             "mediator apprentice",
-            "medicine cat apprentice"
+            "cleric apprentice"
         ],
         "random_status_constraint": [
             "apprentice"
@@ -3512,7 +3512,7 @@
         "main_status_constraint": [
             "apprentice",
             "mediator apprentice",
-            "medicine cat apprentice"
+            "cleric apprentice"
         ],
         "main_trait_constraint": [
             "daring"
@@ -3528,7 +3528,7 @@
         "main_status_constraint": [
             "apprentice",
             "mediator apprentice",
-            "medicine cat apprentice"
+            "cleric apprentice"
         ],
         "main_trait_constraint": [
             "faithful"
@@ -3547,7 +3547,7 @@
         "main_status_constraint": [
             "apprentice",
             "mediator apprentice",
-            "medicine cat apprentice"
+            "cleric apprentice"
         ],
         "main_trait_constraint": [
             "insecure"
@@ -3560,7 +3560,7 @@
         ],
         "main_status_constraint": [
             "mediator apprentice",
-            "medicine cat apprentice"
+            "cleric apprentice"
         ],
         "main_trait_constraint": [
             "insecure"
@@ -3574,7 +3574,7 @@
         ],
         "main_status_constraint": [
             "apprentice",
-            "medicine cat apprentice"
+            "cleric apprentice"
         ],
         "main_trait_constraint": [
             "adventurous"
@@ -3595,7 +3595,7 @@
         "main_status_constraint": [
             "apprentice",
             "mediator apprentice",
-            "medicine cat apprentice"
+            "cleric apprentice"
         ],
         "main_trait_constraint": [
             "ambitious"
@@ -3610,7 +3610,7 @@
         "main_status_constraint": [
             "apprentice",
             "mediator apprentice",
-            "medicine cat apprentice"
+            "cleric apprentice"
         ],
         "main_trait_constraint": [
             "bloodthirsty"
@@ -3718,7 +3718,7 @@
         ],
         "random_status_constraint": [
             "apprentice",
-            "medicine cat apprentice",
+            "cleric apprentice",
             "mediator apprentice"
         ]
     },
@@ -3780,7 +3780,7 @@
         ],
         "random_status_constraint": [
             "apprentice",
-            "medicine cat apprentice",
+            "cleric apprentice",
             "mediator apprentice"
         ]
     },
@@ -3852,7 +3852,7 @@
         ],
         "random_status_constraint": [
             "apprentice",
-            "medicine cat apprentice",
+            "cleric apprentice",
             "mediator apprentice"
         ]
     },
@@ -3950,8 +3950,8 @@
             "adolescent"
         ],
         "random_status_constraint": [
-            "medicine cat apprentice",
-            "medicine cat"
+            "cleric apprentice",
+            "cleric"
         ]
     },
     {

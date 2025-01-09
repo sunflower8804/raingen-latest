@@ -740,7 +740,7 @@ class Condition_Events:
                     random_index = random.randrange(0, len(possible_string_list))
 
                     med_list = get_alive_status_cats(
-                        Cat, ["medicine cat", "medicine cat apprentice"], working=True
+                        Cat, ["cleric", "cleric apprentice"], working=True
                     )
                     # If the cat is a med cat, don't consider them as one for the event.
 
@@ -841,7 +841,7 @@ class Condition_Events:
                 random_index = int(random.random() * len(possible_string_list))
                 med_list = get_alive_status_cats(
                     Cat,
-                    ["medicine cat", "medicine cat apprentice"],
+                    ["cleric", "cleric apprentice"],
                     working=True,
                     sort=True,
                 )
@@ -853,14 +853,14 @@ class Condition_Events:
                     med_parent = False  # If they have a med parent, this will be flicked to True in the next couple lines.
                     if cat.parent1 in Cat.all_cats:
                         parent1_dead = Cat.all_cats[cat.parent1].dead
-                        if Cat.all_cats[cat.parent1].status == "medicine cat":
+                        if Cat.all_cats[cat.parent1].status == "cleric":
                             med_parent = True
                     else:
                         parent1_dead = True
 
                     if cat.parent2 in Cat.all_cats:
                         parent2_dead = Cat.all_cats[cat.parent2].dead
-                        if Cat.all_cats[cat.parent2].status == "medicine cat":
+                        if Cat.all_cats[cat.parent2].status == "cleric":
                             med_parent = True
                     else:
                         parent2_dead = True
@@ -925,10 +925,10 @@ class Condition_Events:
             and cat.status
             not in [
                 "leader",
-                "medicine cat",
+                "cleric",
                 "kitten",
                 "newborn",
-                "medicine cat apprentice",
+                "cleric apprentice",
                 "mediator",
                 "mediator apprentice",
                 "elder",
@@ -1097,7 +1097,7 @@ class Condition_Events:
                     random_index = int(random.random() * len(possible_string_list))
                     med_list = get_alive_status_cats(
                         Cat,
-                        ["medicine cat", "medicine cat apprentice"],
+                        ["cleric", "cleric apprentice"],
                         working=True,
                         sort=True,
                     )
