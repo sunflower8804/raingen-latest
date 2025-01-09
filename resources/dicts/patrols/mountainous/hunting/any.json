@@ -10,24 +10,24 @@
         "max_cats": 3,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "The patrol comes across a shrew.",
+        "intro_text": "The patrol comes across a hatchling lizard.",
         "decline_text": "The patrol decides to look for other prey.",
         "chance_of_success": 50,
         "success_outcomes": [
             {
-                "text": "r_c drops into a crouch and stalks towards the shrew. {PRONOUN/r_c/subject/CAP} {VERB/r_c/pounce/pounces} on it, swiftly killing it with a bite to the back of the head.",
+                "text": "r_c drops into a crouch and stalks towards the hatchling lizard. {PRONOUN/r_c/subject/CAP} {VERB/r_c/pounce/pounces} on it, swiftly killing it with a bite to the back of the head.",
                 "exp": 10,
                 "weight": 20,
                 "prey": ["small"]
             },
             {
-                "text": "r_c drops into a crouch and silently treads towards the shrew. At the last second, the shrew looks up, but r_c is quick to pounce and cut off its escape.",
+                "text": "r_c drops into a crouch and silently treads towards the hatchling lizard. At the last second, the hatchling lizard looks up, but r_c is quick to pounce and cut off its escape.",
                 "exp": 10,
                 "weight": 5,
                 "prey": ["small"]
             },
             {
-                "text": "s_c drops into a perfect hunting crouch and stalks the oblivious shrew until {PRONOUN/s_c/subject} {VERB/s_c/are/is} in striking distance. The shrew almost slips away, but s_c catches it with one paw and flings it towards {PRONOUN/s_c/poss} mouth for the killing bite.",
+                "text": "s_c drops into a perfect hunting crouch and stalks the oblivious hatchling lizard until {PRONOUN/s_c/subject} {VERB/s_c/are/is} in striking distance. The hatchling lizard almost slips away, but s_c catches it with one paw and flings it towards {PRONOUN/s_c/poss} mouth for the killing bite.",
                 "exp": 10,
                 "weight": 20,
                 "stat_skill": ["HUNTER,2"],
@@ -36,7 +36,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "The patrol narrowly misses the shrew.",
+                "text": "The patrol narrowly misses the hatchling lizard.",
                 "exp": 0,
                 "weight": 20,
                 "prey": ["very_small"]
@@ -71,7 +71,7 @@
                 "prey": ["medium"]
             },
             {
-                "text": "s_c leads them to some moose dung on the slopes - it's not clean, but it's extremely effective, and the patrol hunts well.",
+                "text": "s_c leads them to some rain deer dung on the slopes - it's not clean, but it's extremely effective, and the patrol hunts well.",
                 "exp": 20,
                 "weight": 20,
                 "stat_skill": ["CLEVER,2"],
@@ -120,7 +120,7 @@
                 "prey": ["medium"]
             },
             {
-                "text": "s_c finds some moose dung on the slopes - it's not clean, but it's extremely effective, and the hunt goes well.",
+                "text": "s_c finds some rain deer dung on the slopes - it's not clean, but it's extremely effective, and the hunt goes well.",
                 "exp": 20,
                 "weight": 20,
                 "stat_skill": ["CLEVER,2"],
@@ -189,6 +189,7 @@
                     "nervous",
                     "sneaky",
                     "strange",
+                    "patient",
                     "thoughtful",
                     "wise"
                 ],
@@ -204,7 +205,7 @@
                 "prey": ["very_small"]
             },
             {
-                "text": "s_c is too hasty, bouncing after first one prey, then another, and it ends with {PRONOUN/s_c/object} empty-pawed and exhausted. {PRONOUN/s_c/poss/CAP} mentor is disappointed - {PRONOUN/s_c/subject} clearly {VERB/s_c/need/needs} more training.",
+                "text": "s_c is too hasty, bouncing after first one prey, then another, and it ends with {PRONOUN/s_c/object} empty-pawed and exhausted. {PRONOUN/s_c/poss/CAP} mentor is disappointed - {PRONOUN/s_c/subject} clearly need more training.",
                 "exp": 0,
                 "weight": 20,
                 "stat_trait": [
@@ -220,7 +221,7 @@
                 "can_have_stat": ["app"]
             },
             {
-                "text": "During the hunt, r_c tumbles right down a steep slope while {PRONOUN/r_c/poss} attention is elsewhere. Bruised and sore, r_c has to report to the cleric den when {PRONOUN/r_c/subject} {VERB/r_c/return/returns} to camp.",
+                "text": "During the hunt, r_c tumbles right down a steep slope while {PRONOUN/r_c/poss} attention is elsewhere. Bruised and sore, r_c has to report to the medicine scug den when {PRONOUN/r_c/subject} {VERB/r_c/return/returns} to camp.",
                 "exp": 0,
                 "weight": 10,
                 "injury": [
@@ -251,19 +252,19 @@
         "chance_of_success": 30,
         "success_outcomes": [
             {
-                "text": "r_c heads off to one of {PRONOUN/r_c/poss} favorite spots in the mountains, a gully with stepped ridges running up and down its sides providing excellent ambush chances. And what do you know, {PRONOUN/r_c/subject} {VERB/r_c/are/is} bush! Or {PRONOUN/r_c/subject} {VERB/r_c/were/was} as far as that ground squirrel thought.",
+                "text": "r_c heads off to one of {PRONOUN/r_c/poss} favorite spots in the mountains, a gully with stepped ridges running up and down its sides providing excellent ambush chances. And what do you know, {PRONOUN/r_c/subject} {VERB/r_c/are/is} bush! Or {PRONOUN/r_c/subject} {VERB/r_c/were/was} as far as that lanternmouse thought.",
                 "exp": 20,
                 "weight": 20,
                 "prey": ["medium"]
             },
             {
-                "text": "r_c finds a fat, dumb, slow rabbit, and {PRONOUN/r_c/subject} can barely drag the thing back to camp, but great StarClan, it's juicy when {PRONOUN/r_c/subject} {VERB/r_c/sit/sits} down to eat it with {PRONOUN/r_c/poss} Clanmates.",
+                "text": "r_c finds a fat, dumb, slow eggbug, and {PRONOUN/r_c/subject} can barely drag the thing back to camp, but great Void, it's juicy when {PRONOUN/r_c/subject} {VERB/r_c/sit/sits} down to eat it with {PRONOUN/r_c/poss} Clanmates.",
                 "exp": 20,
                 "weight": 5,
                 "prey": ["medium"]
             },
             {
-                "text": "s_c gets the chance to try out an idea {PRONOUN/s_c/subject} {VERB/s_c/have/has} been sitting on for a while. There's a nest of pika that {PRONOUN/s_c/subject} {VERB/s_c/have/has} spotted that's particularly badly built, and {PRONOUN/s_c/subject} {VERB/s_c/dig/digs} down into one of the dens, fishing out small rodents by the pawful.",
+                "text": "s_c gets the chance to try out an idea {PRONOUN/s_c/subject} {VERB/s_c/have/has} been sitting on for a while. There's a hive of batflies that {PRONOUN/s_c/subject} {VERB/s_c/have/has} spotted that's particularly badly built, and {PRONOUN/s_c/subject} {VERB/s_c/dig/digs} down into one of the dens, fishing out batflies by the pawful.",
                 "exp": 20,
                 "weight": 20,
                 "stat_skill": ["CLEVER,1"],
@@ -282,6 +283,7 @@
                     "nervous",
                     "sneaky",
                     "strange",
+                    "patient",
                     "thoughtful",
                     "wise"
                 ],
@@ -320,19 +322,19 @@
         "chance_of_success": 30,
         "success_outcomes": [
             {
-                "text": "r_c heads off to one of {PRONOUN/r_c/poss} favorite spots in the mountains, a gully with stepped ridges running up and down its sides providing excellent ambush chances. And what do you know, {PRONOUN/r_c/subject} {VERB/r_c/are/is} bush! Or {PRONOUN/r_c/subject} {VERB/r_c/were/was} as far as that ground squirrel thought. {PRONOUN/r_c/subject/CAP} {VERB/r_c/snicker/snickers} to {PRONOUN/r_c/self} as {PRONOUN/r_c/subject} {VERB/r_c/pad/pads} back to camp.",
+                "text": "r_c heads off to one of their favorite spots in the mountains, a gully with stepped ridges running up and down its sides providing excellent ambush chances. And what do you know, {PRONOUN/r_c/subject} {VERB/r_c/are/is} bush! Or {PRONOUN/r_c/subject} {VERB/r_c/were/was} as far as that lanternmouse thought. They snicker to {PRONOUN/r_c/self} as {PRONOUN/r_c/subject} {VERB/r_c/pad/pads} back to camp.",
                 "exp": 20,
                 "weight": 20,
                 "prey": ["medium"]
             },
             {
-                "text": "r_c finds a fat, dumb, slow rabbit, and {PRONOUN/r_c/subject} can barely drag the thing back to camp, but great StarClan, it's juicy when {PRONOUN/r_c/subject} {VERB/r_c/sit/sits} down to eat it with {PRONOUN/r_c/poss} Clanmates. Purring, {PRONOUN/r_c/subject} {VERB/r_c/take/takes} the opportunity for a moment of peace, relaxing with {PRONOUN/r_c/poss} friends.",
+                "text": "r_c finds a fat, dumb, slow eggbug, and they can barely drag the thing back to camp, but great Void, it's juicy when {PRONOUN/r_c/subject} {VERB/r_c/sit/sits} down to eat it with {PRONOUN/r_c/poss} Clanmates. Purring, {PRONOUN/r_c/subject} {VERB/r_c/take/takes} the opportunity for a moment of peace, relaxing with {PRONOUN/r_c/poss} friends.",
                 "exp": 20,
                 "weight": 5,
                 "prey": ["medium"]
             },
             {
-                "text": "s_c gets the chance to try out an idea {PRONOUN/s_c/subject} {VERB/s_c/have/has} been sitting on for a while. There's a nest of pika that {PRONOUN/s_c/subject} {VERB/s_c/have/has} spotted that's particularly badly built, and {PRONOUN/s_c/subject} {VERB/s_c/dig/digs} down into one of the dens, fishing out small rodents by the pawful. This is a good spot to remember when c_n hits hard times in leaf-bare.",
+                "text": "s_c gets the chance to try out an idea {PRONOUN/s_c/subject} {VERB/s_c/have/has} been sitting on for a while. There's a hive of batflies that {PRONOUN/s_c/subject} {VERB/s_c/have/has} spotted that's particularly badly built, and {PRONOUN/s_c/subject} {VERB/s_c/dig/digs} down into one of the dens, fishing out batflies by the pawful. This is a good spot to remember when c_n hits hard times in leaf-bare.",
                 "exp": 20,
                 "weight": 20,
                 "stat_skill": ["CLEVER,1"],
@@ -351,6 +353,7 @@
                     "nervous",
                     "sneaky",
                     "strange",
+                    "patient",
                     "thoughtful",
                     "wise"
                 ],
@@ -389,19 +392,19 @@
         "chance_of_success": 30,
         "success_outcomes": [
             {
-                "text": "r_c heads off to one of {PRONOUN/r_c/poss} favorite spots in the mountains, a gully with stepped ridges running up and down its sides providing excellent ambush chances. And what do you know, {PRONOUN/r_c/subject} {VERB/r_c/are/is} bush! Or {PRONOUN/r_c/subject} {VERB/r_c/were/was} as far as that ground squirrel thought. {PRONOUN/r_c/subject/CAP} {VERB/r_c/snicker/snickers} to {PRONOUN/r_c/self} as {PRONOUN/r_c/subject} {VERB/r_c/pad/pads} back to camp.",
+                "text": "r_c heads off to one of their favorite spots in the mountains, a gully with stepped ridges running up and down its sides providing excellent ambush chances. And what do you know, {PRONOUN/r_c/subject} {VERB/r_c/are/is} bush! Or {PRONOUN/r_c/subject} {VERB/r_c/were/was} as far as that lanternmouse thought. They snicker to {PRONOUN/r_c/self} as {PRONOUN/r_c/subject} {VERB/r_c/pad/pads} back to camp.",
                 "exp": 20,
                 "weight": 20,
                 "prey": ["medium"]
             },
             {
-                "text": "r_c finds a fat, dumb, slow rabbit, and {PRONOUN/r_c/subject} can barely drag the thing back to camp, but great StarClan, it's juicy when {PRONOUN/r_c/subject} {VERB/r_c/sit/sits} down to eat it with {PRONOUN/r_c/poss} Clanmates. Purring, {PRONOUN/r_c/subject} {VERB/r_c/take/takes} the opportunity for a moment of peace, relaxing with {PRONOUN/r_c/poss} friends.",
+                "text": "r_c finds a fat, dumb, slow eggbug, and they can barely drag the thing back to camp, but great Void, it's juicy when {PRONOUN/r_c/subject} {VERB/r_c/sit/sits} down to eat it with {PRONOUN/r_c/poss} Clanmates. Purring, {PRONOUN/r_c/subject} {VERB/r_c/take/takes} the opportunity for a moment of peace, relaxing with {PRONOUN/r_c/poss} friends.",
                 "exp": 20,
                 "weight": 5,
                 "prey": ["medium"]
             },
             {
-                "text": "s_c gets the chance to try out an idea {PRONOUN/s_c/subject} {VERB/s_c/have/has} been sitting on for a while. There's a nest of pika that {PRONOUN/s_c/subject} {VERB/s_c/have/has} spotted that's particularly badly built, and {PRONOUN/s_c/subject} {VERB/s_c/dig/digs} down into one of the dens, fishing out small rodents by the pawful. This is a good spot to remember when c_n hits hard times in leaf-bare.",
+                "text": "s_c gets the chance to try out an idea {PRONOUN/s_c/subject} {VERB/s_c/have/has} been sitting on for a while. There's a hive of batflies that {PRONOUN/s_c/subject} {VERB/s_c/have/has} spotted that's particularly badly built, and {PRONOUN/s_c/subject} {VERB/s_c/dig/digs} down into one of the dens, fishing out batflies by the pawful. This is a good spot to remember when c_n hits hard times in leaf-bare.",
                 "exp": 20,
                 "weight": 20,
                 "stat_skill": ["CLEVER,1"],
@@ -420,6 +423,7 @@
                     "nervous",
                     "sneaky",
                     "strange",
+                    "patient",
                     "thoughtful",
                     "wise"
                 ],
@@ -462,7 +466,7 @@
                 "prey": ["medium"]
             },
             {
-                "text": "p_l pads towards the rock fall to check on the noise when a rabbit bursts out! s_c is quick to react and snags the rabbit before it can disappear.",
+                "text": "p_l pads towards the rock fall to check on the noise when a eggbug bursts out! s_c is quick to react and snags the eggbug before it can disappear.",
                 "exp": 10,
                 "weight": 20,
                 "stat_skill": ["HUNTER,1"],
@@ -471,20 +475,20 @@
         ],
         "fail_outcomes": [
             {
-                "text": "p_l pads towards the rock fall to check on the noise when a rabbit bursts out! None of the cats are quick enough to catch it, but at least the noise was nothing dangerous.",
+                "text": "p_l pads towards the rock fall to check on the noise when a eggbug bursts out! None of the slugcats are quick enough to catch it, but at least the noise was nothing dangerous.",
                 "exp": 0,
                 "weight": 20,
                 "prey": ["very_small"]
             },
             {
-                "text": "s_c doesn't even hesitate before splitting from the patrol to check on the source of the noise. {PRONOUN/s_c/subject/CAP} quickly {VERB/s_c/regret/regrets} {PRONOUN/s_c/poss} impulsivity, however, when an angry weasel bursts across the rocks, chattering loudly! s_c gets quite the scare, but thankfully the weasel only wanted to get away from {PRONOUN/s_c/object} and escapes back behind the rocks.",
+                "text": "s_c doesn't even hesitate before splitting from the patrol to check on the source of the noise. {PRONOUN/s_c/subject/CAP} quickly {VERB/s_c/regret/regrets} {PRONOUN/s_c/poss} impulsivity, however, when an angry young blue lizard bursts across the rocks, chattering loudly! s_c gets quite the scare, but thankfully the lizard only wanted to get away from {PRONOUN/s_c/object} and escapes back behind the rocks.",
                 "exp": 0,
                 "weight": 20,
                 "stat_trait": ["daring", "bold", "ambitious"],
                 "prey": ["very_small"]
             },
             {
-                "text": "r_c takes the lead in checking the source of the noise and comes face-to-face with an angry fox! Though {PRONOUN/r_c/subject} {VERB/r_c/backpedal/backpedals} rapidly, the fox still gets its teeth into {PRONOUN/r_c/object} before the rest of the patrol can back {PRONOUN/r_c/object} up.",
+                "text": "r_c takes the lead in checking the source of the noise and comes face to face with an angry blue lizard! Though {PRONOUN/r_c/subject} {VERB/r_c/backpedal/backpedals} rapidly, the blue lizard still gets its teeth into {PRONOUN/r_c/object} before the rest of the patrol can back {PRONOUN/r_c/object} up.",
                 "exp": 0,
                 "weight": 10,
                 "injury": [
@@ -494,7 +498,7 @@
                         "scars": ["NECKBITE"]
                     }
                 ],
-                "history_text": { "scar": "m_c gained a scar from a fox." },
+                "history_text": { "scar": "m_c gained a scar from a blue lizard." },
                 "prey": ["very_small"]
             }
         ]
@@ -521,7 +525,7 @@
                 "prey": ["medium"]
             },
             {
-                "text": "p_l pads towards the rock fall to check on the noise when a rabbit bursts out!  s_c is quick to react and snags the rabbit before it can disappear.",
+                "text": "p_l pads towards the rock fall to check on the noise when a eggbug bursts out!  s_c is quick to react and snags the eggbug before it can disappear.",
                 "exp": 10,
                 "weight": 20,
                 "stat_skill": ["HUNTER,1"],
@@ -530,7 +534,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "p_l pads towards the rock fall to check on the noise when a rabbit bursts out! None of the cats are quick enough to catch it, but at least the noise was nothing dangerous.",
+                "text": "p_l pads towards the rock fall to check on the noise when a eggbug bursts out! None of the slugcats are quick enough to catch it, but at least the noise was nothing dangerous.",
                 "exp": 0,
                 "weight": 20
             },
@@ -541,18 +545,18 @@
                 "stat_trait": ["daring", "bold", "ambitious"]
             },
             {
-                "text": "r_c takes the lead in checking the source of the noise and comes face-to-face with a snarling wolverine! r_c yowls for {PRONOUN/r_c/poss} patrol but the other cats aren't quick enough to stop the wolverine from killing r_c in one quick and deadly swipe.",
+                "text": "r_c takes the lead in checking the source of the noise and comes face to face with a snarling black lizard! r_c yowls for {PRONOUN/r_c/poss} patrol but the other slugcats aren't quick enough to stop the black lizard from killing r_c in one quick and deadly swipe.",
                 "exp": 0,
                 "weight": 10,
                 "dead_cats": ["r_c"],
                 "history_text": {
-                    "scar": "m_c gained a scar from a fox.",
-                    "reg_death": "m_c was killed by a wolverine.",
-                    "lead_death": "{VERB/m_c/were/was} killed by a wolverine"
+                    "scar": "m_c gained a scar from a black lizard.",
+                    "reg_death": "m_c was killed by a black lizard.",
+                    "lead_death": "{VERB/m_c/were/was} killed by a black lizard"
                 }
             },
             {
-                "text": "r_c takes the lead in checking the source of the noise and comes face-to-face with an angry fox! Though {PRONOUN/r_c/subject} {VERB/r_c/backpedal/backpedals} rapidly, the fox still gets its teeth into {PRONOUN/r_c/object} before the rest of the patrol can back {PRONOUN/r_c/object} up.",
+                "text": "r_c takes the lead in checking the source of the noise and comes face to face with an angry blue lizard! Though {PRONOUN/r_c/subject} {VERB/r_c/backpedal/backpedals} rapidly, the blue lizard still gets its teeth into {PRONOUN/r_c/object} before the rest of the patrol can back {PRONOUN/r_c/object} up.",
                 "exp": 0,
                 "weight": 10,
                 "injury": [
@@ -563,9 +567,9 @@
                     }
                 ],
                 "history_text": {
-                    "scar": "m_c gained a scar from a fox.",
-                    "reg_death": "m_c was killed by a fox.",
-                    "lead_death": "{VERB/m_c/were/was} killed by a fox"
+                    "scar": "m_c gained a scar from a blue lizard.",
+                    "reg_death": "m_c was killed by a blue lizard.",
+                    "lead_death": "{VERB/m_c/were/was} killed by a blue lizard"
                 }
             }
         ]
@@ -581,8 +585,8 @@
         "max_cats": 1,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "As r_c is checking the border lines, {PRONOUN/r_c/subject} {VERB/r_c/hear/hears} an odd sound coming from just beyond a rock fall.",
-        "decline_text": "It's probably nothing. {PRONOUN/r_c/subject/CAP} {VERB/r_c/leave/leaves} the noise alone and {VERB/r_c/continue/continues} searching for prey.",
+        "intro_text": "As the patrol is checking the border lines, they hear an odd sound coming from just beyond a rock fall.",
+        "decline_text": "It's probably nothing. They leave the noise alone and continue searching for prey.",
         "chance_of_success": 40,
         "success_outcomes": [
             {
@@ -592,7 +596,7 @@
                 "prey": ["medium"]
             },
             {
-                "text": "s_c pads towards the grass to check on the noise when a rabbit bursts out! s_c is quick to react and snags the rabbit before it can disappear.",
+                "text": "s_c pads towards the grass to check on the noise when a eggbug bursts out! s_c is quick to react and snags the eggbug before it can disappear.",
                 "exp": 10,
                 "weight": 20,
                 "stat_skill": ["HUNTER,1"],
@@ -601,7 +605,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "p_l pads towards the rock fall to check on the noise when a rabbit bursts out! {PRONOUN/r_c/subject/CAP} {VERB/r_c/aren't/isn't} quick enough to catch it, but at least the noise was nothing dangerous.",
+                "text": "p_l pads towards the rock fall to check on the noise when a eggbug bursts out! They aren't quick enough to catch it, but at least the noise was nothing dangerous.",
                 "exp": 0,
                 "weight": 20
             },
@@ -612,18 +616,18 @@
                 "stat_trait": ["daring", "bold", "ambitious"]
             },
             {
-                "text": "r_c takes the lead in checking the source of the noise and comes face-to-face with a snarling wolverine! r_c yowls for help, but {PRONOUN/r_c/subject} {VERB/r_c/are/is} alone on this patrol and {PRONOUN/r_c/subject} {VERB/r_c/have/has} the sudden realization that no one can help {PRONOUN/r_c/object} now.  The wolverine kills the lone cat with little trouble.",
+                "text": "r_c takes the lead in checking the source of the noise and comes face to face with a snarling black lizard! r_c yowls for help, but {PRONOUN/r_c/subject} {VERB/r_c/are/is} alone on this patrol and {PRONOUN/r_c/subject} {VERB/r_c/have/has} the sudden realization that no one can help {PRONOUN/r_c/object} now.  The black lizard kills the lone slugcat with little trouble.",
                 "exp": 0,
                 "weight": 10,
                 "dead_cats": ["r_c"],
                 "history_text": {
-                    "scar": "m_c gained a scar from a wolverine.",
-                    "reg_death": "m_c was killed by a wolverine while patrolling alone.",
+                    "scar": "m_c gained a scar from a black lizard.",
+                    "reg_death": "m_c was killed by a black lizard while patrolling alone.",
                     "lead_death": "{VERB/m_c/were/was} killed by a predator while patrolling alone"
                 }
             },
             {
-                "text": "r_c heads toward the source of the noise and comes face-to-face with an angry fox! Though {PRONOUN/r_c/subject} {VERB/r_c/backpedal/backpedals} rapidly, the fox still gets its teeth into {PRONOUN/r_c/object} before {PRONOUN/r_c/subject} can sprint away.",
+                "text": "r_c heads toward the source of the noise and comes face to face with an angry blue lizard! Though {PRONOUN/r_c/subject} {VERB/r_c/backpedal/backpedals} rapidly, the blue lizard still gets its teeth into {PRONOUN/r_c/object} before {PRONOUN/r_c/subject} can sprint away.",
                 "exp": 0,
                 "weight": 10,
                 "injury": [
@@ -634,8 +638,8 @@
                     }
                 ],
                 "history_text": {
-                    "scar": "m_c gained a scar from a fox.",
-                    "reg_death": "m_c was killed by a fox while patrolling alone.",
+                    "scar": "m_c gained a scar from a blue lizard.",
+                    "reg_death": "m_c was killed by a blue lizard while patrolling alone.",
                     "lead_death": "{VERB/m_c/were/was} killed by a predator while patrolling alone"
                 }
             }
@@ -654,29 +658,29 @@
             "leader": [-1, -1]
         },
         "weight": 20,
-        "intro_text": "r_c encounters a swarm of Twolegs, gathered at the foot of the mountain.",
+        "intro_text": "r_c encounters a swarm of scavengers, gathered at the foot of the mountain.",
         "decline_text": "The patrol decides to hunt elsewhere.",
         "chance_of_success": 60,
         "success_outcomes": [
             {
-                "text": "r_c immediately turns and heads for home to report this to {PRONOUN/r_c/poss} leader, alarmed by the sudden presence of Twolegs in their territory.",
+                "text": "r_c immediately turns and heads for home to report this to {PRONOUN/r_c/poss} leader, alarmed by the sudden presence of scavengers in their territory.",
                 "exp": 20,
                 "weight": 20
             },
             {
-                "text": "Slyly, r_c uses the unusual presence of the weird Twoleg to help {PRONOUN/r_c/poss} hunt, hiding on the outskirts of the area and waiting for the Twolegs to flush prey towards {PRONOUN/r_c/object}. It works, and {PRONOUN/r_c/subject} {VERB/r_c/leave/leaves} the Twolegs to their business.",
+                "text": "Slyly, r_c uses the unusual presence of the weird scavenger to help {PRONOUN/r_c/poss} hunt, hiding on the outskirts of the area and waiting for the scavengers to flush prey towards {PRONOUN/r_c/object}. It works, and {PRONOUN/r_c/subject} {VERB/r_c/leave/leaves} the scavengers to their business.",
                 "exp": 20,
                 "weight": 5,
                 "prey": ["medium"]
             },
             {
-                "text": "s_c spots the Twolegs unloading metal boxes from their monsters, and recognizes that it can't be anything good, leaving immediately.",
+                "text": "s_c spots the scavengers unloading metal boxes from their monsters, and recognizes that it can't be anything good, leaving immediately.",
                 "exp": 20,
                 "weight": 20,
                 "stat_skill": ["CLEVER,3"]
             },
             {
-                "text": "s_c spits in the Twolegs' direction and decides to pick a different place to hunt.",
+                "text": "s_c spits in the scavengers' direction and decides to pick a different place to hunt.",
                 "exp": 20,
                 "weight": 20,
                 "stat_trait": [
@@ -694,19 +698,21 @@
         ],
         "fail_outcomes": [
             {
-                "text": "r_c mostly ignores the Twolegs as {PRONOUN/r_c/subject} {VERB/r_c/hunt/hunts}, crawling into a metal box to follow the scent of food. But when {PRONOUN/r_c/subject} {VERB/r_c/try/tries} to back up, the way is blocked, and there's nothing {PRONOUN/r_c/subject} can do - eventually the Twolegs notice, and r_c is taken by them.",
+                "text": "r_c mostly ignores the scavengers as {PRONOUN/r_c/subject} {VERB/r_c/hunt/hunts}, crawling into a metal box to follow the scent of food. But when {PRONOUN/r_c/subject} {VERB/r_c/try/tries} to back up, the way is blocked, and there's nothing {PRONOUN/r_c/subject} can do - eventually the scavengers notice, and r_c is taken by them.",
                 "exp": 0,
                 "weight": 10,
                 "lost_cats": ["r_c"]
             },
             {
-                "text": "s_c has heard terrible things about Twolegs, but {PRONOUN/s_c/subject} still {VERB/s_c/creep/creeps} closer when one falls and starts yowling with pain. It's a mistake, and a trap snaps shut around {PRONOUN/s_c/object}. {PRONOUN/s_c/subject/CAP} {VERB/s_c/are/is} taken out of the mountains with the injured Twoleg.",
+                "text": "s_c has heard terrible things about scavengers, but {PRONOUN/s_c/subject} still {VERB/s_c/creep/creeps} closer when one falls and starts yowling with pain. It's a mistake, and a trap snaps shut around {PRONOUN/s_c/object}. {PRONOUN/s_c/subject/CAP} {VERB/s_c/are/is} taken out of the mountains with the injured scavenger.",
                 "exp": 0,
                 "weight": 10,
                 "stat_trait": [
                     "compassionate",
+                    "empathetic",
                     "faithful",
                     "loving",
+                    "patient",
                     "responsible",
                     "thoughtful",
                     "wise"
@@ -728,31 +734,31 @@
             "leader": [-1, -1]
         },
         "weight": 20,
-        "intro_text": "The patrol encounters a swarm of Twolegs, gathered at the foot of the mountain.",
+        "intro_text": "The patrol encounters a swarm of scavengers, gathered at the foot of the mountain.",
         "decline_text": "The patrol decides to hunt elsewhere.",
         "chance_of_success": 60,
         "success_outcomes": [
             {
-                "text": "The patrol immediately turns and heads for home to report this to their leader, alarmed by the sudden presence of Twolegs in their territory.",
+                "text": "The patrol immediately turns and heads for home to report this to their leader, alarmed by the sudden presence of scavengers in their territory.",
                 "exp": 20,
                 "weight": 20,
                 "prey": ["medium"]
             },
             {
-                "text": "Slyly, the cats use the unusual presence of the weird Twolegs to help their hunt, hiding on the outskirts of the area and waiting for the Twolegs to flush prey towards them. It works, and they leave the Twolegs to their business.",
+                "text": "Slyly, the slugcats use the unusual presence of the weird scavengers to help their hunt, hiding on the outskirts of the area and waiting for the scavengers to flush prey towards them. It works, and they leave the scavengers to their business.",
                 "exp": 20,
                 "weight": 5,
                 "prey": ["medium"]
             },
             {
-                "text": "s_c spots the Twolegs unloading metal boxes from their monsters, and abruptly tells the patrol they need to leave. Now.",
+                "text": "s_c spots the scavengers unloading metal boxes from their monsters, and abruptly tells the patrol they need to leave. Now.",
                 "exp": 20,
                 "weight": 20,
                 "stat_skill": ["CLEVER,3"],
                 "prey": ["medium"]
             },
             {
-                "text": "s_c stops anyone from going near the Twolegs, repeating that true warriors have nothing to do with Twolegs and their monsters, and the patrol leaves back up the mountain.",
+                "text": "s_c stops anyone from going near the scavengers, repeating that true warriors have nothing to do with scavengers and their monsters, and the patrol leaves back up the mountain.",
                 "exp": 20,
                 "weight": 20,
                 "stat_trait": [
@@ -770,19 +776,21 @@
         ],
         "fail_outcomes": [
             {
-                "text": "r_c mostly ignores the Twolegs as {PRONOUN/r_c/subject} {VERB/r_c/hunt/hunts}, crawling into a metal box to follow the scent of food. But when {PRONOUN/r_c/subject} {VERB/r_c/try/tries} to back up, the way is blocked, and there's nothing {PRONOUN/r_c/subject} or the patrol can do - eventually the Twolegs notice, and r_c is taken by them.",
+                "text": "r_c mostly ignores the scavengers as {PRONOUN/r_c/subject} {VERB/r_c/hunt/hunts}, crawling into a metal box to follow the scent of food. But when {PRONOUN/r_c/subject} {VERB/r_c/try/tries} to back up, the way is blocked, and there's nothing {PRONOUN/r_c/subject} or the patrol can do - eventually the scavengers notice, and r_c is taken by them.",
                 "exp": 0,
                 "weight": 10,
                 "lost_cats": ["r_c"]
             },
             {
-                "text": "s_c has heard terrible things about Twolegs, but {PRONOUN/s_c/subject} still {VERB/s_c/creep/creeps} closer when one falls and starts yowling with pain. It's a mistake, and a trap snaps shut around {PRONOUN/s_c/object}. {PRONOUN/s_c/subject/CAP} {VERB/s_c/are/is} taken out of the mountains with the injured Twoleg.",
+                "text": "s_c has heard terrible things about scavengers, but {PRONOUN/s_c/subject} still {VERB/s_c/creep/creeps} closer when one falls and starts yowling with pain. It's a mistake, and a trap snaps shut around {PRONOUN/s_c/object}. {PRONOUN/s_c/subject/CAP} {VERB/s_c/are/is} taken out of the mountains with the injured scavenger.",
                 "exp": 0,
                 "weight": 10,
                 "stat_trait": [
                     "compassionate",
+                    "empathetic",
                     "faithful",
                     "loving",
+                    "patient",
                     "responsible",
                     "thoughtful",
                     "wise"
@@ -804,31 +812,31 @@
             "leader": [-1, -1]
         },
         "weight": 20,
-        "intro_text": "The patrol encounters a swarm of Twolegs, gathered at the foot of the mountain.",
+        "intro_text": "The patrol encounters a swarm of scavengers, gathered at the foot of the mountain.",
         "decline_text": "The patrol decides to hunt elsewhere.",
         "chance_of_success": 40,
         "success_outcomes": [
             {
-                "text": "The patrol immediately turns and heads for home to report this to their leader, alarmed by the sudden presence of Twolegs in their territory.",
+                "text": "The patrol immediately turns and heads for home to report this to their leader, alarmed by the sudden presence of scavengers in their territory.",
                 "exp": 20,
                 "weight": 20,
                 "prey": ["large"]
             },
             {
-                "text": "Slyly, the cats use the unusual presence of the weird Twolegs to help their hunt, hiding on the outskirts of the area and waiting for the Twolegs to flush prey towards them. It is a huge success! They leave the Twolegs about their business, more focused on the food.",
+                "text": "Slyly, the slugcats use the unusual presence of the weird scavengers to help their hunt, hiding on the outskirts of the area and waiting for the scavengers to flush prey towards them. It is a huge success! They leave the scavengers about their business, more focused on the food.",
                 "exp": 20,
                 "weight": 5,
                 "prey": ["large"]
             },
             {
-                "text": "s_c spots the Twolegs unloading metal boxes from their monsters, and abruptly tells the patrol they need to leave. Now.",
+                "text": "s_c spots the scavengers unloading metal boxes from their backs, and abruptly tells the patrol they need to leave. Now.",
                 "exp": 20,
                 "weight": 20,
                 "stat_skill": ["CLEVER,3"],
                 "prey": ["large"]
             },
             {
-                "text": "s_c stops anyone from going near the Twolegs, repeating that true warriors have nothing to do with Twolegs and their monsters, and the patrol leaves back up the mountain.",
+                "text": "s_c stops anyone from going near the scavengers, repeating that true warriors have nothing to do with scavengers and their markers, and the patrol leaves back up the mountain.",
                 "exp": 20,
                 "weight": 20,
                 "stat_trait": [
@@ -846,19 +854,21 @@
         ],
         "fail_outcomes": [
             {
-                "text": "r_c mostly ignores the Twolegs as {PRONOUN/r_c/subject} {VERB/r_c/hunt/hunts}, crawling into a metal box to follow the scent of food. But when {PRONOUN/r_c/subject} {VERB/r_c/try/tries} to back up, the way is blocked, and there's nothing {PRONOUN/r_c/subject} or the patrol can do - eventually the Twolegs notice, and r_c is taken by them.",
+                "text": "r_c mostly ignores the scavengers as {PRONOUN/r_c/subject} {VERB/r_c/hunt/hunts}, crawling into a metal box to follow the scent of food. But when {PRONOUN/r_c/subject} {VERB/r_c/try/tries} to back up, the way is blocked, and there's nothing {PRONOUN/r_c/subject} or the patrol can do - eventually the scavengers notice, and r_c is taken by them.",
                 "exp": 0,
                 "weight": 10,
                 "lost_cats": ["r_c"]
             },
             {
-                "text": "s_c has heard terrible things about Twolegs, but {PRONOUN/s_c/subject} still {VERB/s_c/creep/creeps} closer when one falls and starts yowling with pain. It's a mistake, and a trap snaps shut around {PRONOUN/s_c/object}. {PRONOUN/s_c/subject/CAP} {VERB/s_c/are/is} taken out of the mountains with the injured Twoleg.",
+                "text": "s_c has heard terrible things about the scavengers, but {PRONOUN/s_c/subject} still {VERB/s_c/creep/creeps} closer when one falls and starts yowling with pain. It's a mistake, and a trap snaps shut around {PRONOUN/s_c/object}. {PRONOUN/s_c/subject/CAP} {VERB/s_c/are/is} taken out of the mountains with the injured scavenger.",
                 "exp": 0,
                 "weight": 10,
                 "stat_trait": [
                     "compassionate",
+                    "empathetic",
                     "faithful",
                     "loving",
+                    "patient",
                     "responsible",
                     "thoughtful",
                     "wise"
@@ -872,39 +882,56 @@
         "biome": ["mountainous"],
         "season": ["any"],
         "types": ["hunting"],
-        "tags": [],
-        "patrol_art": "gen_hunt_thunderpath",
+        "tags": ["retirement"],
+        "patrol_art": "gen_openclearing_intro",
         "min_cats": 1,
         "max_cats": 6,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "The patrol comes across a Thunderpath running through the mountains.",
+        "intro_text": "The patrol comes across a wide open space in the middle of the territory. The jets of vultures echo in the distance, but they're far away. Even so, the patrol can't help but mull over whether or not it's worth crossing to hunt on the other side.",
         "decline_text": "They decide it is better not to cross.",
         "chance_of_success": 40,
         "success_outcomes": [
             {
-                "text": "The patrol waits until they can hear the wind whistling, not a murmur of a monster, and crosses the Thunderpath to hunt on the other side.",
+                "text": "The patrol crosses the open space and hunts on the other side.",
                 "exp": 10,
                 "weight": 20,
-                "prey": ["medium"]
+                "art": "gen_openclearing_success1",
+                "prey": ["large"]
             },
             {
-                "text": "The patrol finds a pipe running under the Thunderpath and uses it to cross. They end up with damp paws, but a successful haul of prey.",
+                "text": "The patrol finds a pipe running under the open space and uses it to cross. They end up with damp paws, but a successful haul of prey.",
                 "exp": 10,
                 "weight": 5,
-                "prey": ["medium"]
+                "art": "gen_openclearing_success2",
+                "prey": ["large"]
             },
             {
-                "text": "The patrol stops on the edge of the Thunderpath, and s_c organizes a thorough search that finds a flattened squirrel. It's a reminder of the danger of the Thunderpath, and a good source of scavenged meat.",
+                "text": "The patrol finds a pipe running under the open space and uses it to cross. They end up with damp paws, but a successful haul of prey. Upon returning to camp and washing their paws off, r_c finds that theirs have been stained by the mud from the tunnel.",
+                "exp": 10,
+                "weight": 5,
+                "art": "gen_openclearing_success2",
+				"accessory": [
+                    {
+                        "cats": ["r_c"],
+                        "accessory": ["MUDDYPAWS"]
+                    }
+                ],
+                "prey": ["large"]
+            },
+            {
+                "text": "The patrol stops on the edge of the open space, and s_c organizes a thorough search that finds a hidden cache of bluefruit. The emptiness of the space feels unnatural, a warning of the dangers these places bring.",
                 "exp": 10,
                 "weight": 20,
+                "art": "gen_openclearing_success3",
                 "stat_skill": ["CLEVER,1"],
-                "prey": ["medium"]
+                "prey": ["large"]
             },
             {
-                "text": "s_c is patient enough to wait until the Thunderpath is completely clear, then trots across to hunt on the other side. The mountains have so few monsters passing through anyway, there's no need to be hasty.",
+                "text": "s_c is patient enough to wait until there is definitely no vultures, then trots across to hunt on the other side.",
                 "exp": 10,
                 "weight": 20,
+                "art": "gen_openclearing_success1",
                 "stat_trait": [
                     "calm",
                     "careful",
@@ -912,34 +939,38 @@
                     "nervous",
                     "sneaky",
                     "strange",
+                    "patient",
                     "responsible",
                     "thoughtful",
                     "wise"
                 ],
-                "prey": ["medium"]
+                "prey": ["large"]
             }
         ],
         "fail_outcomes": [
             {
-                "text": "r_c hears a monster thundering towards {PRONOUN/r_c/object}, but it screeches to a halt just in time. That was close! Maybe it's best to go back to camp.",
+                "text": "r_c hears a the jets of a vulture, and ducks into cover just as the jaws snap behind {PRONOUN/r_c/poss} tail.",
                 "exp": 0,
-                "weight": 20
+                "weight": 20,
+                "art": "gen_openclearing_failure1"
             },
             {
-                "text": "r_c is hit by a monster while crossing and dies instantly. c_n is shaken by the death, and it's a reminder to every cat that just because their territory contains few Thunderpaths doesn't mean they can forget their dangers.",
+                "text": "r_c is picked up by a vulture, never to be seen again.",
                 "exp": 0,
                 "weight": 10,
+                "art": "gen_openclearing_failure2",
                 "dead_cats": ["r_c"],
                 "history_text": {
-                    "scar": "m_c was heavily injured by a monster, and carries the scars from it.",
-                    "reg_death": "m_c was hit by a monster and killed.",
-                    "lead_death": "{VERB/m_c/were/was} hit by a monster"
+                    "scar": "m_c was bitten by a vulture.",
+                    "reg_death": "m_c was carried away by a vulture.",
+                    "lead_death": "{VERB/m_c/were/was} carried away by a vulture"
                 }
             },
             {
-                "text": "r_c is hit by a monster and seems quite injured, but miraculously still alive. c_n is shaken by the incident, and it's a reminder to every cat that just because their territory contains few Thunderpaths doesn't mean they can forget their dangers.",
+                "text": "r_c is picked up by a vulture, but miraculously gets free! They still fell a long way.",
                 "exp": 0,
                 "weight": 10,
+                "art": "gen_openclearing_failure2",
                 "injury": [
                     {
                         "cats": ["r_c"],
@@ -948,9 +979,9 @@
                     }
                 ],
                 "history_text": {
-                    "scar": "m_c was heavily injured by a monster, and carries the scars from it.",
-                    "reg_death": "m_c was hit by a monster and killed.",
-                    "lead_death": "{VERB/m_c/were/was} hit by a monster"
+                    "scar": "m_c was heavily injured by a vulture, and carries the scars from it.",
+                    "reg_death": "m_c was dropped by a vulture and killed.",
+                    "lead_death": "{VERB/m_c/were/was} dropped by a vulture"
                 }
             }
         ]
@@ -960,39 +991,56 @@
         "biome": ["mountainous"],
         "season": ["any"],
         "types": ["hunting"],
-        "tags": ["cruel_season"],
-        "patrol_art": "gen_hunt_thunderpath",
+        "tags": ["retirement", "cruel_season"],
+        "patrol_art": "gen_openclearing_intro",
         "min_cats": 1,
         "max_cats": 6,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "The patrol comes across a Thunderpath running through the mountains.",
+        "intro_text": "The patrol comes across a wide open space in the middle of the territory. The jets of vultures echo in the distance, but they're far away. Even so, the patrol can't help but mull over whether or not it's worth crossing to hunt on the other side.",
         "decline_text": "They decide it is better not to cross.",
         "chance_of_success": 30,
         "success_outcomes": [
             {
-                "text": "The patrol waits until they can hear the wind whistling, not a murmur of a monster, and crosses the Thunderpath to hunt on the other side.",
+                "text": "The patrol crosses the open space and hunts on the other side.",
                 "exp": 10,
                 "weight": 20,
-                "prey": ["medium"]
+                "art": "gen_openclearing_success1",
+                "prey": ["large"]
             },
             {
-                "text": "The patrol finds a pipe running under the Thunderpath and uses it to cross. They end up with damp paws, but a successful haul of prey.",
+                "text": "The patrol finds a pipe running under the open space and uses it to cross. They end up with damp paws, but a successful haul of prey.",
                 "exp": 10,
                 "weight": 5,
-                "prey": ["medium"]
+                "art": "gen_openclearing_success2",
+                "prey": ["large"]
             },
             {
-                "text": "The patrol stops on the edge of the Thunderpath, and s_c organizes a thorough search that finds a flattened squirrel. It's a reminder of the danger of the Thunderpath, and a good source of scavenged meat.",
+                "text": "The patrol finds a pipe running under the open space and uses it to cross. They end up with damp paws, but a successful haul of prey. Upon returning to camp and washing their paws off, r_c finds that theirs have been stained by the mud from the tunnel.",
+                "exp": 10,
+                "weight": 5,
+                "art": "gen_openclearing_success2",
+				"accessory": [
+                    {
+                        "cats": ["r_c"],
+                        "accessory": ["MUDDYPAWS"]
+                    }
+                ],
+                "prey": ["large"]
+            },
+            {
+                "text": "The patrol stops on the edge of the open space, and s_c organizes a thorough search that finds a hidden cache of bluefruit. The emptiness of the space feels unnatural, a warning of the dangers these places bring.",
                 "exp": 10,
                 "weight": 20,
+                "art": "gen_openclearing_success3",
                 "stat_skill": ["CLEVER,1"],
-                "prey": ["medium"]
+                "prey": ["large"]
             },
             {
-                "text": "s_c is patient enough to wait until the Thunderpath is completely clear, then trots across to hunt on the other side. The mountains have so few monsters passing through anyway, there's no need to be hasty.",
+                "text": "s_c is patient enough to wait until there is definitely no vultures, then trots across to hunt on the other side.",
                 "exp": 10,
                 "weight": 20,
+                "art": "gen_openclearing_success1",
                 "stat_trait": [
                     "calm",
                     "careful",
@@ -1000,34 +1048,38 @@
                     "nervous",
                     "sneaky",
                     "strange",
+                    "patient",
                     "responsible",
                     "thoughtful",
                     "wise"
                 ],
-                "prey": ["medium"]
+                "prey": ["large"]
             }
         ],
         "fail_outcomes": [
             {
-                "text": "r_c hears a monster thundering towards {PRONOUN/r_c/object}, but it screeches to a halt just in time. That was close! Maybe it's best to go back to camp.",
+                "text": "r_c hears a the jets of a vulture, and yowls a warning as the patrol ducks into cover. The vulture hovers for some time, but gives up on this hunt.",
                 "exp": 0,
-                "weight": 20
+                "weight": 20,
+                "art": "gen_openclearing_failure1"
             },
             {
-                "text": "r_c is crossing the Thunderpath and hears a monster thundering towards {PRONOUN/r_c/object}. {PRONOUN/r_c/subject/CAP} {VERB/r_c/freeze/freezes}, and the monster swerves to hit {PRONOUN/r_c/object} deliberately, killing {PRONOUN/r_c/object} instantly. c_n is shaken by the death, and it's a reminder to every cat that just because their territory contains few Thunderpaths doesn't mean they can forget their dangers.",
+                "text": "r_c is picked up by a vulture, never to be seen again.",
                 "exp": 0,
                 "weight": 10,
+                "art": "gen_openclearing_failure2",
                 "dead_cats": ["r_c"],
                 "history_text": {
-                    "scar": "m_c was heavily injured by a monster, and carries the scars from it.",
-                    "reg_death": "m_c was hit by a monster and killed.",
-                    "lead_death": "{VERB/m_c/were/was} hit by a monster"
+                    "scar": "m_c was bitten by a vulture.",
+                    "reg_death": "m_c was carried away by a vulture.",
+                    "lead_death": "{VERB/m_c/were/was} carried away by a vulture"
                 }
             },
             {
-                "text": "r_c is hit by a monster and seems quite injured, but miraculously still alive. c_n is shaken by the incident, and it's a reminder to every cat that just because their territory contains few Thunderpaths doesn't mean they can forget their dangers.",
+                "text": "r_c is picked up by a vulture, but miraculously gets free! They still fell a long way.",
                 "exp": 0,
                 "weight": 10,
+                "art": "gen_openclearing_failure2",
                 "injury": [
                     {
                         "cats": ["r_c"],
@@ -1036,9 +1088,505 @@
                     }
                 ],
                 "history_text": {
-                    "scar": "m_c was heavily injured by a monster, and carries the scars from it.",
-                    "reg_death": "m_c was hit by a monster and killed.",
-                    "lead_death": "{VERB/m_c/were/was} hit by a monster"
+                    "scar": "m_c was heavily injured by a vulture, and carries the scars from it.",
+                    "reg_death": "m_c was dropped by a vulture and killed.",
+                    "lead_death": "{VERB/m_c/were/was} dropped by a vulture"
+                }
+            }
+        ]
+    },
+    {
+        "patrol_id": "mtn_hunt_thunderpath3",
+        "biome": ["mountainous"],
+        "season": ["any"],
+        "types": ["hunting"],
+        "tags": ["retirement"],
+        "patrol_art": "gen_openclearing_intro",
+        "min_cats": 5,
+        "max_cats": 6,
+        "min_max_status": {},
+        "weight": 20,
+        "intro_text": "The patrol comes across a wide open space in the middle of the territory. The jets of vultures echo in the distance, but they're far away. Even so, the patrol can't help but mull over whether or not it's worth crossing to hunt on the other side.",
+        "decline_text": "They decide it is better not to cross.",
+        "chance_of_success": 10,
+        "success_outcomes": [
+            {
+                "text": "The patrol crosses the open space and hunts on the other side.",
+                "exp": 10,
+                "weight": 20,
+                "art": "gen_openclearing_success1",
+                "prey": ["medium"]
+            },
+            {
+                "text": "The patrol finds a pipe running under the open space and uses it to cross. They end up with damp paws, but a successful haul of prey.",
+                "exp": 10,
+                "weight": 5,
+                "art": "gen_openclearing_success2",
+                "prey": ["large"]
+            },
+            {
+                "text": "The patrol finds a pipe running under the open space and uses it to cross. They end up with damp paws, but a successful haul of prey. Upon returning to camp and washing their paws off, r_c finds that theirs have been stained by the mud from the tunnel.",
+                "exp": 10,
+                "weight": 5,
+                "art": "gen_openclearing_success2",
+				"accessory": [
+                    {
+                        "cats": ["r_c"],
+                        "accessory": ["MUDDYPAWS"]
+                    }
+                ],
+                "prey": ["large"]
+            },
+            {
+                "text": "The patrol stops on the edge of the open space, and s_c organizes a thorough search that finds a hidden cache of bluefruit. The emptiness of the space feels unnatural, a warning of the dangers these places bring.",
+                "art": "gen_openclearing_success3",
+                "exp": 10,
+                "weight": 20,
+                "stat_skill": ["CLEVER,1"],
+                "prey": ["large"]
+            },
+            {
+                "text": "s_c is patient enough to wait until there is definitely no vultures, then trots across with the patrol to hunt on the other side.",
+                "exp": 10,
+                "weight": 20,
+                "art": "gen_openclearing_success1",
+                "stat_trait": [
+                    "calm",
+                    "careful",
+                    "insecure",
+                    "nervous",
+                    "sneaky",
+                    "strange",
+                    "patient",
+                    "responsible",
+                    "thoughtful",
+                    "wise"
+                ],
+                "prey": ["large"]
+            }
+        ],
+        "fail_outcomes": [
+            {
+                "text": "r_c hears a the jets of a vulture, and yowls a warning! It's a heartbeat too late, though, as a whole group of vultures decends on the slugcats and carries away as many as they can catch.",
+                "exp": 0,
+                "weight": 10,
+                "art": "gen_openclearing_failure2",
+                "dead_cats": ["multi"],
+                "history_text": {
+                    "scar": "m_c was bitten by a vulture.",
+                    "reg_death": "m_c was carried away by a vulture.",
+                    "lead_death": "{VERB/m_c/were/was} carried away by a vulture"
+                }
+            },
+            {
+                "text": "r_c is picked up by a vulture, but miraculously gets free! They still fell a long way.",
+                "exp": 0,
+                "weight": 10,
+                "art": "gen_openclearing_failure2",
+                "injury": [
+                    {
+                        "cats": ["r_c"],
+                        "injuries": ["blunt_force_injury"],
+                        "scars": ["MANLEG"]
+                    }
+                ],
+                "history_text": {
+                    "scar": "m_c was heavily injured by a vulture, and carries the scars from it.",
+                    "reg_death": "m_c was dropped by a vulture and killed.",
+                    "lead_death": "{VERB/m_c/were/was} dropped by a vulture"
+                }
+            }
+        ]
+    },
+    {
+        "patrol_id": "mtn_hunt_thunderpath4",
+        "biome": ["mountainous"],
+        "season": ["any"],
+        "types": ["hunting"],
+        "tags": ["retirement", "cruel_season"],
+        "patrol_art": "gen_openclearing_intro",
+        "min_cats": 5,
+        "max_cats": 6,
+        "min_max_status": {},
+        "weight": 20,
+        "intro_text": "The patrol comes across a wide open space in the middle of the territory. The jets of vultures echo in the distance, but they're far away. Even so, the patrol can't help but mull over whether or not it's worth crossing to hunt on the other side.",
+        "decline_text": "They decide it is better not to cross.",
+        "chance_of_success": 10,
+        "success_outcomes": [
+            {
+                "text": "The patrol crosses the open space and hunts on the other side.",
+                "exp": 10,
+                "weight": 20,
+                "art": "gen_openclearing_success1",
+                "prey": ["large"]
+            },
+            {
+                "text": "The patrol finds a pipe running under the open space and uses it to cross. They end up with damp paws, but a successful haul of prey.",
+                "exp": 10,
+                "weight": 5,
+                "art": "gen_openclearing_success2",
+                "prey": ["large"]
+            },
+            {
+                "text": "The patrol finds a pipe running under the open space and uses it to cross. They end up with damp paws, but a successful haul of prey. Upon returning to camp and washing their paws off, r_c finds that theirs have been stained by the mud from the tunnel.",
+                "exp": 10,
+                "weight": 5,
+                "art": "gen_openclearing_success2",
+				"accessory": [
+                    {
+                        "cats": ["r_c"],
+                        "accessory": ["MUDDYPAWS"]
+                    }
+                ],
+                "prey": ["large"]
+            },
+            {
+                "text": "The patrol stops on the edge of the open space, and s_c organizes a thorough search that finds a hidden cache of bluefruit. The emptiness of the space feels unnatural, a warning of the dangers these places bring.",
+                "exp": 10,
+                "weight": 20,
+                "art": "gen_openclearing_success3",
+                "stat_skill": ["CLEVER,1"],
+                "prey": ["large"]
+            },
+            {
+                "text": "s_c is patient enough to wait until there is definitely no vultures, then trots with the patrol across to hunt on the other side.",
+                "exp": 10,
+                "weight": 20,
+                "art": "gen_openclearing_success1",
+                "stat_trait": [
+                    "calm",
+                    "careful",
+                    "insecure",
+                    "nervous",
+                    "sneaky",
+                    "strange",
+                    "patient",
+                    "responsible",
+                    "thoughtful",
+                    "wise"
+                ],
+                "prey": ["large"]
+            }
+        ],
+        "fail_outcomes": [
+            {
+                "text": "r_c hears a the jets of a vulture, and yowls a warning as the patrol ducks into cover. The vulture hovers for some time, but gives up on this hunt.",
+                "exp": 0,
+                "weight": 20,
+                "art": "gen_openclearing_failure1"
+            },
+            {
+                "text": "r_c hears a the jets of a vulture, and yowls a warning! It's a heartbeat too late, though, as a whole group of vultures decends on the slugcats and carries away as many as they can catch.",
+                "exp": 0,
+                "weight": 10,
+                "art": "gen_openclearing_failure2",
+                "dead_cats": ["multi"],
+                "history_text": {
+                    "scar": "m_c was bitten by a vulture.",
+                    "reg_death": "m_c was carried away by a vulture.",
+                    "lead_death": "{VERB/m_c/were/was} carried away by a vulture"
+                }
+            },
+            {
+                "text": "r_c is picked up by a vulture, but miraculously gets free! They still fell a long way.",
+                "exp": 0,
+                "weight": 10,
+                "art": "gen_openclearing_failure2",
+                "injury": [
+                    {
+                        "cats": ["r_c"],
+                        "injuries": ["blunt_force_injury"],
+                        "scars": ["MANTAIL"]
+                    }
+                ],
+                "history_text": {
+                    "scar": "m_c was heavily injured by a vulture, and carries the scars from it.",
+                    "reg_death": "m_c was dropped by a vulture and killed.",
+                    "lead_death": "{VERB/m_c/were/was} dropped by a vulture"
+                }
+            }
+        ]
+    },
+    {
+        "patrol_id": "mtn_hunt_scavtoll1",
+        "biome": ["mountain"],
+        "season": ["any"],
+        "types": ["hunting"],
+        "tags": ["retirement"],
+        "patrol_art": "gen_hunt_thunderpath",
+        "min_cats": 1,
+        "max_cats": 6,
+        "min_max_status": {},
+        "weight": 20,
+        "intro_text": "The patrol comes across a scavenger toll in a chasm.",
+        "decline_text": "The patrol turns away. The risk isn't worth it.",
+        "chance_of_success": 40,
+        "success_outcomes": [
+            {
+                "text": "r_c happens to have a pearl on {PRONOUN/r_c/poss}, trading the shiny object for safe passage.",
+                "exp": 10,
+                "weight": 20,
+                "prey": ["large"]
+            },
+            {
+                "text": "The patrol finds another path instead, finding a good haul for their trouble",
+                "exp": 10,
+                "weight": 5,
+                "prey": ["large"]
+            },
+            {
+                "text": "s_c stops the patrol, slowly walking up to the scavengers and offering up a stolen pearl. The scavengers fall for it, and the patrol is waved through.",
+                "exp": 10,
+                "weight": 20,
+                "stat_skill": ["CLEVER,1"],
+                "prey": ["large"]
+            }
+        ],
+        "fail_outcomes": [
+            {
+                "text": "r_c tries to sneak through the toll, but is caught! A spear lands just behind {PRONOUN/r_c/poss} tail, but {PRONOUN/r_c/poss} get away.",
+                "exp": 0,
+                "weight": 20
+            },
+            {
+                "text": "r_c tries to sneak through the toll, but is caught! A spear soon sinks into their back, killing them instantly.",
+                "exp": 0,
+                "weight": 10,
+                "dead_cats": ["r_c"],
+                "history_text": {
+                    "scar": "m_c was speared by a scavenger.",
+                    "reg_death": "m_c was speared by a scavenger.",
+                    "lead_death": "{VERB/m_c/were/was} speared by a scavenger"
+                }
+            },
+            {
+                "text": "r_c tries to sneak through the toll, but is caught! A spear soon sinks into their back, thankfully missing anything vital.",
+                "exp": 0,
+                "weight": 10,
+                "injury": [
+                    {
+                        "cats": ["r_c"],
+                        "injuries": ["spear-wound"],
+                        "scars": ["MANLEG"]
+                    }
+                ],
+                "history_text": {
+                    "scar": "m_c was speared by a scavenger, and carries a scar from it.",
+                    "reg_death": "m_c was speared by a scavenger and killed.",
+                    "lead_death": "{VERB/m_c/were/was} speared by a scavenger"
+                }
+            }
+        ]
+    },
+    {
+        "patrol_id": "mtn_hunt_scavtoll2",
+        "biome": ["mountain"],
+        "season": ["any"],
+        "types": ["hunting"],
+        "tags": ["retirement", "cruel_season"],
+        "patrol_art": "gen_hunt_thunderpath",
+        "min_cats": 1,
+        "max_cats": 6,
+        "min_max_status": {},
+        "weight": 20,
+        "intro_text": "The patrol comes across a scavenger toll in a chasm.",
+        "decline_text": "The patrol turns away. The risk isn't worth it.",
+        "chance_of_success": 30,
+        "success_outcomes": [
+            {
+                "text": "r_c happens to have a pearl on {PRONOUN/r_c/poss}, trading the shiny object for safe passage.",
+                "exp": 10,
+                "weight": 20,
+                "prey": ["large"]
+            },
+            {
+                "text": "The patrol finds another path instead, finding a good haul for their trouble",
+                "exp": 10,
+                "weight": 5,
+                "prey": ["large"]
+            },
+            {
+                "text": "s_c stops the patrol, slowly walking up to the scavengers and offering up a stolen pearl. The scavengers fall for it, and the patrol is waved through.",
+                "exp": 10,
+                "weight": 20,
+                "stat_skill": ["CLEVER,1"],
+                "prey": ["large"]
+            }
+        ],
+        "fail_outcomes": [
+            {
+                "text": "r_c tries to sneak through the toll, but is caught! A spear lands just behind {PRONOUN/r_c/poss} tail, but {PRONOUN/r_c/subject} get away.",
+                "exp": 0,
+                "weight": 20
+            },
+            {
+                "text": "r_c tries to sneak through the toll, but is caught! A spear soon sinks into their back, killing them instantly.",
+                "exp": 0,
+                "weight": 10,
+                "dead_cats": ["r_c"],
+                "history_text": {
+                    "scar": "m_c was speared by a scavenger.",
+                    "reg_death": "m_c was speared by a scavenger.",
+                    "lead_death": "{VERB/m_c/were/was} speared by a scavenger"
+                }
+            },
+            {
+                "text": "r_c tries to sneak through the toll, but is caught! A spear soon sinks into their back, thankfully missing anything vital.",
+                "exp": 0,
+                "weight": 10,
+                "injury": [
+                    {
+                        "cats": ["r_c"],
+                        "injuries": ["spear-wound"],
+                        "scars": ["MANTAIL"]
+                    }
+                ],
+                "history_text": {
+                    "scar": "m_c was speared by a scavenger, and carries a scar from it.",
+                    "reg_death": "m_c was speared by a scavenger and killed.",
+                    "lead_death": "{VERB/m_c/were/was} speared by a scavenger"
+                }
+            }
+        ]
+    },
+    {
+        "patrol_id": "mtn_hunt_scavtoll3",
+        "biome": ["mountain"],
+        "season": ["any"],
+        "types": ["hunting"],
+        "tags": ["retirement"],
+        "patrol_art": "gen_hunt_thunderpath",
+        "min_cats": 5,
+        "max_cats": 6,
+        "min_max_status": {},
+        "weight": 20,
+        "intro_text": "The patrol comes across a scavenger toll in a chasm.",
+        "decline_text": "The patrol turns away. The risk isn't worth it.",
+        "chance_of_success": 10,
+        "success_outcomes": [
+            {
+                "text": "r_c happens to have a pearl on {PRONOUN/r_c/poss}, trading the shiny object for safe passage.",
+                "exp": 10,
+                "weight": 20,
+                "prey": ["large"]
+            },
+            {
+                "text": "The patrol finds another path instead, finding a good haul for their trouble",
+                "exp": 10,
+                "weight": 5,
+                "prey": ["large"]
+            },
+            {
+                "text": "s_c stops the patrol, slowly walking up to the scavengers and offering up a stolen pearl. The scavengers fall for it, and the patrol is waved through.",
+                "exp": 10,
+                "weight": 20,
+                "stat_skill": ["CLEVER,1"],
+                "prey": ["large"]
+            }
+        ],
+        "fail_outcomes": [
+            {
+                "text": "r_c tries to sneak through the toll, but is caught! Spears fly at the whole patrol, but they thankfully escape unharmed.",
+                "exp": 0,
+                "weight": 20
+            },
+            {
+                "text": "r_c tries to sneak through the toll, but is caught! Spears fly at the whole patrol for this offense, at least one killing a clanmate.",
+                "exp": 0,
+                "weight": 10,
+                "dead_cats": ["multi"],
+                "history_text": {
+                    "scar": "m_c was speared by a scavenger.",
+                    "reg_death": "m_c was speared by a scavenger.",
+                    "lead_death": "{VERB/m_c/were/was} speared by a scavenger"
+                }
+            },
+            {
+                "text": "r_c tries to sneak through the toll, but is caught! Spears fly at the whole patrol for this offense, at least one injuring a clanmate.",
+                "exp": 0,
+                "weight": 10,
+                "injury": [
+                    {
+                        "cats": ["multi"],
+                        "injuries": ["spear-wound"],
+                        "scars": ["MANLEG"]
+                    }
+                ],
+                "history_text": {
+                    "scar": "m_c was speared by a scavenger, and carries a scar from it.",
+                    "reg_death": "m_c was speared by a scavenger and killed.",
+                    "lead_death": "{VERB/m_c/were/was} speared by a scavenger"
+                }
+            }
+        ]
+    },
+    {
+        "patrol_id": "mtn_hunt_scavtoll4",
+        "biome": ["mountain"],
+        "season": ["any"],
+        "types": ["hunting"],
+        "tags": ["retirement", "cruel_season"],
+        "patrol_art": "gen_hunt_thunderpath",
+        "min_cats": 5,
+        "max_cats": 6,
+        "min_max_status": {},
+        "weight": 20,
+        "intro_text": "The patrol comes across a scavenger toll in a chasm.",
+        "decline_text": "The patrol turns away. The risk isn't worth it.",
+        "chance_of_success": 10,
+        "success_outcomes": [
+            {
+                "text": "r_c happens to have a pearl on {PRONOUN/r_c/poss}, trading the shiny object for safe passage.",
+                "exp": 10,
+                "weight": 20,
+                "prey": ["large"]
+            },
+            {
+                "text": "The patrol finds another path instead, finding a good haul for their trouble",
+                "exp": 10,
+                "weight": 5,
+                "prey": ["large"]
+            },
+            {
+                "text": "s_c stops the patrol, slowly walking up to the scavengers and offering up a stolen pearl. The scavengers fall for it, and the patrol is waved through.",
+                "exp": 10,
+                "weight": 20,
+                "stat_skill": ["CLEVER,1"],
+                "prey": ["large"]
+            }
+        ],
+        "fail_outcomes": [
+            {
+                "text": "r_c tries to sneak through the toll, but is caught! Spears fly at the whole patrol, but they thankfully escape unharmed.",
+                "exp": 0,
+                "weight": 20
+            },
+            {
+                "text": "r_c tries to sneak through the toll, but is caught! Spears fly at the whole patrol for this offense, at least one killing a clanmate.",
+                "exp": 0,
+                "weight": 10,
+                "dead_cats": ["multi"],
+                "history_text": {
+                    "scar": "m_c was speared by a scavenger.",
+                    "reg_death": "m_c was speared by a scavenger.",
+                    "lead_death": "{VERB/m_c/were/was} speared by a scavenger"
+                }
+            },
+            {
+                "text": "r_c tries to sneak through the toll, but is caught! Spears fly at the whole patrol for this offense, at least one injuring a clanmate.",
+                "exp": 0,
+                "weight": 10,
+                "injury": [
+                    {
+                        "cats": ["multi"],
+                        "injuries": ["spear-wound"],
+                        "scars": ["MANTAIL"]
+                    }
+                ],
+                "history_text": {
+                    "scar": "m_c was speared by a scavenger, and carries a scar from it.",
+                    "reg_death": "m_c was speared by a scavenger and killed.",
+                    "lead_death": "{VERB/m_c/were/was} speared by a scavenger"
                 }
             }
         ]
@@ -1056,8 +1604,8 @@
             "leader": [-1, -1]
         },
         "weight": 15,
-        "intro_text": "As r_c pads through the shadowy trees, the sun already hidden by the mountain slopes, {PRONOUN/r_c/subject} {VERB/r_c/freeze/freezes}. Up ahead, a Twoleg peers down from above, its black wings a huge backdrop to hypnotic, glowing red eyes...",
-        "decline_text": "This is no creature for mortal eyes. r_c screws {PRONOUN/r_c/poss} eyelids shut, muttering prayer after prayer after prayer to StarClan itself - and when {PRONOUN/r_c/subject} {VERB/r_c/open/opens} them again, the moth-Twoleg is gone.",
+        "intro_text": "As r_c pads through the shadowy trees, the sun already hidden by the mountain slopes, {PRONOUN/r_c/subject} {VERB/r_c/freeze/freezes}. Up ahead, a scavenger peers down from above, its black wings a huge backdrop to hypnotic, glowing red eyes...",
+        "decline_text": "This is no creature for mortal eyes. r_c screws {PRONOUN/r_c/poss} eyelids shut, muttering prayer after prayer after prayer to the Ascended itself - and when {PRONOUN/r_c/subject} {VERB/r_c/open/opens} them again, the moth-scavenger is gone.",
         "chance_of_success": 25,
         "success_outcomes": [
             {
@@ -1078,7 +1626,7 @@
                 ]
             },
             {
-                "text": "Caution has always been in {PRONOUN/s_c/poss} blood, and this, this has to be why. Frozen to the ground so completely that the frost grows over {PRONOUN/s_c/poss} fur as {PRONOUN/s_c/subject} {VERB/s_c/wait/waits}, s_c refuses to twitch so much as a whisker until the moth-Twoleg leaves.",
+                "text": "Caution has always been in {PRONOUN/s_c/poss} blood, and this, this has to be why. Frozen to the ground so completely that the frost grows over {PRONOUN/s_c/poss} fur as {PRONOUN/s_c/subject} {VERB/s_c/wait/waits}, s_c refuses to twitch so much as a whisker until the moth-scavenger leaves.",
                 "exp": 40,
                 "weight": 20,
                 "stat_trait": [
@@ -1114,19 +1662,19 @@
                 "weight": 20,
                 "dead_cats": ["r_c"],
                 "history_text": {
-                    "reg_death": "m_c was taken as the Mothman's snack.",
-                 "lead_death": "{VERB/m_c/were/was} taken as the Mothman's snack"
+                    "reg_death": "m_c was taken as the mothscav's snack.",
+                 "lead_death": "{VERB/m_c/were/was} taken as the mothscav's snack"
                 },
                 "art": "mothman_OUTCOME"
             },
             {
-                "text": "The vast moth-Twoleg flies off, and r_c tries to shake off the encounter - but the mountain itself seems to be against {PRONOUN/r_c/object} tonight, collapsing beneath {PRONOUN/r_c/poss} feet.",
+                "text": "The vast moth-scavenger flies off, and r_c tries to shake off the encounter - but the mountain itself seems to be against {PRONOUN/r_c/object} tonight, collapsing beneath {PRONOUN/r_c/poss} feet.",
                 "exp": 0,
                 "weight": 20,
                 "dead_cats": ["r_c"],
                 "history_text": {
-                    "reg_death": "m_c was killed by the collapsing mountain slopes, an event predicted by the appearance of the Mothman",
-                    "lead_death": "{VERB/m_c/were/was} killed by the collapsing mountain slopes after {PRONOUN/m_c/subject} saw the Mothman"
+                    "reg_death": "m_c was killed by the collapsing mountain slopes, an event predicted by the appearance of the mothscav",
+                    "lead_death": "{VERB/m_c/were/was} killed by the collapsing mountain slopes after {PRONOUN/m_c/subject} saw the mothscav"
                 },
                 "art": "mothman_OUTCOME"
             }
@@ -1144,11 +1692,11 @@
         "min_max_status": {},
         "weight": 15,
         "intro_text": "As the patrol heads out across the mountains, a bell tolls from above...",
-        "decline_text": "It's a buzzard, one of the birds the Clan hesitates to hunt, so the patrol ignores the queer bell it wears and moves on with their lives.",
+        "decline_text": "It's a miros vulture, one of the birds the Clan hesitates to hunt, so the patrol ignores the queer bell it wears and moves on with their lives.",
         "chance_of_success": 30,
         "success_outcomes": [
             {
-                "text": "The ringing intrigues your cats, leading them to where a buzzard circles, bell tolling the death of the stag wedged by his antlers between a rocky outcrop. An ominous sign for the stag - a bounty for the Clan.",
+                "text": "The ringing intrigues your slugcats, leading them to where a miros vulture circles, bell tolling the death of the rain deer wedged by his antlers between a rocky outcrop. An ominous sign for the rain deer - a bounty for the Clan.",
                 "exp": 35,
                 "weight": 20,
                 "prey": ["huge"],
@@ -1157,18 +1705,20 @@
         ],
         "fail_outcomes": [
             {
-                "text": "Ignoring the warning from the bird above, the patrol brings back an unremarkable amount of prey - and a cough that leaps from cat to cat in the dens that night.",
+                "text": "Ignoring the warning from the bird above, the patrol brings back an unremarkable amount of prey - and a cough that leaps from slugcat to slugcat in the dens that night.",
                 "exp": 0,
-                "weight": 20,
+                "weight": 10,
                 "injury": [
                     {
                         "cats": ["patrol"],
-                        "injuries": ["yellowcough"]
+                        "injuries": ["rotsickness"],
+                        "scars": ["ROTMARKED"]
                     }
                 ],
                 "history_text": {
-                    "reg_death": "m_c died from the yellowcough brought to the Clan by the Belled Buzzard.",
-                    "lead_death": "died from the yellowcough brought by the Belled Buzzard"
+                    "scar": "r_c was scarred by the cysts formed by their former rot poisoning.",
+                    "reg_death": "m_c died from the rot sickness brought to the Clan by the Belled miros vulture.",
+                    "lead_death": "died from the rot sickness brought by the Belled miros vulture"
                 },
                 "art": "belledbuzzard_OUTCOME",
 				"prey": ["very_small"]
@@ -1191,11 +1741,11 @@
         "weight": 40,
         "chance_of_success": 50,
         "pl_skill_constraint": ["LORE,1"],
-        "intro_text": "The grouse are busy practicing their silly mating dance. app1 laughs at them under {PRONOUN/app1/poss} breath, mocking the stupid birds for dropping their guard.",
-        "decline_text": "A songbird on a branch overhead sings, and the grouse startle and take flight. Dung.",
+        "intro_text": "The noodleflies are busy practicing their silly mating dance. app1 laughs at them under {PRONOUN/app1/poss} breath, mocking the stupid noodleflies for dropping their guard.",
+        "decline_text": "A spider on a branch overhead hisses, and the noodleflies startle and take flight. Dung.",
         "success_outcomes": [
                 {
-                    "text": "p_l waves a tail across app1's path, stopping {PRONOUN/app1/object} with a stern stare. Remember those who've been hurt by grouse - beaks tearing deep, their eyes scratched, limping from sharp-toothed claws. app1 nods, and apologies. Every hunt deserves respect.",
+                    "text": "p_l waves a tail across app1's path, stopping {PRONOUN/app1/object} with a stern stare.Remember those who've been hurt by noodleflies - beaks tearing deep, their eyes scratched, limping from sharp-toothed claws. app1 nods, and apologies. Every hunt deserves respect.",
                     "exp": 30,
                     "weight": 20,
                     "prey": ["medium"],
@@ -1219,7 +1769,7 @@
             ],
             "fail_outcomes": [
                 {
-                    "text": "Leaping forward with overconfidence, app1 gets a grouse foot to the face and a beak bite for {PRONOUN/app1/poss} trouble.",
+                    "text": "Leaping forward with overconfidence, app1 gets a noodlefly foot to the face and a needle jab for {PRONOUN/app1/poss} trouble.",
                     "exp": 0,
                     "weight": 20,
                     "prey": ["medium"],
@@ -1241,9 +1791,9 @@
                         }
                     ],
                     "history_text": {
-                        "scar": "m_c was scarred after underestimating a grouse.",
-                        "reg_death": "m_c died after underestimating a grouse on a hunt as a foolish apprentice.",
-                        "lead_death": "from a grouse encountered on a hunt as a foolish apprentice"
+                        "scar": "r_c was permantly marked by the barb of a noodlefly as an apprentice - but {PRONOUN/r_c/subject} survived.",
+                        "reg_death": "r_c died from the strike of a noodlefly encountered on a hunt as a foolish apprentice.",
+                        "lead_death": "from the strike of a noodlefly encountered on a hunt as a foolish apprentice"
                         }
                 }
             ]

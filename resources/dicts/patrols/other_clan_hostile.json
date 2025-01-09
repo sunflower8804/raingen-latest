@@ -31,7 +31,7 @@
                 "text": "s_c is quick to strike up conversation with the other patrol, trying to get to the root of their rudeness. Eventually the problem is smoothed over, nothing but a misunderstanding and unfounded assumptions.",
                 "exp": 10,
                 "weight": 20,
-                "stat_trait": ["charismatic", "thoughtful", "wise", "confident"],
+                "stat_trait": ["charismatic", "altruistic", "thoughtful", "wise", "confident"],
                 "other_clan_rep": 2
             }
         ],
@@ -119,14 +119,14 @@
                 "other_clan_rep": 2
             },
             {
-                "text": "s_c postures right back at the o_c_n cats, drawing {PRONOUN/s_c/self} up to {PRONOUN/s_c/poss} full height and baring {PRONOUN/s_c/poss} teeth. The other patrol backs down a bit, they seem to know of s_c's reputation in battle.  The o_c_n cats eventually leave, cowed by the display but with begrudging respect for s_c's strength.",
+                "text": "s_c postures right back at the o_c_n slugcats, drawing {PRONOUN/s_c/self} up to {PRONOUN/s_c/poss} full height and baring {PRONOUN/s_c/poss} teeth. The other patrol backs down a bit, they seem to know of s_c's reputation in battle.  The o_c_n slugcats eventually leave, cowed by the display but with begrudging respect for s_c's strength.",
                 "exp": 10,
                 "weight": 20,
                 "stat_skill": ["FIGHTER,1"],
                 "other_clan_rep": 2
             },
             {
-                "text": "s_c is quick to strike up conversation with the other patrol, playfully poking fun at both o_c_n and c_n. {PRONOUN/s_c/poss/CAP} antics lighten the mood and make the other patrol cats laugh despite their previous aggression.  Situation successfully diffused and cats on both sides feeling surprisingly friendly toward each other, the two patrols part ways.",
+                "text": "s_c is quick to strike up conversation with the other patrol, playfully poking fun at both o_c_n and c_n. {PRONOUN/s_c/poss/CAP} antics lighten the mood and make the other patrol slugcats laugh despite their previous aggression.  Situation successfully diffused and slugcats on both sides feeling surprisingly friendly toward each other, the two patrols part ways.",
                 "exp": 10,
                 "weight": 20,
                 "stat_trait": ["charismatic", "playful", "childish", "strange", "daring"],
@@ -141,7 +141,7 @@
                 "other_clan_rep": -1
             },
             {
-                "text":  "s_c won't stand for this insult to {PRONOUN/s_c/poss} Clan. {PRONOUN/s_c/subject/CAP} {VERB/s_c/throw/throws} {PRONOUN/s_c/self} at the o_c_n patrol, but the enemy patrol has no trouble rebuffing one cat. The patrol backs off from the border, but s_c is unhappy that the rest of the patrol didn't back {PRONOUN/s_c/object} up.",
+                "text":  "s_c won't stand for this insult to {PRONOUN/s_c/poss} Clan. {PRONOUN/s_c/subject/CAP} {VERB/s_c/throw/throws} {PRONOUN/s_c/self} at the o_c_n patrol, but the enemy patrol has no trouble rebuffing one slugcat. The patrol backs off from the border, but s_c is unhappy that the rest of the patrol didn't back {PRONOUN/s_c/object} up.",
                 "exp": 0,
                 "weight": 20,
                 "stat_trait": ["bloodthirsty", "vengeful", "loyal", "fierce"],
@@ -157,16 +157,11 @@
                 "other_clan_rep": -1
             },
             {
-                "text":  "s_c won't stand for this insult to {PRONOUN/s_c/poss} Clan. {PRONOUN/s_c/subject/CAP} {VERB/s_c/throw/throws} {PRONOUN/s_c/self} at the o_c_n patrol, but the enemy patrol has no trouble injuring one cat. The patrol backs off from the border, but s_c is unhappy that the rest of the patrol didn't back {PRONOUN/s_c/object} up.",
+                "text":  "s_c won't stand for this insult to {PRONOUN/s_c/poss} Clan. {PRONOUN/s_c/subject/CAP} {VERB/s_c/throw/throws} {PRONOUN/s_c/self} at the o_c_n patrol, but the enemy patrol has no trouble injuring one slugcat. The patrol backs off from the border, but s_c is unhappy that the rest of the patrol didn't back {PRONOUN/s_c/object} up.",
                 "exp": 0,
                 "weight": 20,
                 "stat_trait": ["bloodthirsty", "vengeful", "loyal", "fierce"],
-                "injury": [
-                    {
-                        "cats": ["s_c"],
-                        "injuries": ["minor_injury"]
-                    }
-                ],
+                "injury":["minor_injury", "minor_injury", "minor_injury"],
                 "relationships": [
                     {
                         "cats_to": ["patrol"],
@@ -237,36 +232,37 @@
         "max_cats": 6,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "r_c spies a fat rabbit on the other side of the o_c_n border. A tempting opportunity to be sure, but it may not be wise to hunt on an enemy's territory.",
-        "decline_text": "The patrol decides that one rabbit isn't worth the potential fight.",
+        "intro_text": "r_c spies a fat eggbug on the other side of the o_c_n border. A tempting opportunity to be sure, but it may not be wise to hunt on an enemy's territory.",
+        "decline_text": "The patrol decides that one eggbug isn't worth the potential fight.",
         "chance_of_success": 40,
         "success_outcomes": [
             {
-                "text": "r_c pounces without hesitation! {PRONOUN/r_c/subject/CAP} {VERB/r_c/glance/glances} around, rabbit hanging from {PRONOUN/r_c/poss} muzzle, but it seems there aren't any o_c_n cats nearby. r_c trots back over the border, {PRONOUN/r_c/poss} prize in tow and transgression unnoticed.",
+                "text": "r_c pounces without hesitation! {PRONOUN/r_c/subject/CAP} {VERB/r_c/glance/glances} around, eggbug hanging from {PRONOUN/r_c/poss} muzzle, but it seems there aren't any o_c_n slugcats nearby. r_c trots back over the border, {PRONOUN/r_c/poss} prize in tow and transgression unnoticed.",
                 "exp": 10,
                 "weight": 20,
                 "prey": ["medium"]
             },
             {
-                "text": "r_c leaps for the rabbit.... and promptly trips over a rock. The rabbit hops away as r_c sheepishly picks {PRONOUN/r_c/self} up. It's probably for the better that {PRONOUN/r_c/subject} {VERB/r_c/weren't/wasn't} able to catch the rabbit. Trespassing could have easily caused a fight.",
+                "text": "r_c leaps for the eggbug! And promptly trips over a rock. The eggbug hops away and r_c sheepishly picks {PRONOUN/r_c/self} up. It's probably for the better that {PRONOUN/r_c/subject} {VERB/r_c/weren't/wasn't} able to catch the eggbug. Trespassing could have easily caused a fight.",
                 "exp": 10,
                 "weight": 5,
                 "prey": ["medium"]
             },
             {
-                "text": "s_c leaps for the rabbit, making a swift kill just before a o_c_n patrol comes into view. The o_c_n cats screech at the trespass and rush at the patrol. s_c barely manages to talk them down from a fight, begrudgingly handing over the rabbit, and the patrols part ways without any cat getting hurt.",
+                "text": "s_c leaps for the eggbug, making a swift kill just before a o_c_n patrol comes into view. The o_c_n slugcats screech at the trespass and rush at the patrol. s_c barely manages to talk them down from a fight, begrudgingly handing over the eggbug, and the patrols part ways without any slugcat getting hurt.",
                 "exp": 10,
                 "weight": 20,
                 "stat_skill": ["SPEAKER,1"],
                 "prey": ["small"]
             },
             {
-                "text": "r_c is about to leap for the rabbit when s_c grabs {PRONOUN/r_c/object} by the scruff and pulls {PRONOUN/r_c/object} back! A moment later, r_c sees the group of o_c_n cats that had just come into view. Good thing s_c stopped {PRONOUN/r_c/object} before {PRONOUN/r_c/subject} could blatantly trespass in full view of the other Clan.",
+                "text": "r_c is about to leap for the eggbug before s_c grabs {PRONOUN/r_c/object} by the scruff and pulls {PRONOUN/r_c/object} back! A moment later, r_c sees the group of o_c_n slugcats that had just come into view. Good thing s_c stopped {PRONOUN/r_c/object} before {PRONOUN/r_c/subject} could blatantly trespass in full view of the other Clan.",
                 "exp": 10,
                 "weight": 20,
                 "stat_trait": [
                     "careful",
                     "calm",
+                    "patient",
                     "wise",
                     "sneaky",
                     "responsible"
@@ -276,14 +272,14 @@
         ],
         "fail_outcomes": [
             {
-                "text": "r_c leaps for the rabbit.... and promptly trips over a rock. The rabbit hops away as r_c sheepishly picks {PRONOUN/r_c/self} up before noticing the o_c_n cat watching {PRONOUN/r_c/object} from the other side of the border. The other cat knows exactly what r_c was intending to do and hisses crossly before turning away, presumably to report the incident to their own leader.",
+                "text": "r_c leaps for the eggbug! And promptly trips over a rock. The eggbug hops away and r_c sheepishly picks {PRONOUN/r_c/self} up before noticing the o_c_n slugcat watching {PRONOUN/r_c/object} from the other side of the border. The other slugcat knows exactly what r_c was intending to do and hisses crossly before turning away, presumably to report the incident to their own leader.",
                 "exp": 0,
                 "weight": 20,
                 "other_clan_rep": -1,
 				"prey": ["medium"]
             },
             {
-                "text": "s_c pounces with no hesitation! {PRONOUN/s_c/subject/CAP} easily {VERB/s_c/kill/kills} the rabbit before glancing up and coming face-to-face with a o_c_n cat. s_c is promptly chased back over the border. The other cat glares, hissing and spitting until the patrol leaves the area.",
+                "text": "s_c pounces with no hesitation! {PRONOUN/s_c/subject/CAP} easily {VERB/s_c/kill/kills} the eggbug before glancing up and coming face to face with a o_c_n slugcat. s_c is promptly chased back over the border and the other slugcat glares, hissing and spitting, until the patrol leaves the area.",
                 "exp": 0,
                 "weight": 20,
                 "stat_trait": [
@@ -297,7 +293,7 @@
                 "other_clan_rep": -1
             },
             {
-                "text": "r_c checks the area: it seems to be clear of o_c_n patrols. {PRONOUN/r_c/subject/CAP} {VERB/r_c/leap/leaps} for the rabbit, easily killing it, but very quickly {VERB/r_c/find/finds} that {PRONOUN/r_c/subject} should've double checked before trespassing. A o_c_n patrol rushes into view from where they were hiding and descends upon r_c, killing {PRONOUN/r_c/object} before anyone else can help. Was one rabbit worth this?",
+                "text": "r_c checks the area, it seems to be clear of o_c_n patrols. {PRONOUN/r_c/subject/CAP} {VERB/r_c/leap/leaps} for the eggbug, easily killing it, but very quickly find that {PRONOUN/r_c/subject} should've double checked before trespassing. A o_c_n patrol rushes into view from where they were hiding and descends upon r_c, killing {PRONOUN/r_c/object} before anyone else can help. Was one eggbug worth this?",
                 "exp": 0,
                 "weight": 10,
                 "dead_cats": ["r_c"],
@@ -309,7 +305,7 @@
                 "other_clan_rep": -1
             },
             {
-                "text": "r_c pounces with no hesitation! {PRONOUN/r_c/subject/CAP} easily {VERB/r_c/kill/kills} the rabbit before glancing up and coming face-to-face with a o_c_n cat. After a short tussle, r_c flees back over the border and limps {PRONOUN/r_c/poss} way home; that rabbit certainly wasn't worth the trouble.",
+                "text": "r_c pounces with no hesitation! {PRONOUN/r_c/subject/CAP} easily {VERB/r_c/kill/kills} the eggbug before glancing up and coming face to face with a o_c_n slugcat. After a short tussle, r_c flees back over the border and limps {PRONOUN/r_c/poss} way home; that eggbug certainly wasn't worth the trouble.",
                 "exp": 0,
                 "weight": 10,
                 "injury": [
@@ -329,7 +325,7 @@
         ],
         "antag_fail_outcomes": [
             {
-                "text": "r_c leaps for the rabbit.... and promptly trips over a rock. The rabbit hops away as r_c sheepishly picks {PRONOUN/r_c/self} up before noticing the o_c_n cat watching {PRONOUN/r_c/object} from the other side of the border. The other cat laughs at the pathetic display and turns to walk deeper into their own territory. They seem to be unfazed and unimpressed by the sad attempt.",
+                "text": "r_c leaps for the eggbug! And promptly trips over a rock. The eggbug hops away and r_c sheepishly picks {PRONOUN/r_c/self} up before noticing the o_c_n slugcat watching {PRONOUN/r_c/object} from the other side of the border. The other slugcat laughs at the pathetic display and turns to walk deeper into their own territory. They seem to be unfazed and unimpressed by the sad attempt.",
                 "exp": 0,
                 "weight": 20,
                 "other_clan_rep": -1
@@ -337,7 +333,7 @@
         ],
         "antag_success_outcomes": [
             {
-                "text": "A tempting opportunity. And also a perfect one. r_c pounces and swiftly kills the rabbit, intentionally leaving evidence of {PRONOUN/r_c/poss} deed behind. That will show those o_c_n cats just how confident c_n is in their own power.",
+                "text": "A tempting opportunity. And also a perfect one. r_c pounces and swiftly kills the eggbug, intentionally leaving evidence of {PRONOUN/r_c/poss} deed behind. That will show those o_c_n slugcats just how confident c_n is in their own power.",
                 "exp": 10,
                 "weight": 20,
                 "other_clan_rep": -2
@@ -355,31 +351,31 @@
         "max_cats": 1,
         "min_max_status": {
             "apprentice": [-1, -1],
-            "cleric": [1, 6],
+            "medicine cat": [1, 6],
             "healer cats": [1, 6],
             "normal adult": [-1, -1]
         },
         "weight": 20,
         "intro_text": "p_l pads along, mouth open slightly as {PRONOUN/p_l/subject} {VERB/p_l/scent/scents} for any traces of herbs. Oh! {PRONOUN/r_c/subject/CAP} can smell some raspberries nearby - but it seems that they're just over the border.",
-        "decline_text": "{PRONOUN/p_l/subject/CAP} {VERB/p_l/decide/decides} that trespassing isn't worth it in this case.",
+        "decline_text": "{PRONOUN/p_l/subject/CAP} decide that trespassing isn't worth it in this case.",
         "chance_of_success": 30,
         "success_outcomes": [
             {
-                "text": "{PRONOUN/p_l/subject/CAP} {VERB/p_l/pad/pads} over to the border and {VERB/p_l/hesitate/hesitates} only momentarily before crossing. {PRONOUN/p_l/subject/CAP} quickly {VERB/p_l/gather/gathers} some of the berries, making sure to leave plenty for o_c_n's cleric if they need some too.",
+                "text": "{PRONOUN/p_l/subject/CAP} {VERB/p_l/pad/pads} over to the border and hesitate only momentarily before crossing. {PRONOUN/p_l/subject/CAP} quickly {VERB/p_l/gather/gathers} some of the berries, making sure to leave plenty for o_c_n's cleric if they need some, too.",
                 "exp": 20,
                 "weight": 20,
                 "herbs": ["raspberry"],
                 "other_clan_rep": 2
             },
             {
-                "text": "{PRONOUN/p_l/subject/CAP} {VERB/p_l/pad/pads} to the border and {VERB/p_l/pause/pauses} for a heartbeat to scent the air. o_c_n's scent is very strong, but there's something else... o_c_n's cleric appears at that moment. They're walking towards the raspberries when they spot p_l and curl their lip. They snarl that they're not willing to share with an enemy Clan. p_l takes the hint and leaves.",
+                "text": "{PRONOUN/p_l/subject/CAP} {VERB/p_l/pad/pads} to the border and pause for a heartbeat to scent the air. o_c_n's scent is very strong, but there's something else... o_c_n's cleric appears at that moment. They're walking towards the raspberries when they spot p_l and curl their lip. They snarl that they're not willing to share with an enemy Clan. p_l takes the hint and leaves.",
                 "exp": 20,
                 "weight": 5,
                 "herbs": ["raspberry"],
                 "other_clan_rep": 2
             },
             {
-                "text": "p_l is about to step over the border when a hiss stops {PRONOUN/p_l/object} in {PRONOUN/p_l/poss} tracks. A o_c_n warrior bounds into view, bristling with rage. {PRONOUN/p_l/subject/CAP} quickly {VERB/p_l/explain/explains} that {PRONOUN/p_l/subject}{VERB/p_l/'re/'s} the cleric, that the Warrior Code allows {PRONOUN/p_l/object} to cross the border, and {VERB/p_l/assure/assures} the warrior that {PRONOUN/p_l/subject} only {VERB/p_l/need/needs} a few berries for some sick Clanmates. The warrior looks torn, but agrees to this.",
+                "text": "p_l is about to step over the border when a hiss stops {PRONOUN/p_l/object} in {PRONOUN/p_l/poss} tracks. A o_c_n warrior bounds into view, bristling with rage. {PRONOUN/p_l/subject/CAP} quickly {VERB/p_l/explain/explains} that {PRONOUN/p_l/subject}{VERB/r_c/'re/'s} the cleric and the Warrior Code allows {PRONOUN/p_l/object} to cross the border and assure that {PRONOUN/p_l/subject} only need a few berries for some sick Clanmates. The warrior looks torn, but agrees to this.",
                 "exp": 20,
                 "weight": 20,
                 "stat_skill": ["MEDIATOR,3"],
@@ -389,13 +385,13 @@
         ],
         "fail_outcomes": [
             {
-                "text": "p_l starts to step over the border but a hiss stops {PRONOUN/p_l/object} in {PRONOUN/p_l/poss} tracks. A o_c_n patrol is running {PRONOUN/p_l/poss} way. As the patrol approaches, {PRONOUN/p_l/subject} {VERB/p_l/blurt/blurts} out that {PRONOUN/p_l/subject}{VERB/r_c/'re/'s} a cleric. One of the warriors snarls that they won't tolerate c_n cats on their land, cleric or not, and p_l needs to leave before they make {PRONOUN/p_l/object}. {PRONOUN/p_l/subject/CAP} {VERB/p_l/oblige/obliges} quickly.",
+                "text": "p_l starts to step over the border but a hiss stops {PRONOUN/p_l/object} in {PRONOUN/p_l/poss} tracks. A o_c_n patrol is running {PRONOUN/p_l/poss} way. As the patrol approaches, {PRONOUN/p_l/subject} {VERB/p_l/blurt/blurts} out that {PRONOUN/p_l/subject}{VERB/r_c/'re/'s} a cleric. One of the warriors snarls that they won't tolerate c_n slugcats on their land, cleric or not, and p_l needs to leave before they make {PRONOUN/p_l/object}. {PRONOUN/p_l/subject/CAP} {VERB/p_l/oblige/obliges} quickly.",
                 "exp": 0,
                 "weight": 20,
                 "other_clan_rep": -1
             },
             {
-                "text": "p_l starts to step over the border but a hiss stops {PRONOUN/p_l/object} in {PRONOUN/p_l/poss} tracks. A o_c_n patrol is running {PRONOUN/p_l/poss} way. As the patrol approaches, {PRONOUN/p_l/subject} {VERB/p_l/blurt/blurts} out that {PRONOUN/p_l/subject}{VERB/r_c/'re/'s} a cleric. The warriors either don't hear {PRONOUN/p_l/object} or don't care - they take multiple swipes at {PRONOUN/p_l/object} before {PRONOUN/p_l/subject} can get away.",
+                "text": "p_l starts to step over the border but a hiss stops {PRONOUN/p_l/object} in {PRONOUN/p_l/poss} tracks. A o_c_n patrol is running {PRONOUN/p_l/poss} way. As the patrol approaches, {PRONOUN/p_l/subject} {VERB/p_l/blurt/blurts} out that {PRONOUN/p_l/subject}{VERB/r_c/'re/'s} a cleric. The warriors either don't hear {PRONOUN/p_l/object} or don't care and they take multiple swipes at the cleric before {PRONOUN/p_l/subject} can get away.",
                 "exp": 0,
                 "weight": 10,
                 "injury": [
@@ -431,29 +427,29 @@
                 "other_clan_rep": 2
             },
             {
-                "text": "It doesn't take long to find the o_c_n apprentice that left the scent. The young cat is aggressive and hostile, but s_c is quick to deescalate the situation. After a gentle conversation, the apprentice begrudgingly apologizes for the trespass.",
+                "text": "It doesn't take long to find the o_c_n apprentice that left the scent. The young slugcat is aggressive and hostile, but s_c is quick to deescalate the situation. After a gentle conversation, the apprentice begrudgingly apologizes for the trespass.",
                 "exp": 10,
                 "weight": 20,
                 "stat_skill": ["SPEAKER,1"],
                 "other_clan_rep": 2
             },
             {
-                "text": "The patrol follows the scent and finds a wounded o_c_n warrior. It seems the cat had been caught by a dog and chased into c_n territory. The dog is gone now, but the warrior can't make it back across the border on their own. s_c is hesitant, but insists that the patrol at least escort the wounded warrior to the border.",
+                "text": "The patrol follows the scent and finds a wounded o_c_n warrior. It seems the slugcat had been caught by a lizard and chased into c_n territory. The lizard is gone now, but the warrior can't make it back across the border on their own. s_c is hesitant, but insists that the patrol at least escort the wounded warrior to the border.",
                 "exp": 10,
                 "weight": 20,
-                "stat_trait": ["compassionate", "calm"],
+                "stat_trait": ["altruistic", "compassionate", "empathetic", "calm"],
                 "other_clan_rep": 2
             }
         ],
         "fail_outcomes": [
             {
-                "text": "The patrol decides to follow the scent but only ends up walking in circles. Either the trespasser is good at concealing their trail or the patrol just needs to work on their tracking skills. It doesn't matter now; the whole day has been wasted. p_l decides that they should just return to camp and report the strange scent.",
+                "text": "The patrol decides to follow the scent, but only ends up walking in circles. Either the trespasser is good at concealing their trail or the patrol just needs to work on their tracking skills. It doesn't matter now, the whole day has been wasted. p_l decides that they should just return to camp and report the strange scent.",
                 "exp": 0,
                 "weight": 20,
                 "other_clan_rep": -1
             },
             {
-                "text": "s_c is relentless in tracking the scent and at the end of it finds a o_c_n apprentice. The young cat has a freshly killed rabbit in their mouth and s_c yowls in anger, not hesitating before attacking the apprentice. The o_c_n cat is driven off of your territory and the rabbit brought back to camp for your own cats.",
+                "text": "s_c is relentless in tracking the scent and at the end of it finds a o_c_n apprentice. The young slugcat has a freshly killed eggbug in their mouth and s_c yowls in anger, not hesitating before attacking the apprentice. The o_c_n slugcat is driven off of your territory and the eggbug brought back to camp for your own slugcats.",
                 "exp": 0,
                 "weight": 20,
                 "prey": ["small"],
@@ -461,19 +457,19 @@
                 "other_clan_rep": -1
             },
             {
-                "text": "The patrol follows the scent to a o_c_n cat taking refuge up a tree. The cat looks scared and only stares down at them before a large dog suddenly descends upon the patrol. r_c is killed before {PRONOUN/r_c/subject} can run and the rest of the patrol scatters in fear.",
+                "text": "The patrol follows the scent to a o_c_n slugcat taking refuge up a tree. The slugcat looks scared and only stares down at them before a large lizard suddenly descends upon the patrol. r_c is killed before {PRONOUN/r_c/subject} can run and the rest of the patrol scatters in fear.",
                 "exp": 0,
                 "weight": 10,
                 "dead_cats": ["r_c"],
                 "history_text": {
-                    "scar": "m_c followed the scent of a trespassing cat and was scarred by a dog.",
-                    "reg_death": "m_c followed the scent of a trespassing cat and was killed by a dog.",
-                    "lead_death": "followed the scent of a trespassing cat and {VERB/m_c/were/was} killed by a dog"
+                    "scar": "m_c followed the scent of a trespassing slugcat and was scarred by a lizard.",
+                    "reg_death": "m_c followed the scent of a trespassing slugcat and was killed by a lizard.",
+                    "lead_death": "followed the scent of a trespassing slugcat and {VERB/m_c/were/was} killed by a lizard"
                 },
                 "other_clan_rep": -1
             },
             {
-                "text": "The patrol follows the scent to a o_c_n cat taking refuge up a tree. The cat snarls down at them, a gleam in their eye, before a large dog comes crashing down on the patrol. r_c is caught in its jaws but manages to tear {PRONOUN/r_c/self} free and sprint away.",
+                "text": "The patrol follows the scent to a o_c_n slugcat taking refuge up a tree. The slugcat snarls down at them, a gleam in their eye, before a large lizard comes crashing down on the patrol. r_c is caught in its jaws but manages to tear {PRONOUN/r_c/self} free and sprint away.",
                 "exp": 0,
                 "weight": 10,
                 "injury": [
@@ -484,16 +480,16 @@
                     }
                 ],
                 "history_text": {
-                    "scar": "m_c followed the scent of a trespassing cat and was scarred by a dog.",
-                    "reg_death": "m_c followed the scent of a trespassing cat and was killed by a dog.",
-                    "lead_death": "followed the scent of a trespassing cat and {VERB/m_c/were/was} killed by a dog"
+                    "scar": "m_c followed the scent of a trespassing slugcat and was scarred by a lizard.",
+                    "reg_death": "m_c followed the scent of a trespassing slugcat and was killed by a lizard.",
+                    "lead_death": "followed the scent of a trespassing slugcat and {VERB/m_c/were/was} killed by a lizard"
                 },
                 "other_clan_rep": -1
             }
         ],
         "antag_fail_outcomes": [
             {
-                "text": "How dare they trespass! The patrol bounds after the scent, hoping to find the source of it, eventually discovering a limping o_c_n warrior who hastily explains that a dog had chased them into c_n's territory.  The patrol is still angry, but they rein in their hostility and tensely return the cat to o_c_n territory.",
+                "text": "How dare they trespass! The patrol bounds after the scent, hoping to find the source of it, eventually discovering a limping o_c_n warrior who hastily explains that a lizard had chased them into c_n's territory.  The patrol is still angry, but they rein in their hostility and tensely return the slugcat to o_c_n territory.",
                 "exp": 0,
                 "weight": 20,
                 "other_clan_rep": -1
@@ -501,7 +497,7 @@
         ],
         "antag_success_outcomes": [
             {
-                "text": "This is a trespass that will not be tolerated and, frankly, should be reciprocated. The patrol blatantly spreads their own scent on o_c_n's territory, ruining the clearly-marked border lines.",
+                "text": "This is a trespass that will not be tolerated and, frankly, should be reciprocated. The patrol blatantly spreads their own scent on o_c_n's territory, ruining the clearly marked border lines.",
                 "exp": 10,
                 "weight": 20,
                 "other_clan_rep": -2
@@ -530,48 +526,48 @@
                 "other_clan_rep": 2
             },
             {
-                "text": "It doesn't take long to find the o_c_n apprentice that left the scent. The young cat is aggressive and hostile, but s_c is quick to deescalate the situation. After a gentle conversation, the apprentice begrudgingly apologizes for the trespass.",
+                "text": "It doesn't take long to find the o_c_n apprentice that left the scent. The young slugcat is aggressive and hostile, but s_c is quick to deescalate the situation. After a gentle conversation, the apprentice begrudgingly apologizes for the trespass.",
                 "exp": 10,
                 "weight": 20,
                 "stat_skill": ["SPEAKER,1"],
                 "other_clan_rep": 2
             },
             {
-                "text": "s_c follows the scent and finds a wounded o_c_n warrior. It seems the cat had been caught by a dog and chased into c_n territory. The dog is gone now, but the warrior can't make it back across the border on their own. s_c is hesitant, but insists that {PRONOUN/s_c/subject} at least escort the wounded warrior to the border.",
+                "text": "s_c follows the scent and finds a wounded o_c_n warrior. It seems the slugcat had been caught by a lizard and chased into c_n territory. The lizard is gone now, but the warrior can't make it back across the border on their own. s_c is hesitant, but insists that {PRONOUN/s_c/subject} at least escort the wounded warrior to the border.",
                 "exp": 10,
                 "weight": 20,
-                "stat_trait": ["compassionate", "calm"],
+                "stat_trait": ["altruistic", "compassionate", "empathetic", "calm"],
                 "other_clan_rep": 2
             }
         ],
         "fail_outcomes": [
             {
-                "text": "p_l decides to follow the scent but only ends up walking in circles. Either the trespasser is good at concealing their trail or p_l just needs to work on their tracking skills. It doesn't matter now; the whole day has been wasted. p_l decides that they should just return to camp and report the strange scent.",
+                "text": "p_l decides to follow the scent, but only ends up walking in circles. Either the trespasser is good at concealing their trail or p_l just needs to work on their tracking skills. It doesn't matter now, the whole day has been wasted. p_l decides that they should just return to camp and report the strange scent.",
                 "exp": 0,
                 "weight": 20,
                 "other_clan_rep": -1
             },
             {
-                "text": "s_c is relentless in tracking the scent and at the end of it finds a o_c_n apprentice.  The young cat has a freshly killed rabbit in their mouth and s_c yowls in anger, not hesitating before attacking the apprentice. The o_c_n cat is driven off of your territory and the rabbit brought back to camp for your own cats.",
+                "text": "s_c is relentless in tracking the scent and at the end of it finds a o_c_n apprentice.  The young slugcat has a freshly killed eggbug in their mouth and s_c yowls in anger, not hesitating before attacking the apprentice. The o_c_n slugcat is driven off of your territory and the eggbug brought back to camp for your own slugcats.",
                 "exp": 0,
                 "weight": 20,
                 "stat_trait": ["bloodthirsty", "cold", "fierce", "strict", "vengeful"],
                 "other_clan_rep": -1
             },
             {
-                "text": "r_c follows the scent to a o_c_n cat taking refuge up a tree. The cat looks scared and only stares down at them before a large dog suddenly descends upon the patrol. r_c is killed before {PRONOUN/r_c/subject} can even run.",
+                "text": "r_c follows the scent to a o_c_n slugcat taking refuge up a tree. The slugcat looks scared and only stares down at them before a large lizard suddenly descends upon the patrol. r_c is killed before {PRONOUN/r_c/subject} can even run.",
                 "exp": 0,
                 "weight": 10,
                 "dead_cats": ["r_c"],
                 "history_text": {
-                    "scar": "m_c followed the scent of a trespassing cat and was scarred by a dog.",
-                    "reg_death": "m_c followed the scent of a trespassing cat and was killed by a dog.",
-                    "lead_death": "followed the scent of a trespassing cat and {VERB/m_c/were/was} killed by a dog"
+                    "scar": "m_c followed the scent of a trespassing slugcat and was scarred by a lizard.",
+                    "reg_death": "m_c followed the scent of a trespassing slugcat and was killed by a lizard.",
+                    "lead_death": "followed the scent of a trespassing slugcat and {VERB/m_c/were/was} killed by a lizard"
                 },
                 "other_clan_rep": -1
             },
             {
-                "text": "p_l follows the scent to a o_c_n cat taking refuge up a tree. The cat snarls down at them, a gleam in their eye, before a large dog comes crashing down on r_c. r_c is caught in its jaws but manages to tear {PRONOUN/r_c/self} free and sprint away.",
+                "text": "p_l follows the scent to a o_c_n slugcat taking refuge up a tree. The slugcat snarls down at them, a gleam in their eye, before a large lizard comes crashing down on r_c. r_c is caught in its jaws but manages to tear {PRONOUN/r_c/self} free and sprint away.",
                 "exp": 0,
                 "weight": 10,
                 "injury": [
@@ -582,16 +578,16 @@
                     }
                 ],
                 "history_text": {
-                    "scar": "m_c followed the scent of a trespassing cat and was scarred by a dog.",
-                    "reg_death": "m_c followed the scent of a trespassing cat and was killed by a dog.",
-                    "lead_death": "followed the scent of a trespassing cat and {VERB/m_c/were/was} killed by a dog"
+                    "scar": "m_c followed the scent of a trespassing slugcat and was scarred by a lizard.",
+                    "reg_death": "m_c followed the scent of a trespassing slugcat and was killed by a lizard.",
+                    "lead_death": "followed the scent of a trespassing slugcat and {VERB/m_c/were/was} killed by a lizard"
                 },
                 "other_clan_rep": -1
             }
         ],
         "antag_fail_outcomes": [
             {
-                "text": "How dare they trespass! p_l bounds after the scent, hoping to find the source of it, eventually discovering a limping o_c_n warrior who hastily explains that a dog had chased them into c_n's territory. p_l is still angry, but {PRONOUN/p_l/subject} {VERB/p_l/rein/reins} in {PRONOUN/p_l/poss} hostility and tensely {VERB/p_l/return/returns} the cat to o_c_n territory.",
+                "text": "How dare they trespass! p_l bounds after the scent, hoping to find the source of it, eventually discovering a limping o_c_n warrior who hastily explains that a lizard had chased them into c_n's territory. p_l is still angry, but {PRONOUN/p_l/subject} {VERB/p_l/rein/reins} in {PRONOUN/p_l/poss} hostility and tensely {VERB/p_l/return/returns} the slugcat to o_c_n territory.",
                 "exp": 0,
                 "weight": 20,
                 "other_clan_rep": -1
@@ -599,7 +595,7 @@
         ],
         "antag_success_outcomes": [
             {
-                "text": "This is a trespass that will not be tolerated and, frankly, should be reciprocated. p_l blatantly spreads their own scent on o_c_n's territory, ruining the clearly-marked border lines.",
+                "text": "This is a trespass that will not be tolerated and, frankly, should be reciprocated. p_l blatantly spreads their own scent on o_c_n's territory, ruining the clearly marked border lines.",
                 "exp": 10,
                 "weight": 20,
                 "other_clan_rep": -2
@@ -648,8 +644,10 @@
                 "weight": 20,
                 "stat_trait": [
                     "compassionate",
+                    "empathetic",
                     "faithful",
                     "loving",
+                    "patient",
                     "responsible",
                     "thoughtful",
                     "wise"
@@ -659,13 +657,13 @@
         ],
         "fail_outcomes": [
             {
-                "text": "r_c comes across a o_c_n apprentice on the wrong side of the border and holding prey. {PRONOUN/s_c/subject/CAP} {VERB/s_c/see/sees} the young cat off with a furious swipe of {PRONOUN/r_c/poss} claws, and then {VERB/r_c/bring/brings} the prey back to c_n camp to report the incident to the deputy.",
+                "text": "r_c comes across a o_c_n apprentice on the wrong side of the border and holding prey. {PRONOUN/s_c/subject/CAP} {VERB/s_c/see/sees} the young slugcat off with a furious swipe of {PRONOUN/r_c/poss} claws, and then {VERB/r_c/bring/brings} the prey back to c_n camp to report the incident to the deputy.",
                 "exp": 0,
                 "weight": 20,
                 "other_clan_rep": -1
             },
             {
-                "text": "s_c is marking along the territory line when {PRONOUN/s_c/subject} {VERB/s_c/encounter/encounters} a patrol from o_c_n, out on a similar mission. {PRONOUN/s_c/subject/CAP} {VERB/s_c/stare/stares} at the other Clan's patrol challengingly, following their every move until the shared border ends. The patrol is marred by muttered insults and hissed threats from both sides.",
+                "text": "s_c is marking along the territory line when {PRONOUN/s_c/subject} {VERB/s_c/encounter/encounters} a patrol from o_c_n, out on a similar mission. {PRONOUN/s_c/subject/CAP} {VERB/s_c/stare/stares} at the other Clan's patrol challengingly, following their every move until the shared border ends, and the patrol is marred by muttered insults and hissed threats from both sides.",
                 "exp": 0,
                 "weight": 20,
                 "stat_trait": [
@@ -681,7 +679,7 @@
                 "other_clan_rep": -1
             },
             {
-                "text": "r_c is having trouble focusing today and puts a mark in the wrong place - and at the worst possible moment, because a o_c_n patrol sees {PRONOUN/r_c/object} doing it! {PRONOUN/r_c/subject/CAP} {VERB/r_c/come/comes} back to camp battered and scratched, and immediately apologize to the deputy for the diplomatic incident {PRONOUN/r_c/subject}{VERB/r_c/'ve/'s} inadvertently caused.",
+                "text": "r_c is having trouble focusing today, and puts a mark in the wrong place - and at the worst possible moment, because a o_c_n patrol sees {PRONOUN/r_c/object} doing it! {PRONOUN/r_c/subject/CAP} {VERB/r_c/come/comes} back to camp battered and scratched, and immediately apologize to the deputy for the diplomatic incident {PRONOUN/r_c/subject}{VERB/r_c/'ve/'s} inadvertently caused.",
                 "exp": 0,
                 "weight": 10,
                 "injury": [
@@ -721,7 +719,7 @@
                 "other_clan_rep": -1
             },
             {
-                "text": "s_c can't contain {PRONOUN/s_c/poss} hatred for o_c_n, not even meeting a patrol of theirs at the border as a lone cat. {PRONOUN/s_c/subject/CAP} {VERB/s_c/come/comes} back to camp bleeding.",
+                "text": "s_c can't contain {PRONOUN/s_c/poss} hatred for o_c_n, not even meeting a patrol of theirs at the border as a lone slugcat. {PRONOUN/s_c/subject/CAP} {VERB/s_c/come/comes} back to camp bleeding.",
                 "exp": 0,
                 "weight": 10,
                 "stat_trait": [
@@ -792,8 +790,10 @@
                 "weight": 20,
                 "stat_trait": [
                     "compassionate",
+                    "empathetic",
                     "faithful",
                     "loving",
+                    "patient",
                     "responsible",
                     "thoughtful",
                     "wise"
@@ -809,7 +809,7 @@
                 "other_clan_rep": -1
             },
             {
-                "text": "s_c is marking along the territory line when {PRONOUN/s_c/subject} {VERB/s_c/encounter/encounters} a patrol from o_c_n, out on a similar mission. {PRONOUN/s_c/subject/CAP} {VERB/s_c/stare/stares} at the other Clan's patrol challengingly, following their every move until the shared border ends. The patrol is marred by muttered insults and hissed threats from both sides.",
+                "text": "s_c is marking along the territory line when {PRONOUN/s_c/subject} {VERB/s_c/encounter/encounters} a patrol from o_c_n, out on a similar mission. {PRONOUN/s_c/subject/CAP} {VERB/s_c/stare/stares} at the other Clan's patrol challengingly, following their every move until the shared border ends, and the patrol is marred by muttered insults and hissed threats from both sides.",
                 "exp": 0,
                 "weight": 20,
                 "stat_trait": [
@@ -837,7 +837,7 @@
                 "other_clan_rep": -1
             },
             {
-                "text": "r_c is having trouble focusing today and puts a mark in the wrong place - and at the worst possible moment, because a o_c_n patrol sees {PRONOUN/r_c/object} doing it! The diplomatic incident spirals into a full blown conflict, and r_c hauls {PRONOUN/r_c/self} back to camp wounded and bleeding.",
+                "text": "r_c is having trouble focusing today, and puts a mark in the wrong place - and at the worst possible moment, because a o_c_n patrol sees {PRONOUN/r_c/object} doing it! The diplomatic incident spirals into a full blown conflict, and r_c hauls {PRONOUN/r_c/self} back to camp wounded and bleeding.",
                 "exp": 0,
                 "weight": 10,
                 "injury": [
@@ -877,7 +877,7 @@
                 "other_clan_rep": -1
             },
             {
-                "text": "s_c can't contain {PRONOUN/s_c/poss} hatred for o_c_n, not even meeting a patrol of theirs at the border as a lone cat. {PRONOUN/s_c/subject/CAP} {VERB/s_c/come/comes} back to camp bleeding.",
+                "text": "s_c can't contain {PRONOUN/s_c/poss} hatred for o_c_n, not even meeting a patrol of theirs at the border as a lone slugcat. {PRONOUN/s_c/subject/CAP} {VERB/s_c/come/comes} back to camp bleeding.",
                 "exp": 0,
                 "weight": 10,
                 "stat_trait": [
@@ -948,8 +948,10 @@
                 "weight": 20,
                 "stat_trait": [
                     "compassionate",
+                    "empathetic",
                     "faithful",
                     "loving",
+                    "patient",
                     "responsible",
                     "thoughtful",
                     "wise"
@@ -965,7 +967,7 @@
                 "other_clan_rep": -1
             },
             {
-                "text": "s_c is marking along the territory line when {PRONOUN/s_c/subject} {VERB/s_c/encounter/encounters} a patrol from o_c_n, out on a similar mission. {PRONOUN/s_c/subject/CAP} {VERB/s_c/stare/stares} at the other Clan's patrol challengingly, following their every move until the shared border ends. The patrol is marred by muttered insults and hissed threats from both sides.",
+                "text": "s_c is marking along the territory line when {PRONOUN/s_c/subject} {VERB/s_c/encounter/encounters} a patrol from o_c_n, out on a similar mission. {PRONOUN/s_c/subject/CAP} {VERB/s_c/stare/stares} at the other Clan's patrol challengingly, following their every move until the shared border ends, and the patrol is marred by muttered insults and hissed threats from both sides.",
                 "exp": 0,
                 "weight": 20,
                 "stat_trait": [
@@ -992,7 +994,7 @@
                 "other_clan_rep": -1
             },
             {
-                "text": "r_c is having trouble focusing today and puts a mark in the wrong place - and at the worst possible moment, because a o_c_n patrol sees {PRONOUN/r_c/object} doing it! The diplomatic incident spirals into a full blown conflict, and r_c hauls {PRONOUN/r_c/self} back to camp wounded and bleeding.",
+                "text": "r_c is having trouble focusing today, and puts a mark in the wrong place - and at the worst possible moment, because a o_c_n patrol sees {PRONOUN/r_c/object} doing it! The diplomatic incident spirals into a full blown conflict, and r_c hauls {PRONOUN/r_c/self} back to camp wounded and bleeding.",
                 "exp": 0,
                 "weight": 10,
                 "injury": [
@@ -1032,7 +1034,7 @@
                 "other_clan_rep": -1
             },
             {
-                "text": "s_c can't contain {PRONOUN/s_c/poss} hatred for o_c_n, not even meeting a patrol of theirs at the border as a lone cat. {PRONOUN/s_c/subject/CAP} {VERB/s_c/come/comes} back to camp bleeding.",
+                "text": "s_c can't contain {PRONOUN/s_c/poss} hatred for o_c_n, not even meeting a patrol of theirs at the border as a lone slugcat. {PRONOUN/s_c/subject/CAP} {VERB/s_c/come/comes} back to camp bleeding.",
                 "exp": 0,
                 "weight": 10,
                 "stat_trait": [
@@ -1098,7 +1100,7 @@
                 "other_clan_rep": 2
             },
             {
-                "text": "s_c comes across a patrol from o_c_n, out on a similar mission to {PRONOUN/s_c/object} and being led by their deputy. One of the patrol yowls an insult and s_c squares up, coldly sneering at the warrior that thinks they can take {PRONOUN/s_c/object}. The other deputy calls their warrior back, begrudgingly impressed.",
+                "text": "s_c comes across a patrol from o_c_n, out on a similar mission to {PRONOUN/s_c/object} and being led by their deputy. One of the patrol yowls an insult, and s_c squares up, coldly sneering at the warrior that thinks they can take {PRONOUN/s_c/object}. The other deputy calls their warrior back, begrudgingly impressed.",
                 "exp": 20,
                 "weight": 20,
                 "stat_skill": ["SPEAKER,1"],
@@ -1110,8 +1112,10 @@
                 "weight": 20,
                 "stat_trait": [
                     "compassionate",
+                    "empathetic",
                     "faithful",
                     "loving",
+                    "patient",
                     "responsible",
                     "thoughtful",
                     "wise"
@@ -1167,7 +1171,7 @@
                 "other_clan_rep": -1
             },
             {
-                "text": "s_c can't contain {PRONOUN/s_c/poss} hatred for o_c_n, not even meeting a patrol of theirs at the border as a lone cat. {PRONOUN/s_c/poss/CAP} {VERB/s_c/come/comes} back to camp bleeding.",
+                "text": "s_c can't contain {PRONOUN/s_c/poss} hatred for o_c_n, not even meeting a patrol of theirs at the border as a lone slugcat. {PRONOUN/s_c/poss/CAP} {VERB/s_c/come/comes} back to camp bleeding.",
                 "exp": 0,
                 "weight": 10,
                 "stat_trait": [
@@ -1226,7 +1230,7 @@
                 "other_clan_rep": 2
             },
             {
-                "text": "s_c comes across a patrol from o_c_n, out on a similar mission to {PRONOUN/s_c/object} and being led by their Clan leader. One of the patrol yowls an insult and s_c squares up, coldly sneering at the warrior that thinks they can take {PRONOUN/s_c/object}. The other leader calls their warrior back, begrudgingly impressed.",
+                "text": "s_c comes across a patrol from o_c_n, out on a similar mission to {PRONOUN/s_c/object} and being led by their Clan leader. One of the patrol yowls an insult, and s_c squares up, coldly sneering at the warrior that thinks they can take {PRONOUN/s_c/object}. The other leader calls their warrior back, begrudgingly impressed.",
                 "exp": 20,
                 "weight": 20,
                 "stat_skill": ["SPEAKER,1"],
@@ -1238,8 +1242,10 @@
                 "weight": 20,
                 "stat_trait": [
                     "compassionate",
+                    "empathetic",
                     "faithful",
                     "loving",
+                    "patient",
                     "responsible",
                     "thoughtful",
                     "wise"
@@ -1295,7 +1301,7 @@
                 "other_clan_rep": -1
             },
             {
-                "text": "s_c can't contain {PRONOUN/s_c/poss} hatred for o_c_n, not even meeting a patrol of theirs at the border as a lone cat. {PRONOUN/s_c/subject/CAP} {VERB/s_c/come/comes} back to camp bleeding.",
+                "text": "s_c can't contain {PRONOUN/s_c/poss} hatred for o_c_n, not even meeting a patrol of theirs at the border as a lone slugcat. {PRONOUN/s_c/subject/CAP} {VERB/s_c/come/comes} back to camp bleeding.",
                 "exp": 0,
                 "stat_trait": [
                     "bloodthirsty",
@@ -1373,8 +1379,10 @@
                 "weight": 20,
                 "stat_trait": [
                     "compassionate",
+                    "empathetic",
                     "faithful",
                     "loving",
+                    "patient",
                     "responsible",
                     "thoughtful",
                     "wise"
@@ -1384,13 +1392,13 @@
         ],
         "fail_outcomes": [
             {
-                "text": "r_c comes across a o_c_n apprentice on the wrong side of the border and holding prey. {PRONOUN/r_c/subject/CAP} {VERB/r_c/see/sees} the young cat off with a furious swipe of {PRONOUN/r_c/poss} claws, and then {VERB/r_c/bring/brings} the prey back to c_n camp to report the incident to the deputy.",
+                "text": "r_c comes across a o_c_n apprentice on the wrong side of the border and holding prey. {PRONOUN/r_c/subject/CAP} {VERB/r_c/see/sees} the young slugcat off with a furious swipe of {PRONOUN/r_c/poss} claws, and then {VERB/r_c/bring/brings} the prey back to c_n camp to report the incident to the deputy.",
                 "exp": 0,
                 "weight": 20,
                 "other_clan_rep": -1
             },
             {
-                "text": "s_c is marking along the territory line when {PRONOUN/s_c/subject} {VERB/s_c/encounter/encounters} a patrol from o_c_n, out on a similar mission. {PRONOUN/s_c/subject/CAP} {VERB/s_c/stare/stares} at the other Clan's patrol challengingly, following their every move until the shared border ends. The patrol is marred by muttered insults and hissed threats from both sides.",
+                "text": "s_c is marking along the territory line when {PRONOUN/s_c/subject} {VERB/s_c/encounter/encounters} a patrol from o_c_n, out on a similar mission. {PRONOUN/s_c/subject/CAP} {VERB/s_c/stare/stares} at the other Clan's patrol challengingly, following their every move until the shared border ends, and the patrol is marred by muttered insults and hissed threats from both sides.",
                 "exp": 0,
                 "weight": 20,
                 "stat_trait": [
@@ -1406,7 +1414,7 @@
                 "other_clan_rep": -1
             },
             {
-                "text": "r_c is having trouble focusing today and puts a mark in the wrong place - and at the worst possible moment, because a o_c_n patrol sees {PRONOUN/r_c/object} doing it! {PRONOUN/r_c/subject/CAP} {VERB/r_c/come/comes} back to camp battered and scratched, and immediately apologize to the deputy for the diplomatic incident {PRONOUN/r_c/subject}{VERB/r_c/'re/'s} inadvertently caused.",
+                "text": "r_c is having trouble focusing today, and puts a mark in the wrong place - and at the worst possible moment, because a o_c_n patrol sees {PRONOUN/r_c/object} doing it! {PRONOUN/r_c/subject/CAP} {VERB/r_c/come/comes} back to camp battered and scratched, and immediately apologize to the deputy for the diplomatic incident {PRONOUN/r_c/subject}{VERB/r_c/'re/'s} inadvertently caused.",
                 "exp": 0,
                 "weight": 10,
                 "injury": [
@@ -1446,7 +1454,7 @@
                 "other_clan_rep": -1
             },
             {
-                "text": "s_c can't contain {PRONOUN/s_c/poss} hatred for o_c_n, not even meeting a patrol of theirs at the border as a lone cat. {PRONOUN/s_c/subject/CAP} {VERB/s_c/come/comes} back to camp bleeding.",
+                "text": "s_c can't contain {PRONOUN/s_c/poss} hatred for o_c_n, not even meeting a patrol of theirs at the border as a lone slugcat. {PRONOUN/s_c/subject/CAP} {VERB/s_c/come/comes} back to camp bleeding.",
                 "exp": 0,
                 "weight": 10,
                 "stat_trait": [
@@ -1517,8 +1525,10 @@
                 "weight": 20,
                 "stat_trait": [
                     "compassionate",
+                    "empathetic",
                     "faithful",
                     "loving",
+                    "patient",
                     "responsible",
                     "thoughtful",
                     "wise"
@@ -1534,7 +1544,7 @@
                 "other_clan_rep": -1
             },
             {
-                "text": "s_c is marking along the territory line when {PRONOUN/s_c/subject} {VERB/s_c/encounter/encounters} a patrol from o_c_n, out on a similar mission. {PRONOUN/s_c/subject/CAP} {VERB/s_c/stare/stares} at the other Clan's patrol challengingly, following their every move until the shared border ends. The patrol is marred by muttered insults and hissed threats from both sides.",
+                "text": "s_c is marking along the territory line when {PRONOUN/s_c/subject} {VERB/s_c/encounter/encounters} a patrol from o_c_n, out on a similar mission. {PRONOUN/s_c/subject/CAP} {VERB/s_c/stare/stares} at the other Clan's patrol challengingly, following their every move until the shared border ends, and the patrol is marred by muttered insults and hissed threats from both sides.",
                 "exp": 0,
                 "weight": 20,
                 "stat_trait": [
@@ -1562,7 +1572,7 @@
                 "other_clan_rep": -1
             },
             {
-                "text": "r_c is having trouble focusing today and puts a mark in the wrong place - and at the worst possible moment, because a o_c_n patrol sees {PRONOUN/r_c/object} doing it! The diplomatic incident spirals into a full blown conflict, and r_c hauls {PRONOUN/r_c/self} back to camp wounded and bleeding.",
+                "text": "r_c is having trouble focusing today, and puts a mark in the wrong place - and at the worst possible moment, because a o_c_n patrol sees {PRONOUN/r_c/object} doing it! The diplomatic incident spirals into a full blown conflict, and r_c hauls {PRONOUN/r_c/self} back to camp wounded and bleeding.",
                 "exp": 0,
                 "weight": 10,
                 "injury": [
@@ -1602,7 +1612,7 @@
                 "other_clan_rep": -1
             },
             {
-                "text": "s_c can't contain {PRONOUN/s_c/poss} hatred for o_c_n, not even meeting a patrol of theirs at the border as a lone cat. {PRONOUN/s_c/subject/CAP} {VERB/s_c/come/comes} back to camp bleeding.",
+                "text": "s_c can't contain {PRONOUN/s_c/poss} hatred for o_c_n, not even meeting a patrol of theirs at the border as a lone slugcat. {PRONOUN/s_c/subject/CAP} {VERB/s_c/come/comes} back to camp bleeding.",
                 "exp": 0,
                 "weight": 10,
                 "stat_trait": [
@@ -1673,8 +1683,10 @@
                 "weight": 20,
                 "stat_trait": [
                     "compassionate",
+                    "empathetic",
                     "faithful",
                     "loving",
+                    "patient",
                     "responsible",
                     "thoughtful",
                     "wise"
@@ -1690,7 +1702,7 @@
                 "other_clan_rep": -1
             },
             {
-                "text": "s_c is marking along the territory line when {PRONOUN/s_c/subject} {VERB/s_c/encounter/encounters} a patrol from o_c_n, out on a similar mission. {PRONOUN/s_c/subject/CAP} {VERB/s_c/stare/stares} at the other Clan's patrol challengingly, following their every move until the shared border ends. The patrol is marred by muttered insults and hissed threats from both sides.",
+                "text": "s_c is marking along the territory line when {PRONOUN/s_c/subject} {VERB/s_c/encounter/encounters} a patrol from o_c_n, out on a similar mission. {PRONOUN/s_c/subject/CAP} {VERB/s_c/stare/stares} at the other Clan's patrol challengingly, following their every move until the shared border ends, and the patrol is marred by muttered insults and hissed threats from both sides.",
                 "exp": 0,
                 "weight": 20,
                 "stat_trait": [
@@ -1718,7 +1730,7 @@
                 "other_clan_rep": -1
             },
             {
-                "text": "r_c is having trouble focusing today and puts a mark in the wrong place - and at the worst possible moment, because a o_c_n patrol sees them doing it! The diplomatic incident spirals into a full blown conflict, and r_c hauls {PRONOUN/r_c/self} back to camp wounded and bleeding.",
+                "text": "r_c is having trouble focusing today, and puts a mark in the wrong place - and at the worst possible moment, because a o_c_n patrol sees them doing it! The diplomatic incident spirals into a full blown conflict, and r_c hauls {PRONOUN/r_c/self} back to camp wounded and bleeding.",
                 "exp": 0,
                 "weight": 10,
                 "injury": [
@@ -1758,7 +1770,7 @@
                 "other_clan_rep": -1
             },
             {
-                "text": "s_c can't contain {PRONOUN/s_c/poss} hatred for o_c_n, not even meeting a patrol of theirs at the border as a lone cat. {PRONOUN/s_c/subject/CAP} {VERB/s_c/come/comes} back to camp bleeding.",
+                "text": "s_c can't contain {PRONOUN/s_c/poss} hatred for o_c_n, not even meeting a patrol of theirs at the border as a lone slugcat. {PRONOUN/s_c/subject/CAP} {VERB/s_c/come/comes} back to camp bleeding.",
                 "exp": 0,
                 "weight": 10,
                 "stat_trait": [
@@ -1824,7 +1836,7 @@
                 "other_clan_rep": 2
             },
             {
-                "text": "s_c comes across a patrol from o_c_n, out on a similar mission to {PRONOUN/s_c/object} and being led by their deputy. One of the patrol yowls an insult and s_c squares up, coldly sneering at the warrior that thinks they can take {PRONOUN/s_c/object}. The other deputy calls their warrior back, begrudgingly impressed.",
+                "text": "s_c comes across a patrol from o_c_n, out on a similar mission to {PRONOUN/s_c/object} and being led by their deputy. One of the patrol yowls an insult, and s_c squares up, coldly sneering at the warrior that thinks they can take {PRONOUN/s_c/object}. The other deputy calls their warrior back, begrudgingly impressed.",
                 "exp": 20,
                 "weight": 20,
                 "stat_skill": ["SPEAKER,1"],
@@ -1836,8 +1848,10 @@
                 "weight": 20,
                 "stat_trait": [
                     "compassionate",
+                    "empathetic",
                     "faithful",
                     "loving",
+                    "patient",
                     "responsible",
                     "thoughtful",
                     "wise"
@@ -1892,7 +1906,7 @@
                 "other_clan_rep": -1
             },
             {
-                "text": "s_c can't contain {PRONOUN/s_c/poss} hatred for o_c_n, not even meeting a patrol of theirs at the border as a lone cat. {PRONOUN/s_c/subject/CAP} {VERB/s_c/come/comes} back to camp bleeding.",
+                "text": "s_c can't contain {PRONOUN/s_c/poss} hatred for o_c_n, not even meeting a patrol of theirs at the border as a lone slugcat. {PRONOUN/s_c/subject/CAP} {VERB/s_c/come/comes} back to camp bleeding.",
                 "exp": 0,
                 "weight": 10,
                 "stat_trait": [
@@ -1951,7 +1965,7 @@
                 "other_clan_rep": 2
             },
             {
-                "text": "s_c comes across a patrol from o_c_n, out on a similar mission to {PRONOUN/s_c/object} and being led by their Clan leader. One of the patrol yowls an insult and s_c squares up, coldly sneering at the warrior that thinks they can take {PRONOUN/s_c/object}. The other leader calls their warrior back, begrudgingly impressed.",
+                "text": "s_c comes across a patrol from o_c_n, out on a similar mission to {PRONOUN/s_c/object} and being led by their Clan leader. One of the patrol yowls an insult, and s_c squares up, coldly sneering at the warrior that thinks they can take {PRONOUN/s_c/object}. The other leader calls their warrior back, begrudgingly impressed.",
                 "exp": 20,
                 "weight": 20,
                 "stat_skill": ["SPEAKER,1"],
@@ -1963,8 +1977,10 @@
                 "weight": 20,
                 "stat_trait": [
                     "compassionate",
+                    "empathetic",
                     "faithful",
                     "loving",
+                    "patient",
                     "responsible",
                     "thoughtful",
                     "wise"
@@ -2020,7 +2036,7 @@
                 "other_clan_rep": -1
             },
             {
-                "text": "s_c can't contain {PRONOUN/s_c/poss} hatred for o_c_n, not even meeting a patrol of theirs at the border as a lone cat. {PRONOUN/s_c/subject/CAP} {VERB/s_c/come/comes} back to camp bleeding.",
+                "text": "s_c can't contain {PRONOUN/s_c/poss} hatred for o_c_n, not even meeting a patrol of theirs at the border as a lone slugcat. {PRONOUN/s_c/subject/CAP} {VERB/s_c/come/comes} back to camp bleeding.",
                 "exp": 0,
                 "weight": 10,
                 "stat_trait": [
@@ -2098,8 +2114,10 @@
                 "weight": 20,
                 "stat_trait": [
                     "compassionate",
+                    "empathetic",
                     "faithful",
                     "loving",
+                    "patient",
                     "responsible",
                     "thoughtful",
                     "wise"
@@ -2109,13 +2127,13 @@
         ],
         "fail_outcomes": [
             {
-                "text": "r_c comes across a o_c_n apprentice on the wrong side of the border and holding prey. {PRONOUN/r_c/subject/CAP} {VERB/r_c/see/sees} the young cat off with a furious swipe of {PRONOUN/r_c/poss} claws, and then {VERB/r_c/bring/brings} the prey back to c_n camp to report the incident to the deputy.",
+                "text": "r_c comes across a o_c_n apprentice on the wrong side of the border and holding prey. {PRONOUN/r_c/subject/CAP} {VERB/r_c/see/sees} the young slugcat off with a furious swipe of {PRONOUN/r_c/poss} claws, and then {VERB/r_c/bring/brings} the prey back to c_n camp to report the incident to the deputy.",
                 "exp": 0,
                 "weight": 20,
                 "other_clan_rep": -1
             },
             {
-                "text": "s_c is marking along the territory line when {PRONOUN/s_c/subject} {VERB/s_c/encounter/encounters} a patrol from o_c_n, out on a similar mission. {PRONOUN/s_c/subject/CAP} {VERB/s_c/stare/stares} at the other Clan's patrol challengingly, following their every move until the shared border ends. The patrol is marred by muttered insults and hissed threats from both sides.",
+                "text": "s_c is marking along the territory line when {PRONOUN/s_c/subject} {VERB/s_c/encounter/encounters} a patrol from o_c_n, out on a similar mission. {PRONOUN/s_c/subject/CAP} {VERB/s_c/stare/stares} at the other Clan's patrol challengingly, following their every move until the shared border ends, and the patrol is marred by muttered insults and hissed threats from both sides.",
                 "exp": 0,
                 "weight": 20,
                 "stat_trait": [
@@ -2131,7 +2149,7 @@
                 "other_clan_rep": -1
             },
             {
-                "text": "r_c is having trouble focusing today and puts a mark in the wrong place - and at the worst possible moment, because a o_c_n patrol sees {PRONOUN/r_c/object} doing it! {PRONOUN/r_c/subject/CAP} {VERB/r_c/come/comes} back to camp battered and scratched, and immediately apologize to the deputy for the diplomatic incident {PRONOUN/r_c/subject}{VERB/r_c/'ve/'s} inadvertently caused.",
+                "text": "r_c is having trouble focusing today, and puts a mark in the wrong place - and at the worst possible moment, because a o_c_n patrol sees {PRONOUN/r_c/object} doing it! {PRONOUN/r_c/subject/CAP} {VERB/r_c/come/comes} back to camp battered and scratched, and immediately apologize to the deputy for the diplomatic incident {PRONOUN/r_c/subject}{VERB/r_c/'ve/'s} inadvertently caused.",
                 "exp": 0,
                 "weight": 10,
                 "injury": [
@@ -2171,7 +2189,7 @@
                 "other_clan_rep": -1
             },
             {
-                "text": "s_c can't contain {PRONOUN/s_c/poss} hatred for o_c_n, not even meeting a patrol of theirs at the border as a lone cat. {PRONOUN/s_c/subject/CAP} {VERB/s_c/come/comes} back to camp bleeding.",
+                "text": "s_c can't contain {PRONOUN/s_c/poss} hatred for o_c_n, not even meeting a patrol of theirs at the border as a lone slugcat. {PRONOUN/s_c/subject/CAP} {VERB/s_c/come/comes} back to camp bleeding.",
                 "exp": 0,
                 "weight": 10,
                 "stat_trait": [
@@ -2242,8 +2260,10 @@
                 "weight": 20,
                 "stat_trait": [
                     "compassionate",
+                    "empathetic",
                     "faithful",
                     "loving",
+                    "patient",
                     "responsible",
                     "thoughtful",
                     "wise"
@@ -2259,7 +2279,7 @@
                 "other_clan_rep": -1
             },
             {
-                "text": "s_c is marking along the territory line when {PRONOUN/s_c/subject} {VERB/s_c/encounter/encounters} a patrol from o_c_n, out on a similar mission. {PRONOUN/s_c/subject/CAP} {VERB/s_c/stare/stares} at the other Clan's patrol challengingly, following their every move until the shared border ends. The patrol is marred by muttered insults and hissed threats from both sides.",
+                "text": "s_c is marking along the territory line when {PRONOUN/s_c/subject} {VERB/s_c/encounter/encounters} a patrol from o_c_n, out on a similar mission. {PRONOUN/s_c/subject/CAP} {VERB/s_c/stare/stares} at the other Clan's patrol challengingly, following their every move until the shared border ends, and the patrol is marred by muttered insults and hissed threats from both sides.",
                 "exp": 0,
                 "weight": 20,
                 "stat_trait": [
@@ -2287,7 +2307,7 @@
                 "other_clan_rep": -1
             },
             {
-                "text": "r_c is having trouble focusing today and puts a mark in the wrong place - and at the worst possible moment, because a o_c_n patrol sees {PRONOUN/r_c/object} doing it! The diplomatic incident spirals into a full blown conflict, and r_c hauls {PRONOUN/r_c/self} back to camp wounded and bleeding.",
+                "text": "r_c is having trouble focusing today, and puts a mark in the wrong place - and at the worst possible moment, because a o_c_n patrol sees {PRONOUN/r_c/object} doing it! The diplomatic incident spirals into a full blown conflict, and r_c hauls {PRONOUN/r_c/self} back to camp wounded and bleeding.",
                 "exp": 0,
                 "weight": 10,
                 "injury": [
@@ -2327,7 +2347,7 @@
                 "other_clan_rep": -1
             },
             {
-                "text": "s_c can't contain {PRONOUN/s_c/poss} hatred for o_c_n, not even meeting a patrol of theirs at the border as a lone cat. {PRONOUN/s_c/subject/CAP} {VERB/s_c/come/comes} back to camp bleeding.",
+                "text": "s_c can't contain {PRONOUN/s_c/poss} hatred for o_c_n, not even meeting a patrol of theirs at the border as a lone slugcat. {PRONOUN/s_c/subject/CAP} {VERB/s_c/come/comes} back to camp bleeding.",
                 "exp": 0,
                 "weight": 10,
                 "stat_trait": [
@@ -2398,8 +2418,10 @@
                 "weight": 20,
                 "stat_trait": [
                     "compassionate",
+                    "empathetic",
                     "faithful",
                     "loving",
+                    "patient",
                     "responsible",
                     "thoughtful",
                     "wise"
@@ -2415,7 +2437,7 @@
                 "other_clan_rep": -1
             },
             {
-                "text": "s_c is marking along the territory line when {PRONOUN/s_c/subject} {VERB/s_c/encounter/encounters} a patrol from o_c_n, out on a similar mission. {PRONOUN/s_c/subject/CAP} {VERB/s_c/stare/stares} at the other Clan's patrol challengingly, following their every move until the shared border ends. The patrol is marred by muttered insults and hissed threats from both sides.",
+                "text": "s_c is marking along the territory line when {PRONOUN/s_c/subject} {VERB/s_c/encounter/encounters} a patrol from o_c_n, out on a similar mission. {PRONOUN/s_c/subject/CAP} {VERB/s_c/stare/stares} at the other Clan's patrol challengingly, following their every move until the shared border ends, and the patrol is marred by muttered insults and hissed threats from both sides.",
                 "exp": 0,
                 "weight": 20,
                 "stat_trait": [
@@ -2443,7 +2465,7 @@
                 "other_clan_rep": -1
             },
             {
-                "text": "r_c is having trouble focusing today and puts a mark in the wrong place - and at the worst possible moment, because a o_c_n patrol sees {PRONOUN/r_c/object} doing it! The diplomatic incident spirals into a full blown conflict, and r_c hauls {PRONOUN/r_c/self} back to camp wounded and bleeding.",
+                "text": "r_c is having trouble focusing today, and puts a mark in the wrong place - and at the worst possible moment, because a o_c_n patrol sees {PRONOUN/r_c/object} doing it! The diplomatic incident spirals into a full blown conflict, and r_c hauls {PRONOUN/r_c/self} back to camp wounded and bleeding.",
                 "exp": 0,
                 "weight": 10,
                 "injury": [
@@ -2483,7 +2505,7 @@
                 "other_clan_rep": -1
             },
             {
-                "text": "s_c can't contain {PRONOUN/s_c/poss} hatred for o_c_n, not even meeting a patrol of theirs at the border as a lone cat. {PRONOUN/s_c/subject/CAP} {VERB/s_c/come/comes} back to camp bleeding.",
+                "text": "s_c can't contain {PRONOUN/s_c/poss} hatred for o_c_n, not even meeting a patrol of theirs at the border as a lone slugcat. {PRONOUN/s_c/subject/CAP} {VERB/s_c/come/comes} back to camp bleeding.",
                 "exp": 0,
                 "weight": 10,
                 "stat_trait": [
@@ -2549,7 +2571,7 @@
                 "other_clan_rep": 2
             },
             {
-                "text": "s_c comes across a patrol from o_c_n, out on a similar mission to {PRONOUN/s_c/object} and being led by their deputy. One of the patrol yowls an insult and s_c squares up, coldly sneering at the warrior that thinks they can take {PRONOUN/s_c/object}. The other deputy calls their warrior back, begrudgingly impressed.",
+                "text": "s_c comes across a patrol from o_c_n, out on a similar mission to {PRONOUN/s_c/object} and being led by their deputy. One of the patrol yowls an insult, and s_c squares up, coldly sneering at the warrior that thinks they can take {PRONOUN/s_c/object}. The other deputy calls their warrior back, begrudgingly impressed.",
                 "exp": 20,
                 "weight": 20,
                 "stat_skill": ["SPEAKER,1"],
@@ -2561,8 +2583,10 @@
                 "weight": 20,
                 "stat_trait": [
                     "compassionate",
+                    "empathetic",
                     "faithful",
                     "loving",
+                    "patient",
                     "responsible",
                     "thoughtful",
                     "wise"
@@ -2618,7 +2642,7 @@
                 "other_clan_rep": -1
             },
             {
-                "text": "s_c can't contain {PRONOUN/s_c/poss} hatred for o_c_n, not even meeting a patrol of theirs at the border as a lone cat. {PRONOUN/s_c/subject/CAP} {VERB/s_c/come/comes} back to camp bleeding.",
+                "text": "s_c can't contain {PRONOUN/s_c/poss} hatred for o_c_n, not even meeting a patrol of theirs at the border as a lone slugcat. {PRONOUN/s_c/subject/CAP} {VERB/s_c/come/comes} back to camp bleeding.",
                 "exp": 0,
                 "weight": 10,
                 "stat_trait": [
@@ -2677,7 +2701,7 @@
                 "other_clan_rep": 2
             },
             {
-                "text": "s_c comes across a patrol from o_c_n, out on a similar mission to {PRONOUN/s_c/object} and being led by their Clan leader. One of the patrol yowls an insult and s_c squares up, coldly sneering at the warrior that thinks they can take {PRONOUN/s_c/object}. The other leader calls their warrior back, begrudgingly impressed.",
+                "text": "s_c comes across a patrol from o_c_n, out on a similar mission to {PRONOUN/s_c/object} and being led by their Clan leader. One of the patrol yowls an insult, and s_c squares up, coldly sneering at the warrior that thinks they can take {PRONOUN/s_c/object}. The other leader calls their warrior back, begrudgingly impressed.",
                 "exp": 20,
                 "weight": 20,
                 "stat_skill": ["SPEAKER,1"],
@@ -2689,8 +2713,10 @@
                 "weight": 20,
                 "stat_trait": [
                     "compassionate",
+                    "empathetic",
                     "faithful",
                     "loving",
+                    "patient",
                     "responsible",
                     "thoughtful",
                     "wise"
@@ -2746,7 +2772,7 @@
                 "other_clan_rep": -1
             },
             {
-                "text": "s_c can't contain {PRONOUN/s_c/poss} hatred for o_c_n, not even meeting a patrol of theirs at the border as a lone cat. {PRONOUN/s_c/subject/CAP} {VERB/s_c/come/comes} back to camp bleeding.",
+                "text": "s_c can't contain {PRONOUN/s_c/poss} hatred for o_c_n, not even meeting a patrol of theirs at the border as a lone slugcat. {PRONOUN/s_c/subject/CAP} {VERB/s_c/come/comes} back to camp bleeding.",
                 "exp": 0,
                 "weight": 10,
                 "stat_trait": [
@@ -2800,7 +2826,7 @@
         "chance_of_success": 30,
         "success_outcomes": [
             {
-                "text": "The border with o_c_n extends all the way to the coast, with all the pitfalls that come with that. The spray from the ocean has once again wiped away the border markings. r_c re-marks and heads home, a simple but necessary task completed.",
+                "text": "The border with o_c_n extends all the way to the coast, with all the pitfalls that come with that. The spray from the ocean has once again wiped away the border markings. r_c remarks and heads home, a simple but necessary task completed.",
                 "exp": 20,
                 "weight": 20,
                 "other_clan_rep": 2
@@ -2824,8 +2850,10 @@
                 "weight": 20,
                 "stat_trait": [
                     "compassionate",
+                    "empathetic",
                     "faithful",
                     "loving",
+                    "patient",
                     "responsible",
                     "thoughtful",
                     "wise"
@@ -2835,13 +2863,13 @@
         ],
         "fail_outcomes": [
             {
-                "text": "r_c comes across a o_c_n apprentice on the wrong side of the border and holding prey. {PRONOUN/r_c/subject/CAP} {VERB/r_c/see/sees} the young cat off with a furious swipe of {PRONOUN/r_c/poss} claws, and then {VERB/r_c/bring/brings} the prey back to c_n camp to report the incident to the deputy.",
+                "text": "r_c comes across a o_c_n apprentice on the wrong side of the border and holding prey. {PRONOUN/r_c/subject/CAP} {VERB/r_c/see/sees} the young slugcat off with a furious swipe of {PRONOUN/r_c/poss} claws, and then {VERB/r_c/bring/brings} the prey back to c_n camp to report the incident to the deputy.",
                 "exp": 0,
                 "weight": 20,
                 "other_clan_rep": -1
             },
             {
-                "text": "s_c is marking along the territory line when {PRONOUN/s_c/object} {VERB/s_c/encounter/encounters} a patrol from o_c_n, out on a similar mission. {PRONOUN/s_c/object/CAP} {VERB/s_c/stare/stares} at the other Clan's patrol challengingly, following their every move until the shared border ends. The patrol is marred by muttered insults and hissed threats from both sides.",
+                "text": "s_c is marking along the territory line when {PRONOUN/s_c/object} {VERB/s_c/encounter/encounters} a patrol from o_c_n, out on a similar mission. {PRONOUN/s_c/object/CAP} {VERB/s_c/stare/stares} at the other Clan's patrol challengingly, following their every move until the shared border ends, and the patrol is marred by muttered insults and hissed threats from both sides.",
                 "exp": 0,
                 "weight": 20,
                 "stat_trait": [
@@ -2857,7 +2885,7 @@
                 "other_clan_rep": -1
             },
             {
-                "text": "r_c is having trouble focusing today and puts a mark in the wrong place - and at the worst possible moment, because a o_c_n patrol sees {PRONOUN/r_c/object} doing it! {PRONOUN/r_c/subject/CAP} {VERB/r_c/come/comes} back to camp battered and scratched, and immediately apologize to the deputy for the diplomatic incident {PRONOUN/r_c/subject}{VERB/r_c/'ve/'s} inadvertently caused.",
+                "text": "r_c is having trouble focusing today, and puts a mark in the wrong place - and at the worst possible moment, because a o_c_n patrol sees {PRONOUN/r_c/object} doing it! {PRONOUN/r_c/subject/CAP} {VERB/r_c/come/comes} back to camp battered and scratched, and immediately apologize to the deputy for the diplomatic incident {PRONOUN/r_c/subject}{VERB/r_c/'ve/'s} inadvertently caused.",
                 "exp": 0,
                 "weight": 10,
                 "injury": [
@@ -2897,7 +2925,7 @@
                 "other_clan_rep": -1
             },
             {
-                "text": "s_c can't contain {PRONOUN/s_c/poss} hatred for o_c_n, not even meeting a patrol of theirs at the border as a lone cat. {PRONOUN/s_c/subject/CAP} {VERB/s_c/come/comes} back to camp bleeding.",
+                "text": "s_c can't contain {PRONOUN/s_c/poss} hatred for o_c_n, not even meeting a patrol of theirs at the border as a lone slugcat. {PRONOUN/s_c/subject/CAP} {VERB/s_c/come/comes} back to camp bleeding.",
                 "exp": 0,
                 "weight": 10,
                 "stat_trait": [
@@ -2944,7 +2972,7 @@
         "chance_of_success": 30,
         "success_outcomes": [
             {
-                "text": "The border with o_c_n extends all the way to the coast, with all the pitfalls that come with that. The spray from the ocean has once again wiped away the border markings. r_c re-marks and heads home, a simple but necessary task completed.",
+                "text": "The border with o_c_n extends all the way to the coast, with all the pitfalls that come with that. The spray from the ocean has once again wiped away the border markings. r_c remarks and heads home, a simple but necessary task completed.",
                 "exp": 20,
                 "weight": 20,
                 "other_clan_rep": 2
@@ -2968,8 +2996,10 @@
                 "weight": 20,
                 "stat_trait": [
                     "compassionate",
+                    "empathetic",
                     "faithful",
                     "loving",
+                    "patient",
                     "responsible",
                     "thoughtful",
                     "wise"
@@ -2985,7 +3015,7 @@
                 "other_clan_rep": -1
             },
             {
-                "text": "s_c is marking along the territory line when {PRONOUN/s_c/subject} {VERB/s_c/encounter/encounters} a patrol from o_c_n, out on a similar mission. {PRONOUN/s_c/subject/CAP} {VERB/s_c/stare/stares} at the other Clan's patrol challengingly, following their every move until the shared border ends. The patrol is marred by muttered insults and hissed threats from both sides.",
+                "text": "s_c is marking along the territory line when {PRONOUN/s_c/subject} {VERB/s_c/encounter/encounters} a patrol from o_c_n, out on a similar mission. {PRONOUN/s_c/subject/CAP} {VERB/s_c/stare/stares} at the other Clan's patrol challengingly, following their every move until the shared border ends, and the patrol is marred by muttered insults and hissed threats from both sides.",
                 "exp": 0,
                 "weight": 20,
                 "stat_trait": [
@@ -3013,7 +3043,7 @@
                 "other_clan_rep": -1
             },
             {
-                "text": "r_c is having trouble focusing today and puts a mark in the wrong place - and at the worst possible moment, because a o_c_n patrol sees {PRONOUN/r_c/object} doing it! The diplomatic incident spirals into a full blown conflict, and r_c hauls {PRONOUN/r_c/self} back to camp wounded and bleeding.",
+                "text": "r_c is having trouble focusing today, and puts a mark in the wrong place - and at the worst possible moment, because a o_c_n patrol sees {PRONOUN/r_c/object} doing it! The diplomatic incident spirals into a full blown conflict, and r_c hauls {PRONOUN/r_c/self} back to camp wounded and bleeding.",
                 "exp": 0,
                 "weight": 10,
                 "injury": [
@@ -3053,7 +3083,7 @@
                 "other_clan_rep": -1
             },
             {
-                "text": "s_c can't contain {PRONOUN/s_c/poss} hatred for o_c_n, not even meeting a patrol of theirs at the border as a lone cat. {PRONOUN/s_c/subject/CAP} {VERB/s_c/come/comes} back to camp bleeding.",
+                "text": "s_c can't contain {PRONOUN/s_c/poss} hatred for o_c_n, not even meeting a patrol of theirs at the border as a lone slugcat. {PRONOUN/s_c/subject/CAP} {VERB/s_c/come/comes} back to camp bleeding.",
                 "exp": 0,
                 "weight": 10,
                 "stat_trait": [
@@ -3100,7 +3130,7 @@
         "chance_of_success": 30,
         "success_outcomes": [
             {
-                "text": "The border with o_c_n extends all the way to the coast, with all the pitfalls that come with that. The spray from the ocean has once again wiped away the border markings. r_c re-marks and heads home, a simple but necessary task completed.",
+                "text": "The border with o_c_n extends all the way to the coast, with all the pitfalls that come with that. The spray from the ocean has once again wiped away the border markings. r_c remarks and heads home, a simple but necessary task completed.",
                 "exp": 20,
                 "weight": 20,
                 "other_clan_rep": 2
@@ -3124,8 +3154,10 @@
                 "weight": 20,
                 "stat_trait": [
                     "compassionate",
+                    "empathetic",
                     "faithful",
                     "loving",
+                    "patient",
                     "responsible",
                     "thoughtful",
                     "wise"
@@ -3141,7 +3173,7 @@
                 "other_clan_rep": -1
             },
             {
-                "text": "s_c is marking along the territory line when {PRONOUN/s_c/subject} {VERB/s_c/encounter/encounters} a patrol from o_c_n, out on a similar mission. {PRONOUN/s_c/subject/CAP} {VERB/s_c/stare/stares} at the other Clan's patrol challengingly, following their every move until the shared border ends. The patrol is marred by muttered insults and hissed threats from both sides.",
+                "text": "s_c is marking along the territory line when {PRONOUN/s_c/subject} {VERB/s_c/encounter/encounters} a patrol from o_c_n, out on a similar mission. {PRONOUN/s_c/subject/CAP} {VERB/s_c/stare/stares} at the other Clan's patrol challengingly, following their every move until the shared border ends, and the patrol is marred by muttered insults and hissed threats from both sides.",
                 "exp": 0,
                 "weight": 20,
                 "stat_trait": [
@@ -3169,7 +3201,7 @@
                 "other_clan_rep": -1
             },
             {
-                "text": "r_c is having trouble focusing today and puts a mark in the wrong place - and at the worst possible moment, because a o_c_n patrol sees {PRONOUN/r_c/object} doing it! The diplomatic incident spirals into a full blown conflict, and r_c hauls {PRONOUN/r_c/self} back to camp wounded and bleeding.",
+                "text": "r_c is having trouble focusing today, and puts a mark in the wrong place - and at the worst possible moment, because a o_c_n patrol sees {PRONOUN/r_c/object} doing it! The diplomatic incident spirals into a full blown conflict, and r_c hauls {PRONOUN/r_c/self} back to camp wounded and bleeding.",
                 "exp": 0,
                 "weight": 10,
                 "injury": [
@@ -3209,7 +3241,7 @@
                 "other_clan_rep": -1
             },
             {
-                "text": "s_c can't contain {PRONOUN/s_c/poss} hatred for o_c_n, not even meeting a patrol of theirs at the border as a lone cat. {PRONOUN/s_c/subject/CAP} {VERB/s_c/come/comes} back to camp bleeding.",
+                "text": "s_c can't contain {PRONOUN/s_c/poss} hatred for o_c_n, not even meeting a patrol of theirs at the border as a lone slugcat. {PRONOUN/s_c/subject/CAP} {VERB/s_c/come/comes} back to camp bleeding.",
                 "exp": 0,
                 "weight": 10,
                 "stat_trait": [
@@ -3263,7 +3295,7 @@
         "chance_of_success": 30,
         "success_outcomes": [
             {
-                "text": "The border with o_c_n extends all the way to the coast, with all the pitfalls that come with that. The spray from the ocean has once again wiped away the border markings. r_c re-marks and heads home, a simple but necessary task completed.",
+                "text": "The border with o_c_n extends all the way to the coast, with all the pitfalls that come with that. The spray from the ocean has once again wiped away the border markings. r_c remarks and heads home, a simple but necessary task completed.",
                 "exp": 20,
                 "weight": 20,
                 "other_clan_rep": 2
@@ -3275,7 +3307,7 @@
                 "other_clan_rep": 2
             },
             {
-                "text": "s_c comes across a patrol from o_c_n, out on a similar mission to {PRONOUN/s_c/object} and being led by their deputy. One of the patrol yowls an insult and s_c squares up, coldly sneering at the warrior that thinks they can take {PRONOUN/s_c/object}. The other deputy calls their warrior back, begrudgingly impressed.",
+                "text": "s_c comes across a patrol from o_c_n, out on a similar mission to {PRONOUN/s_c/object} and being led by their deputy. One of the patrol yowls an insult, and s_c squares up, coldly sneering at the warrior that thinks they can take {PRONOUN/s_c/object}. The other deputy calls their warrior back, begrudgingly impressed.",
                 "exp": 20,
                 "weight": 20,
                 "stat_skill": ["SPEAKER,1"],
@@ -3287,8 +3319,10 @@
                 "weight": 20,
                 "stat_trait": [
                     "compassionate",
+                    "empathetic",
                     "faithful",
                     "loving",
+                    "patient",
                     "responsible",
                     "thoughtful",
                     "wise"
@@ -3344,7 +3378,7 @@
                 "other_clan_rep": -1
             },
             {
-                "text": "s_c can't contain {PRONOUN/s_c/poss} hatred for o_c_n, not even meeting a patrol of theirs at the border as a lone cat. {PRONOUN/s_c/subject/CAP} {VERB/s_c/come/comes} back to camp bleeding.",
+                "text": "s_c can't contain {PRONOUN/s_c/poss} hatred for o_c_n, not even meeting a patrol of theirs at the border as a lone slugcat. {PRONOUN/s_c/subject/CAP} {VERB/s_c/come/comes} back to camp bleeding.",
                 "exp": 0,
                 "weight": 10,
                 "stat_trait": [
@@ -3391,7 +3425,7 @@
         "chance_of_success": 30,
         "success_outcomes": [
             {
-                "text": "The border with o_c_n extends all the way to the coast, with all the pitfalls that come with that. The spray from the ocean has once again wiped away the border markings. r_c re-marks and heads home, a simple but necessary task completed.",
+                "text": "The border with o_c_n extends all the way to the coast, with all the pitfalls that come with that. The spray from the ocean has once again wiped away the border markings. r_c remarks and heads home, a simple but necessary task completed.",
                 "exp": 20,
                 "weight": 20,
                 "other_clan_rep": 2
@@ -3403,7 +3437,7 @@
                 "other_clan_rep": 2
             },
             {
-                "text": "s_c comes across a patrol from o_c_n, out on a similar mission to {PRONOUN/s_c/object} and being led by their Clan leader. One of the patrol yowls an insult and s_c squares up, coldly sneering at the warrior that thinks they can take {PRONOUN/s_c/object}. The other leader calls their warrior back, begrudgingly impressed.",
+                "text": "s_c comes across a patrol from o_c_n, out on a similar mission to {PRONOUN/s_c/object} and being led by their Clan leader. One of the patrol yowls an insult, and s_c squares up, coldly sneering at the warrior that thinks they can take {PRONOUN/s_c/object}. The other leader calls their warrior back, begrudgingly impressed.",
                 "exp": 20,
                 "weight": 20,
                 "stat_skill": ["SPEAKER,1"],
@@ -3415,8 +3449,10 @@
                 "weight": 20,
                 "stat_trait": [
                     "compassionate",
+                    "empathetic",
                     "faithful",
                     "loving",
+                    "patient",
                     "responsible",
                     "thoughtful",
                     "wise"
@@ -3472,7 +3508,7 @@
                 "other_clan_rep": -1
             },
             {
-                "text": "s_c can't contain {PRONOUN/s_c/poss} hatred for o_c_n, not even meeting a patrol of theirs at the border as a lone cat. {PRONOUN/s_c/subject/CAP} {VERB/s_c/come/comes} back to camp bleeding.",
+                "text": "s_c can't contain {PRONOUN/s_c/poss} hatred for o_c_n, not even meeting a patrol of theirs at the border as a lone slugcat. {PRONOUN/s_c/subject/CAP} {VERB/s_c/come/comes} back to camp bleeding.",
                 "exp": 0,
                 "weight": 10,
                 "injury": [
@@ -3525,7 +3561,7 @@
         "relationship_constraint": ["dislike_60"],
         "success_outcomes": [
             {
-                "text": "p_l has felt the glares r_c has sent {PRONOUN/p_l/poss} way all morning, and given them back just as vehemently when r_c's own back is turned. But when {PRONOUN/p_l/subject} {VERB/p_l/spot/spots} the shadow of a o_c_n warrior falling on r_c, {PRONOUN/p_l/subject} {VERB/p_l/react/reacts} without thought, leaping forward, claws ripping into the enemy's back and flipping them off r_c with a ferocious snarl.",
+                "text": "p_l has felt the glares r_c has sent {PRONOUN/p_l/poss} way all morning, and given them back just as vehemently when r_c's own back is turned. But when {PRONOUN/p_l/subject} {VERB/p_l/spot/spots} the shadow of an o_c_n warrior falling on r_c, {PRONOUN/p_l/subject} {VERB/p_l/react/reacts} without thought, leaping forward, claws ripping into the enemy's back and flipping them off r_c with a ferocious snarl.",
                 "exp": 50,
                 "weight": 20,
                 "relationships": [
@@ -3546,7 +3582,7 @@
                 ]
             },
             {
-                "text": "The hatred between them is no secret - r_c has said, in the past, that the world would be better off without p_l in it. But when o_c_n puts that to the test, battling against the border patrol, r_c puts {PRONOUN/r_c/poss} back to p_l like {PRONOUN/r_c/subject} would any of {PRONOUN/r_c/poss} other Clanmates, fighting just as fiercely to protect {PRONOUN/p_l/poss} flank. Maybe p_l is insufferable, but fox-dung if {PRONOUN/r_c/subject}'ll let o_c_n take them!",
+                "text": "The hatred between them is no secret - r_c has said, in the past, that the world would be better off without p_l in it. But when o_c_n puts that to the test, battling against the border patrol, r_c puts {PRONOUN/r_c/poss} back to p_l like {PRONOUN/r_c/subject} would any of {PRONOUN/r_c/poss} other clanmates, fighting just as fiercely to protect {PRONOUN/p_l/poss} flank. Maybe p_l is insufferable, but fox-dung if {PRONOUN/r_c/subject}'ll let o_c_n take them!",
                 "exp": 50,
                 "weight": 5,
                 "relationships": [
@@ -3569,14 +3605,14 @@
         ],
         "fail_outcomes": [
             {
-                "text": "r_c throws {PRONOUN/r_c/self} into battle, determined to throw o_c_n off {PRONOUN/r_c/poss} territory, but as {PRONOUN/r_c/subject} {VERB/r_c/twist and turn/twists and turns} in combat, two warriors from o_c_n surround {PRONOUN/r_c/object}. r_c calls to {PRONOUN/r_c/poss} Clanmate to back them up. Instead is knocked to the ground, pain spreading through the back of {PRONOUN/r_c/object} neck. {PRONOUN/r_c/subject/CAP} struggle for breath, fading rapidly - where was {PRONOUN/r_c/poss} backup, the rest of {PRONOUN/r_c/poss} patrol?",
+                "text": "r_c throws {PRONOUN/r_c/self} into battle, determined to throw o_c_n off {PRONOUN/r_c/poss} territory, but as {PRONOUN/r_c/subject} {VERB/r_c/twist and turn/twists and turns} in combat, two warriors from o_c_n surround {PRONOUN/r_c/object}. r_c calls to {PRONOUN/r_c/poss} Clanmate to back them up, but instead is knocked to the ground, pain spreading through the back of {PRONOUN/r_c/object} neck. {PRONOUN/r_c/subject/CAP} struggle for breath, fading rapidly - where was {PRONOUN/r_c/poss} backup, the rest of {PRONOUN/r_c/poss} patrol?",
                 "exp": 0,
                 "weight": 10,
                 "dead_cats": ["r_c"],
                 "history_text": {
-                    "scar": "m_c carries a scar, and lingering resentment, from when a Clanmate failed to watch {PRONOUN/m_c/poss} back during a border altercation.",
-                    "reg_death": "m_c was killed in a border altercation when a Clanmate failed to watch {PRONOUN/m_c/poss} back.",
-                    "lead_death": "were killed when a Clanmate failed to support {PRONOUN/m_c/object} during a border altercation"
+                    "scar": "r_c carries a scar, and lingering resentment, from when a Clanmate failed to watch {PRONOUN/r_c/poss} back during a border altercation.",
+                    "reg_death": "r_c was killed in a border altercation when a Clanmate failed to watch {PRONOUN/r_c/poss} back.",
+                    "lead_death": "were killed when a Clanmate failed to support {PRONOUN/r_c/object} during a border altercation"
                 },
                 "relationships": [
                     {
@@ -3597,7 +3633,7 @@
                 "other_clan_rep": -1
             },
             {
-                "text": "r_c throws {PRONOUN/r_c/self} into battle, determined to throw o_c_n off {PRONOUN/r_c/poss} territory, but as {PRONOUN/r_c/subject} {VERB/r_c/twist and turn/twists and turns} in combat, two warriors from o_c_n surround {PRONOUN/r_c/object}. r_c calls to {PRONOUN/r_c/poss} Clanmate to back them up. Instead hears a familiar voice snarling that {PRONOUN/r_c/subject} {VERB/r_c/need/needs} to deal with {PRONOUN/r_c/poss} own problems. Beaten and bloodstained, the border patrol reports back to camp as resentful of each other as they've ever been.",
+                "text": "r_c throws {PRONOUN/r_c/self} into battle, determined to throw o_c_n off {PRONOUN/r_c/poss} territory, but as {PRONOUN/r_c/subject} {VERB/r_c/twist and turn/twists and turns} in combat, two warriors from o_c_n surround {PRONOUN/r_c/object}. r_c calls to {PRONOUN/r_c/poss} Clanmate to back them up, but instead hears a familiar voice snarling that {PRONOUN/r_c/subject} {VERB/r_c/need/needs} to deal with {PRONOUN/r_c/poss} own problems. Beaten and bloodstained, the border patrol reports back to camp as resentful of each other as they've ever been.",
                 "exp": 0,
                 "weight": 10,
                 "injury": [
@@ -3608,9 +3644,9 @@
                     }
                 ],
                 "history_text": {
-                    "scar": "m_c carries a scar, and lingering resentment, from when a Clanmate failed to watch {PRONOUN/m_c/poss} back during a border altercation.",
-                    "reg_death": "m_c was killed in a border altercation when a Clanmate failed to watch {PRONOUN/m_c/poss} back.",
-                    "lead_death": "were killed when a Clanmate failed to support {PRONOUN/m_c/object} during a border altercation"
+                    "scar": "r_c carries a scar, and lingering resentment, from when a Clanmate failed to watch {PRONOUN/r_c/poss} back during a border altercation.",
+                    "reg_death": "r_c was killed in a border altercation when a Clanmate failed to watch {PRONOUN/r_c/poss} back.",
+                    "lead_death": "were killed when a Clanmate failed to support {PRONOUN/r_c/object} during a border altercation"
                 },
                 "relationships": [
                     {
@@ -3641,7 +3677,7 @@
         ],
         "antag_success_outcomes": [
             {
-                "text": "p_l and r_c might have their problems with each other, but they'll be damned to the Dark Forest if they let that get in the way of ripping apart o_c_n trespassers! They ambush the hostile patrol, and through they return back to camp bloodstained, none is their own.",
+                "text": "p_l and r_c might have their problems with each other, but they'll be damned to the dark forest if they let that get in the way of ripping apart o_c_n trespassers! They ambush the hostile patrol, and through they return back to camp bloodstained, none is their own.",
                 "exp": 50,
                 "weight": 20,
                 "other_clan_rep": -2
@@ -3669,7 +3705,7 @@
                 "weight": 20
             },
             {
-                "text": "This smacks of a setup to s_c. If {PRONOUN/s_c/subject} were trying to get away with attacking c_n, this is how {PRONOUN/s_c/subject}'d do it, tempt some mouse-brain with an opportunity that looked too good to resist. So, assuming cunning eyes are already watching {PRONOUN/s_c/object}, {PRONOUN/s_c/subject} {VERB/s_c/lay/lies} down to bask in front of the border instead. Good old psychological warfare.",
+                "text": "This smacks of a setup to s_c. If {PRONOUN/s_c/subject} were trying to get away with attacking c_n, this is how {PRONOUN/s_c/subject}'d do it, tempt some yeek-brain with an opportunity that looked too good to resist. So, assuming cunning eyes are already watching {PRONOUN/s_c/object}, {PRONOUN/s_c/subject} {VERB/s_c/lay/lies} down to bask in front of the border instead. Good old psychological warfare.",
                 "exp": 50,
                 "weight": 20,
                 "stat_skill": ["SPEAKER,2", "MEDIATOR,2"]
@@ -3688,13 +3724,13 @@
                 "weight": 10,
                 "dead_cats": ["patrol", "some_lives"],
                 "history_text": {
-                    "reg_death": "m_c was killed in a border ambush by a hostile Clan.",
+                    "reg_death": "r_c was killed in a border ambush by a hostile Clan.",
                     "lead_death": "were killed by o_c_n in a border ambush"
                 },
                 "other_clan_rep": -1
             },
             {
-                "text": "Starting trouble is s_c's speciality - but this time, trouble was ready for {PRONOUN/s_c/object}, and {PRONOUN/s_c/subject}{VERB/s_c/'re/'s} just the sucker who's fallen into someone else's trap. The o_c_n patrol was waiting for some cat to take advantage of the 'weak' section of border. s_c won't be given the chance to make the same mistake again.",
+                "text": "Starting trouble is s_c's speciality - but this time, trouble was ready for {PRONOUN/s_c/object}, and {PRONOUN/s_c/subject}{VERB/s_c/'re/'s} just the sucker who's fallen into someone else's trap. The o_c_n patrol was waiting for some slugcat to take advantage of the 'weak' section of border. s_c won't be given the chance to make the same mistake again.",
                 "exp": 0,
                 "weight": 10,
                 "stat_trait": [
@@ -3711,7 +3747,7 @@
                 ],
                 "dead_cats": ["patrol", "some_lives"],
                 "history_text": {
-                    "reg_death": "m_c was killed in a border ambush by a hostile Clan.",
+                    "reg_death": "r_c was killed in a border ambush by a hostile Clan.",
                     "lead_death": "were killed by o_c_n in a border ambush"
                 },
                 "other_clan_rep": -1
@@ -3755,7 +3791,7 @@
                 "weight": 20
             },
             {
-                "text": "This smacks of a setup to s_c. If {PRONOUN/s_c/subject} were trying to get away with attacking c_n, this is how {PRONOUN/s_c/subject}'d do it, tempt some mouse-brain with an opportunity that looked too good to resist. So, assuming cunning eyes are already watching {PRONOUN/s_c/object}, {PRONOUN/s_c/subject} {VERB/s_c/lay/lies} down to bask in front of the border instead, talking loudly with {PRONOUN/s_c/poss} patrolmates. Good old psychological warfare.",
+                "text": "This smacks of a setup to s_c. If {PRONOUN/s_c/subject} were trying to get away with attacking c_n, this is how {PRONOUN/s_c/subject}'d do it, tempt some yeek-brain with an opportunity that looked too good to resist. So, assuming cunning eyes are already watching {PRONOUN/s_c/object}, {PRONOUN/s_c/subject} {VERB/s_c/lay/lies} down to bask in front of the border instead, talking loudly with {PRONOUN/s_c/poss} patrolmates. Good old psychological warfare.",
                 "exp": 50,
                 "weight": 20,
                 "stat_skill": ["SPEAKER,2", "MEDIATOR,2"]
@@ -3774,14 +3810,14 @@
                 "weight": 10,
                 "dead_cats": ["patrol", "some_lives"],
                 "history_text": {
-                    "scar": "m_c carries the scars o_c_n gave them, a permanent reminder of the Clan's hositilities.",
-                    "reg_death": "m_c was killed in a border ambush by a hostile Clan.",
+                    "scar": "r_c carries the scars o_c_n gave them, a permanent reminder of the Clan's hositilities.",
+                    "reg_death": "r_c was killed in a border ambush by a hostile Clan.",
                     "lead_death": "were killed by o_c_n in a border ambush"
                 },
                 "other_clan_rep": -1
             },
             {
-                "text": "It's too good of an opportunity to pass up - too good, in fact, to be real. The o_c_n patrol is waiting for them, and as soon a r_c steps fully into o_c_n territory, the smaller c_n patrol is swamped in an ambush, fur flying, cats screaming, the scent of blood thick in the air.",
+                "text": "It's too good of an opportunity to pass up - too good, in fact, to be real. The o_c_n patrol is waiting for them, and as soon a r_c steps fully into o_c_n territory, the smaller c_n patrol is swamped in an ambush, fur flying, slugcats screaming, the scent of blood thick in the air.",
                 "exp": 0,
                 "weight": 10,
                 "injury": [
@@ -3798,8 +3834,8 @@
                     }
                 ],
                 "history_text": {
-                    "scar": "m_c carries the scars o_c_n gave them, a permanent reminder of the Clan's hositilities.",
-                    "reg_death": "m_c was killed in a border ambush by a hostile Clan.",
+                    "scar": "r_c carries the scars o_c_n gave them, a permanent reminder of the Clan's hositilities.",
+                    "reg_death": "r_c was killed in a border ambush by a hostile Clan.",
                     "lead_death": "were killed by o_c_n in a border ambush"
                 },
                 "other_clan_rep": -1
@@ -3822,8 +3858,8 @@
                 ],
                 "dead_cats": ["patrol", "some_lives"],
                 "history_text": {
-                    "scar": "m_c carries the scars o_c_n gave them, a permanent reminder of the Clan's hositilities.",
-                    "reg_death": "m_c was killed in a border ambush by a hostile Clan.",
+                    "scar": "r_c carries the scars o_c_n gave them, a permanent reminder of the Clan's hositilities.",
+                    "reg_death": "r_c was killed in a border ambush by a hostile Clan.",
                     "lead_death": "were killed by o_c_n in a border ambush"
                 },
                 "other_clan_rep": -1
@@ -3867,7 +3903,7 @@
                 "weight": 20
             },
             {
-                "text": "This smacks of a setup to s_c. If {PRONOUN/s_c/subject} were trying to get away with attacking c_n, this is how {PRONOUN/s_c/subject}'d do it, tempt some mouse-brain with an opportunity that looked too good to resist. So, assuming cunning eyes are already watching {PRONOUN/s_c/object}, {PRONOUN/s_c/subject} {VERB/s_c/lay/lies} down to bask in front of the border instead, talking loudly with {PRONOUN/s_c/poss} patrolmates. Good old psychological warfare.",
+                "text": "This smacks of a setup to s_c. If {PRONOUN/s_c/subject} were trying to get away with attacking c_n, this is how {PRONOUN/s_c/subject}'d do it, tempt some yeek-brain with an opportunity that looked too good to resist. So, assuming cunning eyes are already watching {PRONOUN/s_c/object}, {PRONOUN/s_c/subject} {VERB/s_c/lay/lies} down to bask in front of the border instead, talking loudly with {PRONOUN/s_c/poss} patrolmates. Good old psychological warfare.",
                 "exp": 50,
                 "weight": 20,
                 "stat_skill": ["SPEAKER,2", "MEDIATOR,2"]
@@ -3886,14 +3922,14 @@
                 "weight": 10,
                 "dead_cats": ["multi", "some_lives"],
                 "history_text": {
-                    "scar": "m_c carries the scars o_c_n gave them, a permanent reminder of the Clan's hositilities.",
-                    "reg_death": "m_c was killed in a border ambush by a hostile Clan.",
+                    "scar": "r_c carries the scars o_c_n gave them, a permanent reminder of the Clan's hositilities.",
+                    "reg_death": "r_c was killed in a border ambush by a hostile Clan.",
                     "lead_death": "were killed by o_c_n in a border ambush"
                 },
                 "other_clan_rep": -1
             },
             {
-                "text": "It's too good of an opportunity to pass up - too good, in fact, to be real. The o_c_n patrol is waiting for them, and as soon a r_c steps fully into o_c_n territory, the c_n patrol is ambushed, fur flying, cats screaming, the scent of blood thick in the air.",
+                "text": "It's too good of an opportunity to pass up - too good, in fact, to be real. The o_c_n patrol is waiting for them, and as soon a r_c steps fully into o_c_n territory, the c_n patrol is ambushed, fur flying, slugcats screaming, the scent of blood thick in the air.",
                 "exp": 0,
                 "weight": 10,
                 "injury": [
@@ -3910,8 +3946,8 @@
                     }
                 ],
                 "history_text": {
-                    "scar": "m_c carries the scars o_c_n gave them, a permanent reminder of the Clan's hositilities.",
-                    "reg_death": "m_c was killed in a border ambush by a hostile Clan.",
+                    "scar": "r_c carries the scars o_c_n gave them, a permanent reminder of the Clan's hositilities.",
+                    "reg_death": "r_c was killed in a border ambush by a hostile Clan.",
                     "lead_death": "were killed by o_c_n in a border ambush"
                 },
                 "other_clan_rep": -1
@@ -3934,8 +3970,8 @@
                 ],
                 "dead_cats": ["multi", "some_lives"],
                 "history_text": {
-                    "scar": "m_c carries the scars o_c_n gave them, a permanent reminder of the Clan's hositilities.",
-                    "reg_death": "m_c was killed in a border ambush by a hostile Clan.",
+                    "scar": "r_c carries the scars o_c_n gave them, a permanent reminder of the Clan's hositilities.",
+                    "reg_death": "r_c was killed in a border ambush by a hostile Clan.",
                     "lead_death": "were killed by o_c_n in a border ambush"
                 },
                 "other_clan_rep": -1

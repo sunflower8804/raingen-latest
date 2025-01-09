@@ -10,12 +10,12 @@
     "max_cats": 6,
     "min_max_status": {},
     "weight": 20,
-    "intro_text": "The patrol is on edge after scenting Twolegs in the area. p_l takes the lead, keeping watch for any Twolegs that may be on the hunt for cats. Their scent is everywhere, even as the cats carefully remark the area. What's that smell? It's almost like pumpkin, but strange...",
-    "decline_text": "p_l knows better than to mess with anything that smells like Twolegs. {PRONOUN/p_l/subject/CAP} {VERB/p_l/skirt/skirts} around the area and {VERB/p_l/continue/continues} the patrol.",
+    "intro_text": "The patrol is on edge after scenting scavengers in the area. p_l takes the lead, keeping watch for any scavengers that may be on the hunt for slugcats. Their scent is everywhere, even as the slugcats carefully remark the area. What's that smell? It's almost like pumpkin, but strange...",
+    "decline_text": "p_l knows better than to mess with anything that smells like scavengers. {PRONOUN/p_l/subject/CAP} {VERB/p_l/skirt/skirts} around the area and {VERB/p_l/continue/continues} the patrol.",
     "chance_of_success": 40,
     "success_outcomes": [
         {
-            "text": "p_l follows the scent and nearly treads on the sticky thing in the grass. Definitely a weird Twoleg thing. {PRONOUN/p_l/subject/CAP} carefully {VERB/p_l/walk/walks} around it, unwilling to get the sticky stuff in {PRONOUN/p_l/poss} fur.",
+            "text": "p_l follows the scent and nearly treads on the sticky thing in the grass. Definitely a weird scavenger thing. {PRONOUN/p_l/subject/CAP} carefully {VERB/p_l/walk/walks} around it, unwilling to get the sticky stuff in {PRONOUN/p_l/poss} fur.",
             "exp": 5,
             "weight": 20
         },
@@ -34,7 +34,7 @@
     ],
     "fail_outcomes": [
         {
-            "text": "As p_l creeps closer to get a better look, the sound of crashing and chattering fills the air. p_l freezes and watches a pack of Twolegs stumble through the trees. The cats scatter, leaving behind whatever that weird thing was in the grass.",
+            "text": "As p_l creeps closer to get a better look, the sound of crashing and chattering fills the air. p_l freezes and watches a pack of scavengers stumble through the trees. The slugcats scatter, leaving behind whatever that weird thing was in the grass.",
             "exp": 0,
             "weight": 20
         }

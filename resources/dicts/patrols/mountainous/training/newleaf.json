@@ -13,12 +13,12 @@
             "normal adult": [1, 6]
         },
         "weight": 20,
-        "intro_text": "The cats head out into the crisp clear newleaf sun, and p_l leads them towards a massive messy eagle nest.",
+        "intro_text": "The slugcats head out into the crisp clear newleaf sun, and p_l leads them towards a massive messy vulture nest.",
         "decline_text": "When they get there, they discover that this nest isn't being used this newleaf. Disappointing.",
         "chance_of_success": 60,
         "success_outcomes": [
             {
-                "text": "This close to the nest, the eagles take remarkably little notice of other animals. app1 can even see sparrows nipping in and out of their own nests, tiny things woven into the eagle one. It's an opportunity to observe a side of the birds birds that app1 never expected to see - to learn their body language and watch them with their chicks.",
+                "text": "This close to the nest, the vultures take remarkably little notice of other animals. app1 can even see batflies nipping in and out of their own nests, tiny things woven into the vulture one. It's an opportunity to observe a side of the animals that app1 never expected to see - to learn their body language and watch them with their chicks.",
                 "exp": 15,
                 "weight": 20,
                 "relationships": [
@@ -39,7 +39,7 @@
                 ]
             },
             {
-                "text": "p_l tells app1 to watch carefully as the parents arrive at and leave the nest - this is one of the only times a cat can study how an eagle flies without danger. The adults are far too focused on their brood, and their brood far too focused on squabbling, for either to notice the c_n cats.",
+                "text": "p_l tells app1 to watch carefully as the parents arrive at and leave the nest - this is one of the only times a slugcat can study how an vulture flies without danger. The adults are far too focused on their brood, and their brood far too focused on squabbling, for either to notice the c_n slugcats.",
                 "exp": 15,
                 "weight": 5,
                 "relationships": [
@@ -60,10 +60,10 @@
                 ]
             },
             {
-                "text": "As they hide, watching the eagles feed their chicks, s_c tells app1 the story of an eagle chick that once fell from its nest and was abandoned by its parents. c_n took it in, and when it fledged over its first winter, it turned into a fierce she-cat whose claws could stand up to even the mightiest predator.",
+                "text": "As they hide, watching the vultures feed their chicks, s_c tells app1 the story of an vulture chick that once fell from its nest and was abandoned by its parents. c_n took it in, and when it fledged over its first winter, it turned into a fierce she-scug whose claws could stand up to even the mightiest predator.",
                 "exp": 15,
                 "weight": 20,
-                "stat_skill": ["STORY,1", "LORE,1"],
+                "stat_skill": ["SPEAKER,1"],
                 "can_have_stat": ["adult"],
                 "relationships": [
                     {
@@ -85,7 +85,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "app1 cannot believe that going near an eagle camp could ever possibly be safe and flatly refuses to go.",
+                "text": "app1 cannot believe that going near an vulture camp could ever possibly be safe and flatly refuses to go.",
                 "exp": 0,
                 "weight": 20,
                 "relationships": [
@@ -142,12 +142,12 @@
             "normal adult": [1, 6]
         },
         "weight": 20,
-        "intro_text": "The cats head out into the crisp clear newleaf sun, and p_l leads them towards a massive messy eagle nest.",
-        "decline_text": "When they get there, the tunnels look muddier than p_l expected, and the training is called off until the cats can be sure they're safe.",
+        "intro_text": "The slugcats head out into the crisp clear newleaf sun, and p_l leads them towards a massive messy vulture nest.",
+        "decline_text": "When they get there, the tunnels look muddier than p_l expected, and the training is called off until the slugcats can be sure they're safe.",
         "chance_of_success": 60,
         "success_outcomes": [
             {
-                "text": "This close to the nest, the eagles take remarkably little notice of other animals. app1 can even see sparrows nipping in and out of their own nests, tiny things woven into the eagle one. It's an opportunity to observe a side of the birds birds that app1 never expected to see - to learn their body language and watch them with their chicks.",
+                "text": "This close to the nest, the vultures take remarkably little notice of other animals. app1 can even see batflies nipping in and out of their own nests, tiny things woven into the vulture one. It's an opportunity to observe a side of the animals that app1 never expected to see - to learn their body language and watch them with their chicks.",
                 "exp": 15,
                 "weight": 20,
                 "relationships": [
@@ -168,7 +168,7 @@
                 ]
             },
             {
-                "text": "p_l tells app1 to watch carefully as the parents arrive at and leave the nest - this is one of the only times a cat can study how an eagle flies without danger. The adults are far too focused on their brood, and their brood far too focused on squabbling, for either to notice the c_n cats.",
+                "text": "p_l tells app1 to watch carefully as the parents arrive at and leave the nest - this is one of the only times a slugcat can study how an vulture flies without danger. The adults are far too focused on their brood, and their brood far too focused on squabbling, for either to notice the c_n slugcats.",
                 "exp": 15,
                 "weight": 5,
                 "relationships": [
@@ -189,7 +189,7 @@
                 ]
             },
             {
-                "text": "s_c shows app1 the way the eagle rips apart its prey to feed to its nestlings, explaining how that beak lethally rips and twists, pointing out how the eagle holds its claws to grip its prey. It's a comprehensive - if scary - lesson, and app1 learns a lot.",
+                "text": "s_c shows app1 the way the vulture rips apart its prey to feed to its nestlings, explaining how that beak lethally rips and twists, pointing out how the vulture holds its claws to grip its prey. It's a comprehensive, if scary, lesson, and app1 learns a lot.",
                 "exp": 15,
                 "weight": 20,
                 "stat_skill": ["TEACHER,1"],
@@ -214,7 +214,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "app1 cannot believe that going near an eagle camp could ever possibly be safe and flatly refuses to go.",
+                "text": "app1 cannot believe that going near an vulture camp could ever possibly be safe and flatly refuses to go.",
                 "exp": 0,
                 "weight": 20,
                 "relationships": [
@@ -272,12 +272,12 @@
             "normal adult": [1, 6]
         },
         "weight": 20,
-        "intro_text": "The cats head out into the crisp clear newleaf sun, and p_l leads them towards a massive messy eagle nest.",
-        "decline_text": "When they get there, the tunnels look muddier than p_l expected, and the training is called off until the cats can be sure they're safe.",
+        "intro_text": "The slugcats head out into the crisp clear newleaf sun, and p_l leads them towards a massive messy vulture nest.",
+        "decline_text": "When they get there, the tunnels look muddier than p_l expected, and the training is called off until the slugcats can be sure they're safe.",
         "chance_of_success": 40,
         "success_outcomes": [
             {
-                "text": "This close to the nest, the eagles take remarkably little notice of other animals. app1 can even see sparrows nipping in and out of their own nests, tiny things woven into the eagle one. It's a great opportunity to watch the birds and learn their body language, and a parental side of them that the apprentices never expected.",
+                "text": "This close to the nest, the vultures take remarkably little notice of other animals. app1 can even see batflies nipping in and out of their own nests, tiny things woven into the vulture one. It's a great opportunity to watch the animals and learn their body language, and a parental side of them that the apprentices never expected.",
                 "exp": 20,
                 "weight": 20,
                 "relationships": [
@@ -298,7 +298,7 @@
                 ]
             },
             {
-                "text": "p_l tells the apprentices to watch carefully as the parents arrive at and leave the nest - this is one of the only times a cat can study how an eagle flies without danger. The adults are far too focused on their brood, and their brood far too focused on squabbling, for either to notice the c_n cats.",
+                "text": "p_l tells the apprentices to watch carefully as the parents arrive at and leave the nest - this is one of the only times a slugcat can study how an vulture flies without danger. The adults are far too focused on their brood, and their brood far too focused on squabbling, for either to notice the c_n slugcats.",
                 "exp": 20,
                 "weight": 5,
                 "relationships": [
@@ -319,10 +319,10 @@
                 ]
             },
             {
-                "text": "As they hide, watching the eagles feed their chicks, s_c tells the apprentices the story of an eagle chick that once fell from its nest and was abandoned by its parents. c_n took it in, and when it fledged over its first winter, it turned into a fierce she-cat whose claws could stand up to even the mightiest predator.",
+                "text": "As they hide, watching the vultures feed their chicks, s_c tells the apprentices the story of an vulture chick that once fell from its nest and was abandoned by its parents. c_n took it in, and when it fledged over its first winter, it turned into a fierce she-scug whose claws could stand up to even the mightiest predator.",
                 "exp": 20,
                 "weight": 20,
-                "stat_skill": ["LORE,1", "STORY,1"],
+                "stat_skill": ["SPEAKER,1"],
                 "can_have_stat": ["adult"],
                 "relationships": [
                     {
@@ -344,7 +344,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "app1 cannot believe that going near an eagle camp could ever possibly be safe and flatly refuses to go. app2 tries to comfort {PRONOUN/app1/object}, but the patrol is called off.",
+                "text": "app1 cannot believe that going near an vulture camp could ever possibly be safe and flatly refuses to go. app2 tries to comfort {PRONOUN/app1/object}, but the patrol is called off.",
                 "exp": 0,
                 "weight": 20,
                 "relationships": [
@@ -402,12 +402,12 @@
             "normal adult": [1, 6]
         },
         "weight": 20,
-        "intro_text": "The cats head out into the crisp clear newleaf sun, and p_l leads them towards a massive messy eagle nest.",
-        "decline_text": "When they get there, the tunnels look muddier than p_l expected, and the training is called off until the cats can be sure they're safe.",
+        "intro_text": "The slugcats head out into the crisp clear newleaf sun, and p_l leads them towards a massive messy vulture nest.",
+        "decline_text": "When they get there, the tunnels look muddier than p_l expected, and the training is called off until the slugcats can be sure they're safe.",
         "chance_of_success": 40,
         "success_outcomes": [
             {
-                "text": "This close to the nest, the eagles take remarkably little notice of other animals. app1 can even see sparrows nipping in and out of their own nests, tiny things woven into the eagle one. It's a great opportunity to watch the birds and learn their body language, and a parental side of them that the apprentices never expected.",
+                "text": "This close to the nest, the vultures take remarkably little notice of other animals. app1 can even see batflies nipping in and out of their own nests, tiny things woven into the vulture one. It's a great opportunity to watch the animals and learn their body language, and a parental side of them that the apprentices never expected.",
                 "exp": 15,
                 "weight": 20,
                 "relationships": [
@@ -428,7 +428,7 @@
                 ]
             },
             {
-                "text": "p_l tells the apprentices to watch carefully as the parents arrive at and leave the nest - this is one of the only times a cat can study how an eagle flies without danger. The adults are far too focused on their brood, and their brood far too focused on squabbling, for either to notice the c_n cats.",
+                "text": "p_l tells the apprentices to watch carefully as the parents arrive at and leave the nest - this is one of the only times a slugcat can study how an vulture flies without danger. The adults are far too focused on their brood, and their brood far too focused on squabbling, for either to notice the c_n slugcats.",
                 "exp": 15,
                 "weight": 5,
                 "relationships": [
@@ -449,7 +449,7 @@
                 ]
             },
             {
-                "text": "s_c shows app1 the way the eagle rips apart its prey to feed to its nestlings, explaining how that beak lethally rips and twists, pointing out how the eagle holds its claws to grip its prey. It's a comprehensive - if scary - lesson, and app1 learns a lot.",
+                "text": "s_c shows app1 the way the vulture rips apart its prey to feed to its nestlings, explaining how that beak lethally rips and twists, pointing out how the vulture holds its claws to grip its prey. It's a comprehensive, if scary, lesson, and app1 learns a lot.",
                 "exp": 15,
                 "weight": 20,
                 "stat_skill": ["TEACHER,1"],
@@ -474,7 +474,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "app1 cannot believe that going near an eagle camp could ever possibly be safe and flatly refuses to go. app2 tries to comfort {PRONOUN/app1/object}, but the patrol is called off.",
+                "text": "app1 cannot believe that going near an vulture camp could ever possibly be safe and flatly refuses to go. app2 tries to comfort {PRONOUN/app1/object}, but the patrol is called off.",
                 "exp": 0,
                 "weight": 20,
                 "relationships": [
@@ -531,7 +531,7 @@
             "all apprentices": [2, 2]
         },
         "weight": 20,
-        "intro_text": "The apprentices emerge into a pre-dawn world hushed and smothered in a dusting of snow! app1 and app2 tear off into the territory near camp, looking to play.",
+        "intro_text": "The apprentices emerge into a pre-dawn world hushed and smothered in a new coating of snow! app1 and app2 tear off into the territory near camp, looking to play.",
         "decline_text": "Their mentors are already up for the day and call them back. There'll be time to play later.",
         "chance_of_success": 70,
         "success_outcomes": [
@@ -569,8 +569,10 @@
                 "weight": 20,
                 "stat_trait": [
                     "compassionate",
+                    "empathetic",
                     "faithful",
                     "loving",
+                    "patient",
                     "responsible",
                     "thoughtful",
                     "wise"
@@ -617,10 +619,10 @@
         "chance_of_success": 60,
         "pl_skill_constraint": ["STORY,1", "LORE,1"],
         "intro_text": "Look at this. p_l gestures with {PRONOUN/p_l/poss} tail, calling app1's attention to the other side of the vast valley. In the snow, something is erupting out of a massive burrow.",
-        "decline_text": "Best not to be anywhere near a bear fresh from hibernation, the cats decide.",
+        "decline_text": "Best not to be anywhere near an adult centiwing fresh from hibernation, the slugcats decide.",
         "success_outcomes": [
                 {
-                    "text": "Have they ever starved? Felt hunger gnawing their belly until it flips, filled it with water just to get a moment's relief, felt their limbs tremble with weakness as their mind desperately yearns for prey? How long did that take, a day, a quarter of a moon? Imagine several moons in a row without food. Stay away from bears emerging from hibernation.",
+                    "text": "Have they ever starved? Felt hunger gnawing their belly until it flips, filled it with water just to get a moment's relief, felt their limbs tremble with weakness as their mind desperately yearns for prey? How long did that take, a day, a quarter of a cycle? Imagine several cycles in a row without food. Stay away from adult centiwings emerging from hibernation.",
                     "exp": 30,
                     "weight": 20,
                     "art": "gen_train_ghost",
@@ -644,7 +646,7 @@
             ],
             "fail_outcomes": [
                 {
-                    "text": "app1 takes one look at the bear emerging on the opposite slope and turns to run for home. It takes p_l almost half the distance to camp to catch up with {PRONOUN/app1/object} again, and {PRONOUN/p_l/subject} {VERB/p_l/congratulate/congratulates} app1 on {PRONOUN/app1/poss} speed as {PRONOUN/p_l/subject} {VERB/p_l/pant/pants}. app1 didn't need to worry, though; that sow is slowed by her newborn cubs.",
+                    "text": "app1 takes one look at the centiwing emerging on the opposite slope and turns to run for home. It takes p_l almost half the distance to camp to catch up with {PRONOUN/app1/object} again, and {PRONOUN/p_l/subject} {VERB/p_l/congratulate/congratulates} app1 on {PRONOUN/app1/poss} speed as {PRONOUN/p_l/subject} {VERB/p_l/pant/pants}. app1 didn't need to worry, though; that centiwing is slowed by her eggs.",
                     "exp": 0,
                     "weight": 20,
                     "relationships": [

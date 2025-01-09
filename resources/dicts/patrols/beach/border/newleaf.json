@@ -21,7 +21,7 @@
                 "prey": ["large"]
             },
             {
-                "text": "s_c scrambles back the way {PRONOUN/s_c/subject} came and watches the beach disappear under a flood of water. It leaves behind a changed landscape, tons of debris - and a large dead sheep. s_c pounces on the opportunity to scavenge.",
+                "text": "s_c scrambles back the way {PRONOUN/s_c/subject} came and watches the beach disappear under a flood of water. It leaves behind a changed landscape, tons of debris - and a large dead lizard. s_c pounces on the opportunity to scavenge.",
                 "exp": 20,
                 "weight": 20,
                 "stat_skill": ["CLEVER,3"],

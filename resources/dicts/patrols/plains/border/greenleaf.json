@@ -35,7 +35,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "{PRONOUN/r_c/subject/CAP} get distracted while splashing in the water. r_c swears {PRONOUN/r_c/subject} saw a fish, but it derails {PRONOUN/r_c/poss} border patrol completely, and {PRONOUN/r_c/subject} {VERB/r_c/get/gets} nothing done.",
+                "text": "{PRONOUN/r_c/subject/CAP} get distracted while splashing in the water. r_c swears {PRONOUN/r_c/subject} saw a jetfish, but it derails {PRONOUN/r_c/poss} border patrol completely, and {PRONOUN/r_c/subject} {VERB/r_c/get/gets} nothing done.",
                 "exp": 0,
                 "weight": 20
             }
