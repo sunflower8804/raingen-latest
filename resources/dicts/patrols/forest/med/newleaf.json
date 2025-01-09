@@ -9,7 +9,7 @@
         "min_cats": 2,
         "max_cats": 6,
         "min_max_status": {
-            "medicine cat": [1, 6],
+            "cleric": [1, 6],
             "healer cats": [1, 6],
             "normal adult": [1, 6]
         },
@@ -95,7 +95,7 @@
         "max_cats": 6,
         "min_max_status": {
             "apprentice": [-1, -1],
-            "medicine cat": [1, 6],
+            "cleric": [1, 6],
             "healer cats": [1, 6],
             "normal adult": [-1, -1]
         },
@@ -228,8 +228,8 @@
         "max_cats": 2,
         "min_max_status": {
             "apprentice": [-1, -1],
-            "medicine cat": [1, 6],
-            "medicine cat apprentice": [1, 6],
+            "cleric": [1, 6],
+            "cleric apprentice": [1, 6],
             "healer cats": [1, 6],
             "normal adult": [-1, -1]
         },
@@ -499,8 +499,8 @@
         "max_cats": 2,
         "min_max_status": {
             "apprentice": [-1, -1],
-            "medicine cat": [1, 6],
-            "medicine cat apprentice": [1, 6],
+            "cleric": [1, 6],
+            "cleric apprentice": [1, 6],
             "healer cats": [1, 6],
             "normal adult": [-1, -1]
         },
@@ -510,7 +510,7 @@
         "chance_of_success": 70,
         "success_outcomes": [
             {
-                "text": "Sure enough, all along the trailing branches of the blackberry brambles, new leaves poke towards the sun. p_l carefully plucks them, not taking too many - they want this plant to supply the Clan in future moons, too. app1 hasn't considered plant pruning as a medicine cat skill before now, and they have a good conversation about why it's important.",
+                "text": "Sure enough, all along the trailing branches of the blackberry brambles, new leaves poke towards the sun. p_l carefully plucks them, not taking too many - they want this plant to supply the Clan in future moons, too. app1 hasn't considered plant pruning as a cleric skill before now, and they have a good conversation about why it's important.",
                 "exp": 20,
                 "weight": 20,
                 "herbs": ["blackberry"],
@@ -621,7 +621,7 @@
         "chance_of_success": 30,
         "success_outcomes": [
             {
-                "text": "Sure enough, all along the trailing branches of the blackberry brambles, new leaves are poking towards the sun. p_l carefully plucks them, not taking too many - they want this plant to supply the Clan in future moons too. The rest of the patrol listens to them describe how a medicine cat must predict the Clan's future need, respect for p_l growing.",
+                "text": "Sure enough, all along the trailing branches of the blackberry brambles, new leaves are poking towards the sun. p_l carefully plucks them, not taking too many - they want this plant to supply the Clan in future moons too. The rest of the patrol listens to them describe how a cleric must predict the Clan's future need, respect for p_l growing.",
                 "exp": 10,
                 "weight": 20,
                 "herbs": ["blackberry"],
@@ -770,8 +770,8 @@
         "max_cats": 2,
         "min_max_status": {
             "apprentice": [-1, -1],
-            "medicine cat": [1, 6],
-            "medicine cat apprentice": [1, 6],
+            "cleric": [1, 6],
+            "cleric apprentice": [1, 6],
             "healer cats": [1, 6],
             "normal adult": [-1, -1]
         },
@@ -914,7 +914,7 @@
                 ]
             },
             {
-                "text": "Luck is on p_l's side today - the burdock is both plentiful and easy to find. Laying the fat roots out in a towering but neat pile in the herb stores makes p_l's entire body thrum with a contented purr, and their Clanmates smile, obligingly helping out their hard-working medicine cat.",
+                "text": "Luck is on p_l's side today - the burdock is both plentiful and easy to find. Laying the fat roots out in a towering but neat pile in the herb stores makes p_l's entire body thrum with a contented purr, and their Clanmates smile, obligingly helping out their hard-working cleric.",
                 "exp": 10,
                 "weight": 5,
                 "herbs": ["many_herbs", "burdock"],
@@ -1003,7 +1003,7 @@
         "chance_of_success": 40,
         "success_outcomes": [
             {
-                "text": "The medicine cat carefully picks out scugmint from its known hiding places, carrying it back to camp where it will protect the Clan.",
+                "text": "The cleric carefully picks out scugmint from its known hiding places, carrying it back to camp where it will protect the Clan.",
                 "exp": 30,
                 "weight": 20,
                 "herbs": ["scugmint"]
@@ -1041,8 +1041,8 @@
         "max_cats": 2,
         "min_max_status": {
             "apprentice": [-1, -1],
-            "medicine cat": [1, 6],
-            "medicine cat apprentice": [1, 6],
+            "cleric": [1, 6],
+            "cleric apprentice": [1, 6],
             "healer cats": [1, 6],
             "normal adult": [-1, -1]
         },
@@ -1052,7 +1052,7 @@
         "chance_of_success": 40,
         "success_outcomes": [
             {
-                "text": "As they walk, p_l teaches app1 about how crucial scugmint is for coughs, and how, although its scent holds drugged pleasure, part of the responsibility of being a medicine cat is avoiding becoming caught in its haze. The medicine slugcats carefully pick out scugmint from its known hiding places, carrying it back to camp where it will protect the Clan.",
+                "text": "As they walk, p_l teaches app1 about how crucial scugmint is for coughs, and how, although its scent holds drugged pleasure, part of the responsibility of being a cleric is avoiding becoming caught in its haze. The medicine slugcats carefully pick out scugmint from its known hiding places, carrying it back to camp where it will protect the Clan.",
                 "exp": 30,
                 "weight": 20,
                 "herbs": ["scugmint"],
@@ -1154,7 +1154,7 @@
         "min_cats": 3,
         "max_cats": 6,
         "min_max_status": {
-            "medicine cat": [1, 6],
+            "cleric": [1, 6],
             "healer cats": [1, 6],
             "normal adult": [1, 6]
         },
@@ -1164,7 +1164,7 @@
         "chance_of_success": 10,
         "success_outcomes": [
             {
-                "text": "The warriors keep their heads, with the more experienced of p_l's helpers making themselves useful keeping those that are young or more impulsive focused on their task. The medicine cat and their team carefully pick out scugmint from its known hiding places, carrying it back to camp where it will protect the Clan.",
+                "text": "The warriors keep their heads, with the more experienced of p_l's helpers making themselves useful keeping those that are young or more impulsive focused on their task. The cleric and their team carefully pick out scugmint from its known hiding places, carrying it back to camp where it will protect the Clan.",
                 "exp": 10,
                 "weight": 20,
                 "herbs": ["scugmint"],
@@ -1313,8 +1313,8 @@
         "max_cats": 2,
         "min_max_status": {
             "apprentice": [-1, -1],
-            "medicine cat": [1, 6],
-            "medicine cat apprentice": [1, 6],
+            "cleric": [1, 6],
+            "cleric apprentice": [1, 6],
             "healer cats": [1, 6],
             "normal adult": [-1, -1]
         },
@@ -1584,8 +1584,8 @@
         "max_cats": 2,
         "min_max_status": {
             "apprentice": [-1, -1],
-            "medicine cat": [1, 6],
-            "medicine cat apprentice": [1, 6],
+            "cleric": [1, 6],
+            "cleric apprentice": [1, 6],
             "healer cats": [1, 6],
             "normal adult": [-1, -1]
         },
@@ -1867,8 +1867,8 @@
         "max_cats": 2,
         "min_max_status": {
             "apprentice": [-1, -1],
-            "medicine cat": [1, 6],
-            "medicine cat apprentice": [1, 6],
+            "cleric": [1, 6],
+            "cleric apprentice": [1, 6],
             "healer cats": [1, 6],
             "normal adult": [-1, -1]
         },
@@ -2147,7 +2147,7 @@
         "max_cats": 1,
         "min_max_status": {
             "apprentice": [-1, -1],
-            "medicine cat": [1, 6],
+            "cleric": [1, 6],
             "healer cats": [1, 6],
             "normal adult": [-1, -1]
         },
@@ -2195,8 +2195,8 @@
         "max_cats": 2,
         "min_max_status": {
             "apprentice": [-1, -1],
-            "medicine cat": [1, 6],
-            "medicine cat apprentice": [1, 6],
+            "cleric": [1, 6],
+            "cleric apprentice": [1, 6],
             "healer cats": [1, 6],
             "normal adult": [-1, -1]
         },
@@ -2308,7 +2308,7 @@
         "min_cats": 3,
         "max_cats": 6,
         "min_max_status": {
-            "medicine cat": [1, 6],
+            "cleric": [1, 6],
             "healer cats": [1, 6],
             "normal adult": [1, 6]
         },
@@ -2340,7 +2340,7 @@
                 ]
             },
             {
-                "text": "It always amazes p_l how quickly the goldenrod bushes sprout back up after leaf-bare, and {PRONOUN/p_l/subject} {VERB/p_l/collect/collects} more goldenrod than {PRONOUN/p_l/subject} {VERB/p_l/were/was} anticipating, loading up every cat until everyone agrees the medicine cat den can't possibly fit more than this.",
+                "text": "It always amazes p_l how quickly the goldenrod bushes sprout back up after leaf-bare, and {PRONOUN/p_l/subject} {VERB/p_l/collect/collects} more goldenrod than {PRONOUN/p_l/subject} {VERB/p_l/were/was} anticipating, loading up every cat until everyone agrees the cleric den can't possibly fit more than this.",
                 "exp": 10,
                 "weight": 5,
                 "herbs": ["many_herbs", "goldenrod"],
@@ -2467,8 +2467,8 @@
         "max_cats": 2,
         "min_max_status": {
             "apprentice": [-1, -1],
-            "medicine cat": [1, 6],
-            "medicine cat apprentice": [1, 6],
+            "cleric": [1, 6],
+            "cleric apprentice": [1, 6],
             "healer cats": [1, 6],
             "normal adult": [-1, -1]
         },
@@ -2691,8 +2691,8 @@
         "max_cats": 2,
         "min_max_status": {
             "apprentice": [-1, -1],
-            "medicine cat": [1, 6],
-            "medicine cat apprentice": [1, 6],
+            "cleric": [1, 6],
+            "cleric apprentice": [1, 6],
             "healer cats": [1, 6],
             "normal adult": [-1, -1]
         },
@@ -2867,7 +2867,7 @@
                 ]
             },
             {
-                "text": "It takes all of s_c's considerable talent for such things to hunt down the lungwort within their borders, the medicine cat visiting each likely nook and cranny in a carefully planned search pattern until, finally, those telltale speckled leaves are found.",
+                "text": "It takes all of s_c's considerable talent for such things to hunt down the lungwort within their borders, the cleric visiting each likely nook and cranny in a carefully planned search pattern until, finally, those telltale speckled leaves are found.",
                 "exp": 20,
                 "weight": 20,
                 "stat_skill": ["SENSE,2", "CLEVER,3"],
@@ -2883,7 +2883,7 @@
                 ]
             },
             {
-                "text": "Night falls, but still s_c insistently keeps going - {PRONOUN/s_c/subject} just can't let c_n go without. Exhausted, but determined, the medicine cat persists patiently until {PRONOUN/s_c/subject} {VERB/s_c/find/finds} the precious, speckled leaves.",
+                "text": "Night falls, but still s_c insistently keeps going - {PRONOUN/s_c/subject} just can't let c_n go without. Exhausted, but determined, the cleric persists patiently until {PRONOUN/s_c/subject} {VERB/s_c/find/finds} the precious, speckled leaves.",
                 "exp": 20,
                 "weight": 20,
                 "stat_trait": ["patient"],
@@ -2972,7 +2972,7 @@
                 ]
             },
             {
-                "text": "It takes all of s_c's considerable talent for such things to hunt down the lungwort within their borders, the medicine cat visiting each likely nook and cranny in a carefully planned search pattern until, finally, those telltale speckled leaves are found.",
+                "text": "It takes all of s_c's considerable talent for such things to hunt down the lungwort within their borders, the cleric visiting each likely nook and cranny in a carefully planned search pattern until, finally, those telltale speckled leaves are found.",
                 "exp": 20,
                 "weight": 20,
                 "stat_skill": ["SENSE,2", "CLEVER,3"],
@@ -2989,7 +2989,7 @@
                 ]
             },
             {
-                "text": "Night falls, but still s_c insistently keeps going - {PRONOUN/s_c/subject} just can't let c_n go without. Exhausted, but determined, the medicine cat persists patiently until {PRONOUN/s_c/subject} {VERB/s_c/find/finds} the precious, speckled leaves.",
+                "text": "Night falls, but still s_c insistently keeps going - {PRONOUN/s_c/subject} just can't let c_n go without. Exhausted, but determined, the cleric persists patiently until {PRONOUN/s_c/subject} {VERB/s_c/find/finds} the precious, speckled leaves.",
                 "exp": 20,
                 "weight": 20,
                 "stat_trait": ["patient"],
@@ -3104,8 +3104,8 @@
         "max_cats": 2,
         "min_max_status": {
             "apprentice": [-1, -1],
-            "medicine cat": [1, 6],
-            "medicine cat apprentice": [1, 6],
+            "cleric": [1, 6],
+            "cleric apprentice": [1, 6],
             "healer cats": [1, 6],
             "normal adult": [-1, -1]
         },
@@ -3343,7 +3343,7 @@
                 "herbs": ["marigold"]
             },
             {
-                "text": "It stops infection, bleeding, <i>and</i> sore joints - why would any medicine cat ever want to risk running out of it? p_l brings back as much marigold as they can stuff into their mouth.",
+                "text": "It stops infection, bleeding, <i>and</i> sore joints - why would any cleric ever want to risk running out of it? p_l brings back as much marigold as they can stuff into their mouth.",
                 "exp": 10,
                 "weight": 5,
                 "herbs": ["many_herbs", "marigold"]
@@ -3375,8 +3375,8 @@
         "max_cats": 2,
         "min_max_status": {
             "apprentice": [-1, -1],
-            "medicine cat": [1, 6],
-            "medicine cat apprentice": [1, 6],
+            "cleric": [1, 6],
+            "cleric apprentice": [1, 6],
             "healer cats": [1, 6],
             "normal adult": [-1, -1]
         },
@@ -3408,7 +3408,7 @@
                 ]
             },
             {
-                "text": "It stops infection, bleeding, <i>and</i> sore joints - why would any medicine cat ever want to risk running out of it? p_l brings back as much marigold as they can stuff into their mouth, and app1 actually drops some of the leaves they carry on the way back to camp, a little over-ambitious with how much they can carry.",
+                "text": "It stops infection, bleeding, <i>and</i> sore joints - why would any cleric ever want to risk running out of it? p_l brings back as much marigold as they can stuff into their mouth, and app1 actually drops some of the leaves they carry on the way back to camp, a little over-ambitious with how much they can carry.",
                 "exp": 20,
                 "weight": 5,
                 "herbs": ["many_herbs", "marigold"],
@@ -3519,7 +3519,7 @@
                 ]
             },
             {
-                "text": "It stops infection, bleeding, <i>and</i> sore joints - why would any medicine cat ever want to risk running out of it? p_l brings back as much marigold as they can stuff into their mouth. The warriors helping them don't understand the importance, but obligingly follow p_l's example.",
+                "text": "It stops infection, bleeding, <i>and</i> sore joints - why would any cleric ever want to risk running out of it? p_l brings back as much marigold as they can stuff into their mouth. The warriors helping them don't understand the importance, but obligingly follow p_l's example.",
                 "exp": 10,
                 "weight": 5,
                 "herbs": ["many_herbs", "marigold"],
@@ -3541,7 +3541,7 @@
                 ]
             },
             {
-                "text": "s_c finds a patch of marigold, harvests its best leaves, and pads home, unaware of how much of their success rests on their talent for herb gathering. The patrol, too, is unaware, but it certainly bolsters their faith in their medicine cat to see them succeed with such competence.",
+                "text": "s_c finds a patch of marigold, harvests its best leaves, and pads home, unaware of how much of their success rests on their talent for herb gathering. The patrol, too, is unaware, but it certainly bolsters their faith in their cleric to see them succeed with such competence.",
                 "exp": 10,
                 "weight": 20,
                 "stat_skill": ["SENSE,2"],
@@ -3646,8 +3646,8 @@
         "max_cats": 2,
         "min_max_status": {
             "apprentice": [-1, -1],
-            "medicine cat": [1, 6],
-            "medicine cat apprentice": [1, 6],
+            "cleric": [1, 6],
+            "cleric apprentice": [1, 6],
             "healer cats": [1, 6],
             "normal adult": [-1, -1]
         },
@@ -3917,8 +3917,8 @@
         "max_cats": 2,
         "min_max_status": {
             "apprentice": [-1, -1],
-            "medicine cat": [1, 6],
-            "medicine cat apprentice": [1, 6],
+            "cleric": [1, 6],
+            "cleric apprentice": [1, 6],
             "healer cats": [1, 6],
             "normal adult": [-1, -1]
         },
@@ -4188,8 +4188,8 @@
         "max_cats": 2,
         "min_max_status": {
             "apprentice": [-1, -1],
-            "medicine cat": [1, 6],
-            "medicine cat apprentice": [1, 6],
+            "cleric": [1, 6],
+            "cleric apprentice": [1, 6],
             "healer cats": [1, 6],
             "normal adult": [-1, -1]
         },
@@ -4221,7 +4221,7 @@
                 ]
             },
             {
-                "text": "Suitable for soothing throat and pelt irritation, and with a welcome - albeit weird - habit of consistently sprouting up on well-trodden paths, plantain is a basic but valuable herb to keep stocks of, and always taught early in the herbal lore each medicine cat must memorize.",
+                "text": "Suitable for soothing throat and pelt irritation, and with a welcome - albeit weird - habit of consistently sprouting up on well-trodden paths, plantain is a basic but valuable herb to keep stocks of, and always taught early in the herbal lore each cleric must memorize.",
                 "exp": 20,
                 "weight": 5,
                 "herbs": ["many_herbs", "plantain"],
@@ -4301,7 +4301,7 @@
         "min_cats": 3,
         "max_cats": 6,
         "min_max_status": {
-            "medicine cat": [1, 6],
+            "cleric": [1, 6],
             "healer cats": [1, 6],
             "normal adult": [1, 6]
         },
@@ -4460,8 +4460,8 @@
         "max_cats": 2,
         "min_max_status": {
             "apprentice": [-1, -1],
-            "medicine cat": [1, 6],
-            "medicine cat apprentice": [1, 6],
+            "cleric": [1, 6],
+            "cleric apprentice": [1, 6],
             "healer cats": [1, 6],
             "normal adult": [-1, -1]
         },
@@ -4731,8 +4731,8 @@
         "max_cats": 2,
         "min_max_status": {
             "apprentice": [-1, -1],
-            "medicine cat": [1, 6],
-            "medicine cat apprentice": [1, 6],
+            "cleric": [1, 6],
+            "cleric apprentice": [1, 6],
             "healer cats": [1, 6],
             "normal adult": [-1, -1]
         },
@@ -5002,8 +5002,8 @@
         "max_cats": 2,
         "min_max_status": {
             "apprentice": [-1, -1],
-            "medicine cat": [1, 6],
-            "medicine cat apprentice": [1, 6],
+            "cleric": [1, 6],
+            "cleric apprentice": [1, 6],
             "healer cats": [1, 6],
             "normal adult": [-1, -1]
         },
@@ -5273,8 +5273,8 @@
         "max_cats": 2,
         "min_max_status": {
             "apprentice": [-1, -1],
-            "medicine cat": [1, 6],
-            "medicine cat apprentice": [1, 6],
+            "cleric": [1, 6],
+            "cleric apprentice": [1, 6],
             "healer cats": [1, 6],
             "normal adult": [-1, -1]
         },
@@ -5544,8 +5544,8 @@
         "max_cats": 2,
         "min_max_status": {
             "apprentice": [-1, -1],
-            "medicine cat": [1, 6],
-            "medicine cat apprentice": [1, 6],
+            "cleric": [1, 6],
+            "cleric apprentice": [1, 6],
             "healer cats": [1, 6],
             "normal adult": [-1, -1]
         },
@@ -5841,7 +5841,7 @@
         "chance_of_success": 60,
         "success_outcomes": [
             {
-                "text": "It's at least a little funny, how elder leaves are so suited for easing the pains of the Clan's elders. The tree isn't named for that - there's an old myth about a medicine cat asking an ancient tree for advice - but sometimes the coincidence amuses p_l.",
+                "text": "It's at least a little funny, how elder leaves are so suited for easing the pains of the Clan's elders. The tree isn't named for that - there's an old myth about a cleric asking an ancient tree for advice - but sometimes the coincidence amuses p_l.",
                 "exp": 30,
                 "weight": 20,
                 "herbs": ["elder_leaves"],
@@ -6565,13 +6565,13 @@
         "min_cats": 2,
         "max_cats": 6,
         "min_max_status": {
-            "medicine cat": [1, 6],
-            "medicine cat apprentice": [1, 6],
+            "cleric": [1, 6],
+            "cleric apprentice": [1, 6],
             "normal adult":[-1, -1],
             "apprentice":[-1, -1]
         },
         "weight": 20,
-        "intro_text": "Listen to the wisdom of the sages, p_l meows. app1 doesn't just need to learn to set bones and clean wounds, being a medicine cat is so much more than blood and bodies.",
+        "intro_text": "Listen to the wisdom of the sages, p_l meows. app1 doesn't just need to learn to set bones and clean wounds, being a cleric is so much more than blood and bodies.",
         "decline_text": "They're interrupted by a Clanmate who needs them. It halts the lesson, but also kinda reinforces p_l's point.",
         "chance_of_success": 30,
         "success_outcomes": [

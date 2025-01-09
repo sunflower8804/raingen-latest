@@ -351,7 +351,7 @@
         "max_cats": 1,
         "min_max_status": {
             "apprentice": [-1, -1],
-            "medicine cat": [1, 6],
+            "cleric": [1, 6],
             "healer cats": [1, 6],
             "normal adult": [-1, -1]
         },

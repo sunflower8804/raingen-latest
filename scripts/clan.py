@@ -16,6 +16,7 @@ from random import choice, randint
 import pygame
 import ujson
 
+from scripts.cat.pelts import Pelt
 from scripts.cat.cats import Cat, cat_class
 from scripts.cat.history import History
 from scripts.cat.names import names
@@ -901,6 +902,7 @@ class Clan:
         self.load_pregnancy(game.clan)
         self.load_herbs(game.clan)
         self.load_disaster(game.clan)
+        self.load_accessories()
         if game.clan.game_mode != "classic":
             self.load_freshkill_pile(game.clan)
         game.switches["error_message"] = ""
@@ -911,6 +913,92 @@ class Clan:
             "version_commit": clan_data.get("version_commit"),
             "source_build": clan_data.get("source_build"),
         }
+
+    #Lifegen's code!
+    def load_accessories(self):
+        if game.clan.clan_settings['all accessories']:
+            for c in Cat.all_cats_list:
+                cat = c
+                age = cat.age
+                cat_sprite = str(cat.pelt.cat_sprites[cat.age])
+
+                # setting the cat_sprite (bc this makes things much easier)
+                if cat.not_working() and age != 'newborn' and game.config['cat_sprites']['sick_sprites']:
+                    if age in ['kitten', 'adolescent']:
+                        cat_sprite = str(19)
+                    else:
+                        cat_sprite = str(18)
+                elif cat.pelt.paralyzed and age != 'newborn':
+                    if age in ['kitten', 'adolescent']:
+                        cat_sprite = str(17)
+                    else:
+                        if cat.pelt.length == 'long':
+                            cat_sprite = str(16)
+                        else:
+                            cat_sprite = str(15)
+                else:
+                    if age == 'elder' and not game.config['fun']['all_cats_are_newborn']:
+                        age = 'senior'
+
+                    if game.config['fun']['all_cats_are_newborn']:
+                        cat_sprite = str(cat.pelt.cat_sprites['newborn'])
+                    else:
+                        cat_sprite = str(cat.pelt.cat_sprites[age])
+
+                possible_accs = ["WILD", "PLANT", "COLLAR", "LIZARD", "HERBS2", "MUDDYPAWS", "INSECTWINGS", "BUDDIES", "NEWACCS", "NEWACCS2", "BODYPAINT", "IMPLANT", "MAGIC", "NECKLACES", "DRAPERY", "PRIDEDRAPERY", "EYEPATCHES", "LARSACCS", "HARLEYACCS"]
+                acc_list = []
+                if "WILD" in possible_accs:
+                    acc_list.extend(Pelt.wild_accessories)
+                if "PLANT" in possible_accs:
+                    acc_list.extend(Pelt.plant_accessories)
+                if "COLLAR" in possible_accs:
+                    acc_list.extend(Pelt.collars)
+                if "LIZARD" in possible_accs:
+                    acc_list.extend(Pelt.lizards)
+                if "HERBS2" in possible_accs:
+                    acc_list.extend(Pelt.herbs2)
+                if "MUDDYPAWS" in possible_accs:
+                    acc_list.extend(Pelt.muddypaws)
+                if "INSECTWINGS" in possible_accs:
+                    acc_list.extend(Pelt.insectwings)
+                if "BUDDIES" in possible_accs:
+                    acc_list.extend(Pelt.buddies)
+                if "NEWACCS" in possible_accs:
+                    acc_list.extend(Pelt.newaccs)
+                if "NEWACCS2" in possible_accs:
+                    acc_list.extend(Pelt.newaccs2)
+                if "BODYPAINT" in possible_accs:
+                    acc_list.extend(Pelt.bodypaint)
+                if "IMPLANT" in possible_accs:
+                    acc_list.extend(Pelt.implant)
+                if "MAGIC" in possible_accs:
+                    acc_list.extend(Pelt.magic)
+                if "NECKLACES" in possible_accs:
+                    acc_list.extend(Pelt.necklaces)
+                if "DRAPERY" in possible_accs:
+                    acc_list.extend(Pelt.drapery)
+                if "PRIDEDRAPERY" in possible_accs:
+                    acc_list.extend(Pelt.pridedrapery)
+                if "EYEPATCHES" in possible_accs:
+                    acc_list.extend(Pelt.eyepatches)
+                if "LARSACCS" in possible_accs:
+                    acc_list.extend(Pelt.larsaccs)
+                if "HARLEYACCS" in possible_accs:
+                    acc_list.extend(Pelt.harleyaccs)
+                if "NOTAIL" in c.pelt.scars or "HALFTAIL" in c.pelt.scars:
+                    for acc in Pelt.tail_accessories:
+                        if acc in acc_list:
+                            try:
+                                acc_list.remove(acc)
+                            except ValueError:
+                                print(f'attempted to remove {acc} from possible acc list, but it was not in the list!')
+
+                if not c.pelt.inventory:
+                    c.pelt.inventory = []
+                for acc in acc_list:
+                    if acc not in c.pelt.inventory:
+                        c.pelt.inventory.append(acc)
+                # ----
 
     def load_clan_settings(self):
         if os.path.exists(

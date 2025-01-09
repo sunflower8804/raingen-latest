@@ -152,9 +152,15 @@ class Scar_Events():
                              condition=injury_name)
 
             specialty = random.choice(scar_pool)
-            if specialty in ["NOTAIL", "HALFTAIL"]:
-                if cat.pelt.accessory in ["RED FEATHERS", "BLUE FEATHERS", "JAY FEATHERS", "GULL FEATHERS", "SPARROW FEATHERS", "CLOVER", "DAISY"]:
-                    cat.pelt.accessory = None
+            #if specialty in ["NOTAIL", "HALFTAIL"]:
+            #    if cat.pelt.accessory in ["RED FEATHERS", "BLUE FEATHERS", "JAY FEATHERS", "GULL FEATHERS", "SPARROW FEATHERS", "CLOVER", "DAISY"]:
+            #        cat.pelt.accessory = None
+            
+            for acc in ["RED FEATHERS", "BLUE FEATHERS", "JAY FEATHERS"]:
+                    if acc in cat.pelt.accessories:
+                        cat.pelt.accessories.remove(acc)
+                    if acc in cat.pelt.inventory:
+                        cat.pelt.inventory.remove(acc)
 
             # combining left/right variations into the both version
             if "NOLEFTEAR" in cat.pelt.scars and specialty == 'NORIGHTEAR':

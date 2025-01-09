@@ -10,7 +10,7 @@
         "max_cats": 6,
         "min_max_status": {
             "apprentice": [-1, -1],
-            "medicine cat": [1, 6],
+            "cleric": [1, 6],
             "healer cats": [1, 6],
             "normal adult": [-1, -1]
         },
@@ -377,7 +377,7 @@
         "min_cats": 2,
         "max_cats": 6,
         "min_max_status": {
-            "medicine cat": [1, 6],
+            "cleric": [1, 6],
             "healer cats": [1, 6]
         },
         "weight": 5,
@@ -690,7 +690,7 @@
         "min_cats": 1,
         "max_cats": 1,
         "min_max_status": {
-            "medicine cat": [1, 6],
+            "cleric": [1, 6],
             "healer cats": [1, 6]
         },
         "weight": 5,
@@ -803,8 +803,8 @@
         "min_cats": 2,
         "max_cats": 2,
         "min_max_status": {
-            "medicine cat apprentice": [1, 1],
-            "medicine cat": [1, 1],
+            "cleric apprentice": [1, 1],
+            "cleric": [1, 1],
             "warrior": [-1, -1],
             "apprentice":[-1, -1]
         },
@@ -1135,7 +1135,7 @@
         "min_cats": 1,
         "max_cats": 1,
         "min_max_status": {
-            "medicine cat": [1, 6],
+            "cleric": [1, 6],
             "healer cats": [1, 6],
             "all apprentices": [-1, -1]
         },
@@ -1385,7 +1385,7 @@
         "min_cats": 1,
         "max_cats": 1,
         "min_max_status": {
-            "medicine cat apprentice": [1, 6]
+            "cleric apprentice": [1, 6]
         },
         "weight": 5,
         "intro_text": "As app1 pads through c_n territory, {PRONOUN/app1/subject} {VERB/app1/feel/feels} a presence join {PRONOUN/app1/object}.",
@@ -1452,8 +1452,8 @@
         "max_cats": 6,
         "min_max_status": {
             "apprentice": [-1, -1],
-            "medicine cat": [1, 6],
-            "medicine cat apprentice": [1, 6],
+            "cleric": [1, 6],
+            "cleric apprentice": [1, 6],
             "healer cats": [1, 6],
             "normal adult": [-1, -1]
         },
@@ -1575,7 +1575,7 @@
         "min_cats": 2,
         "max_cats": 2,
         "min_max_status": {
-            "medicine cat": [1, 6],
+            "cleric": [1, 6],
             "healer cats": [1, 6],
             "all apprentices": [-1, -1],
             "normal adult": [1, 6]
@@ -1659,7 +1659,7 @@
         "min_cats": 2,
         "max_cats": 2,
         "min_max_status": {
-            "medicine cat": [1, 6],
+            "cleric": [1, 6],
             "healer cats": [1, 6],
             "all apprentices": [-1, -1],
             "normal adult": [1, 6]
@@ -1730,7 +1730,7 @@
         "max_cats": 6,
         "min_max_status": {
             "apprentice": [-1, -1],
-            "medicine cat": [1, 6],
+            "cleric": [1, 6],
             "healer cats": [1, 6],
             "normal adult": [-1, -1]
         },
@@ -1811,7 +1811,7 @@
         "max_cats": 6,
         "min_max_status": {
             "apprentice": [-1, -1],
-            "medicine cat apprentice": [1, 6],
+            "cleric apprentice": [1, 6],
             "healer cats": [1, 6],
             "all apprentices": [3, 6],
             "normal adult": [-1, -1]
@@ -1887,7 +1887,7 @@
         "min_cats": 2,
         "max_cats": 2,
         "min_max_status": {
-            "medicine cat apprentice": [1, 6],
+            "cleric apprentice": [1, 6],
             "healer cats": [1, 6],
             "normal adult": [1, 6]
         },
@@ -1956,7 +1956,7 @@
         "max_cats": 2,
         "min_max_status": {
             "apprentice": [1, 1],
-            "medicine cat apprentice": [1, 1],
+            "cleric apprentice": [1, 1],
             "all apprentices": [2, 2]
         },
         "weight": 20,
@@ -2054,7 +2054,7 @@
         "min_cats": 2,
         "max_cats": 2,
         "min_max_status": {
-            "medicine cat": [1, 1],
+            "cleric": [1, 1],
             "healer cats": [1, 1],
             "normal adult": [1, 1]
         },
@@ -2170,7 +2170,7 @@
         "max_cats": 2,
         "min_max_status": {
             "apprentice": [1, 1],
-            "medicine cat": [1, 1],
+            "cleric": [1, 1],
             "healer cats": [1,1],
             "all apprentices": [1, 1]
         },
@@ -2394,7 +2394,7 @@
         "max_cats": 2,
         "min_max_status": {
             "apprentice": [-1, -1],
-            "medicine cat": [1, 6],
+            "cleric": [1, 6],
             "healer cats": [1, 6],
             "all apprentices": [-1, -1],
             "normal adult": [-1, -1]
@@ -2668,7 +2668,7 @@
         "max_cats": 2,
         "min_max_status": {
             "apprentice": [1, 6],
-            "medicine cat apprentice": [1, 6],
+            "cleric apprentice": [1, 6],
             "all apprentices": [2, 2]
         },
         "weight": 5,
@@ -2820,7 +2820,7 @@
         "max_cats": 2,
         "min_max_status": {
             "apprentice": [-1, -1],
-            "medicine cat": [1, 6],
+            "cleric": [1, 6],
             "normal adult": [-1, -1]
         },
         "weight": 5,
@@ -2905,7 +2905,7 @@
         "min_cats": 2,
         "max_cats": 2,
         "min_max_status": {
-            "medicine cat": [1, 6],
+            "cleric": [1, 6],
             "healer cats": [1, 6],
             "all apprentices": [-1, -1],
             "normal adult": [1, 6]
@@ -2997,7 +2997,7 @@
     	"max_cats": 6,
     	"min_max_status": {
         	"normal adult": [1, 5],
-	        "medicine cat": [1, 1]
+	        "cleric": [1, 1]
     	},
     	"weight": 40,
     	"intro_text": "p_l is out alone in c_n's territory when a shiver runs down {PRONOUN/p_l/poss} spine. {PRONOUN/p_l/subject/CAP} {VERB/p_l/stop/stops}. {PRONOUN/p_l/subject/CAP} slowly {VERB/p_l/turn/turns} {PRONOUN/p_l/poss} head. On the rosemary bush next to {PRONOUN/p_l/object}, the moth lazily stretches its wings, the Twoleg skull on its back grinning.",
@@ -3044,7 +3044,7 @@
         "max_cats": 2,
         "min_max_status": {
             "all apprentices": [-1, -1],
-            "medicine cat": [1, 1],
+            "cleric": [1, 1],
             "normal adult": [1, 1]
         },
         "weight": 20,
@@ -3086,7 +3086,7 @@
         "min_cats": 2,
         "max_cats": 2,
         "min_max_status": {
-            "medicine cat": [1, 6]
+            "cleric": [1, 6]
         },
         "weight": 20,
         "intro_text": "p_l is hoping to find some herbs growing in defiance of the weather, which is becoming increasingly cold. r_c offered to come along to help search. After some back and forth, they decide to see what's growing among the fields near a Twoleg farm.",
@@ -3267,7 +3267,7 @@
         "max_cats": 2,
         "min_max_status": {
             "apprentice": [-1, -1],
-            "medicine cat": [1, 1]
+            "cleric": [1, 1]
         },
         "weight": 20,
         "intro_text": "While out collecting herbs with p_l, r_c can't help but notice just how hard the cleric is pushing {PRONOUN/p_l/self}.",
@@ -3371,7 +3371,7 @@
         "min_cats": 2,
         "max_cats": 2,
         "min_max_status": {
-            "medicine cat": [2, 2]
+            "cleric": [2, 2]
         },
         "weight": 20,
         "intro_text": "While out collecting herbs with p_l, r_c can't help but notice just how hard {PRONOUN/r_c/poss} fellow cleric is pushing {PRONOUN/p_l/self}.",
@@ -3476,7 +3476,7 @@
         "max_cats": 2,
         "min_max_status": {
             "apprentice": [-1, -1],
-            "medicine cat": [1, 1]
+            "cleric": [1, 1]
         },
         "weight": 20,
         "intro_text": "While out collecting herbs with r_c, p_l can't help but notice just how hard the warrior is pushing {PRONOUN/r_c/self}.",

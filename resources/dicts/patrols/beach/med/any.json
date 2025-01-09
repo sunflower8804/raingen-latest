@@ -106,8 +106,8 @@
         "max_cats": 2,
         "min_max_status": {
             "apprentice": [-1, -1],
-            "medicine cat": [1, 6],
-            "medicine cat apprentice": [1, 6],
+            "cleric": [1, 6],
+            "cleric apprentice": [1, 6],
             "healer cats": [1, 6],
             "normal adult": [-1, -1]
         },
@@ -175,7 +175,7 @@
         "max_cats": 1,
         "min_max_status": {
             "apprentice": [-1, -1],
-            "medicine cat apprentice": [1, 6],
+            "cleric apprentice": [1, 6],
             "healer cats": [1, 6],
             "normal adult": [-1, -1]
         },
@@ -216,8 +216,8 @@
         "max_cats": 2,
         "min_max_status": {
             "apprentice": [-1, -1],
-            "medicine cat": [1, 6],
-            "medicine cat apprentice": [1, 6],
+            "cleric": [1, 6],
+            "cleric apprentice": [1, 6],
             "healer cats": [1, 6],
             "normal adult": [-1, -1]
         },
@@ -258,7 +258,7 @@
         "max_cats": 1,
         "min_max_status": {
             "apprentice": [-1, -1],
-            "medicine cat apprentice": [1, 6],
+            "cleric apprentice": [1, 6],
             "healer cats": [1, 6],
             "normal adult": [-1, -1]
         },
@@ -420,8 +420,8 @@
         "max_cats": 2,
         "min_max_status": {
             "apprentice": [-1, -1],
-            "medicine cat": [1, 6],
-            "medicine cat apprentice": [1, 6],
+            "cleric": [1, 6],
+            "cleric apprentice": [1, 6],
             "healer cats": [1, 6],
             "normal adult": [-1, -1]
         },
@@ -640,7 +640,7 @@
         "max_cats": 2,
         "min_max_status": {
             "apprentice": [-1, -1],
-            "medicine cat apprentice": [1, 6],
+            "cleric apprentice": [1, 6],
             "healer cats": [1, 6],
             "normal adult": [-1, -1]
         },
@@ -752,7 +752,7 @@
         "min_cats": 3,
         "max_cats": 6,
         "min_max_status": {
-            "medicine cat": [1, 6],
+            "cleric": [1, 6],
             "healer cats": [1, 6],
             "normal adult": [1, 6]
         },
@@ -841,7 +841,7 @@
         "min_cats": 1,
         "max_cats": 1,
         "min_max_status": {
-            "medicine cat": [1, 6],
+            "cleric": [1, 6],
             "healer cats": [1, 6]
         },
         "weight": 20,
@@ -875,8 +875,8 @@
         "max_cats": 2,
         "min_max_status": {
             "apprentice": [-1, -1],
-            "medicine cat": [1, 6],
-            "medicine cat apprentice": [1, 6],
+            "cleric": [1, 6],
+            "cleric apprentice": [1, 6],
             "healer cats": [1, 6],
             "normal adult": [-1, -1]
         },
@@ -942,7 +942,7 @@
         "min_cats": 2,
         "max_cats": 2,
         "min_max_status": {
-            "medicine cat": [1, 6],
+            "cleric": [1, 6],
             "healer cats": [1, 6],
             "normal adult": [1, 6]
         },
@@ -1008,7 +1008,7 @@
         "min_cats": 3,
         "max_cats": 6,
         "min_max_status": {
-            "medicine cat": [1, 6],
+            "cleric": [1, 6],
             "healer cats": [1, 6],
             "normal adult": [1, 6]
         },
@@ -1061,8 +1061,8 @@
         "max_cats": 2,
         "min_max_status": {
             "apprentice": [-1, -1],
-            "medicine cat": [1, 6],
-            "medicine cat apprentice": [1, 6],
+            "cleric": [1, 6],
+            "cleric apprentice": [1, 6],
             "healer cats": [1, 6],
             "normal adult": [-1, -1]
         },
@@ -1112,7 +1112,7 @@
         "min_cats": 2,
         "max_cats": 2,
         "min_max_status": {
-            "medicine cat": [1, 6],
+            "cleric": [1, 6],
             "healer cats": [1, 6],
             "normal adult": [1, 6]
         },
@@ -1164,7 +1164,7 @@
         "max_cats": 2,
         "min_max_status": {
             "apprentice": [-1, -1],
-            "medicine cat": [1, 6],
+            "cleric": [1, 6],
             "all apprentices": [-1, -1],
             "normal adult": [-1, -1]
         },
@@ -1232,7 +1232,7 @@
         "max_cats": 2,
         "min_max_status": {
             "apprentice": [-1, -1],
-            "medicine cat": [1, 6],
+            "cleric": [1, 6],
             "normal adult": [-1, -1]
         },
         "weight": 20,
@@ -1340,7 +1340,7 @@
         "min_cats": 2,
         "max_cats": 2,
         "min_max_status": {
-            "medicine cat apprentice": [1, 6],
+            "cleric apprentice": [1, 6],
             "healer cats": [1, 6],
             "all apprentices": [2, 2]
         },
@@ -1428,10 +1428,10 @@
         "min_cats": 3,
         "max_cats": 3,
         "min_max_status": {
-            "medicine cat apprentice": [1, 6],
+            "cleric apprentice": [1, 6],
             "healer cats": [1, 6],
             "all apprentices": [3, 3],
-            "medicine cat": [-1, -1],
+            "cleric": [-1, -1],
             "normal adult": [-1, -1]
         },
         "weight": 20,
@@ -1518,11 +1518,11 @@
         "min_cats": 4,
         "max_cats": 4,
         "min_max_status": {
-            "medicine cat apprentice": [1, 6],
+            "cleric apprentice": [1, 6],
             "healer cats": [1, 6],
             "all apprentices": [4, 4],
             "normal adult": [-1, -1],
-            "medicine cat": [-1, -1]
+            "cleric": [-1, -1]
         },
         "weight": 20,
         "intro_text": "As the apprentices head out to collect cobwebs, app2 screws up {PRONOUN/app2/poss} face into a stupid expression around the stick {PRONOUN/app2/subject} {VERB/app2/hold/holds} in {PRONOUN/app2/poss} mouth.",
@@ -1608,11 +1608,11 @@
         "min_cats": 5,
         "max_cats": 5,
         "min_max_status": {
-            "medicine cat apprentice": [1, 6],
+            "cleric apprentice": [1, 6],
             "healer cats": [1, 6],
             "all apprentices": [5, 5],
             "normal adult": [-1, -1],
-            "medicine cat": [-1, -1]
+            "cleric": [-1, -1]
         },
         "weight": 20,
         "intro_text": "As the apprentices head out to collect cobwebs, app2 screws up {PRONOUN/app2/poss} face into a stupid expression around the stick {PRONOUN/app2/subject} {VERB/app2/hold/holds} in {PRONOUN/app2/poss} mouth.",
@@ -1698,10 +1698,10 @@
         "min_cats": 6,
         "max_cats": 6,
         "min_max_status": {
-            "medicine cat apprentice": [1, 6],
+            "cleric apprentice": [1, 6],
             "healer cats": [1, 6],
             "normal adult": [-1, -1],
-            "medicine cat": [-1, -1]
+            "cleric": [-1, -1]
         },
         "weight": 20,
         "intro_text": "As the apprentices head out to collect cobwebs, app2 screws up {PRONOUN/app2/poss} face into a stupid expression around the stick {PRONOUN/app2/subject} {VERB/app2/hold/holds} in {PRONOUN/app2/poss} mouth.",
@@ -1788,7 +1788,7 @@
         "max_cats": 3,
         "min_max_status": {
             "apprentice": [1, 6],
-            "medicine cat apprentice": [1, 6],
+            "cleric apprentice": [1, 6],
             "healer cats": [1, 6],
             "all apprentices": [3, 3]
         },
@@ -1877,7 +1877,7 @@
         "max_cats": 4,
         "min_max_status": {
             "apprentice": [1, 6],
-            "medicine cat apprentice": [1, 6],
+            "cleric apprentice": [1, 6],
             "healer cats": [1, 6],
             "all apprentices": [4, 4]
         },
@@ -1966,7 +1966,7 @@
         "max_cats": 5,
         "min_max_status": {
             "apprentice": [1, 6],
-            "medicine cat apprentice": [1, 6],
+            "cleric apprentice": [1, 6],
             "healer cats": [1, 6],
             "all apprentices": [5, 5]
         },
@@ -2055,8 +2055,8 @@
         "max_cats": 6,
         "min_max_status": {
             "apprentice": [1, 6],
-            "medicine cat": [1, 6],
-            "medicine cat apprentice": [1, 6],
+            "cleric": [1, 6],
+            "cleric apprentice": [1, 6],
             "healer cats": [1, 6]
         },
         "weight": 20,
@@ -2144,11 +2144,11 @@
         "max_cats": 2,
         "min_max_status": {
             "apprentice": [1, 6],
-            "medicine cat apprentice": [1, 6],
+            "cleric apprentice": [1, 6],
             "healer cats": [1, 6],
             "all apprentices": [2, 2],
             "normal adult": [-1, -1],
-            "medicine cat": [-1, -1]
+            "cleric": [-1, -1]
         },
         "weight": 20,
         "intro_text": "p_l comes up to meet r_c, quietly apologizing about app2 being sent to help p_l collect moss.",
@@ -2235,11 +2235,11 @@
         "max_cats": 3,
         "min_max_status": {
             "apprentice": [1, 6],
-            "medicine cat apprentice": [1, 6],
+            "cleric apprentice": [1, 6],
             "healer cats": [1, 6],
             "all apprentices": [3, 3],
             "normal adult": [-1, -1],
-            "medicine cat": [-1, -1]
+            "cleric": [-1, -1]
         },
         "weight": 20,
         "intro_text": "As the apprentices head out to collect moss, app3 screws up {PRONOUN/app3/poss} face into a stupid expression at the menial nature of the task.",
@@ -2326,7 +2326,7 @@
         "max_cats": 4,
         "min_max_status": {
             "apprentice": [1, 6],
-            "medicine cat apprentice": [1, 6],
+            "cleric apprentice": [1, 6],
             "healer cats": [1, 6],
             "all apprentices": [4, 4]
         },
@@ -2415,7 +2415,7 @@
         "max_cats": 3,
         "min_max_status": {
             "apprentice": [1, 6],
-            "medicine cat apprentice": [1, 6],
+            "cleric apprentice": [1, 6],
             "healer cats": [1, 6],
             "all apprentices": [3, 3]
         },
@@ -2504,7 +2504,7 @@
         "max_cats": 4,
         "min_max_status": {
             "apprentice": [1, 6],
-            "medicine cat apprentice": [1, 6],
+            "cleric apprentice": [1, 6],
             "healer cats": [1, 6],
             "all apprentices": [4, 4]
         },
@@ -2593,7 +2593,7 @@
         "max_cats": 5,
         "min_max_status": {
             "apprentice": [1, 6],
-            "medicine cat apprentice": [1, 6],
+            "cleric apprentice": [1, 6],
             "healer cats": [1, 6],
             "all apprentices": [5, 5]
         },
@@ -2682,7 +2682,7 @@
         "max_cats": 5,
         "min_max_status": {
             "apprentice": [1, 6],
-            "medicine cat apprentice": [1, 6],
+            "cleric apprentice": [1, 6],
             "healer cats": [1, 6],
             "all apprentices": [5, 5]
         },
@@ -2771,7 +2771,7 @@
         "max_cats": 6,
         "min_max_status": {
             "apprentice": [1, 6],
-            "medicine cat apprentice": [1, 6],
+            "cleric apprentice": [1, 6],
             "healer cats": [1, 6],
             "all apprentices": [6, 6]
         },
@@ -2860,7 +2860,7 @@
         "max_cats": 6,
         "min_max_status": {
             "apprentice": [1, 6],
-            "medicine cat apprentice": [1, 6],
+            "cleric apprentice": [1, 6],
             "healer cats": [1, 6]
         },
         "weight": 20,

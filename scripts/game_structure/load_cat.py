@@ -54,6 +54,15 @@ def json_load():
     for i, cat in enumerate(cat_data):
         try:
 
+            # moving clangen accs over to accessories + inventory - LG
+            if "inventory" not in cat:
+                cat["inventory"] = []
+            
+            if cat["accessory"] is not None:
+                cat["accessories"].append(cat["accessory"])
+                cat["inventory"].append(cat["accessory"])
+                cat["accessory"] = None
+
             new_cat = Cat(
                 ID=cat["ID"],
                 prefix=cat["name_prefix"],
@@ -130,6 +139,8 @@ def json_load():
                 scars=cat["scars"] if "scars" in cat else [],
                 accessory=cat["accessory"],
                 opacity=cat["opacity"] if "opacity" in cat else 100,
+                accessories=cat["accessories"] if "accessories" in cat else [],
+                inventory = cat["inventory"] if "inventory" in cat else []
             )
 
             # Runs a bunch of apperence-related convertion of old stuff.

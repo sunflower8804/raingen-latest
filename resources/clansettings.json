@@ -59,6 +59,11 @@
             "Show cycles and seasons widget",
             "Displays Clan age and current Clan season on several pages.",
             false
+        ],
+		"all accessories": [
+            "Unlimited accessories",
+            "All slugcats have access to all accessories in the game. Warning: this is irreversible!",
+            false
         ]
     },
     "role": {

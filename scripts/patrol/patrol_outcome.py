@@ -53,6 +53,7 @@ class PatrolOutcome:
         dead_cats: List[str] = None,
         lost_cats: List[str] = None,
         injury: List[Dict] = None,
+        accessory: List[Dict] = None,
         history_reg_death: str = None,
         history_leader_death: str = None,
         history_scar: str = None,
@@ -78,6 +79,7 @@ class PatrolOutcome:
         self.dead_cats = dead_cats if dead_cats is not None else []
         self.lost_cats = lost_cats if lost_cats is not None else []
         self.injury = injury if injury is not None else []
+        self.accessory = accessory if accessory is not None else []
         self.history_reg_death = (
             history_reg_death
             if history_reg_death is not None
@@ -177,6 +179,7 @@ class PatrolOutcome:
                     dead_cats=_d.get("dead_cats"),
                     lost_cats=_d.get("lost_cats"),
                     injury=_d.get("injury"),
+                    accessory=_d.get("accessory"),
                     history_leader_death=(
                         _d["history_text"].get("lead_death")
                         if isinstance(_d.get("history_text"), dict)
@@ -270,6 +273,7 @@ class PatrolOutcome:
                 Cat, self.relationship_effects, patrol, stat_cat=self.stat_cat
             )
         )
+        results.append(self._handle_accessories(patrol))
         results.append(self._handle_rep_changes())
         results.append(self._handle_other_clan_relations(patrol))
         results.append(self._handle_prey(patrol))
@@ -616,6 +620,60 @@ class PatrolOutcome:
                     self.__handle_condition_history(
                         _cat, give_injury, patrol, default_overide=True
                     )
+
+        return " ".join(results)
+
+    #Accessories! Code from Lifegen.
+    def _handle_accessories(self, patrol:'Patrol') -> str:
+        """ cats getting accessories """
+        
+        if not self.accessory:
+            return ""
+        
+        def gather_cat_objects(cat_list, patrol: 'Patrol') -> list:
+            out_set = set()
+            
+            for _cat in cat_list:
+                if _cat == "r_c":
+                    out_set.add(patrol.random_cat)
+                elif _cat == "p_l":
+                    out_set.add(patrol.patrol_leader)
+                elif _cat == "s_c":
+                    out_set.add(self.stat_cat)
+                elif _cat == "app1" and len(patrol.patrol_apprentices) >= 1:
+                    out_set.add(patrol.patrol_apprentices[0])
+                elif _cat == "app2" and len(patrol.patrol_apprentices) >= 2:
+                    out_set.add(patrol.patrol_apprentices[1])
+                elif _cat == "patrol":
+                    out_set.update(patrol.patrol_cats)
+                elif _cat == "multi":
+                    cat_num = random.randint(1, max(1, len(patrol.patrol_cats) - 1))
+                    out_set.update(random.sample(patrol.patrol_cats, cat_num))
+                elif _cat == "some_clan":
+                    clan_cats = [x for x in Cat.all_cats_list if not (x.dead or x.outside)]
+                    out_set.update(random.sample(clan_cats, k=min(len(clan_cats), choice([2, 3, 4]))))
+                elif re.match(r"n_c:[0-9]+", _cat):
+                    index = re.match(r"n_c:([0-9]+)", _cat).group(1)
+                    index = int(index)
+                    if index < len(patrol.new_cats):
+                        out_set.update(patrol.new_cats[index])
+                    
+                    
+            return list(out_set)
+        
+        results = []
+       
+        for block in self.accessory:
+            cats = gather_cat_objects(block.get("cats", ()), patrol)
+            accessory = block.get("accessory", ())
+            
+            if not (cats and accessory):
+                print(f"something is wrong with accessory - {block}")
+                continue
+
+            for _cat in cats:
+                if self.__handle_accs(_cat, accessory):
+                    results.append(f"{_cat.name} got an accessory!")
 
         return " ".join(results)
 
@@ -984,3 +1042,77 @@ class PatrolOutcome:
             )
 
         History.add_death(cat, death_text=final_death_history)
+
+    #Accessories! Code from Lifegen.
+    def __handle_accs(self, cat: Cat, acc_list: str) -> str:
+
+        if "WILD" in acc_list:
+            acc_list = Pelt.wild_accessories
+        elif "COLLAR" in acc_list:
+            acc_list = Pelt.collars
+        elif "TAIL" in acc_list:
+            acc_list = Pelt.tail_accessories
+        elif "PLANTS" in acc_list:
+            acc_list = Pelt.plant_accessories
+        # Lex's RW Lizards!
+        elif "LIZARDS" in acc_list:
+            acc_list = Pelt.lizards
+        #herbs2
+        elif "HERBS2" in acc_list:
+            acc_list = Pelt.herbs2
+        #Buddies
+        elif "BUDDIES" in acc_list:
+            acc_list = Pelt.buddies
+        #Insects
+        elif "INSECTWINGS" in acc_list:
+            acc_list = Pelt.insectwings
+        #muddypaws
+        elif "MUDDYPAWS" in acc_list:
+            acc_list = Pelt.muddypaws
+        #newaccs
+        elif "NEWACCS" in acc_list:
+            acc_list = Pelt.newaccs
+        #bodypaint
+        elif "BODYPAINT" in acc_list:
+            acc_list = Pelt.bodypaint
+        #implant
+        elif "IMPLANT" in acc_list:
+            acc_list = Pelt.implant
+        #magic
+        elif "MAGIC" in acc_list:
+            acc_list = Pelt.magic
+        #necklaces
+        elif "NECKLACES" in acc_list:
+            acc_list = Pelt.necklaces
+        #drapery
+        elif "DRAPERY" in acc_list:
+            acc_list = Pelt.drapery
+        #pridedrapery
+        elif "PRIDEDRAPERY" in acc_list:
+            acc_list = Pelt.pridedrapery
+        #eyepatches
+        elif "EYEPATCHES" in acc_list:
+            acc_list = Pelt.eyepatches
+        #larsaccs
+        elif "LARSACCS" in acc_list:
+            acc_list = Pelt.larsaccs
+        #harleyaccs
+        elif "HARLEYACCS" in acc_list:
+            acc_list = Pelt.harleyaccs
+        #drones used to be here but apparently they are collars
+        else:
+            acc_list = [x for x in acc_list if x in Pelt.plant_accessories + Pelt.wild_accessories +\
+        Pelt.tail_accessories + Pelt.collars + Pelt.lizards + Pelt.insectwings + Pelt.buddies + Pelt.muddypaws +\
+        Pelt.newaccs + Pelt.bodypaint + Pelt.herbs2 + Pelt.implant + Pelt.magic + Pelt.necklaces + Pelt.drapery +\
+        Pelt.pridedrapery + Pelt.eyepatches + Pelt.larsaccs + Pelt.harleyaccs
+                            and x not in cat.pelt.inventory]
+
+        if not acc_list:
+            return None
+            
+        chosen_acc = choice(acc_list)
+        if chosen_acc not in cat.pelt.inventory:
+            cat.pelt.accessories.append(chosen_acc)
+            cat.pelt.inventory.append(chosen_acc)
+            
+        return chosen_acc
