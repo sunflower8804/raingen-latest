@@ -426,7 +426,7 @@
   },
   {
     "interaction_type": "provoke",
-    "event_text": "At the Gathering, m_c implies o_c_n is full of warmongering fox-hearts. o_c_n's leader puffs up with pride, agreeing that their Clan is one of the strongest in the forest.",
+    "event_text": "At the Gathering, m_c implies o_c_n is full of warmongering lizard-hearts. o_c_n's leader puffs up with pride, agreeing that their Clan is one of the strongest in the forest.",
     "rel_change": 1,
     "m_c": {},
     "player_clan_temper": ["any"],
@@ -471,7 +471,7 @@
   },
   {
     "interaction_type": "provoke",
-    "event_text": "No matter how fox-hearted m_c acts at the Gathering, {PRONOUN/m_c/subject} can't get a rise out of o_c_n's leader.",
+    "event_text": "No matter how lizard-hearted m_c acts at the Gathering, {PRONOUN/m_c/subject} can't get a rise out of o_c_n's leader.",
     "rel_change": 0,
     "m_c": {},
     "player_clan_temper": ["any"],
@@ -1258,7 +1258,7 @@
   },
   {
     "interaction_type": "appease",
-    "event_text": "During the Gathering, o_c_n's leader goes on and on about c_n wronging them. {PRONOUN/m_c/poss/CAP} temper slips through {PRONOUN/m_c/poss} claws, and m_c eventually snaps at o_c_n's leader to just shut their trap - every cat knows they're talking a load of fox-dung. Far from shutting their trap, o_c_n's leader only yowls louder.",
+    "event_text": "During the Gathering, o_c_n's leader goes on and on about c_n wronging them. {PRONOUN/m_c/poss/CAP} temper slips through {PRONOUN/m_c/poss} claws, and m_c eventually snaps at o_c_n's leader to just shut their trap - every slugcat knows they're talking garbage. Far from shutting their trap, o_c_n's leader only yowls louder.",
     "rel_change": -3,
     "m_c": {
       "skill": ["MEDIATOR,1"],

@@ -151,7 +151,7 @@
   },
   {
     "interaction_type": "offend",
-    "event_text": "Another Clan's leader accuses o_c_n at the Gathering of refusing to share herbs in the case of a sick kitten. m_c turns on o_c_n's leader immediately, hissing that {PRONOUN/m_c/subject} cannot ally {PRONOUN/m_c/self} with fox-hearts.",
+    "event_text": "Another Clan's leader accuses o_c_n at the Gathering of refusing to share herbs in the case of a sick kitten. m_c turns on o_c_n's leader immediately, hissing that {PRONOUN/m_c/subject} cannot ally {PRONOUN/m_c/self} with lizard-hearts.",
     "rel_change": -6,
     "m_c": {
       "trait": ["strict", "faithful", "righteous"],
@@ -1357,7 +1357,7 @@
   },
   {
     "interaction_type": "antagonize",
-    "event_text": "At the Gathering, m_c tells o_c_n's leader to their face that they're a good-for-nothing fox-heart. Sometimes the direct approach is best.",
+    "event_text": "At the Gathering, m_c tells o_c_n's leader to their face that they're a good-for-nothing lizard-heart. Sometimes the direct approach is best.",
     "rel_change": -2,
     "m_c": {},
     "player_clan_temper": ["any"],
@@ -1479,7 +1479,7 @@
   },
   {
     "interaction_type": "antagonize",
-    "event_text": "At the Gathering, o_c_n's leader mentions trouble hunting after a proliferation of Twoleg traps on their territory. m_c examines {PRONOUN/m_c/poss} claws and remarks that c_n may have some prey-bones to spare that o_c_n warriors can chew on.",
+    "event_text": "At the Gathering, o_c_n's leader mentions trouble hunting after a proliferation of scavenger traps on their territory. m_c examines {PRONOUN/m_c/poss} claws and remarks that c_n may have some prey-bones to spare that o_c_n warriors can chew on.",
     "rel_change": -3,
     "m_c": {
       "trait": [ "bold", "shameless", "daring", "cold", "vengeful", "fierce", "arrogant", "competitive", "cunning", "troublesome" ]
@@ -1500,7 +1500,7 @@
   },
   {
     "interaction_type": "antagonize",
-    "event_text": "At the Gathering, o_c_n's leader mentions trouble hunting after a proliferation of Twoleg traps on their territory. m_c expresses surprise that any o_c_n warrior would feel hunger when they're so full of themselves already.",
+    "event_text": "At the Gathering, o_c_n's leader mentions trouble hunting after a proliferation of scavenger traps on their territory. m_c expresses surprise that any o_c_n warrior would feel hunger when they're so full of themselves already.",
     "rel_change": -4,
     "m_c": {
       "skill": [ "CLEVER,3", "SPEAKER,3" ]
@@ -1987,7 +1987,7 @@
   },
   {
     "interaction_type": "appease",
-    "event_text": "During the Gathering, o_c_n's leader goes on and on about c_n wronging them. {PRONOUN/m_c/poss/CAP} temper slips through {PRONOUN/m_c/poss} claws, and m_c eventually snaps at o_c_n's leader to just shut their trap - every cat knows they're talking a load of fox-dung. This stuns the leader into silence.",
+    "event_text": "During the Gathering, o_c_n's leader goes on and on about c_n wronging them. {PRONOUN/m_c/poss/CAP} temper slips through {PRONOUN/m_c/poss} claws, and m_c eventually snaps at o_c_n's leader to just shut their trap - every cat knows they're talking garbage. This stuns the leader into silence.",
     "rel_change": 5,
     "m_c": {
       "skill": ["MEDIATOR,1"],

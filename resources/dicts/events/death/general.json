@@ -580,7 +580,7 @@
         ],
         "tags": [],
         "weight": 20,
-        "event_text": "m_c was found dead near a fox den.",
+        "event_text": "m_c was found dead near a centipede den.",
         "m_c": {
             "age": [ "adolescent", "young adult", "adult", "senior adult"],
             "not_skill": [
@@ -599,8 +599,8 @@
         },
         "history": [{
             "cats": ["m_c"],
-            "reg_death": "m_c was killed by a fox.",
-            "lead_death": "{VERB/m_c/were/was} killed by a fox"
+            "reg_death": "m_c was killed by a centipede.",
+            "lead_death": "{VERB/m_c/were/was} killed by a centipede"
         }]
     },
     {
@@ -3420,7 +3420,7 @@
         ],
         "tags": [],
         "weight": 20,
-        "event_text": "m_c was having a peaceful stroll outside of camp, when {PRONOUN/m_c/subject} {VERB/m_c/were/was} attacked and killed by a fox.",
+        "event_text": "m_c was having a peaceful stroll outside of camp, when {PRONOUN/m_c/subject} {VERB/m_c/were/was} attacked and killed by a centipede.",
         "m_c": {
             "age": [
                 "adolescent",
@@ -3434,8 +3434,8 @@
         },
         "history": [{
             "cats": ["m_c"],
-            "reg_death": "m_c was killed by a fox.",
-            "lead_death": "{VERB/m_c/were/was} killed by a fox"
+            "reg_death": "m_c was killed by a centipede.",
+            "lead_death": "{VERB/m_c/were/was} killed by a centipede"
         }]
     },
     {
@@ -3948,7 +3948,7 @@
         ],
         "tags": [],
         "weight": 20,
-        "event_text": "m_c was killed defending r_c from a fox.",
+        "event_text": "m_c was killed defending r_c from a centipede.",
         "m_c": {
             "age": [
                 "adolescent",
@@ -3982,8 +3982,8 @@
         },
         "history": [{
             "cats": [ "m_c", "r_c"],
-            "reg_death": "m_c died defending r_c from a fox.",
-            "lead_death": "defended r_c from a fox"
+            "reg_death": "m_c died defending r_c from a centipede.",
+            "lead_death": "defended r_c from a centipede"
         }],
         "relationships": [
             {
@@ -5589,7 +5589,7 @@
         ],
         "tags": [],
         "weight": 20,
-        "event_text": "m_c is found within a few fox-lengths of camp, {PRONOUN/m_c/poss} tiny body cold and covered in bites. The scent of mouse hangs heavy in the air...",
+        "event_text": "m_c is found within a few centipede-lengths of camp, {PRONOUN/m_c/poss} tiny body cold and covered in bites. The scent of mouse hangs heavy in the air...",
         "m_c": {
             "status": [
                 "kitten"
@@ -5796,7 +5796,7 @@
     "location": ["any"],
     "season": ["any"],
     "weight": 20,
-    "event_text": "m_c woke up in the middle of the night to a strange noise. No one else was awake, or so {PRONOUN/m_c/subject} thought, until seeing someone at the fresh-kill pile. Before m_c could realize {PRONOUN/m_c/poss} mistake, sharp canine teeth were at {PRONOUN/m_c/poss} throat, ensuring the Clan wakes up to find {PRONOUN/m_c/poss} nest empty, and the prey gone.",
+    "event_text": "m_c woke up in the middle of the night to a strange noise. No one else was awake, or so {PRONOUN/m_c/subject} thought, until seeing someone at the fresh-kill pile. Before m_c could realize {PRONOUN/m_c/poss} mistake, sharp teeth were at {PRONOUN/m_c/poss} throat, ensuring the Clan wakes up to find {PRONOUN/m_c/poss} nest empty, and the prey gone.",
     "m_c": {
         "status": ["any"],
         "dies": true
@@ -5804,8 +5804,8 @@
     "history": [
       {
           "cats": ["m_c"],
-          "reg_death": "m_c was killed by a fox that snuck into camp.",
-          "lead_death": "{VERB/m_c/were/was} killed by a fox that snuck into camp"
+          "reg_death": "m_c was killed by a white lizard that snuck into camp.",
+          "lead_death": "{VERB/m_c/were/was} killed by a white lizard that snuck into camp"
       }
     ],
     "supplies": [
@@ -5931,7 +5931,7 @@
     "sub_type": ["murder"],
     "tags": ["all_lives", "low_lives"],
     "weight": 30,
-    "event_text": "r_c watches impassively as m_c struggles in a Twoleg trap, waiting till {PRONOUN/m_c/subject} slowly {VERB/m_c/stop/stops} moving before leaving the area.",
+    "event_text": "r_c watches impassively as m_c struggles in a scavenger trap, waiting till {PRONOUN/m_c/subject} slowly {VERB/m_c/stop/stops} moving before leaving the area.",
     "m_c": {
       "age": ["adolescent", "young adult", "adult", "senior adult", "senior"],
       "dies": true
@@ -5944,8 +5944,8 @@
       "history": [
       {
       "cats": ["m_c"],
-      "reg_death": "m_c died when r_c lured {PRONOUN/m_c/object} into a Twoleg trap.",
-      "lead_death": "{VERB/m_c/were/was} lured by r_c into a Twoleg trap"
+      "reg_death": "m_c died when r_c lured {PRONOUN/m_c/object} into a scavenger trap.",
+      "lead_death": "{VERB/m_c/were/was} lured by r_c into a scavenger trap"
       }
     ]
   },
