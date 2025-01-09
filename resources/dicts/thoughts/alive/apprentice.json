@@ -251,7 +251,7 @@
             "Pesters {PRONOUN/m_c/poss} mentor for more battle training",
             "Is practicing forbidden battle moves",
             "Drew blood during {PRONOUN/m_c/poss} battle training",
-            "Sinks {PRONOUN/m_c/poss} teeth into prey, pretending it's another cat's pelt",
+            "Sinks {PRONOUN/m_c/poss} teeth into prey, pretending it's another slugcat's pelt",
             "Is caught playing with {PRONOUN/m_c/poss} prey instead of hunting",
             "Is cleaning blood from {PRONOUN/m_c/poss} claws",
             "Is hissing defiantly at r_c",
@@ -413,7 +413,7 @@
         "id": "nervous_warrior_apprentice",
         "thoughts": [
             "Is scared to go on border patrol",
-            "Fled upon hearing the distant barking of a dog",
+            "Fled upon hearing the distant hissing of a lizard",
             "Wonders if {PRONOUN/m_c/subject}'ll ever become a warrior",
             "Jumps at {PRONOUN/m_c/poss} own shadow",
             "Is nervous about something",

@@ -43,7 +43,7 @@
     {
         "id": "gen_older_warrior",
         "thoughts": [
-            "Tries to set a good example for younger cats"
+            "Tries to set a good example for younger slugcats"
         ],
         "main_age_constraint": [
             "senior",
@@ -57,8 +57,8 @@
     {
         "id": "warrior_gen_medicine_cat",
         "thoughts": [
-            "Plans to visit the medicine cat",
-            "Is helping to escort the medicine cat to gather herbs"
+            "Plans to visit the cleric",
+            "Is helping to escort the cleric to gather herbs"
         ],
         "random_status_constraint": [
             "medicine cat"
@@ -103,7 +103,7 @@
             "Sucks up to the leader and deputy by offering to lead every patrol",
             "Sets out to catch five pieces of fresh-kill today",
             "Evaluates how {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} going to sharpen up {PRONOUN/m_c/poss} battle skills",
-            "Tries to emulate the leader's body language when talking to younger cats",
+            "Tries to emulate the leader's body language when talking to younger slugcats",
             "Feels inadequate about being nothing more than an ordinary warrior",
             "Knows {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} a shoo-in for deputy"
         ],
@@ -115,7 +115,7 @@
         "id": "careful_warrior",
         "thoughts": [
             "Is dutifully standing guard outside of camp",
-            "Is going back to check on an old fox burrow {PRONOUN/m_c/subject} discovered yesterday, just to be safe",
+            "Is going back to check on an old centipede burrow {PRONOUN/m_c/subject} discovered yesterday, just to be safe",
             "Coaches other warriors to take a more guarded stance for their technique"
         ],
         "main_trait_constraint": [
@@ -155,7 +155,7 @@
             "Patiently waits for a rabbit to come out of its burrow, eventually catching it",
             "Offered to walk at the front of the patrol",
             "Offered to stick {PRONOUN/m_c/poss} nose into a badger sett to check if the badger is still there",
-            "Offered to stick {PRONOUN/m_c/poss} nose into a fox den to check if the fox is still there",
+            "Offered to stick {PRONOUN/m_c/poss} nose into a centipede den to check if the centipede is still there",
             "Volunteered for extra patrols",
             "Volunteered for extra duties",
             "Volunteered to stand guard of the camp",
@@ -225,7 +225,7 @@
     {
         "id": "fierce_warrior_to_living_medcat",
         "thoughts": [
-            "Is asking the medicine cat for herbs that may help {PRONOUN/m_c/object} in battle"
+            "Is asking the cleric for herbs that may help {PRONOUN/m_c/object} in battle"
         ],
         "random_status_constraint": [
             "medicine cat",

@@ -2,14 +2,14 @@
     {
         "id": "gen_deputy",
         "thoughts": [
-            "Is assigning cats to a border patrol",
-            "Is assigning cats to a hunting patrol",
+            "Is assigning slugcats to a border patrol",
+            "Is assigning slugcats to a hunting patrol",
             "Is wondering what it would be like to be a leader",
             "Is stressed about organizing patrols",
             "Wonders who will give {PRONOUN/m_c/object} {PRONOUN/m_c/poss} nine lives",
             "Feels overworked",
             "Is hoping for a break",
-            "Is assigning cats to the dawn patrol",
+            "Is assigning slugcats to the dawn patrol",
             "Can't believe {PRONOUN/m_c/subject} overslept today",
             "Is unsure of what the rest of the Clan thinks of {PRONOUN/m_c/object} as deputy"
         ]
@@ -137,7 +137,7 @@
     {
         "id": "nervous_deputy",
         "thoughts": [
-            "Is fretting over a recent increase in fox sightings near the camp",
+            "Is fretting over a recent increase in centipede sightings near the camp",
             "Feels a twinge of worry about an approaching storm",
             "Is overthinking a recent encounter with a rival Clan"
         ],
@@ -158,7 +158,7 @@
     {
       "id": "playful_deputy_to_younger",
         "thoughts": [
-            "Is amused by the antics of the younger cats"
+            "Is amused by the antics of the younger slugcats"
         ],
         "random_age_constraint": [
             "kitten",
@@ -196,7 +196,7 @@
     {
         "id": "strange_deputy",
         "thoughts": [
-            "Accidentally assigns the same cat to three patrols",
+            "Accidentally assigns the same slugcat to three patrols",
             "Insists a hunting patrol needs to only bring back mice",
             "Goes missing and comes back smelling like garlic",
             "Is making odd noises",
@@ -269,7 +269,7 @@
     {
       "id": "healer_deputy_to_medcat",
         "thoughts": [
-            "Takes a patrol out to gather herbs for the medicine cat den"
+            "Takes a patrol out to gather herbs for the cleric den"
         ],
         "main_skill_constraint": [
             "HEALER,1"
@@ -322,7 +322,7 @@
         "id": "teacher_deputy",
         "thoughts": [
             "Is devising an effective teaching strategy for new skills",
-            "Encourages the older cats to share their skills and techniques with the younger generations"
+            "Encourages the older slugcats to share their skills and techniques with the younger generations"
         ],
         "main_skill_constraint": [
             "TEACHER,1"

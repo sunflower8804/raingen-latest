@@ -28,7 +28,7 @@ class SkillPath(Enum):
         "splashes in puddles",
         "good swimmer",
         "talented swimmer",
-        "fish-like swimmer",
+        "jetfish-like swimmer",
     )
     SPEAKER = (
         "confident with words",
@@ -52,9 +52,9 @@ class SkillPath(Enum):
     SENSE = ("oddly observant", "natural intuition", "keen eye", "unnatural senses")
     KIT = (
         "active imagination",
-        "good kitsitter",
-        "great kitsitter",
-        "beloved kitsitter",
+        "good pupsitter",
+        "great pupsitter",
+        "beloved pupsitter",
     )
     STORY = (
         "lover of stories",
@@ -68,19 +68,19 @@ class SkillPath(Enum):
         "lore keeper",
         "lore master",
     )
-    CAMP = ("picky nest builder", "steady paws", "den builder", "camp keeper")
+    CAMP = ("picky nest builder", "steady hands", "den builder", "camp keeper")
     HEALER = ("interested in herbs", "good healer", "great healer", "fantastic healer")
     STAR = (
-        "curious about StarClan",
-        "connection to StarClan",
-        "deep StarClan bond",
-        "unshakable StarClan link",
+        "curious about the Void",
+        "connection to the Void",
+        "deep bond with the Void",
+        "unshakable link with the Void",
     )
     DARK = (
-        "interested in the Dark Forest",
-        "Dark Forest affinity",
-        "deep Dark Forest bond",
-        "unshakable Dark Forest link",
+        "interested in the RotWound",
+        "RotWound affinity",
+        "deep RotWound bond",
+        "unshakable RotWound link",
     )
     OMEN = ("interested in oddities", "omen seeker", "omen sense", "omen sight")
     DREAM = ("restless sleeper", "strange dreamer", "dream walker", "dream shaper")
@@ -166,13 +166,13 @@ class Skill:
         SkillPath.LORE: "lorekeeping",
         SkillPath.CAMP: "campkeeping",
         SkillPath.HEALER: "healing",
-        SkillPath.STAR: "StarClan",
+        SkillPath.STAR: "void",
         SkillPath.OMEN: "omen",
         SkillPath.DREAM: "dreaming",
         SkillPath.CLAIRVOYANT: "predicting",
         SkillPath.PROPHET: "prophesying",
         SkillPath.GHOST: "ghosts",
-        SkillPath.DARK: "dark forest",
+        SkillPath.DARK: "rotwound",
     }
 
     def __init__(self, path: SkillPath, points: int = 0, interest_only: bool = False):

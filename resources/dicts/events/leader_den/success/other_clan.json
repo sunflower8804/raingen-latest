@@ -162,7 +162,7 @@
   },
   {
     "interaction_type": "offend",
-    "event_text": "o_c_n's medicine cats present a new prophecy at the Gathering. m_c offends o_c_n by interrupting to offer {PRONOUN/m_c/poss} interpretation before the medicine cats can say anything else.",
+    "event_text": "o_c_n's clerics present a new prophecy at the Gathering. m_c offends o_c_n by interrupting to offer {PRONOUN/m_c/poss} interpretation before the clerics can say anything else.",
     "rel_change": -6,
     "m_c": {
       "trait": ["fierce", "bold", "daring", "shameless", "arrogant"],
@@ -195,7 +195,7 @@
   },
   {
     "interaction_type": "offend",
-    "event_text": "At the Gathering, o_c_n's leader reports that one of their cats' broken bones has finally healed. m_c scoffs and addresses the o_c_n medicine cats, telling them that they should have re-broken the bone and set it better.",
+    "event_text": "At the Gathering, o_c_n's leader reports that one of their cats' broken bones has finally healed. m_c scoffs and addresses the o_c_n clerics, telling them that they should have re-broken the bone and set it better.",
     "rel_change": -6,
     "m_c": {
       "trait": ["fierce"],
@@ -302,7 +302,7 @@
   },
   {
     "interaction_type": "praise",
-    "event_text": "At the Gathering, o_c_n's leader speaks at length about the perseverance of one of their medicine cats in caring for a seriously injured Clanmate. m_c feels it would be too awkward to congratulate o_c_n directly, but nevertheless nods to the medicine cat in question.",
+    "event_text": "At the Gathering, o_c_n's leader speaks at length about the perseverance of one of their clerics in caring for a seriously injured Clanmate. m_c feels it would be too awkward to congratulate o_c_n directly, but nevertheless nods to the cleric in question.",
     "rel_change": 4,
     "m_c": {
       "skill": ["HEALER,1"],
@@ -354,7 +354,7 @@
   },
   {
     "interaction_type": "praise",
-    "event_text": "m_c takes {PRONOUN/m_c/poss} chance at the Gathering to fawn over o_c_n's leader for everything from their apprentices' manners to their medicine cats' intelligence.",
+    "event_text": "m_c takes {PRONOUN/m_c/poss} chance at the Gathering to fawn over o_c_n's leader for everything from their apprentices' manners to their clerics' intelligence.",
     "rel_change": 2,
     "m_c": {},
     "player_clan_temper": ["any"],
@@ -494,7 +494,7 @@
   },
   {
     "interaction_type": "praise",
-    "event_text": "Given o_c_n's reputation of cool pragmatism, m_c decides to praise the intelligence and skill of o_c_n's medicine cats at the Gathering. The appreciative gleam in o_c_n's leader's eye suggests this was the right course of action.",
+    "event_text": "Given o_c_n's reputation of cool pragmatism, m_c decides to praise the intelligence and skill of o_c_n's clerics at the Gathering. The appreciative gleam in o_c_n's leader's eye suggests this was the right course of action.",
     "rel_change": 3,
     "m_c": { },
     "player_clan_temper": ["any"],
@@ -781,7 +781,7 @@
   },
   {
     "interaction_type": "provoke",
-    "event_text": "During the Gathering, o_c_n's leader brags about recent successes in border skirmishes. m_c remarks that they're obfuscating how badly wounded some warriors are and how overworked their medicine cats seem.",
+    "event_text": "During the Gathering, o_c_n's leader brags about recent successes in border skirmishes. m_c remarks that they're obfuscating how badly wounded some warriors are and how overworked their clerics seem.",
     "rel_change": -3,
     "m_c": {
       "skill": [ "INSIGHTFUL,1", "SENSE,1"]
@@ -1590,7 +1590,7 @@
   },
   {
     "interaction_type": "appease",
-    "event_text": "At the Gathering, m_c acknowledges o_c_n's deputy and medicine cat with a gracious dip of {PRONOUN/m_c/poss} head. Common courtesy can go a long way.",
+    "event_text": "At the Gathering, m_c acknowledges o_c_n's deputy and cleric with a gracious dip of {PRONOUN/m_c/poss} head. Common courtesy can go a long way.",
     "rel_change": 2,
     "m_c": {},
     "player_clan_temper": ["any"],
@@ -1681,7 +1681,7 @@
   },
   {
     "interaction_type": "appease",
-    "event_text": "At the Gathering, m_c remarks on the many different types of herbs that will be useful to o_c_n warriors recovering from recent scraps. o_c_n's leader scoffs, but o_c_n's medicine cats are listening.",
+    "event_text": "At the Gathering, m_c remarks on the many different types of herbs that will be useful to o_c_n warriors recovering from recent scraps. o_c_n's leader scoffs, but o_c_n's clerics are listening.",
     "rel_change": 5,
     "m_c": {
       "skill": [ "HEALER,1" ],

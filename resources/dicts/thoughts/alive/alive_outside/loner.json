@@ -6,7 +6,7 @@
             "Wonders about what Clan life would be like",
             "Is considering finding some housefolk to live with",
             "Loves {PRONOUN/m_c/poss} life of freedom",
-            "Thinks that Clan cats are stupid",
+            "Thinks that Clan slugcats are stupid",
             "Debates joining a Clan",
             "Heard a rumor of rogues in the area",
             "Feels alone",
@@ -23,10 +23,10 @@
             "Was chased away from the shelter {PRONOUN/m_c/subject} had been staying in",
             "Hopes {PRONOUN/m_c/poss} mild cough won't get worse",
             "Got invited to spend the night with a group of friendly loners",
-            "Saw a helpless cat get taken in a metal box by Twolegs",
+            "Saw a helpless slugcat get taken in a metal box by Twolegs",
             "Sniffed around a known Clan territory curiously",
             "Chows down on some food a Twoleg left out for {PRONOUN/m_c/object}",
-            "Envies the strong kinship the Clan cats have",
+            "Envies the strong kinship the Clan slugcats have",
             "Took a stroll through the city",
             "Spies a kittypet through a window, jealous of the protection and food they have",
             "Spies a kittypet and taunts them that they can't enjoy freedom",
@@ -58,14 +58,14 @@
             "Is asking {PRONOUN/m_c/self} if becoming a kittypet would be an easier life",
             "Is trying not to feel overwhelmingly lonely",
             "Is learning about the Clans",
-            "Thinks Clan cats are strange",
+            "Thinks Clan slugcats are strange",
             "Is in awe hearing the stories about the Clans",
             "Is imagining an epic life where {PRONOUN/m_c/subject} {VERB/m_c/are/is} a legendary wanderer in these lands",
             "Is marking random locations with {PRONOUN/m_c/poss} claws to remember as a potential hideout",
             "Turns up {PRONOUN/m_c/poss} nose when another loner tries to give {PRONOUN/m_c/object} directions",
             "Collects various items {PRONOUN/m_c/subject} {VERB/m_c/find/finds} beautiful and interesting",
             "Wonders if {PRONOUN/m_c/poss} parents were once renowned explorers",
-            "Laughs at the thought of being a Clan cat and having a warrior name... Maybe..."
+            "Laughs at the thought of being a Clan slugcat and having a warrior name... Maybe..."
         ],
         "main_age_constraint": [
             "adolescent"
@@ -124,7 +124,7 @@
             "Looks back with fondness at the misadventures {PRONOUN/m_c/subject} had with old friends",
             "Has no shame eating crow-food if that's what it takes to survive",
             "Easily fought off an overconfident rogue with {PRONOUN/m_c/poss} many rough moons of experience",
-            "Had a vivid nightmare where {PRONOUN/m_c/subject} couldn't save {PRONOUN/m_c/poss} old friend from wild dogs",
+            "Had a vivid nightmare where {PRONOUN/m_c/subject} couldn't save {PRONOUN/m_c/poss} old friend from wild lizards",
             "Met up with an old kittypet friend, for both the free food and the company",
             "Is gnawing at {PRONOUN/m_c/poss} pelt, irritated at the abundance of fleas",
             "Coughs heavily"
