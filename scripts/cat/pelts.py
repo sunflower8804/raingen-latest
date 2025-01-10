@@ -917,8 +917,6 @@ class Pelt:
             self.scars.remove('HALFTAIL')
         if 'ROTRIDDEN' in self.scars and 'ROTMARKED' in self.scars:
             self.scars.remove('ROTMARKED')
-        if 'NOTAIL' in self.scars and 'HALFTAIL' in self.scars:
-            self.scars.remove('HALFTAIL')
 
     def init_accessories(self, age):
         if age == "newborn":

@@ -210,37 +210,6 @@
             "poppy"
         ]
     },
-    "carrionplace disease": {
-        "severity": "severe",
-        "mortality": {
-            "newborn": 1,
-            "kitten": 1,
-            "adolescent": 2,
-            "young adult": 2,
-            "adult": 2,
-            "senior adult": 2,
-            "senior": 1
-        },
-        "medicine_mortality": {
-            "newborn": 2,
-            "kitten": 2,
-            "adolescent": 3,
-            "young adult": 3,
-            "adult": 3,
-            "senior adult": 3,
-            "senior": 2
-        },
-        "duration": 3,
-        "medicine_duration": 2,
-        "infectiousness": 0,
-        "risks": [],
-        "herbs": [
-            "marigold",
-            "burdock",
-            "wild_garlic",
-            "poppy"
-        ]
-    },
     "redcough": {
         "severity": "severe",
         "mortality": {

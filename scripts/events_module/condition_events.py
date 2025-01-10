@@ -438,6 +438,7 @@ class Condition_Events:
             "BOTHBLIND": ["failing eyesight", "blind"],
             "MANLEG": ["weak leg", "twisted leg"],
             "RATBITE": ["weak leg"],
+            "ROTRIDDEN": ["the rot"],
             "LEGBITE": ["weak leg"],
             "TOETRAP": ["weak leg"],
             "HINDLEG": ["weak leg"],
@@ -447,7 +448,6 @@ class Condition_Events:
             "weak leg",
             "paralyzed",
             "raspy lungs",
-            "wasting disease",
             "blind",
             "failing eyesight",
             "one bad eye",
@@ -635,7 +635,7 @@ class Condition_Events:
         triggered = False
         event_list = []
 
-        injury_progression = {"poisoned": "redcough", "shock": "lingering shock"}
+        injury_progression = {"poisoned": "redcough", "shock": "lingering shock", "rotsickness": "rotplague"}
 
         # need to hold this number so that we can check if the leader has died
         starting_life_count = game.clan.leader_lives

@@ -265,17 +265,17 @@
             "mullein"
         ]
     },
-    "wasting disease": {
-        "severity": "major",
+    "rotplague": {
+        "severity": "severe",
         "congenital": "sometimes",
         "moons_until": 1,
         "mortality": {
             "newborn": 10,
             "kitten": 10,
-            "adolescent": 40,
-            "young adult": 75,
-            "adult": 65,
-            "senior adult": 40,
+            "adolescent": 20,
+            "young adult": 40,
+            "adult": 30,
+            "senior adult": 25,
             "senior": 10
         },
         "illness_infectiousness": [
@@ -310,10 +310,7 @@
                 "chance": 60
             }
         ],
-        "herbs": [
-            "juniper",
-            "ragwort"
-        ]
+        "herbs": []
     },
     "blind": {
         "severity": "major",

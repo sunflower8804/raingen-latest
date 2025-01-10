@@ -297,7 +297,6 @@
             "poppy"
         ]
     },
-
     "broken jaw":{
         "duration": 4,
         "severity": "severe",
@@ -337,7 +336,37 @@
             "moss"
         ]
     },
-
+    "rotsickness": {
+        "duration": 3,
+        "severity": "severe",
+        "medicine_duration": 3,
+        "mortality": {
+            "newborn": 10,
+            "kitten": 10,
+            "adolescent": 45,
+            "young adult": 60,
+            "adult": 60,
+            "senior adult": 60,
+            "senior": 15
+        },
+        "illness_infectiousness": [],
+        "risks": [
+            {
+                "name": "an infected wound",
+                "chance": 5
+            }
+        ],
+        "also_got": [],
+        "cause_permanent": [
+            "rotplague"
+        ],
+        "herbs": [
+            "marigold",
+            "burdock",
+            "wild_garlic",
+            "poppy"
+        ]
+    },
     "broken bone":{
         "duration": 5,
         "severity": "severe",

@@ -808,7 +808,7 @@
         "min_cats": 2,
         "max_cats": 6,
         "min_max_status": {},
-        "weight": 10,
+        "weight": 100,
         "intro_text": "r_c spots a young blue lizard up ahead, but it seems to be acting strange. The patrol can see its tremors from a few scavenger-lengths away.",
         "decline_text": "r_c avoids catching the odd lizard and looks for other prey.",
         "chance_of_success": 30,
@@ -835,12 +835,12 @@
             {
                 "text": "r_c leaps for the lizard but it still manages to slip away, despite its obvious illness.",
                 "exp": 0,
-                "weight": 20
+                "weight": 10
             },
             {
                 "text": "r_c catches the young lizard, but later {PRONOUN/r_c/subject} and the slugcats who eat it become violently ill.",
                 "exp": 0,
-                "weight": 10,
+                "weight": 100,
                 "injury": [
                     {
                       "cats": [
@@ -868,7 +868,7 @@
         "min_cats": 2,
         "max_cats": 6,
         "min_max_status": {},
-        "weight": 10,
+        "weight": 100,
         "intro_text": "r_c spots a yeek up ahead, but it seems to be acting strange. The patrol can see its tremors and coughs from a few scavenger-lengths away.",
         "decline_text": "r_c avoids catching the odd yeek and looks for other prey.",
         "chance_of_success": 30,
@@ -895,12 +895,12 @@
             {
                 "text": "r_c leaps for the yeek but it still manages to slip away, despite its obvious illness.",
                 "exp": 0,
-                "weight": 20
+                "weight": 10
             },
             {
                 "text": "r_c catches the yeek, but later {PRONOUN/r_c/subject} and the slugcats who eat it become violently ill.",
                 "exp": 0,
-                "weight": 10,
+                "weight": 100,
                 "injury": [
                     {
                       "cats": [
@@ -928,7 +928,7 @@
         "min_cats": 2,
         "max_cats": 6,
         "min_max_status": {},
-        "weight": 20,
+        "weight": 200,
         "intro_text": "r_c spots a lantern mouse up ahead, but it seems to be acting strange. The patrol can see its tremors from a few scavenger-lengths away.",
         "decline_text": "r_c avoids catching the lantern mouse and looks for other prey.",
         "chance_of_success": 30,
@@ -955,12 +955,12 @@
             {
                 "text": "r_c leaps for the lantern mouse but it still manages to slip away, despite its obvious illness.",
                 "exp": 0,
-                "weight": 20
+                "weight": 10
             },
             {
                 "text": "r_c catches the lantern mouse, but later {PRONOUN/r_c/subject} and the slugcats who eat it become violently ill.",
                 "exp": 0,
-                "weight": 10,
+                "weight": 100,
                 "injury": [
                     {
                       "cats": [

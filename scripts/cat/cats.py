@@ -2037,6 +2037,8 @@ class Cat:
             cat.pelt.scars.append("NOPAW")
         elif new_condition == "born without a tail":
             cat.pelt.scars.append("NOTAIL")
+        elif new_condition == "the rot":
+            cat.pelt.scars.append("ROTRIDDEN")
 
         self.get_permanent_condition(new_condition, born_with=True)
 

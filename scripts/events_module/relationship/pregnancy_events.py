@@ -821,6 +821,8 @@ class Pregnancy_Events:
                         kit.pelt.scars.append("NOPAW")
                     elif kit.permanent_condition[condition] == "born without a tail":
                         kit.pelt.scars.append("NOTAIL")
+                    elif kit.permanent_condition[condition] == "the rot":
+                        kit.pelt.scars.append("ROTRIDDEN")
                 Condition_Events.handle_already_disabled(kit)
 
             # create and update relationships

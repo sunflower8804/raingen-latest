@@ -348,8 +348,8 @@ def reformat(path):
                                  "LEFTBLIND", "BOTHBLIND", "BEAKCHEEK", "BEAKLOWER", "CATBITE", "RATBITE", "QUILLCHUNK",
                                  "QUILLSCRATCH", "HINDLEG", "BACK", "QUILLSIDE", "SCRATCHSIDE", "BEAKSIDE",
                                  "CATBITETWO",
-                                 "FOUR", "LEFTEAR", "RIGHTEAR", "NOTAIL", "HALFTAIL", "NOPAW", "NOLEFTEAR",
-                                 "NORIGHTEAR",
+                                 "FOUR", "ROTMARKED", "ROTRIDDEN", "LEFTEAR", "RIGHTEAR", "NOTAIL", "HALFTAIL", 
+                                 "NOPAW", "NOLEFTEAR", "NORIGHTEAR",
                                  "NOEAR", "SNAKE", "TOETRAP", "BURNPAWS", "BURNTAIL", "BURNBELLY", "BURNRUMP",
                                  "FROSTFACE",
                                  "FROSTTAIL", "FROSTMITT", "FROSTSOCK", "TOE", "SNAKETWO"]
@@ -369,13 +369,13 @@ def reformat(path):
                 injuries = ["claw-wound", "bite-wound", "cat bite", "beak bite", "snake bite", "rat bite", "tick bites",
                             "blood loss", "broken jaw", "broken bone", "mangled leg", "dislocated joint", "joint pain",
                             "sprain", "mangled tail", "bruises", "cracked pads", "sore", "phantom pain", "scrapes",
-                            "small cut", "torn pelt", "torn ear", "frostbite", "recovering from birth",
+                            "small cut", "torn pelt", "torn ear", "frostbite", "recovering from birth", "rotsickness",
                             "water in their lungs", "burn", "severe burn", "shock", "lingering shock",
                             "shivering", "dehydrated", "head damage", "damaged eyes", "quilled by a porcupine",
                             "broken back", "poisoned", "bee sting", "headache", "severe headache", "pregnant"]
 
                 pools = ["battle_injury", "minor_injury", "blunt_force_injury", "hot_injury", "cold_injury",
-                         "big_bite_injury", "small_bite_injury", "beak_bite", "rat_bite"]
+                         "big_bite_injury", "small_bite_injury", "beak_bite", "rat_bite", "rotrecovery"]
 
                 for tag in event["tags"]:
                     if tag in injuries:
@@ -395,8 +395,8 @@ def reformat(path):
                                  "LEFTBLIND", "BOTHBLIND", "BEAKCHEEK", "BEAKLOWER", "CATBITE", "RATBITE", "QUILLCHUNK",
                                  "QUILLSCRATCH", "HINDLEG", "BACK", "QUILLSIDE", "SCRATCHSIDE", "BEAKSIDE",
                                  "CATBITETWO",
-                                 "FOUR", "LEFTEAR", "RIGHTEAR", "NOTAIL", "HALFTAIL", "NOPAW", "NOLEFTEAR",
-                                 "NORIGHTEAR",
+                                 "FOUR", "ROTMARKED", "ROTRIDDEN", "LEFTEAR", "RIGHTEAR", "NOTAIL", "HALFTAIL", 
+                                 "NOPAW", "NOLEFTEAR", "NORIGHTEAR",
                                  "NOEAR", "SNAKE", "TOETRAP", "BURNPAWS", "BURNTAIL", "BURNBELLY", "BURNRUMP",
                                  "FROSTFACE",
                                  "FROSTTAIL", "FROSTMITT", "FROSTSOCK", "TOE", "SNAKETWO"]

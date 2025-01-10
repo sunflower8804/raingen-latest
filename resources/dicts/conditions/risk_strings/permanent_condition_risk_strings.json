@@ -80,20 +80,6 @@
             "m_c's weak lungs have left {PRONOUN/m_c/object} coughing and wheezing this moon, unable to resist potential sickness."
         ]
     },
-    "wasting disease": {
-        "running nose": [
-            "r_c feeds m_c disgusting herbs with {PRONOUN/m_c/poss} supper, concerned over {PRONOUN/m_c/poss} running nose. m_c thinks {PRONOUN/r_c/subject} should be more concerned with ruining {PRONOUN/m_c/poss} appetite!",
-            "m_c's nose has been running perpetually all moon."
-        ],
-        "yellowcough": [
-            "If only {PRONOUN/r_c/subject} had lungwort... r_c searches the herb stores, desperate for a way to help m_c through yellowcough.",
-            "m_c has been weak and fevered, only barely coherent... it seems {PRONOUN/m_c/subject} {VERB/m_c/have/has} yellowcough."
-        ],
-        "redcough": [
-            "r_c has quietly begun making m_c comfortable... or as comfortable as {PRONOUN/m_c/subject} can be while hacking blood.",
-            "m_c has been hacking up blood, {PRONOUN/m_c/poss} body growing weaker and weaker.  {PRONOUN/m_c/subject/CAP} may not last much longer."
-        ]
-    },
     "one bad eye": {
         "failing eyesight": [
             "m_c wanders directly into a rock on {PRONOUN/m_c/poss} bad side. r_c takes {PRONOUN/m_c/object} aside. Softly, {PRONOUN/r_c/subject} {VERB/r_c/tell/tells} m_c {PRONOUN/m_c/poss} bad vision is worsening.",

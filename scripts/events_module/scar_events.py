@@ -64,6 +64,12 @@ class Scar_Events():
     back_scars = [
         "TWO", "TAILBASE", "BACK"
     ]
+    rot_scars = [
+        "ROTRIDDEN"
+    ]
+    rotrecovery_scars = [
+        "ROTMARKED"
+    ]
 
     scar_allowed = {
         "bite-wound": canid_scars,
@@ -82,6 +88,8 @@ class Scar_Events():
         "broken jaw": head_scars,
         "broken back": back_scars,
         "broken bone": bone_scars,
+        "rotplague": rot_scars,
+        "rotsickness": rotrecovery_scars
     }
 
     @staticmethod
@@ -131,13 +139,15 @@ class Scar_Events():
                 scar_pool = [i for i in scar_pool if i not in ['LEFTEAR']]
             if 'NORIGHT' in cat.pelt.scars:
                 scar_pool = [i for i in scar_pool if i not in ['RIGHTEAR']]
+            if 'ROTRIDDEN' in cat.pelt.scars:
+                scar_pool = [i for i in scar_pool if i not in ['ROTMARKED']]
 
             # Extra check for disabling scars.
             if int(random.random() * 3):
                 condition_scars = {
                     "LEGBITE", "THREE", "NOPAW", "TOETRAP", "NOTAIL", "HALFTAIL", "LEFTEAR", "RIGHTEAR",
                     "MANLEG", "BRIGHTHEART", "NOLEFTEAR", "NORIGHTEAR", "NOEAR", "LEFTBLIND",
-                    "RIGHTBLIND", "BOTHBLIND", "RATBITE"
+                    "RIGHTBLIND", "BOTHBLIND", "RATBITE", "ROTRIDDEN"
                 }
 
                 scar_pool = list(set(scar_pool).difference(condition_scars))

@@ -926,5 +926,5 @@ INJURY_GROUPS = {
     "small_bite_injury": ["bite-wound", "torn ear", "torn pelt", "scrapes"],
     "beak_bite": ["beak bite", "torn ear", "scrapes"],
     "rat_bite": ["rat bite", "torn ear", "torn pelt"],
-    "sickness": ["greencough", "redcough", "whitecough", "yellowcough"],
+    "sickness": ["greencough", "redcough", "whitecough", "yellowcough", "rotsickness"],
 }
