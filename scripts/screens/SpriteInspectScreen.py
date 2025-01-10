@@ -328,7 +328,7 @@ class SpriteInspectScreen(Screens):
             ui_scale_offset((500, 575)),
             "acc_shown",
             self.acc_shown,
-            self.the_cat.pelt.accessory,
+            self.the_cat.pelt.accessories,
         )
 
         # "Show as living"

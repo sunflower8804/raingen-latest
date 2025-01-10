@@ -2454,6 +2454,22 @@
             }
         }
     },
+    "#fav_marker": {
+        "images": {
+            "normal_image": {
+                "path": "resources\/images\/buttons\/fav_marker.png"
+            },
+            "hovered_image": {
+                "path": "resources\/images\/buttons\/fav_marker.png"
+            },
+            "selected_image": {
+                "path": "resources\/images\/buttons\/fav_marker.png"
+            },
+            "disabled_image": {
+                "path": "resources\/images\/buttons\/fav_marker.png"
+            }
+        }
+    },
     "#filters_tab_button": {
         "images": {
             "normal_image": {
