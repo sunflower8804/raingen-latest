@@ -1,4 +1,4 @@
-# no longer clangen.
+# i just copied this from clangen (sorry)
 
 ### [Discord Server](https://discord.gg/clangen) || [Official website](https://clangen.io) || [Itch.io Page](https://sablesteel.itch.io/clan-gen-fan-edit) 
 
