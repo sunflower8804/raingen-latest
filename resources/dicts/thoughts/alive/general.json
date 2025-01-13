@@ -348,8 +348,7 @@
             "Is hoping r_c notices {PRONOUN/m_c/poss} improvement",
             "Is in awe of r_c's leadership",
             "Thinks r_c could be leading the Clan better",
-            "Has a list of complaints for r_c",
-            "Is hoping r_c doesn't assign {PRONOUN/m_c/object} to dawn patrol tomorrow"
+            "Has a list of complaints for r_c"
         ],
         "main_status_constraint": [
             "apprentice",
@@ -791,12 +790,9 @@
         "thoughts": [
             "Is getting some looks after speaking out of turn during a Clan meeting",
             "Spoke out of turn at the last Clan meeting",
-            "Runs out of {PRONOUN/m_c/poss} den into 'battle', only to find that it was just a storm",
             "Prances around with {PRONOUN/m_c/poss} tail up high, ready for anything",
             "Is not afraid of anything",
-            "Is always first to volunteer when a dangerous mission is announced",
             "Tells a Clanmate to their face that their pelt has been looking dull lately",
-            "Takes over a patrol that {PRONOUN/m_c/subject} {VERB/m_c/were/was}n't assigned to lead",
             "Pokes {PRONOUN/m_c/poss} head into the leader's den",
             "Snatches up a piece of prey right out from under {PRONOUN/m_c/poss} Clanmate's nose"
         ],
@@ -807,7 +803,10 @@
     {
         "id": "bold_working_cat",
         "thoughts": [
-            "Charges forward during a border patrol, eager and unafraid"
+            "Charges forward during a border patrol, eager and unafraid",
+            "Is always first to volunteer when a dangerous mission is announced",
+            "Takes over a patrol that {PRONOUN/m_c/subject} {VERB/m_c/were/was}n't assigned to lead",
+            "Runs out of {PRONOUN/m_c/poss} den into 'battle', only to find that it was just a storm"
         ],
         "main_trait_constraint": [
             "bold"
@@ -826,6 +825,12 @@
         ],
         "main_trait_constraint": [
             "bold"
+        ],
+        "main_status_constraint": [
+            "apprentice",
+            "warrior",
+            "deputy",
+            "leader"
         ],
         "random_status_constraint": [
             "newborn",
@@ -2860,7 +2865,31 @@
             "Caught THE BIGGEST batfly EVER, like, seriously!"
         ],
         "main_status_constraint": [
-            "apprentice",
+            "apprentice"
+        ]
+    },
+    {
+        "id": "general_not_working_apprentices_thoughts",
+        "thoughts": [
+            "Is gossiping",
+            "Is acting angsty",
+            "Is dreading {PRONOUN/m_c/poss} apprentice duties",
+            "Fell into the nearby creek yesterday and is still feeling damp",
+            "Is having a hard time keeping up with {PRONOUN/m_c/poss} training",
+            "Was tasked with lining nests with fresh moss today",
+            "Is dreaming of someday making {PRONOUN/m_c/poss} Clan proud",
+            "Is helping to reinforce the camp wall with brambles",
+            "Is daydreaming about having a mate and slugpups someday",
+            "Had quite the adventure today",
+            "Has been training very hard recently",
+            "Had a very strange dream",
+            "Is feeling proud",
+            "Is feeling lazy",
+            "Won't stop asking 'Why?'",
+            "Is rolling around in the sunlight",
+            "Saw THE BIGGEST batfly EVER, like, seriously!"
+        ],
+        "main_status_constraint": [
             "mediator apprentice",
             "cleric apprentice"
         ]
