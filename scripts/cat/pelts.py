@@ -285,6 +285,29 @@ class Pelt:
         "TORNCLOAKNIGHT", "TORNCLOAKSHADOW", "TORNCLOAKSILVER", "FAUXMANE"
     ]
 
+    closest_accs = [
+        "CRIMSON", "BLUE", "YELLOW", "CYAN", "RED", "LIME", "GREEN", "RAINBOW",
+        "BLACK", "SPIKES", "WHITE", "PINK", "PURPLE", "MULTI", "INDIGO", "CRIMSONBELL", "BLUEBELL",
+        "YELLOWBELL", "CYANBELL", "REDBELL", "LIMEBELL", "GREENBELL",
+        "RAINBOWBELL", "BLACKBELL", "SPIKESBELL", "WHITEBELL", "PINKBELL", "PURPLEBELL",
+        "MULTIBELL", "INDIGOBELL", "CRIMSONBOW", "BLUEBOW", "YELLOWBOW", "CYANBOW", "REDBOW",
+        "LIMEBOW", "GREENBOW", "RAINBOWBOW", "BLACKBOW", "SPIKESBOW", "WHITEBOW", "PINKBOW",
+        "PURPLEBOW", "MULTIBOW", "INDIGOBOW", "CRIMSONNYLON", "BLUENYLON", "YELLOWNYLON", "CYANNYLON",
+        "REDNYLON", "LIMENYLON", "GREENNYLON", "RAINBOWNYLON",
+        "BLACKNYLON", "SPIKESNYLON", "WHITENYLON", "PINKNYLON", "PURPLENYLON", "MULTINYLON", "INDIGONYLON",
+        "MUDDYPAWS", 
+        "REDPAINT", "PINKPAINT", "VOIDPAINT", "YELLOWPAINT", "GREENPAINT", "PALEPAINT",
+        "CYANPAINT", "BLUEPAINT", "PURPLEPAINT", "MAGENTAPAINT", "BLACKPAINT", "WHITEPAINT",
+        "IMPLANTWHITE", "IMPLANTPURPLE", "IMPLANTGREEN", "IMPLANTYELLOW", "IMPLANTBLUE",
+        "EYEIMPLANTWHITE", "EYEIMPLANTRED", "EYEIMPLANTGREEN", "EYEIMPLANTYELLOW", "EYEIMPLANTBLUE",
+        "GLOWWHITE", "GLOWPURPLE", "GLOWGREEN", "GLOWYELLOW", "GLOWBLUE",
+        "CELLIMPLANT",
+        "ORIGINALGAYDRAPERY", "TRANSDRAPERY", "GENDERQUEERDRAPERY", "AGENDERDRAPERY", "NONBINARYDRAPERY", "POLYAMDRAPERY", "GENDERFLUIDDRAPERY",
+        "GENDERFLUXDRAPERY", "GAYDRAPERY", "OMNISEXUALDRAPERY", "OBJECTUMDRAPERY", "RAINBOWDRAPERY", "PHILIDRAPERY", "BISEXUALDRAPERY",
+        "PANSEXUALDRAPERY", "POLYSEXUALDRAPERY", "ASEXUALDRAPERY", "INTERSEXDRAPERY",
+        "TORNCLOAKFALL", "TORNCLOAKWINTER", "TORNCLOAKNIGHT", "TORNCLOAKSHADOW", "TORNCLOAKSILVER", "FALLENSTARMASK"
+    ]
+
     tabbies = ["Tabby", "Ticked", "Classic", "Sokoke", "Agouti", "Masked", "Vulture", "Envoy", "Drizzle", "Necklace", "Leviathan", "Rotten", "Fire", "Solace"]
     spotted = ["Speckled", "Rosette", "Gravel", "Banana", "Con", "Bengal", "Dreamer", "Oldgrowth", "Cherry", "Sparse", "Impish", "Ringed", "Mold"]
     plain = ["SingleColour", "TwoColour", "Smoke", "Singlestripe", "Collared", "Lizard", "Slimemold", "Fluffy", "Yeek", "Rusted", "Leafy", "Scaled", "Countershaded", "Sunset", "Skinny", "Sporty", "Skeleton", "Shred"]
@@ -358,6 +381,15 @@ class Pelt:
     cyanwings = ['CYANWINGS']
     cyanfeatures = ['WHITECYAN', 'ORANGECYAN', 'BROWNCYAN', 'PINKCYAN', 'PINKERCYAN', 'TEALCYAN', 'GREENCYAN', 'BLOODYCYAN', 'LAVENDERCYAN', 'PURPLECYAN', 'CYANCYAN', 'BLUECYAN', 'DARKBLUECYAN', 'DARKPURPLECYAN', 'BLACKCYAN', 'EGGCYAN', 'YELLOWCYAN']
     skin_categories = [empty, gills, tongues, spearholes, claws, antennae, glowspots, ramhorns, scavhorns, elitehorns, sharphorns, dragonhorns, unihorns, moth, whiskers, lizardfins, lizardneedles, cyanwings, cyanfeatures]
+    #list for stuff that should logically be below a cloak
+    closest_skin = [
+        'WHITESPOTS', 'BLACKSPOTS', 'MIXSPOTS', 'RAINBOWSPOTS',
+        'WHITEGLOWSPOTS', 'REDGLOWSPOTS', 'PINKGLOWSPOTS', 'ORANGEGLOWSPOTS', 'YELLOWGLOWSPOTS', 'BLUEGLOWSPOTS', 'GREENGLOWSPOTS',
+        'WHITECYAN', 'ORANGECYAN', 'BROWNCYAN', 'PINKCYAN', 'PINKERCYAN', 'TEALCYAN', 'GREENCYAN', 'BLOODYCYAN', 'LAVENDERCYAN', 
+        'PURPLECYAN', 'CYANCYAN', 'BLUECYAN', 'DARKBLUECYAN', 'DARKPURPLECYAN', 'BLACKCYAN', 'EGGCYAN', 'YELLOWCYAN',
+        'PINKFINS', 'BLUEFINS', 'REDFINS', 'GREENFINS', 'YELLOWFINS', 'WHITEFINS',
+        'BLACKNEEDLES', 'WHITENEEDLES', 'RAINBOWNEEDLES'
+    ]
     #skin_weights = [40, 10, 10, 6, 4, 10, 8, 2, 3, 2, 2, 1, 2]
     skin_weights = game.config["feature_generation"]["feature_chances"]
 
@@ -923,16 +955,17 @@ class Pelt:
             self.accessory = None
             return
 
-        acc_display_choice = random.randint(0, 50) 
+        acc_display_choice = random.randint(0, 50)
         if age in ['kitten', 'adolescent']:
-            acc_display_choice = random.randint(0, 150) 
+            acc_display_choice = random.randint(0, 150)
         elif age in ['young adult', 'adult']:
-            acc_display_choice = random.randint(0, 70) 
+            acc_display_choice = random.randint(0, 70)
 
         if acc_display_choice == 1:
             self.accessories.append(choice([
                 choice(Pelt.plant_accessories),
                 choice(Pelt.wild_accessories),
+                choice(Pelt.collars),
                 choice(Pelt.muddypaws),
                 choice(Pelt.lizards),
                 choice(Pelt.insectwings),

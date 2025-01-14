@@ -303,7 +303,8 @@ class StartScreen(Screens):
             "",
             object_id="#menurandom_button",
             manager=MANAGER,
-            tool_tip_text="Randomize menu screen"
+            tool_tip_text="Randomize menu screen",
+            sound_id="dice_roll"
         )
 
         errorimg = image_cache.load_image(

@@ -2828,10 +2828,64 @@ def generate_sprite(
                 )
             new_sprite.blit(eyes, (0, 0))
 
-        # draw skin and scars2
-        blendmode = pygame.BLEND_RGBA_MIN
-        new_sprite.blit(sprites.sprites["skin" + cat.pelt.skin + cat_sprite], (0, 0))
+        #draw special skin
+        if cat.pelt.skin in Pelt.closest_skin:
+            new_sprite.blit(sprites.sprites["skin" + cat.pelt.skin + cat_sprite], (0, 0))
 
+        #draw CLOSE TO BODY ACCS i'm finally doing it yuppie
+        for i in cat.pelt.accessories:
+            if not acc_hidden:
+                if i in Pelt.closest_accs:
+                    try:
+                        if i in cat.pelt.plant_accessories:
+                            new_sprite.blit(sprites.sprites['acc_herbs' + i + cat_sprite], (0, 0))
+                        elif i in cat.pelt.wild_accessories:
+                            new_sprite.blit(sprites.sprites['acc_wild' + i + cat_sprite], (0, 0))
+                        elif i in cat.pelt.collars:
+                            new_sprite.blit(sprites.sprites['collars' + i + cat_sprite], (0, 0))
+                        elif i in cat.pelt.lizards:
+                            new_sprite.blit(sprites.sprites['lizards' + i + cat_sprite], (0, 0))
+                        elif i in cat.pelt.muddypaws:
+                            new_sprite.blit(sprites.sprites['muddypaws' + i + cat_sprite], (0, 0))
+                        elif i in cat.pelt.herbs2:
+                            new_sprite.blit(sprites.sprites['herbs2' + i + cat_sprite], (0, 0))
+                        elif i in cat.pelt.newaccs:
+                            new_sprite.blit(sprites.sprites['newaccs' + i + cat_sprite], (0, 0))
+                        elif i in cat.pelt.newaccs2:
+                            new_sprite.blit(sprites.sprites['newaccs2' + i + cat_sprite], (0, 0))
+                        elif i in cat.pelt.insectwings:
+                            new_sprite.blit(sprites.sprites['insectwings' + i + cat_sprite], (0, 0))
+                        elif i in cat.pelt.buddies:
+                            new_sprite.blit(sprites.sprites['buddies' + i + cat_sprite], (0, 0))
+                        elif i in cat.pelt.bodypaint:
+                            new_sprite.blit(sprites.sprites['bodypaint' + i + cat_sprite], (0, 0))
+                        elif i in cat.pelt.implant:
+                            new_sprite.blit(sprites.sprites['implant' + i + cat_sprite], (0, 0))
+                        elif i in cat.pelt.magic:
+                            new_sprite.blit(sprites.sprites['magic' + i + cat_sprite], (0, 0))
+                        elif i in cat.pelt.necklaces:
+                            new_sprite.blit(sprites.sprites['necklaces' + i + cat_sprite], (0, 0))
+                        elif i in cat.pelt.drapery:
+                            new_sprite.blit(sprites.sprites['drapery' + i + cat_sprite], (0, 0))
+                        elif i in cat.pelt.pridedrapery:
+                            new_sprite.blit(sprites.sprites['pridedrapery' + i + cat_sprite], (0, 0))
+                        elif i in cat.pelt.eyepatches:
+                            new_sprite.blit(sprites.sprites['eyepatches' + i + cat_sprite], (0, 0))
+                        elif i in cat.pelt.larsaccs:
+                            new_sprite.blit(sprites.sprites['larsaccs' + i + cat_sprite], (0, 0))
+                        elif i in cat.pelt.harleyaccs:
+                            new_sprite.blit(sprites.sprites['harleyaccs' + i + cat_sprite], (0, 0))
+
+                    except:
+                        continue
+        #?????
+        blendmode = pygame.BLEND_RGBA_MIN
+        
+        #draw the rest of the skin
+        if cat.pelt.skin not in Pelt.closest_skin:
+            new_sprite.blit(sprites.sprites["skin" + cat.pelt.skin + cat_sprite], (0, 0))
+
+        # draw scars2
         if not scars_hidden:
             for scar in cat.pelt.scars:
                 if scar in cat.pelt.scars2:
@@ -2841,137 +2895,52 @@ def generate_sprite(
                         special_flags=blendmode,
                     )
 
-        # draw accessories
-        clangen_accessories = ['MAPLE LEAF',
-                            'HOLLY',
-                            'BLUE BERRIES',
-                            'FORGET ME NOTS',
-                            'RYE STALK',
-                            'LAUREL',
-                            'BLUEBELLS',
-                            'NETTLE',
-                            'POPPY',
-                            'LAVENDER',
-                            'HERBS',
-                            'PETALS',
-                            'OAK LEAVES',
-                            'CATMINT',
-                            'MAPLE SEED',
-                            'JUNIPER',
-                            'DRY HERBS',
-                            'RED FEATHERS',
-                            'BLUE FEATHERS',
-                            'JAY FEATHERS',
-                            'MOTH WINGS',
-                            'CICADA WINGS',
-                            'CRIMSON',
-                            'BLUE',
-                            'YELLOW',
-                            'CYAN',
-                            'RED',
-                            'LIME',
-                            'GREEN',
-                            'RAINBOW',
-                            'BLACK',
-                            'SPIKES',
-                            'WHITE',
-                            'PINK',
-                            'PURPLE',
-                            'MULTI',
-                            'INDIGO',
-                            'CRIMSONBELL',
-                            'BLUEBELL',
-                            'YELLOWBELL',
-                            'CYANBELL',
-                            'REDBELL',
-                            'LIMEBELL',
-                            'GREENBELL',
-                            'RAINBOWBELL',
-                            'BLACKBELL',
-                            'SPIKESBELL',
-                            'WHITEBELL',
-                            'PINKBELL',
-                            'PURPLEBELL',
-                            'MULTIBELL',
-                            'INDIGOBELL',
-                            'CRIMSONBOW',
-                            'BLUEBOW',
-                            'YELLOWBOW',
-                            'CYANBOW',
-                            'REDBOW',
-                            'LIMEBOW',
-                            'GREENBOW',
-                            'RAINBOWBOW',
-                            'BLACKBOW',
-                            'SPIKESBOW',
-                            'WHITEBOW',
-                            'PINKBOW',
-                            'PURPLEBOW',
-                            'MULTIBOW',
-                            'INDIGOBOW',
-                            'CRIMSONNYLON',
-                            'BLUENYLON',
-                            'YELLOWNYLON',
-                            'CYANNYLON',
-                            'REDNYLON',
-                            'LIMENYLON',
-                            'GREENNYLON',
-                            'RAINBOWNYLON',
-                            'BLACKNYLON',
-                            'SPIKESNYLON',
-                            'WHITENYLON',
-                            'PINKNYLON',
-                            'PURPLENYLON',
-                            'MULTINYLON',
-                            'INDIGONYLON'
-                            ]
-
+        #draw the rest of the accs
         for i in cat.pelt.accessories:
-            if i not in clangen_accessories and game.settings['new accessories'] is False:
-                continue
             if not acc_hidden:
-                try:
-                    if i in cat.pelt.plant_accessories:
-                        new_sprite.blit(sprites.sprites['acc_herbs' + i + cat_sprite], (0, 0))
-                    elif i in cat.pelt.wild_accessories:
-                        new_sprite.blit(sprites.sprites['acc_wild' + i + cat_sprite], (0, 0))
-                    elif i in cat.pelt.collars:
-                        new_sprite.blit(sprites.sprites['collars' + i + cat_sprite], (0, 0))
-                    elif i in cat.pelt.lizards:
-                        new_sprite.blit(sprites.sprites['lizards' + i + cat_sprite], (0, 0))
-                    elif i in cat.pelt.muddypaws:
-                        new_sprite.blit(sprites.sprites['muddypaws' + i + cat_sprite], (0, 0))
-                    elif i in cat.pelt.herbs2:
-                        new_sprite.blit(sprites.sprites['herbs2' + i + cat_sprite], (0, 0))
-                    elif i in cat.pelt.newaccs:
-                        new_sprite.blit(sprites.sprites['newaccs' + i + cat_sprite], (0, 0))
-                    elif i in cat.pelt.newaccs2:
-                        new_sprite.blit(sprites.sprites['newaccs2' + i + cat_sprite], (0, 0))
-                    elif i in cat.pelt.insectwings:
-                        new_sprite.blit(sprites.sprites['insectwings' + i + cat_sprite], (0, 0))
-                    elif i in cat.pelt.buddies:
-                        new_sprite.blit(sprites.sprites['buddies' + i + cat_sprite], (0, 0))
-                    elif i in cat.pelt.bodypaint:
-                        new_sprite.blit(sprites.sprites['bodypaint' + i + cat_sprite], (0, 0))
-                    elif i in cat.pelt.implant:
-                        new_sprite.blit(sprites.sprites['implant' + i + cat_sprite], (0, 0))
-                    elif i in cat.pelt.magic:
-                        new_sprite.blit(sprites.sprites['magic' + i + cat_sprite], (0, 0))
-                    elif i in cat.pelt.necklaces:
-                        new_sprite.blit(sprites.sprites['necklaces' + i + cat_sprite], (0, 0))
-                    elif i in cat.pelt.drapery:
-                        new_sprite.blit(sprites.sprites['drapery' + i + cat_sprite], (0, 0))
-                    elif i in cat.pelt.pridedrapery:
-                        new_sprite.blit(sprites.sprites['pridedrapery' + i + cat_sprite], (0, 0))
-                    elif i in cat.pelt.eyepatches:
-                        new_sprite.blit(sprites.sprites['eyepatches' + i + cat_sprite], (0, 0))
-                    elif i in cat.pelt.larsaccs:
-                        new_sprite.blit(sprites.sprites['larsaccs' + i + cat_sprite], (0, 0))
-                    elif i in cat.pelt.harleyaccs:
-                        new_sprite.blit(sprites.sprites['harleyaccs' + i + cat_sprite], (0, 0))
-               
-                except:
-                    continue
+                if i not in Pelt.closest_accs:
+                    try:
+                        if i in cat.pelt.plant_accessories:
+                            new_sprite.blit(sprites.sprites['acc_herbs' + i + cat_sprite], (0, 0))
+                        elif i in cat.pelt.wild_accessories:
+                            new_sprite.blit(sprites.sprites['acc_wild' + i + cat_sprite], (0, 0))
+                        elif i in cat.pelt.collars:
+                            new_sprite.blit(sprites.sprites['collars' + i + cat_sprite], (0, 0))
+                        elif i in cat.pelt.lizards:
+                            new_sprite.blit(sprites.sprites['lizards' + i + cat_sprite], (0, 0))
+                        elif i in cat.pelt.muddypaws:
+                            new_sprite.blit(sprites.sprites['muddypaws' + i + cat_sprite], (0, 0))
+                        elif i in cat.pelt.herbs2:
+                            new_sprite.blit(sprites.sprites['herbs2' + i + cat_sprite], (0, 0))
+                        elif i in cat.pelt.newaccs:
+                            new_sprite.blit(sprites.sprites['newaccs' + i + cat_sprite], (0, 0))
+                        elif i in cat.pelt.newaccs2:
+                            new_sprite.blit(sprites.sprites['newaccs2' + i + cat_sprite], (0, 0))
+                        elif i in cat.pelt.insectwings:
+                            new_sprite.blit(sprites.sprites['insectwings' + i + cat_sprite], (0, 0))
+                        elif i in cat.pelt.buddies:
+                            new_sprite.blit(sprites.sprites['buddies' + i + cat_sprite], (0, 0))
+                        elif i in cat.pelt.bodypaint:
+                            new_sprite.blit(sprites.sprites['bodypaint' + i + cat_sprite], (0, 0))
+                        elif i in cat.pelt.implant:
+                            new_sprite.blit(sprites.sprites['implant' + i + cat_sprite], (0, 0))
+                        elif i in cat.pelt.magic:
+                            new_sprite.blit(sprites.sprites['magic' + i + cat_sprite], (0, 0))
+                        elif i in cat.pelt.necklaces:
+                            new_sprite.blit(sprites.sprites['necklaces' + i + cat_sprite], (0, 0))
+                        elif i in cat.pelt.drapery:
+                            new_sprite.blit(sprites.sprites['drapery' + i + cat_sprite], (0, 0))
+                        elif i in cat.pelt.pridedrapery:
+                            new_sprite.blit(sprites.sprites['pridedrapery' + i + cat_sprite], (0, 0))
+                        elif i in cat.pelt.eyepatches:
+                            new_sprite.blit(sprites.sprites['eyepatches' + i + cat_sprite], (0, 0))
+                        elif i in cat.pelt.larsaccs:
+                            new_sprite.blit(sprites.sprites['larsaccs' + i + cat_sprite], (0, 0))
+                        elif i in cat.pelt.harleyaccs:
+                            new_sprite.blit(sprites.sprites['harleyaccs' + i + cat_sprite], (0, 0))
+
+                    except:
+                        continue
                 
         # Apply fading fog
         if (
