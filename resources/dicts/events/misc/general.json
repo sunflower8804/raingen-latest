@@ -724,7 +724,7 @@
     "sub_type": ["accessory"],
     "weight": 10,
     "event_text": "m_c always seems to have acc_plural stuck in {PRONOUN/m_c/poss} fur.",
-    "new_accessory": ["HERBS","PETALS","DRY HERBS", "DRY CATMINT", "DRY LAURELS", "DRY NETTLES", "RED FEATHERS", "BLUE FEATHERS", "JAY FEATHERS"],
+    "new_accessory": ["HERBS","PETALS","DRY HERBS", "RED FEATHERS", "BLUE FEATHERS", "JAY FEATHERS"],
     "m_c":{
       "age": ["any"],
       "status": ["any"]
@@ -1552,7 +1552,7 @@
         "sub_type": ["accessory"],
         "weight": 10,
         "event_text": "No matter how hard r_c tries, there's always something stuck in m_c's fur.",
-        "new_accessory": ["HERBS", "PETALS", "DRY HERBS", "DRY CATMINT", "DRY NETTLES", "DRY LAURELS"],
+        "new_accessory": ["HERBS", "PETALS", "DRY HERBS"],
         "m_c": {
           "age": ["kitten"],
           "relationship_status": ["child/parent"]
@@ -2159,16 +2159,6 @@
     ]
   },
   {
-    "event_id": "gen_misc_any_scandalous1",
-    "location": ["any"],
-    "season": ["any"],
-    "weight": 5,
-    "event_text": "m_c was seen taking food from a Twoleg!",
-    "m_c": {
-        "age": ["adolescent", "young adult", "adult", "senior adult", "senior"]
-    }
-  },
-  {
     "event_id": "gen_misc_any_scandalous_rogue1",
     "location": ["any"],
     "season": ["any"],
@@ -2460,7 +2450,7 @@
     "location": ["any"],
     "season": ["any"],
     "weight": 15,
-    "event_text": "m_c visits o_c_n to converse with their clerics about an omen StarClan sent.",
+    "event_text": "m_c visits o_c_n to converse with their clerics about an omen the Void sent.",
     "m_c": {
         "status": ["cleric"],
         "skill": ["OMEN,0"]
@@ -2587,7 +2577,7 @@
     "location": ["any"],
     "season": ["any"],
     "weight": 15,
-    "event_text": "m_c spends {PRONOUN/m_c/poss} day communing with StarClan, attempting to figure out a recent prophecy.",
+    "event_text": "m_c spends {PRONOUN/m_c/poss} day communing with the Ascended, attempting to figure out a recent prophecy.",
     "m_c": {
       "status":["cleric", "cleric apprentice"],
       "skill": ["PROPHET,2"]
@@ -3786,7 +3776,7 @@
     "sub_type": ["ceremony", "accessory"],
     "weight": 20,
     "event_text": "r_c feels so lucky to have {PRONOUN/r_c/poss} own sibling become a cleric apprentice. Knowing how time consuming it is to gather herbs, r_c spends a long time gathering up acc_plural to help out m_c. While m_c appreciates the efforts, none of these are particularly useful. Instead m_c uses the acc_plural to decorate {PRONOUN/m_c/poss} pelt.",
-    "new_accessory": ["HERBS", "DRY HERBS", "DRY CATMINT", "DRY NETTLES", "DRY LAURELS"],
+    "new_accessory": ["HERBS", "DRY HERBS"],
     "m_c": {
       "status": ["cleric apprentice"],
       "relationship_status":["siblings"]
@@ -3989,7 +3979,7 @@
     "season": ["any"],
     "tags": ["skill_trait_required"],
     "weight": 5,
-    "event_text": "m_c thinks StarClan is trying to warn {PRONOUN/m_c/object} about r_c.",
+    "event_text": "m_c thinks the Void is trying to warn {PRONOUN/m_c/object} about r_c.",
     "m_c": {
       "age": ["adolescent", "young adult", "adult", "senior adult", "senior"],
       "status": ["cleric"],
@@ -4014,7 +4004,7 @@
     "season": ["leaf-bare"],
     "sub_type": ["accessory"],
     "weight": 10,
-    "event_text": "A stray acc_singular in its last moments of life leads m_c to a new herb gathering spot {PRONOUN/m_c/subject} {VERB/m_c/have/has} never found before. It gives a final flutter before it gently descends to the ground. Is it a sign from StarClan, or a coincidence? m_c doesn't know, but {PRONOUN/m_c/subject} {VERB/m_c/decide/decides} to keep it with {PRONOUN/m_c/object} in its honor.",
+    "event_text": "A stray acc_singular in its last moments of life leads m_c to a new herb gathering spot {PRONOUN/m_c/subject} {VERB/m_c/have/has} never found before. It gives a final flutter before it gently descends to the ground. Is it a sign from the Void, or a coincidence? m_c doesn't know, but {PRONOUN/m_c/subject} {VERB/m_c/decide/decides} to keep it with {PRONOUN/m_c/object} in its honor.",
     "new_accessory": ["CICADA WINGS"],
     "m_c": {
       "age": ["adolescent", "young adult", "adult", "senior adult", "senior"],

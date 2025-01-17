@@ -276,7 +276,7 @@
                 ]
             },
             {
-                "text": "s_c revels in the battle, leaping into the fray with {PRONOUN/s_c/poss} teeth bared and claws unsheathed. The rogues are quickly driven away by the patrol.",
+                "text": "s_c revels in the battle, leaping into the fray with {PRONOUN/s_c/poss} teeth bared and spear unsheathed. The rogues are quickly driven away by the patrol.",
                 "exp": 30,
                 "weight": 20,
                 "stat_trait": ["bloodthirsty", "fierce", "vengeful"],
@@ -539,7 +539,7 @@
                 "stat_skill": ["FIGHTER,1"]
             },
             {
-                "text": "Boldly, s_c follows the pawprints to a trespassing rogue and confronts them. Fur puffed up and scowling, {PRONOUN/s_c/subject} {VERB/s_c/demand/demands} the rogue leave c_n territory. Intimidated by {PRONOUN/s_c/poss} confidence, the rogue gives in and leaves without a fight.",
+                "text": "Boldly, s_c follows the pawprints to a trespassing rogue and confronts them. Spear unsheathed and scowling, {PRONOUN/s_c/subject} {VERB/s_c/demand/demands} the rogue leave c_n territory. Intimidated by {PRONOUN/s_c/poss} confidence, the rogue gives in and leaves without a fight.",
                 "exp": 10,
                 "weight": 20,
                 "stat_trait": [
@@ -638,7 +638,7 @@
                 "stat_skill": ["CLEVER,1"]
             },
             {
-                "text": "Boldly, s_c follows the pawprints to a trespassing rogue and confronts them. Fur puffed up and scowling, {PRONOUN/s_c/subject} {VERB/s_c/demand/demands} the rogue leave c_n territory. Intimidated by {PRONOUN/s_c/poss} confidence, the rogue gives in and leaves without a fight.",
+                "text": "Boldly, s_c follows the pawprints to a trespassing rogue and confronts them. Spear unsheathed and scowling, {PRONOUN/s_c/subject} {VERB/s_c/demand/demands} the rogue leave c_n territory. Intimidated by {PRONOUN/s_c/poss} confidence, the rogue gives in and leaves without a fight.",
                 "exp": 10,
                 "weight": 20,
                 "stat_trait": [
@@ -738,7 +738,7 @@
                 "weight": 20
             },
             {
-                "text": "Boldly, s_c follows the pawprints to a trespassing rogue and confronts them. Fur puffed up and scowling, {PRONOUN/s_c/subject} {VERB/s_c/demand/demands} the rogue leave c_n territory. The rogue is not impressed by this adolescent and ignores {PRONOUN/s_c/object} completely.",
+                "text": "Boldly, s_c follows the pawprints to a trespassing rogue and confronts them. Spear unsheathed and scowling, {PRONOUN/s_c/subject} {VERB/s_c/demand/demands} the rogue leave c_n territory. The rogue is not impressed by this adolescent and ignores {PRONOUN/s_c/object} completely.",
                 "exp": 0,
                 "weight": 20,
                 "stat_trait": [
@@ -852,7 +852,7 @@
                 ]
             },
             {
-                "text": "Boldly, s_c follows the pawprints to a trespassing rogue and confronts them. Fur puffed up and scowling, s_c and r_c demand the rogue leave c_n territory. The rogue is intimidated by their confidence and leaves without a fight.",
+                "text": "Boldly, s_c follows the pawprints to a trespassing rogue and confronts them. Spear unsheathed and scowling, s_c and r_c demand the rogue leave c_n territory. The rogue is intimidated by their confidence and leaves without a fight.",
                 "exp": 10,
                 "weight": 20,
                 "stat_trait": [
@@ -999,7 +999,7 @@
                 ]
             },
             {
-                "text": "Boldly, s_c follows the pawprints to a trespassing rogue, and confronts {PRONOUN/r_c/object}. Fur puffed up and scowling, s_c and r_c demand the rogue leave c_n territory. Intimidated by their confidence, the rogue gives in and leaves without a fight.",
+                "text": "Boldly, s_c follows the pawprints to a trespassing rogue, and confronts {PRONOUN/r_c/object}. Spear unsheathed up and scowling, s_c and r_c demand the rogue leave c_n territory. Intimidated by their confidence, the rogue gives in and leaves without a fight.",
                 "exp": 10,
                 "weight": 20,
                 "stat_trait": [
@@ -1120,7 +1120,7 @@
                 "weight": 20
             },
             {
-                "text": "Boldly, s_c follows the pawprints to a trespassing rogue, and confronts {PRONOUN/s_c/object}. Fur puffed up and scowling, {PRONOUN/s_c/subject} {VERB/s_c/demand/demands} the rogue leave c_n territory. The rogue is not impressed by the adolescent but reluctantly leaves c_n territory.",
+                "text": "Boldly, s_c follows the pawprints to a trespassing rogue, and confronts {PRONOUN/s_c/object}. Spear unsheathed and scowling, {PRONOUN/s_c/subject} {VERB/s_c/demand/demands} the rogue leave c_n territory. The rogue is not impressed by the adolescent but reluctantly leaves c_n territory.",
                 "exp": 0,
                 "weight": 20,
                 "stat_trait": [
@@ -1217,7 +1217,7 @@
                 ]
             },
             {
-                "text": "Boldly, s_c follows the pawprints to a trespassing rogue and confronts them. Fur puffed up and scowling, the patrol demands the rogue leave c_n territory. Intimidated by their confidence and the number of slugcats, the rogue gives in and leaves without a fight.",
+                "text": "Boldly, s_c follows the pawprints to a trespassing rogue and confronts them. Spear unsheathed and scowling, the patrol demands the rogue leave c_n territory. Intimidated by their confidence and the number of slugcats, the rogue gives in and leaves without a fight.",
                 "exp": 10,
                 "weight": 20,
                 "stat_trait": [
@@ -1340,7 +1340,7 @@
                 ]
             },
             {
-                "text": "Boldly, s_c follows the pawprints to a trespassing rogue and confronts them. Fur puffed up and scowling, the patrol demands the rogue leave c_n territory. Intimidated by {PRONOUN/s_c/poss} confidence and the number of slugcats, the rogue gives in and leaves without a fight.",
+                "text": "Boldly, s_c follows the pawprints to a trespassing rogue and confronts them. Spear unsheathed and scowling, the patrol demands the rogue leave c_n territory. Intimidated by {PRONOUN/s_c/poss} confidence and the number of slugcats, the rogue gives in and leaves without a fight.",
                 "exp": 10,
                 "weight": 20,
                 "stat_trait": [
@@ -1466,7 +1466,7 @@
                 ]
             },
             {
-                "text": "Boldly, s_c follows the pawprints to a trespassing rogue and confronts them. Fur puffed up and scowling, {PRONOUN/s_c/subject} {VERB/s_c/demand/demands} the rogue leave c_n territory. The rogue is not impressed by the adolescent, but with the full patrol backing {PRONOUN/s_c/object} up, the rogue leaves c_n territory.",
+                "text": "Boldly, s_c follows the pawprints to a trespassing rogue and confronts them. Spear unsheathed and scowling, {PRONOUN/s_c/subject} {VERB/s_c/demand/demands} the rogue leave c_n territory. The rogue is not impressed by the adolescent, but with the full patrol backing {PRONOUN/s_c/object} up, the rogue leaves c_n territory.",
                 "exp": 0,
                 "weight": 20,
                 "stat_trait": [
@@ -1682,7 +1682,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "One of those moons is getting awfully... close... r_c gets caught in a strange wind that picks {PRONOUN/r_c/object} up, claws scrabbling wildly, sucked towards the frightening foreign moon as it takes {PRONOUN/r_c/object} away from c_n.",
+                "text": "One of those moons is getting awfully... close... r_c gets caught in a strange wind that picks {PRONOUN/r_c/object} up, paws scrabbling wildly, sucked towards the frightening foreign moon as it takes {PRONOUN/r_c/object} away from c_n.",
                 "exp": 0,
                 "weight": 20,
                 "lost_cats": ["r_c"]
@@ -1707,7 +1707,7 @@
         "decline_text": "This... really isn't the time to stop for a story.",
         "success_outcomes": [
                 {
-                    "text": "Outraged, the tom drew his claws - only for the she-scug to disappear in a burst of voidfluid, the Ascended judging the tom for his monstrous heart. His scent grew foul, his sides growing spikes, and his head turning flat, and the first cyan lizard was born, hissing his anger and loss.",
+                    "text": "Outraged, the tom drew his spear - only for the she-scug to disappear in a burst of voidfluid, the Ascended judging the tom for his monstrous heart. His scent grew foul, his sides growing spikes, and his head turning flat, and the first cyan lizard was born, hissing his anger and loss.",
                     "exp": 30,
                     "weight": 20,
                     "art": "gen_train_ghost",
@@ -1729,7 +1729,7 @@
                     ]
                 },
                 {
-                    "text": "With a terrifying anger, the tom unsheathed his claws... but luckily for the she-scug, she was an Ascended slugcat in disguise, and with a burst of void fluid, the Ascended judged him, and turned him into a horrifying monster... a <i>cyan lizard</i>.",
+                    "text": "With a terrifying anger, the tom unsheathed his spear... but luckily for the she-scug, she was an Ascended slugcat in disguise, and with a burst of void fluid, the Ascended judged him, and turned him into a horrifying monster... a <i>cyan lizard</i>.",
                     "exp": 30,
                     "weight": 20,
                     "art": "gen_train_ghost",

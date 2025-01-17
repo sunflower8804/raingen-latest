@@ -11,30 +11,27 @@
             "Is feeling sassy today",
             "Is thinking about a message to send",
             "Wishes {PRONOUN/m_c/subject} {VERB/m_c/were/was} still alive",
-            "Is admiring StarClan territory",
             "Is thinking about {PRONOUN/m_c/poss} life",
             "Is missing a loved one",
             "Is hoping to meet with a cleric soon",
-            "Is admiring the stars in {PRONOUN/m_c/poss} fur",
+            "Is admiring the golden glow in {PRONOUN/m_c/poss} pelt",
             "Is watching over a Clan ceremony",
             "Is hoping to give a life to a new leader",
             "Is hoping {PRONOUN/m_c/subject} will be remembered",
             "Is watching over the Clan",
             "Is worried about the Clan",
             "Is relaxing in the sun",
-            "Is wondering about Twolegs",
             "Is thinking about {PRONOUN/m_c/poss} ancient ancestors",
             "Is worried about the slugcats in the RotWound",
             "Is thinking of advice to give to a cleric",
-            "Is exploring StarClan",
+            "Is exploring the Void",
             "Is sad seeing how the Clan has changed",
             "Wishes {PRONOUN/m_c/subject} could speak to old friends",
-            "Is sneezing on stardust",
-            "Is comforting another StarClan slugcat",
-            "Is exploring StarClan's hunting grounds",
-            "Is hunting mice in StarClan",
-            "Is chattering at the birds in StarClan",
-            "Is chasing rabbits in StarClan",
+            "Is sneezing on void dust",
+            "Is comforting another Ascended slugcat",
+            "Is exploring the Void's hunting grounds",
+            "Is hunting mice in the Void",
+            "Is chasing eggbugs in the Void",
             "Can feel some slugcat forgetting {PRONOUN/m_c/object}...",
             "Is judging a codebreaker"
         ],
@@ -70,8 +67,8 @@
         "id": "founder_dead_to_dead_other",
         "thoughts": [
             "Is speaking with r_c about how c_n came to be",
-            "Is telling other StarClan slugcats stories of c_n's beginning",
-            "Is telling other StarClan slugcats about the ambitions, hopes, and dreams {PRONOUN/m_c/subject} had for c_n"
+            "Is telling other Ascended slugcats stories of c_n's beginning",
+            "Is telling other Ascended slugcats about the ambitions, hopes, and dreams {PRONOUN/m_c/subject} had for c_n"
         ],
         "main_age_constraint": [
             "adolescent",
@@ -129,7 +126,7 @@
         "id": "general_dead_to_alive_df",
         "thoughts": [
             "Has a bad feeling about r_c...",
-            "Is wondering if r_c will go to StarClan or the RotWound...",
+            "Is wondering if r_c will go to the Void or the RotWound...",
             "Is disappointed in r_c",
             "Is judging r_c"
         ],
@@ -172,7 +169,7 @@
         "thoughts": [
             "Regrets leaving the Clan one cleric short",
             "Is worried about the Clan's ability to survive the latest illness",
-            "Looks after the newborns in StarClan",
+            "Looks after the newborns in the Void",
             "Is watching c_n, ready to send an omen"
         ],
         "main_status_constraint": [
@@ -365,10 +362,9 @@
     {
         "id": "gen_dead_app",
         "thoughts": [
-            "Wants to use {PRONOUN/m_c/poss} training to help StarClan",
             "Is sad {PRONOUN/m_c/subject} couldn't complete {PRONOUN/m_c/poss} training",
             "Tries to continue {PRONOUN/m_c/poss} training on {PRONOUN/m_c/poss} own",
-            "Is listening intently to other StarClan slugcats' stories"
+            "Is listening intently to other Ascended slugcats' stories"
         ],
         "main_status_constraint": [
             "apprentice",
@@ -488,7 +484,7 @@
     {
         "id": "gen_dead_mediator",
         "thoughts": [
-            "Is trying to mediate StarClan slugcats' squabbles",
+            "Is trying to mediate Ascended slugcats' squabbles",
             "Wishes {PRONOUN/m_c/subject} could help resolve the Clan's issues",
             "Is watching the Clans for any signs of discord"
         ],

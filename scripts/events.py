@@ -179,7 +179,7 @@ class Events:
             insert = adjust_list_text(ghost_names)
 
             if len(Cat.dead_cats) > 1:
-                event = f"The past moon, {insert} have taken their place in StarClan. {game.clan.name}Clan mourns their " \
+                event = f"The past cycle, {insert} have taken their place in the Void. {game.clan.name}Clan mourns their " \
                         f"loss, and their Clanmates will miss where they had been in their lives. Moments of their " \
                         f"lives are shared in stories around the circle of mourners as those that were closest to them " \
                         f"take them to their final resting place."
@@ -222,13 +222,13 @@ class Events:
                     insert = adjust_list_text(shaken_cat_names)
 
                     if len(shaken_cats) == 1:
-                        extra_event = f"So much grief and death has taken its toll on the cats of {game.clan.name}Clan. {insert} is particularly shaken by it."
+                        extra_event = f"So much grief and death has taken its toll on the slugcats of {game.clan.name}Clan. {insert} is particularly shaken by it."
                     else:
-                        extra_event = f"So much grief and death has taken its toll on the cats of {game.clan.name}Clan. {insert} are particularly shaken by it. "
+                        extra_event = f"So much grief and death has taken its toll on the slugcats of {game.clan.name}Clan. {insert} are particularly shaken by it. "
 
             else:
                 event = (
-                    f"The past moon, {insert} has taken their place in StarClan. {game.clan.name}Clan mourns their "
+                    f"The past cycle, {insert} has taken their place in the Void. {game.clan.name}Clan mourns their "
                     f"loss, and their Clanmates will miss the spot they took up in their lives. Moments of their "
                     f"life are shared in stories around the circle of mourners as those that were closest to them "
                     f"take them to their final resting place."
@@ -248,7 +248,7 @@ class Events:
         if game.clan.game_mode in ['expanded', 'cruel season'] and game.clan.freshkill_pile:
             # make a notification if the Clan does not have enough prey
             if FRESHKILL_EVENT_ACTIVE and not game.clan.freshkill_pile.clan_has_enough_food():
-                event_string = f"{game.clan.name}Clan doesn't have enough prey for next moon!"
+                event_string = f"{game.clan.name}Clan doesn't have enough prey for next cycle!"
                 game.cur_events_list.insert(0, Single_Event(event_string))
                 game.freshkill_event_list.append(event_string)
 
@@ -262,7 +262,7 @@ class Events:
             )
             if not med_fullfilled:
                 string = (
-                    f"{game.clan.name}Clan does not have enough healthy clerics! Cats will be sick/hurt "
+                    f"{game.clan.name}Clan does not have enough healthy clerics! Slugcats will be sick/hurt "
                     f"for longer and have a higher chance of dying. "
                 )
                 game.cur_events_list.insert(0, Single_Event(string, "health"))
@@ -568,7 +568,7 @@ class Events:
 
             prey_amount += random.randint(lower_value, upper_value)
         game.freshkill_event_list.append(
-            f"The clan managed to catch {prey_amount} pieces of prey in this moon."
+            f"The clan managed to catch {prey_amount} pieces of prey in this cycle."
         )
         game.clan.freshkill_pile.add_freshkill(prey_amount)
 
@@ -617,7 +617,7 @@ class Events:
                     herbs_found = []
                     herb_display = []
                 if not herbs_found:
-                    event_list.append(f"{med.name} could not find any herbs this moon.")
+                    event_list.append(f"{med.name} could not find any herbs this cycle.")
                 else:
                     try:
                         if len(herbs_found) == 1:
@@ -626,10 +626,10 @@ class Events:
                             insert = f"{herb_display[0]} and {herb_display[1]}"
                         else:
                             insert = f"{', '.join(herb_display[:-1])}, and {herb_display[-1]}"
-                        event_list.append(f"{med.name} gathered {insert} this moon.")
+                        event_list.append(f"{med.name} gathered {insert} this cycle.")
                     except IndexError:
                         event_list.append(
-                            f"{med.name} could not find any herbs this moon."
+                            f"{med.name} could not find any herbs this cycle."
                         )
                         return
             game.herb_events_list.extend(event_list)
@@ -900,7 +900,7 @@ class Events:
                 if len(value) == 1:
                     game.cur_events_list.append(
                         Single_Event(
-                            f"One cat got {condition_type} during {text_snippet}",
+                            f"One slugcat got {condition_type} during {text_snippet}",
                             "health",
                             value,
                         )
@@ -908,7 +908,7 @@ class Events:
                 elif len(value) > 1:
                     game.cur_events_list.append(
                         Single_Event(
-                            f"Multiple cats got {condition_type} {text_snippet}",
+                            f"Multiple slugcats got {condition_type} {text_snippet}",
                             "health",
                             value,
                         )
@@ -1356,7 +1356,7 @@ class Events:
                 if game.clan.deputy.personality.trait == "bloodthirsty":
                     text = (
                         f"{game.clan.deputy.name} has become the new leader. "
-                        f"They stare down at their Clanmates with unsheathed claws, "
+                        f"They stare down at their Clanmates with unsheathed teeth, "
                         f"promising a new era for the Clans."
                     )
                 else:
@@ -1366,7 +1366,7 @@ class Events:
                             str(game.clan.deputy.name.prefix)
                             + str(game.clan.deputy.name.suffix)
                             + " has been promoted to the new leader of the Clan. "
-                            "They travel immediately to the Moonstone to get their "
+                            "They travel immediately to the Void Sea to get their "
                             "nine lives and are hailed by their new name, "
                             + str(game.clan.deputy.name)
                             + "."
@@ -2603,7 +2603,7 @@ class Events:
                             f"announcement that {random_cat.name} will be the Clan's new deputy.",
                             # pylint: disable=line-too-long
                             f"{random_cat.name} has been chosen as the new deputy. They pray to "  # pylint: disable=line-too-long
-                            f"StarClan that they are the right choice for the Clan.",  # pylint: disable=line-too-long
+                            f"the Void that they are the right choice for the Clan.",  # pylint: disable=line-too-long
                             f"{random_cat.name} has been chosen as the new deputy. Although"  # pylint: disable=line-too-long
                             f"they are nervous, they put on a brave front and look forward to serving"  # pylint: disable=line-too-long
                             f"the clan.",
@@ -2627,7 +2627,7 @@ class Events:
                         random_cat = random.choice(all_warriors)
                         involved_cats = [random_cat.ID]
                         text = (
-                            f"No cat is truly fit to be deputy, "
+                            f"No slugcat is truly fit to be deputy, "
                             f"but the position can't remain vacant. "
                             f"{random_cat.name} is appointed as the new deputy. "
                         )
@@ -2636,7 +2636,7 @@ class Events:
                         # Is there are no warriors at all, no one is named deputy.
                         game.cur_events_list.append(
                             Single_Event(
-                                "There are no cats fit to become deputy. ", "ceremony"
+                                "There are no slugcats fit to become deputy. ", "ceremony"
                             )
                         )
                         return

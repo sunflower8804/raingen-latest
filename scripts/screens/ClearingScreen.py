@@ -652,7 +652,7 @@ class ClearingScreen(Screens):
             concern_text = "The fresh-kill pile is overflowing and the Clan can feast!"
             self.pile_size = "#freshkill_pile_good"
         elif needed_amount * 2.5 < current_prey_amount:
-            concern_text = "StarClan has blessed the Clan with plentiful prey and the leader sends their thanks to Silverpelt."
+            concern_text = "The Void has blessed the Clan with plentiful prey and the leader sends their thanks to the Void."
             self.pile_size = "#freshkill_pile_full"
 
         information_display.append(general_text)

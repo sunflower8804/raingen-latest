@@ -258,7 +258,7 @@
 			"m_c asks r_c to go fishing with {PRONOUN/m_c/object}, but they keep on getting distracted by each other.",
 			"m_c gives r_c a beautiful feather {PRONOUN/m_c/subject} found, and hides behind {PRONOUN/m_c/poss} whiskers when thanked.",
 			"m_c gives r_c a wonderfully colored pebble {PRONOUN/m_c/subject} found, and hides behind {PRONOUN/m_c/poss} whiskers when thanked.",
-			"m_c gives r_c a circular Twoleg object {PRONOUN/m_c/subject} found, and hides behind {PRONOUN/m_c/poss} whiskers when thanked.",
+			"m_c gives r_c a pearl {PRONOUN/m_c/subject} found, and hides behind {PRONOUN/m_c/poss} whiskers when thanked.",
 			"m_c compliments r_c on how well groomed {PRONOUN/r_c/poss} pelt is today.",
 			"m_c compliments r_c on how sharp {PRONOUN/r_c/poss} claws are today.",
 			"m_c compliments r_c on {PRONOUN/r_c/poss} catch during a hunting patrol, which causes {PRONOUN/r_c/object} to purr."
@@ -282,7 +282,7 @@
 			"m_c picks some fragrant flowers for r_c.",
 			"m_c decorates r_c's nest with flowers to surprise {PRONOUN/r_c/object}!",
 			"m_c rolls around in some herbs after hearing r_c likes their smell.",
-			"m_c gave r_c a sprig of catmint {PRONOUN/m_c/subject} found."
+			"m_c gave r_c a sprig of scugmint {PRONOUN/m_c/subject} found."
 		],
 		"reaction_random_cat": {
 			"romantic": "increase",

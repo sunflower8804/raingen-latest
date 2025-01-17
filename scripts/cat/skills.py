@@ -668,7 +668,7 @@ class CatSkills:
         """Generates a CatSkill object"""
         new_skill = CatSkills()
         conversion = {
-            "strong connection to StarClan": (SkillPath.STAR, 2),
+            "strong connection to the Void": (SkillPath.STAR, 2),
             "good healer": (SkillPath.HEALER, 1),
             "great healer": (SkillPath.HEALER, 2),
             "fantastic healer": (SkillPath.HEALER, 3),

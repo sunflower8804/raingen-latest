@@ -103,7 +103,7 @@
   },
   {
     "interaction_type": "invite",
-    "event_text": "There's one specific cat, m_c, that keeps regularly upstaging c_n's hunting patrols. However, instead of trying to drive {PRONOUN/m_c/object} out, c_n welcomes m_c with open paws.",
+    "event_text": "There's one specific slugcat, m_c, that keeps regularly upstaging c_n's hunting patrols. However, instead of trying to drive {PRONOUN/m_c/object} out, c_n welcomes m_c with open paws.",
     "reputation": ["any"],
     "rep_change": 1,
     "m_c": {
@@ -193,7 +193,7 @@
       "skill": [
         "MEDIATOR,1"
       ],
-      "new_thought": "Wishes the Clan cats had listened to {PRONOUN/m_c/object}",
+      "new_thought": "Wishes the Clan slugcats had listened to {PRONOUN/m_c/object}",
       "kit_thought": "Is unsure why {PRONOUN/m_c/poss} parent hasn't come back."
     }
   },
@@ -256,7 +256,7 @@
         "competitive",
         "lonesome"
       ],
-      "new_thought": "Grudgingly admits other cats can be useful sometimes",
+      "new_thought": "Grudgingly admits other slugcats can be useful sometimes",
       "kit_thought": "Wonders about this new place"
     }
   },
@@ -300,7 +300,7 @@
   },
   {
     "interaction_type": "drive",
-    "event_text": "Some of c_n's best hunters challenge m_c to a hunt-off. The stakes are simple: if c_n wins, m_c leaves the territory; if m_c wins, then {PRONOUN/m_c/subject} will be allowed to hunt within the Clan's borders undisturbed. It's a close contest but, in the end, the Clan cats claim victory, and m_c has no choice but to find somewhere else to call home.",
+    "event_text": "Some of c_n's best hunters challenge m_c to a hunt-off. The stakes are simple: if c_n wins, m_c leaves the territory; if m_c wins, then {PRONOUN/m_c/subject} will be allowed to hunt within the Clan's borders undisturbed. It's a close contest but, in the end, the Clan slugcats claim victory, and m_c has no choice but to find somewhere else to call home.",
     "reputation": ["any"],
     "rep_change": -2,
     "m_c": {
@@ -421,7 +421,7 @@
   },
   {
     "interaction_type": "drive",
-    "event_text": "c_n finds m_c lounging on {PRONOUN/m_c/poss} Twolegs' fence. The c_n patrol descends on {PRONOUN/m_c/object}, snarling and spitting. m_c yowls for help from {PRONOUN/m_c/poss} housefolk, but c_n drives {PRONOUN/m_c/object} off.",
+    "event_text": "c_n finds m_c lounging on a fence. The c_n patrol descends on {PRONOUN/m_c/object}, snarling and spitting. m_c yowls for help from {PRONOUN/m_c/poss} Iterator, but c_n drives {PRONOUN/m_c/object} off.",
     "reputation": ["any"],
     "rep_change": -5,
     "m_c": {
@@ -432,31 +432,31 @@
   },
   {
     "interaction_type": "hunt",
-    "event_text": "c_n finds m_c lounging on {PRONOUN/m_c/poss} Twolegs' fence. The c_n patrol descends on {PRONOUN/m_c/object}, teeth bared and claws unsheathed. m_c yowls for help from {PRONOUN/m_c/poss} housefolk, but {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} no match for warrior training.",
+    "event_text": "c_n finds m_c lounging on a fence. The c_n patrol descends on {PRONOUN/m_c/object}, teeth bared and claws unsheathed. m_c yowls for help from {PRONOUN/m_c/poss} Iterator, but {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} no match for warrior training.",
     "reputation": ["any"],
     "rep_change": -10,
     "m_c": {
       "status": ["kittypet"],
       "skill": [  ],
-      "new_thought": "Prays {PRONOUN/m_c/poss} housefolk won't miss {PRONOUN/m_c/object} too much",
+      "new_thought": "Prays {PRONOUN/m_c/poss} Iterator won't miss {PRONOUN/m_c/object} too much",
       "kit_thought": "Wonders where m_c has gone"
     }
   },
   {
     "interaction_type": "hunt",
-    "event_text": "When c_n finds m_c, {PRONOUN/m_c/poss} fur bushes up and eyes widen at the sight of so many cats. In fact, it'll be the last sight {PRONOUN/m_c/subject} ever {VERB/m_c/see/sees}.",
+    "event_text": "When c_n finds m_c, {PRONOUN/m_c/poss} fur bushes up and eyes widen at the sight of so many slugcats. In fact, it'll be the last sight {PRONOUN/m_c/subject} ever {VERB/m_c/see/sees}.",
     "reputation": ["any"],
     "rep_change": -10,
     "m_c": {
       "status": ["loner"],
       "skill": [  ],
-      "new_thought": "Wonders how {PRONOUN/m_c/subject} wronged those cats",
+      "new_thought": "Wonders how {PRONOUN/m_c/subject} wronged those slugcats",
       "kit_thought": "Wonders where m_c has gone"
     }
   },
   {
     "interaction_type": "drive",
-    "event_text": "When c_n finds m_c, {PRONOUN/m_c/poss} fur bushes up and eyes widen at the sight of so many cats. It doesn't take much to drive {PRONOUN/m_c/object} out; {PRONOUN/m_c/subject} {VERB/m_c/turn/turns} tail and {VERB/m_c/flee/flees}.",
+    "event_text": "When c_n finds m_c, {PRONOUN/m_c/poss} fur bushes up and eyes widen at the sight of so many slugcats. It doesn't take much to drive {PRONOUN/m_c/object} out; {PRONOUN/m_c/subject} {VERB/m_c/turn/turns} tail and {VERB/m_c/flee/flees}.",
     "reputation": ["any"],
     "rep_change": -5,
     "m_c": {
@@ -485,13 +485,13 @@
       "status": ["rogue"],
       "age": [ "young adult", "adult", "senior adult" ],
       "skill": [  ],
-      "new_thought": "Wonders how {PRONOUN/m_c/subject} wronged those cats",
+      "new_thought": "Wonders how {PRONOUN/m_c/subject} wronged those slugcats",
       "kit_thought": "Wonders where m_c has gone"
     }
   },
   {
     "interaction_type": "drive",
-    "event_text": "c_n is prepared for a fight when they find m_c. m_c quickly realizes the odds are not in {PRONOUN/m_c/poss} favor and flees. The c_n cats snarl threats at {PRONOUN/m_c/poss} back.",
+    "event_text": "c_n is prepared for a fight when they find m_c. m_c quickly realizes the odds are not in {PRONOUN/m_c/poss} favor and flees. The c_n slugcats snarl threats at {PRONOUN/m_c/poss} back.",
     "reputation": ["any"],
     "rep_change": -5,
     "m_c": {
@@ -556,7 +556,7 @@
   },
   {
     "interaction_type": "invite",
-    "event_text": "c_n finds m_c just outside {PRONOUN/m_c/poss} Twoleg nest and makes {PRONOUN/m_c/object} an offer. Though m_c asks a few questions about leaf-bare, sickness, and injury, {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} persuaded that Clan life is worth it.",
+    "event_text": "c_n finds m_c just outside {PRONOUN/m_c/poss} Iterator's nest and makes {PRONOUN/m_c/object} an offer. Though m_c asks a few questions about leaf-bare, sickness, and injury, {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} persuaded that Clan life is worth it.",
     "reputation": ["any"],
     "rep_change": 3,
     "m_c": {
@@ -591,18 +591,18 @@
   },
   {
     "interaction_type": "invite",
-    "event_text": "When c_n finds m_c, {PRONOUN/m_c/subject} {VERB/m_c/look/looks} wary of so many sleek, muscled cats surrounding {PRONOUN/m_c/object}. Still, m_c listens carefully as c_n explains that all this strength could help protect {PRONOUN/m_c/object}. {PRONOUN/m_c/subject/CAP} would no longer be alone against the world. m_c tentatively agrees.",
+    "event_text": "When c_n finds m_c, {PRONOUN/m_c/subject} {VERB/m_c/look/looks} wary of so many sleek, muscled slugcats surrounding {PRONOUN/m_c/object}. Still, m_c listens carefully as c_n explains that all this strength could help protect {PRONOUN/m_c/object}. {PRONOUN/m_c/subject/CAP} would no longer be alone against the world. m_c tentatively agrees.",
     "reputation": ["any"],
     "rep_change": 3,
     "m_c": {
       "status": ["loner" ],
-      "new_thought": "Has met more new cats today than {PRONOUN/m_c/subject} ever {VERB/m_c/have/has} before",
-      "kit_thought": "Stares at all the new cats"
+      "new_thought": "Has met more new slugcats today than {PRONOUN/m_c/subject} ever {VERB/m_c/have/has} before",
+      "kit_thought": "Stares at all the new slugcats"
     }
   },
   {
     "interaction_type": "invite",
-    "event_text": "m_c is surprised to have been sought out specifically by c_n. {PRONOUN/m_c/subject/CAP}{VERB/m_c/'re/'s} no stranger to living in groups, but all this code business sounds awfully complicated... Eventually, m_c comes round and accompanies the c_n cats back to camp.",
+    "event_text": "m_c is surprised to have been sought out specifically by c_n. {PRONOUN/m_c/subject/CAP}{VERB/m_c/'re/'s} no stranger to living in groups, but all this code business sounds awfully complicated... Eventually, m_c comes round and accompanies the c_n slugcats back to camp.",
     "reputation": ["any"],
     "rep_change": 3,
     "m_c": {

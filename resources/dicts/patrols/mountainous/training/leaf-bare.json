@@ -83,7 +83,7 @@
                 "weight": 20
             },
             {
-                "text": "Both apprentices are back at camp in time for a normal day of training, but app1 has to confess their predawn adventure when they go to medicine scug den with a running nose.",
+                "text": "Both apprentices are back at camp in time for a normal day of training, but app1 has to confess their predawn adventure when they go to cleric den with a running nose.",
                 "exp": 0,
                 "weight": 10,
                 "injury": [
@@ -182,7 +182,7 @@
         },
         "weight": 20,
         "intro_text": "As they trudge through the snow, p_l spots a yellow lizard pack round a kill in the distant valley below and calls app1 over.",
-        "decline_text": "Thinking better of it, the cats try to hunt instead.",
+        "decline_text": "Thinking better of it, the slugcats try to hunt instead.",
         "chance_of_success": 60,
         "success_outcomes": [
             {
@@ -232,7 +232,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "One of the yellow lizards peels off from the sleepy pack and starts ambling in the general direction of the cats, and p_l decides caution is wise. The patrol returns to camp without seeing anything more.",
+                "text": "One of the yellow lizards peels off from the sleepy pack and starts ambling in the general direction of the slugcats, and p_l decides caution is wise. The patrol returns to camp without seeing anything more.",
                 "exp": 0,
                 "weight": 20
             }
@@ -254,7 +254,7 @@
         },
         "weight": 20,
         "intro_text": "As they trudge through the snow, p_l spots a yellow lizard pack round a kill in the distant valley below and calls the apprentices over.",
-        "decline_text": "Thinking better of it, the cats try to hunt instead.",
+        "decline_text": "Thinking better of it, the slugcats try to hunt instead.",
         "chance_of_success": 40,
         "success_outcomes": [
             {
@@ -286,7 +286,7 @@
                 ]
             },
             {
-                "text": "s_c wants to point out not the yellow lizards, but the noodleflies around them. yellow lizards mostly tolerate noodleflies at their kills because it helps them find prey. Long ago, that bargain was offered to the cats of the world, but they foolishly betrayed the noodleflies and took the birds for food instead, and since then only the dogs have benefited from allies in the sky.",
+                "text": "s_c wants to point out not the yellow lizards, but the noodleflies around them. Yellow lizards mostly tolerate noodleflies at their kills because it helps them find prey. Long ago, that bargain was offered to the slugcats of the world, but they foolishly betrayed the noodleflies and took them for food instead, and since then only the lizards have benefited from allies in the sky.",
                 "exp": 20,
                 "weight": 20,
                 "stat_skill": ["SPEAKER,1"],
@@ -304,7 +304,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "One of the yellow lizards peels off from the sleepy pack and starts ambling in the general direction of the cats, and p_l decides caution is wise. The patrol returns to camp without seeing anything more.",
+                "text": "One of the yellow lizards peels off from the sleepy pack and starts ambling in the general direction of the slugcats, and p_l decides caution is wise. The patrol returns to camp without seeing anything more.",
                 "exp": 0,
                 "weight": 20
             }
@@ -326,7 +326,7 @@
         },
         "weight": 20,
         "intro_text": "As they trudge through the snow, p_l spots a yellow lizard pack round a kill in the distant valley below and calls the apprentices over.",
-        "decline_text": "Thinking better of it, the cats try to hunt instead.",
+        "decline_text": "Thinking better of it, the slugcats try to hunt instead.",
         "chance_of_success": 40,
         "success_outcomes": [
             {
@@ -376,7 +376,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "One of the yellow lizards peels off from the sleepy pack and starts ambling in the general direction of the cats, and p_l decides caution is wise. The patrol returns to camp without seeing anything more.",
+                "text": "One of the yellow lizards peels off from the sleepy pack and starts ambling in the general direction of the slugcats, and p_l decides caution is wise. The patrol returns to camp without seeing anything more.",
                 "exp": 0,
                 "weight": 20
             }
@@ -401,7 +401,7 @@
         "decline_text": "A happier story, the slugcats ask, please. No one wants difficulty sleeping tonight.",
         "success_outcomes": [
                 {
-                    "text": "A dead warrior woke in the Void, business unfinished and hate for the living in their heart. They brought ruin and destruction upon the living Clan - but c_n was not without allies. The other cats of the Void leapt to battle and tore a hole in Silverpelt, casting out the traitor, condemning them to walk a path of decay and cruelty.",
+                    "text": "A dead warrior woke in the Void, business unfinished and hate for the living in their heart. They brought ruin and destruction upon the living Clan - but c_n was not without allies. The other slugcats of the Void leapt to battle and tore a hole in the Void, casting out the traitor, condemning them to walk a path of decay and cruelty.",
                     "exp": 30,
                     "weight": 20,
                     "relationships": [
@@ -429,7 +429,7 @@
                     ]
                 },
                 {
-                    "text": "s_c can't help but be overly fascinated as p_l speaks about how a warrior was so powerful that they needed to tear a hole in silverpelt just to be able to stop them. s_c hopes to one day be that powerful.",
+                    "text": "s_c can't help but be overly fascinated as p_l speaks about how a warrior was so powerful that they needed to tear a hole in the Void just to be able to stop them. s_c hopes to one day be that powerful.",
                     "exp": 30,
                     "weight": 20,
                     "can_have_stat": ["not_pl_rc"],
@@ -528,7 +528,7 @@
             ],
             "fail_outcomes": [
                 {
-                    "text": "r_c listens, shivering, as p_l describes the birth of the Rotwound, the ancient, barely won battle between the good cats of the Void and the traitor amidst. {PRONOUN/r_c/subject/CAP} can't stop thinking about it in {PRONOUN/r_c/poss} nest that night, {PRONOUN/r_c/poss} sleep broken and uneasy.",
+                    "text": "r_c listens, shivering, as p_l describes the birth of the Rotwound, the ancient, barely won battle between the good slugcats of the Void and the traitor amidst. {PRONOUN/r_c/subject/CAP} can't stop thinking about it in {PRONOUN/r_c/poss} nest that night, {PRONOUN/r_c/poss} sleep broken and uneasy.",
                     "exp": 0,
                     "weight": 20,
                   "injury": [

@@ -92,7 +92,7 @@
         ],
         "antag_success_outcomes": [
             {
-                "text": "The patrol tells the slugcat to leave or feel their claws. The loner seems to choose life and quickly takes off.",
+                "text": "The patrol tells the slugcat to leave or feel their spears. The loner seems to choose life and quickly takes off.",
                 "exp": 10,
                 "weight": 20,
                 "outsider_rep": -2,
@@ -195,7 +195,7 @@
         ],
         "antag_success_outcomes": [
             {
-                "text": "p_l tells the slugcat to leave or feel {PRONOUN/p_l/poss} claws. The loner seems to choose life and quickly takes off.",
+                "text": "p_l tells the slugcat to leave or feel {PRONOUN/p_l/poss} spear. The loner seems to choose life and quickly takes off.",
                 "exp": 10,
                 "weight": 20,
                 "outsider_rep": -2,
@@ -286,7 +286,7 @@
         ],
         "antag_success_outcomes": [
             {
-                "text": "The patrol tells the slugcat to leave or feel their claws. The pet seems to choose life and quickly takes off.",
+                "text": "The patrol tells the slugcat to leave or feel their spears. The pet seems to choose life and quickly takes off.",
                 "exp": 10,
                 "weight": 20,
                 "outsider_rep": -2
@@ -365,7 +365,7 @@
         ],
         "antag_success_outcomes": [
             {
-                "text": "p_l tells the slugcat to leave or feel {PRONOUN/p_l/poss} claws. The pet seems to choose life and quickly takes off.",
+                "text": "p_l tells the slugcat to leave or feel {PRONOUN/p_l/poss} spear. The pet seems to choose life and quickly takes off.",
                 "exp": 10,
                 "weight": 20,
                 "outsider_rep": -2
@@ -402,7 +402,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "As r_c inspects the slugcat, {PRONOUN/r_c/subject} find that they are already hunting with their ancestors.",
+                "text": "As r_c inspects the slugcat, {PRONOUN/r_c/subject} find that they are already lost to the Void",
                 "exp": 0,
                 "weight": 20,
                 "outsider_rep": 0
@@ -416,7 +416,7 @@
         ],
         "antag_fail_outcomes": [
             {
-                "text": "The patrol tries to drive the slugcat away, but they trip and stumble over a loose twig. They lay on the ground and don't get back up. The patrol takes a bit of time to bury them - just to keep the scavengers away.",
+                "text": "The patrol tries to drive the slugcat away, but they trip and stumble over a loose twig. They lay on the ground and don't get back up. The patrol takes a bit of time to bury them - just to keep the lizards away.",
                 "exp": 0,
                 "weight": 20,
                 "outsider_rep": -1
@@ -475,7 +475,7 @@
         ],
         "antag_fail_outcomes": [
             {
-                "text": "p_l tries to drive the slugcat away, but they trip and stumble over a loose twig. They lay on the ground and don't get back up. p_l takes a bit of time to bury them - just to keep the scavengers away.",
+                "text": "p_l tries to drive the slugcat away, but they trip and stumble over a loose twig. They lay on the ground and don't get back up. p_l takes a bit of time to bury them - just to keep the lizards away.",
                 "exp": 0,
                 "weight": 20,
                 "outsider_rep": -1
@@ -906,7 +906,7 @@
         ],
         "antag_fail_outcomes": [
             {
-                "text": "The slugpup smells of Twolegs, the patrol has no interest in what will surely grow to be a weak slugcat.",
+                "text": "The slugpup smells of Iterators, the patrol has no interest in what will surely grow to be a weak slugcat.",
                 "exp": 0,
                 "weight": 20,
                 "outsider_rep": -1
@@ -970,7 +970,7 @@
         ],
         "antag_fail_outcomes": [
             {
-                "text": "The slugpup smells of Twolegs, p_l has no interest in what will surely grow to be a weak slugcat.",
+                "text": "The slugpup smells of Iterators, p_l has no interest in what will surely grow to be a weak slugcat.",
                 "exp": 0,
                 "weight": 20,
                 "outsider_rep": -1
@@ -1069,7 +1069,7 @@
         ],
         "antag_success_outcomes": [
             {
-                "text": "Healer or not, the patrol tells the slugcat to leave or feel their claws. The loner seems to choose life and quickly takes off.",
+                "text": "Healer or not, the patrol tells the slugcat to leave or feel their spears. The loner seems to choose life and quickly takes off.",
                 "exp": 10,
                 "weight": 20,
                 "outsider_rep": -2,
@@ -1172,7 +1172,7 @@
         ],
         "antag_success_outcomes": [
             {
-                "text": "Healer or not, p_l tells the slugcat to leave or feel {PRONOUN/p_l/poss} claws. The loner seems to choose life and quickly takes off.",
+                "text": "Healer or not, p_l tells the slugcat to leave or feel {PRONOUN/p_l/poss} spear. The loner seems to choose life and quickly takes off.",
                 "exp": 10,
                 "weight": 20,
                 "outsider_rep": -2,
@@ -1202,7 +1202,7 @@
         "max_cats": 6,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "The patrol cautiously moves towards the sound of barking. Near the border, they spot a lizard chasing something. Oh no, it's a slugcat!",
+        "intro_text": "The patrol cautiously moves towards the sound of hissing. Near the border, they spot a lizard chasing something. Oh no, it's a slugcat!",
         "decline_text": "The patrol decides not to interfere. Surely the slugcat can handle itself, the lizard isn't even that big.",
         "chance_of_success": 40,
         "success_outcomes": [
@@ -1329,7 +1329,7 @@
                 "weight": 20
             },
             {
-                "text": "p_l pads towards the bush to check on the noise when a rabbit bursts out! None of the slugcats are quick enough to catch it, but at least the noise was nothing dangerous.",
+                "text": "p_l pads towards the bush to check on the noise when an eggbug bursts out! None of the slugcats are quick enough to catch it, but at least the noise was nothing dangerous.",
                 "exp": 10,
                 "weight": 5
             },
@@ -1354,12 +1354,12 @@
         ],
         "fail_outcomes": [
             {
-                "text": "p_l pads closer to the bush, intent on finding the source of the noise, only to come face to face with a skunk! The poor slugcat ends up stinking for days after the unfortunate incident.",
+                "text": "p_l pads closer to the bush, intent on finding the source of the noise, only to come face to face with a hazer! The poor slugcat ends up inky for days after the unfortunate incident.",
                 "exp": 0,
                 "weight": 20
             },
             {
-                "text": "s_c doesn't even hesitate before splitting from the patrol to check on the source of the noise. {PRONOUN/s_c/subject/CAP} quickly {VERB/s_c/regret/regrets} {PRONOUN/s_c/poss} impulsivity, however, when an angry raccoon bursts from the bush!  s_c gets quite the scare, but thankfully the raccoon only wanted to get away from {PRONOUN/s_c/object} and quickly runs off back into the undergrowth.",
+                "text": "s_c doesn't even hesitate before splitting from the patrol to check on the source of the noise. {PRONOUN/s_c/subject/CAP} quickly {VERB/s_c/regret/regrets} {PRONOUN/s_c/poss} impulsivity, however, when an angry wold spider bursts from the bush!  s_c gets quite the scare, but thankfully the wolf spider only wanted to get away from {PRONOUN/s_c/object} and quickly runs off back into the undergrowth.",
                 "exp": 0,
                 "weight": 20,
                 "stat_trait": ["daring", "bold", "ambitious"]
@@ -1465,13 +1465,13 @@
         "max_cats": 2,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "The patrol approaches a scavenger nest in the woods while hunting.",
+        "intro_text": "The patrol approaches scavenger nests in the woods while hunting.",
         "decline_text": "The patrol decides to hunt elsewhere.",
         "chance_of_success": 40,
         "relationship_constraint": ["mates"],
         "success_outcomes": [
             {
-                "text": "p_l hears r_c softly calling {PRONOUN/p_l/object} through the bushes, and drops the idea of following lanternmouse scent, hurrying to {PRONOUN/p_l/poss} mate's side. r_c, head poking into the nest's garden through a gap in the fence, murmurs something about scavenger slugpups. scavenger slugpups? No, r_c corrects, the <i>Twolegs's slugpups</i>, the Twolegs <i>have slugpups</i> wandering through the nest's garden. Uneasily, the patrol leaves, but both slugcats' minds return to the young slugcats in the days that follow.",
+                "text": "p_l hears r_c softly calling {PRONOUN/p_l/object} through the bushes, and drops the idea of following lanternmouse scent, hurrying to {PRONOUN/p_l/poss} mate's side. r_c, head poking into the nest through a gap in the fence, murmurs something about scavenger slugpups. Scavenger pups? No, r_c corrects, the <i>scavenger's slugpups</i>, the scavengers <i>have slugpups</i> wandering through their nests. Uneasily, the patrol leaves, but both slugcats' minds return to the young slugcats in the days that follow.",
                 "exp": 30,
                 "weight": 20,
                 "new_cat": [
@@ -1517,7 +1517,7 @@
                 "outsider_rep": 1
             },
             {
-                "text": "Furious, high pitched yowls greet the patrol, as a tiny pet slugpup comes roaring out of the scavenger nest to try and fight them. Terrifying. s_c tips the little fighter over and carefully scruffs the tiny warrior, wondering what to do with them - s_c doesn't particularly want to hurt them, even if they aren't a Clancat. The slugpup insists that they're a big slugcat and they're <b>fine</b>, but after a couple minutes, does reveal their mother is dead. Twolegs have kept them alive somehow, but c_n will do better, and such a fierce heart shouldn't be left to wither in a soft pet life.",
+                "text": "Furious, high pitched yowls greet the patrol, as a tiny pet slugpup comes roaring out of the scavenger nest to try and fight them. Terrifying. s_c tips the little fighter over and carefully scruffs the tiny warrior, wondering what to do with them - s_c doesn't particularly want to hurt them, even if they aren't a Clancat. The slugpup insists that they're a big slugcat and they're <b>fine</b>, but after a couple minutes, does reveal their mother is dead. Scavengers have kept them alive somehow, but c_n will do better, and such a fierce heart shouldn't be left to wither in a soft pet life.",
                 "exp": 30,
                 "weight": 20,
                 "stat_trait": ["careful", "thoughtful"],
@@ -1543,7 +1543,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "scavenger slugpups scare the patrol away.",
+                "text": "Scavengers scare the patrol away.",
                 "exp": 0,
                 "weight": 20,
                 "outsider_rep": -1
@@ -1551,7 +1551,7 @@
         ],
         "antag_fail_outcomes": [
             {
-                "text": "The pet slugpups trying furiously to defend their territory ruin all the hunting to be had, and the patrol returns home, irritated but impressed by the slugpups' bravery.",
+                "text": "The scavengers trying furiously to defend their territory ruin all the hunting to be had, and the patrol returns home, irritated but impressed by the scavengers' bravery.",
                 "exp": 0,
                 "weight": 20,
                 "outsider_rep": -1
@@ -1559,7 +1559,7 @@
         ],
         "antag_success_outcomes": [
             {
-                "text": "A pet slugpup approaches the patrol, yowling furiously. p_l bats it aside as the warriors continue hunting, unruffled.",
+                "text": "A scavenger approaches the patrol, yowling furiously. p_l bats it aside as the warriors continue hunting, unruffled.",
                 "exp": 30,
                 "weight": 20,
                 "outsider_rep": -2
@@ -1582,7 +1582,7 @@
         },
         "weight": 20,
         "intro_text": "While searching for some specific herbs p_l is startled by weird sounds and whispers on the wind.",
-        "decline_text": "Unnerved and unable to discern if it is a sign from StarClan or nothing, {PRONOUN/p_l/subject} {VERB/p_l/go/goes} back to c_n to ask for help and guidance.",
+        "decline_text": "Unnerved and unable to discern if it is a sign from the Ascended or nothing, {PRONOUN/p_l/subject} {VERB/p_l/go/goes} back to c_n to ask for help and guidance.",
         "chance_of_success": 45,
         "success_outcomes": [
             {
@@ -1640,7 +1640,7 @@
         ],
         "antag_success_outcomes": [
             {
-                "text": "p_l hisses at StarClan for the sign, refusing to follow it to its source, and what might have been.",
+                "text": "p_l hisses at the Ascended for the sign, refusing to follow it to its source, and what might have been.",
                 "exp": 10,
                 "weight": 20,
                 "outsider_rep": -2
@@ -1663,11 +1663,11 @@
         },
         "weight": 20,
         "intro_text": "While searching for some specific herbs p_l is startled by weird sounds and whispers on the wind.",
-        "decline_text": "Unnerved and unable to discern if it is a sign from StarClan or nothing, {PRONOUN/p_l/subject} {VERB/p_l/go/goes} back to c_n to ask for help and guidance.",
+        "decline_text": "Unnerved and unable to discern if it is a sign from the Ascended or nothing, {PRONOUN/p_l/subject} {VERB/p_l/go/goes} back to c_n to ask for help and guidance.",
         "chance_of_success": 45,
         "success_outcomes": [
             {
-                "text": "p_l, sure that it is a sign of StarClan, follows the faint wailing. Instead {PRONOUN/p_l/subject} {VERB/p_l/find/finds} a queen who lost their life in a harsh kitting, their newborn slugpups clinging to a body that will never move again. p_l hesitates, but wraps {PRONOUN/p_l/self} around the slugpups and orders r_c back to the camp to fetch help. {PRONOUN/p_l/subject/CAP} {VERB/p_l/are/is} going to have to argue to keep them.",
+                "text": "p_l, sure that it is a sign from the Ascended, follows the faint wailing. Instead {PRONOUN/p_l/subject} {VERB/p_l/find/finds} a queen who lost their life in a harsh kitting, their newborn slugpups clinging to a body that will never move again. p_l hesitates, but wraps {PRONOUN/p_l/self} around the slugpups and orders r_c back to the camp to fetch help. {PRONOUN/p_l/subject/CAP} {VERB/p_l/are/is} going to have to argue to keep them.",
                 "exp": 10,
                 "weight": 20,
                 "new_cat": [
@@ -1731,7 +1731,7 @@
         ],
         "antag_success_outcomes": [
             {
-                "text": "p_l hisses at StarClan for the sign, refusing to follow it to its source, and what might have been.",
+                "text": "p_l hisses at the Ascended for the sign, refusing to follow it to its source, and what might have been.",
                 "exp": 10,
                 "weight": 20,
                 "outsider_rep": -2
@@ -1756,7 +1756,7 @@
         },
         "weight": 20,
         "intro_text": "While searching for some specific herbs p_l is startled by weird sounds and whispers on the wind.",
-        "decline_text": "Unnerved and unable to discern if it is a sign from StarClan or nothing, {PRONOUN/p_l/subject} {VERB/p_l/go/goes} back to c_n to ask for help and guidance.",
+        "decline_text": "Unnerved and unable to discern if it is a sign from the Ascended or nothing, {PRONOUN/p_l/subject} {VERB/p_l/go/goes} back to c_n to ask for help and guidance.",
         "chance_of_success": 45,
         "success_outcomes": [
             {
@@ -1814,7 +1814,7 @@
         ],
         "antag_success_outcomes": [
             {
-                "text": "p_l hisses at StarClan for the sign, refusing to follow it to its source, and what might have been.",
+                "text": "p_l hisses at the Ascended for the sign, refusing to follow it to its source, and what might have been.",
                 "exp": 10,
                 "weight": 20,
                 "outsider_rep": -2
@@ -1839,11 +1839,11 @@
         },
         "weight": 20,
         "intro_text": "While searching for some specific herbs p_l is startled by weird sounds and whispers on the wind.",
-        "decline_text": "Unnerved and unable to discern if it is a sign from StarClan or nothing, {PRONOUN/p_l/subject} {VERB/p_l/go/goes} back to c_n to ask for help and guidance.",
+        "decline_text": "Unnerved and unable to discern if it is a sign from the Ascended or nothing, {PRONOUN/p_l/subject} {VERB/p_l/go/goes} back to c_n to ask for help and guidance.",
         "chance_of_success": 45,
         "success_outcomes": [
             {
-                "text": "p_l, sure that it is a sign of StarClan, follows the faint wailing. Instead {PRONOUN/p_l/subject} {VERB/p_l/find/finds} a queen who lost their life in a harsh kitting, their newborn slugpups clinging to a body that will never move again. p_l hesitates, but wraps {PRONOUN/p_l/self} around the slugpups. {PRONOUN/p_l/subject/CAP} {VERB/p_l/are/is} going to have to argue to keep them.",
+                "text": "p_l, sure that it is a sign of the Ascended, follows the faint wailing. Instead {PRONOUN/p_l/subject} {VERB/p_l/find/finds} a queen who lost their life in a harsh kitting, their newborn slugpups clinging to a body that will never move again. p_l hesitates, but wraps {PRONOUN/p_l/self} around the slugpups. {PRONOUN/p_l/subject/CAP} {VERB/p_l/are/is} going to have to argue to keep them.",
                 "exp": 10,
                 "weight": 20,
                 "new_cat": [
@@ -1907,7 +1907,7 @@
         ],
         "antag_success_outcomes": [
             {
-                "text": "p_l hisses at StarClan for the sign, refusing to follow it to its source, and what might have been.",
+                "text": "p_l hisses at the Ascended for the sign, refusing to follow it to its source, and what might have been.",
                 "exp": 10,
                 "weight": 20,
                 "outsider_rep": -2
@@ -1931,7 +1931,7 @@
         },
         "weight": 20,
         "intro_text": "While searching for some specific herbs, p_l is startled by weird sounds and whispers on the wind.",
-        "decline_text": "Unnerved and unable to discern if it is a sign from StarClan or nothing, {PRONOUN/p_l/subject} {VERB/p_l/go/goes} back to c_n to ask for help and guidance.",
+        "decline_text": "Unnerved and unable to discern if it is a sign from the Ascended or nothing, {PRONOUN/p_l/subject} {VERB/p_l/go/goes} back to c_n to ask for help and guidance.",
         "chance_of_success": 45,
         "success_outcomes": [
             {
@@ -1989,7 +1989,7 @@
         ],
         "antag_success_outcomes": [
             {
-                "text": "p_l hisses at StarClan for the sign, refusing to follow it to its source, and what might have been.",
+                "text": "p_l hisses at the Ascended for the sign, refusing to follow it to its source, and what might have been.",
                 "exp": 10,
                 "weight": 20,
                 "outsider_rep": -2
@@ -2013,7 +2013,7 @@
         },
         "weight": 20,
         "intro_text": "While searching for some specific herbs, p_l is startled by weird sounds and whispers on the wind.",
-        "decline_text": "Unnerved and unable to discern if it is a sign from StarClan or nothing, {PRONOUN/p_l/subject} {VERB/p_l/go/goes} back to c_n to ask for help and guidance.",
+        "decline_text": "Unnerved and unable to discern if it is a sign from the Ascended or nothing, {PRONOUN/p_l/subject} {VERB/p_l/go/goes} back to c_n to ask for help and guidance.",
         "chance_of_success": 45,
         "success_outcomes": [
             {
@@ -2081,7 +2081,7 @@
         ],
         "antag_success_outcomes": [
             {
-                "text": "p_l hisses at StarClan for the sign, refusing to follow it to its source, and what might have been.",
+                "text": "p_l hisses at the Ascended for the sign, refusing to follow it to its source, and what might have been.",
                 "exp": 10,
                 "weight": 20,
                 "outsider_rep": -2
@@ -2106,7 +2106,7 @@
         "chance_of_success": 30,
         "success_outcomes": [
             {
-                "text": "It's probably dangerous. But curiosity leads app1 on, where {PRONOUN/app1/subject} carefully {VERB/app1/peek/peeks} over a ridge as the source of the cries. A pampered helpless pet runs back and forth over the Thunderpath, pleading fearfully for Twolegs, again and again and again. It isn't until their voice has gone hoarse and scratchy that app1 leaps out to surprise them - those Twolegs aren't coming back, and the pet can either follow app1, or freeze.",
+                "text": "It's probably dangerous. But curiosity leads app1 on, where {PRONOUN/app1/subject} carefully {VERB/app1/peek/peeks} over a ridge as the source of the cries. A pampered helpless pet runs back and forth over the Thunderpath, pleading fearfully for an Iterator, again and again and again. It isn't until their voice has gone hoarse and scratchy that app1 leaps out to surprise them - the pet can either follow app1, or freeze.",
                 "exp": 20,
                 "weight": 20,
                 "new_cat": [
@@ -2130,7 +2130,7 @@
                 ]
             },
             {
-                "text": "StarClan, but the slugcat {PRONOUN/app1/subject} {VERB/app1/find/finds} is weird, their fur soft and thin, their cries desperate as they call in confusion. app1 watches until {PRONOUN/app1/poss} paws are cold and uncomfortable, crouched behind cover, but the dumb outsider doesn't even try to steal prey, they just wail for help, quieter and quieter as they begin to lose their voice. Finally, app1 can't take it anyone - striding out, {PRONOUN/app1/subject} {VERB/app1/tell/tells} the slugcat to follow {PRONOUN/app1/object}, the Leader will know what to do with this.",
+                "text": "Oh Void, but the slugcat {PRONOUN/app1/subject} {VERB/app1/find/finds} is weird, their fur soft and thin, their cries desperate as they call in confusion. app1 watches until {PRONOUN/app1/poss} paws are cold and uncomfortable, crouched behind cover, but the dumb outsider doesn't even try to steal prey, they just wail for help, quieter and quieter as they begin to lose their voice. Finally, app1 can't take it anyone - striding out, {PRONOUN/app1/subject} {VERB/app1/tell/tells} the slugcat to follow {PRONOUN/app1/object}, the Leader will know what to do with this.",
                 "exp": 20,
                 "weight": 5,
                 "new_cat": [

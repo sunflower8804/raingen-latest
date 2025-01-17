@@ -2557,7 +2557,7 @@
         "chance_of_success": 50,
         "success_outcomes": [
             {
-                "text": "r_c smaller, alone, and half its weight, but the fox has a prize {PRONOUN/r_c/subject}{VERB/r_c/'re/'s} willing to fight for. With a prayer to StarClan, {PRONOUN/r_c/subject} {VERB/r_c/throw/throws} {PRONOUN/r_c/self} into battle. The fox, already on the lookout for other predators and unwilling to lose blood over it, leaves the kill with a grumble.",
+                "text": "r_c smaller, alone, and half its weight, but the fox has a prize {PRONOUN/r_c/subject}{VERB/r_c/'re/'s} willing to fight for. With a prayer to the Void, {PRONOUN/r_c/subject} {VERB/r_c/throw/throws} {PRONOUN/r_c/self} into battle. The fox, already on the lookout for other predators and unwilling to lose blood over it, leaves the kill with a grumble.",
                 "exp": 10,
                 "weight": 20,
                 "prey": ["medium"]
@@ -2956,7 +2956,7 @@
         "chance_of_success": 50,
         "success_outcomes": [
             {
-                "text": "r_c smaller, alone, and half its weight, but the fox has a prize {PRONOUN/r_c/subject}{VERB/r_c/'re/'s} willing to fight for. With a prayer to StarClan, {PRONOUN/r_c/subject} {VERB/r_c/throw/throws} {PRONOUN/r_c/self} into battle. The fox, already on the lookout for other predators and unwilling to lose blood over it, leaves the kill with a grumble.",
+                "text": "r_c smaller, alone, and half its weight, but the fox has a prize {PRONOUN/r_c/subject}{VERB/r_c/'re/'s} willing to fight for. With a prayer to the Void, {PRONOUN/r_c/subject} {VERB/r_c/throw/throws} {PRONOUN/r_c/self} into battle. The fox, already on the lookout for other predators and unwilling to lose blood over it, leaves the kill with a grumble.",
                 "exp": 10,
                 "weight": 20,
                 "prey": ["medium"]

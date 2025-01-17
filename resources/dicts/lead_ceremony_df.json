@@ -450,7 +450,7 @@
           "virtue": ["strength", "ferocity", "cunning", "shamelessness", "zealotry", "bloodlust", "restless energy", "stubbornness", "authority", "cruelty"]
         },
         {
-          "text": "r_c wastes no time in bestowing {PRONOUN/r_c/poss} life of [virtue]. m_c opens {PRONOUN/m_c/poss} mouth, perhaps to argue that {PRONOUN/m_c/subject} {VERB/m_c/don't/doesn't} belong here, that {PRONOUN/m_c/poss} faith still lies with Silverpelt, but a single look from the shadowy warrior quickly wrenches {PRONOUN/m_c/poss} mouth shut once more.",
+          "text": "r_c wastes no time in bestowing {PRONOUN/r_c/poss} life of [virtue]. m_c opens {PRONOUN/m_c/poss} mouth, perhaps to argue that {PRONOUN/m_c/subject} {VERB/m_c/don't/doesn't} belong here, that {PRONOUN/m_c/poss} faith still lies with the Ascended, but a single look from the shadowy warrior quickly wrenches {PRONOUN/m_c/poss} mouth shut once more.",
           "virtue": ["strength", "ferocity", "cunning", "shamelessness", "zealotry", "bloodlust", "restless energy", "stubbornness", "authority", "cruelty"]
         }
       ]

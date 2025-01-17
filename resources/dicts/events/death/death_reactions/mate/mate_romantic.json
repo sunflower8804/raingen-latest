@@ -12,8 +12,8 @@
     "no_body": [
       "Surely, surely the world can't go on, surely the sun won't rise and the seasons won't turn, not now that m_c is gone. r_c doesn't know how to go on without {PRONOUN/m_c/object}. r_c didn't want to believe that {PRONOUN/r_c/poss} mate is truly dead.",
       "As the Clan sits vigil for m_c, r_c refuses to even move from {PRONOUN/r_c/poss} nest, refuses to eat or drink or talk, as though refusing to face the world will bring {PRONOUN/m_c/object} back.",
-      "Though {PRONOUN/r_c/subject} {VERB/r_c/know/knows} it's unrealistic, deep down, r_c is praying to StarClan that m_c isn't truly gone. How could {PRONOUN/r_c/subject} live on if {PRONOUN/r_c/poss} mate was dead?",
-      "r_c feels lost without m_c's body to sit vigil over. {PRONOUN/r_c/subject/CAP} {VERB/r_c/stare/stares} up at Silverpelt all night, straining to see if a new star has joined the sky and refusing to move until daybreak.",
+      "Though {PRONOUN/r_c/subject} {VERB/r_c/know/knows} it's unrealistic, deep down, r_c is praying to the Void that m_c isn't truly gone. How could {PRONOUN/r_c/subject} live on if {PRONOUN/r_c/poss} mate was dead?",
+      "r_c feels lost without m_c's body to sit vigil over. {PRONOUN/r_c/subject/CAP} {VERB/r_c/stare/stares} up into the sky all night, straining to see if a new star has appeared and refusing to move until daybreak.",
       "r_c's nest feels so big and empty without m_c's body next to {PRONOUN/r_c/inposs}. {PRONOUN/r_c/subject/CAP} can barely sleep, surrounded by m_c's scent and cold night air."
     ]
   },
@@ -141,7 +141,7 @@
   },
   "lonesome": {
     "body": [
-      "r_c doesn't want to trouble {PRONOUN/r_c/poss} Clanmates with {PRONOUN/r_c/poss} grief. Everyone is hurting after m_c's death. r_c waits until {PRONOUN/r_c/subject} {VERB/r_c/are/is} alone, then sits a silent vigil under Silverpelt, holding back {PRONOUN/r_c/poss} wails.",
+      "r_c doesn't want to trouble {PRONOUN/r_c/poss} Clanmates with {PRONOUN/r_c/poss} grief. Everyone is hurting after m_c's death. r_c waits until {PRONOUN/r_c/subject} {VERB/r_c/are/is} alone, then sits a silent vigil under the sky, holding back {PRONOUN/r_c/poss} wails.",
       "r_c had thought that {PRONOUN/r_c/subject} would never feel alone again after m_c entered {PRONOUN/r_c/poss} life. Now, staring at m_c's lifeless body, r_c doesn't know what {PRONOUN/r_c/subject}'ll do, how {PRONOUN/r_c/subject}'ll ever go on from here.",
       "r_c's Clanmates make sure to spend extra time with {PRONOUN/r_c/object} in the days following m_c's death, sharing their fresh-kill and tongues. One night, r_c even finds extra moss lining {PRONOUN/r_c/poss} bed. Maybe {PRONOUN/r_c/subject}{VERB/r_c/'re/'s} not as alone as {PRONOUN/r_c/subject} always thought {PRONOUN/r_c/subject} {VERB/r_c/were/was}."
     ],
@@ -162,7 +162,7 @@
   },
   "loyal": {
     "body": [
-      "Even with the body before them, r_c can't accept that m_c is gone. {PRONOUN/r_c/subject/CAP} {VERB/r_c/vow/vows} to never fall in love with anyone else until {PRONOUN/r_c/subject} can reunite with m_c in StarClan."
+      "Even with the body before them, r_c can't accept that m_c is gone. {PRONOUN/r_c/subject/CAP} {VERB/r_c/vow/vows} to never fall in love with anyone else until {PRONOUN/r_c/subject} can reunite with m_c in the Void."
     ],
     "no_body": [      
       "Even with no body, r_c is determined to never fall in love with another cat again. Maybe, just maybe, m_c will return someday."
@@ -234,7 +234,7 @@
   },
   "thoughtful": {
     "body": [
-      "r_c doesn't want to trouble {PRONOUN/r_c/poss} Clanmates with {PRONOUN/r_c/poss} grief. Everyone is hurting after m_c's death. r_c waits until {PRONOUN/r_c/subject} {VERB/r_c/are/is} alone, then sits a silent vigil under Silverpelt, holding back {PRONOUN/r_c/poss} wails."
+      "r_c doesn't want to trouble {PRONOUN/r_c/poss} Clanmates with {PRONOUN/r_c/poss} grief. Everyone is hurting after m_c's death. r_c waits until {PRONOUN/r_c/subject} {VERB/r_c/are/is} alone, then sits a silent vigil under the sky, holding back {PRONOUN/r_c/poss} wails."
     ],
     "no_body": [
 
@@ -254,7 +254,7 @@
 
     ],
     "no_body": [
-      "The world is so much colder now without m_c in it. r_c stares up at the sky, yowling {PRONOUN/r_c/poss} fury at StarClan for taking away {PRONOUN/r_c/poss} love. No matter what, and wherever {PRONOUN/r_c/subject} {VERB/r_c/go/goes}, {PRONOUN/r_c/subject} will never stop searching for m_c."
+      "The world is so much colder now without m_c in it. r_c stares up at the sky, yowling {PRONOUN/r_c/poss} fury at the Ascended for taking away {PRONOUN/r_c/poss} love. No matter what, and wherever {PRONOUN/r_c/subject} {VERB/r_c/go/goes}, {PRONOUN/r_c/subject} will never stop searching for m_c."
 
     ]
   },

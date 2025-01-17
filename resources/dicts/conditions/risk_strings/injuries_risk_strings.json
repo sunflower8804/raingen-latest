@@ -162,9 +162,9 @@
     },
     "quilled by a porcupine": {
         "an infected wound": [
-            "r_c was careful when removing the quills from m_c's face, but unfortunately infection still found its way in.",
-            "The wounds left behind on m_c by the porcupine quills have become infected.",
-            "m_c is distraught to find that infection has set in on {PRONOUN/m_c/poss} quill wounds."
+            "r_c was careful when double checking all the wounds from the pole plant that m_c got, but unfortunately infection still found its way in.",
+            "The wounds left behind on m_c by the pole plant have become infected.",
+            "m_c is distraught to find that infection has set in on {PRONOUN/m_c/poss} pole plant wounds."
         ]
     },
     "poisoned": {

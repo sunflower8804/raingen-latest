@@ -87,7 +87,7 @@
                 "prey": ["very_small"]
             },
             {
-                "text": "The patrol launches into battle, but r_c is caught with a nasty bite, and the slugcats give up on challenging for the food in favor of quickly helping r_c back to the cleric den.",
+                "text": "The patrol launches into battle, but r_c is caught with a nasty bite, and the slugcats give up on challenging for the food in favor of quickly helping r_c back to the cleric's den.",
                 "exp": 0,
                 "weight": 10,
                 "injury": [
@@ -223,7 +223,7 @@
                 "prey": ["very_small"]
             },
             {
-                "text": "The patrol launches into battle, but r_c is caught with a nasty bite, and the slugcats give up on challenging for the food in favor of quickly helping r_c back to the cleric den.",
+                "text": "The patrol launches into battle, but r_c is caught with a nasty bite, and the slugcats give up on challenging for the food in favor of quickly helping r_c back to the cleric's den.",
                 "exp": 0,
                 "weight": 10,
                 "injury": [
@@ -302,7 +302,7 @@
                 ]
             },
             {
-                "text": "s_c uses every trick in their talented fighting skillset to attack the lizard with no one to watch their flank, until the perfect opportunity opens up. They pounce onto the lizard's back, digging in their claws. It's a wild ride through the plains until the lizard bucks them off, but it wins them the fawn carcass.",
+                "text": "s_c uses every trick in their talented fighting skillset to attack the lizard with no one to watch their flank, until the perfect opportunity opens up. They pounce onto the lizard's back, digging in their spear. It's a wild ride through the plains until the lizard bucks them off, but it wins them the fawn carcass.",
                 "exp": 30,
                 "weight": 20,
                 "stat_skill": ["FIGHTER,2"],
@@ -452,7 +452,7 @@
         "chance_of_success": 30,
         "success_outcomes": [
             {
-                "text": "The white lizard smells like the prey she's been poaching to feed her litter. She's stolen from c_n for the last time, and the patrol drives her from their territory, yowling their anger and fury.",
+                "text": "The white lizard smells like the prey she's been poaching to feed her hatchlings. She's stolen from c_n for the last time, and the patrol drives her from their territory, yowling their anger and fury.",
                 "exp": 30,
                 "weight": 20,
                 "relationships": [
@@ -466,7 +466,7 @@
                 ]
             },
             {
-                "text": "The patrol drives away the white lizard, and seeks out her den, but her leaf-fall cubs are near full-grown and scatter into the wilderness. Hopefully leaf-bare takes care of them.",
+                "text": "The patrol drives away the white lizard, and seeks out her den, but her leaf-fall hatchlings are near full-grown and scatter into the wilderness. Hopefully leaf-bare takes care of them.",
                 "exp": 30,
                 "weight": 5,
                 "relationships": [
@@ -655,7 +655,7 @@
         "chance_of_success": 10,
         "success_outcomes": [
             {
-                "text": "Led by p_l and with a heap of cooperation and teamwork, the patrol drives away the lizard, and seeks out her den. But her cubs are near full-grown with the bounty of leaf-fall, and scatter from the patrol into the wilderness. Hopefully leaf-bare takes care of them.",
+                "text": "Led by p_l and with a heap of cooperation and teamwork, the patrol drives away the lizard, and seeks out her den. But her hatchlings are near full-grown with the bounty of leaf-fall, and scatter from the patrol into the wilderness. Hopefully leaf-bare takes care of them.",
                 "exp": 30,
                 "weight": 20,
                 "relationships": [
@@ -669,7 +669,7 @@
                 ]
             },
             {
-                "text": "With so many slugcats working together in tight coordination, they manage to accomplish the near-impossible, killing the mother lizard and ending the threat to the Clan that she poses. The patrol drives her near-full grown litter of lizard cubs out from the territory. Hopefully the coming leaf-bare will take care of them.",
+                "text": "With so many slugcats working together in tight coordination, they manage to accomplish the near-impossible, killing the mother lizard and ending the threat to the Clan that she poses. The patrol drives her near-full grown lounge of lizard hatchlings out from the territory. Hopefully the coming leaf-bare will take care of them.",
                 "exp": 30,
                 "weight": 5,
                 "relationships": [
@@ -683,7 +683,7 @@
                 ]
             },
             {
-                "text": "s_c displays incredible skill, driving the mother white lizard they track down out of the territory almost by themselves. Now neither the lizard nor her cubs pose a threat to c_n.",
+                "text": "s_c displays incredible skill, driving the mother white lizard they track down out of the territory almost by themselves. Now neither the lizard nor her hatchlings pose a threat to c_n.",
                 "exp": 30,
                 "weight": 20,
                 "stat_skill": ["FIGHTER,3"],
@@ -791,7 +791,7 @@
         "chance_of_success": 20,
         "success_outcomes": [
             {
-                "text": "It takes r_c's every scrap of bravery and strength to drive away the white lizard - her near grown litter, fat on the bounty of leaf-fall, is a challenge for another day. c_n will have to deal with the young lizards now roaming motherless in their woods, before they start to compete for prey in leaf-bare.",
+                "text": "It takes r_c's every scrap of bravery and strength to drive away the white lizard - her near grown hatchlings, fat on the bounty of leaf-fall, is a challenge for another day. c_n will have to deal with the young lizards now roaming motherless in their woods, before they start to compete for prey in leaf-bare.",
                 "exp": 50,
                 "weight": 20,
                 "relationships": [
@@ -805,7 +805,7 @@
                 ]
             },
             {
-                "text": "s_c displays incredible skill, driving the mother white lizard and her brood out of c_n's plains all by themselves. Now neither the lizard nor her cubs pose a threat to the Clan. They swell with pride, feeling the confidence of knowing that they're truly one of the best fighters c_n has ever produced.",
+                "text": "s_c displays incredible skill, driving the mother white lizard and her brood out of c_n's plains all by themselves. Now neither the lizard nor her hatchlings pose a threat to the Clan. They swell with pride, feeling the confidence of knowing that they're truly one of the best fighters c_n has ever produced.",
                 "exp": 50,
                 "weight": 20,
                 "stat_skill": ["FIGHTER,3"],
@@ -849,7 +849,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "Never threaten a mother's young - the white lizard kills r_c in the skirmish, and carries off the body to feed her litter.",
+                "text": "Never threaten a mother's young - the white lizard kills r_c in the skirmish, and carries off the body to feed her hatchlings.",
                 "exp": 0,
                 "weight": 10,
                 "dead_cats": ["r_c"],
@@ -939,7 +939,7 @@
         "chance_of_success": 40,
         "success_outcomes": [
             {
-                "text": "The patrol charges the blue lizard, and she runs, leaving the scent of eggs in the air behind her. But they don't know where her cubs might've been hidden, and they'll be old enough to survive without her - this bodes ill for leaf-bare.",
+                "text": "The patrol charges the blue lizard, and she runs, leaving the scent of eggs in the air behind her. But they don't know where her hatchlings might've been hidden, and they'll be old enough to survive without her - this bodes ill for leaf-bare.",
                 "exp": 30,
                 "weight": 20,
                 "relationships": [
@@ -953,7 +953,7 @@
                 ]
             },
             {
-                "text": "The patrol sneaks closer, until p_l realizes that the blue lizard is approaching her den. Her cubs, nearly full grown on prey stolen from c_n's territory, poke their heads out, and the slugcats yowl in outrage. They charge the den, killing two of the cubs before the lizard runs with her third.",
+                "text": "The patrol sneaks closer, until p_l realizes that the blue lizard is approaching her den. Her hatchlings, nearly full grown on prey stolen from c_n's territory, poke their heads out, and the slugcats yowl in outrage. They charge the den, killing two of the hatchlings before the lizard runs with her third.",
                 "exp": 30,
                 "weight": 5,
                 "prey": ["large"],
@@ -968,7 +968,7 @@
                 ]
             },
             {
-                "text": "s_c holds the patrol back until they spot the blue lizard's mate, approaching with poached prey in his jaws. Together, the slugcats ambush the lizards, bursting from cover with claws unsheathed as a vicious fight starts. But warriors fight as a team, and the lizards do not, and one flees, abandoning its mate and cubs to the fury of c_n.",
+                "text": "s_c holds the patrol back until they spot the blue lizard's mate, approaching with poached prey in his jaws. Together, the slugcats ambush the lizards, bursting from cover with spears unsheathed as a vicious fight starts. But warriors fight as a team, and the lizards do not, and one flees, abandoning its mate and hatchlings to the fury of c_n.",
                 "exp": 30,
                 "weight": 20,
                 "stat_skill": ["CLEVER,1", "FIGHTER,1"],
@@ -1041,7 +1041,7 @@
         "chance_of_success": 40,
         "success_outcomes": [
             {
-                "text": "Sneaking closer, r_c realizes that the wind carries the scent of eggs from the lizard. It's a blue lizard - and she has cubs. Eventually she leaves the area, and r_c begins the hunt, checking every burrow, every crevice, every hole until they stumble over the den. Two of the cubs flee into the grasslands, while the third falls to r_c's claws.",
+                "text": "Sneaking closer, r_c realizes that the wind carries the scent of eggs from the lizard. It's a blue lizard - and she has hatchlings. Eventually she leaves the area, and r_c begins the hunt, checking every burrow, every crevice, every hole until they stumble over the den. Two of the hatchlings flee into the grasslands, while the third falls to r_c's spear.",
                 "exp": 30,
                 "weight": 20,
                 "prey": ["medium"],
@@ -1070,7 +1070,7 @@
                 ]
             },
             {
-                "text": "s_c scents the air, following the eggs scent of the mother blue lizard from afar. It means they can position themselves for the perfect ambush, leaping from cover to fasten their teeth in her throat. Her cubs will be old enough to survive without her, but this lizard will never raise kitten killers again.",
+                "text": "s_c scents the air, following the eggs scent of the mother blue lizard from afar. It means they can position themselves for the perfect ambush, leaping from cover to fasten their teeth in her throat. Her hatchlings will be old enough to survive without her, but this lizard will never raise slugpup killers again.",
                 "exp": 30,
                 "weight": 20,
                 "stat_skill": ["CLEVER,1", "FIGHTER,1"],
@@ -1138,7 +1138,7 @@
         "max_cats": 6,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "The patrol catches the scent of a lizard. Tracking it, they find a blue lizard feeding on a calf carcass. The slugcat-sized predator definitely didn't kill this massive hunk of fresh-kill.",
+        "intro_text": "The patrol catches the scent of a lizard. Tracking it, they find a blue lizard feeding on a rain deer carcass. The slugcat-sized predator definitely didn't kill this massive hunk of fresh-kill.",
         "decline_text": "The patrol decides not to quarrel with the lizard - bigger predators will be attracted here. Best to leave sooner rather than later.",
         "chance_of_success": 40,
         "success_outcomes": [
@@ -1174,7 +1174,7 @@
                 ]
             },
             {
-                "text": "While the rest of the patrol feeds on the kill, the blue lizard gnawing on the head at the other end in uneasy truce, s_c keeps watch. It turns out to have been a wise move, as they spot a cougar's ears sticking up out of the grass. The kill's original owner is coming back, and the slugcats vacate with speed.",
+                "text": "While the rest of the patrol feeds on the kill, the blue lizard gnawing on the head at the other end in uneasy truce, s_c keeps watch. It turns out to have been a wise move, as they spot a red lizard's frills sticking up out of the grass. The kill's original owner is coming back, and the slugcats vacate with speed.",
                 "exp": 20,
                 "weight": 20,
                 "stat_trait": [
@@ -1217,7 +1217,7 @@
                 "prey": ["very_small"]
             },
             {
-                "text": "The blue lizard gives up the kill, but s_c pursues the lizard anyway... up until it turns and threatens them with snapping teeth. s_c calls the rest of the patrol for backup and no one is injured, but by the time they get back to the kill ravens are circling overhead. The patrol gives it up, knowing bigger predators will arrive soon.",
+                "text": "The blue lizard gives up the kill, but s_c pursues the lizard anyway... up until it turns and threatens them with snapping teeth. s_c calls the rest of the patrol for backup and no one is injured, but by the time they get back to the kill noodleflies are circling overhead. The patrol gives it up, knowing bigger predators will arrive soon.",
                 "exp": 0,
                 "weight": 20,
                 "stat_trait": [
@@ -1252,18 +1252,18 @@
         "max_cats": 1,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "r_c catches the scent of a lizard. Tracking it, they find a blue lizard feeding on a calf carcass. The slugcat-sized predator definitely didn't kill this massive hunk of fresh-kill.",
+        "intro_text": "r_c catches the scent of a lizard. Tracking it, they find a blue lizard feeding on a rain deer carcass. The slugcat-sized predator definitely didn't kill this massive hunk of fresh-kill.",
         "decline_text": "r_c decides not to quarrel with the lizard - bigger predators will be attracted here. Best to leave sooner rather than later.",
         "chance_of_success": 40,
         "success_outcomes": [
             {
-                "text": "r_c approaches the kill, fur puffed up. The blue lizard grumbles, but with a hiss both animals agree to disagree, feeding from opposite ends of the calf without further trouble. r_c is able to find some decent scraps to carry back to camp, though with only them there they can't bring back as much meat as they'd like.",
+                "text": "r_c approaches the kill, spear unsheathed and snarling. The blue lizard grumbles, but with a hiss both animals agree to disagree, feeding from opposite ends of the fawn without further trouble. r_c is able to find some decent scraps to carry back to camp, though with only them there they can't bring back as much meat as they'd like.",
                 "exp": 10,
                 "weight": 20,
                 "prey": ["small"]
             },
             {
-                "text": "Watching the blue lizard at the carcass, s_c notices it stripping meat from the calf and caching it in little holes, and starts to copy it. The bigger predators will return to claim the calf soon, but by the time they do s_c will have hidden away the choicest morsels to fetch later.",
+                "text": "Watching the blue lizard at the carcass, s_c notices it stripping meat from the fawn and caching it in little holes, and starts to copy it. The bigger predators will return to claim the fawn soon, but by the time they do s_c will have hidden away the choicest morsels to fetch later.",
                 "exp": 10,
                 "weight": 20,
                 "stat_skill": ["FIGHTER,1"],
@@ -1294,7 +1294,7 @@
                 "weight": 20
             },
             {
-                "text": "The blue lizard gives up the kill, but s_c pursues the lizard anyway... up until it turns and threatens them with snapping teeth. s_c dances out of the way, but hears the caw of ravens descending on the carcass, and knows it would be too dangerous to return.",
+                "text": "The blue lizard gives up the kill, but s_c pursues the lizard anyway... up until it turns and threatens them with snapping teeth. s_c dances out of the way, but hears the noot of noodleflies descending on the carcass, and knows it would be too dangerous to return.",
                 "exp": 0,
                 "weight": 20,
                 "stat_trait": [
@@ -1307,7 +1307,7 @@
                 ]
             },
             {
-                "text": "r_c happily tucks into the massive calf - there's more than enough room for both them and the small lizard to feed. They hear a massive, outraged yowl, and a blow from behind sends them to the Void with a single hit. They never saw what did it.",
+                "text": "r_c happily tucks into the massive fawn - there's more than enough room for both them and the small lizard to feed. They hear a massive, outraged yowl, and a blow from behind sends them to the Void with a single hit. They never saw what did it.",
                 "exp": 0,
                 "weight": 10,
                 "dead_cats": ["r_c"],
@@ -1330,7 +1330,7 @@
                 ],
                 "history_text": {
                     "scar": "m_c carries a scar from fighting with a blue lizard.",
-                    "reg_death": "While scavenging alone, m_c was killed by a predator they didn't see.",
+                    "reg_death": "While scavenging alone, m_c was killed by a predator they challenged.",
                     "lead_death": "{VERB/m_c/were/was} killed by a predator"
                 }
             },
@@ -1615,7 +1615,7 @@
         "max_cats": 6,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "p_l's patrol strolls leisurely through the plains, enjoying the cool air. One slugcat raises their tail, signaling the others to be still; they've scented lanternmice nearby.",
+        "intro_text": "p_l's patrol strolls leisurely through the plains, enjoying the cool air. One slugcat raises their paw, signaling the others to be still; they've scented lanternmice nearby.",
         "decline_text": "p_l quietly shakes their head and leads the patrol elsewhere. Better not to disturb the lanternmice, who are loud and territorial.",
         "chance_of_success": 40,
         "success_outcomes": [
@@ -1748,7 +1748,7 @@
         "chance_of_success": 40,
         "success_outcomes": [
             {
-                "text": "While checking in the tall grass for signs of their prey, the yeek bursts from cover. It runs nearly under app1's claws, and they don't pounce so much as fall on it! Still, no one else was around to see their inelegant kill, and app1 feels very mature, bringing in prey to the fresh-kill pile by themselves.",
+                "text": "While checking in the tall grass for signs of their prey, the yeek bursts from cover. It runs nearly under app1's paws, and they don't pounce so much as fall on it! Still, no one else was around to see their inelegant kill, and app1 feels very mature, bringing in prey to the fresh-kill pile by themselves.",
                 "exp": 20,
                 "weight": 20,
                 "prey": ["medium"]
@@ -1870,7 +1870,7 @@
                 ]
             },
             {
-                "text": "While the way app1 tries to burst out of a bush on a eggbug was categorically silly, the yeeks that were startled into the claws of the rest of the hunting patrol make up for it, and all the adults remember being young, dumb, and stupid with the desire to impress a pretty pelt. p_l takes app1 aside for a quiet word about toning it down a little, but the hunting trip goes well.",
+                "text": "While the way app1 tries to burst out of a bush on a eggbug was categorically silly, the yeeks that were startled into the paws of the rest of the hunting patrol make up for it, and all the adults remember being young, dumb, and stupid with the desire to impress a pretty pelt. p_l takes app1 aside for a quiet word about toning it down a little, but the hunting trip goes well.",
                 "exp": 20,
                 "weight": 5,
                 "prey": ["large"],
@@ -3403,7 +3403,7 @@
         "relationship_constraint": ["siblings"],
         "success_outcomes": [
             {
-                "text": "A p_mp_s and two p_tp_p is nothing to sniff at, as a hunting success, but stars above being alone with r_c makes p_l feel like a kitten again. And not in the cute way either, in the chewing on tails, whiny, petty, immature way. Ugh.",
+                "text": "A p_mp_s and two p_tp_p is nothing to sniff at, as a hunting success, but stars above being alone with r_c makes p_l feel like a slugpup again. And not in the cute way either, in the chewing on tails, whiny, petty, immature way. Ugh.",
                 "exp": 20,
                 "weight": 20,
                 "prey": ["medium"],
@@ -3572,7 +3572,7 @@
         "relationship_constraint": ["siblings"],
         "success_outcomes": [
             {
-                "text": "Watching r_c execute a fantastic leap to bring down a p_mp_s, p_l smiles. Does r_c remember the time {PRONOUN/r_c/subject} tried to do that as a kitten, and stood on {PRONOUN/r_c/poss} own tail? The siblings laugh about it as they move on to the next hunting ground.",
+                "text": "Watching r_c execute a fantastic leap to bring down a p_mp_s, p_l smiles. Does r_c remember the time {PRONOUN/r_c/subject} tried to do that as a slugpup, and stood on {PRONOUN/r_c/poss} own tail? The siblings laugh about it as they move on to the next hunting ground.",
                 "exp": 20,
                 "weight": 20,
                 "prey": ["medium"],
@@ -3813,13 +3813,13 @@
             "all apprentices": [-1, -1]
         },
         "weight": 20,
-        "intro_text": "As the earth shakes with the distant rumbles of fighting, mating thunderbeasts,  p_l is out on a hunting patrol with their siblings.",
+        "intro_text": "As the earth shakes with the distant rumbles of snapping miros birds, p_l is out on a hunting patrol with their siblings.",
         "decline_text": "Actually, {PRONOUN/p_l/subject}'d rather try fishing for prey. {PRONOUN/p_l/subject/CAP} wave {PRONOUN/p_l/poss} siblings off with a flick of {PRONOUN/p_l/poss} tail and {VERB/p_l/settle/settles} down at the riverbank.",
         "chance_of_success": 50,
         "relationship_constraint": ["siblings"],
         "success_outcomes": [
             {
-                "text": "A p_mp_s, three p_tp_p, and a couple p_mp_p are nothing to sniff at, as a hunting success, but stars above being alone with {PRONOUN/p_l/poss} siblings makes p_l feel like a kitten again. And not in the cute way either, in the chewing on tails, whiny, petty, immature way. Ugh.",
+                "text": "A p_mp_s, three p_tp_p, and a couple p_mp_p are nothing to sniff at, as a hunting success, but stars above being alone with {PRONOUN/p_l/poss} siblings makes p_l feel like a slugpup again. And not in the cute way either, in the chewing on tails, whiny, petty, immature way. Ugh.",
                 "exp": 20,
                 "weight": 20,
                 "prey": ["medium"],
@@ -3988,7 +3988,7 @@
         "relationship_constraint": ["siblings"],
         "success_outcomes": [
             {
-                "text": "Watching r_c execute a fantastic leap to bring down a p_mp_s, p_l smiles. Does r_c remember the time {PRONOUN/r_c/subject} tried to do that as a kitten, and stood on {PRONOUN/r_c/poss} own tail? The siblings laugh about it together as they move on to the next hunting ground.",
+                "text": "Watching r_c execute a fantastic leap to bring down a p_mp_s, p_l smiles. Does r_c remember the time {PRONOUN/r_c/subject} tried to do that as a slugpup, and stood on {PRONOUN/r_c/poss} own tail? The siblings laugh about it together as they move on to the next hunting ground.",
                 "exp": 20,
                 "weight": 20,
                 "prey": ["medium"],
@@ -4228,11 +4228,11 @@
         "min_max_status": {},
         "weight": 20,
         "intro_text": "p_l finds a patch of herbs that {PRONOUN/p_l/subject} believe c_n might need for their stores. {PRONOUN/p_l/subject/CAP} freely admit to {PRONOUN/p_l/poss} patrol {PRONOUN/p_l/subject} {VERB/p_l/aren't/isn't} a cleric, and ask {PRONOUN/p_l/poss} companions' advice. What do they know about this part of the plains' herbal properties, especially in the harvest season of leaf-fall?",
-        "decline_text": "They decide to focus on hunting and leave the herb collecting to the medicine slugcats.",
+        "decline_text": "They decide to focus on hunting and leave the herb collecting to the clerics.",
         "chance_of_success": 50,
         "success_outcomes": [
             {
-                "text": "It's not their normal task, but they're all smart enough to value supporting the Clan's medicine den. The patrol brings the herbs back to camp and they are put to good use.",
+                "text": "It's not their normal task, but they're all smart enough to value supporting the Clan's cleric's den. The patrol brings the herbs back to camp and they are put to good use.",
                 "exp": 10,
                 "weight": 20,
                 "herbs": ["random_herbs"],

@@ -901,7 +901,7 @@ def create_new_cat(
                 
         # give em a collar if they got one
         if accessory:
-            new_cat.pelt.accessories = accessory
+            new_cat.pelt.accessories.append(accessory)
 
         # give apprentice aged cat a mentor
         if new_cat.age == "adolescent":
@@ -1743,9 +1743,9 @@ def get_leader_life_notice() -> str:
         text = f"The leader has {int(lives)} lives left."
     elif lives <= 0:
         if game.clan.instructor.df is False:
-            text = "The leader has no lives left and has travelled to StarClan."
+            text = "The leader has no lives left and has travelled to the Void."
         else:
-            text = "The leader has no lives left and has travelled to the Dark Forest."
+            text = "The leader has no lives left and has travelled to the RotWound."
 
     return text
 
@@ -2782,8 +2782,8 @@ def generate_sprite(
                 sprites.sprites["white" + cat.pelt.vitiligo + cat_sprite], (0, 0)
             )
 
-        # draw non-boba eyes
-        if cat.pelt.eye_colour not in Pelt.riveye_colours:
+        # draw normal eyes
+        if cat.pelt.eye_colour not in Pelt.riveye_colours and cat.pelt.eye_colour not in Pelt.buttoneye_colours:
             eyes = sprites.sprites["eyes" + cat.pelt.eye_colour + cat_sprite].copy()
             if cat.pelt.eye_colour2 != None:
                 eyes.blit(
@@ -2819,8 +2819,8 @@ def generate_sprite(
         elif dead:
             new_sprite.blit(sprites.sprites["lineartdead" + cat_sprite], (0, 0))
 
-        # draw riv boba eyes
-        if cat.pelt.eye_colour in Pelt.riveye_colours:
+        # draw riv and button eyes
+        if cat.pelt.eye_colour in Pelt.riveye_colours or cat.pelt.eye_colour in Pelt.buttoneye_colours:
             eyes = sprites.sprites["eyes" + cat.pelt.eye_colour + cat_sprite].copy()
             if cat.pelt.eye_colour2 != None:
                 eyes.blit(

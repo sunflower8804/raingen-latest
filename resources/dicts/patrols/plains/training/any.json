@@ -1056,7 +1056,7 @@
                 }
             },
             {
-                "text": "r_c eventually manages to pull {PRONOUN/r_c/self} free, but {PRONOUN/r_c/subject}{VERB/r_c/'re/'s} wheezing and injured. It's all {PRONOUN/r_c/subject} can do to find some tall grass to shelter in through the night out on the plains until a patrol finds {PRONOUN/r_c/object} the next morning and helps {PRONOUN/r_c/object} to the medicine den.",
+                "text": "r_c eventually manages to pull {PRONOUN/r_c/self} free, but {PRONOUN/r_c/subject}{VERB/r_c/'re/'s} wheezing and injured. It's all {PRONOUN/r_c/subject} can do to find some tall grass to shelter in through the night out on the plains until a patrol finds {PRONOUN/r_c/object} the next morning and helps {PRONOUN/r_c/object} to the cleric den.",
                 "exp": 0,
                 "weight": 10,
                 "injury": [
@@ -2633,11 +2633,11 @@
         "weight": 40,
         "chance_of_success": 60,
         "pl_skill_constraint": ["LORE,1", "TEACHER,1", "INSIGHTFUL,1"],
-        "intro_text": "Don't get too close, p_l warns the apprentices, well before they can even smell the tacky stink of the tunderpath on the air. They're here to learn, <i>not</i> to take risks. Does everyone understand that?",
+        "intro_text": "Don't get too close, p_l warns the apprentices, well before they can even smell the tacky stink of the Thunderpath on the air. They're here to learn, <i>not</i> to take risks. Does everyone understand that?",
         "decline_text": "p_l, worried that the apprentices aren't giving the patrol the focus is deserves, calls it off early.",
         "success_outcomes": [
                 {
-                    "text": "Sombrely, words dark and plain, s_c recites the slugcats {PRONOUN/s_c/subject} {VERB/s_c/know/knows} who've been hurt by the tunderpath, killed by the monsters, bodies twisted and broken, thrown about by inconceivable impacts. It's not to fighten. The apprentices need to know the realities of the danger of monsters. Only knowledge can protect them.",
+                    "text": "Sombrely, words dark and plain, s_c recites the slugcats {PRONOUN/s_c/subject} {VERB/s_c/know/knows} who've been hurt by the Thunderpath, killed by the monsters, bodies twisted and broken, thrown about by inconceivable impacts. It's not to fighten. The apprentices need to know the realities of the danger of monsters. Only knowledge can protect them.",
                     "exp": 30,
                     "weight": 20,
                     "art": "pln_hunt_twolegsobject1",
@@ -2675,7 +2675,7 @@
                     ]
                 },
                 {
-                    "text": "See how fast the monsters go? No, app1, that's too close - s_c yanks {PRONOUN/app1/object} back unceremoniously, though app1 is fox-lengths away from the thunderpath. Still, app1 and app2 shiver with fear as the monster passes, the great metal body hurling itself down is set path incomprehensibly fast.",
+                    "text": "See how fast the monsters go? No, app1, that's too close - s_c yanks {PRONOUN/app1/object} back unceremoniously, though app1 is centipede-lengths away from the thunderpath. Still, app1 and app2 shiver with fear as the monster passes, the great metal body hurling itself down is set path incomprehensibly fast.",
                     "exp": 30,
                     "weight": 20,
                     "art": "pln_hunt_twolegsobject1",

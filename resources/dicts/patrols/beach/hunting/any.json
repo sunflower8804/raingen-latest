@@ -337,7 +337,7 @@
                 ]
             },
             {
-                "text": "While on the hunt, app1 tumbles right down into a rock pool while {PRONOUN/app1/poss} attention is elsewhere. Bruised and sore, app1 has to report to the medicine scug den when {PRONOUN/app1/subject} {VERB/app1/return/returns} to camp.",
+                "text": "While on the hunt, app1 tumbles right down into a rock pool while {PRONOUN/app1/poss} attention is elsewhere. Bruised and sore, app1 has to report to the cleric den when {PRONOUN/app1/subject} {VERB/app1/return/returns} to camp.",
                 "exp": 0,
                 "weight": 10,
                 "injury": [
@@ -5052,7 +5052,7 @@
                 "prey": ["very_small"]
             },
             {
-                "text": "The patrol tracks down a blue lizard trespassing on c_n land. s_c runs at it without thinking, and instead of intimidating the lizard into fleeing for the border, the hasty attack makes the blue lizard skitter up a cliff and start yelping. s_c tries to make up for the mistake by following the lizard up into the branches, which goes even more poorly and forces the patrol to help {PRONOUN/s_c/object} back to the medicine den.",
+                "text": "The patrol tracks down a blue lizard trespassing on c_n land. s_c runs at it without thinking, and instead of intimidating the lizard into fleeing for the border, the hasty attack makes the blue lizard skitter up a cliff and start yelping. s_c tries to make up for the mistake by following the lizard up into the branches, which goes even more poorly and forces the patrol to help {PRONOUN/s_c/object} back to the cleric den.",
                 "exp": 0,
                 "weight": 10,
                 "stat_trait": [
@@ -5309,7 +5309,7 @@
                 "prey": ["very_small"]
             },
             {
-                "text": "The patrol tracks down a blue lizard trespassing on c_n land. s_c runs at it without thinking, and instead of intimidating the lizard into fleeing for the border, the hasty attack makes the blue lizard skitter up a cliff and start yelping. s_c tries to make up for the mistake by following the lizard up into the branches, which goes even more poorly and forces the patrol to help {PRONOUN/s_c/object} back to the medicine den.",
+                "text": "The patrol tracks down a blue lizard trespassing on c_n land. s_c runs at it without thinking, and instead of intimidating the lizard into fleeing for the border, the hasty attack makes the blue lizard skitter up a cliff and start yelping. s_c tries to make up for the mistake by following the lizard up into the branches, which goes even more poorly and forces the patrol to help {PRONOUN/s_c/object} back to the cleric den.",
                 "exp": 0,
                 "weight": 10,
                 "stat_trait": [

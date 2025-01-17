@@ -393,7 +393,7 @@
                 ]
             },
             {
-                "text": "With so many cats all working as one, the patrol starts to beat the dog back. But just as the tide of the fight seems about to turn in their favour, one lucky strike hits r_c, and those vicious jaws send {PRONOUN/r_c/object} to StarClan.",
+                "text": "With so many cats all working as one, the patrol starts to beat the dog back. But just as the tide of the fight seems about to turn in their favour, one lucky strike hits r_c, and those vicious jaws send {PRONOUN/r_c/object} to the Void.",
                 "exp": 0,
                 "weight": 10,
                 "dead_cats": ["r_c"],

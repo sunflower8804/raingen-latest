@@ -99,7 +99,7 @@
             "normal adult": [-1, -1]
         },
         "weight": 20,
-        "intro_text": "p_l heads out, leading a patrol of medicine slugcats to go find the buds of newleaf.",
+        "intro_text": "p_l heads out, leading a patrol of clerics to go find the buds of newleaf.",
         "decline_text": "... And they're called back almost immediately, as one of the elders has started hacking something up.",
         "chance_of_success": 60,
         "success_outcomes": [
@@ -1314,7 +1314,7 @@
         "chance_of_success": 40,
         "success_outcomes": [
             {
-                "text": "As they walk, p_l teaches app1 about how crucial scugmint is for coughs, and how, although its scent holds drugged pleasure, part of the responsibility of being a cleric is avoiding becoming caught in its haze. The medicine slugcats carefully pick out scugmint from its known hiding places, carrying it back to camp where it will protect the Clan.",
+                "text": "As they walk, p_l teaches app1 about how crucial scugmint is for coughs, and how, although its scent holds drugged pleasure, part of the responsibility of being a cleric is avoiding becoming caught in its haze. The clerics carefully pick out scugmint from its known hiding places, carrying it back to camp where it will protect the Clan.",
                 "exp": 30,
                 "weight": 20,
                 "herbs": ["scugmint"],
@@ -1863,7 +1863,7 @@
                 ]
             },
             {
-                "text": "s_c has managed to discover, with time and experience, that elder leaf picking is actually better handled by chewing off several low hanging, thin branches, and carrying those back to camp instead. They pass on the trick to app1, and once they're back at camp both medicine slugcats strip off the leaves and give them a quick wash.",
+                "text": "s_c has managed to discover, with time and experience, that elder leaf picking is actually better handled by chewing off several low hanging, thin branches, and carrying those back to camp instead. They pass on the trick to app1, and once they're back at camp both clerics strip off the leaves and give them a quick wash.",
                 "exp": 20,
                 "weight": 20,
                 "stat_skill": ["SENSE,2"],
@@ -2729,7 +2729,7 @@
                 ]
             },
             {
-                "text": "It takes all of s_c's considerable talent for such things to hunt down the lungwort within their borders, the medicine slugcats visiting each likely nook and cranny in a carefully planned search pattern until, finally, those telltale speckled leaves are found.",
+                "text": "It takes all of s_c's considerable talent for such things to hunt down the lungwort within their borders, the clerics visiting each likely nook and cranny in a carefully planned search pattern until, finally, those telltale speckled leaves are found.",
                 "exp": 20,
                 "weight": 20,
                 "stat_skill": ["SENSE,2", "CLEVER,3"],
@@ -2752,7 +2752,7 @@
                 ]
             },
             {
-                "text": "Night falls, and still s_c insists they keep going. Lungwort is the only reliable cure for yellowcough, and they just can't let c_n go without. Exhausted, but determined, the medicine slugcats persist patiently until they finally find the precious, speckled leaves.",
+                "text": "Night falls, and still s_c insists they keep going. Lungwort is the only reliable cure for yellowcough, and they just can't let c_n go without. Exhausted, but determined, the clerics persist patiently until they finally find the precious, speckled leaves.",
                 "exp": 20,
                 "weight": 20,
                 "stat_trait": ["patient"],
@@ -3097,7 +3097,7 @@
         "chance_of_success": 70,
         "success_outcomes": [
             {
-                "text": "The soft, rose-like scent of the mallow bushes drifts around p_l and app1 as they work, snipping off clumps of large, fuzzy three-nubbed leaves, and the occasional pink flower to be taken back to camp. Thankfully, another pink-flowered plant grows nearby, and the medicine slugcats had just begun to run out of betony. Bees hum through the air, not trying to bother the medicine slugcats, and p_l points out where they think the hive might be to app1.",
+                "text": "The soft, rose-like scent of the mallow bushes drifts around p_l and app1 as they work, snipping off clumps of large, fuzzy three-nubbed leaves, and the occasional pink flower to be taken back to camp. Thankfully, another pink-flowered plant grows nearby, and the clerics had just begun to run out of betony. Bees hum through the air, not trying to bother the clerics, and p_l points out where they think the hive might be to app1.",
                 "exp": 20,
                 "weight": 20,
                 "herbs": ["mallow", "betony"],
@@ -3477,7 +3477,7 @@
         "chance_of_success": 30,
         "success_outcomes": [
             {
-                "text": "The low-growing marigold creeps across the ground, recognizable by its strange leaves that look like they're pretending to be small fern fronds from a distance, and tansy, growing hidden nearby, is betrayed by its scent. The non-medicine slugcats wander straight past them, and have to be gently called back by p_l to harvest them.",
+                "text": "The low-growing marigold creeps across the ground, recognizable by its strange leaves that look like they're pretending to be small fern fronds from a distance, and tansy, growing hidden nearby, is betrayed by its scent. The non-clerics wander straight past them, and have to be gently called back by p_l to harvest them.",
                 "exp": 10,
                 "weight": 20,
                 "herbs": ["tansy", "marigold"],
@@ -3864,7 +3864,7 @@
                 "herbs": ["elder_leaves", "oak_leaves"]
             },
             {
-                "text": "As a basic infection-preventing herb, oak leaves are useful for nearly all of the various scrapes, cuts, and injuries p_l sees in the medicine den. Elder leaves work well alongside them, being great for easing the pains of a sprain, and to p_l's excitement they come across a young elder tree. p_l is always happy to bring a good crop of them back to the herb stores.",
+                "text": "As a basic infection-preventing herb, oak leaves are useful for nearly all of the various scrapes, cuts, and injuries p_l sees in the cleric den. Elder leaves work well alongside them, being great for easing the pains of a sprain, and to p_l's excitement they come across a young elder tree. p_l is always happy to bring a good crop of them back to the herb stores.",
                 "exp": 10,
                 "weight": 5,
                 "herbs": ["many_herbs", "elder_leaves", "oak_leaves"]
@@ -3929,7 +3929,7 @@
                 ]
             },
             {
-                "text": "As a basic infection-preventing herb, oak leaves are useful for nearly all of the various scrapes, cuts, and injuries p_l sees in the medicine den. Elder leaves work well alongside them, p_l explains to app1, being great for easing the pains of a sprain. To p_l's excitement, they soon come across a young elder tree, and the older slugcat quickly uses the oppertunity to teach app1 how to safely climb up the bark and gather the valuable herbs. Both slugcats return home carrying a good selection, tails held high and curled in satisfaction.",
+                "text": "As a basic infection-preventing herb, oak leaves are useful for nearly all of the various scrapes, cuts, and injuries p_l sees in the cleric den. Elder leaves work well alongside them, p_l explains to app1, being great for easing the pains of a sprain. To p_l's excitement, they soon come across a young elder tree, and the older slugcat quickly uses the oppertunity to teach app1 how to safely climb up the bark and gather the valuable herbs. Both slugcats return home carrying a good selection, tails held high and curled in satisfaction.",
                 "exp": 20,
                 "weight": 5,
                 "herbs": ["many_herbs", "elder_leaves", "oak_leaves"],
@@ -4039,7 +4039,7 @@
                 ]
             },
             {
-                "text": "As a basic infection-preventing herb, oak leaves are useful for nearly all of the various scrapes, cuts, and injuries p_l sees in the medicine den. Elder leaves work well alongside them, being great for easing the pains of a sprain, and to p_l's excitement they come across a young elder tree. Their Clanmates are, as expected, a huge help carrying everything back home.",
+                "text": "As a basic infection-preventing herb, oak leaves are useful for nearly all of the various scrapes, cuts, and injuries p_l sees in the cleric den. Elder leaves work well alongside them, being great for easing the pains of a sprain, and to p_l's excitement they come across a young elder tree. Their Clanmates are, as expected, a huge help carrying everything back home.",
                 "exp": 10,
                 "weight": 5,
                 "herbs": ["many_herbs", "elder_leaves", "oak_leaves"],
@@ -4309,7 +4309,7 @@
                 ]
             },
             {
-                "text": "Suitable for soothing throat and pelt irritation, and with a welcome - albeit weird - habit of consistently sprouting up on well-trodden paths, plantain is a basic, but valuable, herb to keep stocks of. It's even relatively innocuous taste-wise, making it easy to harvest for warriors who don't have the same tolerance to the taste of herbs the same way medicine slugcats do. p_l finds today's harvest growing overshadowed by a big mullein plant, and takes that too with help from their Clanmates.",
+                "text": "Suitable for soothing throat and pelt irritation, and with a welcome - albeit weird - habit of consistently sprouting up on well-trodden paths, plantain is a basic, but valuable, herb to keep stocks of. It's even relatively innocuous taste-wise, making it easy to harvest for warriors who don't have the same tolerance to the taste of herbs the same way clerics do. p_l finds today's harvest growing overshadowed by a big mullein plant, and takes that too with help from their Clanmates.",
                 "exp": 10,
                 "weight": 5,
                 "herbs": ["many_herbs", "plantain", "mullein"],
@@ -5375,7 +5375,7 @@
         "chance_of_success": 30,
         "success_outcomes": [
             {
-                "text": "With the drizzle hiding scents, p_l almost walks straight past the thyme plant - but one of the warriors calls them over. Thanks to its calming, well-loved scent, medicine slugcats aren't the only Clan slugcats who can identify this plant, a fact that p_l is grateful for right about now. p_l is relieved to come across a clump of goldenrod as they pad back to camp. They've been able to catch two prey with one blow today.",
+                "text": "With the drizzle hiding scents, p_l almost walks straight past the thyme plant - but one of the warriors calls them over. Thanks to its calming, well-loved scent, clerics aren't the only Clan slugcats who can identify this plant, a fact that p_l is grateful for right about now. p_l is relieved to come across a clump of goldenrod as they pad back to camp. They've been able to catch two prey with one blow today.",
                 "exp": 10,
                 "weight": 20,
                 "herbs": ["goldenrod", "thyme"],
@@ -5580,7 +5580,7 @@
                 ]
             },
             {
-                "text": "s_c, ever vulture-eyed, spots grass that looks suspiciously tall, with oddly thick blades. One sniff confirms it as wild garlic, and this patch has heaps to harvest with app1. To the medicine slugcats' delight, a mallow patch was growing not too far off.",
+                "text": "s_c, ever vulture-eyed, spots grass that looks suspiciously tall, with oddly thick blades. One sniff confirms it as wild garlic, and this patch has heaps to harvest with app1. To the clerics' delight, a mallow patch was growing not too far off.",
                 "exp": 20,
                 "weight": 20,
                 "stat_skill": ["SENSE,2"],

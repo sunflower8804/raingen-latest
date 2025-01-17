@@ -397,7 +397,7 @@
         ],
         "tags": [],
         "weight": 20,
-        "event_text": "m_c couldn't speak, yell for help, or beg StarClan to give {PRONOUN/m_c/object} a sign they were still with {PRONOUN/m_c/object}, {PRONOUN/m_c/poss} tongue having swelled up inside {PRONOUN/m_c/poss} dried mouth. As m_c collapses, feeling {PRONOUN/m_c/poss} body internally shut down because of dehydration and heat exhaustion, {PRONOUN/m_c/subject} {VERB/m_c/pray/prays} that {PRONOUN/m_c/poss} Clanmates locate m_c's body before {PRONOUN/m_c/subject} {VERB/m_c/become/becomes} unrecognizable under the sun.",
+        "event_text": "m_c couldn't speak, yell for help, or beg the Ascended to give {PRONOUN/m_c/object} a sign they were still with {PRONOUN/m_c/object}, {PRONOUN/m_c/poss} tongue having swelled up inside {PRONOUN/m_c/poss} dried mouth. As m_c collapses, feeling {PRONOUN/m_c/poss} body internally shut down because of dehydration and heat exhaustion, {PRONOUN/m_c/subject} {VERB/m_c/pray/prays} that {PRONOUN/m_c/poss} Clanmates locate m_c's body before {PRONOUN/m_c/subject} {VERB/m_c/become/becomes} unrecognizable under the sun.",
         "m_c": {
             "age": [
                 "adolescent"
@@ -512,7 +512,7 @@
         ],
         "tags": [],
         "weight": 20,
-        "event_text": "m_c never meant to meet StarClan this way, rotting away under the sun after fainting from dehydration, heat exhaustion, and overexertion. r_c tragically discovers {PRONOUN/m_c/poss} body, unable to stop {PRONOUN/r_c/poss} desperate wails at the sight of {PRONOUN/r_c/poss} child's body.",
+        "event_text": "m_c never meant to meet the Ascended this way, rotting away under the sun after fainting from dehydration, heat exhaustion, and overexertion. r_c tragically discovers {PRONOUN/m_c/poss} body, unable to stop {PRONOUN/r_c/poss} desperate wails at the sight of {PRONOUN/r_c/poss} child's body.",
         "m_c": {
             "age": [
                 "adolescent"

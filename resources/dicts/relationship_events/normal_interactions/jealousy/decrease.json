@@ -19,7 +19,7 @@
 		"interactions": [
 			"r_c surprises m_c with something nice.",
 			"r_c goes out of {PRONOUN/r_c/poss} way to help m_c with something without being asked.",
-			"r_c brings m_c herbs from the medicine den for a headache.",
+			"r_c brings m_c herbs from the cleric den for a headache.",
 			"r_c tells a Clanmate that m_c did a great job today.",
 			"m_c is grateful for something r_c did."
 		]
@@ -97,7 +97,7 @@
 		"id": "jealousy_app_de_med2",
 		"interactions": [
 			"m_c has been listening to r_c talk about how difficult herb memorization is.",
-			"m_c helps r_c wash mouse bile off of {PRONOUN/r_c/poss} paws.",
+			"m_c helps r_c wash lantern mouse bile off of {PRONOUN/r_c/poss} paws.",
 			"m_c carries bad-tasting herbs for r_c.",
 			"m_c comforts r_c's anxieties about being a good healer.",
 			"m_c lets r_c practice healing techniques on {PRONOUN/m_c/subject}.",

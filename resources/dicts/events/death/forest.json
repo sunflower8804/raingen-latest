@@ -29,7 +29,7 @@
         ],
         "tags": [],
         "weight": 20,
-        "event_text": "m_c was found dead underneath an oak tree with dog scent wreathing around {PRONOUN/m_c/object}.",
+        "event_text": "m_c was found dead underneath an oak tree with lizard scent wreathing around {PRONOUN/m_c/object}.",
         "m_c": {
             "not_skill": [
                 "CLIMBER,2"
@@ -45,8 +45,8 @@
         "history": [
             {
                 "cats": ["m_c"],
-                "reg_death": "m_c fell out of a tree while trying to escape from a dog.",
-                "lead_death": "fell out of a tree while trying to escape a dog"
+                "reg_death": "m_c fell out of a tree while trying to escape from a lizard.",
+                "lead_death": "fell out of a tree while trying to escape a lizard"
             }
         ]
     },
@@ -80,7 +80,7 @@
             "no_body"
         ],
         "weight": 20,
-        "event_text": "m_c was carried off by an owl, never to be seen again.",
+        "event_text": "m_c was carried off by an vulture, never to be seen again.",
         "m_c": {
             "age": [
                 "kitten", "adolescent"
@@ -89,7 +89,7 @@
         },
         "history": [{
             "cats": ["m_c"],
-            "reg_death": "m_c was carried away by an owl."
+            "reg_death": "m_c was carried away by an vulture."
         }]
     },
     {
@@ -100,7 +100,7 @@
         ],
         "tags": ["no_body"],
         "weight": 20,
-        "event_text": "r_c, guarding camp, yowls a warning as {PRONOUN/r_c/subject} {VERB/r_c/spot/spots} a circling shadow, right above m_c. r_c starts sprinting to m_c's position but can't get there in time, not before m_c is carried high into the sky by a rook.",
+        "event_text": "r_c, guarding camp, yowls a warning as {PRONOUN/r_c/subject} {VERB/r_c/spot/spots} a circling shadow, right above m_c. r_c starts sprinting to m_c's position but can't get there in time, not before m_c is carried high into the sky by a vulture.",
         "m_c": {
             "age": [ "kitten", "adolescent"],
             "status": [ "any" ],
@@ -115,7 +115,7 @@
         },
         "history": [{
             "cats": ["m_c"],
-            "reg_death": "m_c was grabbed by a rook, never to be seen again."
+            "reg_death": "m_c was grabbed by a vulture, never to be seen again."
         }]
     }
 ]

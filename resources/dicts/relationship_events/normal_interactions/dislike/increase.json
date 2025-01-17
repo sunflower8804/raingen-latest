@@ -320,7 +320,7 @@
 			"m_c wants to start an uprising against r_c.",
 			"m_c doesn't think r_c deserves {PRONOUN/r_c/poss} nine lives.",
 			"m_c tells {PRONOUN/m_c/poss} Clanmates that r_c should be overthrown.",
-			"m_c accuses r_c of being a mouthpiece of the Dark Forest.",
+			"m_c accuses r_c of being a mouthpiece of the RotWound.",
 			"m_c says r_c makes a mockery of past leaders' legacies.",
 			"m_c heckles r_c during meetings.",
 			"m_c accuses r_c of not putting the Clan first."
@@ -361,7 +361,7 @@
 			"m_c threatens r_c with exile.",
 			"m_c makes r_c do a tiring chore for the rest of the moon as punishment for something minor.",
 			"m_c threatens to give r_c a terrible name.",
-			"m_c claims {PRONOUN/m_c/subject} spoke with StarClan and heard bad things about r_c."
+			"m_c claims {PRONOUN/m_c/subject} spoke with the Ascended and heard bad things about r_c."
 		],
 		"main_status_constraint": [
 			"cleric",

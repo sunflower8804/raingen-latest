@@ -206,11 +206,11 @@ class History:
                 "be cold towards others", "refrain from socializing", "bicker with others"
             ],
             "aggression_raise": [
-                "be ready for a fight", "start a fight", "defend their beliefs", "use teeth and claws over words",
+                "be ready for a fight", "start a fight", "defend their beliefs", "use violence over words",
                 "resort to violence"
             ],
             "aggression_lower": [
-                "be slow to anger", "avoid a fight", "use words over teeth and claws", "try to avoid violence"
+                "be slow to anger", "avoid a fight", "use words over violence", "try to avoid violence"
             ],
             "stability_raise": [
                 "stay collected", "think things through", "be resilient",
@@ -262,7 +262,7 @@ class History:
             SkillPath.LORE: ["remembering lore"],
             SkillPath.CAMP: ["caring for camp"],
             SkillPath.HEALER: ["healing"],
-            SkillPath.STAR: ["connecting to starclan"],
+            SkillPath.STAR: ["connecting to the void"],
             SkillPath.OMEN: ["finding omens"],
             SkillPath.DREAM: ["understanding dreams"],
             SkillPath.CLAIRVOYANT: ["predicting the future"],

@@ -3155,7 +3155,7 @@
         "chance_of_success": 70,
         "success_outcomes": [
             {
-                "text": "It's alright, app1 assures app2. It wasn't on purpose - maybe {PRONOUN/app2/subject} could head to the medicine den after this. There are heaps of herbs to help app2 sleep, and this totally explains why {PRONOUN/app2/subject}{VERB/app2/'ve/'s} been yawning so much during training.",
+                "text": "It's alright, app1 assures app2. It wasn't on purpose - maybe {PRONOUN/app2/subject} could head to the cleric den after this. There are heaps of herbs to help app2 sleep, and this totally explains why {PRONOUN/app2/subject}{VERB/app2/'ve/'s} been yawning so much during training.",
                 "exp": 20,
                 "weight": 20,
                 "relationships": [
@@ -9239,7 +9239,7 @@
         "decline_text": "No one is interested in fables today.",
             "success_outcomes": [
                 {
-                "text": "As the first slugcat to ever pad through the stars, Silverpelt decorates her fur with the gleaming souls of fallen warriors to keep her company in the Void.",
+                "text": "As the first slugcat to ever pad through the stars, The Milky Way decorates her fur with the gleaming souls of fallen warriors to keep her company.",
                 "exp": 30,
                 "weight": 20,
                 "relationships": [
@@ -9260,7 +9260,7 @@
                     ]
                 },
                 {
-                    "text": "app1 listens as p_l speaks about the first slugcat to ever pad through the stars. Filled with awe, {PRONOUN/app1/subject} {VERB/app1/listen/listens} to p_l's story of how Silverpelt decorates her fur with the gleaming souls of fallen warriors to keep her company in the Void.",
+                    "text": "app1 listens as p_l speaks about the first slugcat to ever pad through the stars. Filled with awe, {PRONOUN/app1/subject} {VERB/app1/listen/listens} to p_l's story of how The Milky Way decorates her fur with the gleaming souls of fallen warriors.",
                     "exp": 30,
                     "weight": 20,
                     "relationships": [
@@ -9322,7 +9322,7 @@
                             ]
                         },
                         {
-                            "text": "s_c can't help but think that Silverpelt must have been lonely, if she decided to decorate her pelt with souls of fallen warriors.",
+                            "text": "s_c can't help but think that The Milky Way must have been lonely, if she decided to decorate her pelt with souls of fallen warriors.",
                             "exp": 30,
                             "weight": 20,
                             "can_have_stat": ["not_pl_rc"],
@@ -9357,7 +9357,7 @@
                                 ]
                             },
                             {
-                                "text": "s_c would love to be as strong as silverpelt, to be able to move the souls of dead slugcats so easily...",
+                                "text": "s_c would love to be as strong as The Milky Way, to be able to move the souls of dead slugcats so easily...",
                                 "exp": 30,
                                 "weight": 20,
                                 "can_have_stat": ["not_pl_rc"],
@@ -9459,7 +9459,7 @@
                     ]
                 },
                 {
-                    "text": "s_c shuffles {PRONOUN/s_c/poss} paws, not liking the idea of such a powerful being getting to control where {PRONOUN/s_c/subject} {VERB/s_c/go/goes} after death.",
+                    "text": "s_c shuffles {PRONOUN/s_c/poss} paws, not liking the idea of a slugcat using the dead do decorate herself.",
                     "exp": 0,
                     "weight": 20,
                     "can_have_stat": ["app"],
@@ -9505,7 +9505,7 @@
         "decline_text": "No one is interested bringing up that frustrating fable today.",
             "success_outcomes": [
                 {
-                "text": "Smug, slimy, and unpleasant, the slugcats of the Rubicon stole from c_n and every other Clan - a bunch of pathetic pilfering poncy wastes of air. Everyone should despise them for being cowardly ungrateful thieves, and were one ever found in c_n's lands, they would be driven out.",
+                "text": "Smug, slimy, and unpleasant, the slugcats of the RotWound stole from c_n and every other Clan - a bunch of pathetic pilfering poncy wastes of air. Everyone should despise them for being cowardly ungrateful thieves, and were one ever found in c_n's lands, they would be driven out.",
                 "exp": 30,
                 "weight": 20,
                 "art": "scaryghost_INTRO",
@@ -9527,7 +9527,7 @@
                     ]
                 },
                 {
-                    "text": "The slugcats of the Rubicon are a bunch of dung-gargling scat scooters, s_c spits. They stole from c_n, the yeek-hearts, and it is rumored they're such such mange-pelted thieves that Silverpelt herself threw them out from the Void.",
+                    "text": "The slugcats of the RotWound are a bunch of dung-gargling scat scooters, s_c spits. They stole from c_n, the yeek-hearts, and it is rumored they're such such mange-pelted thieves that the Void Worms themselves threw them out from the Void.",
                     "exp": 30,
                     "weight": 20,
                     "art": "scaryghost_INTRO",
@@ -9558,7 +9558,7 @@
                         ]
                 },
                 {
-                    "text": "The slugcats of the Rubicon are repulsive, s_c says, and the rest of the patrol is surprised to here the quiet fury in {PRONOUN/s_c/poss} tone. s_c will never forgive those who steal from the kind and generous, who take other slugcats hard work and try to profit from it.",
+                    "text": "The slugcats of the RotWound are repulsive, s_c says, and the rest of the patrol is surprised to here the quiet fury in {PRONOUN/s_c/poss} tone. s_c will never forgive those who steal from the kind and generous, who take other slugcats hard work and try to profit from it.",
                     "exp": 30,
                     "weight": 20,
                     "art": "scaryghost_INTRO",
@@ -9586,7 +9586,7 @@
                         ]
                 },
                 {
-                    "text": "The slugcats of the Rubicon are dirt-grubbing, sticky-pawed little balls of dung, s_c snarls and sharpens {PRONOUN/s_c/poss} claws. If they're ever spotted in c_n lands again, s_c will rip their pelt off!",
+                    "text": "The slugcats of the RotWound are dirt-grubbing, sticky-pawed little balls of dung, s_c snarls and sharpens {PRONOUN/s_c/poss} claws. If they're ever spotted in c_n lands again, s_c will rip their pelt off!",
                     "exp": 30,
                     "weight": 20,
                     "art": "scaryghost_INTRO",
@@ -9620,7 +9620,7 @@
             ],
             "fail_outcomes": [
                 {
-                    "text": "Denser than a Twoleg, opportunistic and sly, the slugcats of the Rubicon are no true Clan slugcats. They stole from c_n and the other Clans, harming the trust c_n has in outsiders greatly. p_l sighs. c_n might never have the same relationship with slugcats outside the Clan again, thanks to those ungrateful thieves.",
+                    "text": "The slugcats of the RotWound are no true Clan slugcats. They stole from c_n and the other Clans, harming the trust c_n has in outsiders greatly. p_l sighs. c_n might never have the same relationship with slugcats outside the Clan again, thanks to those ungrateful thieves.",
                     "exp": 0,
                     "weight": 20
                 }
@@ -11008,7 +11008,7 @@
         },
         "weight": 20,
         "intro_text": "It is almost dawn when the deputy rouses app1 for {PRONOUN/app1/poss} assessment. {PRONOUN/app1/subject/CAP} {VERB/app1/are/is} meant to find p_l posing as an enemy warrior somewhere on the territory and handle the situation. p_l could be anywhere!",
-        "decline_text": "app1 sheepishly looks up at the deputy, a guilty gleam in {PRONOUN/app1/poss} eyes, and says that {PRONOUN/app1/subject} {VERB/app1/have/has} a stomachache. {PRONOUN/app1/subject/CAP} hurriedly {VERB/app1/run/runs} to the medicine den, wondering how {PRONOUN/app1/subject} {VERB/app1/are/is} going to get away with this fake illness at sunhigh when the Clan shares tongues.",
+        "decline_text": "app1 sheepishly looks up at the deputy, a guilty gleam in {PRONOUN/app1/poss} eyes, and says that {PRONOUN/app1/subject} {VERB/app1/have/has} a stomachache. {PRONOUN/app1/subject/CAP} hurriedly {VERB/app1/run/runs} to the cleric den, wondering how {PRONOUN/app1/subject} {VERB/app1/are/is} going to get away with this fake illness at sunhigh when the Clan shares tongues.",
         "chance_of_success": 60,
         "success_outcomes": [
             {

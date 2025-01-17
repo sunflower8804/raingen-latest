@@ -20,7 +20,7 @@
         "chance_of_success": 60,
         "success_outcomes": [
             {
-                "text": "The sunlight feels great and the slugcats have a successful discussion, talking about what came up at the last half-moon meetings and whether it'll affect c_n.",
+                "text": "The sunlight feels great and the slugcats have a successful discussion, talking about what came up at the last half-cycle meetings and whether it'll affect c_n.",
                 "exp": 20,
                 "weight": 20,
                 "herbs": ["random_herbs"],
@@ -381,7 +381,7 @@
             "healer cats": [1, 6]
         },
         "weight": 5,
-        "intro_text": "As the medicine slugcats' patrol pads out into c_n territory, r_c tells p_l about the dream {PRONOUN/r_c/subject} had last night, and what the Ascended vision could mean for c_n.",
+        "intro_text": "As the clerics' patrol pads out into c_n territory, r_c tells p_l about the dream {PRONOUN/r_c/subject} had last night, and what the Ascended vision could mean for c_n.",
         "decline_text": "The slugcats don't talk about the vision, mouths too full of herbs.",
         "chance_of_success": 40,
         "success_outcomes": [
@@ -563,7 +563,7 @@
                 ]
             },
             {
-                "text": "p_l eyes go wide, fur puffing up, and tell r_c that {PRONOUN/r_c/poss} dream is a warning of death and destruction, thoroughly freaking r_c out and bringing unease to the patrol.",
+                "text": "p_l eyes go wide, clutching {PRONOUN/p_l/poss} herb bag tightly, and tell r_c that {PRONOUN/r_c/poss} dream is a warning of death and destruction, thoroughly freaking r_c out and bringing unease to the patrol.",
                 "exp": 0,
                 "weight": 20,
                 "art": "gen_train_argueMM",
@@ -704,7 +704,7 @@
                 "weight": 20
             },
             {
-                "text": "Somehow cobweb-gathering brings p_l to an almost-meditative state. Not only {VERB/p_l/are/is} {PRONOUN/p_l/subject} fairly confident of {PRONOUN/p_l/poss} next steps, having been given this vision, but {PRONOUN/p_l/subject} also {VERB/p_l/bring/brings} back a good haul to the medicine den stocks.",
+                "text": "Somehow cobweb-gathering brings p_l to an almost-meditative state. Not only {VERB/p_l/are/is} {PRONOUN/p_l/subject} fairly confident of {PRONOUN/p_l/poss} next steps, having been given this vision, but {PRONOUN/p_l/subject} also {VERB/p_l/bring/brings} back a good haul to the cleric's den stocks.",
                 "exp": 20,
                 "weight": 5,
                 "herbs": ["cobwebs"]
@@ -1024,7 +1024,7 @@
                 ]
             },
             {
-                "text": "p_l eyes go wide, fur puffing up, and tells the apprentice that {PRONOUN/app1/poss}'s dream is a warning of death and destruction, thoroughly freaking app1 out.",
+                "text": "p_l eyes go wide, clutching {PRONOUN/p_l/poss} herb bag tightly, and tells the apprentice that {PRONOUN/app1/poss}'s dream is a warning of death and destruction, thoroughly freaking app1 out.",
                 "exp": 0,
                 "weight": 20,
                 "art": "gen_train_argueMA",
@@ -1157,7 +1157,7 @@
                 "herbs": ["random_herbs"]
             },
             {
-                "text": "With the familiarity brought by {PRONOUN/s_c/poss} connection to the Ascended, s_c turns to the ghost haunting {PRONOUN/p_l/poss} path, meeting {PRONOUN/s_c/poss} star-walking ancestor with a purr and quiet confidence.",
+                "text": "With the familiarity brought by {PRONOUN/s_c/poss} connection to the Ascended, s_c turns to the ghost haunting {PRONOUN/p_l/poss} path, meeting {PRONOUN/s_c/poss} void-walking ancestor with a purr and quiet confidence.",
                 "exp": 30,
                 "weight": 20,
                 "stat_skill": ["CLAIRVOYANT,2", "STAR,2"],
@@ -1283,7 +1283,7 @@
                 ]
             },
             {
-                "text": "With the familiarity brought by {PRONOUN/s_c/poss} connection to the Ascended, s_c turns to the ghost haunting {PRONOUN/p_l/poss} path, meeting {PRONOUN/s_c/poss} star-walking ancestor with a purr and quiet confidence.",
+                "text": "With the familiarity brought by {PRONOUN/s_c/poss} connection to the Ascended, s_c turns to the ghost haunting {PRONOUN/p_l/poss} path, meeting {PRONOUN/s_c/poss} void-walking ancestor with a purr and quiet confidence.",
                 "exp": 30,
                 "weight": 20,
                 "stat_skill": ["CLAIRVOYANT,2", "STAR,2"],
@@ -1399,7 +1399,7 @@
                 "herbs": ["random_herbs"]
             },
             {
-                "text": "The scent of a familiar pelt reaches app1's nose - {PRONOUN/app1/subject} {VERB/app1/know/knows} this slugcat! {PRONOUN/app1/subject/CAP} {VERB/app1/wheel/wheels} around and {VERB/app1/bury/buries} {PRONOUN/app1/poss} face in sparkling fur, purring frantically.",
+                "text": "The scent of a familiar pelt reaches app1's nose - {PRONOUN/app1/subject} {VERB/app1/know/knows} this slugcat! {PRONOUN/app1/subject/CAP} {VERB/app1/wheel/wheels} around and {VERB/app1/bury/buries} {PRONOUN/app1/poss} face in the ghost's golden pelt, purring frantically.",
                 "exp": 30,
                 "weight": 5,
                 "herbs": ["random_herbs"]
@@ -1478,7 +1478,7 @@
                 ]
             },
             {
-                "text": "The scent of a familiar pelt reaches app1's nose - {PRONOUN/app1/subject} {VERB/app1/know/knows} this slugcat! {PRONOUN/app1/subject/CAP} {VERB/app1/wheel/wheels} around and {VERB/app1/bury/buries} {PRONOUN/app1/poss} face in sparkling fur, purring frantically.",
+                "text": "The scent of a familiar pelt reaches app1's nose - {PRONOUN/app1/subject} {VERB/app1/know/knows} this slugcat! {PRONOUN/app1/subject/CAP} {VERB/app1/wheel/wheels} around and {VERB/app1/bury/buries} {PRONOUN/app1/poss} face in the ghost's golden pelt, purring frantically.",
                 "exp": 30,
                 "weight": 5,
                 "herbs": ["random_herbs"],
@@ -1493,7 +1493,7 @@
                 ]
             },
             {
-                "text": "With the familiarity brought by their connection to the Ascended, s_c turns to the ghost haunting {PRONOUN/s_c/poss} path, meeting {PRONOUN/s_c/poss} star-walking ancestor with a purr and quiet confidence. app1 watches with eyes as round and dark as the new moon.",
+                "text": "With the familiarity brought by their connection to the Ascended, s_c turns to the ghost haunting {PRONOUN/s_c/poss} path, meeting {PRONOUN/s_c/poss} void-walking ancestor with a purr and quiet confidence. app1 watches with eyes as round and dark as the new moon.",
                 "exp": 30,
                 "weight": 20,
                 "stat_skill": ["CLAIRVOYANT,2"],
@@ -1581,7 +1581,7 @@
             "normal adult": [1, 6]
         },
         "weight": 5,
-        "intro_text": "During a patrol looking for herbs, p_l notices that r_c seems more quiet than usual. When prompted, r_c slowly asks if p_l could teach {PRONOUN/r_c/object} more about the nature of the Void.",
+        "intro_text": "During a patrol looking for herbs, p_l notices that r_c seems more quiet than usual. When prompted, r_c slowly asks if p_l could teach {PRONOUN/r_c/object} more about the nature of the Ascended.",
         "decline_text": "p_l opens {PRONOUN/p_l/poss} mouth to answer, but the cry of another patrol looking for {PRONOUN/p_l/object} shuts down the conversation. p_l races away towards the scene, leaving r_c behind.",
         "chance_of_success": 60,
         "success_outcomes": [
@@ -1735,7 +1735,7 @@
             "normal adult": [-1, -1]
         },
         "weight": 5,
-        "intro_text": "The gaggle of medicine slugcats strolls through c_n's territory, chatting amicably amongst themselves. It's a rare opportunity, for all of them to be out like this together, and each slugcat plans to make the most of it.",
+        "intro_text": "The gaggle of clerics stroll through c_n's territory, chatting amicably amongst themselves. It's a rare opportunity, for all of them to be out like this together, and each slugcat plans to make the most of it.",
         "decline_text": "Before they get very far, one of their Clanmates catches up to inform them of a small emergency back at camp that needs their attention. Oh well, maybe they'll get the chance again another day.",
         "chance_of_success": 20,
         "success_outcomes": [
@@ -1788,7 +1788,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "The medicine slugcats are too caught up in chatting with one another - they don't collect a single leaf.",
+                "text": "The clerics are too caught up in chatting with one another - they don't collect a single leaf.",
                 "exp": 0,
                 "weight": 20
             },
@@ -1817,7 +1817,7 @@
             "normal adult": [-1, -1]
         },
         "weight": 5,
-        "intro_text": "The apprentices strolls through c_n's territory, chatting amicably amongst themselves. The senior medicine slugcats are all busy back at camp, so the young slugcats get the chance to be out on their own today, which has everyone excited!",
+        "intro_text": "The apprentices strolls through c_n's territory, chatting amicably amongst themselves. The senior clerics are all busy back at camp, so the young slugcats get the chance to be out on their own today, which has everyone excited!",
         "decline_text": "Before they get very far, one of their Clanmates catches up to inform them that they're wanted back at camp. Oh well, maybe they'll get the chance again another day.",
         "chance_of_success": 30,
         "success_outcomes": [
@@ -2590,7 +2590,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "The two medicine slugcats walk in circles for a while, before realizing that they've completely forgotten where the herb patch is since it's been so long. How embarrassing!",
+                "text": "The two clerics walk in circles for a while, before realizing that they've completely forgotten where the herb patch is since it's been so long. How embarrassing!",
                 "exp": 0,
                 "weight": 20,
                 "relationships": [
@@ -2911,13 +2911,13 @@
             "normal adult": [1, 6]
         },
         "weight": 5,
-        "intro_text": "p_l thinks r_c is a bit of a feather-brain, so when {PRONOUN/r_c/subject} come up to p_l while p_l is gathering herbs and suggest replenishing the Clan's scugmint supply with a gleam in {PRONOUN/r_c/poss} eye, p_l hesitates.",
+        "intro_text": "p_l thinks r_c is a bit of a batfly-brain, so when {PRONOUN/r_c/subject} come up to p_l while p_l is gathering herbs and suggest replenishing the Clan's scugmint supply with a gleam in {PRONOUN/r_c/poss} eye, p_l hesitates.",
         "decline_text": "{PRONOUN/p_l/subject/CAP} aren't going to go after an herb renowned for the silliness it can cause with a slugcat {PRONOUN/p_l/subject} dislike. It's simply a bad idea.",
         "chance_of_success": 40,
         "relationship_constraint": ["dislike_20"],
         "success_outcomes": [
             {
-                "text": "They find absolutely no scugmint together, but strangely, r_c seems okay with that, just interested in chatting with p_l. So maybe {PRONOUN/r_c/subject}{VERB/r_c/'re/'s} a <i>nice</i> feather-brain.",
+                "text": "They find absolutely no scugmint together, but strangely, r_c seems okay with that, just interested in chatting with p_l. So maybe {PRONOUN/r_c/subject}{VERB/r_c/'re/'s} a <i>nice</i> batfly-brain.",
                 "exp": 30,
                 "weight": 20,
                 "art": "gen_train_talkingMW",
@@ -3000,7 +3000,7 @@
 	        "cleric": [1, 1]
     	},
     	"weight": 40,
-    	"intro_text": "p_l is out alone in c_n's territory when a shiver runs down {PRONOUN/p_l/poss} spine. {PRONOUN/p_l/subject/CAP} {VERB/p_l/stop/stops}. {PRONOUN/p_l/subject/CAP} slowly {VERB/p_l/turn/turns} {PRONOUN/p_l/poss} head. On the rosemary bush next to {PRONOUN/p_l/object}, the moth lazily stretches its wings, the Twoleg skull on its back grinning.",
+    	"intro_text": "p_l is out alone in c_n's territory when a shiver runs down {PRONOUN/p_l/poss} spine. {PRONOUN/p_l/subject/CAP} {VERB/p_l/stop/stops}. {PRONOUN/p_l/subject/CAP} slowly {VERB/p_l/turn/turns} {PRONOUN/p_l/poss} head. On the rosemary bush next to {PRONOUN/p_l/object}, the moth lazily stretches its wings, the scavenger skull on its back grinning.",
     	"decline_text": "It's just a moth, p_l tells {PRONOUN/p_l/self}, and continues on {PRONOUN/p_l/poss} way.",
     	"chance_of_success": 70,
     	"pl_skill_constraint": ["OMEN,3"],
@@ -3048,12 +3048,12 @@
             "normal adult": [1, 1]
         },
         "weight": 20,
-        "intro_text": "p_l is hoping to find some herbs growing in defiance of the weather, which is becoming increasingly cold. r_c offered to come along to help search. After some back and forth, they decide to see what's growing among the fields near a Twoleg farm.",
-        "decline_text": "The distant call of a Twoleg makes the slugcats think better of the whole idea.",
+        "intro_text": "p_l is hoping to find some herbs growing in defiance of the weather, which is becoming increasingly cold. r_c offered to come along to help search. After some back and forth, they decide to see what's growing among the fields near a scavenger farm.",
+        "decline_text": "The distant call of a scavenger makes the slugcats think better of the whole idea.",
         "chance_of_success": 60,
         "success_outcomes": [
             {
-                "text": "The two slugcats come upon a field of pumpkins, luckily empty of Twolegs. As p_l pokes around to see if any herbs are about, r_c gleefully sinks {PRONOUN/r_c/poss} claws into a pumpkin. {PRONOUN/r_c/subject/CAP} {VERB/r_c/scratch/scratches} some crude shapes into the pumpkin before declaring that it's a slugcat! p_l snickers and replies that it's the most beautiful slugcat they've ever seen. r_c slyly shoots back, yes, only second to p_l.",
+                "text": "The two slugcats come upon a field of pumpkins, luckily empty of scavengers. As p_l pokes around to see if any herbs are about, r_c gleefully sinks {PRONOUN/r_c/poss} spear into a pumpkin. {PRONOUN/r_c/subject/CAP} {VERB/r_c/scratch/scratches} some crude shapes into the pumpkin before declaring that it's a slugcat! p_l snickers and replies that it's the most beautiful slugcat they've ever seen. r_c slyly shoots back, yes, only second to p_l.",
                 "exp": 20,
                 "weight": 20,
                 "herbs": ["rosemary"],
@@ -3070,7 +3070,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "The two trot towards the field, tails raised nonchalantly. Suddenly, p_l hears a shriek and manages to duck out of the way as a crow swoops close. Angry caws ring across the field. r_c calls for retreat as more crows converge on them. The two slugcats run away from the field, fur fluffed in both terror and embarrassment.",
+                "text": "The two trot towards the field, tails raised nonchalantly. Suddenly, p_l hears a shriek and manages to duck out of the way as a vulture swoops close. Angry caws ring across the field. r_c calls for retreat as more vultures converge on them. The two slugcats run away from the field, both huffing from terror and embarrassment.",
                 "exp": 0,
                 "weight": 20
             }
@@ -3089,12 +3089,12 @@
             "cleric": [1, 6]
         },
         "weight": 20,
-        "intro_text": "p_l is hoping to find some herbs growing in defiance of the weather, which is becoming increasingly cold. r_c offered to come along to help search. After some back and forth, they decide to see what's growing among the fields near a Twoleg farm.",
-        "decline_text": "The distant call of a Twoleg makes the slugcats think better of the whole idea.",
+        "intro_text": "p_l is hoping to find some herbs growing in defiance of the weather, which is becoming increasingly cold. r_c offered to come along to help search. After some back and forth, they decide to see what's growing among the fields near a scavenger farm.",
+        "decline_text": "The distant call of a scavenger makes the slugcats think better of the whole idea.",
         "chance_of_success": 60,
         "success_outcomes": [
             {
-                "text": "The two slugcats come upon a field of pumpkins, luckily empty of Twolegs. As p_l pokes around to see if any herbs are about, r_c instead gleefully sinks {PRONOUN/r_c/poss} claws into a pumpkin. {PRONOUN/r_c/subject/CAP} {VERB/r_c/scratch/scratches} some crude shapes into the pumpkin before declaring that it's a slugcat! p_l snickers and replies that it's the most beautiful slugcat they've ever seen. r_c slyly shoots back, yes, only second to p_l.",
+                "text": "The two slugcats come upon a field of pumpkins, luckily empty of scavenger. As p_l pokes around to see if any herbs are about, r_c instead gleefully sinks {PRONOUN/r_c/poss} spear into a pumpkin. {PRONOUN/r_c/subject/CAP} {VERB/r_c/scratch/scratches} some crude shapes into the pumpkin before declaring that it's a slugcat! p_l snickers and replies that it's the most beautiful slugcat they've ever seen. r_c slyly shoots back, yes, only second to p_l.",
                 "exp": 20,
                 "weight": 20,
                 "herbs": ["rosemary"],
@@ -3111,7 +3111,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "The two trot towards the field, tails raised nonchalantly. Suddenly, p_l hears a shriek and manages to duck out of the way as a crow swoops close. Angry caws ring across the field. r_c calls for retreat as more crows converge on them. The two slugcats run away from the field, fur fluffed in both terror and embarrassment.",
+                "text": "The two trot towards the field, tails raised nonchalantly. Suddenly, p_l hears a shriek and manages to duck out of the way as a vulture swoops close. Angry caws ring across the field. r_c calls for retreat as more vultures converge on them. The two slugcats run away from the field, both huffing in terror and embarrassment.",
                 "exp": 0,
                 "weight": 20
             }
@@ -3133,13 +3133,13 @@
         "chance_of_success": 50,
         "success_outcomes": [
             {
-                "text": "Despite being alone, r_c decides to follow the figure. Perhaps it's an Ascended slugcat. As {PRONOUN/r_c/subject} {VERB/r_c/get/gets} closer, {PRONOUN/r_c/subject} {VERB/r_c/realize/realizes} that no, this slugcat doesn't have stars in its fur. But it doesn't seem malicious either. The ghostly slugcat beckons r_c closer and, to {PRONOUN/r_c/poss} surprise, the ghost has led {PRONOUN/r_c/object} to a giant patch of herbs! r_c thanks the spirit and it seems to smile as r_c begins to collect the herbs.",
+                "text": "Despite being alone, r_c decides to follow the figure. Perhaps it's an Ascended slugcat. As {PRONOUN/r_c/subject} {VERB/r_c/get/gets} closer, {PRONOUN/r_c/subject} {VERB/r_c/realize/realizes} that no, this slugcat doesn't have gold in its pelt. But it doesn't seem malicious either. The ghostly slugcat beckons r_c closer and, to {PRONOUN/r_c/poss} surprise, the ghost has led {PRONOUN/r_c/object} to a giant patch of herbs! r_c thanks the spirit and it seems to smile as r_c begins to collect the herbs.",
                 "exp": 10,
                 "weight": 20,
                 "herbs": ["many_herbs", "random_herbs"]
             },
             {
-                "text": "Despite being alone, r_c decides to follow the figure. Perhaps it's an Ascended slugcat. As {PRONOUN/r_c/subject} {VERB/r_c/get/gets} closer, {PRONOUN/r_c/subject} {VERB/r_c/realize/realizes} that no, this slugcat doesn't have stars in {PRONOUN/r_c/poss} fur. But it doesn't seem malicious either. The ghost waves its tail as if to say 'hello'. r_c nods back at it, and continues {PRONOUN/r_c/poss} herb gathering with the friendly ghost flitting about.",
+                "text": "Despite being alone, r_c decides to follow the figure. Perhaps it's an Ascended slugcat. As {PRONOUN/r_c/subject} {VERB/r_c/get/gets} closer, {PRONOUN/r_c/subject} {VERB/r_c/realize/realizes} that no, this slugcat doesn't have gold in {PRONOUN/r_c/poss} pelt. But it doesn't seem malicious either. The ghost waves as if to say 'hello'. r_c nods back at it, and continues {PRONOUN/r_c/poss} herb gathering with the friendly ghost flitting about.",
                 "exp": 10,
                 "weight": 20,
                 "herbs": ["random_herbs"]
@@ -3147,12 +3147,12 @@
         ],
         "fail_outcomes": [
             {
-                "text": "The ghostly slugcat suddenly moves towards r_c, and r_c's fur spikes in fear. {PRONOUN/r_c/subject/CAP} {VERB/r_c/race/races} back to camp, shouting about a spirit that's haunting the territory.",
+                "text": "The ghostly slugcat suddenly moves towards r_c, and r_c's heart picks up speed. {PRONOUN/r_c/subject/CAP} {VERB/r_c/race/races} back to camp, shouting about a spirit that's haunting the territory.",
                 "exp": 0,
                 "weight": 10
             },
             {
-                "text": "The ghostly slugcat suddenly moves towards r_c, and the fur on r_c's back spikes. r_c backs away, terrified, trying {PRONOUN/r_c/poss} best to remember {PRONOUN/r_c/poss} battle training. The ghost seems to notice {PRONOUN/r_c/poss} fear and frowns, drifting back away into the territory with its head down and tail dragging.",
+                "text": "The ghostly slugcat suddenly moves towards r_c, and r_c's heart picks up speed. r_c backs away, terrified, trying {PRONOUN/r_c/poss} best to remember {PRONOUN/r_c/poss} battle training. The ghost seems to notice {PRONOUN/r_c/poss} fear and frowns, drifting back away into the territory with its head down and tail dragging.",
                 "exp": 0,
                 "weight": 10
             }
@@ -3173,8 +3173,8 @@
             "normal adult": [-1, -1]
         },
         "weight": 20,
-        "intro_text": "As r_c follows a trail into a darkly shadowed part of the territory on the hunt for herbs, night shadows begin to play with {PRONOUN/r_c/poss} vision. Was that movement up ahead? r_c spots the undisguisable silhouette of a slugcat ahead. Malicious eyes and bristled fur meet {PRONOUN/r_c/object} as {PRONOUN/r_c/subject} {VERB/r_c/walk/walks} amongst the shadows. The stranger's fur is translucent, and it moves as though made from a strange dark mist.",
-        "decline_text": "r_c's tail bristles with fear, a cold shiver creeping along {PRONOUN/r_c/poss} back. This is definitely not an Ascended slugcat, and {PRONOUN/r_c/subject} quickly {VERB/r_c/turn/turns} the back to camp - herbs can wait until morning.",
+        "intro_text": "As r_c follows a trail into a darkly shadowed part of the territory on the hunt for herbs, night shadows begin to play with {PRONOUN/r_c/poss} vision. Was that movement up ahead? r_c spots the undisguisable silhouette of a slugcat ahead. Malicious eyes meet {PRONOUN/r_c/object} as {PRONOUN/r_c/subject} {VERB/r_c/walk/walks} amongst the shadows. The stranger's pelt is translucent, and it moves as though made from a strange dark mist.",
+        "decline_text": "r_c's tail prickles with fear, a cold shiver creeping along {PRONOUN/r_c/poss} back. This is definitely not an Ascended slugcat, and {PRONOUN/r_c/subject} quickly {VERB/r_c/turn/turns} the back to camp - herbs can wait until morning.",
         "chance_of_success": 50,
         "success_outcomes": [
             {
@@ -3185,7 +3185,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "r_c approaches the strange slugcat, thinking that they might be a wandering spirit in need of help. But as r_c gets closer, the strange slugcat shrieks, an awful, blood curdling scream that makes {PRONOUN/r_c/poss} fur stand on end. Overcome by terror, {PRONOUN/r_c/subject} {VERB/r_c/flee/flees} back to camp, dropping what little herbs {PRONOUN/r_c/subject} had gathered.",
+                "text": "r_c approaches the strange slugcat, thinking that they might be a wandering spirit in need of help. But as r_c gets closer, the strange slugcat shrieks, an awful, blood curdling scream that makes {PRONOUN/r_c/poss} pelt shiver. Overcome by terror, {PRONOUN/r_c/subject} {VERB/r_c/flee/flees} back to camp, dropping what little herbs {PRONOUN/r_c/subject} had gathered.",
                 "exp": 0,
                 "weight": 10,
                 "injury": [
@@ -3290,7 +3290,7 @@
                 ]
             },
             {
-                "text": "Feigning tiredness, r_c is able to convince p_l to take a break. While relaxing, r_c makes sure to tell p_l how great {PRONOUN/r_c/subject} {VERB/r_c/think/thinks} {PRONOUN/p_l/subject} {VERB/p_l/are/is} and how the whole Clan owes {PRONOUN/p_l/object} so much. p_l's fur goes warm at the praise, and {PRONOUN/p_l/subject} {VERB/p_l/spend/spends} the rest of the patrol unable to look r_c in the eye without feeling all fluttery.",
+                "text": "Feigning tiredness, r_c is able to convince p_l to take a break. While relaxing, r_c makes sure to tell p_l how great {PRONOUN/r_c/subject} {VERB/r_c/think/thinks} {PRONOUN/p_l/subject} {VERB/p_l/are/is} and how the whole Clan owes {PRONOUN/p_l/object} so much. p_l's pelt goes warm at the praise, and {PRONOUN/p_l/subject} {VERB/p_l/spend/spends} the rest of the patrol unable to look r_c in the eye without feeling all fluttery.",
                 "exp": 30,
                 "weight": 5,
                 "herbs": ["random_herbs"],
@@ -3305,7 +3305,7 @@
                 ]
             },
             {
-                "text": "The patrol continues on as normal, but when p_l returns to the medicine den later that day, {PRONOUN/p_l/subject} {VERB/p_l/find/finds} something special waiting for {PRONOUN/p_l/object} in {PRONOUN/p_l/poss} nest.",
+                "text": "The patrol continues on as normal, but when p_l returns to the cleric's den later that day, {PRONOUN/p_l/subject} {VERB/p_l/find/finds} something special waiting for {PRONOUN/p_l/object} in {PRONOUN/p_l/poss} nest.",
                 "exp": 20,
                 "weight": 20,
                 "stat_skill": ["HUNTER,1", "SENSE,2"],
@@ -3346,7 +3346,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "p_l snaps at r_c when {PRONOUN/r_c/subject} {VERB/r_c/bring/brings} it up. {PRONOUN/p_l/subject/CAP}{VERB/p_l/'re/'s} fine, totally fine, only a mousebrain would think otherwise!",
+                "text": "p_l snaps at r_c when {PRONOUN/r_c/subject} {VERB/r_c/bring/brings} it up. {PRONOUN/p_l/subject/CAP}{VERB/p_l/'re/'s} fine, totally fine, only a batfly-brain would think otherwise!",
                 "exp": 0,
                 "weight": 20,
                 "relationships": [
@@ -3394,7 +3394,7 @@
                 ]
             },
             {
-                "text": "Feigning tiredness, r_c is able to convince p_l to take a break. While relaxing, r_c makes sure to tell p_l how great {PRONOUN/r_c/subject} {VERB/r_c/think/thinks} p_l is and how happy it makes {PRONOUN/r_c/object} to work with {PRONOUN/p_l/object} every day. p_l's fur goes warm at the praise, and {PRONOUN/p_l/subject} {VERB/p_l/spend/spends} the rest of the patrol unable to look r_c in the eye without feeling all fluttery.",
+                "text": "Feigning tiredness, r_c is able to convince p_l to take a break. While relaxing, r_c makes sure to tell p_l how great {PRONOUN/r_c/subject} {VERB/r_c/think/thinks} p_l is and how happy it makes {PRONOUN/r_c/object} to work with {PRONOUN/p_l/object} every day. p_l's pelt goes warm at the praise, and {PRONOUN/p_l/subject} {VERB/p_l/spend/spends} the rest of the patrol unable to look r_c in the eye without feeling all fluttery.",
                 "exp": 30,
                 "weight": 5,
                 "herbs": ["random_herbs"],
@@ -3409,7 +3409,7 @@
                 ]
             },
             {
-                "text": "The patrol continues on as normal, but when p_l returns to the medicine den later that day, {PRONOUN/p_l/subject} {VERB/p_l/find/finds} something special waiting for {PRONOUN/p_l/object} in {PRONOUN/p_l/poss} nest.",
+                "text": "The patrol continues on as normal, but when p_l returns to the cleric's den later that day, {PRONOUN/p_l/subject} {VERB/p_l/find/finds} something special waiting for {PRONOUN/p_l/object} in {PRONOUN/p_l/poss} nest.",
                 "exp": 20,
                 "weight": 20,
                 "stat_skill": ["HUNTER,1", "SENSE,2"],
@@ -3450,7 +3450,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "p_l snaps at r_c when {PRONOUN/r_c/subject} {VERB/r_c/bring/brings} it up. {PRONOUN/p_l/subject/CAP}{VERB/p_l/'re/'s} fine, totally fine, only a mousebrain would think otherwise!",
+                "text": "p_l snaps at r_c when {PRONOUN/r_c/subject} {VERB/r_c/bring/brings} it up. {PRONOUN/p_l/subject/CAP}{VERB/p_l/'re/'s} fine, totally fine, only a batfly-brain would think otherwise!",
                 "exp": 0,
                 "weight": 20,
                 "relationships": [
@@ -3499,7 +3499,7 @@
                 ]
             },
             {
-                "text": "Feigning tiredness, p_l is able to convince r_c to take a break. While relaxing, p_l makes sure to tell r_c how great {PRONOUN/p_l/subject} {VERB/p_l/think/thinks} r_c is and how happy r_c's company makes {PRONOUN/p_l/object}. r_c's fur goes warm at the praise, and {PRONOUN/r_c/subject} {VERB/r_c/spend/spends} the rest of the patrol unable to look p_l in the eye without feeling all fluttery.",
+                "text": "Feigning tiredness, p_l is able to convince r_c to take a break. While relaxing, p_l makes sure to tell r_c how great {PRONOUN/p_l/subject} {VERB/p_l/think/thinks} r_c is and how happy r_c's company makes {PRONOUN/p_l/object}. r_c's pelt goes warm at the praise, and {PRONOUN/r_c/subject} {VERB/r_c/spend/spends} the rest of the patrol unable to look p_l in the eye without feeling all fluttery.",
                 "exp": 30,
                 "weight": 5,
                 "herbs": ["random_herbs"],
@@ -3555,7 +3555,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "r_c snaps at p_l when {PRONOUN/p_l/subject} {VERB/p_l/bring/brings} it up. {PRONOUN/r_c/subject/CAP}{VERB/r_c/'re/'s} fine, totally fine, only a mousebrain would think otherwise!",
+                "text": "r_c snaps at p_l when {PRONOUN/p_l/subject} {VERB/p_l/bring/brings} it up. {PRONOUN/r_c/subject/CAP}{VERB/r_c/'re/'s} fine, totally fine, only a batfly-brain would think otherwise!",
                 "exp": 0,
                 "weight": 20,
                 "relationships": [

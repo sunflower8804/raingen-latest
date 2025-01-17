@@ -49,7 +49,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "They gaze into the puddle, only to see the weird ripples were caused by a small frog. p_l feels disappointed, because they really could have used some guidance from the Ascended.",
+                "text": "They gaze into the puddle, only to see the weird ripples were caused by an insect. p_l feels disappointed, because they really could have used some guidance from the Ascended.",
                 "exp": 0,
                 "weight": 20
             }
@@ -105,8 +105,8 @@
         "max_cats": 2,
         "min_max_status": {
             "apprentice": [-1, -1],
-            "cleric": [1, 6],
-            "cleric apprentice": [1, 6],
+            "medicine cat": [1, 6],
+            "medicine cat apprentice": [1, 6],
             "healer cats": [1, 6],
             "normal adult": [-1, -1]
         },
@@ -174,7 +174,7 @@
         "max_cats": 1,
         "min_max_status": {
             "apprentice": [-1, -1],
-            "cleric apprentice": [1, 6],
+            "medicine cat apprentice": [1, 6],
             "healer cats": [1, 6],
             "normal adult": [-1, -1]
         },
@@ -215,7 +215,7 @@
         "max_cats": 1,
         "min_max_status": {
             "apprentice": [-1, -1],
-            "cleric apprentice": [1, 6],
+            "medicine cat apprentice": [1, 6],
             "healer cats": [1, 6],
             "normal adult": [-1, -1]
         },
@@ -225,7 +225,7 @@
         "chance_of_success": 50,
         "success_outcomes": [
             {
-                "text": "p_l is plucking some goldenrod when their attention is suddenly grabbed by omen_list_sight. The fur on their back begins to prickle slightly, the sound of their heartbeat like thunder in their ears. They turn and hare back to camp, herbs forgotten. They need to tell their mentor about this as soon as possible!",
+                "text": "p_l is plucking some goldenrod when their attention is suddenly grabbed by omen_list_sight. A shiver racks their body, the sound of their heartbeat like thunder in their ears. They turn and bolt back to camp, herbs forgotten. They need to tell their mentor about this as soon as possible!",
                 "exp": 20,
                 "weight": 20,
                 "herbs": ["goldenrod"]
@@ -249,7 +249,7 @@
         "min_cats": 3,
         "max_cats": 6,
         "min_max_status": {
-            "cleric": [1, 6],
+            "medicine cat": [1, 6],
             "healer cats": [1, 6]
         },
         "weight": 20,
@@ -280,7 +280,7 @@
                 ]
             },
             {
-                "text": "The entire patrol mutely agrees to grit their teeth and bear it, but that doesn't stop the relief everyone feels when they settle into their nests to dry off, a rather motley assortment of herbs refreshing the cleric den's stocks.",
+                "text": "The entire patrol mutely agrees to grit their teeth and bear it, but that doesn't stop the relief everyone feels when they settle into their nests to dry off, a rather motley assortment of herbs refreshing the cleric's den's stocks.",
                 "exp": 10,
                 "weight": 5,
                 "herbs": ["random_herbs"],
@@ -400,8 +400,8 @@
         "max_cats": 2,
         "min_max_status": {
             "apprentice": [-1, -1],
-            "cleric": [1, 6],
-            "cleric apprentice": [1, 6],
+            "medicine cat": [1, 6],
+            "medicine cat apprentice": [1, 6],
             "healer cats": [1, 6],
             "normal adult": [-1, -1]
         },
@@ -588,7 +588,7 @@
         "chance_of_success": 70,
         "success_outcomes": [
             {
-                "text": "As a plant that grows without losing any of its green in leaf-bare, while <i>also</i> having a crucial herbal use in stopping blood-loss, horsetail is a welcome sight in any well-stocked cleric den.",
+                "text": "As a plant that grows without losing any of its green in leaf-bare, while <i>also</i> having a crucial herbal use in stopping blood-loss, horsetail is a welcome sight in any well-stocked cleric's den.",
                 "exp": 10,
                 "weight": 20,
                 "herbs": ["horsetail"]
@@ -626,8 +626,8 @@
         "max_cats": 2,
         "min_max_status": {
             "apprentice": [-1, -1],
-            "cleric": [1, 6],
-            "cleric apprentice": [1, 6],
+            "medicine cat": [1, 6],
+            "medicine cat apprentice": [1, 6],
             "healer cats": [1, 6],
             "normal adult": [-1, -1]
         },
@@ -637,7 +637,7 @@
         "chance_of_success": 70,
         "success_outcomes": [
             {
-                "text": "p_l doesn't know why horsetail plants lack leaves, but they encourage app1's interest in the topic. As a plant that grows without losing any of its green in leaf-bare, while <i>also</i> having a crucial herbal use in stopping blood-loss, horsetail is a welcome sight in any well-stocked cleric den.",
+                "text": "p_l doesn't know why horsetail plants lack leaves, but they encourage app1's interest in the topic. As a plant that grows without losing any of its green in leaf-bare, while <i>also</i> having a crucial herbal use in stopping blood-loss, horsetail is a welcome sight in any well-stocked cleric's den.",
                 "exp": 20,
                 "weight": 20,
                 "herbs": ["horsetail"],
@@ -659,7 +659,7 @@
                 ]
             },
             {
-                "text": "Snapping off the thick horsetail stem near the base of the plant allows p_l to drag an entire big, long shoot back to camp, where app1 processes it down further into small stem sections that are easily stored, making a neat pile in the cleric den with them.",
+                "text": "Snapping off the thick horsetail stem near the base of the plant allows p_l to drag an entire big, long shoot back to camp, where app1 processes it down further into small stem sections that are easily stored, making a neat pile in the cleric's den with them.",
                 "exp": 20,
                 "weight": 5,
                 "herbs": ["many_herbs", "horsetail"],
@@ -747,7 +747,7 @@
         "chance_of_success": 30,
         "success_outcomes": [
             {
-                "text": "As a plant that grows without losing any of its green in leaf-bare, while <i>also</i> having a crucial herbal use in stopping blood-loss, horsetail is a welcome sight in any well-stocked cleric den. Having other slugcats to help {PRONOUN/p_l/object} makes the patrol an easy afternoon's work.",
+                "text": "As a plant that grows without losing any of its green in leaf-bare, while <i>also</i> having a crucial herbal use in stopping blood-loss, horsetail is a welcome sight in any well-stocked cleric's den. Having other slugcats to help {PRONOUN/p_l/object} makes the patrol an easy afternoon's work.",
                 "exp": 10,
                 "weight": 20,
                 "herbs": ["horsetail"],
@@ -851,12 +851,12 @@
             "healer cats": [1, 6]
         },
         "weight": 20,
-        "intro_text": "p_l notices that the moss in the medicine den is getting old. {PRONOUN/p_l/subject/CAP} {VERB/p_l/need/needs} to go and gather some more.",
+        "intro_text": "p_l notices that the moss in the cleric's den is getting old. {PRONOUN/p_l/subject/CAP} {VERB/p_l/need/needs} to go and gather some more.",
         "decline_text": "A slugcat requires {PRONOUN/p_l/poss} attention just as {PRONOUN/p_l/subject} go to leave. Moss will have to wait.",
         "chance_of_success": 70,
         "success_outcomes": [
             {
-                "text": "p_l quickly makes {PRONOUN/p_l/poss} way to the best moss patch {PRONOUN/p_l/subject} {VERB/p_l/know/knows}. {PRONOUN/p_l/subject/CAP} {VERB/p_l/need/needs} a bit of time slicing bits off with {PRONOUN/p_l/poss} claws, careful not to get any roots or dirt in the pile - once {PRONOUN/p_l/subject} {VERB/p_l/'re/'s} satisfied, {PRONOUN/p_l/subject} {VERB/p_l/take/takes} a moment to wrap {PRONOUN/p_l/poss} jaws around the heap, then make {PRONOUN/p_l/poss} way back to camp.",
+                "text": "p_l quickly makes {PRONOUN/p_l/poss} way to the best moss patch {PRONOUN/p_l/subject} {VERB/p_l/know/knows}. {PRONOUN/p_l/subject/CAP} {VERB/p_l/need/needs} a bit of time slicing bits off with {PRONOUN/p_l/poss} spear, careful not to get any roots or dirt in the pile - once {PRONOUN/p_l/subject} {VERB/p_l/'re/'s} satisfied, {PRONOUN/p_l/subject} {VERB/p_l/take/takes} a moment to wrap {PRONOUN/p_l/poss} paws around the heap, then make {PRONOUN/p_l/poss} way back to camp.",
                 "exp": 10,
                 "weight": 20,
                 "herbs": ["moss"]
@@ -864,7 +864,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "Mouse-dung! When p_l gets to the best moss-gathering spot, {PRONOUN/p_l/subject} find that some animal has dug up most of the moss. {PRONOUN/p_l/subject/CAP}'ll have to leave the rest to repopulate before gathering from this spot again.",
+                "text": "Lizard-dung! When p_l gets to the best moss-gathering spot, {PRONOUN/p_l/subject} find that some animal has dug up most of the moss. {PRONOUN/p_l/subject/CAP}'ll have to leave the rest to repopulate before gathering from this spot again.",
                 "exp": 0,
                 "weight": 20
             }
@@ -881,18 +881,18 @@
         "max_cats": 2,
         "min_max_status": {
             "apprentice": [-1, -1],
-            "cleric": [1, 6],
-            "cleric apprentice": [1, 6],
+            "medicine cat": [1, 6],
+            "medicine cat apprentice": [1, 6],
             "healer cats": [1, 6],
             "normal adult": [-1, -1]
         },
         "weight": 20,
-        "intro_text": "p_l notices that the moss in the medicine den is getting old, calling over app1, they set out to gather more.",
+        "intro_text": "p_l notices that the moss in the cleric's den is getting old, calling over app1, they set out to gather more.",
         "decline_text": "A slugcat requires their attention just as they go to leave. Moss will have to wait.",
         "chance_of_success": 70,
         "success_outcomes": [
             {
-                "text": "p_l leads the way to the best moss patch they know, with app1 following close behind. The two slugcats begin cutting off bits of moss and making their respective piles - once the piles turn into mouthfuls, they pick up the bundles of new bedding and start back towards camp.",
+                "text": "p_l leads the way to the best moss patch they know, with app1 following close behind. The two slugcats begin cutting off bits of moss and making their respective piles - once the piles turn into pawfuls, they pick up the bundles of new bedding and start back towards camp.",
                 "exp": 10,
                 "weight": 20,
                 "herbs": ["moss"],
@@ -916,7 +916,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "Mouse-dung! When the two slugcats arrive at the best moss-gathering spot, they find that some animal has dug up most of the moss. They'll have to leave the rest to repopulate before gathering from this spot again.",
+                "text": "Lizard-dung! When the two slugcats arrive at the best moss-gathering spot, they find that some animal has dug up most of the moss. They'll have to leave the rest to repopulate before gathering from this spot again.",
                 "exp": 0,
                 "weight": 20,
                 "relationships": [
@@ -948,17 +948,17 @@
         "min_cats": 2,
         "max_cats": 2,
         "min_max_status": {
-            "cleric": [1, 6],
+            "medicine cat": [1, 6],
             "healer cats": [1, 6],
             "normal adult": [1, 6]
         },
         "weight": 20,
-        "intro_text": "p_l notices that the moss in the medicine den is getting old. They need to go and gather some more and they take a warrior with them to help.",
+        "intro_text": "p_l notices that the moss in the cleric's den is getting old. They need to go and gather some more and they take a warrior with them to help.",
         "decline_text": "A slugcat requires their attention just as they go to leave. Moss will have to wait.",
         "chance_of_success": 70,
         "success_outcomes": [
             {
-                "text": "p_l leads the way to the best moss patch they know, with r_c following close behind. The two slugcats begin cutting off bits of moss and making their respective piles - once the piles turn into mouthfuls, they pick up the bundles of new bedding and start back towards camp.",
+                "text": "p_l leads the way to the best moss patch they know, with r_c following close behind. The two slugcats begin cutting off bits of moss and making their respective piles - once the piles turn into pawfuls, they pick up the bundles of new bedding and start back towards camp.",
                 "exp": 10,
                 "weight": 20,
                 "herbs": ["moss"],
@@ -982,7 +982,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "Mouse-dung! When the two slugcats arrive at the best moss-gathering spot, they find that some animal has dug up most of the moss. They'll have to leave the rest to repopulate before gathering from this spot again.",
+                "text": "Lizard-dung! When the two slugcats arrive at the best moss-gathering spot, they find that some animal has dug up most of the moss. They'll have to leave the rest to repopulate before gathering from this spot again.",
                 "exp": 0,
                 "weight": 20,
                 "relationships": [
@@ -1014,17 +1014,17 @@
         "min_cats": 3,
         "max_cats": 6,
         "min_max_status": {
-            "cleric": [1, 6],
+            "medicine cat": [1, 6],
             "healer cats": [1, 6],
             "normal adult": [1, 6]
         },
         "weight": 20,
-        "intro_text": "p_l notices that the moss in the medicine den is getting old. They need to go and gather more so they call over some warriors to help them.",
+        "intro_text": "p_l notices that the moss in the cleric's den is getting old. They need to go and gather more so they call over some warriors to help them.",
         "decline_text": "A slugcat requires their attention just as they go to leave. Moss will have to wait.",
         "chance_of_success": 40,
         "success_outcomes": [
             {
-                "text": "p_l leads the way to the best moss patch they know, with their entourage following close behind. The slugcats begin cutting off bits of moss and making their respective piles - once the piles turn into mouthfuls, they pick up the bundles of new bedding and start back towards camp.",
+                "text": "p_l leads the way to the best moss patch they know, with their entourage following close behind. The slugcats begin cutting off bits of moss and making their respective piles - once the piles turn into pawfuls, they pick up the bundles of new bedding and start back towards camp.",
                 "exp": 10,
                 "weight": 20,
                 "herbs": ["moss"],
@@ -1041,7 +1041,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "Mouse-dung! When the slugcats arrive at the best moss-gathering spot, they find that some animal has dug up most of the moss. They'll have to leave the rest to repopulate before gathering from this spot again.",
+                "text": "Lizard-dung! When the slugcats arrive at the best moss-gathering spot, they find that some animal has dug up most of the moss. They'll have to leave the rest to repopulate before gathering from this spot again.",
                 "exp": 0,
                 "weight": 20,
                 "relationships": [
@@ -1067,8 +1067,8 @@
         "max_cats": 2,
         "min_max_status": {
             "apprentice": [-1, -1],
-            "cleric": [1, 6],
-            "cleric apprentice": [1, 6],
+            "medicine cat": [1, 6],
+            "medicine cat apprentice": [1, 6],
             "healer cats": [1, 6],
             "normal adult": [-1, -1]
         },
@@ -1168,7 +1168,7 @@
         "max_cats": 2,
         "min_max_status": {
             "apprentice": [-1, -1],
-            "cleric": [1, 6],
+            "medicine cat": [1, 6],
             "all apprentices": [-1, -1],
             "normal adult": [-1, -1]
         },
@@ -1210,7 +1210,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "They fail to interpret any signs, and are too irritated with each other to discuss any other news. Furthermore, neither slugcat manages to gather anything, the trip cut short by the discovery of ominous Twoleg things, piled in an abandoned, stinking heap.",
+                "text": "They fail to interpret any signs, and are too irritated with each other to discuss any other news. Furthermore, neither slugcat manages to gather anything, the trip cut short by the discovery of ominous scavenger things, piled in an abandoned, stinking heap.",
                 "exp": 0,
                 "weight": 20,
                 "relationships": [
@@ -1235,7 +1235,7 @@
         "min_cats": 2,
         "max_cats": 2,
         "min_max_status": {
-            "cleric apprentice": [1, 6],
+            "medicine cat apprentice": [1, 6],
             "healer cats": [1, 6],
             "all apprentices": [2, 2]
         },
@@ -1324,7 +1324,7 @@
         "max_cats": 2,
         "min_max_status": {
             "apprentice": [-1, -1],
-            "cleric": [1, 6],
+            "medicine cat": [1, 6],
             "normal adult": [-1, -1]
         },
         "weight": 20,
@@ -1333,7 +1333,7 @@
         "chance_of_success": 50,
         "success_outcomes": [
             {
-                "text": "p_l and r_c decide to cast a wide net, searching for herb plants spread far and sparsely through the plains. As the sun sinks towards the horizon, they return with their mouths stuffed full of herbs taken from their well-memorized sources, pawpads sore from the long walk.",
+                "text": "p_l and r_c decide to cast a wide net, searching for herb plants spread far and sparsely through the plains. As the sun sinks towards the horizon, they return with their paws full of herbs taken from their well-memorized sources, pawpads sore from the long walk.",
                 "exp": 10,
                 "weight": 20,
                 "herbs": ["random_herbs"],
@@ -1355,7 +1355,7 @@
                 ]
             },
             {
-                "text": "p_l and r_c decide on a little friendly competition - one cleric to another, like all those silly bets the warriors make about hunting prey. They reunite when the sun is going down and walk into camp purring and playfully shoving each other with both their mouths full of herbs.",
+                "text": "p_l and r_c decide on a little friendly competition - one cleric to another, like all those silly bets the warriors make about hunting prey. They reunite when the sun is going down and walk into camp purring and playfully shoving each other with both their paws full of herbs.",
                 "exp": 10,
                 "weight": 5,
                 "herbs": ["random_herbs"],
@@ -1432,7 +1432,7 @@
         "min_cats": 3,
         "max_cats": 3,
         "min_max_status": {
-            "cleric apprentice": [1, 6],
+            "medicine cat apprentice": [1, 6],
             "healer cats": [1, 6],
             "all apprentices": [3, 3]
         },
@@ -1520,7 +1520,7 @@
         "min_cats": 4,
         "max_cats": 4,
         "min_max_status": {
-            "cleric apprentice": [1, 6],
+            "medicine cat apprentice": [1, 6],
             "healer cats": [1, 6],
             "all apprentices": [4, 4]
         },
@@ -1608,7 +1608,7 @@
         "min_cats": 5,
         "max_cats": 5,
         "min_max_status": {
-            "cleric apprentice": [1, 6],
+            "medicine cat apprentice": [1, 6],
             "healer cats": [1, 6],
             "all apprentices": [5, 5]
         },
@@ -1696,7 +1696,7 @@
         "min_cats": 6,
         "max_cats": 6,
         "min_max_status": {
-            "cleric apprentice": [1, 6],
+            "medicine cat apprentice": [1, 6],
             "healer cats": [1, 6],
             "all apprentices": [6, 6]
         },
@@ -1785,7 +1785,7 @@
         "max_cats": 3,
         "min_max_status": {
             "apprentice": [1, 6],
-            "cleric apprentice": [1, 6],
+            "medicine cat apprentice": [1, 6],
             "healer cats": [1, 6],
             "all apprentices": [3, 3]
         },
@@ -1841,7 +1841,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "p_l is disgusted with the general disdain they feel from the other apprentices, and how hypocritical it is to tell them herb gathering is easy when the patrol hasn't found <i>any</i> cobwebs! They stalk back to the cleric den in a huff, unable to bear being near the other apprentices for any longer than they have been.",
+                "text": "p_l is disgusted with the general disdain they feel from the other apprentices, and how hypocritical it is to tell them herb gathering is easy when the patrol hasn't found <i>any</i> cobwebs! They stalk back to the cleric's den in a huff, unable to bear being near the other apprentices for any longer than they have been.",
                 "exp": 0,
                 "weight": 20,
                 "relationships": [
@@ -1874,7 +1874,7 @@
         "max_cats": 4,
         "min_max_status": {
             "apprentice": [1, 6],
-            "cleric apprentice": [1, 6],
+            "medicine cat apprentice": [1, 6],
             "healer cats": [1, 6],
             "all apprentices": [4, 4]
         },
@@ -1930,7 +1930,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "p_l is disgusted with the general disdain they feel from the other apprentices, and how hypocritical it is to tell them herb gathering is easy when the patrol hasn't found <i>any</i> cobwebs! They stalk back to the cleric den in a huff, unable to bear being near the other apprentices for any longer than they have been.",
+                "text": "p_l is disgusted with the general disdain they feel from the other apprentices, and how hypocritical it is to tell them herb gathering is easy when the patrol hasn't found <i>any</i> cobwebs! They stalk back to the cleric's den in a huff, unable to bear being near the other apprentices for any longer than they have been.",
                 "exp": 0,
                 "weight": 20,
                 "relationships": [
@@ -1963,7 +1963,7 @@
         "max_cats": 5,
         "min_max_status": {
             "apprentice": [1, 6],
-            "cleric apprentice": [1, 6],
+            "medicine cat apprentice": [1, 6],
             "healer cats": [1, 6],
             "all apprentices": [5, 5]
         },
@@ -2019,7 +2019,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "p_l is disgusted with the general disdain they feel from the other apprentices, and how hypocritical it is to tell them herb gathering is easy when the patrol hasn't found <i>any</i> cobwebs! They stalk back to the cleric den in a huff, unable to bear being near the other apprentices for any longer than they have been.",
+                "text": "p_l is disgusted with the general disdain they feel from the other apprentices, and how hypocritical it is to tell them herb gathering is easy when the patrol hasn't found <i>any</i> cobwebs! They stalk back to the cleric's den in a huff, unable to bear being near the other apprentices for any longer than they have been.",
                 "exp": 0,
                 "weight": 20,
                 "relationships": [
@@ -2052,8 +2052,8 @@
         "max_cats": 6,
         "min_max_status": {
             "apprentice": [1, 6],
-            "cleric": [1, 6],
-            "cleric apprentice": [1, 6],
+            "medicine cat": [1, 6],
+            "medicine cat apprentice": [1, 6],
             "healer cats": [1, 6]
         },
         "weight": 20,
@@ -2108,7 +2108,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "p_l is disgusted with the general disdain they feel from the other apprentices, and how hypocritical it is to tell them herb gathering is easy when the patrol hasn't found <i>any</i> cobwebs! They stalk back to the cleric den in a huff, unable to bear being near the other apprentices for any longer than they have been.",
+                "text": "p_l is disgusted with the general disdain they feel from the other apprentices, and how hypocritical it is to tell them herb gathering is easy when the patrol hasn't found <i>any</i> cobwebs! They stalk back to the cleric's den in a huff, unable to bear being near the other apprentices for any longer than they have been.",
                 "exp": 0,
                 "weight": 20,
                 "relationships": [
@@ -2141,7 +2141,7 @@
         "max_cats": 2,
         "min_max_status": {
             "apprentice": [1, 6],
-            "cleric apprentice": [1, 6],
+            "medicine cat apprentice": [1, 6],
             "healer cats": [1, 6],
             "all apprentices": [2, 2]
         },
@@ -2230,7 +2230,7 @@
         "max_cats": 3,
         "min_max_status": {
             "apprentice": [1, 6],
-            "cleric apprentice": [1, 6],
+            "medicine cat apprentice": [1, 6],
             "healer cats": [1, 6],
             "all apprentices": [3, 3]
         },
@@ -2319,7 +2319,7 @@
         "max_cats": 4,
         "min_max_status": {
             "apprentice": [1, 6],
-            "cleric apprentice": [1, 6],
+            "medicine cat apprentice": [1, 6],
             "healer cats": [1, 6],
             "all apprentices": [4, 4]
         },
@@ -2408,12 +2408,12 @@
         "max_cats": 3,
         "min_max_status": {
             "apprentice": [1, 6],
-            "cleric apprentice": [1, 6],
+            "medicine cat apprentice": [1, 6],
             "healer cats": [1, 6],
             "all apprentices": [3, 3]
         },
         "weight": 20,
-        "intro_text": "The apprentices are sent off into the territory to gather moss for the cleric den.",
+        "intro_text": "The apprentices are sent off into the territory to gather moss for the cleric's den.",
         "decline_text": "They're called back to camp, needed for other chores.",
         "chance_of_success": 30,
         "success_outcomes": [
@@ -2497,7 +2497,7 @@
         "max_cats": 4,
         "min_max_status": {
             "apprentice": [1, 6],
-            "cleric apprentice": [1, 6],
+            "medicine cat apprentice": [1, 6],
             "healer cats": [1, 6],
             "all apprentices": [4, 4]
         },
@@ -2586,7 +2586,7 @@
         "max_cats": 5,
         "min_max_status": {
             "apprentice": [1, 6],
-            "cleric apprentice": [1, 6],
+            "medicine cat apprentice": [1, 6],
             "healer cats": [1, 6],
             "all apprentices": [5, 5]
         },
@@ -2675,7 +2675,7 @@
         "max_cats": 5,
         "min_max_status": {
             "apprentice": [1, 6],
-            "cleric apprentice": [1, 6],
+            "medicine cat apprentice": [1, 6],
             "healer cats": [1, 6],
             "all apprentices": [5, 5]
         },
@@ -2764,7 +2764,7 @@
         "max_cats": 6,
         "min_max_status": {
             "apprentice": [1, 6],
-            "cleric apprentice": [1, 6],
+            "medicine cat apprentice": [1, 6],
             "healer cats": [1, 6],
             "all apprentices": [6, 6]
         },
@@ -2853,7 +2853,7 @@
         "max_cats": 6,
         "min_max_status": {
             "apprentice": [1, 6],
-            "cleric apprentice": [1, 6],
+            "medicine cat apprentice": [1, 6],
             "healer cats": [1, 6]
         },
         "weight": 20,

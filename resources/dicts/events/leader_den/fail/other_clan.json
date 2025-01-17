@@ -608,7 +608,7 @@
   },
   {
     "interaction_type": "befriend",
-    "event_text": "The night before the Gathering, one of m_c's friends visits {PRONOUN/m_c/object} from StarClan and gives {PRONOUN/m_c/object} a pep talk for befriending o_c_n's leader at the Gathering. Despite it, when the time comes, m_c is too shy to say anything.",
+    "event_text": "The night before the Gathering, one of m_c's friends visits {PRONOUN/m_c/object} from the Void and gives {PRONOUN/m_c/object} a pep talk for befriending o_c_n's leader at the Gathering. Despite it, when the time comes, m_c is too shy to say anything.",
     "rel_change": 0,
     "m_c": {
       "trait": [ "lonesome", "nervous" ],
@@ -682,7 +682,7 @@
   },
   {
     "interaction_type": "befriend",
-    "event_text": "At the Gathering, o_c_n's leader struggles through a report that an entire litter of o_c_n kits were wiped out by kitten-cough. m_c draws them aside after and reassures them that the kittens are playing moss-ball together in StarClan. o_c_n's leader hisses that this means nothing to the grieving parents.",
+    "event_text": "At the Gathering, o_c_n's leader struggles through a report that an entire litter of o_c_n kits were wiped out by kitten-cough. m_c draws them aside after and reassures them that the kittens are playing moss-ball together in the Void. o_c_n's leader hisses that this means nothing to the grieving parents.",
     "rel_change": -5,
     "m_c": {
       "skill": [ "KIT,3", "STAR,2"],
@@ -1098,7 +1098,7 @@
   },
   {
     "interaction_type": "appease",
-    "event_text": "Before the Gathering, m_c receives an omen - omen_list_sight/m_c. When {PRONOUN/m_c/subject} {VERB/m_c/bring/brings} it up at the Gathering to try to convince o_c_n's leader of StarClan's desire for peace, o_c_n's leader talks over {PRONOUN/m_c/object}.",
+    "event_text": "Before the Gathering, m_c receives an omen - omen_list_sight/m_c. When {PRONOUN/m_c/subject} {VERB/m_c/bring/brings} it up at the Gathering to try to convince o_c_n's leader of the Ascended's desire for peace, o_c_n's leader talks over {PRONOUN/m_c/object}.",
     "rel_change": -1,
     "m_c": {
         "skill": [ "OMEN,1" ],
@@ -1217,7 +1217,7 @@
   },
   {
     "interaction_type": "appease",
-    "event_text": "On the way to the Gathering, m_c spots a patch of greenish-yellow mushrooms and assumes this must be a sign of StarClan favoring c_n. {PRONOUN/m_c/subject/CAP} {VERB/m_c/greet/greets} o_c_n's leader by confidently accepting their surrender in the ongoing hostilities; o_c_n's leader snarls in {PRONOUN/m_c/poss} face. Maybe they were just normal mushrooms, then.",
+    "event_text": "On the way to the Gathering, m_c spots a patch of greenish-yellow mushrooms and assumes this must be a sign of the Void favoring c_n. {PRONOUN/m_c/subject/CAP} {VERB/m_c/greet/greets} o_c_n's leader by confidently accepting their surrender in the ongoing hostilities; o_c_n's leader snarls in {PRONOUN/m_c/poss} face. Maybe they were just normal mushrooms, then.",
     "rel_change": -5,
     "m_c": {
       "trait": ["arrogant"],
@@ -1279,7 +1279,7 @@
   },
   {
     "interaction_type": "appease",
-    "event_text": "m_c has heard plenty of StarClan's words and reckons {PRONOUN/m_c/subject} can come up with something similar to hurry along the peace process. Upon delivering {PRONOUN/m_c/poss} \"prophecy\" at the Gathering, o_c_n's leader scoffs; are they really expected to believe <i>that</i> thistledown?",
+    "event_text": "m_c has heard plenty of the Ascended's words and reckons {PRONOUN/m_c/subject} can come up with something similar to hurry along the peace process. Upon delivering {PRONOUN/m_c/poss} \"prophecy\" at the Gathering, o_c_n's leader scoffs; are they really expected to believe <i>that</i> thistledown?",
     "rel_change": -5,
     "m_c": {
       "skill": ["PROPHET,1"],

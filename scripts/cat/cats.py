@@ -573,10 +573,10 @@ class Cat:
                 self.thought = final_thought
                 if game.clan.instructor.df is False:
                     text = (
-                        "They've lost their last life and have travelled to StarClan."
+                        "They've lost their last life and have travelled to the Void."
                     )
                 else:
-                    text = "They've lost their last life and have travelled to the Dark Forest."
+                    text = "They've lost their last life and have travelled to the RotWound."
         else:
             self.dead = True
             game.just_died.append(self.ID)
@@ -990,6 +990,8 @@ class Cat:
 
         if self.pelt.eye_colour in Pelt.riveye_colours:
             colour = colour.replace("riv", "")
+        if self.pelt.eye_colour in Pelt.buttoneye_colours:
+            colour = colour.replace("button", "")
 
         if colour == "palegreen":
             colour = "pale green"
@@ -1009,27 +1011,31 @@ class Cat:
             colour = "green-yellow"
 
         if self.pelt.eye_colour in Pelt.riveye_colours:
-            colour = "big " + colour
+            colour = "huge " + colour
             
-        if self.pelt.eye_colour2 in Pelt.multi_eyes:
-            colour = "multi-eyed " + colour
-
+        if self.pelt.eye_colour in Pelt.buttoneye_colours:
+            colour = colour + " buttons"
+            
         if self.pelt.eye_colour2:
-            if colour2 == "palegreen":
-                colour2 = "pale green"
-            if colour2 == "darkblue":
-                colour2 = "dark blue"
-            if colour2 == "paleblue":
-                colour2 = "pale blue"
-            if colour2 == "paleyellow":
-                colour2 = "pale yellow"
-            if colour2 == "heatherblue":
-                colour2 = "heather blue"
-            if colour2 == "sunlitice":
-                colour2 = "sunlit ice"
-            if colour2 == "greenyellow":
-                colour2 = "green-yellow"
-            colour = f"{colour} and {colour2}"
+            if self.pelt.eye_colour2 in Pelt.multi_eyes:
+                colour = "multi-eyed " + colour
+            else:
+                if colour2 == "palegreen":
+                    colour2 = "pale green"
+                if colour2 == "darkblue":
+                    colour2 = "dark blue"
+                if colour2 == "paleblue":
+                    colour2 = "pale blue"
+                if colour2 == "paleyellow":
+                    colour2 = "pale yellow"
+                if colour2 == "heatherblue":
+                    colour2 = "heather blue"
+                if colour2 == "sunlitice":
+                    colour2 = "sunlit ice"
+                if colour2 == "greenyellow":
+                    colour2 = "green-yellow"
+                colour = f"{colour} and {colour2}"
+
         return colour
 
     def convert_history(self, died_by, scar_events):

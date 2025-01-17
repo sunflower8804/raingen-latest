@@ -595,7 +595,7 @@
         "decline_text": "A happier story, the slugcats ask, please. No one wants difficulty sleeping tonight.",
         "success_outcomes": [
             {
-        "text": "A dead warrior woke in the Void, business unfinished and hate for the living in their heart. They brought ruin and destruction upon the living Clan - but c_n was not without allies. The other slugcats of the Void leapt to battle and tore a hole in Silverpelt, casting out the traitor, condemning them to walk a path of decay and cruelty.",
+        "text": "A dead warrior woke in the Void, business unfinished and hate for the living in their heart. They brought ruin and destruction upon the living Clan - but c_n was not without allies. The other slugcats of the Void leapt to battle and tore a hole in the Void, casting out the traitor, condemning them to walk a path of decay and cruelty.",
         "exp": 30,
         "weight": 20,
         "relationships": [
@@ -623,7 +623,7 @@
                     ]
                 },
                 {
-                    "text": "s_c can't help but be overly fascinated as p_l speaks about how a warrior was so powerful that they needed to tear a hole in silverpelt just to be able to stop them. s_c hopes to one day be that powerful.",
+                    "text": "s_c can't help but be overly fascinated as p_l speaks about how a warrior was so powerful that they needed to tear a hole in the Void just to be able to stop them. s_c hopes to one day be that powerful.",
                     "exp": 30,
                     "weight": 20,
                     "can_have_stat": ["not_pl_rc"],
@@ -722,7 +722,7 @@
             ],
             "fail_outcomes": [
                 {
-                    "text": "r_c listens, shivering, as p_l describes the birth of the rotwound, the ancient, barely won battle between the good slugcats of the stars and the traitor amidst. {PRONOUN/r_c/subject/CAP} can't stop thinking about it in {PRONOUN/r_c/poss} nest that night, {PRONOUN/r_c/poss} sleep broken and uneasy.",
+                    "text": "r_c listens, shivering, as p_l describes the birth of the RotWound, the ancient, barely won battle between the good slugcats of the stars and the traitor amidst. {PRONOUN/r_c/subject/CAP} can't stop thinking about it in {PRONOUN/r_c/poss} nest that night, {PRONOUN/r_c/poss} sleep broken and uneasy.",
                     "exp": 0,
                     "weight": 20,
                     "injury": [
@@ -807,7 +807,7 @@
         "decline_text": "A leaf-fall rainshower chooses that moment to break - thematic, perhaps, but wet. The slugcats decide to pick up the story some other time.",
         "success_outcomes": [
             {
-                    "text": "At first, few but the medicine slugcats noticed the leaf-fall, its harshness, the snows early, the prey scarce. All noticed on the day the Ascended hissed - the great sun itself blinking dark under their anger. All paid heed to the omens then, and the Clans turned back to the Stars, begging for life and sun to return. They learned a lesson not soon forgotten.",
+                    "text": "At first, few but the clerics noticed the leaf-fall, its harshness, the snows early, the prey scarce. All noticed on the day the Ascended hissed - the great sun itself blinking dark under their anger. All paid heed to the omens then, and the Clans turned back to the Stars, begging for life and sun to return. They learned a lesson not soon forgotten.",
                     "exp": 40,
                     "weight": 20,
                     "relationships": [

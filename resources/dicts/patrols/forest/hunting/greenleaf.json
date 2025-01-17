@@ -492,7 +492,7 @@
                 ]
             },
             {
-                "text": "Despite the baby noodlefly's broken wing, it's still tremendously loud, but the slugcats set up an ambush for it's mother. It takes most of the day for the big noodlefly to show up, but eventually, they manage to pelt the mother noodlefly with spears. They bring the noodleflies back to camp as Silverpelt rises in the sky, exhausted.",
+                "text": "Despite the baby noodlefly's broken wing, it's still tremendously loud, but the slugcats set up an ambush for it's mother. It takes most of the day for the big noodlefly to show up, but eventually, they manage to pelt the mother noodlefly with spears. They bring the noodleflies back to camp near the end of the cycle, exhausted.",
                 "exp": 45,
                 "weight": 5,
                 "prey": ["large"],
@@ -3790,7 +3790,7 @@
                 "prey": ["medium"]
             },
             {
-                "text": "Some of the forest's plants, particularly the short-rooted undergrowth, will definitely appreciate the drink the sky is providing. r_c thanks the sky for a different reason, giving thanks to StarClan as {PRONOUN/r_c/subject} {VERB/r_c/bring/brings} home a f_tp_s, a f_tp_s {PRONOUN/r_c/subject} found limping, and an old f_tp_s for the fresh-kill pile.",
+                "text": "Some of the forest's plants, particularly the short-rooted undergrowth, will definitely appreciate the drink the sky is providing. r_c thanks the sky for a different reason, giving thanks to the Void as {PRONOUN/r_c/subject} {VERB/r_c/bring/brings} home a f_tp_s, a f_tp_s {PRONOUN/r_c/subject} found limping, and an old f_tp_s for the fresh-kill pile.",
                 "exp": 15,
                 "weight": 5,
                 "prey": ["medium"]
@@ -5407,7 +5407,7 @@
         "relationship_constraint": ["siblings"],
         "success_outcomes": [
             {
-                "text": "A f_mp_s and two f_tp_p is nothing to sniff at, as a hunting success, but stars above being alone with r_c makes p_l feel like a kitten again. And not in the cute way either, in the chewing on tails, whiny, petty, immature way. Ugh.",
+                "text": "A f_mp_s and two f_tp_p is nothing to sniff at, as a hunting success, but stars above being alone with r_c makes p_l feel like a slugpup again. And not in the cute way either, in the chewing on tails, whiny, petty, immature way. Ugh.",
                 "exp": 20,
                 "weight": 20,
                 "prey": ["large"],
@@ -5576,7 +5576,7 @@
         "relationship_constraint": ["siblings"],
         "success_outcomes": [
             {
-                "text": "Watching r_c execute a fantastic leap to bring down a f_mp_s, p_l smiles. Does r_c remember the time {PRONOUN/r_c/subject} tried to do that as a kitten, and stood on {PRONOUN/r_c/poss} own tail? The siblings laugh about it as they move on to the next hunting ground.",
+                "text": "Watching r_c execute a fantastic leap to bring down a f_mp_s, p_l smiles. Does r_c remember the time {PRONOUN/r_c/subject} tried to do that as a slugpup, and stood on {PRONOUN/r_c/poss} own tail? The siblings laugh about it as they move on to the next hunting ground.",
                 "exp": 20,
                 "weight": 20,
                 "prey": ["large"],
@@ -5823,7 +5823,7 @@
         "relationship_constraint": ["siblings"],
         "success_outcomes": [
             {
-                "text": "A f_mp_s, three f_tp_p, and a couple f_mp_p are nothing to sniff at, as a hunting success, but stars above being alone with {PRONOUN/p_l/poss} siblings makes p_l feel like a kitten again. And not in the cute way either, in the chewing on tails, whiny, petty, immature way. Ugh.",
+                "text": "A f_mp_s, three f_tp_p, and a couple f_mp_p are nothing to sniff at, as a hunting success, but stars above being alone with {PRONOUN/p_l/poss} siblings makes p_l feel like a slugpup again. And not in the cute way either, in the chewing on tails, whiny, petty, immature way. Ugh.",
                 "exp": 20,
                 "weight": 20,
                 "prey": ["large"],
@@ -5992,7 +5992,7 @@
         "relationship_constraint": ["siblings"],
         "success_outcomes": [
             {
-                "text": "Watching r_c execute a fantastic leap to bring down a f_mp_s, p_l smiles. Does r_c remember the time {PRONOUN/r_c/subject} tried to do that as a kitten, and stood on {PRONOUN/r_c/poss} own tail? The siblings laugh about it together as they move on to the next hunting ground.",
+                "text": "Watching r_c execute a fantastic leap to bring down a f_mp_s, p_l smiles. Does r_c remember the time {PRONOUN/r_c/subject} tried to do that as a slugpup, and stood on {PRONOUN/r_c/poss} own tail? The siblings laugh about it together as they move on to the next hunting ground.",
                 "exp": 20,
                 "weight": 20,
                 "prey": ["large"],

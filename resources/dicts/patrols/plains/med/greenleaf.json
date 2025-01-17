@@ -9,7 +9,7 @@
         "min_cats": 2,
         "max_cats": 6,
         "min_max_status": {
-            "cleric": [1, 6],
+            "medicine cat": [1, 6],
             "healer cats": [1, 6],
             "normal adult": [1, 6]
         },
@@ -95,12 +95,12 @@
         "max_cats": 6,
         "min_max_status": {
             "apprentice": [-1, -1],
-            "cleric": [1, 6],
+            "medicine cat": [1, 6],
             "healer cats": [1, 6],
             "normal adult": [-1, -1]
         },
         "weight": 20,
-        "intro_text": "p_l heads out, leading a patrol of medicine slugcats to go find some of the bounty of greenleaf.",
+        "intro_text": "p_l heads out, leading a patrol of clerics to go find some of the bounty of greenleaf.",
         "decline_text": "... And they're called back almost immediately, as one of the elders has started hacking something up.",
         "chance_of_success": 60,
         "success_outcomes": [
@@ -120,7 +120,7 @@
                 ]
             },
             {
-                "text": "r_c disappears for a moment, only to return with a pretty flower in {PRONOUN/r_c/poss} jaws. p_l chuckles and reminds {PRONOUN/r_c/object} that that's not medicinal. r_c smiles, setting the flower down. Perhaps not, but {PRONOUN/r_c/subject} thought it would make a nice gift. p_l, charmed, carries the flower with {PRONOUN/p_l/object} for the rest of the patrol.",
+                "text": "r_c disappears for a moment, only to return with a pretty flower in {PRONOUN/r_c/poss} paw. p_l chuckles and reminds {PRONOUN/r_c/object} that that's not medicinal. r_c smiles, setting the flower down. Perhaps not, but {PRONOUN/r_c/subject} thought it would make a nice gift. p_l, charmed, carries the flower with {PRONOUN/p_l/object} for the rest of the patrol.",
                 "exp": 10,
                 "weight": 5,
                 "herbs": ["random_herbs"],
@@ -196,24 +196,24 @@
         "max_cats": 2,
         "min_max_status": {
             "apprentice": [-1, -1],
-            "cleric": [1, 6],
-            "cleric apprentice": [1, 6],
+            "medicine cat": [1, 6],
+            "medicine cat apprentice": [1, 6],
             "healer cats": [1, 6],
             "normal adult": [-1, -1]
         },
         "weight": 20,
-        "intro_text": "p_l and app1 are going out to gather dandelions. app1 asks their mentor what they'll do if the rabbits have eaten all of it, and p_l responds that they'll cross that river when they get to it.",
+        "intro_text": "p_l and app1 are going out to gather dandelions. app1 asks their mentor what they'll do if the eggbugs have eaten all of it, and p_l responds that they'll cross that river when they get to it.",
         "decline_text": "A slugcat grabs p_l's attention before they can leave.",
         "chance_of_success": 60,
         "success_outcomes": [
             {
-                "text": "The two medicine slugcats find the plants in good shape, and are able to collect plenty.",
+                "text": "The two clerics find the plants in good shape, and are able to collect plenty.",
                 "exp": 20,
                 "weight": 20,
                 "herbs": ["dandelion"]
             },
             {
-                "text": "The dandelions are so plentiful, it seems there's enough for slugcats and rabbits alike to take what they need.",
+                "text": "The dandelions are so plentiful, it seems there's enough for slugcats and eggbugs alike to take what they need.",
                 "exp": 20,
                 "weight": 5,
                 "herbs": ["dandelion"]
@@ -237,7 +237,7 @@
         "min_cats": 1,
         "max_cats": 1,
         "min_max_status": {
-            "cleric": [1, 6],
+            "medicine cat": [1, 6],
             "healer cats": [1, 6],
             "all apprentices": [-1, -1]
         },
@@ -277,7 +277,7 @@
         "min_cats": 2,
         "max_cats": 3,
         "min_max_status": {
-            "cleric": [1, 6],
+            "medicine cat": [1, 6],
             "healer cats": [1, 6],
             "normal adult": [1, 6]
         },
@@ -333,7 +333,7 @@
                 ]
             },
             {
-                "text": "By the time they reach the burdock plants, p_l is about ready to claw s_c's ears off. Great Void! <i>How</i> can a slugcat be so annoying? p_l hisses in exasperation, just as they notice that the burdock is all shriveled and dead - the roots won't be any good. It's just one thing after another today.",
+                "text": "By the time they reach the burdock plants, p_l is about ready to slice s_c's ears off. Great Void! <i>How</i> can a slugcat be so annoying? p_l hisses in exasperation, just as they notice that the burdock is all shriveled and dead - the roots won't be any good. It's just one thing after another today.",
                 "exp": 0,
                 "weight": 20,
                 "stat_trait": ["troublesome", "childish"],
@@ -408,8 +408,8 @@
         "max_cats": 2,
         "min_max_status": {
             "apprentice": [-1, -1],
-            "cleric": [1, 6],
-            "cleric apprentice": [1, 6],
+            "medicine cat": [1, 6],
+            "medicine cat apprentice": [1, 6],
             "healer cats": [1, 6],
             "normal adult": [-1, -1]
         },
@@ -678,8 +678,8 @@
         "max_cats": 2,
         "min_max_status": {
             "apprentice": [-1, -1],
-            "cleric": [1, 6],
-            "cleric apprentice": [1, 6],
+            "medicine cat": [1, 6],
+            "medicine cat apprentice": [1, 6],
             "healer cats": [1, 6],
             "normal adult": [-1, -1]
         },
@@ -948,8 +948,8 @@
         "max_cats": 2,
         "min_max_status": {
             "apprentice": [-1, -1],
-            "cleric": [1, 6],
-            "cleric apprentice": [1, 6],
+            "medicine cat": [1, 6],
+            "medicine cat apprentice": [1, 6],
             "healer cats": [1, 6],
             "normal adult": [-1, -1]
         },
@@ -1171,7 +1171,7 @@
         "max_cats": 1,
         "min_max_status": {
             "apprentice": [-1, -1],
-            "cleric": [1, 6],
+            "medicine cat": [1, 6],
             "healer cats": [1, 6],
             "normal adult": [-1, -1]
         },
@@ -1219,8 +1219,8 @@
         "max_cats": 2,
         "min_max_status": {
             "apprentice": [-1, -1],
-            "cleric": [1, 6],
-            "cleric apprentice": [1, 6],
+            "medicine cat": [1, 6],
+            "medicine cat apprentice": [1, 6],
             "healer cats": [1, 6],
             "normal adult": [-1, -1]
         },
@@ -1331,7 +1331,7 @@
         "min_cats": 3,
         "max_cats": 6,
         "min_max_status": {
-            "cleric": [1, 6],
+            "medicine cat": [1, 6],
             "healer cats": [1, 6],
             "normal adult": [1, 6]
         },
@@ -1490,8 +1490,8 @@
         "max_cats": 2,
         "min_max_status": {
             "apprentice": [-1, -1],
-            "cleric": [1, 6],
-            "cleric apprentice": [1, 6],
+            "medicine cat": [1, 6],
+            "medicine cat apprentice": [1, 6],
             "healer cats": [1, 6],
             "normal adult": [-1, -1]
         },
@@ -1717,12 +1717,12 @@
             "normal adult": [-1, -1]
         },
         "weight": 20,
-        "intro_text": "Greenleaf's bounty means that finding dandelions shouldn't be any trouble. ",
+        "intro_text": "Greenleaf's bounty means that finding dandelions shouldn't be any trouble.",
         "decline_text": "They have second thoughts about leaving their patients behind, and decide to go another day.",
         "chance_of_success": 70,
         "success_outcomes": [
             {
-                "text": "Truly, dandelions are an essential herb to keep in stock, crucial for poison and stings. The white milk in their roots and stems keeps for a long time, and is a potent cure for poison - their leaves are weaker, but fast-acting, and can be chewed into poultices. Even the fluffy dandelion heads are useful as a c_n kitten's favorite, short-lived toy.",
+                "text": "Truly, dandelions are an essential herb to keep in stock, crucial for poison and stings. The white milk in their roots and stems keeps for a long time, and is a potent cure for poison - their leaves are weaker, but fast-acting, and can be chewed into poultices. Even the fluffy dandelion heads are useful as a c_n slugpup's favorite, short-lived toy.",
                 "exp": 10,
                 "weight": 20,
                 "herbs": ["dandelion"]
@@ -1760,8 +1760,8 @@
         "max_cats": 2,
         "min_max_status": {
             "apprentice": [-1, -1],
-            "cleric": [1, 6],
-            "cleric apprentice": [1, 6],
+            "medicine cat": [1, 6],
+            "medicine cat apprentice": [1, 6],
             "healer cats": [1, 6],
             "normal adult": [-1, -1]
         },
@@ -1771,7 +1771,7 @@
         "chance_of_success": 70,
         "success_outcomes": [
             {
-                "text": "Truly, dandelions are an essential herb to keep in stock, crucial for poisons and stings. Both the potent milk in their roots and stems, and the fast-acting leaves... even the fluffy dandelion heads are useful as a c_n kitten's favorite, short lived toy. p_l smiles fondly as they remember watching app1 playing with them just a few short cycles ago.",
+                "text": "Truly, dandelions are an essential herb to keep in stock, crucial for poisons and stings. Both the potent milk in their roots and stems, and the fast-acting leaves... even the fluffy dandelion heads are useful as a c_n slugpup's favorite, short lived toy. p_l smiles fondly as they remember watching app1 playing with them just a few short cycles ago.",
                 "exp": 20,
                 "weight": 20,
                 "herbs": ["dandelion"],
@@ -1881,7 +1881,7 @@
         "chance_of_success": 30,
         "success_outcomes": [
             {
-                "text": "Truly, dandelions are an essential herb to keep in stock, crucial for poisons and stings. Both the potent milk in their roots and stems, and the fast-acting leaves... even the fluffy dandelion heads are useful as a c_n kitten favorite, short lived toy. The warriors smile at the sight, sharing fond nursery memories about them as they gather.",
+                "text": "Truly, dandelions are an essential herb to keep in stock, crucial for poisons and stings. Both the potent milk in their roots and stems, and the fast-acting leaves... even the fluffy dandelion heads are useful as a c_n slugpup's favorite, short lived toy. The warriors smile at the sight, sharing fond nursery memories about them as they gather.",
                 "exp": 10,
                 "weight": 20,
                 "herbs": ["dandelion"],
@@ -2042,8 +2042,8 @@
         "max_cats": 2,
         "min_max_status": {
             "apprentice": [-1, -1],
-            "cleric": [1, 6],
-            "cleric apprentice": [1, 6],
+            "medicine cat": [1, 6],
+            "medicine cat apprentice": [1, 6],
             "healer cats": [1, 6],
             "normal adult": [-1, -1]
         },
@@ -2075,7 +2075,7 @@
                 ]
             },
             {
-                "text": "The tree, growing in a sheltered spot without huge amounts of wind, has branches that extend a mere whisker-length above the ground. The gathering is simple, today, warmed by the greenleaf sun. They even stop for a nap before going home, app1 stretching out and ripping at the ground with their claws indulgently.",
+                "text": "The tree, growing in a sheltered spot without huge amounts of wind, has branches that extend a mere whisker-length above the ground. The gathering is simple, today, warmed by the greenleaf sun. They even stop for a nap before going home, app1 stretching out and digging their paws into the ground indulgently.",
                 "exp": 20,
                 "weight": 5,
                 "herbs": ["many_herbs", "elder_leaves"],
@@ -2368,8 +2368,8 @@
         "max_cats": 2,
         "min_max_status": {
             "apprentice": [-1, -1],
-            "cleric": [1, 6],
-            "cleric apprentice": [1, 6],
+            "medicine cat": [1, 6],
+            "medicine cat apprentice": [1, 6],
             "healer cats": [1, 6],
             "normal adult": [-1, -1]
         },
@@ -2638,8 +2638,8 @@
         "max_cats": 2,
         "min_max_status": {
             "apprentice": [-1, -1],
-            "cleric": [1, 6],
-            "cleric apprentice": [1, 6],
+            "medicine cat": [1, 6],
+            "medicine cat apprentice": [1, 6],
             "healer cats": [1, 6],
             "normal adult": [-1, -1]
         },
@@ -2861,8 +2861,8 @@
         "max_cats": 2,
         "min_max_status": {
             "apprentice": [-1, -1],
-            "cleric": [1, 6],
-            "cleric apprentice": [1, 6],
+            "medicine cat": [1, 6],
+            "medicine cat apprentice": [1, 6],
             "healer cats": [1, 6],
             "normal adult": [-1, -1]
         },
@@ -3103,7 +3103,7 @@
         "min_cats": 2,
         "max_cats": 3,
         "min_max_status": {
-            "cleric": [1, 6],
+            "medicine cat": [1, 6],
             "healer cats": [1, 6],
             "normal adult": [1, 6]
         },
@@ -3275,8 +3275,8 @@
         "max_cats": 2,
         "min_max_status": {
             "apprentice": [-1, -1],
-            "cleric": [1, 6],
-            "cleric apprentice": [1, 6],
+            "medicine cat": [1, 6],
+            "medicine cat apprentice": [1, 6],
             "healer cats": [1, 6],
             "normal adult": [-1, -1]
         },
@@ -3545,8 +3545,8 @@
         "max_cats": 2,
         "min_max_status": {
             "apprentice": [-1, -1],
-            "cleric": [1, 6],
-            "cleric apprentice": [1, 6],
+            "medicine cat": [1, 6],
+            "medicine cat apprentice": [1, 6],
             "healer cats": [1, 6],
             "normal adult": [-1, -1]
         },
@@ -3815,8 +3815,8 @@
         "max_cats": 2,
         "min_max_status": {
             "apprentice": [-1, -1],
-            "cleric": [1, 6],
-            "cleric apprentice": [1, 6],
+            "medicine cat": [1, 6],
+            "medicine cat apprentice": [1, 6],
             "healer cats": [1, 6],
             "normal adult": [-1, -1]
         },
@@ -4085,8 +4085,8 @@
         "max_cats": 2,
         "min_max_status": {
             "apprentice": [-1, -1],
-            "cleric": [1, 6],
-            "cleric apprentice": [1, 6],
+            "medicine cat": [1, 6],
+            "medicine cat apprentice": [1, 6],
             "healer cats": [1, 6],
             "normal adult": [-1, -1]
         },
@@ -4355,8 +4355,8 @@
         "max_cats": 2,
         "min_max_status": {
             "apprentice": [-1, -1],
-            "cleric": [1, 6],
-            "cleric apprentice": [1, 6],
+            "medicine cat": [1, 6],
+            "medicine cat apprentice": [1, 6],
             "healer cats": [1, 6],
             "normal adult": [-1, -1]
         },
@@ -4625,8 +4625,8 @@
         "max_cats": 2,
         "min_max_status": {
             "apprentice": [-1, -1],
-            "cleric": [1, 6],
-            "cleric apprentice": [1, 6],
+            "medicine cat": [1, 6],
+            "medicine cat apprentice": [1, 6],
             "healer cats": [1, 6],
             "normal adult": [-1, -1]
         },
@@ -4895,8 +4895,8 @@
         "max_cats": 2,
         "min_max_status": {
             "apprentice": [-1, -1],
-            "cleric": [1, 6],
-            "cleric apprentice": [1, 6],
+            "medicine cat": [1, 6],
+            "medicine cat apprentice": [1, 6],
             "healer cats": [1, 6],
             "normal adult": [-1, -1]
         },
@@ -5172,8 +5172,8 @@
         "min_cats": 1,
         "max_cats": 1,
         "min_max_status": {
-            "cleric": [1, 6],
-            "cleric apprentice": [1, 6],
+            "medicine cat": [1, 6],
+            "medicine cat apprentice": [1, 6],
             "healer cats": [1, 6]
         },
         "weight": 20,
@@ -5283,8 +5283,8 @@
         "max_cats": 2,
         "min_max_status": {
             "apprentice": [-1, -1],
-            "cleric": [1, 6],
-            "cleric apprentice": [1, 6],
+            "medicine cat": [1, 6],
+            "medicine cat apprentice": [1, 6],
             "healer cats": [1, 6],
             "normal adult": [-1, -1]
         },
@@ -5553,8 +5553,8 @@
         "max_cats": 2,
         "min_max_status": {
             "apprentice": [-1, -1],
-            "cleric": [1, 6],
-            "cleric apprentice": [1, 6],
+            "medicine cat": [1, 6],
+            "medicine cat apprentice": [1, 6],
             "healer cats": [1, 6],
             "normal adult": [-1, -1]
         },
@@ -5823,8 +5823,8 @@
         "max_cats": 2,
         "min_max_status": {
             "apprentice": [-1, -1],
-            "cleric": [1, 6],
-            "cleric apprentice": [1, 6],
+            "medicine cat": [1, 6],
+            "medicine cat apprentice": [1, 6],
             "healer cats": [1, 6],
             "normal adult": [-1, -1]
         },
@@ -6045,7 +6045,7 @@
         "min_cats": 3,
         "max_cats": 6,
         "min_max_status": {
-           "cleric": [1, 6]
+           "medicine cat": [1, 6]
             },
         "weight": 40,
         "chance_of_success": 60,
@@ -6905,8 +6905,8 @@
         "min_cats": 2,
         "max_cats": 6,
         "min_max_status": {
-            "cleric": [1, 6],
-            "cleric apprentice": [1, 6],
+            "medicine cat": [1, 6],
+            "medicine cat apprentice": [1, 6],
             "normal adult":[-1, -1],
             "apprentice":[-1, -1]
         },

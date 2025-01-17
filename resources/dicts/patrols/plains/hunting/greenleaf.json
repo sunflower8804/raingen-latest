@@ -61,7 +61,7 @@
         "max_cats": 6,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "As the patrol wander near a Thunderpath, they watch Twolegs throw something from a monster. Intrigued, they wander over.",
+        "intro_text": "As the patrol wander near a Thunderpath, they watch a scavenger throw something from a miros bird. Intrigued, they wander over.",
         "decline_text": "The patrol decides to avoid the Twoleg object.",
         "chance_of_success": 50,
         "success_outcomes": [
@@ -71,7 +71,7 @@
                 "weight": 20
             },
             {
-                "text": "s_c looks closely at the Twoleg object, studying it, wondering how specifically the Twolegs managed to make it stick together. It'd be wonderful if c_n had access to such good prey carrying bags.",
+                "text": "s_c looks closely at the scavenger object, studying it, wondering how specifically the scavengers managed to make it stick together. It'd be wonderful if c_n had access to such good prey carrying bags.",
                 "exp": 10,
                 "weight": 20,
                 "stat_skill": ["CLEVER,1"]
@@ -94,7 +94,7 @@
                         "scars": ["LEFTEAR"]
                     }
                 ],
-                "history_text": { "scar": "r_c was scarred by a sharp piece of twoleg garbage." }
+                "history_text": { "scar": "r_c was scarred by a sharp piece of scavenger garbage." }
             }
         ]
     },
@@ -114,7 +114,7 @@
         "chance_of_success": 40,
         "success_outcomes": [
             {
-                "text": "Your  slugcats are smaller, but they outnumber the lizard, if only by a little, and it's a prize they're willing to fight for. With a prayer to the Ascended they throw themselves into battle, and the lizard, already half full and unwilling to lose blood over it, is driven off from the kill.",
+                "text": "Your slugcats are smaller, but they outnumber the lizard, if only by a little, and it's a prize they're willing to fight for. With a prayer to the Ascended they throw themselves into battle, and the lizard, already half full and unwilling to lose blood over it, is driven off from the kill.",
                 "exp": 20,
                 "weight": 20,
                 "prey": ["large"],
@@ -186,7 +186,7 @@
                 "prey": ["very_small"]
             },
             {
-                "text": "The patrol launches into battle, but r_c is caught with a nasty bite, and the slugcats give up on challenging for the food in favor of quickly helping r_c back to the cleric den.",
+                "text": "The patrol launches into battle, but r_c is caught with a nasty bite, and the slugcats give up on challenging for the food in favor of quickly helping r_c back to the cleric's den.",
                 "exp": 0,
                 "weight": 10,
                 "injury": [
@@ -322,7 +322,7 @@
                 "prey": ["very_small"]
             },
             {
-                "text": "The patrol launches into battle, but r_c is caught with a nasty bite, and the slugcats give up on challenging for the food in favor of quickly helping r_c back to the cleric den.",
+                "text": "The patrol launches into battle, but r_c is caught with a nasty bite, and the slugcats give up on challenging for the food in favor of quickly helping r_c back to the cleric's den.",
                 "exp": 0,
                 "weight": 10,
                 "injury": [
@@ -401,7 +401,7 @@
                 ]
             },
             {
-                "text": "s_c uses every trick in {PRONOUN/s_c/poss} talented fighting skillset to attack the lizard with no one to watch {PRONOUN/s_c/poss} flank, until the perfect opportunity opens up. {PRONOUN/s_c/subject/CAP} {VERB/s_c/pounce/pounces} onto the lizard's back, digging in {PRONOUN/s_c/poss} claws. It's a wild ride through the plains until the lizard bucks {PRONOUN/s_c/object} off, but it wins them the fawn carcass.",
+                "text": "s_c uses every trick in {PRONOUN/s_c/poss} talented fighting skillset to attack the lizard with no one to watch {PRONOUN/s_c/poss} flank, until the perfect opportunity opens up. {PRONOUN/s_c/subject/CAP} {VERB/s_c/pounce/pounces} onto the lizard's back, digging in {PRONOUN/s_c/poss} spear. It's a wild ride through the plains until the lizard bucks {PRONOUN/s_c/object} off, but it wins them the fawn carcass.",
                 "exp": 30,
                 "weight": 20,
                 "stat_skill": ["FIGHTER,2"],
@@ -547,7 +547,7 @@
         "chance_of_success": 10,
         "success_outcomes": [
             {
-                "text": "Led by p_l, and with a heap of cooperation and teamwork, the patrol drives away the lizard, seeks out her den, and kills her growing cubs. The plains will be safe from both the threat the lizard posed this season, and the threat her cubs would've given c_n in the seasons to come.",
+                "text": "Led by p_l, and with a heap of cooperation and teamwork, the patrol drives away the lizard, seeks out her den, and kills her growing hatchlings. The plains will be safe from both the threat the lizard posed this season, and the threat her hatchlings would've given c_n in the seasons to come.",
                 "exp": 30,
                 "weight": 20,
                 "relationships": [
@@ -561,7 +561,7 @@
                 ]
             },
             {
-                "text": "With so many slugcats working together in tight coordination, they manage to accomplish the near-impossible, finding and killing a mother white lizard and ending the threat to the Clan that she and her cubs pose.",
+                "text": "With so many slugcats working together in tight coordination, they manage to accomplish the near-impossible, finding and killing a mother white lizard and ending the threat to the Clan that she and her hatchlings pose.",
                 "exp": 30,
                 "weight": 5,
                 "relationships": [
@@ -575,7 +575,7 @@
                 ]
             },
             {
-                "text": "s_c displays incredible skill, driving the mother white lizard {PRONOUN/s_c/subject} {VERB/s_c/track/tracks} down out of the territory almost by {PRONOUN/s_c/self}. Now neither the lizard nor her dependent cubs pose a threat to the Clan. It truly proves s_c's place as one of c_n's most talented and skillful fighters.",
+                "text": "s_c displays incredible skill, driving the mother white lizard {PRONOUN/s_c/subject} {VERB/s_c/track/tracks} down out of the territory almost by {PRONOUN/s_c/self}. Now neither the lizard nor her dependent hatchlings pose a threat to the Clan. It truly proves s_c's place as one of c_n's most talented and skillful fighters.",
                 "exp": 30,
                 "weight": 20,
                 "stat_skill": ["FIGHTER,3"],
@@ -710,7 +710,7 @@
         "chance_of_success": 10,
         "success_outcomes": [
             {
-                "text": "The white lizard smells of eggs and blood. Hopefully by driving her out of the territory, the litter she has been raising this greenleaf won't be a threat to the Clan.",
+                "text": "The white lizard smells of eggs and blood. Hopefully by driving her out of the territory, the hatchlings she has been nurturing this greenleaf won't be a threat to the Clan.",
                 "exp": 50,
                 "weight": 20,
                 "relationships": [
@@ -724,7 +724,7 @@
                 ]
             },
             {
-                "text": "s_c displays incredible skill, driving the mother white lizard and her brood out of c_n's plains all by {PRONOUN/s_c/self}. Now neither the lizard nor her dependent cubs pose a threat to the Clan. {PRONOUN/s_c/subject/CAP} {VERB/s_c/swell/swells} with pride, feeling the confidence of knowing that {PRONOUN/s_c/subject}{VERB/s_c/'re/'s} truly one of the best fighters c_n has ever produced.",
+                "text": "s_c displays incredible skill, driving the mother white lizard and her hatchlings out of c_n's plains all by {PRONOUN/s_c/self}. Now neither the lizard nor her dependent hatchlings pose a threat to the Clan. {PRONOUN/s_c/subject/CAP} {VERB/s_c/swell/swells} with pride, feeling the confidence of knowing that {PRONOUN/s_c/subject}{VERB/s_c/'re/'s} truly one of the best fighters c_n has ever produced.",
                 "exp": 50,
                 "weight": 20,
                 "stat_skill": ["FIGHTER,3"],
@@ -768,7 +768,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "Never threaten a mother's young - the white lizard kills r_c in the skirmish, and carries off the body to feed her litter.",
+                "text": "Never threaten a mother's young - the white lizard kills r_c in the skirmish, and carries off the body to feed her hatchlings.",
                 "exp": 0,
                 "weight": 10,
                 "dead_cats": ["r_c"],
@@ -865,7 +865,7 @@
         "chance_of_success": 30,
         "success_outcomes": [
             {
-                "text": "The white lizard smells of eggs and blood. Hopefully by driving her out of the territory, the litter she has been raising this greenleaf won't be a threat to the Clan. If they don't starve, c_n will hunt them down - they do not share with lizards.",
+                "text": "The white lizard smells of eggs and blood. Hopefully by driving her out of the territory, the hatchlings she has been nurturing this greenleaf won't be a threat to the Clan. If they don't starve, c_n will hunt them down - they do not share with lizards.",
                 "exp": 30,
                 "weight": 20,
                 "relationships": [
@@ -879,7 +879,7 @@
                 ]
             },
             {
-                "text": "The patrol drives away the lizard, seeks out her den, and kills her cubs. It's brutal, but these fluffy small lizards would one day have grown to be kit-killers and thieves.",
+                "text": "The patrol drives away the lizard, seeks out her den, and kills her hatchlings. It's brutal, but these small lizards would one day have grown to be pup-killers and thieves.",
                 "exp": 30,
                 "weight": 5,
                 "relationships": [
@@ -893,7 +893,7 @@
                 ]
             },
             {
-                "text": "s_c displays incredible skill, driving the mother white lizard {PRONOUN/s_c/subject} {VERB/s_c/track/tracks} down out of the territory almost by {PRONOUN/s_c/self}. Now neither the lizard nor her dependent cubs pose a threat to the Clan. It truly proves s_c's place as one of c_n's most talented and skillful fighters.",
+                "text": "s_c displays incredible skill, driving the mother white lizard {PRONOUN/s_c/subject} {VERB/s_c/track/tracks} down out of the territory almost by {PRONOUN/s_c/self}. Now neither the lizard nor her dependent hatchlings pose a threat to the Clan. It truly proves s_c's place as one of c_n's most talented and skillful fighters.",
                 "exp": 30,
                 "weight": 20,
                 "stat_skill": ["FIGHTER,3"],
@@ -1056,7 +1056,7 @@
         "chance_of_success": 40,
         "success_outcomes": [
             {
-                "text": "The patrol charges the lizard, and she runs, leaving the scent of eggs in the air behind her. Though they don't know where her cubs are hidden, without their mother they won't pose a threat to the Clan.",
+                "text": "The patrol charges the lizard, and she runs, leaving the scent of eggs in the air behind her. Though they don't know where her eggs are hidden, without their mother they won't pose a threat to the Clan.",
                 "exp": 30,
                 "weight": 20,
                 "relationships": [
@@ -1070,7 +1070,7 @@
                 ]
             },
             {
-                "text": "The patrol sneaks closer, until p_l realizes that the lizard is approaching her den - a den when cubs must surely hide. A competitor denning within c_n's borders is an outrage, and the patrol leaps to attack, pinning the lizard in a mess of boulders.",
+                "text": "The patrol sneaks closer, until p_l realizes that the lizard is approaching her den - a den when eggs must surely hide. A competitor denning within c_n's borders is an outrage, and the patrol leaps to attack, pinning the lizard in a mess of boulders.",
                 "exp": 30,
                 "weight": 5,
                 "relationships": [
@@ -1154,7 +1154,7 @@
         "chance_of_success": 20,
         "success_outcomes": [
             {
-                "text": "Sneaking closer, r_c realizes that the wind carries the scent of eggs from the lizard. It's a blue lizard - and she has cubs. Eventually she leaves the area, and r_c begins the hunt, checking every burrow, every crevice, every hole until {PRONOUN/r_c/subject} {VERB/r_c/find/finds} the tiny lizard cubs. Killing them protects the Clan, {PRONOUN/r_c/subject} {VERB/r_c/remind/reminds} {PRONOUN/r_c/self}.",
+                "text": "Sneaking closer, r_c realizes that the wind carries the scent of eggs from the lizard. It's a blue lizard - and she has hatchlings. Eventually she leaves the area, and r_c begins the hunt, checking every burrow, every crevice, every hole until {PRONOUN/r_c/subject} {VERB/r_c/find/finds} the tiny lizard hatchlings. Killing them protects the Clan, {PRONOUN/r_c/subject} {VERB/r_c/remind/reminds} {PRONOUN/r_c/self}.",
                 "exp": 30,
                 "weight": 20,
                 "relationships": [
@@ -1247,7 +1247,7 @@
         "max_cats": 6,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "The patrol catches the scent of a lizard. Tracking it, they find a blue lizard feeding on a calf carcass. The scug-sized predator definitely didn't kill this massive hunk of fresh-kill.",
+        "intro_text": "The patrol catches the scent of a lizard. Tracking it, they find a blue lizard feeding on a raindeer fawn carcass. The scug-sized predator definitely didn't kill this massive hunk of fresh-kill.",
         "decline_text": "The patrol decides not to quarrel with the lizard - bigger predators will be attracted here. Best to leave sooner rather than later.",
         "chance_of_success": 40,
         "success_outcomes": [
@@ -1311,7 +1311,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "The blue lizard gives up on the kill with a snarl, but a cyan lizard yip in the distance sends both the smaller predator species running, the slugcats puffed up and uncomfortable.",
+                "text": "The blue lizard gives up on the kill with a snarl, but a cyan lizard yip in the distance sends both the smaller predator species running, the slugcats on edge and uncomfortable.",
                 "exp": 0,
                 "weight": 20,
                 "relationships": [
@@ -1361,7 +1361,7 @@
         "max_cats": 1,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "r_c catches the scent of a lizard. Tracking it, {PRONOUN/r_c/subject} {VERB/r_c/find/finds} a blue lizard feeding on a calf carcass. The slugcat-sized predator definitely didn't kill this massive hunk of fresh-kill.",
+        "intro_text": "r_c catches the scent of a lizard. Tracking it, {PRONOUN/r_c/subject} {VERB/r_c/find/finds} a blue lizard feeding on a raindeer fawn carcass. The slugcat-sized predator definitely didn't kill this massive hunk of fresh-kill.",
         "decline_text": "r_c decides not to quarrel with the lizard - bigger predators will be attracted here. Best to leave sooner rather than later.",
         "chance_of_success": 40,
         "success_outcomes": [
@@ -1372,7 +1372,7 @@
                 "prey": ["small"]
             },
             {
-                "text": "Watching the blue lizard at the carcass, s_c notices it stripping meat from the calf and caching it in little holes, and starts to copy it. The bigger predators will return to claim the calf soon, but by the time they do s_c will have hidden away the choicest morsels to fetch later.",
+                "text": "Watching the blue lizard at the carcass, s_c notices it stripping meat from the fawn and caching it in little holes, and starts to copy it. The bigger predators will return to claim the fawn soon, but by the time they do s_c will have hidden away the choicest morsels to fetch later.",
                 "exp": 10,
                 "weight": 20,
                 "stat_skill": ["FIGHTER,1"],
@@ -1416,7 +1416,7 @@
                 ]
             },
             {
-                "text": "r_c happily tucks into the massive calf - there's more than enough room for both {PRONOUN/r_c/subject} and the small lizard to feed. {PRONOUN/r_c/subject/CAP} {VERB/r_c/hear/hears} a massive, outraged yowl, and a blow from behind sends {PRONOUN/r_c/object} to the Void with a single hit. {PRONOUN/r_c/subject/CAP} never saw what did it.",
+                "text": "r_c happily tucks into the massive fawn - there's more than enough room for both {PRONOUN/r_c/subject} and the small lizard to feed. {PRONOUN/r_c/subject/CAP} {VERB/r_c/hear/hears} a massive, outraged yowl, and a blow from behind sends {PRONOUN/r_c/object} to the Void with a single hit. {PRONOUN/r_c/subject/CAP} never saw what did it.",
                 "exp": 0,
                 "weight": 10,
                 "dead_cats": ["r_c"],
@@ -1427,7 +1427,7 @@
                 }
             },
             {
-                "text": "Puffed up, r_c approaches the blue lizard. But there's only one of {PRONOUN/r_c/object}, and the lizard is {PRONOUN/r_c/poss} equal in size and weight. Instead of running or giving it, it snarls, and attacks. r_c gives just as good as {PRONOUN/r_c/subject} {VERB/r_c/get/gets}, and both animals end up limping away from the kill.",
+                "text": "Spear in hand, r_c approaches the blue lizard. But there's only one of {PRONOUN/r_c/object}, and the lizard is {PRONOUN/r_c/poss} equal in size and weight. Instead of running or giving it, it snarls, and attacks. r_c gives just as good as {PRONOUN/r_c/subject} {VERB/r_c/get/gets}, and both animals end up limping away from the kill.",
                 "exp": 0,
                 "weight": 10,
                 "injury": [
@@ -1724,7 +1724,7 @@
         "max_cats": 6,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "p_l's patrol strolls leisurely through the plains, enjoying the warmth of greenleaf. One slugcat raises their tail, signaling the others to be still; they've scented lantern mice nearby.",
+        "intro_text": "p_l's patrol strolls leisurely through the plains, enjoying the warmth of greenleaf. One slugcat raises their paw, signaling the others to be still; they've scented lantern mice nearby.",
         "decline_text": "p_l quietly shakes {PRONOUN/p_l/poss} head and leads the patrol elsewhere. Better not to disturb the lantern mice, who are loud and territorial.",
         "chance_of_success": 60,
         "success_outcomes": [
@@ -2100,7 +2100,7 @@
         } ],
         "fail_outcomes": [
             {
-                "text": "r_c finds {PRONOUN/r_c/self} face to fang with a hissing spider. {PRONOUN/r_c/subject/CAP} panics, stumbling, and the spider strikes. Its fangs pierce r_c's paw as effortlessly as wind through grass, and every step is like walking on burning thorns as {PRONOUN/r_c/subject} {VERB/r_c/drag/drags} {PRONOUN/r_c/self} into the medicine den.",
+                "text": "r_c finds {PRONOUN/r_c/self} face to fang with a hissing spider. {PRONOUN/r_c/subject/CAP} panics, stumbling, and the spider strikes. Its fangs pierce r_c's paw as effortlessly as wind through grass, and every step is like walking on burning thorns as {PRONOUN/r_c/subject} {VERB/r_c/drag/drags} {PRONOUN/r_c/self} into the cleric den.",
                 "exp": 0,
                 "weight": 20,
                 "relationships": [
@@ -2126,7 +2126,7 @@
                 
             },
             {
-                "text": "r_c finds {PRONOUN/r_c/self} face to fang with a hissing spider, but {PRONOUN/r_c/subject} barely see it at all. Indescribable pain pierces {PRONOUN/r_c/poss} eye, it fills {PRONOUN/r_c/poss} head, {PRONOUN/r_c/poss} ears, {PRONOUN/r_c/poss} blood. r_c doesn't notice the rest of the patrol rush {PRONOUN/r_c/poss} into the medicine den. Not even as {PRONOUN/r_c/poss} screams echo through camp.",
+                "text": "r_c finds {PRONOUN/r_c/self} face to fang with a hissing spider, but {PRONOUN/r_c/subject} barely see it at all. Indescribable pain pierces {PRONOUN/r_c/poss} eye, it fills {PRONOUN/r_c/poss} head, {PRONOUN/r_c/poss} ears, {PRONOUN/r_c/poss} blood. r_c doesn't notice the rest of the patrol rush {PRONOUN/r_c/poss} into the cleric den. Not even as {PRONOUN/r_c/poss} screams echo through camp.",
                 "exp": 0,
                 "weight": 10,
                 "relationships": [
@@ -3555,7 +3555,7 @@
         "relationship_constraint": ["siblings"],
         "success_outcomes": [
             {
-                "text": "A p_mp_s and two p_tp_p is nothing to sniff at, as a hunting success, but stars above being alone with r_c makes p_l feel like a kitten again. And not in the cute way either, in the chewing on tails, whiny, petty, immature way. Ugh.",
+                "text": "A p_mp_s and two p_tp_p is nothing to sniff at, as a hunting success, but stars above being alone with r_c makes p_l feel like a slugpup again. And not in the cute way either, in the chewing on tails, whiny, petty, immature way. Ugh.",
                 "exp": 20,
                 "weight": 20,
                 "prey": ["large"],
@@ -3724,7 +3724,7 @@
         "relationship_constraint": ["siblings"],
         "success_outcomes": [
             {
-                "text": "Watching r_c execute a fantastic leap to bring down a p_mp_s, p_l smiles. Does r_c remember the time {PRONOUN/r_c/subject} tried to do that as a kitten, and stood on {PRONOUN/r_c/poss} own tail? The siblings laugh about it as they move on to the next hunting ground.",
+                "text": "Watching r_c execute a fantastic leap to bring down a p_mp_s, p_l smiles. Does r_c remember the time {PRONOUN/r_c/subject} tried to do that as a slugpup, and stood on {PRONOUN/r_c/poss} own tail? The siblings laugh about it as they move on to the next hunting ground.",
                 "exp": 20,
                 "weight": 20,
                 "prey": ["large"],
@@ -3971,7 +3971,7 @@
         "relationship_constraint": ["siblings"],
         "success_outcomes": [
             {
-                "text": "A p_mp_s, three p_tp_p, and a couple p_mp_p are nothing to sniff at, as a hunting success, but stars above being alone with {PRONOUN/p_l/poss} siblings makes p_l feel like a kitten again. And not in the cute way either, in the chewing on tails, whiny, petty, immature way. Ugh.",
+                "text": "A p_mp_s, three p_tp_p, and a couple p_mp_p are nothing to sniff at, as a hunting success, but stars above being alone with {PRONOUN/p_l/poss} siblings makes p_l feel like a slugpup again. And not in the cute way either, in the chewing on tails, whiny, petty, immature way. Ugh.",
                 "exp": 20,
                 "weight": 20,
                 "prey": ["large"],
@@ -4140,7 +4140,7 @@
         "relationship_constraint": ["siblings"],
         "success_outcomes": [
             {
-                "text": "Watching r_c execute a fantastic leap to bring down a p_mp_s, p_l smiles. Does r_c remember the time {PRONOUN/r_c/subject} tried to do that as a kitten, and stood on {PRONOUN/r_c/poss} own tail? The siblings laugh about it together as they move on to the next hunting ground.",
+                "text": "Watching r_c execute a fantastic leap to bring down a p_mp_s, p_l smiles. Does r_c remember the time {PRONOUN/r_c/subject} tried to do that as a slugpup, and stood on {PRONOUN/r_c/poss} own tail? The siblings laugh about it together as they move on to the next hunting ground.",
                 "exp": 20,
                 "weight": 20,
                 "prey": ["large"],
@@ -4380,11 +4380,11 @@
         "min_max_status": {},
         "weight": 20,
         "intro_text": "p_l finds a patch of herbs that {PRONOUN/p_l/subject} believe c_n might need for their stores. {PRONOUN/p_l/subject/CAP} freely admit to {PRONOUN/p_l/poss} patrol {PRONOUN/p_l/subject} {VERB/p_l/aren't/isn't} a cleric, and ask {PRONOUN/p_l/poss} companions' advice. What do they know about this part of the plain's herbal properties, especially in the heat of greenleaf?",
-        "decline_text": "They decide to focus on hunting and leave the herb collecting to the medicine slugcats.",
+        "decline_text": "They decide to focus on hunting and leave the herb collecting to the clerics.",
         "chance_of_success": 50,
         "success_outcomes": [
             {
-                "text": "It's not their normal task, but they're all smart enough to value supporting the Clan's medicine den. The patrol brings the herbs back to camp and they are put to good use.",
+                "text": "It's not their normal task, but they're all smart enough to value supporting the Clan's cleric den. The patrol brings the herbs back to camp and they are put to good use.",
                 "exp": 10,
                 "weight": 20,
                 "herbs": ["random_herbs"],

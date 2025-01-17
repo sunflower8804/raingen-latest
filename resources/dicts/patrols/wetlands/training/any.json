@@ -1178,7 +1178,7 @@
         "decline_text": "Instead, p_l detangles a stubborn knot of fur for r_c.",
         "success_outcomes": [
                 {
-                    "text": "Long ago, a leader's son pursued his father's approval and attention by murdering his deputies. But his last victim's mate, a queen nursing the kits of the dead deputy, rose from her nest and struck back with the fury of a mother viper. If the leader's son had been willing to wait for power to come to him, he would've been a great leader. Instead, his ghost lurks in the Dark Forest.",
+                    "text": "Long ago, a leader's son pursued his father's approval and attention by murdering his deputies. But his last victim's mate, a queen nursing the kits of the dead deputy, rose from her nest and struck back with the fury of a mother viper. If the leader's son had been willing to wait for power to come to him, he would've been a great leader. Instead, his ghost lurks in the RotWound.",
                     "exp": 30,
                     "weight": 20,
                     "art": "gen_bord_story",

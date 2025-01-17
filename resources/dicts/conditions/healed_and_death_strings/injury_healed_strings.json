@@ -197,9 +197,9 @@
         "m_c's eyes have recovered from {PRONOUN/m_c/poss} injury."
     ],
     "quilled by a porcupine": [
-      "The porcupine quills stuck in m_c's pelt have finally come out.",
-        "m_c has recovered from the wounds {PRONOUN/m_c/subject} got from the porcupine.",
-        "The barbed quills were no fun to remove, but at least m_c is feeling better now."
+        "The damage the pole plant managed to do to m_c has finally healed.",
+        "m_c has recovered from the wounds {PRONOUN/m_c/subject} got from the pole plant.",
+        "Having to heal from {PRONOUN/m_c/poss} pole plant enounter was no fun, but at least m_c is feeling better now."
     ],
     "poisoned": [
         "m_c got very lucky and has managed to recover from the poison.",

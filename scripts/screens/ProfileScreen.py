@@ -595,7 +595,7 @@ class ProfileScreen(Screens):
                         self.the_cat.df = False
                         game.clan.add_to_starclan(self.the_cat)
                         self.the_cat.thought = (
-                            "Is relieved to once again hunt in StarClan"
+                            "Is relieved to once again hunt in the Void"
                         )
                     else:
                         self.the_cat.outside, self.the_cat.exiled = False, False

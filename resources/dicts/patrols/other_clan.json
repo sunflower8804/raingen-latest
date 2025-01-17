@@ -60,7 +60,7 @@
         ],
         "antag_fail_outcomes": [
             {
-                "text": "The patrol stands tall and approaches the o_c_n slugcat with insults and threats. They need to be sure that o_c_n knows how strong c_n slugcat are. r_c spits and hisses until the other patrol leaves the area, annoyed and unimpressed by the patrol's posturing.",
+                "text": "The patrol stands tall and approaches the o_c_n slugcat with insults and threats. They need to be sure that o_c_n knows how strong c_n slugcats are. r_c spits and hisses until the other patrol leaves the area, annoyed and unimpressed by the patrol's posturing.",
                 "exp": 0,
                 "weight": 20,
                 "other_clan_rep": -1
@@ -68,7 +68,7 @@
         ],
         "antag_success_outcomes": [
             {
-                "text": "The patrol stands tall and approaches the o_c_n slugcat with insults and threats. They need to be sure that o_c_n knows how strong c_n slugcat are. r_c spits and hisses until the other patrol leaves the area, intimidated by how the patrol is acting.",
+                "text": "The patrol stands tall and approaches the o_c_n slugcat with insults and threats. They need to be sure that o_c_n knows how strong c_n slugcats are. r_c spits and hisses until the other patrol leaves the area, intimidated by how the patrol is acting.",
                 "exp": 10,
                 "weight": 20,
                 "other_clan_rep": -2
@@ -89,7 +89,7 @@
         },
         "weight": 20,
         "intro_text": "While walking along the border, the patrol notices a o_c_n patrol renewing their scent marks up ahead.",
-        "decline_text": "The patrol decides to avoid the other Clan slugcat.",
+        "decline_text": "The patrol decides to avoid the other Clan slugcats.",
         "chance_of_success": 50,
         "success_outcomes": [
             {
@@ -144,7 +144,7 @@
         ],
         "antag_fail_outcomes": [
             {
-                "text": "The patrol stands tall and approaches the o_c_n slugcat with insults and threats. They need to be sure that o_c_n knows how strong c_n slugcat are. r_c spits and hisses until the other patrol leaves the area, annoyed and unimpressed by the patrol's posturing.",
+                "text": "The patrol stands tall and approaches the o_c_n slugcat with insults and threats. They need to be sure that o_c_n knows how strong c_n slugcats are. r_c spits and hisses until the other patrol leaves the area, annoyed and unimpressed by the patrol's posturing.",
                 "exp": 0,
                 "weight": 20,
                 "other_clan_rep": -1
@@ -152,7 +152,7 @@
         ],
         "antag_success_outcomes": [
             {
-                "text": "The patrol stands tall and approaches the o_c_n slugcat with insults and threats. They need to be sure that o_c_n knows how strong c_n slugcat are. r_c spits and hisses until the other patrol leaves the area, intimidated by how the patrol is acting.",
+                "text": "The patrol stands tall and approaches the o_c_n slugcat with insults and threats. They need to be sure that o_c_n knows how strong c_n slugcats are. r_c spits and hisses until the other patrol leaves the area, intimidated by how the patrol is acting.",
                 "exp": 10,
                 "weight": 20,
                 "other_clan_rep": -2
@@ -170,31 +170,31 @@
         "max_cats": 6,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "r_c spies a fat rabbit on the other side of the o_c_n border. A tempting opportunity to be sure, but it may not be wise to hunt on a different Clan's territory.",
-        "decline_text": "The patrol decides that one rabbit isn't worth making an enemy.",
+        "intro_text": "r_c spies a fat eggbug on the other side of the o_c_n border. A tempting opportunity to be sure, but it may not be wise to hunt on a different Clan's territory.",
+        "decline_text": "The patrol decides that one eggbug isn't worth making an enemy.",
         "chance_of_success": 50,
         "success_outcomes": [
             {
-                "text": "r_c pounces without hesitation! {PRONOUN/r_c/subject/CAP} {VERB/r_c/glance/glances} around, rabbit hanging from {PRONOUN/r_c/poss} muzzle, but it seems there aren't any o_c_n slugcat nearby. r_c trots back over the border, {PRONOUN/r_c/poss} prize in tow and transgression unnoticed.",
+                "text": "r_c pounces without hesitation! {PRONOUN/r_c/subject/CAP} {VERB/r_c/glance/glances} around, eggbug hanging from {PRONOUN/r_c/poss} muzzle, but it seems there aren't any o_c_n slugcats nearby. r_c trots back over the border, {PRONOUN/r_c/poss} prize in tow and transgression unnoticed.",
                 "exp": 10,
                 "weight": 20,
                 "prey": ["medium"]
             },
             {
-                "text": "r_c leaps for the rabbit! And promptly trips over a rock. The rabbit hops away and r_c sheepishly picks {PRONOUN/r_c/self} up. It's probably for the better that {PRONOUN/r_c/subject} {VERB/r_c/weren't/wasn't} able to catch the rabbit. Trespassing could easily have damaged relations with o_c_n.",
+                "text": "r_c leaps for the eggbug! And promptly trips over a rock. The eggbug scurries away and r_c sheepishly picks {PRONOUN/r_c/self} up. It's probably for the better that {PRONOUN/r_c/subject} {VERB/r_c/weren't/wasn't} able to catch the eggbug. Trespassing could easily have damaged relations with o_c_n.",
                 "exp": 10,
                 "weight": 5,
                 "prey": ["medium"]
             },
             {
-                "text": "r_c leaps for the rabbit, making a swift kill just before a o_c_n patrol comes into view. The o_c_n slugcat bristle at the trespass and a fight seems to be brewing. Thankfully, s_c smooths things over with the other patrol, graciously gifting them the rabbit, and they part ways without damaging the relationship between Clans.",
+                "text": "r_c leaps for the eggbug, making a swift kill just before a o_c_n patrol comes into view. The o_c_n slugcats bristle at the trespass and a fight seems to be brewing. Thankfully, s_c smooths things over with the other patrol, graciously gifting them the eggbug, and they part ways without damaging the relationship between Clans.",
                 "exp": 10,
                 "weight": 20,
                 "stat_skill": ["SPEAKER,1"],
 				"prey" : ["small"]
             },
             {
-                "text": "r_c is about to leap for the rabbit before s_c grabs them by the scruff and pulls them back! A moment later, r_c sees the group of o_c_n slugcat that had just come into view. Good thing s_c stopped them before they could blatantly trespass in full view of the other Clan.",
+                "text": "r_c is about to leap for the eggbug before s_c grabs them by the scruff and pulls them back! A moment later, r_c sees the group of o_c_n slugcat that had just come into view. Good thing s_c stopped them before they could blatantly trespass in full view of the other Clan.",
                 "exp": 10,
                 "weight": 20,
                 "stat_trait": [
@@ -210,14 +210,14 @@
         ],
         "fail_outcomes": [
             {
-                "text": "r_c leaps for the rabbit! And promptly trips over a rock. The rabbit hops away and r_c sheepishly picks {PRONOUN/r_c/self} up before noticing the o_c_n slugcat watching {PRONOUN/r_c/object} from the other side of the border. The other slugcat knows exactly what r_c was intending to do and turns away, presumably to report the incident to their own leader.",
+                "text": "r_c leaps for the eggbug! And promptly trips over a rock. The eggbug scurries away and r_c sheepishly picks {PRONOUN/r_c/self} up before noticing the o_c_n slugcat watching {PRONOUN/r_c/object} from the other side of the border. The other slugcat knows exactly what r_c was intending to do and turns away, presumably to report the incident to their own leader.",
                 "exp": 0,
                 "weight": 20,
                 "other_clan_rep": -1,
 				"prey": ["medium"]
             },
             {
-                "text": "s_c pounces with no hesitation! {PRONOUN/s_c/subject/CAP} easily {VERB/s_c/kill/kills} the rabbit before glancing up and coming face to face with a o_c_n slugcat. s_c is promptly chased back over the border and the other slugcat glares, hissing and spitting, until the patrol leaves the area.",
+                "text": "s_c pounces with no hesitation! {PRONOUN/s_c/subject/CAP} easily {VERB/s_c/kill/kills} the eggbug before glancing up and coming face to face with a o_c_n slugcat. s_c is promptly chased back over the border and the other slugcat glares, hissing and spitting, until the patrol leaves the area.",
                 "exp": 0,
                 "weight": 20,
                 "stat_trait": [
@@ -231,7 +231,7 @@
                 "other_clan_rep": -1
             },
             {
-                "text": "r_c pounces with no hesitation! {PRONOUN/r_c/subject/CAP} easily {VERB/r_c/kill/kills} the rabbit before glancing up and coming face to face with a o_c_n slugcat. After a short tussle, r_c flees back over the border and limps {PRONOUN/r_c/poss} way home; that rabbit certainly wasn't worth the trouble.",
+                "text": "r_c pounces with no hesitation! {PRONOUN/r_c/subject/CAP} easily {VERB/r_c/kill/kills} the eggbug before glancing up and coming face to face with a o_c_n slugcat. After a short tussle, r_c flees back over the border and limps {PRONOUN/r_c/poss} way home; that eggbug certainly wasn't worth the trouble.",
                 "exp": 0,
                 "weight": 10,
                 "injury": [
@@ -249,7 +249,7 @@
         ],
         "antag_fail_outcomes": [
             {
-                "text": "r_c leaps for the rabbit! And promptly trips over a rock. The rabbit hops away and r_c sheepishly picks {PRONOUN/r_c/self} up before noticing the o_c_n slugcat watching {PRONOUN/r_c/object} from the other side of the border. The other slugcat laughs at the pathetic display and turns to walk deeper into their own territory. They seem to be unfazed and unimpressed by the sad attempt.",
+                "text": "r_c leaps for the eggbug! And promptly trips over a rock. The rabbit hops away and r_c sheepishly picks {PRONOUN/r_c/self} up before noticing the o_c_n slugcat watching {PRONOUN/r_c/object} from the other side of the border. The other slugcat laughs at the pathetic display and turns to walk deeper into their own territory. They seem to be unfazed and unimpressed by the sad attempt.",
                 "exp": 0,
                 "weight": 20,
                 "other_clan_rep": -1
@@ -257,7 +257,7 @@
         ],
         "antag_success_outcomes": [
             {
-                "text": "A tempting opportunity. And also a perfect one. r_c pounces and swiftly kills the rabbit, intentionally leaving evidence of {PRONOUN/r_c/poss} deed behind. That will show those o_c_n slugcat just how confident c_n is in their own power.",
+                "text": "A tempting opportunity. And also a perfect one. r_c pounces and swiftly kills the eggbug, intentionally leaving evidence of {PRONOUN/r_c/poss} deed behind. That will show those o_c_n slugcats just how confident c_n is in their own power.",
                 "exp": 10,
                 "weight": 20,
                 "other_clan_rep": -2
@@ -278,7 +278,7 @@
         },
         "weight": 20,
         "intro_text": "While walking along the border, the patrol notices a o_c_n patrol renewing their scent marks up ahead.",
-        "decline_text": "The patrol decides to avoid the other Clan slugcat.",
+        "decline_text": "The patrol decides to avoid the other Clan slugcats.",
         "chance_of_success": 50,
         "success_outcomes": [
             {

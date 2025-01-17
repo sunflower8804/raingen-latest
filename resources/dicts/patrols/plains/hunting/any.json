@@ -75,7 +75,7 @@
         ],
         "antag_success_outcomes": [
             {
-                "text": "A scavenger slugpup approaches the patrol, and they send it away squawking with its blood on their claws.",
+                "text": "A scavenger slugpup approaches the patrol, and they send it away squawking with its blood on their spears.",
                 "exp": 10,
                 "weight": 20
             }
@@ -126,7 +126,7 @@
         ],
         "antag_success_outcomes": [
             {
-                "text": "Finding a scavenger slugpup wandering alone, the slugcats harass it until it flees squawking, its blood on their claws.",
+                "text": "Finding a scavenger slugpup wandering alone, the slugcats harass it until it flees squawking, its blood on their spears.",
                 "exp": 10,
                 "weight": 20
             }
@@ -233,7 +233,7 @@
                 "prey": ["very_small"]
             },
             {
-                "text": "Oh no! The burrow was home to a black lizard, now angry at the disturbance. The patrol bolts away to escape its wrath, but r_c doesn't quite move fast enough and is caught in its claws until another slugcat turns back to help.",
+                "text": "Oh no! The burrow was home to a black lizard, now angry at the disturbance. The patrol bolts away to escape its wrath, but r_c doesn't quite move fast enough and is caught in its jaws until another slugcat turns back to help.",
                 "exp": 0,
                 "weight": 10,
                 "injury": [
@@ -285,13 +285,13 @@
                 "weight": 20
             },
             {
-                "text": "s_c sticks {PRONOUN/s_c/poss} nose into the hole only to come face to face with a skunk! The whole patrol is sprayed!",
+                "text": "s_c sticks {PRONOUN/s_c/poss} nose into the hole only to come face to face with a whole patch of spore puffs! The whole patrol is covered in stinky spores!",
                 "exp": 0,
                 "weight": 20,
                 "stat_trait": ["bold", "ambitious", "childish", "impulsive"]
             },
             {
-                "text": "Oh no! The burrow was home to a black lizard, now angry at the disturbance. r_c bolts away to escape its wrath, but doesn't quite move fast enough and is caught in its claws.  With no other slugcats around to help, r_c is quickly killed by the predator.",
+                "text": "Oh no! The burrow was home to a black lizard, now angry at the disturbance. r_c bolts away to escape its wrath, but doesn't quite move fast enough and is caught in its jaws.  With no other slugcats around to help, r_c is quickly killed by the predator.",
                 "exp": 0,
                 "weight": 10,
                 "dead_cats": ["r_c"],
@@ -511,19 +511,19 @@
         "chance_of_success": 40,
         "success_outcomes": [
             {
-                "text": "r_c heads off to one of {PRONOUN/r_c/poss} favorite spots in the grasslands, a trench running along in a winding line across a productive and lush field providing excellent ambush chances. And what do you know - {PRONOUN/r_c/subject} {VERB/r_c/are/is} bush! Or {PRONOUN/r_c/subject} {VERB/r_c/were/was}, as far as that lantern yeek thought.",
+                "text": "r_c heads off to one of {PRONOUN/r_c/poss} favorite spots in the grasslands, a trench running along in a winding line across a productive and lush field providing excellent ambush chances. And what do you know - {PRONOUN/r_c/subject} {VERB/r_c/are/is} bush! Or {PRONOUN/r_c/subject} {VERB/r_c/were/was}, as far as that lantern mouse thought.",
                 "exp": 20,
                 "weight": 20,
                 "prey": ["medium"]
             },
             {
-                "text": "r_c finds a fat, dumb, slow eggbug, and {PRONOUN/r_c/subject} can barely drag the thing back to camp, but great StarClan, it's juicy when {PRONOUN/r_c/subject} {VERB/r_c/sit/sits} down to eat it with {PRONOUN/r_c/poss} Clanmates.",
+                "text": "r_c finds a fat, dumb, slow eggbug, and {PRONOUN/r_c/subject} can barely drag the thing back to camp, but Void it's juicy when {PRONOUN/r_c/subject} {VERB/r_c/sit/sits} down to eat it with {PRONOUN/r_c/poss} Clanmates.",
                 "exp": 20,
                 "weight": 5,
                 "prey": ["medium"]
             },
             {
-                "text": "s_c gets the chance to try out an idea {PRONOUN/s_c/subject}{VERB/s_c/'ve/'s} been sitting on for a while. There's a eggbug warren that {PRONOUN/s_c/subject}{VERB/s_c/'ve/'s} spotted that's particularly badly built, and {PRONOUN/s_c/subject} {VERB/s_c/dig/digs} down into one of the dens, fishing baby rabbits out by the pawful.",
+                "text": "s_c gets the chance to try out an idea {PRONOUN/s_c/subject}{VERB/s_c/'ve/'s} been sitting on for a while. There's a eggbug warren that {PRONOUN/s_c/subject}{VERB/s_c/'ve/'s} spotted that's particularly badly built, and {PRONOUN/s_c/subject} {VERB/s_c/dig/digs} down into one of the dens, fishing baby eggbugs out by the pawful.",
                 "exp": 20,
                 "weight": 20,
                 "stat_skill": ["CLEVER,1"],
@@ -581,19 +581,19 @@
         "chance_of_success": 40,
         "success_outcomes": [
             {
-                "text": "r_c heads off to one of {PRONOUN/r_c/poss} favorite spots in the grasslands, a trench running along in a winding line across a productive and lush field providing excellent ambush chances. And what do you know - {PRONOUN/r_c/subject} {VERB/r_c/are/is} bush! Or {PRONOUN/r_c/subject} {VERB/r_c/were/was}, as far as that lantern yeek thought. {PRONOUN/r_c/subject/CAP} {VERB/r_c/snicker/snickers} to {PRONOUN/r_c/self} as {PRONOUN/r_c/subject} {VERB/r_c/pad/pads} back to camp.",
+                "text": "r_c heads off to one of {PRONOUN/r_c/poss} favorite spots in the grasslands, a trench running along in a winding line across a productive and lush field providing excellent ambush chances. And what do you know - {PRONOUN/r_c/subject} {VERB/r_c/are/is} bush! Or {PRONOUN/r_c/subject} {VERB/r_c/were/was}, as far as that lantern mouse thought. {PRONOUN/r_c/subject/CAP} {VERB/r_c/snicker/snickers} to {PRONOUN/r_c/self} as {PRONOUN/r_c/subject} {VERB/r_c/pad/pads} back to camp.",
                 "exp": 20,
                 "weight": 20,
                 "prey": ["medium"]
             },
             {
-                "text": "r_c finds a fat, dumb, slow eggbug, and {PRONOUN/r_c/subject} can barely drag the thing back to camp, but great StarClan, it's juicy when {PRONOUN/r_c/subject} {VERB/r_c/sit/sits} down to eat it with {PRONOUN/r_c/poss} Clanmates. Purring, {PRONOUN/r_c/subject} {VERB/r_c/take/takes} the opportunity for a moment of peace, relaxing with {PRONOUN/r_c/poss} friends.",
+                "text": "r_c finds a fat, dumb, slow eggbug, and {PRONOUN/r_c/subject} can barely drag the thing back to camp, but Void it's juicy when {PRONOUN/r_c/subject} {VERB/r_c/sit/sits} down to eat it with {PRONOUN/r_c/poss} Clanmates. Purring, {PRONOUN/r_c/subject} {VERB/r_c/take/takes} the opportunity for a moment of peace, relaxing with {PRONOUN/r_c/poss} friends.",
                 "exp": 20,
                 "weight": 5,
                 "prey": ["medium"]
             },
             {
-                "text": "s_c gets the chance to try out an idea {PRONOUN/s_c/subject}{VERB/s_c/'ve/'s} been sitting on for a while. There's a eggbug warren that {PRONOUN/s_c/subject}{VERB/s_c/'ve/'s} spotted that's particularly badly built, and {PRONOUN/s_c/subject} {VERB/s_c/dig/digs} down into one of the dens, fishing a couple baby rabbits out. This is a good spot to remember if c_n hits hard times.",
+                "text": "s_c gets the chance to try out an idea {PRONOUN/s_c/subject}{VERB/s_c/'ve/'s} been sitting on for a while. There's a eggbug warren that {PRONOUN/s_c/subject}{VERB/s_c/'ve/'s} spotted that's particularly badly built, and {PRONOUN/s_c/subject} {VERB/s_c/dig/digs} down into one of the dens, fishing a couple baby eggbugs out. This is a good spot to remember if c_n hits hard times.",
                 "exp": 20,
                 "weight": 20,
                 "stat_skill": ["CLEVER,1"],
@@ -651,19 +651,19 @@
         "chance_of_success": 40,
         "success_outcomes": [
             {
-                "text": "r_c heads off to one of {PRONOUN/r_c/poss} favorite spots in the grasslands, a trench running along in a winding line across a productive and lush field providing excellent ambush chances. And what do you know - {PRONOUN/r_c/subject} {VERB/r_c/are/is} bush! Or {PRONOUN/r_c/subject} {VERB/r_c/were/was}, as far as that lantern yeek thought. {PRONOUN/r_c/subject/CAP} {VERB/r_c/snicker/snickers} to {PRONOUN/r_c/self} as {PRONOUN/r_c/subject} {VERB/r_c/pad/pads} back to camp.",
+                "text": "r_c heads off to one of {PRONOUN/r_c/poss} favorite spots in the grasslands, a trench running along in a winding line across a productive and lush field providing excellent ambush chances. And what do you know - {PRONOUN/r_c/subject} {VERB/r_c/are/is} bush! Or {PRONOUN/r_c/subject} {VERB/r_c/were/was}, as far as that lantern mouse thought. {PRONOUN/r_c/subject/CAP} {VERB/r_c/snicker/snickers} to {PRONOUN/r_c/self} as {PRONOUN/r_c/subject} {VERB/r_c/pad/pads} back to camp.",
                 "exp": 20,
                 "weight": 20,
                 "prey": ["medium"]
             },
             {
-                "text": "r_c finds a fat, dumb, slow eggbug, and {PRONOUN/r_c/subject} can barely drag the thing back to camp, but great StarClan, it's juicy when {PRONOUN/r_c/subject} {VERB/r_c/sit/sits} down to eat it with {PRONOUN/r_c/poss} Clanmates. Purring, {PRONOUN/r_c/subject} {VERB/r_c/take/takes} the opportunity for a moment of peace, relaxing with {PRONOUN/r_c/poss} friends.",
+                "text": "r_c finds a fat, dumb, slow eggbug, and {PRONOUN/r_c/subject} can barely drag the thing back to camp, but Void it's juicy when {PRONOUN/r_c/subject} {VERB/r_c/sit/sits} down to eat it with {PRONOUN/r_c/poss} Clanmates. Purring, {PRONOUN/r_c/subject} {VERB/r_c/take/takes} the opportunity for a moment of peace, relaxing with {PRONOUN/r_c/poss} friends.",
                 "exp": 20,
                 "weight": 5,
                 "prey": ["medium"]
             },
             {
-                "text": "s_c gets the chance to try out an idea {PRONOUN/s_c/subject}{VERB/s_c/'ve/'s} been sitting on for a while. There's a eggbug warren that {PRONOUN/s_c/subject}{VERB/s_c/'ve/'s} spotted that's particularly badly built, and {PRONOUN/s_c/subject} {VERB/s_c/dig/digs} down into one of the dens, fishing a couple baby rabbits out. This is a good spot to remember if c_n hits hard times.",
+                "text": "s_c gets the chance to try out an idea {PRONOUN/s_c/subject}{VERB/s_c/'ve/'s} been sitting on for a while. There's a eggbug warren that {PRONOUN/s_c/subject}{VERB/s_c/'ve/'s} spotted that's particularly badly built, and {PRONOUN/s_c/subject} {VERB/s_c/dig/digs} down into one of the dens, fishing a couple baby eggbugs out. This is a good spot to remember if c_n hits hard times.",
                 "exp": 20,
                 "weight": 20,
                 "stat_skill": ["CLEVER,1"],
@@ -734,7 +734,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "p_l pads closer to the grass, intent on finding the source of the noise, only to punce on a patch of sporepuffs!  The poor slugcat ends up stinking for days after the unfortunate incident.",
+                "text": "p_l pads closer to the grass, intent on finding the source of the noise, only to punce on a patch of sporepuffs! The poor slugcat ends up stinking for days after the unfortunate incident.",
                 "exp": 0,
                 "weight": 20,
                 "prey": ["very_small"]
@@ -805,7 +805,7 @@
                 "prey": ["very_small"]
             },
             {
-                "text": "r_c takes the lead in checking the source of the noise and comes face to face with a snarling black lizard! r_c yowls for {PRONOUN/r_c/poss} patrol but the other slugcats aren't quick enough to stop the black lizard from killing r_c in one quick and deadly swipe.",
+                "text": "r_c takes the lead in checking the source of the noise and comes face to face with a snarling black lizard! r_c yowls for {PRONOUN/r_c/poss} patrol but the other slugcats aren't quick enough to stop the black lizard from killing r_c in one quick and deadly bite.",
                 "exp": 0,
                 "weight": 10,
                 "dead_cats": ["r_c"],
@@ -1165,7 +1165,7 @@
                 "prey": ["small"]
             },
             {
-                "text": "Calmly, s_c weaves around the scavenger dens, picking out the mice from the tunnels and the batflies off the strange metal hanging fruit. A successful, sneaky hunt.",
+                "text": "Calmly, s_c weaves around the scavenger dens, picking out the lantern mice from the tunnels and the batflies off the strange metal hanging fruit. A successful, sneaky hunt.",
                 "exp": 20,
                 "weight": 20,
                 "stat_trait": [
@@ -1199,7 +1199,7 @@
                 "prey": ["small"]
             },
             {
-                "text": "Carelessly, r_c is seen by scavenger, and taken from c_n.",
+                "text": "Carelessly, r_c is seen by a scavenger, and taken from c_n.",
                 "exp": 0,
                 "weight": 10,
                 "lost_cats": ["r_c"]
@@ -1283,7 +1283,7 @@
                 "can_have_stat": ["app"]
             },
             {
-                "text": "Carelessly, r_c is seen by scavenger, and taken from c_n.",
+                "text": "Carelessly, r_c is seen by a scavenger, and taken from c_n.",
                 "exp": 0,
                 "weight": 10,
                 "lost_cats": ["r_c"]
@@ -1418,7 +1418,7 @@
                 "prey": ["small"]
             },
             {
-                "text": "Carelessly, r_c is seen by scavenger, and taken from c_n.",
+                "text": "Carelessly, r_c is seen by a scavenger, and taken from c_n.",
                 "exp": 0,
                 "weight": 10,
                 "lost_cats": ["r_c"],
@@ -1548,7 +1548,7 @@
                 ]
             },
             {
-                "text": "Carelessly, r_c is seen by scavenger, and taken from c_n.",
+                "text": "Carelessly, r_c is seen by a scavenger, and taken from c_n.",
                 "exp": 0,
                 "weight": 10,
                 "lost_cats": ["r_c"],
@@ -1585,7 +1585,7 @@
                 "weight": 20
             },
             {
-                "text": "The lovely smell leads to scavenger mush. Puzzled, r_c checks around them, only for {PRONOUN/r_c/poss} fur to stand on end as {PRONOUN/r_c/subject} {VERB/r_c/realize/realizes} {PRONOUN/r_c/subject}{VERB/r_c/'re/'s} standing in a metal tunnel, cloaked in rust and camouflage. It's to {PRONOUN/r_c/poss} great fortune that this trap seems to be broken, but whatever scavenger restocked the bait might still be around. {PRONOUN/r_c/subject/CAP} {VERB/r_c/leave/leaves} quickly.",
+                "text": "The lovely smell leads to scavenger mush. Puzzled, r_c checks around them, only for {PRONOUN/r_c/poss} pelt to prickle with fear as {PRONOUN/r_c/subject} {VERB/r_c/realize/realizes} {PRONOUN/r_c/subject}{VERB/r_c/'re/'s} standing in a metal tunnel, cloaked in rust and camouflage. It's to {PRONOUN/r_c/poss} great fortune that this trap seems to be broken, but whatever scavenger restocked the bait might still be around. {PRONOUN/r_c/subject/CAP} {VERB/r_c/leave/leaves} quickly.",
                 "exp": 20,
                 "weight": 5
             },
@@ -1647,7 +1647,7 @@
                 "weight": 20
             },
             {
-                "text": "The lovely smell leads to scavenger mush. Puzzled, r_c checks around them, only for {PRONOUN/r_c/poss} fur to stand on end as {PRONOUN/r_c/subject} {VERB/r_c/realize/realizes} {PRONOUN/r_c/subject}{VERB/r_c/'re/'s} standing in a metal tunnel, cloaked in rust and camouflage. It's to {PRONOUN/r_c/poss} great fortune that this trap seems to be broken, but whatever scavenger restocked the bait might still be around. {PRONOUN/r_c/subject/CAP} {VERB/r_c/leave/leaves} quickly.",
+                "text": "The lovely smell leads to scavenger mush. Puzzled, r_c checks around them, only for {PRONOUN/r_c/poss} as {PRONOUN/r_c/subject} pelt prickles with fear when {VERB/r_c/realize/realizes} {PRONOUN/r_c/subject}{VERB/r_c/'re/'s} standing in a metal tunnel, cloaked in rust and camouflage. It's to {PRONOUN/r_c/poss} great fortune that this trap seems to be broken, but whatever scavenger restocked the bait might still be around. {PRONOUN/r_c/subject/CAP} {VERB/r_c/leave/leaves} quickly.",
                 "exp": 20,
                 "weight": 5
             },

@@ -795,7 +795,7 @@
                 ]
             },
             {
-                "text": "s_c pulls the apprentices' attention towards the flashing batflies darting about. Once upon a time, a fire threatened to consume everything but the bare rock of the mountains, but StarClan caught its embers, stopping it from spreading. They released those embers in greenleaf, to fly above the flowering meadows they'd saved from destruction.",
+                "text": "s_c pulls the apprentices' attention towards the flashing batflies darting about. Once upon a time, a fire threatened to consume everything but the bare rock of the mountains, but the Ascended caught its embers, stopping it from spreading. They released those embers in greenleaf, to fly above the flowering meadows they'd saved from destruction.",
                 "exp": 20,
                 "weight": 20,
                 "stat_skill": ["SPEAKER,1"],
@@ -992,7 +992,7 @@
                 "weight": 20
             },
             {
-                "text": "Slimy, yet satisfying! Curiosity completed, app1 wanders off - but has to report to the medicine den later, when {PRONOUN/app1/poss} stomach reminds {PRONOUN/app1/object} why slugcats don't eat random bugs.",
+                "text": "Slimy, yet satisfying! Curiosity completed, app1 wanders off - but has to report to the cleric den later, when {PRONOUN/app1/poss} stomach reminds {PRONOUN/app1/object} why slugcats don't eat random bugs.",
                 "exp": 0,
                 "weight": 10,
                 "injury": [
@@ -1456,7 +1456,7 @@
             ],
             "fail_outcomes": [
                 {
-                    "text": "As p_l starts the story, r_c continues practicing {PRONOUN/r_c/poss} moves and then pounces straight into a tree trunk. Whoops. Nothing quite like a visit to the medicine den to disrupt the flow of a story.",
+                    "text": "As p_l starts the story, r_c continues practicing {PRONOUN/r_c/poss} moves and then pounces straight into a tree trunk. Whoops. Nothing quite like a visit to the cleric den to disrupt the flow of a story.",
                     "exp": 0,
                     "weight": 20,
                     "injury": [

@@ -150,7 +150,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "Well, the only way to know is to check! s_c scrambles into the den for a look and comes nose to nose with its occupant. It's only by the grace of StarClan that they're able to redirect that speed and twist around just as fast, shedding fur in clumps as the badger's furious snarling and fizzing follows them up the burrow tunnel.",
+                "text": "Well, the only way to know is to check! s_c scrambles into the den for a look and comes nose to nose with its occupant. It's only by the grace of the Void that they're able to redirect that speed and twist around just as fast, shedding fur in clumps as the badger's furious snarling and fizzing follows them up the burrow tunnel.",
                 "exp": 0,
                 "weight": 20,
                 "stat_trait": [
@@ -316,7 +316,7 @@
                 "weight": 20
             },
             {
-                "text": "Well, the only way to know is to check! s_c scrambles into the den for a look, and it's only by the grace of StarClan that they're able to redirect that speed and twist around just as fast, furious fizzing following them up the burrow tunnel, leaving behind clumps of their own fur.",
+                "text": "Well, the only way to know is to check! s_c scrambles into the den for a look, and it's only by the grace of the Void that they're able to redirect that speed and twist around just as fast, furious fizzing following them up the burrow tunnel, leaving behind clumps of their own fur.",
                 "exp": 0,
                 "weight": 20,
                 "stat_trait": [
@@ -472,7 +472,7 @@
                 ]
             },
             {
-                "text": "Hurt and wheezing, r_c hears the patrol panicking as {PRONOUN/r_c/subject} drift to StarClan.",
+                "text": "Hurt and wheezing, r_c hears the patrol panicking as {PRONOUN/r_c/subject} drift to the Void.",
                 "exp": 0,
                 "weight": 10,
                 "dead_cats": ["r_c"],
@@ -518,7 +518,7 @@
                 ]
             },
             {
-                "text": "The patrol can't help s_c in time, and as s_c starts to drift off to StarClan, the eyes of r_c glint malevolently. Was this...? s_c doesn't have a chance to finish {PRONOUN/s_c/poss} last thought.",
+                "text": "The patrol can't help s_c in time, and as s_c starts to drift off to the Void, the eyes of r_c glint malevolently. Was this...? s_c doesn't have a chance to finish {PRONOUN/s_c/poss} last thought.",
                 "exp": 0,
                 "weight": 10,
                 "stat_trait": [
@@ -710,7 +710,7 @@
                 ]
             },
             {
-                "text": "Hurt and wheezing, r_c hears p_l panicking as they drift to StarClan.",
+                "text": "Hurt and wheezing, r_c hears p_l panicking as they drift to the Void.",
                 "exp": 0,
                 "weight": 10,
                 "dead_cats": ["r_c"],
@@ -882,7 +882,7 @@
                 ]
             },
             {
-                "text": "Hurt and wheezing, r_c hears p_l panicking as they drift to StarClan.",
+                "text": "Hurt and wheezing, r_c hears p_l panicking as they drift to the Void.",
                 "exp": 0,
                 "weight": 10,
                 "dead_cats": ["r_c"],
@@ -963,7 +963,7 @@
                 "weight": 20
             },
             {
-                "text": "Hurt and wheezing, r_c does their best to hang on and wait for a patrol, but they succumb to their injuries and drift to StarClan alone.",
+                "text": "Hurt and wheezing, r_c does their best to hang on and wait for a patrol, but they succumb to their injuries and drift to the Void alone.",
                 "exp": 0,
                 "weight": 10,
                 "dead_cats": ["r_c"],
@@ -974,7 +974,7 @@
                 }
             },
             {
-                "text": "r_c eventually manages to pull themselves free, but they're battered and injured. It's all they can do to find a small cave to shelter in through the night on the cold mountain until a patrol finds them the next morning and helps them to the medicine den.",
+                "text": "r_c eventually manages to pull themselves free, but they're battered and injured. It's all they can do to find a small cave to shelter in through the night on the cold mountain until a patrol finds them the next morning and helps them to the cleric den.",
                 "exp": 0,
                 "weight": 10,
                 "injury": [

@@ -132,7 +132,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "The prey must be hiding; r_c catches nothing. As a snowstorm descends and visibility drops, they hide in the mouth of a rabbit warren, shivering and tightly tucked up against the cold. When they return to camp r_c is cold and chilled, their paws and tail prickling with the danger of frostbite.",
+                "text": "The prey must be hiding; r_c catches nothing. As a snowstorm descends and visibility drops, they hide in the mouth of an eggbug warren, shivering and tightly tucked up against the cold. When they return to camp r_c is cold and chilled, their paws and tail prickling with the danger of frostbite.",
                 "exp": 0,
                 "weight": 10,
                 "injury": [
@@ -345,7 +345,7 @@
                 "prey": ["very_small"]
             },
             {
-                "text": "The patrol launches into battle, but r_c is caught with a nasty bite, and the slugcats give up on challenging for the food in favor of quickly helping r_c back to the cleric den.",
+                "text": "The patrol launches into battle, but r_c is caught with a nasty bite, and the slugcats give up on challenging for the food in favor of quickly helping r_c back to the cleric's den.",
                 "exp": 0,
                 "weight": 10,
                 "injury": [
@@ -481,7 +481,7 @@
                 "prey": ["very_small"]
             },
             {
-                "text": "The patrol launches into battle, but r_c is caught with a nasty bite, and the slugcats give up on challenging for the food in favor of quickly helping r_c back to the cleric den.",
+                "text": "The patrol launches into battle, but r_c is caught with a nasty bite, and the slugcats give up on challenging for the food in favor of quickly helping r_c back to the cleric's den.",
                 "exp": 0,
                 "weight": 10,
                 "injury": [
@@ -705,12 +705,12 @@
         "max_cats": 6,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "The patrol catches the scent of a lizard. Tracking it, they find a blue lizard feeding on a cow carcass, either a small female or one of last newleaf's calves. The slugcat-sized predator definitely didn't kill this massive hunk of fresh-kill.",
+        "intro_text": "The patrol catches the scent of a lizard. Tracking it, they find a blue lizard feeding on a rain deer carcass, either a small female or one of last newleaf's fawns. The slugcat-sized predator definitely didn't kill this massive hunk of fresh-kill.",
         "decline_text": "The patrol decides not to quarrel with the lizard - bigger predators will be attracted here. Best to leave sooner rather than later.",
         "chance_of_success": 40,
         "success_outcomes": [
             {
-                "text": "As the patrol approaches, the blue lizard spots them and backs off from the carcass with a whine. Your slugcats can feed in peace for now, but larger predators will surely soon come to throw them off the kill. By cooperating together, the patrol is able to at least drag some of the intestines home to camp.",
+                "text": "As the patrol approaches, the blue lizard spots them and backs off from the carcass with a hiss. Your slugcats can feed in peace for now, but larger predators will surely soon come to throw them off the kill. By cooperating together, the patrol is able to at least drag some of the intestines home to camp.",
                 "exp": 20,
                 "weight": 20,
                 "prey": ["large"],
@@ -769,7 +769,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "The blue lizard gives up on the kill with a snarl, but a cyan lizard yip in the distance sends both the smaller predator species running, the slugcats puffed up and uncomfortable.",
+                "text": "The blue lizard gives up on the kill with a snarl, but a cyan lizard yip in the distance sends both the smaller predator species running, the slugcats on edge and uncomfortable.",
                 "exp": 0,
                 "weight": 20,
                 "relationships": [
@@ -819,18 +819,18 @@
         "max_cats": 1,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "r_c catches the scent of a lizard. Tracking it, they find a blue lizard feeding on a cow carcass, either a small female or one of last newleaf's calves. Roughly equal in size to r_c, the blue lizard definitely didn't bring down this feast themselves.",
+        "intro_text": "r_c catches the scent of a lizard. Tracking it, they find a blue lizard feeding on a rain deer carcass, either a small female or one of last newleaf's fawns. Roughly equal in size to r_c, the blue lizard definitely didn't bring down this feast themselves.",
         "decline_text": "r_c decides not to quarrel with the lizard - bigger predators will be attracted here. Best to leave sooner rather than later.",
         "chance_of_success": 40,
         "success_outcomes": [
             {
-                "text": "r_c approaches the kill, fur puffed up. The blue lizard grumbles, but with a hiss both animals agree to disagree, feeding from opposite ends of the calf without further trouble. r_c is able to find some decent scraps to carry back to camp, though with only them there they can't bring back as much meat as they'd like.",
+                "text": "r_c approaches the kill, spear unsheathed and snarling. The blue lizard grumbles, but with a hiss both animals agree to disagree, feeding from opposite ends of the fawn without further trouble. r_c is able to find some decent scraps to carry back to camp, though with only them there they can't bring back as much meat as they'd like.",
                 "exp": 10,
                 "weight": 20,
                 "prey": ["small"]
             },
             {
-                "text": "Watching the blue lizard at the carcass, s_c notices it stripping meat from the calf and caching it in little holes, and starts to copy it. The bigger predators will return to claim the calf soon, but by the time they do s_c will have hidden away the choicest morsels to fetch later.",
+                "text": "Watching the blue lizard at the carcass, s_c notices it stripping meat from the fawn and caching it in little holes, and starts to copy it. The bigger predators will return to claim the fawn soon, but by the time they do s_c will have hidden away the choicest morsels to fetch later.",
                 "exp": 10,
                 "weight": 20,
                 "stat_skill": ["FIGHTER,1"],
@@ -861,7 +861,7 @@
                 "weight": 20
             },
             {
-                "text": "The blue lizard gives up the kill, but s_c pursues the lizard anyway... up until it turns and threatens them with snapping teeth. s_c dances out of the way, but hears the caw of noodleflies descending on the carcass, and knows it would be too dangerous to return.",
+                "text": "The blue lizard gives up the kill, but s_c pursues the lizard anyway... up until it turns and threatens them with snapping teeth. s_c dances out of the way, but hears the noot of noodleflies descending on the carcass, and knows it would be too dangerous to return.",
                 "exp": 0,
                 "weight": 20,
                 "stat_trait": [
@@ -874,7 +874,7 @@
                 ]
             },
             {
-                "text": "r_c happily tucks into the massive calf - there's more than enough room for both them and the small lizard to feed. They hear a massive, outraged yowl, and a blow from behind sends them to the Void with a single hit. They never saw what did it.",
+                "text": "r_c happily tucks into the massive fawn - there's more than enough room for both them and the small lizard to feed. They hear a massive, outraged yowl, and a blow from behind sends them to the Void with a single hit. They never saw what did it.",
                 "exp": 0,
                 "weight": 10,
                 "dead_cats": ["r_c"],
@@ -922,7 +922,7 @@
                 ],
                 "history_text": {
                     "scar": "m_c carries a scar from fighting with a blue lizard.",
-                    "reg_death": "While scavenging alone, m_c was killed by a predator they didn't see.",
+                    "reg_death": "While scavenging alone, m_c was killed by a predator they challenged too fiercly.",
                     "lead_death": "{VERB/m_c/were/was} killed by a predator"
                 }
             }
@@ -952,7 +952,7 @@
                 "prey": ["medium"]
             },
             {
-                "text": "p_l examines the burrow a bit, before sticking a paw inside and swiping around. It takes a few passes, but they hook their claws into fur and yank the lanternmouse out by the tail, killing it before it can fully wake up.",
+                "text": "p_l examines the burrow a bit, before sticking a paw inside and swiping around. It takes a few passes, but they manage to get a good paw-hold on the lanternmouse and pull it out by the tail, killing it before it can fully wake up.",
                 "exp": 20,
                 "weight": 5,
                 "prey": ["medium"]
@@ -1093,7 +1093,7 @@
             "all apprentices": [3, 3]
         },
         "weight": 20,
-        "intro_text": "The trio is gathered around an isolated burrow, discussing their plan in hushed mews. This burrow is an abandoned rabbit's warren, but currently is home to ground lanternmice. The three entrances seem just big enough for the apprentices to crawl inside, bringing the hunt right to the lanternmice, who should be in the midst of hibernation right now.",
+        "intro_text": "The trio is gathered around an isolated burrow, discussing their plan in hushed mews. This burrow is an abandoned eggbug warren, but currently is home to ground lanternmice. The three entrances seem just big enough for the apprentices to crawl inside, bringing the hunt right to the lanternmice, who should be in the midst of hibernation right now.",
         "decline_text": "... On second thought, maybe this is too risky. app1 and app2 exchange nervous glances, and app3 shuffles their paws before suggesting they go home instead, to which the others gladly agree. Better to stick to what they know.",
         "chance_of_success": 20,
         "success_outcomes": [
@@ -1182,12 +1182,12 @@
         "max_cats": 6,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "p_l's patrol strolls through the plains, snow crunching under their paws. One slugcat raises their tail, signaling the others to be still; they've scented ground lanternmice nearby.",
+        "intro_text": "p_l's patrol strolls through the plains, snow crunching under their paws. One slugcat raises their paw, signaling the others to be still; they've scented ground lanternmice nearby.",
         "decline_text": "p_l quietly shakes their head and leads the patrol elsewhere. They'll be tucked away in their burrows, which is.. a lot of work for a few thin lanternmice.",
         "chance_of_success": 30,
         "success_outcomes": [
             {
-                "text": "It's a lot of investigation in the snow, but eventually the patrol finds a burrow with a good amount of sleeping lanternmice within. One slugcat shoves their paw in, swiping around until their claws hook into fur, and yanks each lanternmouse out for a waiting slugcat to finish off.",
+                "text": "It's a lot of investigation in the snow, but eventually the patrol finds a burrow with a good amount of sleeping lanternmice within. One slugcat shoves their paw in, moving around until their paw grabs ahold of the mice's tails, and yanks each lanternmouse out for a waiting slugcat to finish off.",
                 "exp": 30,
                 "weight": 20,
                 "prey": ["medium"],
@@ -1202,7 +1202,7 @@
                 ]
             },
             {
-                "text": "It's a lot of investigation in the snow, but eventually the patrol finds a burrow with a good amount of sleeping lanternmice within. This burrow has a back exit; r_c sticks their muzzle in it and starts yowling down the burrow, waking the lanternmice and flushing them out the front, where rest of the patrol awaits with unsheathed claws.",
+                "text": "It's a lot of investigation in the snow, but eventually the patrol finds a burrow with a good amount of sleeping lanternmice within. This burrow has a back exit; r_c sticks their muzzle in it and starts yowling down the burrow, waking the lanternmice and flushing them out the front, where rest of the patrol awaits with unsheathed spears.",
                 "exp": 30,
                 "weight": 5,
                 "prey": ["medium"],
@@ -1360,7 +1360,7 @@
             "normal adult": [1, 6]
         },
         "weight": 20,
-        "intro_text": "app1 catches scent of a yeek nearby. They're confused, asking where it could be, given there's not footprints in the snow, until p_l indicates the snowdrift itself with a wave of their tail.",
+        "intro_text": "app1 catches scent of a yeek nearby. They're confused, asking where it could be, given there's not footprints in the snow, until p_l indicates the snowdrift itself with a wave of their paw.",
         "decline_text": "The patrol ignores the yeek.",
         "chance_of_success": 40,
         "success_outcomes": [
@@ -1397,7 +1397,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "app1 tries to dive for the yeek in the snow, but the only thing they catch under their claws is a pebble. p_l curls around them to warm them up afterwards, instructing them on the delicate art of pouncing for prey you can't see.",
+                "text": "app1 tries to dive for the yeek in the snow, but the only thing they catch under their paws is a pebble. p_l curls around them to warm them up afterwards, instructing them on the delicate art of pouncing for prey you can't see.",
                 "exp": 0,
                 "weight": 20,
                 "relationships": [
@@ -1448,7 +1448,7 @@
                 ]
             },
             {
-                "text": "While the way app1 tries to burst out of a bush on a rabbit was categorically silly, the yeeks that were startled into the claws of the rest of the hunting patrol make up for it, and all the adults remember being young, dumb, and stupid with the desire to impress a pretty pelt. p_l takes app1 aside for a quiet word about toning it down a little, but the hunting trip goes well.",
+                "text": "While the way app1 tries to burst out of a bush on an eggbug was categorically silly, the yeeks that were startled into the paws of the rest of the hunting patrol make up for it, and all the adults remember being young, dumb, and stupid with the desire to impress a pretty pelt. p_l takes app1 aside for a quiet word about toning it down a little, but the hunting trip goes well.",
                 "exp": 20,
                 "weight": 5,
                 "prey": ["medium"],
@@ -1606,7 +1606,7 @@
         "relationship_constraint": ["siblings"],
         "success_outcomes": [
             {
-                "text": "app1 misses a p_tp_s, and app2 startles a pair of p_tp_p. They don't let it get them down, instead capturing a plump rabbit with a beautiful team ambush! But when they bring it back to camp, app1 tries to take sole credit for the prey, and instead of familial talent, it's familial discord that's displayed, as the apprentices get into a massive argument in the middle of camp.",
+                "text": "app1 misses a p_tp_s, and app2 startles a pair of p_tp_p. They don't let it get them down, instead capturing a plump eggbug with a beautiful team ambush! But when they bring it back to camp, app1 tries to take sole credit for the prey, and instead of familial talent, it's familial discord that's displayed, as the apprentices get into a massive argument in the middle of camp.",
                 "exp": 20,
                 "weight": 20,
                 "prey": ["small"],
@@ -1816,7 +1816,7 @@
         "relationship_constraint": ["siblings"],
         "success_outcomes": [
             {
-                "text": "app1 misses a p_tp_s, and app2 and app3 startle a pair of p_tp_p. They don't let it get them down, instead capturing a plump rabbit with a beautiful team ambush! But when they bring it back to camp, app1 tries to take sole credit for the prey, and instead of familial talent, it's familial discord that's displayed, as the apprentices get into a massive argument in the middle of camp.",
+                "text": "app1 misses a p_tp_s, and app2 and app3 startle a pair of p_tp_p. They don't let it get them down, instead capturing a plump eggbug with a beautiful team ambush! But when they bring it back to camp, app1 tries to take sole credit for the prey, and instead of familial talent, it's familial discord that's displayed, as the apprentices get into a massive argument in the middle of camp.",
                 "exp": 30,
                 "weight": 20,
                 "prey": ["small"],
@@ -2024,7 +2024,7 @@
         "relationship_constraint": ["siblings"],
         "success_outcomes": [
             {
-                "text": "app1 misses a p_tp_s, and app2 and app3 startle a pair of p_tp_p. They don't let it get them down, instead capturing a plump rabbit with a beautiful team ambush! But when they bring it back to camp, app1 tries to take sole credit for the prey, and instead of familial talent, it's familial discord that's displayed, as the apprentices get into a massive argument in the middle of camp.",
+                "text": "app1 misses a p_tp_s, and app2 and app3 startle a pair of p_tp_p. They don't let it get them down, instead capturing a plump eggbug with a beautiful team ambush! But when they bring it back to camp, app1 tries to take sole credit for the prey, and instead of familial talent, it's familial discord that's displayed, as the apprentices get into a massive argument in the middle of camp.",
                 "exp": 30,
                 "weight": 20,
                 "prey": ["small"],
@@ -2232,7 +2232,7 @@
         "relationship_constraint": ["siblings"],
         "success_outcomes": [
             {
-                "text": "app1 misses a p_tp_s, and app2 and app3 startle a pair of p_tp_p. They don't let it get them down, instead capturing a plump rabbit with a beautiful team ambush! But when they bring it back to camp, app1 tries to take sole credit for the prey, and instead of familial talent, it's familial discord that's displayed, as the apprentices get into a massive argument in the middle of camp.",
+                "text": "app1 misses a p_tp_s, and app2 and app3 startle a pair of p_tp_p. They don't let it get them down, instead capturing a plump eggbug with a beautiful team ambush! But when they bring it back to camp, app1 tries to take sole credit for the prey, and instead of familial talent, it's familial discord that's displayed, as the apprentices get into a massive argument in the middle of camp.",
                 "exp": 30,
                 "weight": 20,
                 "prey": ["small"],
@@ -2439,7 +2439,7 @@
         "relationship_constraint": ["siblings"],
         "success_outcomes": [
             {
-                "text": "app1 misses a p_tp_s, and app2 and app3 startle a pair of p_tp_p. They don't let it get them down, instead capturing a plump rabbit with a beautiful team ambush! But when they bring it back to camp, app1 tries to take sole credit for the prey, and instead of familial talent, it's familial discord that's displayed, as the apprentices get into a massive argument in the middle of camp.",
+                "text": "app1 misses a p_tp_s, and app2 and app3 startle a pair of p_tp_p. They don't let it get them down, instead capturing a plump eggbug with a beautiful team ambush! But when they bring it back to camp, app1 tries to take sole credit for the prey, and instead of familial talent, it's familial discord that's displayed, as the apprentices get into a massive argument in the middle of camp.",
                 "exp": 30,
                 "weight": 20,
                 "prey": ["small"],
@@ -2981,7 +2981,7 @@
         "relationship_constraint": ["siblings"],
         "success_outcomes": [
             {
-                "text": "Three p_tp_p are nothing to sniff at in leaf-bare as a hunting success, but stars above being alone with r_c makes p_l feel like a kitten again. And not in the cute way either, in the chewing on tails, whiny, petty, immature way. Ugh.",
+                "text": "Three p_tp_p are nothing to sniff at in leaf-bare as a hunting success, but Void being alone with r_c makes p_l feel like a slugpup again. And not in the cute way either, in the chewing on tails, whiny, petty, immature way. Ugh.",
                 "exp": 20,
                 "weight": 20,
                 "prey": ["small"],
@@ -3150,7 +3150,7 @@
         "relationship_constraint": ["siblings"],
         "success_outcomes": [
             {
-                "text": "Watching r_c execute a fantastic leap to bring down a p_mp_s, p_l smiles. Does r_c remember the time {PRONOUN/r_c/subject} tried to do that as a kitten, and stood on {PRONOUN/r_c/poss} own tail? The siblings laugh about it as they move on to the next hunting ground.",
+                "text": "Watching r_c execute a fantastic leap to bring down a p_mp_s, p_l smiles. Does r_c remember the time {PRONOUN/r_c/subject} tried to do that as a slugpup, and stood on {PRONOUN/r_c/poss} own tail? The siblings laugh about it as they move on to the next hunting ground.",
                 "exp": 20,
                 "weight": 20,
                 "prey": ["small"],
@@ -3204,7 +3204,7 @@
                 "prey": ["very_small"]
             },
             {
-                "text": "r_c sees a rabbit {PRONOUN/r_c/subject}'d like for the fresh-kill pile, but the chase goes badly - {PRONOUN/r_c/subject} {VERB/r_c/throw/throws} out {PRONOUN/r_c/poss} claws to stop {PRONOUN/r_c/poss} fall, digging into the dirt, and it works, but it wrenches {PRONOUN/r_c/poss} foreleg out of socket. Fleas and ticks!",
+                "text": "r_c sees an eggbug {PRONOUN/r_c/subject}'d like for the fresh-kill pile, but the chase goes badly - {PRONOUN/r_c/subject} {VERB/r_c/throw/throws} out {PRONOUN/r_c/poss} paws to stop {PRONOUN/r_c/poss} fall, digging into the dirt, and it works, but it wrenches {PRONOUN/r_c/poss} foreleg out of socket. Leeches and spiders!",
                 "exp": 0,
                 "weight": 10,
                 "injury": [
@@ -3231,7 +3231,7 @@
             "all apprentices": [-1, -1]
         },
         "weight": 20,
-        "intro_text": "The hunting patrol heads out early, coats fluffed up against the cold.",
+        "intro_text": "The hunting patrol heads out early, pelts twitching against the cold.",
         "decline_text": "They encounter a dawn patrol on their way back to camp and join up with them instead.",
         "chance_of_success": 50,
         "relationship_constraint": ["siblings"],
@@ -3397,7 +3397,7 @@
         "relationship_constraint": ["siblings"],
         "success_outcomes": [
             {
-                "text": "A p_mp_s and three p_tp_p is nothing to sniff at in leaf-bare as a hunting success, but stars above being alone with {PRONOUN/p_l/poss} siblings makes p_l feel like a kitten again. And not in the cute way either, in the chewing on tails, whiny, petty, immature way. Ugh.",
+                "text": "A p_mp_s and three p_tp_p is nothing to sniff at in leaf-bare as a hunting success, but Void being alone with {PRONOUN/p_l/poss} siblings makes p_l feel like a slugpup again. And not in the cute way either, in the chewing on tails, whiny, petty, immature way. Ugh.",
                 "exp": 20,
                 "weight": 20,
                 "prey": ["small"],
@@ -3566,7 +3566,7 @@
         "relationship_constraint": ["siblings"],
         "success_outcomes": [
             {
-                "text": "Watching r_c execute a fantastic leap to bring down a p_mp_s, p_l smiles. Does r_c remember the time {PRONOUN/r_c/subject} tried to do that as a kitten, and stood on {PRONOUN/r_c/poss} own tail? The siblings laugh about it together as they move on to the next hunting ground.",
+                "text": "Watching r_c execute a fantastic leap to bring down a p_mp_s, p_l smiles. Does r_c remember the time {PRONOUN/r_c/subject} tried to do that as a slugpup, and stood on {PRONOUN/r_c/poss} own tail? The siblings laugh about it together as they move on to the next hunting ground.",
                 "exp": 20,
                 "weight": 20,
                 "prey": ["small"],
@@ -3620,7 +3620,7 @@
                 "prey": ["very_small"]
             },
             {
-                "text": "r_c sees a rabbit {PRONOUN/r_c/subject}'d like for the fresh-kill pile, but the chase goes badly - {PRONOUN/r_c/subject} {VERB/r_c/throw/throws} out {PRONOUN/r_c/poss} claws to stop {PRONOUN/r_c/poss} fall, digging into the dirt, and it works, but it wrenches {PRONOUN/r_c/poss} foreleg out of socket. Fleas and ticks!",
+                "text": "r_c sees an eggbug {PRONOUN/r_c/subject}'d like for the fresh-kill pile, but the chase goes badly - {PRONOUN/r_c/subject} {VERB/r_c/throw/throws} out {PRONOUN/r_c/poss} paws to stop {PRONOUN/r_c/poss} fall, digging into the dirt, and it works, but it wrenches {PRONOUN/r_c/poss} foreleg out of socket. Leeches and spiders!",
                 "exp": 0,
                 "weight": 10,
                 "injury": [
@@ -3647,7 +3647,7 @@
             "all apprentices": [-1, -1]
         },
         "weight": 20,
-        "intro_text": "The hunting patrol heads out early, coats fluffed up against the cold.",
+        "intro_text": "The hunting patrol heads out early, pelts twitching against the cold.",
         "decline_text": "They encounter a dawn patrol on their way back to camp and join up with them instead.",
         "chance_of_success": 50,
         "relationship_constraint": ["siblings"],
@@ -3830,7 +3830,7 @@
                 "amount": 5
             } ] }, 
         {
-            "text": "The whole patrol stares at the sight of a lizard, something slugcats fear, stuck upside with its whole rump flailing up and undignified. r_c can't stop {PRONOUN/r_c/self} from snorting at the sight. Then the whole patrol is laughing. For this one moment, your slugcats forget about the cold in the fur and hunger in their bellies to enjoy a moment with their friends.",
+            "text": "The whole patrol stares at the sight of a lizard, something slugcats fear, stuck upside with its whole rump flailing up and undignified. r_c can't stop {PRONOUN/r_c/self} from snorting at the sight. Then the whole patrol is laughing. For this one moment, your slugcats forget about the cold in the air and hunger in their bellies to enjoy a moment with their friends.",
                 "exp": 5,
                 "weight": 20, 
                 "prey": ["small"],
@@ -3845,7 +3845,7 @@
         ]  }
     ], 
         "fail_outcomes": [
-            {"text": "r_c snarls. {PRONOUN/r_c/subject/CAP} {VERB/r_c/are/is} too cold and too hungry to watch a stupid lizard. This will be a hard hunt and if you can't focus, then go huddle with the kits at camp.",
+            {"text": "r_c snarls. {PRONOUN/r_c/subject/CAP} {VERB/r_c/are/is} too cold and too hungry to watch a stupid lizard. This will be a hard hunt and if you can't focus, then go huddle with the pups at camp.",
             "exp": 0,
             "weight": 15, 
             "prey": ["very small"],

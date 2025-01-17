@@ -119,8 +119,8 @@
 	{
 		"id": "jealousy_kit_inc_med3",
 		"interactions": [
-			"m_c looks at r_c and remembers how easy it was to be a kitten.",
-			"m_c doesn't get why r_c gets away with so much more than m_c did as a kitten.",
+			"m_c looks at r_c and remembers how easy it was to be a slugpup.",
+			"m_c doesn't get why r_c gets away with so much more than m_c did as a slugpup.",
 			"m_c is afraid that r_c is going to grow up bigger than {PRONOUN/m_c/object}.",
 			"r_c says that m_c said something mean, and no one will believe m_c's defense.",
 			"m_c gets scolded for not watching r_c when r_c does something naughty.",
@@ -143,10 +143,10 @@
 		"intensity": "high",
 		"interactions": [
 			"m_c is jealous that r_c gets to do cool super secret cleric things.",
-			"m_c wants to commune with StarClan like r_c does.",
+			"m_c wants to commune with the Ascended like r_c does.",
 			"r_c refuses to tell m_c too much about {PRONOUN/r_c/poss} cleric training.",
 			"m_c feels like r_c's life is easier as a cleric apprentice.",
-			"m_c tries to get free catmint from r_c, but gets snitched on instead.",
+			"m_c tries to get free scugmint from r_c, but gets snitched on instead.",
 			"m_c thinks r_c's training sounds way easier than what m_c does now.",
 			"m_c thinks it's unfair that r_c always gets to go to Gatherings."
 		],

@@ -2063,7 +2063,7 @@
                 "history_text": { "reg_death": "This slugcat found out why c_n despises noodleflies." }
             },
             {
-                "text": "s_c runs headlong towards the sound, yowling their head off to the slugcat to wait for them, and don't pay attention to where they place their paws. They slip, tumbling down the mountain, and see dark wings swooping after them. They wake up in Silverpelt.",
+                "text": "s_c runs headlong towards the sound, yowling their head off to the slugcat to wait for them, and don't pay attention to where they place their paws. They slip, tumbling down the mountain, and see dark wings swooping after them. They wake up in the Void.",
                 "exp": 0,
                 "weight": 10,
                 "stat_trait": ["troublesome", "bold", "daring", "ambitious"],
@@ -2237,7 +2237,7 @@
                 "prey": ["very_small"]
             },
             {
-                "text": "While stalking a batfly, r_c takes a tumble, falling down a snow drift that provides nowhere to sink {PRONOUN/r_c/poss} claws into. Fortunately {PRONOUN/r_c/subject} don't seem seriously injured, but {PRONOUN/r_c/subject} need to get back to the medicine den and warmed up immediately.",
+                "text": "While stalking a batfly, r_c takes a tumble, falling down a snow drift that provides nowhere to sink {PRONOUN/r_c/poss} claws into. Fortunately {PRONOUN/r_c/subject} don't seem seriously injured, but {PRONOUN/r_c/subject} need to get back to the cleric den and warmed up immediately.",
                 "exp": 0,
                 "weight": 10,
                 "injury": [
@@ -2479,7 +2479,7 @@
                 "prey": ["very_small"]
             },
             {
-                "text": "While stalking a batfly, r_c takes a tumble, falling down a snow drift that provides nowhere to sink {PRONOUN/r_c/poss} claws into. Fortunately {PRONOUN/r_c/subject} don't seem seriously injured, but {PRONOUN/r_c/subject} need to get back to the medicine den and warmed up immediately.",
+                "text": "While stalking a batfly, r_c takes a tumble, falling down a snow drift that provides nowhere to sink {PRONOUN/r_c/poss} claws into. Fortunately {PRONOUN/r_c/subject} don't seem seriously injured, but {PRONOUN/r_c/subject} need to get back to the cleric den and warmed up immediately.",
                 "exp": 0,
                 "weight": 10,
                 "injury": [
@@ -2721,7 +2721,7 @@
                 "prey": ["very_small"]
             },
             {
-                "text": "While stalking a batfly, r_c takes a tumble, falling down a snow drift that provides nowhere to sink {PRONOUN/r_c/poss} claws into. Fortunately {PRONOUN/r_c/subject} don't seem seriously injured, but {PRONOUN/r_c/subject} need to get back to the medicine den and warmed up immediately.",
+                "text": "While stalking a batfly, r_c takes a tumble, falling down a snow drift that provides nowhere to sink {PRONOUN/r_c/poss} claws into. Fortunately {PRONOUN/r_c/subject} don't seem seriously injured, but {PRONOUN/r_c/subject} need to get back to the cleric den and warmed up immediately.",
                 "exp": 0,
                 "weight": 10,
                 "injury": [
@@ -2963,7 +2963,7 @@
                 "prey": ["very_small"]
             },
             {
-                "text": "While stalking a batfly, r_c takes a tumble, falling down a snow drift that provides nowhere to sink {PRONOUN/r_c/poss} claws into. Fortunately {PRONOUN/r_c/subject} don't seem seriously injured, but {PRONOUN/r_c/subject} need to get back to the medicine den and warmed up immediately.",
+                "text": "While stalking a batfly, r_c takes a tumble, falling down a snow drift that provides nowhere to sink {PRONOUN/r_c/poss} claws into. Fortunately {PRONOUN/r_c/subject} don't seem seriously injured, but {PRONOUN/r_c/subject} need to get back to the cleric den and warmed up immediately.",
                 "exp": 0,
                 "weight": 10,
                 "injury": [
@@ -3203,7 +3203,7 @@
                 "prey": ["very_small"]
             },
             {
-                "text": "While stalking a batfly, r_c takes a tumble, falling down a snow drift that provides nowhere to sink {PRONOUN/r_c/poss} claws into. Fortunately {PRONOUN/r_c/subject} don't seem seriously injured, but {PRONOUN/r_c/subject} need to get back to the medicine den and warmed up immediately.",
+                "text": "While stalking a batfly, r_c takes a tumble, falling down a snow drift that provides nowhere to sink {PRONOUN/r_c/poss} claws into. Fortunately {PRONOUN/r_c/subject} don't seem seriously injured, but {PRONOUN/r_c/subject} need to get back to the cleric den and warmed up immediately.",
                 "exp": 0,
                 "weight": 10,
                 "injury": [

@@ -79,7 +79,7 @@
     "plural": "oak leaves",
     "singular": "oak leaf"
   },
-  "CATMINT": {
+  "SCUGMINT": {
     "default": "scugmint",
     "plural": "scugmint",
     "singular": "scugmint"
@@ -1624,10 +1624,115 @@
     "plural": "asexual draperies",
     "singular": "asexual drapery"
   },
+  "LESBIANDRAPERY": {
+   "default": "lesbian drapery",
+   "plural": "lesbian draperies",
+   "singular": "lesbian drapery"
+ },
    "INTERSEXDRAPERY": {
     "default": "intersex drapery",
     "plural": "intersex draperies",
     "singular": "intersex drapery"
+  },
+  "AROACEDRAPERY": {
+    "default": "aroace drapery",
+    "plural": "aroace draperies",
+    "singular": "aroace drapery"
+  },
+  "DEMIGIRLDRAPERY": {
+    "default": "demigirl drapery",
+    "plural": "demigirl draperies",
+    "singular": "demigirl drapery"
+  },
+  "DEMIBOYDRAPERY": {
+    "default": "demiboy drapery",
+    "plural": "demiboy draperies",
+    "singular": "demiboy drapery"
+  },
+  "DEMIGENDERDRAPERY": {
+    "default": "demigender drapery",
+    "plural": "demigender draperies",
+    "singular": "demigender drapery"
+  },
+  "DEMIFLUIDDRAPERY": {
+    "default": "demifluid drapery",
+    "plural": "demifluid draperies",
+    "singular": "demifluid drapery"
+  },
+  "DEMIFLUXDRAPERY": {
+    "default": "demiflux drapery",
+    "plural": "demiflux draperies",
+    "singular": "demiflux drapery"
+  },
+  "ABRODRAPERY": {
+    "default": "abroromantic drapery",
+    "plural": "abroromantic draperies",
+    "singular": "abroromantic drapery"
+  },
+  "ARODRAPERY": {
+    "default": "aromantic drapery",
+    "plural": "aromantic draperies",
+    "singular": "aromantic drapery"
+  },
+  "DEMISEXDRAPERY": {
+    "default": "demisexual drapery",
+    "plural": "demisexual draperies",
+    "singular": "demisexual drapery"
+  },
+  "DEMIRODRAPERY": {
+    "default": "demiromantic drapery",
+    "plural": "demiromantic draperies",
+    "singular": "demiromantic drapery"
+  },
+  "ACHILLEANDRAPERY": {
+    "default": "achillean drapery",
+    "plural": "achillean draperies",
+    "singular": "achillean drapery"
+  },
+  "SAPPHICDRAPERY": {
+    "default": "sapphic drapery",
+    "plural": "sapphic draperies",
+    "singular": "sapphic drapery"
+  },
+  "DIAMORICDRAPERY": {
+    "default": "diamoric drapery",
+    "plural": "diamoric draperies",
+    "singular": "diamoric drapery"
+  },
+  "UNLABELEDDRAPERY": {
+    "default": "unlabeled drapery",
+    "plural": "unlabeled draperies",
+    "singular": "unlabeled drapery"
+  },
+  "TRANSFEMDRAPERY": {
+    "default": "transfem drapery",
+    "plural": "transfem draperies",
+    "singular": "transfem drapery"
+  },
+  "TRANSMASCDRAPERY": {
+    "default": "transmasc drapery",
+    "plural": "transmasc draperies",
+    "singular": "transmasc drapery"
+  },
+  "BIGENDERDRAPERY": {
+    "default": "bigender drapery",
+    "plural": "bigender draperies",
+    "singular": "bigender drapery"
+  },
+  "MULTISEXDRAPERY": {
+    "default": "multisex drapery",
+    "plural": "multisex draperies",
+    "singular": "multisex drapery"
+  },
+  "ACESPECDRAPERY": {
+    "default": "acespec drapery",
+    "plural": "acespec draperies",
+    "singular": "acespec drapery"
+  },
+  "AROSPECDRAPERY": {
+    "default": "arospec drapery",
+    "plural": "arospec draperies",
+    "singular": "arospec drapery"
   },
    "EYEPATCHWHITE": {
     "default": "white eyepatch",

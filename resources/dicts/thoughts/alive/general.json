@@ -53,7 +53,7 @@
             "Is feeling underappreciated...",
             "Is staring off into space",
             "Is picking the burrs from {PRONOUN/m_c/poss} pelt",
-            "Is sharpening {PRONOUN/m_c/poss} claws",
+            "Is sharpening {PRONOUN/m_c/poss} spear",
             "Woke up on the wrong side of the nest",
             "Can't wait to take a nap later",
             "Is batting at {PRONOUN/m_c/poss} tail",
@@ -745,9 +745,10 @@
             "Has been glaring at a certain slugcat in camp with an odd look in {PRONOUN/m_c/poss} eye",
             "Daydreams about slaughtering every slugcat {PRONOUN/m_c/subject} {VERB/m_c/despise/despises}",
             "Shreds {PRONOUN/m_c/poss} bedding absentmindedly",
-            "Admires {PRONOUN/m_c/poss} own claws",
+            "Admires {PRONOUN/m_c/poss} sharp spear",
             "Pictures a glorious war breaking out",
-            "Would kill any slugcat that posed a threat to c_n"
+            "Would kill any slugcat that posed a threat to c_n",
+            "Has been gathering a concering amount of explosives"
         ],
         "main_trait_constraint": [
             "bloodthirsty"
@@ -2778,7 +2779,7 @@
             "Uses knowledge from {PRONOUN/r_c/poss} time with an Iterator to improve a healing method",
             "Wonders what {PRONOUN/r_c/poss} old vet would do for greencough",
             "Is annoyed by Clan gossip surrounding {PRONOUN/m_c/poss} past and {PRONOUN/m_c/poss} connection to the Void",
-            "Knows a great garden near {PRONOUN/m_c/poss} Iterator for gathering catmint",
+            "Knows a great garden near {PRONOUN/m_c/poss} Iterator for gathering scugmint",
             "Wishes {PRONOUN/m_c/subject} could get {PRONOUN/m_c/poss} paws on the wrappings the vet uses"
         ],
         "main_backstory_constraint": ["kittypet1", "kittypet2", "kittypet3", "kittypet4", "refugee3", "tragedy_survivor3", "guided1"],
@@ -3103,7 +3104,6 @@
     {
         "id": "apprentice_to_dead_StarClan_kits",
         "thoughts": [
-            "Wonders if one of the stars in the sky is r_c",
             "Remembers fondly when r_c would beg to be taught a new fighting move",
             "Goes to teach r_c a new move {PRONOUN/m_c/subject} learned, but remembers r_c is among the Ascended now",
             "Misses r_c nagging {PRONOUN/m_c/object} about apprentice duties",
@@ -3111,7 +3111,6 @@
             "Hopes that somehow, someway, the Ascended slugpups are learning the hunting crouch",
             "Wonders if the slugpups get moss-balls in the Void",
             "Hopes that the slugpups in the Void get time to play games",
-            "Looks up at the night sky and wonders which stars are long-gone slugpups",
             "Thought {PRONOUN/m_c/subject} saw a stray slugpup in front of the nursery, but it vanished",
             "Walks into the nursery, hoping to see r_c again, but then realizes that r_c isn't coming back"
         ],
@@ -3906,7 +3905,7 @@
         "id": "deaf_gen_to_alive_gen",
         "thoughts": [
             "Wishes {PRONOUN/m_c/subject} could hear the sounds of camp",
-            "Teaches a new Clanmate how to do tail signals",
+            "Teaches a new Clanmate how to do paw signals",
             "Nearly hits the den ceiling when r_c suddenly enters {PRONOUN/m_c/poss} line of sight",
             "Can identify {PRONOUN/m_c/poss} Clanmates just by the feel of their pawsteps",
             "Recently discovered that {PRONOUN/m_c/subject} {VERB/m_c/have/has} a habit of stomping",
@@ -3951,7 +3950,7 @@
     {
         "id": "deaf_adolescent_to_alive_kit",
         "thoughts": [
-            "Teaches tail signals to the slugpups"
+            "Teaches paw signals to the slugpups"
         ],
         "perm_conditions": {
             "m_c": [
@@ -3968,7 +3967,7 @@
     {
         "id": "deaf_adolescent_to_alive_med",
         "thoughts": [
-            "Is learning tail signals with r_c"
+            "Is learning paw signals with r_c"
         ],
         "perm_conditions": {
             "m_c": [
@@ -3986,7 +3985,7 @@
     {
         "id": "deaf_adolescent_to_alive_deaf_adult",
         "thoughts": [
-            "Is learning tail signals with r_c"
+            "Is learning paw signals with r_c"
         ],
         "perm_conditions": {
             "m_c": [
@@ -4146,7 +4145,7 @@
     {
         "id": "half_no_tail_lost_gen_to_alive_gen",
         "thoughts": [
-            "Misses being able to do tail signals",
+            "Misses their tail",
             "Finds balancing harder now, though {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} improving"
         ],
         "perm_conditions": {

@@ -14,14 +14,14 @@
             "Wishes {PRONOUN/m_c/subject} had an extra set of hands",
             "Is reciting the names of herbs aloud",
             "Was startled awake in the wee hours by a vivid dream",
-            "Is running low on mouse bile",
+            "Is running low on lantern mouse bile",
             "Plans to go out gathering herbs today",
             "Is looking forward to the half-moon meeting",
             "Is struggling to remember all of the names of herbs",
             "Made a mess of the herbs and is panicking",
             "Has been hearing the voices of the Ascended slugcats...",
             "Has the foul taste of bitter herbs in {PRONOUN/m_c/poss} mouth",
-            "Wonders if {PRONOUN/m_c/subject} could borrow some catmint from the other Clans",
+            "Wonders if {PRONOUN/m_c/subject} could borrow some scugmint from the other Clans",
             "Is happy that {PRONOUN/m_c/subject} chose life as a cleric",
             "Is proud of {PRONOUN/m_c/poss} ability to care for {PRONOUN/m_c/poss} Clanmates"
         ]
@@ -119,7 +119,7 @@
             "Is upset that {PRONOUN/m_c/subject} can't fight alongside the warriors",
             "Wishes to fight alongside the warriors",
             "Thinks {PRONOUN/m_c/subject}'d be an amazing leader",
-            "Ignores the low herb stocks and practices battle moves instead"
+            "Is practicing battle moves"
         ],
         "main_trait_constraint": [
             "bloodthirsty"
@@ -191,7 +191,7 @@
         "id": "childish_medicine_cat",
         "thoughts": [
             "Bounces excitedly at the half-moon meeting",
-            "Plays with some wind-swept catmint"
+            "Plays with some wind-swept scugmint"
         ],
         "main_trait_constraint": [
             "childish"
@@ -246,7 +246,7 @@
     {
         "id": "daring_medicine_cat",
         "thoughts": [
-            "Steals catmint from a Twoleg garden"
+            "Steals scugmint from the scavengers"
         ],
         "main_trait_constraint": [
             "daring"
@@ -331,7 +331,7 @@
     {
         "id": "nervous_medicine_cat",
         "thoughts": [
-            "Re-counts the amount of catmint in {PRONOUN/m_c/poss} stores"
+            "Re-counts the amount of scugmint in {PRONOUN/m_c/poss} stores"
         ],
         "main_trait_constraint": [
             "nervous"

@@ -1,10 +1,10 @@
 [{
     "id": "general_formerclancat_dead_thoughts",
     "thoughts": [
-        "Feels happy to be among StarClan",
+        "Feels happy to be among the Void",
         "Wonders if any of {PRONOUN/m_c/poss} old Clan is here",
-        "Hunts in the starry meadows",
-        "Admires {PRONOUN/m_c/poss} starry fur"
+        "Hunts in the golden fields",
+        "Admires {PRONOUN/m_c/poss} glowing pelt"
     ],
     "main_status_constraint": [
         "former Clancat"

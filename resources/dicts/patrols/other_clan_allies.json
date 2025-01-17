@@ -21,7 +21,7 @@
                 "other_clan_rep": 2
             },
             {
-                "text": "The patrols share recent Clan news with each other: how prey has been running lately, new apprentices or kits, and other such information. They part on good terms, comradery between the Clans continuing to grow.",
+                "text": "The patrols share recent Clan news with each other: how prey has been running lately, new apprentices or pups, and other such information. They part on good terms, comradery between the Clans continuing to grow.",
                 "exp": 10,
                 "weight": 5,
                 "other_clan_rep": 2
@@ -34,7 +34,7 @@
                 "other_clan_rep": 2
             },
             {
-                "text": "s_c excitedly trots up to the other patrol, greeting them pleasantly. They seem to be on good terms with the other slugcats on this patrol and strike up conversation about specific happenings in their Clan, asking if so-and-so had kits or if a certain apprentice had been made a warrior yet.",
+                "text": "s_c excitedly walks up to the other patrol, greeting them pleasantly. They seem to be on good terms with the other slugcats on this patrol and strike up conversation about specific happenings in their Clan, asking if so-and-so had pups or if a certain apprentice had been made a warrior yet.",
                 "exp": 10,
                 "weight": 20,
                 "stat_trait": ["charismatic", "altruistic", "thoughtful", "wise", "confident"],
@@ -95,7 +95,7 @@
                 "other_clan_rep": 2
             },
             {
-                "text": "The patrols share recent Clan news with each other: how prey has been running lately, new apprentices or kits, and other such information. They part on good terms, comradery between the Clans continuing to grow.",
+                "text": "The patrols share recent Clan news with each other: how prey has been running lately, new apprentices or pups, and other such information. They part on good terms, comradery between the Clans continuing to grow.",
                 "exp": 10,
                 "weight": 5,
                 "other_clan_rep": 2
@@ -273,7 +273,7 @@
                 "other_clan_rep": 2
             },
             {
-                "text": "{PRONOUN/p_l/subject/CAP} {VERB/p_l/pad/pads} to the border and pause for a heartbeat to scent the air. o_c_n's scent is very strong, but there's something else... o_c_n's cleric appears at that moment. They're walking towards the raspberries when they spot p_l and wave their tail in greeting. They invite p_l to gather some, as there's plenty. p_l gratefully accepts.",
+                "text": "{PRONOUN/p_l/subject/CAP} {VERB/p_l/pad/pads} to the border and pause for a heartbeat to scent the air. o_c_n's scent is very strong, but there's something else... o_c_n's cleric appears at that moment. They're walking towards the raspberries when they spot p_l and wave in greeting. They invite p_l to gather some, as there's plenty. p_l gratefully accepts.",
                 "exp": 20,
                 "weight": 5,
                 "herbs": ["raspberry"],
@@ -535,7 +535,7 @@
                 "other_clan_rep": 2
             },
             {
-                "text": "As s_c marks the border, {PRONOUN/s_c/subject} {VERB/s_c/encounter/encounters} a o_c_n border patrol. It even includes a young apprentice, whose eyes go round and fur fluffs up at encountering a real c_n slugcat! s_c plays along, acting very impressed with the hard working apprentice, and the apprentice's mentor purrs gratefully.",
+                "text": "As s_c marks the border, {PRONOUN/s_c/subject} {VERB/s_c/encounter/encounters} a o_c_n border patrol. It even includes a young apprentice, whose eyes go round and perks up at encountering a real c_n slugcat! s_c plays along, acting very impressed with the hard working apprentice, and the apprentice's mentor purrs gratefully.",
                 "exp": 20,
                 "weight": 20,
                 "stat_trait": [
@@ -653,7 +653,7 @@
                 "other_clan_rep": -1
             },
             {
-                "text": "r_c encounters a patrol from o_c_n on the border, and greets them politely, but there's something different here. Something dangerous. They return to camp, blood soaked through their fur and a new fear in their heart - is o_c_n still their ally?",
+                "text": "r_c encounters a patrol from o_c_n on the border, and greets them politely, but there's something different here. Something dangerous. They return to camp, with a now blood soaked pelt and a new fear in their heart - is o_c_n still their ally?",
                 "exp": 0,
                 "weight": 10,
                 "injury": [
@@ -745,7 +745,7 @@
                 "other_clan_rep": -1
             },
             {
-                "text": "r_c encounters a patrol from o_c_n on the border, and greets them politely, but there's something different here. Something dangerous. They return to camp, blood soaked through their fur and a new fear in their heart - is o_c_n still their ally?",
+                "text": "r_c encounters a patrol from o_c_n on the border, and greets them politely, but there's something different here. Something dangerous. They return to camp, with a now blood soaked pelt and a new fear in their heart - is o_c_n still their ally?",
                 "exp": 0,
                 "weight": 10,
                 "injury": [
@@ -947,7 +947,7 @@
                 "other_clan_rep": 2
             },
             {
-                "text": "As s_c marks the border, {PRONOUN/s_c/subject} {VERB/s_c/encounter/encounters} a o_c_n border patrol. It even includes a young apprentice, whose eyes go round and fur fluffs up at encountering a real c_n slugcat! s_c plays along, acting very impressed with the hard working apprentice, and the apprentice's mentor purrs gratefully.",
+                "text": "As s_c marks the border, {PRONOUN/s_c/subject} {VERB/s_c/encounter/encounters} a o_c_n border patrol. It even includes a young apprentice, whose eyes go round and perks up at encountering a real c_n slugcat! s_c plays along, acting very impressed with the hard working apprentice, and the apprentice's mentor purrs gratefully.",
                 "exp": 20,
                 "weight": 20,
                 "stat_trait": [
@@ -1065,7 +1065,7 @@
                 "other_clan_rep": -1
             },
             {
-                "text": "r_c encounters a patrol from o_c_n on the border, and greets them politely, but there's something different here. Something dangerous. They return to camp, blood soaked through their fur and a new fear in their heart - is o_c_n still their ally?",
+                "text": "r_c encounters a patrol from o_c_n on the border, and greets them politely, but there's something different here. Something dangerous. They return to camp, with a now blood soaked pelt and a new fear in their heart - is o_c_n still their ally?",
                 "exp": 0,
                 "weight": 10,
                 "injury": [
@@ -1157,7 +1157,7 @@
                 "other_clan_rep": -1
             },
             {
-                "text": "r_c encounters a patrol from o_c_n on the border, and greets them politely, but there's something different here. Something dangerous. They return to camp, blood soaked through their fur and a new fear in their heart - is o_c_n still their ally?",
+                "text": "r_c encounters a patrol from o_c_n on the border, and greets them politely, but there's something different here. Something dangerous. They return to camp, with a now blood soaked pelt and a new fear in their heart - is o_c_n still their ally?",
                 "exp": 0,
                 "weight": 10,
                 "injury": [
@@ -1359,7 +1359,7 @@
                 "other_clan_rep": 2
             },
             {
-                "text": "As s_c marks the border, {PRONOUN/s_c/subject} {VERB/s_c/encounter/encounters} a o_c_n border patrol. It even includes a young apprentice, whose eyes go round and fur fluffs up at encountering a real c_n slugcat! s_c plays along, acting very impressed with the hard working apprentice, and the apprentice's mentor purrs gratefully.",
+                "text": "As s_c marks the border, {PRONOUN/s_c/subject} {VERB/s_c/encounter/encounters} a o_c_n border patrol. It even includes a young apprentice, whose eyes go round and perks up at encountering a real c_n slugcat! s_c plays along, acting very impressed with the hard working apprentice, and the apprentice's mentor purrs gratefully.",
                 "exp": 20,
                 "weight": 20,
                 "stat_trait": [
@@ -1477,7 +1477,7 @@
                 "other_clan_rep": -1
             },
             {
-                "text": "r_c encounters a patrol from o_c_n on the border, and greets them politely, but there's something different here. Something dangerous. They return to camp, blood soaked through their fur and a new fear in their heart - is o_c_n still their ally?",
+                "text": "r_c encounters a patrol from o_c_n on the border, and greets them politely, but there's something different here. Something dangerous. They return to camp, with a now blood soaked pelt and a new fear in their heart - is o_c_n still their ally?",
                 "exp": 0,
                 "weight": 10,
                 "injury": [
@@ -1569,7 +1569,7 @@
                 "other_clan_rep": -1
             },
             {
-                "text": "r_c encounters a patrol from o_c_n on the border, and greets them politely, but there's something different here. Something dangerous. They return to camp, blood soaked through their fur and a new fear in their heart - is o_c_n still their ally?",
+                "text": "r_c encounters a patrol from o_c_n on the border, and greets them politely, but there's something different here. Something dangerous. They return to camp, with a now blood soaked pelt and a new fear in their heart - is o_c_n still their ally?",
                 "exp": 0,
                 "weight": 10,
                 "injury": [
@@ -1771,7 +1771,7 @@
                 "other_clan_rep": 2
             },
             {
-                "text": "As s_c marks the border, {PRONOUN/s_c/subject} {VERB/s_c/encounter/encounters} a o_c_n border patrol. It even includes a young apprentice, whose eyes go round and fur fluffs up at encountering a real c_n slugcat! s_c plays along, acting very impressed with the hard working apprentice, and the apprentice's mentor purrs gratefully.",
+                "text": "As s_c marks the border, {PRONOUN/s_c/subject} {VERB/s_c/encounter/encounters} a o_c_n border patrol. It even includes a young apprentice, whose eyes go round and perks up at encountering a real c_n slugcat! s_c plays along, acting very impressed with the hard working apprentice, and the apprentice's mentor purrs gratefully.",
                 "exp": 20,
                 "weight": 20,
                 "stat_trait": [
@@ -1889,7 +1889,7 @@
                 "other_clan_rep": -1
             },
             {
-                "text": "r_c encounters a patrol from o_c_n on the border, and greets them politely, but there's something different here. Something dangerous. They return to camp, blood soaked through their fur and a new fear in their heart - is o_c_n still their ally?",
+                "text": "r_c encounters a patrol from o_c_n on the border, and greets them politely, but there's something different here. Something dangerous. They return to camp, with a now blood soaked pelt and a new fear in their heart - is o_c_n still their ally?",
                 "exp": 0,
                 "weight": 10,
                 "injury": [
@@ -1981,7 +1981,7 @@
                 "other_clan_rep": -1
             },
             {
-                "text": "r_c encounters a patrol from o_c_n on the border, and greets them politely, but there's something different here. Something dangerous. They return to camp, blood soaked through their fur and a new fear in their heart - is o_c_n still their ally?",
+                "text": "r_c encounters a patrol from o_c_n on the border, and greets them politely, but there's something different here. Something dangerous. They return to camp, with a now blood soaked pelt and a new fear in their heart - is o_c_n still their ally?",
                 "exp": 0,
                 "weight": 10,
                 "injury": [

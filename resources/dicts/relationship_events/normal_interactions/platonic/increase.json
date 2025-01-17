@@ -172,7 +172,7 @@
 	{
 		"id": "platonic_inc_med10",
 		"interactions": [
-			"m_c wants to explore Twolegplace with r_c.",
+			"m_c wants to explore scavenger grounds with r_c.",
 			"m_c wants to sneak along the border with r_c.",
 			"m_c tells r_c that there's so much to see in the world!"
 		],
@@ -260,7 +260,7 @@
 		"interactions": [
 			"m_c lets r_c play with {PRONOUN/m_c/poss} favorite toy.",
 			"m_c pretends to be a warrior with r_c.",
-			"m_c is pretending to ward off foxes with r_c.",
+			"m_c is pretending to ward off lizards with r_c.",
 			"m_c is pretending to fight off badgers with r_c.",
 			"m_c is racing r_c back and forth across the camp clearing.",
 			"m_c hopes r_c will be {PRONOUN/m_c/poss} friend forever."
