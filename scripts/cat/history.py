@@ -267,7 +267,12 @@ class History:
             SkillPath.DREAM: ["understanding dreams"],
             SkillPath.CLAIRVOYANT: ["predicting the future"],
             SkillPath.PROPHET: ["understanding prophecies"],
-            SkillPath.GHOST: ["connecting to the afterlife"]
+            SkillPath.GHOST: ["connecting to the afterlife"],
+            SkillPath.PEARL: ["finding pearls"],
+            SkillPath.LIZARD: ["understanding lizards"],
+            SkillPath.SCAV: ["understanding scavengers"],
+            SkillPath.RAIN: ["predicting weather"],
+            SkillPath.AI: ["understanding Iterators"]
         }
 
         for _ment in cat.history.mentor_influence["skill"]:

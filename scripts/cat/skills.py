@@ -97,6 +97,36 @@ class SkillPath(Enum):
         "prophet",
     )
     GHOST = ("morbid curiosity", "ghost sense", "ghost sight", "ghost speaker")
+    PEARL = (
+        "interested in pearls",
+        "pearl collector",
+        "pearl-reader",
+        "pearl-reading expert",
+    )
+    LIZARD = (
+        "interested in lizards",
+        "lizard watcher",
+        "lizard whisperer",
+        "lizard tamer",
+    )
+    SCAV = (
+        "interested in scavengers",
+        "scavenger friend",
+        "honorary scavenger",
+        "scavenger chieftain",
+    )
+    RAIN = (
+        "watches the clouds",
+        "weather intuition",
+        "predicts the rain",
+        "rain prophet",
+    )
+    AI = (
+        "curious about Iterators",
+        "superstructure explorer",
+        "Iterator visitor",
+        "Iterator expert",
+    )
 
     @staticmethod
     def get_random(exclude: list = ()):
@@ -173,6 +203,11 @@ class Skill:
         SkillPath.PROPHET: "prophesying",
         SkillPath.GHOST: "ghosts",
         SkillPath.DARK: "rotwound",
+        SkillPath.PEARL: "pearls",
+        SkillPath.LIZARD: "lizards",
+        SkillPath.SCAV: "scavengers",
+        SkillPath.RAIN: "forecasting",
+        SkillPath.AI: "Iterators",
     }
 
     def __init__(self, path: SkillPath, points: int = 0, interest_only: bool = False):
@@ -322,6 +357,11 @@ class CatSkills:
         SkillPath.PROPHET: SkillTypeFlag.SUPERNATURAL,
         SkillPath.GHOST: SkillTypeFlag.SUPERNATURAL,
         SkillPath.DARK: SkillTypeFlag.SUPERNATURAL,
+        SkillPath.PEARL: SkillTypeFlag.OBSERVANT | SkillTypeFlag.SMART,
+        SkillPath.LIZARD: SkillTypeFlag.OBSERVANT | SkillTypeFlag.STRONG,
+        SkillPath.SCAV: SkillTypeFlag.OBSERVANT | SkillTypeFlag.SOCIAL,
+        SkillPath.RAIN: SkillTypeFlag.OBSERVANT,
+        SkillPath.AI: SkillTypeFlag.SUPERNATURAL | SkillTypeFlag.SMART,
     }
 
     # pylint: enable=unsupported-binary-operation
