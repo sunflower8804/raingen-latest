@@ -3154,7 +3154,7 @@
         "biome": ["forest"],
         "season": ["any"],
         "types": ["hunting"],
-        "tags": ["retirement"],
+        "tags": [ ],
         "patrol_art": "gen_openclearing_intro",
         "min_cats": 1,
         "max_cats": 6,
@@ -3179,13 +3179,13 @@
                 "prey": ["large"]
             },
             {
-                "text": "The patrol finds a pipe running under the open space and uses it to cross. They end up with damp paws, but a successful haul of prey. Upon returning to camp and washing their paws off, s_c finds that theirs have been stained by the mud from the tunnel.",
+                "text": "The patrol finds a pipe running under the open space and uses it to cross. They end up with damp paws, but a successful haul of prey. Upon returning to camp and washing their paws off, r_c finds that theirs have been stained by the mud from the tunnel.",
                 "exp": 10,
                 "weight": 5,
                 "art": "gen_openclearing_success2",
 				"accessory": [
                     {
-                        "cats": ["s_c"],
+                        "cats": ["r_c"],
                         "accessory": ["MUDDYPAWS"]
                     }
                 ],
@@ -3263,7 +3263,7 @@
         "biome": ["forest"],
         "season": ["any"],
         "types": ["hunting"],
-        "tags": ["retirement", "cruel_season"],
+        "tags": [ ],
         "patrol_art": "gen_openclearing_intro",
         "min_cats": 1,
         "max_cats": 6,
@@ -3288,13 +3288,13 @@
                 "prey": ["large"]
             },
             {
-                "text": "The patrol finds a pipe running under the open space and uses it to cross. They end up with damp paws, but a successful haul of prey. Upon returning to camp and washing their paws off, s_c finds that theirs have been stained by the mud from the tunnel.",
+                "text": "The patrol finds a pipe running under the open space and uses it to cross. They end up with damp paws, but a successful haul of prey. Upon returning to camp and washing their paws off, r_c finds that theirs have been stained by the mud from the tunnel.",
                 "exp": 10,
                 "weight": 5,
                 "art": "gen_openclearing_success2",
 				"accessory": [
                     {
-                        "cats": ["s_c"],
+                        "cats": ["r_c"],
                         "accessory": ["MUDDYPAWS"]
                     }
                 ],
@@ -3372,7 +3372,7 @@
         "biome": ["forest"],
         "season": ["any"],
         "types": ["hunting"],
-        "tags": ["retirement"],
+        "tags": [ ],
         "patrol_art": "gen_openclearing_intro",
         "min_cats": 5,
         "max_cats": 6,
@@ -3397,13 +3397,13 @@
                 "prey": ["large"]
             },
             {
-                "text": "The patrol finds a pipe running under the open space and uses it to cross. They end up with damp paws, but a successful haul of prey. Upon returning to camp and washing their paws off, s_c finds that theirs have been stained by the mud from the tunnel.",
+                "text": "The patrol finds a pipe running under the open space and uses it to cross. They end up with damp paws, but a successful haul of prey. Upon returning to camp and washing their paws off, r_c finds that theirs have been stained by the mud from the tunnel.",
                 "exp": 10,
                 "weight": 5,
                 "art": "gen_openclearing_success2",
 				"accessory": [
                     {
-                        "cats": ["s_c"],
+                        "cats": ["r_c"],
                         "accessory": ["MUDDYPAWS"]
                     }
                 ],
@@ -3475,7 +3475,7 @@
         "biome": ["forest"],
         "season": ["any"],
         "types": ["hunting"],
-        "tags": ["retirement", "cruel_season"],
+        "tags": [ ],
         "patrol_art": "gen_openclearing_intro",
         "min_cats": 5,
         "max_cats": 6,
@@ -3495,18 +3495,18 @@
             {
                 "text": "The patrol finds a pipe running under the open space and uses it to cross. They end up with damp paws, but a successful haul of prey.",
                 "exp": 10,
-                "weight": 5,
+                "weight": 10,
                 "art": "gen_openclearing_success2",
                 "prey": ["large"]
             },
             {
-                "text": "The patrol finds a pipe running under the open space and uses it to cross. They end up with damp paws, but a successful haul of prey. Upon returning to camp and washing their paws off, s_c finds that theirs have been stained by the mud from the tunnel.",
+                "text": "The patrol finds a pipe running under the open space and uses it to cross. They end up with damp paws, but a successful haul of prey. Upon returning to camp and washing their paws off, r_c finds that theirs have been stained by the mud from the tunnel.",
                 "exp": 10,
                 "weight": 5,
                 "art": "gen_openclearing_success2",
 				"accessory": [
                     {
-                        "cats": ["s_c"],
+                        "cats": ["r_c"],
                         "accessory": ["MUDDYPAWS"]
                     }
                 ],
@@ -3584,7 +3584,7 @@
         "biome": ["forest"],
         "season": ["any"],
         "types": ["hunting"],
-        "tags": ["retirement"],
+        "tags": [ ],
         "patrol_art": "gen_hunt_thunderpath",
         "min_cats": 1,
         "max_cats": 6,
@@ -3655,7 +3655,7 @@
         "biome": ["forest"],
         "season": ["any"],
         "types": ["hunting"],
-        "tags": ["retirement", "cruel_season"],
+        "tags": [ ],
         "patrol_art": "gen_hunt_thunderpath",
         "min_cats": 1,
         "max_cats": 6,
@@ -3726,7 +3726,7 @@
         "biome": ["forest"],
         "season": ["any"],
         "types": ["hunting"],
-        "tags": ["retirement"],
+        "tags": [ ],
         "patrol_art": "gen_hunt_thunderpath",
         "min_cats": 5,
         "max_cats": 6,
@@ -3797,7 +3797,7 @@
         "biome": ["forest"],
         "season": ["any"],
         "types": ["hunting"],
-        "tags": ["retirement", "cruel_season"],
+        "tags": [ ],
         "patrol_art": "gen_hunt_thunderpath",
         "min_cats": 5,
         "max_cats": 6,

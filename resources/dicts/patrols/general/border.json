@@ -3270,7 +3270,7 @@
                 "stat_skill": ["FIGHTER,1"]
             },
 			{
-                "text": "s_c barely spots the white lizard through it's camoflague! {PRONOUN/p_l/poss} slowly approaches the lizard. It takes some time, but the lizard took a liking to s_c !",
+                "text": "s_c barely spots the white lizard through it's camoflague! {PRONOUN/p_l/poss/CAP} slowly approaches the lizard. It takes some time, but the lizard took a liking to s_c!",
                 "exp": 30,
                 "weight": 1,
 				"art": "gen_liztame_white",
@@ -3301,7 +3301,7 @@
                 ]
             },
 			{
-                "text": "r_c barely spots the white lizard through it's camoflague! {PRONOUN/p_l/poss} slowly approaches the lizard. It takes some time, but the lizard took a liking to r_c !",
+                "text": "r_c barely spots the white lizard through it's camoflague! {PRONOUN/p_l/poss/CAP} slowly approaches the lizard. It takes some time, but the lizard took a liking to r_c!",
                 "exp": 20,
                 "weight": 1,
 				"art": "gen_liztame_white",
@@ -3417,7 +3417,7 @@
                 ]
             },
 			{
-                "text": "s_c barely spots the white lizard through it's camoflague! {PRONOUN/p_l/poss} puts a paw out to stop the patrol, and slowly approaches the lizard. It takes some time, but the lizard took a liking to s_c !",
+                "text": "s_c barely spots the white lizard through it's camoflague! {PRONOUN/p_l/poss/CAP} puts a paw out to stop the patrol, and slowly approaches the lizard. It takes some time, but the lizard took a liking to s_c!",
                 "exp": 30,
                 "weight": 1,
 				"art": "gen_liztame_white",
@@ -3448,7 +3448,7 @@
                 ]
             },
 			{
-                "text": "r_c barely spots the white lizard through it's camoflague! {PRONOUN/p_l/poss} puts a paw out to stop the patrol, and slowly approaches the lizard. It takes some time, but the lizard took a liking to r_c !",
+                "text": "r_c barely spots the white lizard through it's camoflague! {PRONOUN/p_l/poss/CAP} puts a paw out to stop the patrol, and slowly approaches the lizard. It takes some time, but the lizard took a liking to r_c!",
                 "exp": 20,
                 "weight": 1,
 				"art": "gen_liztame_white",
@@ -3562,7 +3562,7 @@
                 ]
             },
 			{
-                "text": "s_c barely spots the white lizard through it's camoflague! {PRONOUN/p_l/poss} puts a paw out to stop the patrol, and slowly approaches the lizard. It takes some time, but the lizard took a liking to s_c !",
+                "text": "s_c barely spots the white lizard through it's camoflague! {PRONOUN/p_l/poss/CAP} puts a paw out to stop the patrol, and slowly approaches the lizard. It takes some time, but the lizard took a liking to s_c!",
                 "exp": 30,
                 "weight": 1,
 				"art": "gen_liztame_white",
@@ -3593,7 +3593,7 @@
                 ]
             },
 			{
-                "text": "r_c barely spots the white lizard through it's camoflague! {PRONOUN/p_l/poss} puts a paw out to stop the patrol, and slowly approaches the lizard. It takes some time, but the lizard took a liking to r_c !",
+                "text": "r_c barely spots the white lizard through it's camoflague! {PRONOUN/p_l/poss/CAP} puts a paw out to stop the patrol, and slowly approaches the lizard. It takes some time, but the lizard took a liking to r_c!",
                 "exp": 20,
                 "weight": 1,
 				"art": "gen_liztame_white",
@@ -3689,7 +3689,7 @@
                 "stat_skill": ["FIGHTER,1"]
             },
 			{
-                "text": "s_c barely spots the melanistic salamander in the water! {PRONOUN/p_l/poss} slowly approaches the salamnder. It's frills are soon twitching as it follows s_c home!",
+                "text": "s_c barely spots the melanistic salamander in the water! {PRONOUN/p_l/poss/CAP} slowly approaches the salamnder. It's frills are soon twitching as it follows s_c home!",
                 "exp": 30,
                 "weight": 1,
 				"art": "gen_liztame_melasala",
@@ -3720,7 +3720,7 @@
                 ]
             },
 			{
-                "text": "s_c barely spots the salamander in the water! {PRONOUN/p_l/poss} slowly approaches the albino salamander. It's frills are soon twitching as it follows s_c home!",
+                "text": "s_c barely spots the salamander in the water! {PRONOUN/p_l/poss/CAP} slowly approaches the albino salamander. It's frills are soon twitching as it follows s_c home!",
                 "exp": 30,
                 "weight": 1,
 				"art": "gen_liztame_albisala",
@@ -3751,7 +3751,7 @@
                 ]
             },
 			{
-                "text": "r_c barely spots the melanistic salamander in the water! {PRONOUN/p_l/poss} slowly approaches the salamnder. It's frills are soon twitching as it follows r_c home!",
+                "text": "r_c barely spots the melanistic salamander in the water! {PRONOUN/p_l/poss/CAP} slowly approaches the salamnder. It's frills are soon twitching as it follows r_c home!",
                 "exp": 20,
                 "weight": 1,
 				"art": "gen_liztame_melasala",
@@ -3772,7 +3772,7 @@
                 ]
 			},
 			{
-                "text": "r_c barely spots the salamander in the water! {PRONOUN/p_l/poss} slowly approaches the albino salamander. It's frills are soon twitching as it follows r_c home!",
+                "text": "r_c barely spots the salamander in the water! {PRONOUN/p_l/poss/CAP} slowly approaches the albino salamander. It's frills are soon twitching as it follows r_c home!",
                 "exp": 20,
                 "weight": 1,
 				"art": "gen_liztame_albisala",
@@ -3888,7 +3888,7 @@
                 ]
             },
 			{
-                "text": "s_c barely spots the melanistic salamander in the water! {PRONOUN/p_l/poss} puts a paw out to stop the patrol, and slowly approaches the salamander. It's frills are soon twitching as it follows s_c home!",
+                "text": "s_c barely spots the melanistic salamander in the water! {PRONOUN/p_l/poss/CAP} puts a paw out to stop the patrol, and slowly approaches the salamander. It's frills are soon twitching as it follows s_c home!",
                 "exp": 30,
                 "weight": 1,
 				"art": "gen_liztame_melasala",
@@ -3919,7 +3919,7 @@
                 ]
             },
 			{
-                "text": "s_c barely spots the albino salamander in the water! {PRONOUN/p_l/poss} puts a paw out to stop the patrol, and slowly approaches the salamander. It's frills are soon twitching as it follows s_c home!",
+                "text": "s_c barely spots the albino salamander in the water! {PRONOUN/p_l/poss/CAP} puts a paw out to stop the patrol, and slowly approaches the salamander. It's frills are soon twitching as it follows s_c home!",
                 "exp": 30,
                 "weight": 1,
 				"art": "gen_liztame_albisala",
@@ -3950,7 +3950,7 @@
                 ]
             },
 			{
-                "text": "r_c barely spots the melanistic salamander in the water! {PRONOUN/p_l/poss} puts a paw out to stop the patrol, and slowly approaches the salamnder. It's frills are soon twitching as it follows r_c home!",
+                "text": "r_c barely spots the melanistic salamander in the water! {PRONOUN/p_l/poss/CAP} puts a paw out to stop the patrol, and slowly approaches the salamnder. It's frills are soon twitching as it follows r_c home!",
                 "exp": 20,
                 "weight": 1,
 				"art": "gen_liztame_melasala",
@@ -3971,7 +3971,7 @@
                 ]
 			},
 			{
-                "text": "r_c barely spots the albino salamander in the water! {PRONOUN/p_l/poss} puts a paw out to stop the patrol, and slowly approaches the salamnder. It's frills are soon twitching as it follows r_c home!",
+                "text": "r_c barely spots the albino salamander in the water! {PRONOUN/p_l/poss/CAP} puts a paw out to stop the patrol, and slowly approaches the salamnder. It's frills are soon twitching as it follows r_c home!",
                 "exp": 20,
                 "weight": 1,
 				"art": "gen_liztame_albisala",
@@ -4087,7 +4087,7 @@
                 ]
             },
 			{
-                "text": "s_c barely spots the melanistic salamander in the water! {PRONOUN/p_l/poss} puts a paw out to stop the patrol, and slowly approaches the salamander. It's frills are soon twitching as it follows s_c home!",
+                "text": "s_c barely spots the melanistic salamander in the water! {PRONOUN/p_l/poss/CAP} puts a paw out to stop the patrol, and slowly approaches the salamander. It's frills are soon twitching as it follows s_c home!",
                 "exp": 30,
                 "weight": 1,
 				"art": "gen_liztame_melasala",
@@ -4118,7 +4118,7 @@
                 ]
             },
 			{
-                "text": "s_c barely spots the albino salamander in the water! {PRONOUN/p_l/poss} puts a paw out to stop the patrol, and slowly approaches the salamander. It's frills are soon twitching as it follows s_c home!",
+                "text": "s_c barely spots the albino salamander in the water! {PRONOUN/p_l/poss/CAP} puts a paw out to stop the patrol, and slowly approaches the salamander. It's frills are soon twitching as it follows s_c home!",
                 "exp": 30,
                 "weight": 1,
 				"art": "gen_liztame_albisala",
@@ -4149,7 +4149,7 @@
                 ]
             },
 			{
-                "text": "r_c barely spots the melanistic salamander in the water! {PRONOUN/p_l/poss} puts a paw out to stop the patrol, and slowly approaches the salamnder. It's frills are soon twitching as it follows r_c home!",
+                "text": "r_c barely spots the melanistic salamander in the water! {PRONOUN/p_l/poss/CAP} puts a paw out to stop the patrol, and slowly approaches the salamnder. It's frills are soon twitching as it follows r_c home!",
                 "exp": 20,
                 "weight": 1,
 				"art": "gen_liztame_melasala",
@@ -4170,7 +4170,7 @@
                 ]
 			},
 			{
-                "text": "r_c barely spots the albino salamander under the water! {PRONOUN/p_l/poss} puts a paw out to stop the patrol, and slowly approaches the salamander. It's frills are soon twitching as it follows r_c home!",
+                "text": "r_c barely spots the albino salamander under the water! {PRONOUN/p_l/poss/CAP} puts a paw out to stop the patrol, and slowly approaches the salamander. It's frills are soon twitching as it follows r_c home!",
                 "exp": 20,
                 "weight": 1,
 				"art": "gen_liztame_albisala",
@@ -4268,7 +4268,7 @@
                 "stat_skill": ["FIGHTER,1"]
             },
 			{
-                "text": "s_c barely spots the blind lizard in the gloom! {PRONOUN/p_l/poss} finds something to feed the creature, earning it's trust. This lizard sticks close to their new friend.",
+                "text": "s_c barely spots the blind lizard in the gloom! {PRONOUN/p_l/poss/CAP} finds something to feed the creature, earning it's trust. This lizard sticks close to their new friend.",
                 "exp": 30,
                 "weight": 1,
 				"art": "gen_liztame_blind",
@@ -4299,7 +4299,7 @@
                 ]
             },
 			{
-                "text": "r_c barely spots the blind lizard in the gloom! {PRONOUN/p_l/poss} finds something to feed the creature, earning it's trust. This lizard sticks close to their new friend.",
+                "text": "r_c barely spots the blind lizard in the gloom! {PRONOUN/p_l/poss/CAP} finds something to feed the creature, earning it's trust. This lizard sticks close to their new friend.",
                 "exp": 20,
                 "weight": 1,
 				"art": "gen_liztame_blind",
@@ -4415,7 +4415,7 @@
                 ]
             },
 			{
-                "text": "s_c barely spots the blind lizard in the gloom! {PRONOUN/p_l/poss} stops the patrol, finding something to feed the creature and earning it's trust. This lizard sticks close to their new friend.",
+                "text": "s_c barely spots the blind lizard in the gloom! {PRONOUN/p_l/poss/CAP} stops the patrol, finding something to feed the creature and earning it's trust. This lizard sticks close to their new friend.",
                 "exp": 30,
                 "weight": 1,
 				"art": "gen_liztame_blind",
@@ -4446,7 +4446,7 @@
                 ]
             },
 			{
-                "text": "r_c barely spots the blind lizard in the gloom! {PRONOUN/p_l/poss} stops the patrol, finding something to feed the creature and earning it's trust. This lizard sticks close to their new friend.",
+                "text": "r_c barely spots the blind lizard in the gloom! {PRONOUN/p_l/poss/CAP} stops the patrol, finding something to feed the creature and earning it's trust. This lizard sticks close to their new friend.",
                 "exp": 20,
                 "weight": 1,
 				"art": "gen_liztame_blind",
@@ -4562,7 +4562,7 @@
                 ]
             },
 			{
-                "text": "s_c barely spots the blind lizard in the gloom! {PRONOUN/p_l/poss} stops the patrol, finding something to feed the creature and earning it's trust. This lizard sticks close to their new friend.",
+                "text": "s_c barely spots the blind lizard in the gloom! {PRONOUN/p_l/poss/CAP} stops the patrol, finding something to feed the creature and earning it's trust. This lizard sticks close to their new friend.",
                 "exp": 30,
                 "weight": 1,
 				"art": "gen_liztame_blind",
@@ -4593,7 +4593,7 @@
                 ]
             },
 			{
-                "text": "r_c barely spots the blind lizard in the gloom! {PRONOUN/p_l/poss} stops the patrol, finding something to feed the creature and earning it's trust. This lizard sticks close to their new friend.",
+                "text": "r_c barely spots the blind lizard in the gloom! {PRONOUN/p_l/poss/CAP} stops the patrol, finding something to feed the creature and earning it's trust. This lizard sticks close to their new friend.",
                 "exp": 20,
                 "weight": 1,
 				"art": "gen_liztame_blind",
