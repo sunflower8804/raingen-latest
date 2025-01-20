@@ -3195,7 +3195,7 @@
                 ]
             },
             {
-                "text": "app1 daringly heads out hunting and then daringly ends up on the wrong side of a swollen creek, sore and tired as the rain pours down, daringly crouched under a bush to daringly wait out the storm. lizard-dung!",
+                "text": "app1 daringly heads out hunting and then daringly ends up on the wrong side of a swollen creek, sore and tired as the rain pours down, daringly crouched under a bush to daringly wait out the storm. Lizard-dung!",
                 "exp": 0,
                 "weight": 10,
                 "stat_trait": ["bold", "daring"],
@@ -3301,7 +3301,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "The littermates end up dirty, exhausted, and without much more than a f_tp_s to show for it. lizard-dung! But at least out here, even if they didn't get much prey, they can complain about how stupidly hard hunting is to a sympathetic audience.",
+                "text": "The littermates end up dirty, exhausted, and without much more than a f_tp_s to show for it. Lizard-dung! But at least out here, even if they didn't get much prey, they can complain about how stupidly hard hunting is to a sympathetic audience.",
                 "exp": 0,
                 "weight": 20,
                 "relationships": [
@@ -3512,7 +3512,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "The littermates end up dirty, exhausted, and without much more than a f_tp_s to show for it. lizard-dung! But at least out here, even if they didn't get much prey, they can complain about how stupidly hard hunting is to a sympathetic audience.",
+                "text": "The littermates end up dirty, exhausted, and without much more than a f_tp_s to show for it. Lizard-dung! But at least out here, even if they didn't get much prey, they can complain about how stupidly hard hunting is to a sympathetic audience.",
                 "exp": 0,
                 "weight": 20,
                 "relationships": [
@@ -3723,7 +3723,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "The littermates end up dirty, exhausted, and without much more than a f_tp_s to show for it. lizard-dung! But at least out here, even if they didn't get much prey, they can complain about how stupidly hard hunting is to a sympathetic audience.",
+                "text": "The littermates end up dirty, exhausted, and without much more than a f_tp_s to show for it. Lizard-dung! But at least out here, even if they didn't get much prey, they can complain about how stupidly hard hunting is to a sympathetic audience.",
                 "exp": 0,
                 "weight": 20,
                 "relationships": [
@@ -3934,7 +3934,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "The littermates end up dirty, exhausted, and without much more than a f_tp_s to show for it. lizard-dung! But at least out here, even if they didn't get much prey, they can complain about how stupidly hard hunting is to a sympathetic audience.",
+                "text": "The littermates end up dirty, exhausted, and without much more than a f_tp_s to show for it. Lizard-dung! But at least out here, even if they didn't get much prey, they can complain about how stupidly hard hunting is to a sympathetic audience.",
                 "exp": 0,
                 "weight": 20,
                 "relationships": [
@@ -4145,7 +4145,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "The littermates end up dirty, exhausted, and without much more than a f_tp_s to show for it. lizard-dung! But at least out here, even if they didn't get much prey, they can complain about how stupidly hard hunting is to a sympathetic audience.",
+                "text": "The littermates end up dirty, exhausted, and without much more than a f_tp_s to show for it. Lizard-dung! But at least out here, even if they didn't get much prey, they can complain about how stupidly hard hunting is to a sympathetic audience.",
                 "exp": 0,
                 "weight": 20,
                 "relationships": [

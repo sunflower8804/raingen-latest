@@ -2307,7 +2307,7 @@
             "weight": 20
         },
         {
-            "text": "{PRONOUN/app1/subject/CAP} {VERB/app1/line/lines} up the perfect shot, {VERB/app1/go/goes} for it - and one of {PRONOUN/app1/poss} hindfeet slips out from under {PRONOUN/app1/object}. lizard-dung!",
+            "text": "{PRONOUN/app1/subject/CAP} {VERB/app1/line/lines} up the perfect shot, {VERB/app1/go/goes} for it - and one of {PRONOUN/app1/poss} hindfeet slips out from under {PRONOUN/app1/object}. Lizard-dung!",
             "exp": 0,
             "weight": 20
         },
@@ -3927,7 +3927,7 @@
             ]
         },
         {
-            "text": "Not only does app1 find a particularly vicious prey animal who tears up their ear, but in the process, app1 squawks with surprise and lets go, causing the critter to scamper away. Well. So ends the hunt for the only prey they've managed to find tonight. lizard-dung.",
+            "text": "Not only does app1 find a particularly vicious prey animal who tears up their ear, but in the process, app1 squawks with surprise and lets go, causing the critter to scamper away. Well. So ends the hunt for the only prey they've managed to find tonight. Lizard-dung.",
             "exp": 0,
             "weight": 20,
             "injury": [

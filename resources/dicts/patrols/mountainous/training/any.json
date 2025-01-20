@@ -2207,7 +2207,7 @@
         "decline_text": "What was that?! the Ascended?! app1 is going home, {PRONOUN/app1/subject} {VERB/app1/don't/doesn't} like this!",
         "success_outcomes": [
             {
-                "text": "Well it's not like they can do better, app1 shouts back at the noodleflies! Humph. yeekbrains.",
+                "text": "Well it's not like they can do better, app1 shouts back at the noodleflies! Humph. Yeekbrains.",
                 "exp": 0,
                 "weight": 20
             }

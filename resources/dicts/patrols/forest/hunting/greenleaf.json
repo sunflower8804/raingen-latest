@@ -1274,7 +1274,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "r_c drops into a crouch and begins to stalk forward. {PRONOUN/r_c/subject/CAP}{VERB/r_c/'re/'s} preparing to pounce when {PRONOUN/r_c/poss} paw lightly brushes a twig and the centipede immediately takes off. {PRONOUN/r_c/subject/CAP} {VERB/r_c/give/gives} chase, but the critter disappears into a burrow. yeek-dung!",
+                "text": "r_c drops into a crouch and begins to stalk forward. {PRONOUN/r_c/subject/CAP}{VERB/r_c/'re/'s} preparing to pounce when {PRONOUN/r_c/poss} paw lightly brushes a twig and the centipede immediately takes off. {PRONOUN/r_c/subject/CAP} {VERB/r_c/give/gives} chase, but the critter disappears into a burrow. Yeek-dung!",
                 "exp": 0,
                 "weight": 20,
                 "prey": ["very_small"]
@@ -4049,7 +4049,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "The littermates end up dirty, exhausted, and without much more than a f_tp_s to show for it. lizard-dung! But at least out here, even if they didn't get much prey, they can complain about how stupidly hard hunting is to a sympathetic audience.",
+                "text": "The littermates end up dirty, exhausted, and without much more than a f_tp_s to show for it. Lizard-dung! But at least out here, even if they didn't get much prey, they can complain about how stupidly hard hunting is to a sympathetic audience.",
                 "exp": 0,
                 "weight": 20,
                 "relationships": [
@@ -4260,7 +4260,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "The littermates end up dirty, exhausted, and without much more than a f_tp_s to show for it. lizard-dung! But at least out here, even if they didn't get much prey, they can complain about how stupidly hard hunting is to a sympathetic audience.",
+                "text": "The littermates end up dirty, exhausted, and without much more than a f_tp_s to show for it. Lizard-dung! But at least out here, even if they didn't get much prey, they can complain about how stupidly hard hunting is to a sympathetic audience.",
                 "exp": 0,
                 "weight": 20,
                 "relationships": [
@@ -4471,7 +4471,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "The littermates end up dirty, exhausted, and without much more than a f_tp_s to show for it. lizard-dung! But at least out here, even if they didn't get much prey, they can complain about how stupidly hard hunting is to a sympathetic audience.",
+                "text": "The littermates end up dirty, exhausted, and without much more than a f_tp_s to show for it. Lizard-dung! But at least out here, even if they didn't get much prey, they can complain about how stupidly hard hunting is to a sympathetic audience.",
                 "exp": 0,
                 "weight": 20,
                 "relationships": [
@@ -4682,7 +4682,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "The littermates end up dirty, exhausted, and without much more than a f_tp_s to show for it. lizard-dung! But at least out here, even if they didn't get much prey, they can complain about how stupidly hard hunting is to a sympathetic audience.",
+                "text": "The littermates end up dirty, exhausted, and without much more than a f_tp_s to show for it. Lizard-dung! But at least out here, even if they didn't get much prey, they can complain about how stupidly hard hunting is to a sympathetic audience.",
                 "exp": 0,
                 "weight": 20,
                 "relationships": [
@@ -4893,7 +4893,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "The littermates end up dirty, exhausted, and without much more than a f_tp_s to show for it. lizard-dung! But at least out here, even if they didn't get much prey, they can complain about how stupidly hard hunting is to a sympathetic audience.",
+                "text": "The littermates end up dirty, exhausted, and without much more than a f_tp_s to show for it. Lizard-dung! But at least out here, even if they didn't get much prey, they can complain about how stupidly hard hunting is to a sympathetic audience.",
                 "exp": 0,
                 "weight": 20,
                 "relationships": [

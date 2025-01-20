@@ -1176,7 +1176,7 @@
             "normal adult": [-1, -1]
         },
         "weight": 20,
-        "intro_text": "p_l waits until {PRONOUN/p_l/subject}{VERB/p_l/'re/'s} out of camp to reveal to app1 that {PRONOUN/p_l/subject}{VERB/p_l/'re/'s} off to find scugmint - a 'helpful' group of 'helpers' can be a little... well, unhelpful. scugmint is just too exciting for many of {PRONOUN/p_l/poss} Clanmates to keep {PRONOUN/p_l/poss} heads around, and p_l wants to take advantage of the peak greenleaf growing season.",
+        "intro_text": "p_l waits until {PRONOUN/p_l/subject}{VERB/p_l/'re/'s} out of camp to reveal to app1 that {PRONOUN/p_l/subject}{VERB/p_l/'re/'s} off to find scugmint - a 'helpful' group of 'helpers' can be a little... well, unhelpful. Scugmint is just too exciting for many of {PRONOUN/p_l/poss} Clanmates to keep {PRONOUN/p_l/poss} heads around, and p_l wants to take advantage of the peak greenleaf growing season.",
         "decline_text": "{PRONOUN/p_l/subject/CAP} {VERB/p_l/have/has} second thoughts about leaving {PRONOUN/p_l/poss} patients behind, especially with {PRONOUN/p_l/poss} apprentice along too and {VERB/p_l/decide/decides} to go another day.",
         "chance_of_success": 40,
         "success_outcomes": [

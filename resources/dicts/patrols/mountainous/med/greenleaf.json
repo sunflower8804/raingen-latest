@@ -1052,7 +1052,7 @@
             "normal adult": [-1, -1]
         },
         "weight": 20,
-        "intro_text": "p_l waits until they're out of camp to reveal to app1 that they're off to find scugmint - a 'helpful' group of 'helpers' can be a little... well, unhelpful. scugmint is just too exciting for many of their Clanmates to keep their heads around, and p_l wants to take advantage of the peak greenleaf growing season.",
+        "intro_text": "p_l waits until they're out of camp to reveal to app1 that they're off to find scugmint - a 'helpful' group of 'helpers' can be a little... well, unhelpful. Scugmint is just too exciting for many of their Clanmates to keep their heads around, and p_l wants to take advantage of the peak greenleaf growing season.",
         "decline_text": "They have second thoughts leaving their patients behind, especially with them also bringing their apprentice, and decide to go another day.",
         "chance_of_success": 40,
         "success_outcomes": [
