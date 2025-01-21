@@ -5,17 +5,20 @@
     "bite-wound": [
         "m_c died from a bite-wound."
     ],
+    "spear-wound": [
+        "m_c died from a spear-wound."
+    ],
     "cat bite": [
         "m_c died from a cat bite."
     ],
     "beak bite": [
         "m_c died from a beak bite."
     ],
-    "snake bite": [
-        "m_c died from a snake bite."
+    "spider bite": [
+        "m_c died from a spider bite."
     ],
-    "rat bite": [
-        "m_c died from a rat bite."
+    "dropwig bite": [
+        "m_c died from a dropwig bite."
     ],
     "blood loss": [
         "m_c died from blood loss."
@@ -31,6 +34,12 @@
     ],
     "mangled tail": [
         "m_c died from a mangled tail."
+    ],
+    "chest wound": [
+        "m_c died from {PRONOUN/m_c/poss} chest wound."
+    ],
+    "mangled pelt": [
+        "m_c died from {PRONOUN/m_c/poss} mangled pelt"
     ],
     "frostbite": [
         "m_c died from frostbite."

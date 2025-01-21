@@ -616,9 +616,6 @@
         ],
         "status": [
           "any"
-        ],
-        "skill": [
-          "CAMP,2"
         ]
       },
       "injury": [
@@ -2036,7 +2033,7 @@
         "any"
       ],
       "weight": 20,
-      "event_text": "m_c fought a rogue, but was barely even hurt! {PRONOUN/m_c/subject/CAP}{VERB/m_c/'re/'s} a bit bruised, but bruises are better than spearmarks.",
+      "event_text": "m_c fought a rogue, but was barely even hurt! {PRONOUN/m_c/subject/CAP}{VERB/m_c/'re/'s} a bit bruised, but bruises are better than spear wounds.",
       "m_c": {
         "status": [
           "apprentice",
@@ -2108,7 +2105,7 @@
           "leader"
         ],
         "skill": [
-          "FIGHTER,2"
+          "FIGHTER,1"
         ],
         "trait": [
           "adventurous",
@@ -2181,7 +2178,7 @@
         "any"
       ],
       "weight": 20,
-      "event_text": "m_c saved r_c from an enemy warrior, and was barely even hurt! {PRONOUN/m_c/subject/CAP}{VERB/m_c/'re/'s} a bit bruised, but bruises are better than spearmarks.",
+      "event_text": "m_c saved r_c from an enemy warrior, and was barely even hurt! {PRONOUN/m_c/subject/CAP}{VERB/m_c/'re/'s} a bit bruised, but bruises are better than spear wounds.",
       "m_c": {
         "status": [
           "apprentice",
@@ -2365,7 +2362,7 @@
         "any"
       ],
       "weight": 20,
-      "event_text": "m_c fought a rogue, but was barely even hurt! {PRONOUN/m_c/subject/CAP}{VERB/m_c/'re/'s} a bit scraped up, but a few scrapes are better than spearmarks.",
+      "event_text": "m_c fought a rogue, but was barely even hurt! {PRONOUN/m_c/subject/CAP}{VERB/m_c/'re/'s} a bit scraped up, but a few scrapes are better than spear wounds.",
       "m_c": {
         "status": [
           "apprentice",
@@ -7337,7 +7334,7 @@
       "season": [
         "any"
       ],
-      "weight": 5,
+      "weight": 3,
       "event_text": "m_c disappeared for a few cycles, but {VERB/m_c/were/was} later found severely injured and nearly dead. {PRONOUN/m_c/subject/CAP} {VERB/m_c/were/was} rushed to the clerics den shortly after being found.",
       "m_c": {
         "age": [
@@ -7379,14 +7376,14 @@
       ]
     },
     {
-      "event_id": "gen_injury_iterator_expedition2",
+      "event_id": "gen_injury_iterator_expedition2_skilllocked",
       "location": [
         "any"
       ],
       "season": [
         "any"
       ],
-      "weight": 5,
+      "weight": 15,
       "event_text": "m_c {VERB/m_c/were/was} seen conversing with an overseer before disapearing for a few cycles, however upon returning {PRONOUN/m_c/subject} remained quiet and went straight to the cleric, hiding a bleeding wound.",
       "m_c": {
         "age": [
@@ -7395,6 +7392,9 @@
           "adult",
           "senior adult",
           "senior"
+        ],
+        "skill": [
+          "AI,2"
         ]
       },
       "injury": [
@@ -7432,7 +7432,7 @@
       "season": [
         "any"
       ],
-      "weight": 5,
+      "weight": 3,
       "event_text": "m_c disappeared for a few cycles, however when {PRONOUN/m_c/subject} returned {PRONOUN/m_c/subject} {VERB/m_c/were/was} clutching {PRONOUN/m_c/poss} chest, now bloody. {PRONOUN/m_c/subject/CAP} hurried over to the cleric's den, unwilling to talk about what happened.",
       "m_c": {
         "age": [
@@ -7471,14 +7471,14 @@
       ]
     },
     {
-      "event_id": "gen_injury_iterator_expedition4",
+      "event_id": "gen_injury_iterator_expedition4_skilllocked",
       "location": [
         "any"
       ],
       "season": [
         "any"
       ],
-      "weight": 5,
+      "weight": 15,
       "event_text": "m_c {VERB/m_c/were/was} seen conversing with an overseer before disappearing for a few cycles, later {PRONOUN/m_c/subject} came back to camp, barely walking and looking half dead, {PRONOUN/m_c/subject} {VERB/m_c/were/was} rushed to the clerics immediately.",
       "m_c": {
         "age": [
@@ -7487,6 +7487,9 @@
           "adult",
           "senior adult",
           "senior"
+        ],
+        "skill": [
+          "AI,2"
         ]
       },
       "injury": [
@@ -7516,6 +7519,87 @@
           "scar": "m_c {VERB/m_c/were/was} mangled by an Iterator.",
           "reg_death": "m_c died from {PRONOUN/m_c/poss} wounds after being mangled by an Iterator.",
           "lead_death": "{VERB/m_c/were/was} killed by {PRONOUN/m_c/poss} wounds after being mangled by an Iterator"
+        }
+      ]
+    },
+    {
+      "event_id": "gen_injury_brokenbone_rain",
+      "location": [
+        "any"
+      ],
+      "season": [
+        "newleaf",
+        "greenleaf",
+        "leaf-fall"
+      ],
+      "weight": 20,
+      "event_text": "m_c couldn't get to the shelter in time. {PRONOUN/m_c/subject/CAP} survived, but {VERB/m_c/were/was} heavily injured.",
+      "m_c": {
+        "status": [
+          "any"
+        ],
+        "not_skill": [
+          "RAIN,0"
+        ]
+      },
+      "injury": [
+        {
+          "cats": [
+            "m_c"
+          ],
+          "injuries": [
+            "broken bone",
+            "dislocated joint"
+          ]
+        }
+      ],
+      "history": [
+        {
+          "cats": [
+            "m_c"
+          ],
+          "scar": "m_c {VERB/m_c/were/was} hurt when {PRONOUN/m_c/subject} couldn't get to the shelter in time.",
+          "reg_death": "m_c couldn't get to the shelter in time and died from {PRONOUN/m_c/poss} wounds.",
+          "lead_death": "{VERB/m_c/were/was} killed by {PRONOUN/m_c/poss} wounds after {PRONOUN/m_c/subject} couldn't get to the shelter in time"
+        }
+      ]
+    },
+    {
+      "event_id": "gen_injury_rain_blizzard",
+      "location": [
+        "any"
+      ],
+      "season": [
+        "leaf-bare"
+      ],
+      "weight": 20,
+      "event_text": "m_c couldn't get to the shelter in time. {PRONOUN/m_c/subject/CAP} survived, but {VERB/m_c/were/was} injured by the blizzard.",
+      "m_c": {
+        "status": [
+          "any"
+        ],
+        "not_skill": [
+          "RAIN,0"
+        ]
+      },
+      "injury": [
+        {
+          "cats": [
+            "m_c"
+          ],
+          "injuries": [
+            "frostbite"
+          ]
+        }
+      ],
+      "history": [
+        {
+          "cats": [
+            "m_c"
+          ],
+          "scar": "m_c {VERB/m_c/were/was} injured by the blizzard when {PRONOUN/m_c/subject} couldn't get to the shelter in time.",
+          "reg_death": "m_c couldn't hide from the blizzard and died from {PRONOUN/m_c/poss} frostbite.",
+          "lead_death": "{VERB/m_c/were/was} killed by {PRONOUN/m_c/poss} frostbite after {PRONOUN/m_c/subject} couldn't hide from the blizzard"
         }
       ]
     }

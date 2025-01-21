@@ -11,6 +11,13 @@
             "m_c's skin is starting to feel feverish around the area of {PRONOUN/m_c/poss} wound. It looks a bit worse than it did yesterday."
         ]
     },
+    "spear-wound": {
+        "an infected wound": [
+          "The spear wound feels hot - m_c winces as r_c cleans it. It's becoming infected.",
+            "m_c's skin is starting to feel feverish around the area of {PRONOUN/m_c/poss} wound. It looks a bit worse than it did yesterday."
+
+        ]
+    },
     "cat bite": {
         "an infected wound": [
             "The cat bite feels hot - m_c winces as r_c cleans it. It's becoming infected.",
@@ -23,26 +30,29 @@
             "m_c's skin is starting to feel feverish around the area of {PRONOUN/m_c/poss} wound. It looks a bit worse than it did yesterday."
         ]
     },
-    "snake bite": {
+    "spider bite": {
         "an infected wound": [
-            "r_c mutters something about plantain as m_c carefully licks around {PRONOUN/m_c/poss} snake bite wound. It's not healing like it should.",
+            "r_c mutters something about plantain as m_c carefully licks around {PRONOUN/m_c/poss} spider bite wound. It's not healing like it should.",
             "Though the plantain leaves seem to be doing their job of healing the toxins, m_c's wound has started to feel warm to the touch."
         ]
     },
-    "rat bite": {
+    "dropwig bite": {
         "an infected wound": [
-            "r_c talks as {PRONOUN/r_c/subject} {VERB/r_c/apply/applies} a strange paste to m_c's rat bite. {PRONOUN/r_c/subject/CAP} {VERB/r_c/tell/tells} {PRONOUN/m_c/object} that this will be a daily routine because it's becoming infected.",
-            "It seems inevitable that all rat bites are nasty, so m_c isn't really surprised when {PRONOUN/m_c/inposs} starts to show signs of infection."
+          "r_c talks as {PRONOUN/r_c/subject} {VERB/r_c/apply/applies} a strange paste to m_c's dropwig bite. {PRONOUN/r_c/subject} tells {PRONOUN/m_c/object} that this will be a daily routine because it's becoming infected.",
+          "It seems inevitable that all dropwig bites are nasty, so m_c isn't really surprised when {PRONOUN/m_c/inposs} starts to show signs of infection."
+
         ],
         "a festering wound": [
-            "The worried look in r_c's eyes as {PRONOUN/r_c/subject} {VERB/r_c/examine/examines} m_c's acrid rat bite makes {PRONOUN/m_c/poss} heart sink.",
-            "m_c tries to ignore the smell coming from the site of {PRONOUN/m_c/poss} festering rat bite."
+          "The worried look in r_c's eyes as {PRONOUN/r_c/subject} {VERB/r_c/examine/examines} m_c's acrid dropwig bite makes {PRONOUN/m_c/poss} heart sink.",
+            "m_c tries to ignore the smell coming from the site of {PRONOUN/m_c/poss} festering dropwig bite."
+
         ]
     },
-    "tick bites": {
+    "leech bites": {
         "an infected wound": [
-            "r_c sighs and tries to gently extract the head of the tick that was left behind when the insect was plucked off of m_c. With that contaminant, the little tick bite has become infected.",
-            "The tick on m_c was left for far too long. The area is now swollen and warm - definite signs of infection."
+          "r_c sighs and tries to gently extract the head of the leech that was left behind when the insect was plucked off of m_c. With that contaminant, the little leech bite has become infected.",
+            "The leech on m_c was left for far too long. The area is now swollen and warm - definite signs of infection."
+
         ]
     },
     "broken jaw": {
@@ -63,10 +73,24 @@
             "As if the injury wasn't bad enough, the skin around m_c's mangled leg has started to swell and feel feverish."
         ]
     },
+    "mangled pelt": {
+        "an infected wound": [
+          "r_c wonders if {PRONOUN/r_c/subject} might need to consult with a cleric from another Clan. m_c's state has become worse, {PRONOUN/m_c/subject} wounds have become infected and swollen - and {PRONOUN/r_c/subject} {VERB/r_c/need/needs} more ideas.",
+            "As if the injuries weren't bad enough, the skin around m_c's wounds have started to swell and feel feverish."
+
+        ]
+    },
     "mangled tail": {
         "an infected wound": [
-            "m_c's poor mangled tail is swollen and hot to the touch: r_c searches the herb stores for those that fight infection.",
-            "As if the injury wasn't bad enough, the skin on m_c's mangled tail has started to swell and feel feverish."
+          "m_c's poor mangled tail is swollen and hot the touch: r_c searches the herb stores for those that fight infection.",
+            "As if the injury wasn't bad enough, the skin of m_c's mangled tail has started to swell and feel feverish."
+
+        ]
+    },
+    "chest wound": {
+        "an infected wound": [
+         "r_c mutters an apology as {PRONOUN/r_c/subject} {VERB/r_c/put/puts} another batch of healing herbs onto m_c's wound, r_c insists its nessecary since m_c's wound is swollen and warm to the touch.",
+          "m_c keeps muttering through feverish dreams, something about Iterators and pearls. r_c watches on in concern as m_c's wound becomes more infected by the day."
         ]
     },
     "cracked pads": {

@@ -43,6 +43,49 @@
             "m_c has to hold {PRONOUN/m_c/poss} healed but twisted limb up near {PRONOUN/m_c/poss} body as {PRONOUN/m_c/subject} {VERB/m_c/hop/hops} around camp. {PRONOUN/m_c/subject/CAP} survived {PRONOUN/m_c/poss} injury, but the leg will never comfortably support {PRONOUN/m_c/poss} weight again."
         ]
     },
+    "mangled pelt": {
+        "lost a leg": [
+          "With a heavy heart r_c informs m_c that the damage from their condition left {PRONOUN/m_c/poss} leg damaged beyond repair, and had to be removed in order to keep {PRONOUN/m_c/self} safe from infection.",
+          "When m_c wakes up from {PRONOUN/m_c/poss} poppy-induced sleep, r_c breaks the news that m_c's leg had to be removed due to the damage of their condition.",
+          "m_c wakes up one leg less than {PRONOUN/m_c/subject} went to sleep with, and it's both upsetting and a relief. {PRONOUN/m_c/poss/CAP} leg was so mangled, especially compaired to the rest of {PRONOUN/m_c/poss} body - and m_c in so much pain - that this might be for the best. But it's still a loss.",
+          "The damage that m_c's leg had received turned out to be too great. {PRONOUN/m_c/poss/CAP} leg had to be removed for any hope of recovery especially from all the other wounds present.",
+            "m_c has healed from {PRONOUN/m_c/poss} mangled state, but {PRONOUN/m_c/poss} leg had to be removed completely due to how damaged it was."
+
+        ],
+        "weak leg": [
+          "r_c tells m_c that {PRONOUN/m_c/subject} might have to accept that one of {PRONOUN/m_c/poss} limbs was so badly mangled especially compaired to the rest of{PRONOUN/m_c/self}, will always be weaker now. At least {PRONOUN/m_c/subject} still {VERB/m_c/have/has} it... but that's cold consolation to m_c, who feels like {PRONOUN/m_c/subject} {VERB/m_c/were/was} so close to healing perfectly.",
+          "r_c explains to m_c that the weakness {PRONOUN/m_c/subject} {VERB/m_c/feel/feels} in {PRONOUN/m_c/poss} leg will likely always be present, a consequence of the severe damage that was overall inflicted.",
+          "m_c stands triumphantly on a leg that now works only a little worse than before. While it'll always be weaker than {PRONOUN/m_c/poss} others, it's been a long journey to heal such a badly injured limb.",
+          "m_c leaves the cleric's denafter a long recovery and limps around the camp, happy to at least be up and moving, though the new limp is probably permanent."
+
+        ],
+        "twisted leg": [
+          "m_c tells r_c it's fine, and {PRONOUN/m_c/subject} {VERB/m_c/know/knows} r_c did {PRONOUN/r_c/poss} best. {PRONOUN/m_c/poss/CAP} leg was too badly mangled alongside all {PRONOUN/m_c/poss} other wounds - to heal this far is a miracle from the Ascended, even if it is twisted.",
+          "m_c has finally healed, but r_c has to explain that {PRONOUN/r_c/poss} leg will always be awkwardly twisted and uncomfortable to walk with.  Sometimes herbs can only do so much, especially with how badly hurt {PRONOUN/m_c/subject} {VERB/m_c/were/was}.",
+          "{PRONOUN/m_c/poss/CAP} twisted limb frustrates {PRONOUN/m_c/object} constantly, but m_c tells {PRONOUN/m_c/self} it could've been worse. At least {PRONOUN/m_c/subject} survived, a miracle considering the damage received.",
+          "After many moons of stressful healing, m_c has to hold {PRONOUN/m_c/poss} healed but twisted limb up near {PRONOUN/m_c/poss} body as {PRONOUN/m_c/subject} {VERB/m_c/hop/hops} around camp. {PRONOUN/m_c/subject/CAP} survived {PRONOUN/m_c/poss} injury but the leg will never comfortably support {PRONOUN/m_c/poss} weight again."
+
+        ],
+        "lost their tail": [
+          "Despite r_c's best attempts to salvage every part of m_c, it all couldnt be saved. r_c helps m_c bury {PRONOUN/m_c/poss} tail wordlessly, hoping the ritual brings {PRONOUN/m_c/object} closure from the trauma of losing it.",
+          "When m_c wakes up, r_c has to explain to {PRONOUN/m_c/object} that {PRONOUN/r_c/subject} had to remove m_c's tail as a last resort. The damage dealt to it was too great, and without it m_c is now good to return to duties, whenever {PRONOUN/m_c/subject} {VERB/m_c/are/is} ready.",
+          "It's okay, m_c tells {PRONOUN/m_c/self}. A tail isn't the worst thing to lose from {PRONOUN/m_c/poss} encounter, {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} going to be fine! But {PRONOUN/m_c/subject} still {VERB/m_c/feel/feels} its absence no matter how hard {PRONOUN/m_c/subject} {VERB/m_c/try/tries} to force it from {PRONOUN/m_c/poss} mind.",
+          "m_c has healed from {PRONOUN/m_c/poss} mangled state, but unfortunately {PRONOUN/m_c/poss} tail was too damaged and is gone."
+            
+        ],
+        "partial hearing loss": [
+          "r_c continues {PRONOUN/m_c/poss} test, but it's clear that m_c's hearing isn't what it used to be - probably related to {PRONOUN/m_c/poss} severe injuries.",
+          "r_c informs m_c that though {PRONOUN/m_c/poss} body has healed, there was still permanent damage done to his ears. m_c will struggle to hear for the rest of {PRONOUN/m_c/poss} life.",
+          "m_c realizes that it's not that the camp has been more peaceful lately - {PRONOUN/m_c/subject} just can't hear as much as {PRONOUN/m_c/subject} used to before {PRONOUN/m_c/poss} encounter."
+            
+        ],
+        "recurring shock": [
+          "m_c demands to know when {PRONOUN/m_c/subject}'ll stop freezing in fear at what {PRONOUN/m_c/subject} {VERB/m_c/know/knows} are just memories. r_c doesn't have answers but {PRONOUN/r_c/subject} {VERB/r_c/comfort/comforts} {PRONOUN/r_c/poss} Clanmate, saying that forcing {PRONOUN/m_c/self} to be okay is just hurting m_c.",
+            "r_c tells m_c that {PRONOUN/r_c/subject} {VERB/r_c/have/has} no way to stop dreams or memories, only poppy seeds to help r_c sleep. Perhaps the memories will fade with time.",
+          "m_c jumps, then realizes that it was just a leaf blowing in the wind. {PRONOUN/m_c/subject/CAP} {VERB/m_c/feel/feels} exhausted, {PRONOUN/m_c/poss} memories like a trap that rears up to bite {PRONOUN/m_c/object} whenever {PRONOUN/m_c/subject} {VERB/m_c/relax/relaxes}."
+
+        ]
+    },
     "dislocated joint": {
         "constant joint pain": [
             "It feels like {PRONOUN/m_c/poss} formerly dislocated joint just isn't the same anymore. r_c is understanding, but prepares m_c for the possibility that this could be permanent.",

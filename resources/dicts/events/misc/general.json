@@ -4042,12 +4042,12 @@
     "location": ["any"],
     "season": ["any"],
     "sub_type": ["accessory"],
-    "weight": 3,
+    "weight": 10,
     "event_text": "m_c disapeared for a few cycles, but returned with a new acc_singular, every slugcat silently knows though that m_c was staying with an iterator now.",
     "new_accessory": ["FAUXMANE"],
     "m_c": {
       "age": ["adolescent", "young adult", "adult", "senior adult", "senior"],
-      "status": ["any"]
+      "skill": ["PEARL,0"]
     }
   },
   {
@@ -4055,12 +4055,12 @@
     "location": ["any"],
     "season": ["any"],
     "sub_type": ["accessory"],
-    "weight": 7,
+    "weight": 20,
     "event_text": "m_c returned from an iterator structure scouring, and now proudly wears a acc_singular around {PRONOUN/m_c/object}.",
     "new_accessory": ["TORNCLOAKFALL", "TORNCLOAKWINTER", "TORNCLOAKNIGHT", "TORNCLOAKSHADOW", "TORNCLOAKSILVER"],
     "m_c": {
       "age": ["adolescent", "young adult", "adult", "senior adult", "senior"],
-      "status": ["any"]
+      "skill": ["AI,0"]
     }
   },
   {
@@ -4077,42 +4077,29 @@
     }
   },
   {
-    "event_id": "gen_misc_any_straightearings",
+    "event_id": "gen_misc_any_scavtrade",
     "location": ["any"],
     "season": ["any"],
     "sub_type": ["accessory"],
-    "weight": 8,
-    "event_text": "m_c was seen conversing with a passing patrol of scavengers, after some bartering {PRONOUN/m_c/subject} {VERB/m_c/return/returns} now adorning acc_plural.",
-    "new_accessory": ["STRAIGHTGOLD", "STRAIGHTSILVER"],
+    "weight": 20,
+    "event_text": "m_c was seen conversing with a passing patrol of scavenger traders, after some bartering {PRONOUN/m_c/subject} {VERB/m_c/return/returns} now adorning acc_plural.",
+    "new_accessory": ["STRAIGHTGOLD", "STRAIGHTSILVER", "ALLSEEINGGOLD", "ALLSEEINGSILVER"],
     "m_c": {
       "age": ["adolescent", "young adult", "adult", "senior adult", "senior"],
-      "status": ["any"]
+      "skill": ["SCAV,0"]
     }
   },
   {
-    "event_id": "gen_misc_any_allseeingearings",
+    "event_id": "gen_misc_any_elitescavtrade",
     "location": ["any"],
     "season": ["any"],
     "sub_type": ["accessory"],
-    "weight": 8,
-    "event_text": "m_c was seen conversing with a passing patrol of scavengers, after some bartering {PRONOUN/m_c/subject} {VERB/m_c/return/returns} now adorning some acc_singular.",
-    "new_accessory": ["ALLSEEINGGOLD", "ALLSEEINGSILVER"],
-    "m_c": {
-      "age": ["adolescent", "young adult", "adult", "senior adult", "senior"],
-      "status": ["any"]
-    }
-  },
-  {
-    "event_id": "gen_misc_any_besiegemask",
-    "location": ["any"],
-    "season": ["any"],
-    "sub_type": ["accessory"],
-    "weight": 15,
+    "weight": 30,
     "event_text": "m_c was taking a walk out in the teritory when {PRONOUN/m_c/subject} stumbled into an elite scavenger, after some bartering m_c returns to camp now one acc_singular richer",
     "new_accessory": ["BESIEGEDMASKOG", "BESIEGEDMASKBLUE", "BESIEGEDMASKCYAN", "BESIEGEDMASKGRAY", "BESIEGEDMASKGREEN", "BESIEGEDMASKINDIGO", "BESIEGEDMASKORANGE", "BESIEGEDMASKPINK", "BESIEGEDMASKPURPLE", "BESIEGEDMASKRED", "BESIEGEDMASKROSE", "BESIEGEDMASKAQUA", "BESIEGEDMASKYELLOW", "VULTMASK", "KINGMASK", "SCAVMASK"],
     "m_c": {
       "age": ["adolescent", "young adult", "adult", "senior adult", "senior"],
-      "status": ["any"]
+      "skill": ["SCAV,0"]
     }
   },
   {
@@ -4120,12 +4107,12 @@
     "location": ["any"],
     "season": ["any"],
     "sub_type": ["accessory"],
-    "weight": 15,
-    "event_text": "m_c was out traveling when {PRONOUN/m_c/subject} saw the unmistakable shine of a acc_singular, oddly this acc_singular was in pristine condition! m_c decided to carry around this special gift from the Ascended",
+    "weight": 30,
+    "event_text": "m_c was out traveling when {PRONOUN/m_c/subject} saw the unmistakable shine of a acc_singular, oddly this acc_singular was in pristine condition! m_c decided to carry around this special gift from the Ascended.",
     "new_accessory": ["HANDPEARLBLANK", "HANDPEARLBLUE", "HANDPEARLGREEN", "HANDPEARLORANGE", "HANDPEARLPURPLE", "HANDPEARLRED", "HANDPEARLYELLOW"],
     "m_c": {
       "age": ["adolescent", "young adult", "adult", "senior adult", "senior"],
-      "status": ["any"]
+      "skill": ["PEARL,0"]
     }
   },
    {
@@ -4133,12 +4120,12 @@
     "location": ["any"],
     "season": ["any"],
     "sub_type": ["accessory"],
-    "weight": 10,
+    "weight": 20,
     "event_text": "m_c for the past few cycles was seen asking around camp for white pearls, and why has become apparent as {PRONOUN/m_c/subject} now {VERB/m_c/wear/wears} a drapery made of pearls.",
     "new_accessory": ["PEARLDRAPERY"],
     "m_c": {
-      "age": ["adolescent", "young adult", "adult", "senior adult", "senior"],
-      "status": ["any"]
+      "status": ["any"],
+      "skill": ["PEARL,0"]
     }
   },
   {
@@ -4159,12 +4146,12 @@
     "location": ["any"],
     "season": ["any"],
     "sub_type": ["accessory"],
-    "weight": 10,
+    "weight": 20,
     "event_text": "m_c whilst out on an adventure, returns with some kind of drapery around {PRONOUN/m_c/object}.",
     "new_accessory": ["DRAPERY"],
     "m_c": {
       "age": ["adolescent", "young adult", "adult", "senior adult", "senior"],
-      "status": ["any"]
+      "skill": ["AI,0"]
     }
   },
   {
@@ -4172,12 +4159,12 @@
     "location": ["any"],
     "season": ["any"],
     "sub_type": ["accessory"],
-    "weight": 7,
+    "weight": 20,
     "event_text": "m_c after vanishing for a few cycles returns with a prideful drapery around {PRONOUN/m_c/object}.",
     "new_accessory": ["PRIDEDRAPERY"],
     "m_c": {
       "age": ["adolescent", "young adult", "adult", "senior adult", "senior"],
-      "status": ["any"]
+      "skill": ["AI,0"]
     }
   },
    {
@@ -4198,12 +4185,12 @@
     "location": ["any"],
     "season": ["any"],
     "sub_type": ["accessory"],
-    "weight": 3,
+    "weight": 10,
     "event_text": "m_c went missing for a few cycles and came back with a acc_singular.",
     "new_accessory": ["IMPLANT"],
     "m_c": {
       "age": ["adolescent", "young adult", "adult", "senior adult", "senior"],
-      "status": ["any"]
+      "skill": ["AI,0"]
     }
   },
   {
@@ -4289,12 +4276,12 @@
     "location": ["any"],
     "season": ["any"],
     "sub_type": ["accessory"],
-    "weight": 9,
+    "weight": 20,
     "event_text":  "m_c is constantly being watched by acc_plural.",
     "new_accessory": ["IGGYYELLOW", "IGGYPURPLE", "IGGYWHITE", "IGGYGREEN", "IGGYRED", "IGGYBLUE"],
     "m_c": {
       "age": ["any"],
-      "status": ["any"]
+      "skill": ["AI,0"]
     }
   },
   {
@@ -4609,7 +4596,7 @@
     "location": ["any"],
     "season": ["any"],
     "sub_type": ["accessory"],
-    "weight": 8,
+    "weight": 7,
     "event_text": "m_c accidentally trespasses onto o_c_n's territory and returns to camp with a breathtaking story of friendship. m_c introduces the Clan to {PRONOUN/m_c/poss} new acc_singular companion.",
     "new_accessory": ["BLUESKY", "BLUESEA", "PINKMAGENTA", "PINKPURPLE", "GREENEMERALD", "GREENLIME", "WHITEHIDDEN", "WHITEREVEALED", "BLACKNEUTRAL", "BLACKALERT", "YELLOWORANGE", "YELLOWLEMON", "REDTOMATO", "CYANBLUE", "CYANGREEN", "ALBISALAFUSHIA", "ALBISALARED", "MELASALARED", "MELASALAFUSHIA", "MELASALAPURPLE"],
     "m_c": {
@@ -4622,16 +4609,48 @@
     }
   },
   {
+    "event_id": "gen_misc_any_lizard_misc1_TRAITLOCKED",
+    "location": ["any"],
+    "season": ["any"],
+    "sub_type": ["accessory"],
+    "weight": 30,
+    "event_text": "m_c accidentally trespasses onto o_c_n's territory and returns to camp with a breathtaking story of friendship. m_c introduces the Clan to {PRONOUN/m_c/poss} new acc_singular companion.",
+    "new_accessory": ["BLUESKY", "BLUESEA", "PINKMAGENTA", "PINKPURPLE", "GREENEMERALD", "GREENLIME", "WHITEHIDDEN", "WHITEREVEALED", "BLACKNEUTRAL", "BLACKALERT", "YELLOWORANGE", "YELLOWLEMON", "REDTOMATO", "CYANBLUE", "CYANGREEN", "ALBISALAFUSHIA", "ALBISALARED", "MELASALARED", "MELASALAFUSHIA", "MELASALAPURPLE"],
+    "m_c": {
+        "age": ["adolescent", "young adult", "adult", "senior adult"],
+        "status": ["any"],
+        "skill": ["LIZARD,1"]
+    },
+    "other_clan": {
+        "current_rep": ["any"],
+        "changed": -1
+    }
+  },
+  {
     "event_id": "gen_misc_any_lizard_misc2",
     "location": ["any"],
     "season": ["any"],
     "sub_type": ["accessory"],
-    "weight": 8,
+    "weight": 7,
     "event_text": "m_c went for a long walk this morning, deep in thought, and returned to camp with a acc_singular following {PRONOUN/m_c/object}.",
     "new_accessory": ["BLUESKY", "BLUESEA", "PINKMAGENTA", "PINKPURPLE", "GREENEMERALD", "GREENLIME", "WHITEHIDDEN", "WHITEREVEALED", "BLACKNEUTRAL", "BLACKALERT", "YELLOWORANGE", "YELLOWLEMON", "REDTOMATO", "CYANBLUE", "CYANGREEN", "ALBISALAFUSHIA", "ALBISALARED", "MELASALARED", "MELASALAFUSHIA", "MELASALAPURPLE"],
     "m_c": {
       "age": ["adolescent", "young adult", "adult", "senior adult", "senior"],
       "status": ["any"]
+    }
+  },
+  {
+    "event_id": "gen_misc_any_lizard_misc2_TRAITLOCKED",
+    "location": ["any"],
+    "season": ["any"],
+    "sub_type": ["accessory"],
+    "weight": 30,
+    "event_text": "m_c went for a long walk this morning, deep in thought, and returned to camp with a acc_singular following {PRONOUN/m_c/object}.",
+    "new_accessory": ["BLUESKY", "BLUESEA", "PINKMAGENTA", "PINKPURPLE", "GREENEMERALD", "GREENLIME", "WHITEHIDDEN", "WHITEREVEALED", "BLACKNEUTRAL", "BLACKALERT", "YELLOWORANGE", "YELLOWLEMON", "REDTOMATO", "CYANBLUE", "CYANGREEN", "ALBISALAFUSHIA", "ALBISALARED", "MELASALARED", "MELASALAFUSHIA", "MELASALAPURPLE"],
+    "m_c": {
+      "age": ["adolescent", "young adult", "adult", "senior adult", "senior"],
+      "status": ["any"],
+      "skill": ["LIZARD,0"]
     }
   },
   {
@@ -4643,10 +4662,9 @@
     "event_text": "m_c spends the evening regaling the Clan with stories of how they found a acc_singular.",
     "new_accessory": ["BLUESKY", "BLUESEA", "PINKMAGENTA", "PINKPURPLE", "GREENEMERALD", "GREENLIME", "WHITEHIDDEN", "WHITEREVEALED", "BLACKNEUTRAL", "BLACKALERT", "YELLOWORANGE", "YELLOWLEMON", "REDTOMATO", "CYANBLUE", "CYANGREEN", "ALBISALAFUSHIA", "ALBISALARED", "MELASALARED", "MELASALAFUSHIA", "MELASALAPURPLE"],
     "m_c": {
-      "age": ["any"],
+      "age": ["adolescent", "young adult", "adult", "senior adult", "senior"],
       "status": ["any"],
-      "skill": ["LORE,1", "KIT,1", "STORY,1"],
-      "not_skill": ["KIT,2", "KIT,3", "KIT,4"]
+      "skill": ["LORE,1", "KIT,1", "STORY,1", "LIZARD,1"]
     }
   },
   {
@@ -4654,12 +4672,25 @@
     "location": ["any"],
     "season": ["any"],
     "sub_type": ["accessory"],
-    "weight": 8,
+    "weight": 7,
     "event_text": "m_c went missing for a few cycles and returned to camp with a breathtaking tale of survival and, surprisingly, friendship. {PRONOUN/m_c/subject/CAP} introduces the Clan to {PRONOUN/m_c/poss} new acc_singular companion.",
     "new_accessory": ["BLUESKY", "BLUESEA", "PINKMAGENTA", "PINKPURPLE", "GREENEMERALD", "GREENLIME", "WHITEHIDDEN", "WHITEREVEALED", "BLACKNEUTRAL", "BLACKALERT", "YELLOWORANGE", "YELLOWLEMON", "REDTOMATO", "CYANBLUE", "CYANGREEN", "ALBISALAFUSHIA", "ALBISALARED", "MELASALARED", "MELASALAFUSHIA", "MELASALAPURPLE"],
     "m_c": {
       "age": ["any"],
       "status": ["any"]
+    }
+  },
+  {
+    "event_id": "gen_misc_any_lizard_misc12_TRAITLOCKED",
+    "location": ["any"],
+    "season": ["any"],
+    "sub_type": ["accessory"],
+    "weight": 30,
+    "event_text": "m_c went missing for a few cycles and returned to camp with a breathtaking tale of survival and, surprisingly, friendship. {PRONOUN/m_c/subject/CAP} introduces the Clan to {PRONOUN/m_c/poss} new acc_singular companion.",
+    "new_accessory": ["BLUESKY", "BLUESEA", "PINKMAGENTA", "PINKPURPLE", "GREENEMERALD", "GREENLIME", "WHITEHIDDEN", "WHITEREVEALED", "BLACKNEUTRAL", "BLACKALERT", "YELLOWORANGE", "YELLOWLEMON", "REDTOMATO", "CYANBLUE", "CYANGREEN", "ALBISALAFUSHIA", "ALBISALARED", "MELASALARED", "MELASALAFUSHIA", "MELASALAPURPLE"],
+    "m_c": {
+      "age": ["any"],
+      "skill": ["LIZARD,0"]
     }
   },
   {

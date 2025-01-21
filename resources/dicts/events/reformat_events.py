@@ -352,7 +352,10 @@ def reformat(path):
                                  "NOPAW", "NOLEFTEAR", "NORIGHTEAR",
                                  "NOEAR", "SNAKE", "TOETRAP", "BURNPAWS", "BURNTAIL", "BURNBELLY", "BURNRUMP",
                                  "FROSTFACE",
-                                 "FROSTTAIL", "FROSTMITT", "FROSTSOCK", "TOE", "SNAKETWO"]
+                                 "FROSTTAIL", "FROSTMITT", "FROSTSOCK", "TOE", "SNAKETWO",
+                                 "LABRATFACE", "LABRATCHEST", "NEUTRINO", "MANGLEDARM", "ENVOYCHEST", "DOUBLEBITE", "DANGEROUS",
+                                 "TOPSURGERY", "CUTOPEN", "VIVISECTION", "LABRATLIMBS", "HALFFACELEFT", "FULLBODYBURNS", "BESIEGED", 
+                                 "HALFFACERIGHT", "STARBURN", "ARMBURN", "BURNTLEG", "BURNTARM"]
                     for tag in event["tags"]:
                         if tag in scar_list:
                             info["scars"].append(tag)
@@ -366,13 +369,14 @@ def reformat(path):
                     "cats": ["r_c"],
                     "injuries": []
                 }
-                injuries = ["claw-wound", "bite-wound", "cat bite", "beak bite", "snake bite", "rat bite", "tick bites",
+                injuries = ["claw-wound", "bite-wound", "cat bite", "beak bite", "spider bite", "dropwig bite", "leech bites",
                             "blood loss", "broken jaw", "broken bone", "mangled leg", "dislocated joint", "joint pain",
                             "sprain", "mangled tail", "bruises", "cracked pads", "sore", "phantom pain", "scrapes",
                             "small cut", "torn pelt", "torn ear", "frostbite", "recovering from birth", "rotsickness",
                             "water in their lungs", "burn", "severe burn", "shock", "lingering shock",
                             "shivering", "dehydrated", "head damage", "damaged eyes", "quilled by a porcupine",
-                            "broken back", "poisoned", "bee sting", "headache", "severe headache", "pregnant"]
+                            "broken back", "poisoned", "bee sting", "headache", "severe headache", "pregnant",
+                            "mangled pelt", "chest wound"]
 
                 pools = ["battle_injury", "minor_injury", "blunt_force_injury", "hot_injury", "cold_injury",
                          "big_bite_injury", "small_bite_injury", "beak_bite", "rat_bite", "rotrecovery"]
@@ -399,7 +403,10 @@ def reformat(path):
                                  "NOPAW", "NOLEFTEAR", "NORIGHTEAR",
                                  "NOEAR", "SNAKE", "TOETRAP", "BURNPAWS", "BURNTAIL", "BURNBELLY", "BURNRUMP",
                                  "FROSTFACE",
-                                 "FROSTTAIL", "FROSTMITT", "FROSTSOCK", "TOE", "SNAKETWO"]
+                                 "FROSTTAIL", "FROSTMITT", "FROSTSOCK", "TOE", "SNAKETWO",
+                                 "LABRATFACE", "LABRATCHEST", "NEUTRINO", "MANGLEDARM", "ENVOYCHEST", "DOUBLEBITE", "DANGEROUS",
+                                 "TOPSURGERY", "CUTOPEN", "VIVISECTION", "LABRATLIMBS", "HALFFACELEFT", "FULLBODYBURNS", "BESIEGED", 
+                                 "HALFFACERIGHT", "STARBURN", "ARMBURN", "BURNTLEG", "BURNTARM"]
                     for tag in event["tags"]:
                         if tag in scar_list:
                             info["scars"].append(tag)

@@ -9,30 +9,35 @@
         "m_c's bite-wound has healed.",
         "m_c has healed well from {PRONOUN/m_c/poss} bite-wound."
     ],
+    "spear-wound": [
+        "m_c has healed from {PRONOUN/m_c/poss} spear-wound.",
+        "m_c's spear-wound has healed.",
+        "m_c has healed well from {PRONOUN/m_c/poss} spear-wound."
+    ],
     "cat bite": [
-        "m_c has healed from {PRONOUN/m_c/poss} cat bite.",
-        "m_c's cat bite has healed.",
-        "m_c has healed well from {PRONOUN/m_c/poss} cat bite."
+        "m_c has healed from {PRONOUN/m_c/poss} slugcat bite.",
+        "m_c's slugcat bite has healed.",
+        "m_c has healed well from {PRONOUN/m_c/poss} slugcat bite."
     ],
     "beak bite": [
         "m_c has healed from {PRONOUN/m_c/poss} beak bite.",
         "m_c's beak bite has healed.",
         "m_c has healed well from {PRONOUN/m_c/poss} beak bite."
     ],
-    "snake bite": [
-        "The snake bite m_c got has healed.",
-        "m_c's snake bite has healed.",
-        "m_c has healed from the snake bite {PRONOUN/m_c/subject} got."
+    "spider bite": [
+        "The spider bite m_c got has healed.",
+        "m_c's spider bite has healed.",
+        "m_c has healed from the spider bite {PRONOUN/m_c/subject} got."
     ],
-    "rat bite": [
-        "m_c has healed from {PRONOUN/m_c/poss} rat bite.",
-        "The rat bite m_c had gotten has healed.",
-        "m_c's rat bite has healed."
+    "dropwig bite": [
+        "m_c has healed from {PRONOUN/m_c/poss} dropwig bite.",
+        "The dropwig bite m_c had gotten has healed.",
+        "m_c's dropwig bite has healed."
     ],
-    "tick bites": [
-        "The tick bites m_c was suffering from have healed.",
-        "m_c's tick bites are no longer bothering {PRONOUN/m_c/object}.",
-        "m_c's tick bites have healed up."
+    "leech bites": [
+        "The leech bites m_c was suffering from have healed.",
+        "m_c's leech bites are no longer bothering {PRONOUN/m_c/object}.",
+        "m_c's leech bites have healed up."
     ],
     "blood loss": [
         "m_c has recovered from the blood loss {PRONOUN/m_c/subject} suffered.",
@@ -82,6 +87,14 @@
         "m_c's mangled tail seems to be fully healed.",
         "m_c has recovered from {PRONOUN/m_c/poss} mangled tail.",
         "m_c's tail is feeling much better."
+    ],
+    "mangled pelt": [
+        "m_c's mangled state has healed. {PRONOUN/m_c/subject/CAP}{VERB/m_c/'ve/'s} made a full recovery against all odds.",
+        "m_c is ecstatic to not constantly be reopening wounds after so many cycles, {PRONOUN/m_c/poss} mangled pelt has finally healed."
+    ],
+    "chest wound": [
+        "m_c's chest wound has healed. {PRONOUN/m_c/subject/CAP}{VERB/m_c/'ve/'s} made a recovery without any scarring against all odds.",
+        "m_c is relieved to not have cobwebs constantly wrapped around {PRONOUN/m_c/object} midsection, {PRONOUN/m_c/poss} chest wound has finally healed."
     ],
     "bruises": [
         "m_c's bruises have healed.",
