@@ -1099,12 +1099,18 @@ class PatrolOutcome:
         #harleyaccs
         elif "HARLEYACCS" in acc_list:
             acc_list = Pelt.harleyaccs
+        
+        elif "FEATHERBOAS" in acc_list:
+            acc_list = Pelt.featherboas
+        
+        elif "SCARVES" in acc_list:
+            acc_list = Pelt.scarves
         #drones used to be here but apparently they are collars
         else:
             acc_list = [x for x in acc_list if x in Pelt.plant_accessories + Pelt.wild_accessories +\
         Pelt.tail_accessories + Pelt.collars + Pelt.lizards + Pelt.insectwings + Pelt.buddies + Pelt.muddypaws +\
         Pelt.newaccs + Pelt.bodypaint + Pelt.herbs2 + Pelt.implant + Pelt.magic + Pelt.necklaces + Pelt.drapery +\
-        Pelt.pridedrapery + Pelt.eyepatches + Pelt.larsaccs + Pelt.harleyaccs
+        Pelt.pridedrapery + Pelt.eyepatches + Pelt.larsaccs + Pelt.harleyaccs + Pelt.featherboas + Pelt.scarves
                             and x not in cat.pelt.inventory]
 
         if not acc_list:

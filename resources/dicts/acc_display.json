@@ -1993,5 +1993,145 @@
     "default": "fiery mane",
     "plural": "fiery manes",
     "singular": "fiery mane"
+  },
+  "DPINKFEATHERBOA": {
+    "default": "pink vulture feather boa",
+    "plural": "pink vulture feather boas",
+    "singular": "pink vulture feather boa"
+  },
+  "DREDFEATHERBOA": {
+    "default": "red vulture feather boa",
+    "plural": "red vulture feather boas",
+    "singular": "red vulture feather boa"
+  },
+  "DGREENFEATHERBOA": {
+    "default": "green vulture feather boa",
+    "plural": "green vulture feather boas",
+    "singular": "green vulture feather boa"
+  },
+  "DBLUEFEATHERBOA": {
+    "default": "blue vulture feather boa",
+    "plural": "blue vulture feather boas",
+    "singular": "blue vulture feather boa"
+  },
+  "DGREENERFEATHERBOA": {
+    "default": "green vulture feather boa",
+    "plural": "green vulture feather boas",
+    "singular": "green vulture feather boa"
+  },
+  "LWHITEFEATHERBOA": {
+    "default": "white vulture feather boa",
+    "plural": "white vulture feather boas",
+    "singular": "white vulture feather boa"
+  },
+  "LPURPLEFEATHERBOA": {
+    "default": "purple vulture feather boa",
+    "plural": "purple vulture feather boas",
+    "singular": "purple vulture feather boa"
+  },
+  "LBLUEFEATHERBOA": {
+    "default": "blue vulture feather boa",
+    "plural": "blue vulture feather boas",
+    "singular": "blue vulture feather boa"
+  },
+  "LPINKFEATHERBOA": {
+    "default": "pink vulture feather boa",
+    "plural": "pink vulture feather boas",
+    "singular": "pink vulture feather boa"
+  },
+  "DMAGENTAFEATHERBOA": {
+    "default": "magents vulture feather boa",
+    "plural": "magents vulture feather boas",
+    "singular": "magents vulture feather boa"
+  },
+  "DCRIMSONFEATHERBOA": {
+    "default": "crimson vulture feather boa",
+    "plural": "crimson vulture feather boas",
+    "singular": "crimson vulture feather boa"
+  },
+  "DPURPLEFEATHERBOA": {
+    "default": "purple vulture feather boa",
+    "plural": "purple vulture feather boas",
+    "singular": "purple vulture feather boa"
+  },
+  "REDSCARF": {
+    "default": "red scarf",
+    "plural": "red scarves",
+    "singular": "red scarf"
+  },
+  "ORANGESCARF": {
+    "default": "orange scarf",
+    "plural": "orange scarves",
+    "singular": "orange scarf"
+  },
+  "YELLOWSCARF": {
+    "default": "yellow scarf",
+    "plural": "yellow scarves",
+    "singular": "yellow scarf"
+  },
+  "LIMESCARF": {
+    "default": "lime scarf",
+    "plural": "lime scarves",
+    "singular": "lime scarf"
+  },
+  "GREENSCARF": {
+    "default": "green scarf",
+    "plural": "green scarves",
+    "singular": "green scarf"
+  },
+  "CYANSCARF": {
+    "default": "cyan scarf",
+    "plural": "cyan scarves",
+    "singular": "cyan scarf"
+  },
+  "WHITESCARF": {
+    "default": "white scarf",
+    "plural": "white scarves",
+    "singular": "white scarf"
+  },
+  "BLUESCARF": {
+    "default": "blue scarf",
+    "plural": "blue scarves",
+    "singular": "blue scarf"
+  },
+  "DARKBLUESCARF": {
+    "default": "dark blue scarf",
+    "plural": "dark blue scarves",
+    "singular": "dark blue scarf"
+  },
+  "PURPLESCARF": {
+    "default": "purple scarf",
+    "plural": "purple scarves",
+    "singular": "purple scarf"
+  },
+  "MAGENTASCARF": {
+    "default": "magenta scarf",
+    "plural": "magenta scarves",
+    "singular": "magenta scarf"
+  },
+  "BLACKSCARF": {
+    "default": "black scarf",
+    "plural": "black scarves",
+    "singular": "black scarf"
+  },
+  "GRAYSCARF": {
+    "default": "gray scarf",
+    "plural": "gray scarves",
+    "singular": "gray scarf"
+  },
+  "BROWNSCARF": {
+    "default": "brown scarf",
+    "plural": "brown scarves",
+    "singular": "brown scarf"
+  },
+  "NSHSCARF": {
+    "default": "cool scarf",
+    "plural": "cool scarves",
+    "singular": "cool scarf"
+  },
+  "SAWYERSCARF": {
+    "default": "sawyer scarf",
+    "plural": "sawyer scarves",
+    "singular": "sawyer scarf"
   }
 }

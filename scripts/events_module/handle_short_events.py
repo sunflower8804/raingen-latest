@@ -403,9 +403,13 @@ class HandleShortEvents:
             acc_list.extend(Pelt.larsaccs)
         if "HARLEYACCS" in possible_accs:
             acc_list.extend(Pelt.harleyaccs)
+        if "FEATHERBOAS" in possible_accs:
+            acc_list.extend(Pelt.featherboas)
+        if "SCARVES" in possible_accs:
+            acc_list.extend(Pelt.scarves)
 
         for acc in possible_accs:
-            if acc not in ["WILD", "PLANT", "COLLAR", "LIZARD", "HERBS2", "MUDDYPAWS", "INSECTWINGS", "BUDDIES", "NEWACCS", "NEWACCS2", "BODYPAINT", "IMPLANT", "MAGIC", "NECKLACES", "DRAPERY", "PRIDEDRAPERY", "EYEPATCHES", "LARSACCS", "HARLEYACCS"]:
+            if acc not in ["WILD", "PLANT", "COLLAR", "LIZARD", "HERBS2", "MUDDYPAWS", "INSECTWINGS", "BUDDIES", "NEWACCS", "NEWACCS2", "BODYPAINT", "IMPLANT", "MAGIC", "NECKLACES", "DRAPERY", "PRIDEDRAPERY", "EYEPATCHES", "LARSACCS", "HARLEYACCS", "FEATHERBOAS", "SCARVES"]:
                 acc_list.append(acc)
 
         if hasattr(self.main_cat.pelt, "scars"):

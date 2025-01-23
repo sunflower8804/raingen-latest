@@ -129,6 +129,7 @@ class Sprites:
             'collars', 'bellcollars', 'bowcollars', 'nyloncollars', 'rwlizards', 'drones', 'muddypaws', 
             'herbs2', 'insectwings', 'buddies', 'newaccs', 'bodypaint', 'implant', 'magic', 'necklaces',
             'newaccs2', 'drapery', 'eyepatches', 'pridedrapery', 'larsaccs', 'harleyaccs',
+            'featherboas', 'scarves',
             'singlecolours', 'speckledcolours', 'tabbycolours', 'bengalcolours', 'marbledcolours',
             'rosettecolours', 'smokecolours', 'tickedcolours', 'mackerelcolours', 'classiccolours',
             'sokokecolours', 'agouticolours', 'singlestripecolours', 'maskedcolours', 'bananacolours',
@@ -574,6 +575,18 @@ class Sprites:
             ["TORNCLOAKNIGHT", "TORNCLOAKSHADOW", "TORNCLOAKSILVER", "FAUXMANE"]
         ]
 
+        featherboas_data = [
+            ["DPINKFEATHERBOA", "DREDFEATHERBOA", "DGREENFEATHERBOA", "DBLUEFEATHERBOA", "DGREENERFEATHERBOA"],
+            ["DORANGEFEATHERBOA", "LWHITEFEATHERBOA", "LPURPLEFEATHERBOA", "LBLUEFEATHERBOA", "LPINKFEATHERBOA"],
+            ["DMAGENTAFEATHERBOA", "DCRIMSONFEATHERBOA", "DPURPLEFEATHERBOA"]
+        ]
+
+        scarves_data = [
+            ["REDSCARF", "ORANGESCARF", "YELLOWSCARF", "LIMESCARF", "GREENSCARF", "CYANSCARF", "WHITESCARF"],
+            ["BLUESCARF", "DARKBLUESCARF", "PURPLESCARF", "MAGENTASCARF", "BLACKSCARF", "GRAYSCARF", "BROWNSCARF"],
+            ["NSHSCARF", "SAWYERSCARF"]
+        ]
+
         # medcatherbs
         for row, herbs in enumerate(medcatherbs_data):
             for col, herb in enumerate(herbs):
@@ -686,6 +699,14 @@ class Sprites:
         for row, harleyaccs in enumerate(harleyaccs_data):
             for col, harleyaccs in enumerate(harleyaccs):
                 self.make_group('harleyaccs', (col, row), f'harleyaccs{harleyaccs}')
+        #featherboas
+        for row, featherboas in enumerate(featherboas_data):
+            for col, featherboas in enumerate(featherboas):
+                self.make_group('featherboas', (col, row), f'featherboas{featherboas}')
+        #scarves
+        for row, scarves in enumerate(scarves_data):
+            for col, scarves in enumerate(scarves):
+                self.make_group('scarves', (col, row), f'scarves{scarves}')
 
     def load_symbols(self):
         """

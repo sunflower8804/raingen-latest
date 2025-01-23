@@ -2875,6 +2875,11 @@ def generate_sprite(
                             new_sprite.blit(sprites.sprites['larsaccs' + i + cat_sprite], (0, 0))
                         elif i in cat.pelt.harleyaccs:
                             new_sprite.blit(sprites.sprites['harleyaccs' + i + cat_sprite], (0, 0))
+                        elif i in cat.pelt.featherboas:
+                            new_sprite.blit(sprites.sprites['featherboas' + i + cat_sprite], (0, 0))
+                        elif i in cat.pelt.scarves:
+                            new_sprite.blit(sprites.sprites['scarves' + i + cat_sprite], (0, 0))
+                    #THIS SECTION ABOVE IS ONLY FOR CLOSE-TO-BODY ACCESSORIES
 
                     except:
                         continue
@@ -2938,6 +2943,10 @@ def generate_sprite(
                             new_sprite.blit(sprites.sprites['larsaccs' + i + cat_sprite], (0, 0))
                         elif i in cat.pelt.harleyaccs:
                             new_sprite.blit(sprites.sprites['harleyaccs' + i + cat_sprite], (0, 0))
+                        elif i in cat.pelt.featherboas:
+                            new_sprite.blit(sprites.sprites['featherboas' + i + cat_sprite], (0, 0))
+                        elif i in cat.pelt.scarves:
+                            new_sprite.blit(sprites.sprites['scarves' + i + cat_sprite], (0, 0))
 
                     except:
                         continue
