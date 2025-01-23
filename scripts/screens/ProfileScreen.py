@@ -4,6 +4,7 @@ import os
 from random import choice, randint
 from re import sub
 
+import i18n
 import math
 import pygame
 import pygame_gui
@@ -30,7 +31,7 @@ from scripts.utility import (
     ui_scale_dimensions,
     shorten_text_to_fit,
     ui_scale_offset,
-    adjust_list_text,
+    adjust_list_text, 
 )
 from .Screens import Screens
 from ..cat.history import History
@@ -316,8 +317,8 @@ class ProfileScreen(Screens):
                 self.the_cat.pelt.accessories.clear()
                 b_data = event.ui_element.blit_data[1]
                 b_2data = []
-                pos_x = 10
-                pos_y = 175
+                pos_x = 5
+                pos_y = 130
                 i = 0
                 cat = self.the_cat
                 age = cat.age
@@ -426,8 +427,8 @@ class ProfileScreen(Screens):
                             elif accessory in cat.pelt.harleyaccs:
                                 self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['harleyaccs' + accessory + cat_sprite], manager=MANAGER)
                             pos_x += 60
-                            if pos_x >= 610:
-                                pos_x = 0
+                            if pos_x >= 600:
+                                pos_x = 5
                                 pos_y += 60
                             i += 1
                 self.profile_elements["cat_image"].kill()
@@ -670,8 +671,8 @@ class ProfileScreen(Screens):
         elif self.open_tab == 'accessories':
             b_data = event.ui_element.blit_data[1]
             b_2data = []
-            pos_x = 10
-            pos_y = 175
+            pos_x = 5
+            pos_y = 130
             i = 0
             cat = self.the_cat
             age = cat.age
@@ -782,8 +783,8 @@ class ProfileScreen(Screens):
                                 elif accessory in cat.pelt.harleyaccs:
                                     self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['harleyaccs' + accessory + cat_sprite], manager=MANAGER)
                                 pos_x += 60
-                                if pos_x >= 610:
-                                    pos_x = 0
+                                if pos_x >= 600:
+                                    pos_x = 5
                                     pos_y += 60
                                 i += 1
                         except:
@@ -1164,7 +1165,7 @@ class ProfileScreen(Screens):
                         if len(the_cat.pelt.accessories) > 1:
                             output += ' and ' + str(len(the_cat.pelt.accessories) - 1) + ' more'
                     except:
-                        print("error with column1 profilescreen")
+                        print("error with column1 profilescreen's acc_display")
 
         elif the_cat.pelt.accessory and the_cat.pelt.accessory in the_cat.pelt.accessories:
             output += "\n"
@@ -2609,8 +2610,8 @@ class ProfileScreen(Screens):
             else:
                 cat_sprite = str(cat.pelt.cat_sprites[age])
 
-        pos_x = 10
-        pos_y = 150
+        pos_x = 5
+        pos_y = 130
         i = 0
 
         self.cat_list_buttons = {}
@@ -2694,8 +2695,8 @@ class ProfileScreen(Screens):
 
                         self.accessories_list.append(accessory)
                         pos_x += 60
-                        if pos_x >= 610:
-                            pos_x = 0
+                        if pos_x >= 600:
+                            pos_x = 5
                             pos_y += 60
                         i += 1
                 except:

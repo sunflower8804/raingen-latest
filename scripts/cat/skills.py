@@ -143,6 +143,8 @@ class SkillPath(Enum):
                 SkillPath.STAR,
                 SkillPath.HEALER,
                 SkillPath.DARK,
+                SkillPath.AI,
+                SkillPath.PEARL,
             ]
             if i not in exclude
         ]

@@ -170,9 +170,9 @@ class RoleScreen(Screens):
             anchors={"top_target": self.switch_warrior},
         )
         self.switch_med_cat = UISurfaceImageButton(
-            ui_scale(pygame.Rect((402, 0), (172, 52))),
-            "switch to medicine\ncat",
-            get_button_dict(ButtonStyles.LADDER_MIDDLE, (172, 52)),
+            ui_scale(pygame.Rect((402, 0), (172, 36))),
+            "switch to cleric",
+            get_button_dict(ButtonStyles.LADDER_MIDDLE, (172, 36)),
             object_id="@buttonstyles_ladder_middle",
             anchors={"top_target": self.bar},
             text_is_multiline=True,
@@ -198,7 +198,7 @@ class RoleScreen(Screens):
         )
         self.switch_med_app = UISurfaceImageButton(
             ui_scale(pygame.Rect((579, 0), (172, 52))),
-            "switch to medicine\ncat apprentice",
+            "switch to cleric\napprentice",
             get_button_dict(ButtonStyles.LADDER_MIDDLE, (172, 52)),
             object_id="@buttonstyles_ladder_middle",
             anchors={"top_target": self.switch_warrior_app},
