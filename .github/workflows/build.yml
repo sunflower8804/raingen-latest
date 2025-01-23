@@ -50,55 +50,25 @@ jobs:
           git log --pretty="format:%H|||%cd|||%b|||%s" -15 --no-decorate --merges --grep="Merge pull request" --date=short > changelog.txt
       - name: Run PyInstaller
         if: ${{ !startsWith(github.ref, 'refs/tags/') }}
-        run: poetry run python3 -m PyInstaller Clangen.spec
+        run: poetry run python3 -m PyInstaller Raingen.spec
         env:
           IS_RELEASE: 0
       - name: Run PyInstaller
         if: ${{ startsWith(github.ref, 'refs/tags/') }}
-        run: poetry run python3 -m PyInstaller Clangen.spec
+        run: poetry run python3 -m PyInstaller Raingen.spec
         env:
           IS_RELEASE: 1
       - name: Create archive (.tar.xz)
-        run: tar -caf Clangen_Linux64_glibc2.31+.tar.xz -C dist Clangen
+        run: tar -caf Raingen_Linux64_glibc2.31+.tar.xz -C dist Raingen
       - uses: actions/upload-artifact@v4
         with:
-          name: Clangen_Linux64_glibc2.31+.tar.xz
-          path: Clangen_Linux64_glibc2.31+.tar.xz
-      - name: Import GPG key
-        id: import_gpg
-        uses: crazy-max/ghaction-import-gpg@v5
-        if: ${{ env.gpg_private_key != '' && env.gpg_private_key_passphrase != '' }}
-        with:
-          gpg_private_key: ${{ secrets.PACKAGESIGNKEY }}
-          passphrase: ${{ secrets.PACKAGESIGNKEYPASSPHRASE }}
-      - name: Upload artifact to API
-        if: ${{ env.update_api_push_token != '' && (github.ref == 'refs/heads/development' || startsWith(github.ref, 'refs/tags/')) }}
-        run: |
-          gpg --output Clangen_Linux64_glibc2.31+.tar.xz.sig --detach-sig -a Clangen_Linux64_glibc2.31+.tar.xz
-          curl -X 'POST' \
-            'https://clangen.io/api/v1/Update/Channels/${{ env.RELEASE_CHANNEL }}/Releases/${{ env.VERSION_NUMBER }}/Appoint' \
-            -H 'X-API-Key: ${{ secrets.UPDATE_API_DEPLOY_KEY }}' \
-            -H 'accept: */*'
-          curl -X 'PUT' \
-            'https://clangen.io/api/v1/Update/Channels/${{ env.RELEASE_CHANNEL }}/Releases/${{ env.VERSION_NUMBER }}/Artifacts/linux2.31' \
-            -H 'X-API-Key: ${{ secrets.UPDATE_API_DEPLOY_KEY }}' \
-            -H 'accept: */*' \
-            -H 'Content-Type: multipart/form-data' \
-            -F 'fileBundle=@Clangen_Linux64_glibc2.31+.tar.xz' \
-            -F 'fileBundle=@Clangen_Linux64_glibc2.31+.tar.xz.sig' \
-            --http1.1
-      - name: Set up butler
-        uses: thlumyn/setup-butler@clangen
-      - name: Upload build to itch.io
-        env:
-          BUTLER_API_KEY: ${{ secrets.BUTLER_API_KEY }}
-        if: startsWith(github.ref, 'refs/tags/') && env.BUTLER_API_KEY != ''
-        run: butler push Clangen_Linux64_glibc2.31+.tar.xz sablesteel/clan-gen-fan-edit:linux64_glibc_231 --userversion "${{ env.VERSION_NUMBER }}"
+          name: Raingen_Linux64_glibc2.31+.tar.xz
+          path: Raingen_Linux64_glibc2.31+.tar.xz
       - name: Release
         uses: softprops/action-gh-release@v1
         if: startsWith(github.ref, 'refs/tags/')
         with:
-          files: Clangen_Linux64_glibc2.31+.tar.xz
+          files: Raingen_Linux64_glibc2.31+.tar.xz
 
   build_ubuntu_22_04:
     runs-on: ubuntu-22.04
@@ -144,55 +114,25 @@ jobs:
           git log --pretty=oneline -15 --no-decorate  --no-merges > changelog.txt
       - name: Run PyInstaller
         if: ${{ !startsWith(github.ref, 'refs/tags/') }}
-        run: poetry run python3 -m PyInstaller Clangen.spec
+        run: poetry run python3 -m PyInstaller Raingen.spec
         env:
           IS_RELEASE: 0
       - name: Run PyInstaller
         if: ${{ startsWith(github.ref, 'refs/tags/') }}
-        run: poetry run python3 -m PyInstaller Clangen.spec
+        run: poetry run python3 -m PyInstaller Raingen.spec
         env:
           IS_RELEASE: 1
       - name: Create archive (.tar.xz)
-        run: tar -caf Clangen_Linux64_glibc2.35+.tar.xz -C dist Clangen
+        run: tar -caf Raingen_Linux64_glibc2.35+.tar.xz -C dist Raingen
       - uses: actions/upload-artifact@v4
         with:
-          name: Clangen_Linux64_glibc2.35+.tar.xz
-          path: Clangen_Linux64_glibc2.35+.tar.xz
-      - name: Import GPG key
-        id: import_gpg
-        uses: crazy-max/ghaction-import-gpg@v5
-        if: ${{ env.gpg_private_key != '' && env.gpg_private_key_passphrase != '' }}
-        with:
-          gpg_private_key: ${{ secrets.PACKAGESIGNKEY }}
-          passphrase: ${{ secrets.PACKAGESIGNKEYPASSPHRASE }}
-      - name: Upload artifact to API
-        if: ${{ env.update_api_push_token != '' && (github.ref == 'refs/heads/development' || startsWith(github.ref, 'refs/tags/')) }}
-        run: |
-          gpg --output Clangen_Linux64_glibc2.35+.tar.xz.sig --detach-sig -a Clangen_Linux64_glibc2.35+.tar.xz
-          curl -X 'POST' \
-            'https://clangen.io/api/v1/Update/Channels/${{ env.RELEASE_CHANNEL }}/Releases/${{ env.VERSION_NUMBER }}/Appoint' \
-            -H 'X-API-Key: ${{ secrets.UPDATE_API_DEPLOY_KEY }}' \
-            -H 'accept: */*'
-          curl -X 'PUT' \
-            'https://clangen.io/api/v1/Update/Channels/${{ env.RELEASE_CHANNEL }}/Releases/${{ env.VERSION_NUMBER }}/Artifacts/linux2.35' \
-            -H 'X-API-Key: ${{ secrets.UPDATE_API_DEPLOY_KEY }}' \
-            -H 'accept: */*' \
-            -H 'Content-Type: multipart/form-data' \
-            -F 'fileBundle=@Clangen_Linux64_glibc2.35+.tar.xz' \
-            -F 'fileBundle=@Clangen_Linux64_glibc2.35+.tar.xz.sig' \
-            --http1.1
-      - name: Set up butler
-        uses: thlumyn/setup-butler@clangen
-      - name: Upload build to itch.io
-        env:
-          BUTLER_API_KEY: ${{ secrets.BUTLER_API_KEY }}
-        if: startsWith(github.ref, 'refs/tags/') && env.BUTLER_API_KEY != ''
-        run: butler push Clangen_Linux64_glibc2.35+.tar.xz sablesteel/clan-gen-fan-edit:linux64_glibc_235 --userversion "${{ env.VERSION_NUMBER }}"
+          name: Raingen_Linux64_glibc2.35+.tar.xz
+          path: Raingen_Linux64_glibc2.35+.tar.xz
       - name: Release
         uses: softprops/action-gh-release@v1
         if: startsWith(github.ref, 'refs/tags/')
         with:
-          files: Clangen_Linux64_glibc2.35+.tar.xz
+          files: Raingen_Linux64_glibc2.35+.tar.xz
 
   build_win32:
     runs-on: windows-2019
@@ -259,58 +199,27 @@ jobs:
           cp target/release/self_updater.exe ../resources/
       - name: Run PyInstaller
         if: ${{ !startsWith(github.ref, 'refs/tags/') }}
-        run: poetry run PyInstaller Clangen.spec
+        run: poetry run PyInstaller Raingen.spec
         env:
           IS_RELEASE: 0
       - name: Run PyInstaller
         if: ${{ startsWith(github.ref, 'refs/tags/') }}
-        run: poetry run PyInstaller Clangen.spec
+        run: poetry run PyInstaller Raingen.spec
         env:
           IS_RELEASE: 1
       - name: Create archive (.zip)
         run: |
-          cp dist/Clangen/_internal/.itch.toml dist/ 
-          tar.exe -a -c -f Clangen_Win32.zip -C dist Clangen .itch.toml
+          cp dist/Raingen/_internal/.itch.toml dist/ 
+          tar.exe -a -c -f Raingen_Win32.zip -C dist Raingen .itch.toml
       - uses: actions/upload-artifact@v4
         with:
-          name: Clangen_Win32
-          path: Clangen_Win32.zip
-      - name: Import GPG key
-        id: import_gpg
-        uses: crazy-max/ghaction-import-gpg@v5
-        if: ${{ env.gpg_private_key != '' && env.gpg_private_key_passphrase != '' }}
-        with:
-          gpg_private_key: ${{ secrets.PACKAGESIGNKEY }}
-          passphrase: ${{ secrets.PACKAGESIGNKEYPASSPHRASE }}
-      - name: Upload artifact to API
-        if: ${{ env.update_api_push_token != '' && (github.ref == 'refs/heads/development' || startsWith(github.ref, 'refs/tags/')) }}
-        shell: bash
-        run: |
-          gpg --output Clangen_Win32.zip.sig --detach-sig -a Clangen_Win32.zip
-          curl -X 'POST' \
-            'https://clangen.io/api/v1/Update/Channels/${{ env.RELEASE_CHANNEL }}/Releases/${{ env.VERSION_NUMBER }}/Appoint' \
-            -H 'X-API-Key: ${{ secrets.UPDATE_API_DEPLOY_KEY }}' \
-            -H 'accept: */*'
-          curl -X 'PUT' \
-            'https://clangen.io/api/v1/Update/Channels/${{ env.RELEASE_CHANNEL }}/Releases/${{ env.VERSION_NUMBER }}/Artifacts/win32' \
-            -H 'X-API-Key: ${{ secrets.UPDATE_API_DEPLOY_KEY }}' \
-            -H 'accept: */*' \
-            -H 'Content-Type: multipart/form-data' \
-            -F 'fileBundle=@Clangen_Win32.zip;type=application/zip' \
-            -F 'fileBundle=@Clangen_Win32.zip.sig' \
-            --http1.1
-      - name: Set up butler
-        uses: thlumyn/setup-butler@clangen
-      - name: Upload build to itch.io
-        if: startsWith(github.ref, 'refs/tags/') && env.BUTLER_API_KEY != ''
-        env:
-          BUTLER_API_KEY: ${{ secrets.BUTLER_API_KEY }}
-        run: butler push Clangen_Win32.zip sablesteel/clan-gen-fan-edit:win32 --userversion "${{ env.VERSION_NUMBER }}"
+          name: Raingen_Win32
+          path: Raingen_Win32.zip
       - name: Release
         uses: softprops/action-gh-release@v1
         if: startsWith(github.ref, 'refs/tags/')
         with:
-          files: Clangen_Win32.zip
+          files: Raingen_Win32.zip
 
   build_win64:
     runs-on: windows-latest
@@ -383,58 +292,27 @@ jobs:
           cp target/release/self_updater.exe ../resources/
       - name: Run PyInstaller
         if: ${{ !startsWith(github.ref, 'refs/tags/') }}
-        run: poetry run PyInstaller Clangen.spec
+        run: poetry run PyInstaller Raingen.spec
         env:
           IS_RELEASE: 0
       - name: Run PyInstaller
         if: ${{ startsWith(github.ref, 'refs/tags/') }}
-        run: poetry run PyInstaller Clangen.spec
+        run: poetry run PyInstaller Raingen.spec
         env:
           IS_RELEASE: 1
       - name: Create archive (.zip)
         run: |
-          cp dist/Clangen/_internal/.itch.toml dist/ 
-          tar.exe -a -c -f Clangen_Win64.zip -C dist Clangen .itch.toml
+          cp dist/Raingen/_internal/.itch.toml dist/ 
+          tar.exe -a -c -f Raingen_Win64.zip -C dist Raingen .itch.toml
       - uses: actions/upload-artifact@v4
         with:
-          name: Clangen_Win64
-          path: Clangen_Win64.zip
-      - name: Import GPG key
-        id: import_gpg
-        uses: crazy-max/ghaction-import-gpg@v5
-        if: ${{ env.gpg_private_key != '' && env.gpg_private_key_passphrase != '' }}
-        with:
-          gpg_private_key: ${{ secrets.PACKAGESIGNKEY }}
-          passphrase: ${{ secrets.PACKAGESIGNKEYPASSPHRASE }}
-      - name: Upload artifact to API
-        if: ${{ env.update_api_push_token != '' && (github.ref == 'refs/heads/development' || startsWith(github.ref, 'refs/tags/')) }}
-        shell: bash
-        run: |
-          gpg --output Clangen_Win64.zip.sig --detach-sig -a Clangen_Win64.zip
-          curl -X 'POST' \
-            'https://clangen.io/api/v1/Update/Channels/${{ env.RELEASE_CHANNEL }}/Releases/${{ env.VERSION_NUMBER }}/Appoint' \
-            -H 'X-API-Key: ${{ secrets.UPDATE_API_DEPLOY_KEY }}' \
-            -H 'accept: */*'
-          curl -X 'PUT' \
-            'https://clangen.io/api/v1/Update/Channels/${{ env.RELEASE_CHANNEL }}/Releases/${{ env.VERSION_NUMBER }}/Artifacts/win64' \
-            -H 'X-API-Key: ${{ secrets.UPDATE_API_DEPLOY_KEY }}' \
-            -H 'accept: */*' \
-            -H 'Content-Type: multipart/form-data' \
-            -F 'fileBundle=@Clangen_Win64.zip;type=application/zip' \
-            -F 'fileBundle=@Clangen_Win64.zip.sig' \
-            --http1.1
-      - name: Set up butler
-        uses: thlumyn/setup-butler@clangen
-      - name: Upload build to itch.io
-        env:
-          BUTLER_API_KEY: ${{ secrets.BUTLER_API_KEY }}
-        if: startsWith(github.ref, 'refs/tags/') && env.BUTLER_API_KEY != ''
-        run: butler push Clangen_Win64.zip sablesteel/clan-gen-fan-edit:win64 --userversion "${{ env.VERSION_NUMBER }}"
+          name: Raingen_Win64
+          path: Raingen_Win64.zip
       - name: Release
         uses: softprops/action-gh-release@v1
         if: startsWith(github.ref, 'refs/tags/')
         with:
-          files: Clangen_Win64.zip
+          files: Raingen_Win64.zip
 
   build_win64_py311:
     runs-on: windows-latest
@@ -507,58 +385,27 @@ jobs:
           cp target/release/self_updater.exe ../resources/
       - name: Run PyInstaller
         if: ${{ !startsWith(github.ref, 'refs/tags/') }}
-        run: poetry run PyInstaller Clangen.spec
+        run: poetry run PyInstaller Raingen.spec
         env:
           IS_RELEASE: 0
       - name: Run PyInstaller
         if: ${{ startsWith(github.ref, 'refs/tags/') }}
-        run: poetry run PyInstaller Clangen.spec
+        run: poetry run PyInstaller Raingen.spec
         env:
           IS_RELEASE: 1
       - name: Create archive (.zip)
         run: |
-          cp dist/Clangen/_internal/.itch.toml dist/ 
-          tar.exe -a -c -f Clangen_Win64_Windows10+.zip -C dist Clangen .itch.toml
+          cp dist/Raingen/_internal/.itch.toml dist/ 
+          tar.exe -a -c -f Raingen_Win64_Windows10+.zip -C dist Raingen .itch.toml
       - uses: actions/upload-artifact@v4
         with:
-          name: Clangen_Win64_Windows10+
-          path: Clangen_Win64_Windows10+.zip
-      - name: Import GPG key
-        id: import_gpg
-        uses: crazy-max/ghaction-import-gpg@v5
-        if: ${{ env.gpg_private_key != '' && env.gpg_private_key_passphrase != '' }}
-        with:
-          gpg_private_key: ${{ secrets.PACKAGESIGNKEY }}
-          passphrase: ${{ secrets.PACKAGESIGNKEYPASSPHRASE }}
-      - name: Upload artifact to API
-        if: ${{ env.update_api_push_token != '' && (github.ref == 'refs/heads/development' || startsWith(github.ref, 'refs/tags/')) }}
-        shell: bash
-        run: |
-          gpg --output Clangen_Win64_Windows10+.zip.sig --detach-sig -a Clangen_Win64_Windows10+.zip
-          curl -X 'POST' \
-            'https://clangen.io/api/v1/Update/Channels/${{ env.RELEASE_CHANNEL }}/Releases/${{ env.VERSION_NUMBER }}/Appoint' \
-            -H 'X-API-Key: ${{ secrets.UPDATE_API_DEPLOY_KEY }}' \
-            -H 'accept: */*'
-          curl -X 'PUT' \
-            'https://clangen.io/api/v1/Update/Channels/${{ env.RELEASE_CHANNEL }}/Releases/${{ env.VERSION_NUMBER }}/Artifacts/win10+' \
-            -H 'X-API-Key: ${{ secrets.UPDATE_API_DEPLOY_KEY }}' \
-            -H 'accept: */*' \
-            -H 'Content-Type: multipart/form-data' \
-            -F 'fileBundle=@Clangen_Win64_Windows10+.zip;type=application/zip' \
-            -F 'fileBundle=@Clangen_Win64_Windows10+.zip.sig' \
-            --http1.1
-      - name: Set up butler
-        uses: thlumyn/setup-butler@clangen
-      - name: Upload build to itch.io
-        env:
-          BUTLER_API_KEY: ${{ secrets.BUTLER_API_KEY }}
-        if: startsWith(github.ref, 'refs/tags/') && env.BUTLER_API_KEY != ''
-        run: butler push Clangen_Win64_Windows10+.zip sablesteel/clan-gen-fan-edit:win64_10 --userversion "${{ env.VERSION_NUMBER }}"
+          name: Raingen_Win64_Windows10+
+          path: Raingen_Win64_Windows10+.zip
       - name: Release
         uses: softprops/action-gh-release@v1
         if: startsWith(github.ref, 'refs/tags/')
         with:
-          files: Clangen_Win64_Windows10+.zip
+          files: Raingen_Win64_Windows10+.zip
 
   build_macos64:
     # For commits to the original mac build action see:
@@ -608,85 +455,26 @@ jobs:
           git log --pretty="format:%H|||%cd|||%b|||%s" -15 --no-decorate --merges --grep="Merge pull request" --date=short > changelog.txt
       - name: Run PyInstaller
         if: ${{ !startsWith(github.ref, 'refs/tags/') }}
-        run: poetry run python -m PyInstaller Clangen.spec
+        run: poetry run python -m PyInstaller Raingen.spec
         env:
           IS_RELEASE: 0
       - name: Run PyInstaller
         if: ${{ startsWith(github.ref, 'refs/tags/') }}
-        run: poetry run python -m PyInstaller Clangen.spec
+        run: poetry run python -m PyInstaller Raingen.spec
         env:
           IS_RELEASE: 1
       - name: Create archive (.tar.xz)
-        run: rm -r dist/Clangen
+        run: rm -r dist/Raingen
       - name: Install appdmg
         run: "npm install -g appdmg"
       - name: Generate .dmg
-        run: "appdmg appdmg.json Clangen_macOS64.dmg"
+        run: "appdmg appdmg.json Raingen_macOS64.dmg"
       - uses: actions/upload-artifact@v4
         with:
-          name: Clangen_macOS64.dmg
-          path: Clangen_macOS64.dmg
-      - name: Import GPG key
-        id: import_gpg
-        uses: crazy-max/ghaction-import-gpg@v5
-        if: ${{ env.gpg_private_key != '' && env.gpg_private_key_passphrase != '' }}
-        with:
-          gpg_private_key: ${{ secrets.PACKAGESIGNKEY }}
-          passphrase: ${{ secrets.PACKAGESIGNKEYPASSPHRASE }}
-      - name: Upload artifact to API
-        if: ${{ env.update_api_push_token != '' && (github.ref == 'refs/heads/development' || startsWith(github.ref, 'refs/tags/')) }}
-        run: |
-          zip Clangen_macOS64.dmg.zip ./Clangen_macOS64.dmg
-          gpg --output Clangen_macOS64.dmg.zip.sig --detach-sig -a Clangen_macOS64.dmg.zip
-          curl -X 'POST' \
-            'https://clangen.io/api/v1/Update/Channels/${{ env.RELEASE_CHANNEL }}/Releases/${{ env.VERSION_NUMBER }}/Appoint' \
-            -H 'X-API-Key: ${{ secrets.UPDATE_API_DEPLOY_KEY }}' \
-            -H 'accept: */*'
-          curl -X 'PUT' \
-            'https://clangen.io/api/v1/Update/Channels/${{ env.RELEASE_CHANNEL }}/Releases/${{ env.VERSION_NUMBER }}/Artifacts/macOS' \
-            -H 'X-API-Key: ${{ secrets.UPDATE_API_DEPLOY_KEY }}' \
-            -H 'accept: */*' \
-            -H 'Content-Type: multipart/form-data' \
-            -F 'fileBundle=@Clangen_macOS64.dmg.zip;type=application/zip' \
-            -F 'fileBundle=@Clangen_macOS64.dmg.zip.sig' \
-            --http1.1
-      - name: Set up butler
-        uses: thlumyn/setup-butler@clangen
-      - name: Upload build to itch.io
-        env:
-          BUTLER_API_KEY: ${{ secrets.BUTLER_API_KEY }}
-        if: startsWith(github.ref, 'refs/tags/') && env.BUTLER_API_KEY != ''
-        run: butler push Clangen_macOS64.dmg sablesteel/clan-gen-fan-edit:osx64 --userversion "${{ env.VERSION_NUMBER }}"
+          name: Raingen_macOS64.dmg
+          path: Raingen_macOS64.dmg
       - name: Release
         uses: softprops/action-gh-release@v1
         if: startsWith(github.ref, 'refs/tags/')
         with:
-          files: Clangen_macOS64.dmg
-
-  confirm_release_ubuntu_22_04:
-    runs-on: ubuntu-22.04
-    if: ${{ vars.USE_UPDATE_API != '' && (github.ref == 'refs/heads/development' || startsWith(github.ref, 'refs/tags/')) }}
-    needs:
-      - build_ubuntu_20_04
-      - build_ubuntu_22_04
-      - build_win32
-      - build_win64
-      - build_win64_py311
-      - build_macos64
-    steps:
-      - name: Configure dev
-        if: ${{ !startsWith(github.ref, 'refs/tags/') }}
-        run: |
-          echo "VERSION_NUMBER=${{ github.sha }}" >> $GITHUB_ENV
-          echo "RELEASE_CHANNEL=${{ vars.DEVELOPMENT_RELEASE_CHANNEL }}" >> $GITHUB_ENV
-      - name: Configure release
-        if: startsWith(github.ref, 'refs/tags/')
-        run: |
-          echo "VERSION_NUMBER=${{ github.ref_name }}" >> $GITHUB_ENV
-          echo "RELEASE_CHANNEL=${{ vars.STABLE_RELEASE_CHANNEL }}" >> $GITHUB_ENV
-      - name: Confirm release
-        run: |
-          curl -X 'POST' \
-            'https://clangen.io/api/v1/Update/Channels/${{ env.RELEASE_CHANNEL }}/Releases/${{ env.VERSION_NUMBER }}/Confirm' \
-            -H 'X-API-Key: ${{ secrets.UPDATE_API_DEPLOY_KEY }}' \
-            -H 'accept: */*'
+          files: Raingen_macOS64.dmg
