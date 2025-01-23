@@ -21,11 +21,6 @@
             "Camp backgrounds will match with the mode: nighttime for dark mode and daytime for light mode.",
             false
         ],
-		"new accessories": [
-            "New Accessories",
-            "Enable RainGen accessories",
-            true
-        ],
         "fullscreen scaling": [
             "Ignore fullscreen scaling rules",
             "If enabled, fullscreen will display as large as possible (toggle fullscreen to update). This may include visual artifacts.",
@@ -43,7 +38,7 @@
         ],
         "keybinds": [
             "Keybinds",
-            "Enables certain keybinds to be used throughout the menus for quick navigation.",
+            "Enables certain keybinds to be used throughout the menus for quick navigation. This feature is currently unfinished and is prone to crashing.",
             false
         ],
         "shaders": [
@@ -63,13 +58,13 @@
         ],
         "check_for_updates": [
             "Check for updates",
-            "Automatically checks for updates on startup",
-            true
+            "Automatically checks for updates on startup (PLEASE DON'T AUTO-UPDATE, IT WILL BREAK THE GAME)",
+            false
         ],
         "show_changelog": [
             "Display changelog on startup",
             "Shows the changelog of the latest release on startup",
-            true
+            false
         ],
         "special_dates": [
             "Allow special date events",
@@ -89,7 +84,7 @@
         "bea_gilltongue": [
             "Alternate sprites for antennae / tail spots",
             "Use an alternate set of sprites for slugcat antennae and tail spots. Changes will be applied after restarting the game.",
-            false
+            true
         ]
     },
     "..": "these are special. they do not have a display name or a tooltip",
