@@ -372,7 +372,7 @@
                 "outsider_rep": 1,
                 "injury": [
                     {
-                        "slugcats": ["n_c:0"],
+                        "cats": ["n_c:0"],
                         "injuries": ["blunt_force_injury"],
                         "no_results": true
                     }
@@ -443,7 +443,7 @@
                 "outsider_rep": 1,
                 "injury": [
                     {
-                        "slugcats": ["n_c:0"],
+                        "cats": ["n_c:0"],
                         "injuries": ["blunt_force_injury"],
                         "no_results": true
                     }
@@ -516,9 +516,9 @@
                 "outsider_rep": 1,
                 "injury": [
                     {
-                        "slugcats": ["n_c:0"],
+                        "cats": ["n_c:0"],
                         "injuries": ["rotsickness"],
-                        "scars": "ROTMARKED",
+                        "scars": "ROTRIDDEN",
                         "no_results": true
                     }
                 ]
@@ -543,9 +543,9 @@
                 "outsider_rep": 1,
                 "injury": [
                     {
-                        "slugcats": ["n_c:0"],
+                        "cats": ["n_c:0"],
                         "injuries": ["rotsickness"],
-                        "scars": "ROTMARKED",
+                        "scars": "ROTRIDDEN",
                         "no_results": true
                     }
                 ]
@@ -1225,7 +1225,7 @@
                 "weight": 10,
                 "injury": [
                     {
-                        "slugcats": ["r_c"],
+                        "cats": ["r_c"],
                         "injuries": ["claw-wound"],
                         "scars": ["RIGHTEAR"]
                     }
@@ -1284,7 +1284,7 @@
         "max_cats": 6,
         "min_max_status": {
             "apprentice": [-1, -1],
-            "healer slugcats": [1, 6],
+            "healer cats": [1, 6],
             "normal adult": [-1, -1]
         },
         "weight": 20,
@@ -1365,7 +1365,7 @@
         "max_cats": 6,
         "min_max_status": {
             "apprentice": [-1, -1],
-            "healer slugcats": [1, 6],
+            "healer cats": [1, 6],
             "normal adult": [-1, -1]
         },
         "weight": 20,
@@ -1457,7 +1457,7 @@
         "min_max_status": {
             "apprentice": [-1, -1],
             "cleric": [1, 6],
-            "healer slugcats": [1, 6],
+            "healer cats": [1, 6],
             "all apprentices": [-1, -1],
             "normal adult": [-1, -1]
         },
@@ -1540,7 +1540,7 @@
         "min_max_status": {
             "apprentice": [-1, -1],
             "cleric": [1, 6],
-            "healer slugcats": [1, 6],
+            "healer cats": [1, 6],
             "all apprentices": [-1, -1],
             "normal adult": [-1, -1]
         },
@@ -1633,7 +1633,7 @@
         "min_max_status": {
             "apprentice": [-1, -1],
             "cleric apprentice": [1, 6],
-            "healer slugcats": [1, 6],
+            "healer cats": [1, 6],
             "normal adult": [-1, -1]
         },
         "weight": 20,
@@ -1685,7 +1685,7 @@
                 "weight": 10,
                 "injury": [
                     {
-                        "slugcats": ["app1"],
+                        "cats": ["app1"],
                         "injuries": ["shock"],
                         "scars": []
                     }
@@ -1722,7 +1722,7 @@
         "min_max_status": {
             "apprentice": [-1, -1],
             "cleric apprentice": [1, 6],
-            "healer slugcats": [1, 6],
+            "healer cats": [1, 6],
             "normal adult": [-1, -1]
         },
         "weight": 20,
@@ -1784,7 +1784,7 @@
                 "weight": 10,
                 "injury": [
                     {
-                        "slugcats": ["app1"],
+                        "cats": ["app1"],
                         "injuries": ["shock"],
                         "scars": []
                     }
@@ -2188,7 +2188,7 @@
                 ],
                 "injury": [
                     {
-                        "slugcats": ["p_l"],
+                        "cats": ["p_l"],
                         "injuries": ["battle_injury"],
                         "scars": ["BRIDGE"]
                     }
@@ -2703,7 +2703,7 @@
                 "weight": 10,
                 "injury": [
                     {
-                        "slugcats": ["r_c"],
+                        "cats": ["r_c"],
                         "injuries": ["battle_injury"],
                         "scars": ["CATBITE"]
                     }
@@ -2765,7 +2765,7 @@
                 "outsider_rep": 1,
                 "injury": [
                     {
-                        "slugcats": ["n_c:0"],
+                        "cats": ["n_c:0"],
                         "injuries": ["battle_injury"],
                         "no_results": true
                     }
@@ -2789,7 +2789,7 @@
                 "outsider_rep": 1,
                 "injury": [
                     {
-                        "slugcats": ["n_c:0"],
+                        "cats": ["n_c:0"],
                         "injuries": ["battle_injury"],
                         "no_results": true
                     }
@@ -2814,7 +2814,7 @@
                 "outsider_rep": 1,
                 "injury": [
                     {
-                        "slugcats": ["n_c:0"],
+                        "cats": ["n_c:0"],
                         "injuries": ["battle_injury"],
                         "no_results": true
                     }
@@ -2885,7 +2885,7 @@
                 "outsider_rep": 1,
                 "injury": [
                     {
-                        "slugcats": ["n_c:0"],
+                        "cats": ["n_c:0"],
                         "injuries": ["battle_injury"],
                         "no_results": true
                     }
@@ -2909,7 +2909,7 @@
                 "outsider_rep": 1,
                 "injury": [
                     {
-                        "slugcats": ["n_c:0"],
+                        "cats": ["n_c:0"],
                         "injuries": ["battle_injury"],
                         "no_results": true
                     }
@@ -2934,7 +2934,7 @@
                 "outsider_rep": 1,
                 "injury": [
                     {
-                        "slugcats": ["n_c:0"],
+                        "cats": ["n_c:0"],
                         "injuries": ["battle_injury"],
                         "no_results": true
                     }
@@ -3007,7 +3007,7 @@
                 "outsider_rep": 1,
                 "injury": [
                     {
-                        "slugcats": ["n_c:0"],
+                        "cats": ["n_c:0"],
                         "injuries": ["cold_injury"],
                         "no_results": true
                     }
@@ -3031,7 +3031,7 @@
                 "outsider_rep": 1,
                 "injury": [
                     {
-                        "slugcats": ["n_c:0"],
+                        "cats": ["n_c:0"],
                         "injuries": ["cold_injury"],
                         "no_results": true
                     }
@@ -3056,7 +3056,7 @@
                 "outsider_rep": 1,
                 "injury": [
                     {
-                        "slugcats": ["n_c:0"],
+                        "cats": ["n_c:0"],
                         "injuries": ["cold_injury"],
                         "no_results": true
                     }
@@ -3128,7 +3128,7 @@
                 "outsider_rep": 1,
                 "injury": [
                     {
-                        "slugcats": ["n_c:0"],
+                        "cats": ["n_c:0"],
                         "injuries": ["blunt_force_injury"],
                         "no_results": true
                     }
@@ -3154,7 +3154,7 @@
                 "outsider_rep": 1,
                 "injury": [
                     {
-                        "slugcats": ["n_c:0"],
+                        "cats": ["n_c:0"],
                         "injuries": ["blunt_force_injury"],
                         "no_results": true
                     }
@@ -3168,7 +3168,7 @@
                 "weight": 10,
                 "injury": [
                     {
-                        "slugcats": ["r_c"],
+                        "cats": ["r_c"],
                         "injuries": ["blunt_force_injury"],
                         "scars": []
                     }
@@ -3183,7 +3183,7 @@
                 "can_have_stat": ["adult"],
                 "injury": [
                     {
-                        "slugcats": ["s_c"],
+                        "cats": ["s_c"],
                         "injuries": ["blunt_force_injury"],
                         "scars": []
                     }

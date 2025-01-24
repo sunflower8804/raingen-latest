@@ -389,12 +389,7 @@
             "senior": 15
         },
         "illness_infectiousness": [],
-        "risks": [
-            {
-                "name": "an infected wound",
-                "chance": 5
-            }
-        ],
+        "risks": [],
         "also_got": [],
         "cause_permanent": [
             "rotplague"

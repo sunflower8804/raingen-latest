@@ -274,7 +274,7 @@ class Sprites:
             self.make_group('buttoneyes2', (a, 1), f'eyes2{i}')
         for a, i in enumerate(
                 ['BUTTONINDIGO', 'BUTTONLILAC']):
-            self.make_group('buttoneyes', (a, 2), f'eyes2{i}')
+            self.make_group('buttoneyes', (a, 2), f'eyes{i}')
             self.make_group('buttoneyes2', (a, 2), f'eyes2{i}')
 
         # Define white patches
@@ -366,14 +366,14 @@ class Sprites:
                 self.make_group('beagilltongue', (a, 3), f"skin{i}")
             for a, i in enumerate(['GREENTENNA', 'WHITEGLOWSPOTS', 'REDGLOWSPOTS', 'PINKGLOWSPOTS', 'ORANGEGLOWSPOTS', 'YELLOWGLOWSPOTS']):
                 self.make_group('beagilltongue', (a, 4), f"skin{i}")
-            for a, i in enumerate(['BLUEGLOWSPOTS', 'GREENGLOWSPOTS']):
+            for a, i in enumerate(['BLUEGLOWSPOTS', 'GREENGLOWSPOTS', 'GRAYGILLS', 'HOTGILLS', 'COLDGILLS']):
                 self.make_group('beagilltongue', (a, 5), f"skin{i}")
         else:
             for a, i in enumerate(['WHITETENNA', 'REDTENNA', 'PINKTENNA', 'ORANGETENNA', 'YELLOWTENNA', 'BLUETENNA']):
                 self.make_group('gilltongue', (a, 3), f"skin{i}")
             for a, i in enumerate(['GREENTENNA', 'WHITEGLOWSPOTS', 'REDGLOWSPOTS', 'PINKGLOWSPOTS', 'ORANGEGLOWSPOTS', 'YELLOWGLOWSPOTS']):
                 self.make_group('gilltongue', (a, 4), f"skin{i}")
-            for a, i in enumerate(['BLUEGLOWSPOTS', 'GREENGLOWSPOTS']):
+            for a, i in enumerate(['BLUEGLOWSPOTS', 'GREENGLOWSPOTS', 'GRAYGILLS', 'HOTGILLS', 'COLDGILLS']):
                 self.make_group('gilltongue', (a, 5), f"skin{i}")
 
         #Horns
@@ -401,7 +401,7 @@ class Sprites:
             self.make_group('fancyskin', (a, 3), f"skin{i}")
         for a, i in enumerate(['LAVENDERCYAN', 'PURPLECYAN', 'CYANCYAN', 'BLUECYAN', 'DARKBLUECYAN', 'DARKPURPLECYAN', 'BLACKCYAN', 'EGGCYAN']):
             self.make_group('fancyskin', (a, 4), f"skin{i}")
-        for a, i in enumerate(['YELLOWCYAN', 'RAINBOWNEEDLES', 'CYANWINGS']):
+        for a, i in enumerate(['YELLOWCYAN', 'RAINBOWNEEDLES', 'CYANWINGS', 'ANGLERFISH']):
             self.make_group('fancyskin', (a, 5), f"skin{i}")
 
         self.load_scars()
@@ -523,7 +523,8 @@ class Sprites:
             ["EYEPATCH", 'INVMOUTH', "MOUSEYELPLUSH", "MOUSEREDPLUSH", "MOUSEBLUEPLUSH", "MOUSEPINKPLUSH"]
         ]
         newaccs2_data = [
-            ["GLITCHING", "ROBOTARM", "ROBOTLEG"]
+            ["GLITCHING", "ROBOTARM", "ROBOTLEG", "SCRAPARMOR", "BLINDFOLD"],
+            ["BRONZEPOCKETWATCH", "SILVERPOCKETWATCH", "GOLDPOCKETWATCH", "MURDERPAINT"]
         ]
         bodypaint_data = [
             ["REDPAINT", "PINKPAINT", "VOIDPAINT", "YELLOWPAINT", "GREENPAINT", "PALEPAINT"],

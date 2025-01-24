@@ -1712,13 +1712,13 @@
                     {
                         "cats": ["patrol"],
                         "injuries": ["rotsickness"],
-                        "scars": ["ROTMARKED"]
+                        "scars": ["ROTRIDDEN"]
                     }
                 ],
                 "history_text": {
-                    "scar": "r_c was scarred by the cysts formed by their former rot poisoning.",
-                    "reg_death": "m_c died from the rot sickness brought to the Clan by the Belled miros vulture.",
-                    "lead_death": "died from the rot sickness brought by the Belled miros vulture"
+                    "scar": "r_c got the rot brought by the Belled miros vulture.",
+                    "reg_death": "m_c died from the rotsickness brought to the Clan by the Belled miros vulture.",
+                    "lead_death": "died from the rotsickness brought by the Belled miros vulture"
                 },
                 "art": "belledbuzzard_OUTCOME",
 				"prey": ["very_small"]

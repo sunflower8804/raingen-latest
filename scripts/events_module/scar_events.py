@@ -77,7 +77,7 @@ class Scar_Events():
         "ROTRIDDEN"
     ]
     rotrecovery_scars = [
-        "ROTMARKED"
+        "ROTRIDDEN"
     ]
 
     scar_allowed = {
@@ -119,6 +119,9 @@ class Scar_Events():
         amount_per_med = get_amount_cat_for_one_medic(game.clan)
         if medical_cats_condition_fulfilled(game.cat_class.all_cats.values(), amount_per_med):
             chance += 2
+
+        if injury_name == "rotsickness":
+            chance -=1
 
         if len(cat.pelt.scars) < 4 and not int(random.random() * chance):
 
@@ -177,11 +180,12 @@ class Scar_Events():
             #    if cat.pelt.accessory in ["RED FEATHERS", "BLUE FEATHERS", "JAY FEATHERS", "GULL FEATHERS", "SPARROW FEATHERS", "CLOVER", "DAISY"]:
             #        cat.pelt.accessory = None
             
-            for acc in ["RED FEATHERS", "BLUE FEATHERS", "JAY FEATHERS"]:
-                    if acc in cat.pelt.accessories:
-                        cat.pelt.accessories.remove(acc)
-                    if acc in cat.pelt.inventory:
-                        cat.pelt.inventory.remove(acc)
+            #if specialty in ["NOTAIL", "HALFTAIL"]:
+            #    for acc in ["RED FEATHERS", "BLUE FEATHERS", "JAY FEATHERS"]:
+            #        if acc in cat.pelt.accessories:
+            #            cat.pelt.accessories.remove(acc)
+            #        if acc in cat.pelt.inventory:
+            #            cat.pelt.inventory.remove(acc)
 
             # combining left/right variations into the both version
             if "NOLEFTEAR" in cat.pelt.scars and specialty == 'NORIGHTEAR':

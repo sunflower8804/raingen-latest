@@ -438,7 +438,7 @@ class Condition_Events:
             "BOTHBLIND": ["failing eyesight", "blind"],
             "MANLEG": ["weak leg", "twisted leg"],
             "RATBITE": ["weak leg"],
-            "ROTRIDDEN": ["the rot"],
+            "ROTRIDDEN": ["rotplague"],
             "LEGBITE": ["weak leg"],
             "TOETRAP": ["weak leg"],
             "HINDLEG": ["weak leg"],

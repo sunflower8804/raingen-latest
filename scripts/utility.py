@@ -2799,9 +2799,10 @@ def generate_sprite(
                         sprites.sprites["scars" + scar + cat_sprite], (0, 0)
                     )
                 if scar in cat.pelt.scars3:
-                    new_sprite.blit(
-                        sprites.sprites["scars" + scar + cat_sprite], (0, 0)
-                    )
+                    if scar != "ROTRIDDEN":
+                        new_sprite.blit(
+                            sprites.sprites["scars" + scar + cat_sprite], (0, 0)
+                        )
 
         # draw line art
         if game.settings["shaders"] and not dead:
@@ -2818,15 +2819,14 @@ def generate_sprite(
             new_sprite.blit(sprites.sprites["lineartdf" + cat_sprite], (0, 0))
         elif dead:
             new_sprite.blit(sprites.sprites["lineartdead" + cat_sprite], (0, 0))
-
-        # draw riv and button eyes
-        if cat.pelt.eye_colour in Pelt.riveye_colours or cat.pelt.eye_colour in Pelt.buttoneye_colours:
-            eyes = sprites.sprites["eyes" + cat.pelt.eye_colour + cat_sprite].copy()
-            if cat.pelt.eye_colour2 != None:
-                eyes.blit(
-                    sprites.sprites["eyes2" + cat.pelt.eye_colour2 + cat_sprite], (0, 0)
-                )
-            new_sprite.blit(eyes, (0, 0))
+            
+        # draw the rot
+        if not scars_hidden:
+            for scar in cat.pelt.scars:
+                if scar == "ROTRIDDEN":
+                    new_sprite.blit(
+                        sprites.sprites["scars" + "ROTRIDDEN" + cat_sprite], (0, 0)
+                    )
 
         #draw special skin
         if cat.pelt.skin in Pelt.closest_skin:
@@ -2889,6 +2889,15 @@ def generate_sprite(
         #draw the rest of the skin
         if cat.pelt.skin not in Pelt.closest_skin:
             new_sprite.blit(sprites.sprites["skin" + cat.pelt.skin + cat_sprite], (0, 0))
+            
+        # draw riv and button eyes
+        if cat.pelt.eye_colour in Pelt.riveye_colours or cat.pelt.eye_colour in Pelt.buttoneye_colours:
+            eyes = sprites.sprites["eyes" + cat.pelt.eye_colour + cat_sprite].copy()
+            if cat.pelt.eye_colour2 != None:
+                eyes.blit(
+                    sprites.sprites["eyes2" + cat.pelt.eye_colour2 + cat_sprite], (0, 0)
+                )
+            new_sprite.blit(eyes, (0, 0))
 
         # draw scars2
         if not scars_hidden:

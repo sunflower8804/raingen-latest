@@ -496,19 +496,19 @@ class RoleScreen(Screens):
             self.switch_warrior_app.disable()
             self.switch_mediator_app.disable()
         else:
-            self.promote_leader.disable()
-            self.promote_deputy.disable()
+            self.promote_leader.enable()
+            self.promote_deputy.enable()
 
             # ADULT CAT ROLES
-            self.switch_warrior.disable()
-            self.switch_med_cat.disable()
-            self.switch_mediator.disable()
-            self.retire.disable()
+            self.switch_warrior.enable()
+            self.switch_med_cat.enable()
+            self.switch_mediator.enable()
+            self.retire.enable()
 
             # In-TRAINING ROLES:
-            self.switch_med_app.disable()
-            self.switch_warrior_app.disable()
-            self.switch_mediator_app.disable()
+            self.switch_med_app.enable()
+            self.switch_warrior_app.enable()
+            self.switch_mediator_app.enable()
 
     def get_role_blurb(self):
         if self.the_cat.status == "warrior":

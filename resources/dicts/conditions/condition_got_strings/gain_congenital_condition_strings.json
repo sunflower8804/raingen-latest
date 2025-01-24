@@ -23,9 +23,9 @@
         "m_c has been having a lot of trouble keeping up while playing. r_c listens to {PRONOUN/m_c/poss} chest and diagnoses {PRONOUN/m_c/object} with raspy lungs.",
         "As m_c grows, {PRONOUN/m_c/subject} {VERB/m_c/seem/seems} incapable of not snoring and panting loudly, until eventually it's clear {PRONOUN/m_c/poss} lungs are a little weaker than normal."
     ],
-    "rotsickness": [
+    "rotplague": [
         "r_c has been called in by m_c's worried parent. Unfortunately, that worry was well-founded, as m_c seems to have the Rot.",
-        "m_c seems weaker lately, unable to play as much or explore as far.",
+        "m_c seems weaker lately - Rot cysts have started to form on {PRONOUN/m_c/poss} back.",
         "m_c is a sickly pup and the Clan fears {PRONOUN/m_c/subject} may not live past puphood. Even if {PRONOUN/m_c/subject} {VERB/m_c/do/does}, this sickness may never leave {PRONOUN/m_c/object}."
     ],
     "blind": [
@@ -34,10 +34,10 @@
     ],
     "one bad eye": [
         "Spotting m_c stumbling over something on {PRONOUN/m_c/poss} right side, r_c brings {PRONOUN/m_c/object} to the cleric den, where it becomes clear that eye isn't working as normal.",
-        "m_c has become good at not letting things approaching on {PRONOUN/m_c/poss} bad side startle {PRONOUN/m_c/object}, except it turns out that's not a normal universal experience for a slugpup to have."
+        "m_c has become good at not letting things approaching on {PRONOUN/m_c/poss} left side startle {PRONOUN/m_c/object}, except it turns out that's not a normal universal experience for a slugpup to have."
     ],
     "failing eyesight": [
-        "When m_c complains how dark it's been recently, r_c checks {PRONOUN/m_c/poss} eyesight over - only to find it near gone.",
+        "When m_c complains how foggy it's been recently, r_c checks {PRONOUN/m_c/poss} eyesight over - only to find it near gone.",
         "m_c doesn't understand how everyone else seems to see so far - and is sad to find out {PRONOUN/m_c/poss} eyesight is failing."
     ],
     "partial hearing loss": [

@@ -51,7 +51,7 @@
     ],
     "rotsickness": [
         "The stench coming from m_c is finally fading. {PRONOUN/m_c/subject/CAP}{VERB/m_c/'ve/'s} recovered from rot poisoning.",
-        "Against all odds, m_c has recovered from rot poisoning."
+        "m_c has recovered from rot poisoning."
     ],
     "broken bone": [
         "m_c's broken bone has healed.",

@@ -245,7 +245,8 @@ class Pelt:
         "EYEPATCH", 'INVMOUTH', "MOUSEYELPLUSH", "MOUSEREDPLUSH", "MOUSEBLUEPLUSH", "MOUSEPINKPLUSH"
     ]
     newaccs2 = [
-        "GLITCHING", "ROBOTARM", "ROBOTLEG"
+        "GLITCHING", "ROBOTARM", "ROBOTLEG", "SCRAPARMOR", "BLINDFOLD",
+        "BRONZEPOCKETWATCH", "SILVERPOCKETWATCH", "GOLDPOCKETWATCH", "MURDERPAINT"
     ]
     bodypaint = [
         "REDPAINT", "PINKPAINT", "VOIDPAINT", "YELLOWPAINT", "GREENPAINT", "PALEPAINT",
@@ -394,7 +395,7 @@ class Pelt:
 
     empty = ['BLACK',  'PINK', 'DARKBROWN', 'BROWN', 'LIGHTBROWN', 'DARK', 'DARKGREY', 'GREY', 'DARKSALMON',
             'SALMON', 'PEACH', 'DARKMARBLED', 'MARBLED', 'LIGHTMARBLED', 'DARKBLUE', 'BLUE', 'LIGHTBLUE', 'RED']
-    gills = ['PINKGILLS', 'BLUEGILLS', 'REDGILLS', 'LIMEGILLS', 'YELLOWGILLS', 'WHITEGILLS', 'RAINBOWGILLS']
+    gills = ['PINKGILLS', 'BLUEGILLS', 'REDGILLS', 'LIMEGILLS', 'YELLOWGILLS', 'WHITEGILLS', 'RAINBOWGILLS', 'GRAYGILLS', 'HOTGILLS', 'COLDGILLS']
     tongues = ['FUCHSIATONGUE', 'PASTELTONGUE', 'KOBITONGUE', 'REDTONGUE', 'GREYTONGUE', 'ORANGETONGUE']
     spearholes = ['WHITESPOTS', 'BLACKSPOTS', 'MIXSPOTS', 'RAINBOWSPOTS']
     claws = ['BLACKCLAWS']
@@ -412,7 +413,8 @@ class Pelt:
     lizardneedles = ['BLACKNEEDLES', 'WHITENEEDLES', 'RAINBOWNEEDLES']
     cyanwings = ['CYANWINGS']
     cyanfeatures = ['WHITECYAN', 'ORANGECYAN', 'BROWNCYAN', 'PINKCYAN', 'PINKERCYAN', 'TEALCYAN', 'GREENCYAN', 'BLOODYCYAN', 'LAVENDERCYAN', 'PURPLECYAN', 'CYANCYAN', 'BLUECYAN', 'DARKBLUECYAN', 'DARKPURPLECYAN', 'BLACKCYAN', 'EGGCYAN', 'YELLOWCYAN']
-    skin_categories = [empty, gills, tongues, spearholes, claws, antennae, glowspots, ramhorns, scavhorns, elitehorns, sharphorns, dragonhorns, unihorns, moth, whiskers, lizardfins, lizardneedles, cyanwings, cyanfeatures]
+    anglerfish = ['ANGLERFISH']
+    skin_categories = [empty, gills, tongues, spearholes, claws, antennae, glowspots, ramhorns, scavhorns, elitehorns, sharphorns, dragonhorns, unihorns, moth, whiskers, lizardfins, lizardneedles, cyanwings, cyanfeatures, anglerfish]
     #list for stuff that should logically be below a cloak
     closest_skin = [
         'WHITESPOTS', 'BLACKSPOTS', 'MIXSPOTS', 'RAINBOWSPOTS',
@@ -641,7 +643,7 @@ class Pelt:
                     self.eye_colour2 = choice(choice(colour_wheel)) # choose from the remaining two lists
                     break
 
-        elif not random.randint(0, multieyenum) and self.eye_colour not in Pelt.riveye_colours:
+        elif self.eye_colour not in Pelt.riveye_colours and self.eye_colour not in Pelt.buttoneye_colours and not random.randint(0, multieyenum):
             self.eye_colour2 = 'MULTI'+self.eye_colour
 
     def pattern_color_inheritance(self, parents: tuple = (), gender="female"):

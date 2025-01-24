@@ -848,12 +848,13 @@
                           "some_clan"
                       ],
                         "injuries": ["rotsickness"],
-                        "scars": ["ROTMARKED"]
+                        "scars": ["ROTRIDDEN"]
                     }
                 ],
                 "history_text": {
-                    "reg_death": "This cat died after eating rot-tainted prey.",
-                    "lead_death": "after eating rot-tainted prey"
+                    "scar": "r_c got the Rot from eating rotsick prey.",
+                    "reg_death": "m_c died from the Rot after eating rotsick prey.",
+                    "lead_death": "died from the Rot after eating rotsick prey."
                 }
             }
         ]
@@ -908,12 +909,13 @@
                           "some_clan"
                       ],
                         "injuries": ["rotsickness"],
-                        "scars": ["ROTMARKED"]
+                        "scars": ["ROTRIDDEN"]
                     }
                 ],
                 "history_text": {
-                    "reg_death": "This cat died after eating rot-tainted prey.",
-                    "lead_death": "after eating rot-tainted prey"
+                    "scar": "r_c got the Rot from eating rotsick prey.",
+                    "reg_death": "m_c died from the Rot after eating rotsick prey.",
+                    "lead_death": "died from the Rot after eating rotsick prey."
                 }
             }
         ]
@@ -968,12 +970,13 @@
                           "some_clan"
                       ],
                         "injuries": ["rotsickness"],
-                        "scars": ["ROTMARKED"]
+                        "scars": ["ROTRIDDEN"]
                     }
                 ],
                 "history_text": {
-                    "reg_death": "This cat died after eating rot-tainted prey.",
-                    "lead_death": "after eating rot-tainted prey"
+                    "scar": "r_c got the Rot from eating rotsick prey.",
+                    "reg_death": "m_c died from the Rot after eating rotsick prey.",
+                    "lead_death": "died from the Rot after eating rotsick prey."
                 }
             }
         ]

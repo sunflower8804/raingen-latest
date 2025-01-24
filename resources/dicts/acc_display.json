@@ -1369,6 +1369,36 @@
     "plural": "bionic scissorbird legs",
     "singular": "bionic scissorbird leg"
   },
+  "SCRAPARMOR": {
+    "default": "scrap armor",
+    "plural": "scrap armor",
+    "singular": "scrap armor"
+  },
+  "BLINDFOLD": {
+    "default": "red blindfold",
+    "plural": "red blindfolds",
+    "singular": "red blindfold"
+  },
+  "BRONZEPOCKETWATCH": {
+    "default": "pocket watch",
+    "plural": "pocket watches",
+    "singular": "pocket watch"
+  },
+  "SILVERPOCKETWATCH": {
+    "default": "pocket watch",
+    "plural": "pocket watches",
+    "singular": "pocket watch"
+  },
+  "GOLDPOCKETWATCH": {
+    "default": "pocket watch",
+    "plural": "pocket watches",
+    "singular": "pocket watch"
+  },
+  "MURDERPAINT": {
+    "default": "murderer body paint",
+    "plural": "murderer body paint",
+    "singular": "murderer body paint"
+  },
   "NECKLACEWHITE": {
     "default": "white pearl necklace",
     "plural": "white pearl necklaces",
@@ -2040,9 +2070,9 @@
     "singular": "pink vulture feather boa"
   },
   "DMAGENTAFEATHERBOA": {
-    "default": "magents vulture feather boa",
-    "plural": "magents vulture feather boas",
-    "singular": "magents vulture feather boa"
+    "default": "magenta vulture feather boa",
+    "plural": "magenta vulture feather boas",
+    "singular": "magenta vulture feather boa"
   },
   "DCRIMSONFEATHERBOA": {
     "default": "crimson vulture feather boa",

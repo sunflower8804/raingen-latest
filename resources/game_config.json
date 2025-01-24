@@ -203,12 +203,12 @@
 		]
 	},
 	"feature_generation": {
-		"feature_chances": [30, 13, 13, 6, 4, 12, 10, 2, 3, 2, 2, 1, 2, 12, 12, 10, 10, 2, 6],
+		"feature_chances": [30, 13, 13, 6, 4, 12, 10, 2, 3, 2, 2, 1, 2, 12, 12, 10, 10, 2, 6, 2],
 		"comment": [
 			"These are the chances of each feature. They (used to) add up to 100 so they can be viewed as percenages, but you can make them any number.",
 			"The higher the number - the more common the feature is. If a feature's chance is 0 - it doesn't spawn.",
 			"The order is:",
-			"nothing, gills, tongues, spearholes, claws, antennae, glowspots, ramhorns, scavhorns, elitehorns, sharphorns, dragonhorns, unihorns, moth, whiskers, lizardfins, lizardneedles, cyanwings, cyanfeatures",
+			"nothing, gills, tongues, spearholes, claws, antennae, glowspots, ramhorns, scavhorns, elitehorns, sharphorns, dragonhorns, unihorns, moth, whiskers, lizardfins, lizardneedles, cyanwings, cyanfeatures, anglerfish",
 			"The default chances are 30, 13, 13, 6, 4, 12, 10, 2, 3, 2, 2, 1, 2, 12, 12, 10, 10, 2, 6"
 		]
 	},
