@@ -123,7 +123,7 @@ class Sprites:
 
         for x in [
             'lineart', 'lineartdf', 'lineartdead',
-            'eyes', 'eyes2', 'skin', 'gilltongue', 'beagilltongue', 'horns', 'fancyskin',
+            'eyes', 'eyes2', 'skin', 'gilltongue', 'beagilltongue', 'horns', 'fancyskin', 'whiskers',
             'scars', 'missingscars',
             'medcatherbs',
             'collars', 'bellcollars', 'bowcollars', 'nyloncollars', 'rwlizards', 'drones', 'muddypaws', 
@@ -376,7 +376,7 @@ class Sprites:
             for a, i in enumerate(['BLUEGLOWSPOTS', 'GREENGLOWSPOTS', 'GRAYGILLS', 'HOTGILLS', 'COLDGILLS']):
                 self.make_group('gilltongue', (a, 5), f"skin{i}")
 
-        #Horns
+        # Horns
         for a, i in enumerate(['WHITEHORNSRAM', 'BLACKHORNSRAM', 'REDHORNSRAM', 'YELLOWHORNSRAM', 'GREENHORNSRAM', 'BLUEHORNSRAM', 'ORANGEHORNSRAM', 'BROWNHORNSRAM']):
             self.make_group('horns', (a, 0), f"skin{i}")
         for a, i in enumerate(['WHITEHORNSSCAV', 'BLACKHORNSSCAV', 'REDHORNSSCAV', 'YELLOWHORNSSCAV', 'GREENHORNSSCAV', 'BLUEHORNSSCAV', 'ORANGEHORNSSCAV', 'BROWNHORNSSCAV']):
@@ -389,8 +389,18 @@ class Sprites:
             self.make_group('horns', (a, 4), f"skin{i}")
         for a, i in enumerate(['WHITEHORNSLANCER', 'BLACKHORNSLANCER', 'REDHORNSLANCER', 'YELLOWHORNSLANCER', 'GREENHORNSLANCER', 'BLUEHORNSLANCER', 'ORANGEHORNSLANCER', 'BROWNHORNSLANCER']):
             self.make_group('horns', (a, 5), f"skin{i}")
+            
+        # Whiskers
+        for a, i in enumerate(['WHITECATFISHWHISKERS', 'PINKCATFISHWHISKERS', 'REDCATFISHWHISKERS', 'YELLOWCATFISHWHISKERS', 'GREENCATFISHWHISKERS', 'REDYELLOWCATFISHWHISKERS']):
+            self.make_group('whiskers', (a, 0), f"skin{i}")
+        for a, i in enumerate(['BLUECATFISHWHISKERS', 'PURPLECATFISHWHISKERS', 'BLACKCATFISHWHISKERS', 'BLUEGREENCATFISHWHISKERS', 'BLUEPINKCATFISHWHISKERS', 'BROWNCATFISHWHISKERS']):
+            self.make_group('whiskers', (a, 1), f"skin{i}")
+        for a, i in enumerate(['WHITEDRAGONWHISKERS', 'PINKDRAGONWHISKERS', 'REDDRAGONWHISKERS', 'YELLOWDRAGONWHISKERS', 'GREENDRAGONWHISKERS', 'REDYELLOWDRAGONWHISKERS']):
+            self.make_group('whiskers', (a, 2), f"skin{i}")
+        for a, i in enumerate(['BLUEDRAGONWHISKERS', 'PURPLEDRAGONWHISKERS', 'BLACKDRAGONWHISKERS', 'BLUEGREENDRAGONWHISKERS', 'BLUEPINKDRAGONWHISKERS', 'BROWNDRAGONWHISKERS']):
+            self.make_group('whiskers', (a, 3), f"skin{i}")
 
-        #fancyskin spritesheet
+        # fancyskin spritesheet
         for a, i in enumerate(['WHITEMOTH', 'BLACKMOTH', 'REDMOTH', 'YELLOWMOTH', 'GREENMOTH', 'BLUEMOTH', 'ORANGEMOTH', 'BROWNMOTH']):
             self.make_group('fancyskin', (a, 0), f"skin{i}")
         for a, i in enumerate(['WHITEWHISKERS', 'BLACKWHISKERS', 'REDWHISKERS', 'YELLOWWHISKERS', 'GREENWHISKERS', 'BLUEWHISKERS', 'ORANGEWHISKERS', 'BROWNWHISKERS']):
@@ -524,7 +534,9 @@ class Sprites:
         ]
         newaccs2_data = [
             ["GLITCHING", "ROBOTARM", "ROBOTLEG", "SCRAPARMOR", "BLINDFOLD"],
-            ["BRONZEPOCKETWATCH", "SILVERPOCKETWATCH", "GOLDPOCKETWATCH", "MURDERPAINT"]
+            ["BRONZEPOCKETWATCH", "SILVERPOCKETWATCH", "GOLDPOCKETWATCH", "MURDERPAINT", "BOGMOSSBLUE"],
+            ["BOGMOSSGREEN", "BOGMOSSLIME"],
+            ["ORANGEPLANTPELT", "LIMEPLANTPELT", "GREENPLANTPELT", "YELLOWPLANTPELT", "BLUEPLANTPELT"]
         ]
         bodypaint_data = [
             ["REDPAINT", "PINKPAINT", "VOIDPAINT", "YELLOWPAINT", "GREENPAINT", "PALEPAINT"],

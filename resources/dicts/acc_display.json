@@ -1399,6 +1399,46 @@
     "plural": "murderer body paint",
     "singular": "murderer body paint"
   },
+  "BOGMOSSBLUE": {
+    "default": "bog moss",
+    "plural": "bog moss",
+    "singular": "bog moss"
+  },
+  "BOGMOSSGREEN": {
+    "default": "bog moss",
+    "plural": "bog moss",
+    "singular": "bog moss"
+  },
+  "BOGMOSSLIME": {
+    "default": "bog moss",
+    "plural": "bog moss",
+    "singular": "bog moss"
+  },
+  "ORANGEPLANTPELT": {
+    "default": "symbiotic plants",
+    "plural": "symbiotic plants",
+    "singular": "symbiotic plant"
+  },
+  "LIMEPLANTPELT": {
+    "default": "symbiotic plants",
+    "plural": "symbiotic plants",
+    "singular": "symbiotic plant"
+  },
+  "GREENPLANTPELT": {
+    "default": "symbiotic plants",
+    "plural": "symbiotic plants",
+    "singular": "symbiotic plant"
+  },
+  "YELLOWPLANTPELT": {
+    "default": "symbiotic plants",
+    "plural": "symbiotic plants",
+    "singular": "symbiotic plant"
+  },
+  "BLUEPLANTPELT": {
+    "default": "symbiotic plants",
+    "plural": "symbiotic plants",
+    "singular": "symbiotic plant"
+  },
   "NECKLACEWHITE": {
     "default": "white pearl necklace",
     "plural": "white pearl necklaces",
