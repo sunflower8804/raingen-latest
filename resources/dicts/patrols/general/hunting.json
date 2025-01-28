@@ -25,6 +25,35 @@
                 "exp": 10,
                 "weight": 5,
                 "prey": ["small"]
+            },
+			{
+                "text": "s_c just can't let the rest of the patrol bring this little sunshine home as a corpse for the freshkill pile. After an argument about the importance of every prey, the little lantern mouse followed s_c back to camp.",
+                "exp": 10,
+                "weight": 5,
+                "prey": ["very_small"],
+                "stat_trait": [
+                    "compassionate",
+                    "confident",
+                    "faithful",
+                    "loving",
+                    "thoughtful",
+                    "charismatic"
+                ],
+				"accessory": [
+                    {
+                        "cats": ["s_c"],
+                        "accessory": ["MOUSEBLUE", "MOUSEYEL", "MOUSEPINK", "MOUSERED"]
+                    }
+                ],
+                "relationships": [
+                    {
+                        "cats_to": ["s_c"],
+                        "cats_from": ["clan"],
+                        "mutual": false,
+                        "values": ["dislike"],
+                        "amount": 5
+                    }
+                ]
             }
         ],
         "fail_outcomes": [
@@ -65,6 +94,35 @@
                 "exp": 10,
                 "weight": 5,
                 "prey": ["small"]
+            },
+			{
+                "text": "s_c just can't let the rest of the patrol bring this little sunshine home as a corpse for the freshkill pile. After an argument about the importance of every prey, the little lantern mouse followed s_c back to camp.",
+                "exp": 10,
+                "weight": 5,
+                "prey": ["very_small"],
+                "stat_trait": [
+                    "compassionate",
+                    "confident",
+                    "faithful",
+                    "loving",
+                    "thoughtful",
+                    "charismatic"
+                ],
+				"accessory": [
+                    {
+                        "cats": ["s_c"],
+                        "accessory": ["MOUSEBLUE", "MOUSEYEL", "MOUSEPINK", "MOUSERED"]
+                    }
+                ],
+                "relationships": [
+                    {
+                        "cats_to": ["s_c"],
+                        "cats_from": ["clan"],
+                        "mutual": false,
+                        "values": ["dislike"],
+                        "amount": 5
+                    }
+                ]
             }
         ],
         "fail_outcomes": [
@@ -847,7 +905,7 @@
                           "r_c",
                           "some_clan"
                       ],
-                        "injuries": ["rotsickness"],
+                        "injuries": ["rot poisoning"],
                         "scars": ["ROTRIDDEN"]
                     }
                 ],
@@ -908,7 +966,7 @@
                           "r_c",
                           "some_clan"
                       ],
-                        "injuries": ["rotsickness"],
+                        "injuries": ["rot poisoning"],
                         "scars": ["ROTRIDDEN"]
                     }
                 ],
@@ -969,7 +1027,7 @@
                           "r_c",
                           "some_clan"
                       ],
-                        "injuries": ["rotsickness"],
+                        "injuries": ["rot poisoning"],
                         "scars": ["ROTRIDDEN"]
                     }
                 ],

@@ -1711,14 +1711,14 @@
                 "injury": [
                     {
                         "cats": ["patrol"],
-                        "injuries": ["rotsickness"],
+                        "injuries": ["rot poisoning"],
                         "scars": ["ROTRIDDEN"]
                     }
                 ],
                 "history_text": {
                     "scar": "r_c got the rot brought by the Belled miros vulture.",
-                    "reg_death": "m_c died from the rotsickness brought to the Clan by the Belled miros vulture.",
-                    "lead_death": "died from the rotsickness brought by the Belled miros vulture"
+                    "reg_death": "m_c died from the rot poisoning brought to the Clan by the Belled miros vulture.",
+                    "lead_death": "died from the rot poisoning brought by the Belled miros vulture"
                 },
                 "art": "belledbuzzard_OUTCOME",
 				"prey": ["very_small"]

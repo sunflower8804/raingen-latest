@@ -372,7 +372,7 @@ def reformat(path):
                 injuries = ["claw-wound", "bite-wound", "cat bite", "beak bite", "spider bite", "dropwig bite", "leech bites",
                             "blood loss", "broken jaw", "broken bone", "mangled leg", "dislocated joint", "joint pain",
                             "sprain", "mangled tail", "bruises", "cracked pads", "sore", "phantom pain", "scrapes",
-                            "small cut", "torn pelt", "torn ear", "frostbite", "recovering from birth", "rotsickness",
+                            "small cut", "torn pelt", "torn ear", "frostbite", "recovering from birth", "rot poisoning",
                             "water in their lungs", "burn", "severe burn", "shock", "lingering shock",
                             "shivering", "dehydrated", "head damage", "damaged eyes", "quilled by a porcupine",
                             "broken back", "poisoned", "bee sting", "headache", "severe headache", "pregnant",

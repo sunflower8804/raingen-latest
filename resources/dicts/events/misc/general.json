@@ -338,18 +338,18 @@
     },
     "relationships": [
         {
-          "cats_from": ["r_c"],
-          "cats_to": ["m_c"],
+          "cats_from": ["m_c"],
+          "cats_to": ["r_c"],
           "mutual": true,
           "values": ["dislike"],
-          "amount": 30
+          "amount": -10
         },
         {
-          "cats_from": ["r_c"],
-          "cats_to": ["m_c"],
+          "cats_from": ["m_c"],
+          "cats_to": ["r_c"],
           "mutual": true,
-          "values": ["trust", "respect", "comfort"],
-          "amount": -30
+          "values": ["trust", "respect"],
+          "amount": 10
         }
       ]
   },
@@ -399,7 +399,7 @@
     "season": ["any"],
     "sub_type": ["murder_reveal"],
     "tags": ["skill_trait_required"],
-    "weight": 15,
+    "weight": 30,
     "event_text": "r_c sighs. {PRONOUN/r_c/subject/CAP} {VERB/r_c/find/finds} {PRONOUN/r_c/self} unintentionally walking into one of {PRONOUN/r_c/poss} Clanmates' dreams again. It could have been just another boring or nonsensical dream, but r_c is horrified to discover this dream is m_c's recollection of murdering mur_c. {PRONOUN/r_c/subject/CAP} {VERB/r_c/wake/wakes} up in shock, wondering what to do with this new knowledge.",
     "m_c": {
       "age": ["any"],
@@ -424,6 +424,36 @@
           "mutual": false,
           "values": ["trust", "respect", "comfort"],
           "amount": -30
+        }
+      ]
+  },
+  {
+    "event_id": "gen_misc_murderreveal_bodypaint",
+    "location": ["any"],
+    "season": ["any"],
+    "sub_type": ["murder_reveal", "accessory"],
+    "tags": ["clan_discovery"],
+    "weight": 10,
+    "event_text": "m_c can't hide the truth anymore. {PRONOUN/m_c/subject/CAP} confesses to the entire clan: {PRONOUN/m_c/subject} killed mur_c. Now m_c's face will be marked with paint as a sign of {PRONOUN/m_c/poss} crime.",
+    "new_accessory": ["MURDERPAINT"],
+    "m_c": {
+      "age": ["any"],
+      "status": ["any"]
+    },
+    "relationships": [
+        {
+          "cats_from": ["clan"],
+          "cats_to": ["m_c"],
+          "mutual": false,
+          "values": ["dislike"],
+          "amount": 20
+        },
+        {
+          "cats_from": ["clan"],
+          "cats_to": ["m_c"],
+          "mutual": false,
+          "values": ["trust", "respect", "comfort"],
+          "amount": -20
         }
       ]
   },
@@ -4148,10 +4178,9 @@
     "sub_type": ["accessory"],
     "weight": 20,
     "event_text": "m_c whilst out on an adventure, returns with some kind of drapery around {PRONOUN/m_c/object}.",
-    "new_accessory": ["DRAPERY"],
+    "new_accessory": ["DRAPERY", "SCARVES"],
     "m_c": {
-      "age": ["adolescent", "young adult", "adult", "senior adult", "senior"],
-      "skill": ["AI,0"]
+      "age": ["adolescent", "young adult", "adult", "senior adult", "senior"]
     }
   },
   {
@@ -4159,12 +4188,11 @@
     "location": ["any"],
     "season": ["any"],
     "sub_type": ["accessory"],
-    "weight": 20,
+    "weight": 10,
     "event_text": "m_c after vanishing for a few cycles returns with a prideful drapery around {PRONOUN/m_c/object}.",
     "new_accessory": ["PRIDEDRAPERY"],
     "m_c": {
-      "age": ["adolescent", "young adult", "adult", "senior adult", "senior"],
-      "skill": ["AI,0"]
+      "age": ["adolescent", "young adult", "adult", "senior adult", "senior"]
     }
   },
    {
@@ -4173,8 +4201,8 @@
     "season": ["any"],
     "sub_type": ["accessory"],
     "weight": 15,
-    "event_text": "m_c is seen crafting something from some loose fabric, eventually {PRONOUN/m_c/subject} {VERB/m_c/walk/walks} around camp brandishing an eyepatch.",
-    "new_accessory": ["EYEPATCHES"],
+    "event_text": "m_c is seen crafting something from some loose fabric, eventually {PRONOUN/m_c/subject} {VERB/m_c/walk/walks} around camp brandishing a acc_singular.",
+    "new_accessory": ["EYEPATCHES", "BLINDFOLD"],
     "m_c": {
       "age": ["any"],
       "status": ["any"]
@@ -4233,13 +4261,26 @@
     }
   },
   {
+    "event_id": "gen_misc_any_symbioticplants",
+    "location": ["any"],
+    "season": ["any"],
+    "sub_type": ["accessory"],
+    "weight": 10,
+    "event_text":  "Weird plants are growing on m_c's pelt. Fortunately it seems like they don't do any harm, so m_c accepts them as a part of {PRONOUN/m_c/object}.",
+    "new_accessory": ["ORANGEPLANTPELT", "LIMEPLANTPELT", "GREENPLANTPELT", "YELLOWPLANTPELT", "BLUEPLANTPELT"],
+    "m_c": {
+      "age": ["any"],
+      "status": ["any"]
+    }
+  },
+  {
     "event_id": "gen_misc_any_moss",
     "location": ["any"],
     "season": ["any"],
     "sub_type": ["accessory"],
-    "weight": 15,
+    "weight": 18,
     "event_text":  "m_c used to hate moss, but now it grew on {PRONOUN/m_c/object}.",
-    "new_accessory": ["FLOWEREDMOSS", "MOSS"],
+    "new_accessory": ["FLOWEREDMOSS", "MOSS", "BOGMOSSBLUE", "BOGMOSSGREEN", "BOGMOSSLIME"],
     "m_c": {
       "age": ["any"],
       "status": ["any"]
@@ -4281,7 +4322,7 @@
     "new_accessory": ["IGGYYELLOW", "IGGYPURPLE", "IGGYWHITE", "IGGYGREEN", "IGGYRED", "IGGYBLUE"],
     "m_c": {
       "age": ["any"],
-      "skill": ["AI,0"]
+      "skill": ["AI,1"]
     }
   },
   {
@@ -4304,7 +4345,7 @@
     "sub_type": ["accessory"],
     "weight": 20,
     "event_text":  "m_c explores ancient ruins and finds a hidden acc_singular that is very well preserved.",
-    "new_accessory": ["KARMAONE", "KARMATWO", "KARMATHREE", "KARMAFOUR", "SCROLL", "NECKLACESILVER", "NECKLACEGOLD", "TAILWRAP", "RAINCOAT", "LACESCARF"],
+    "new_accessory": ["KARMAONE", "KARMATWO", "KARMATHREE", "KARMAFOUR", "SCROLL", "NECKLACESILVER", "NECKLACEGOLD", "TAILWRAP", "RAINCOAT", "LACESCARF", "BRONZEPOCKETWATCH", "SILVERPOCKETWATCH", "GOLDPOCKETWATCH"],
     "m_c": {
       "age": ["adolescent", "young adult", "adult", "senior adult", "senior"],
       "status": ["any"]
@@ -4374,6 +4415,20 @@
     "m_c":{
       "age": ["any"],
       "skill": ["SENSE,0", "STORY,0", "LORE,0", "STAR,0", "OMEN,0", "DREAM,0", "CLAIRVOYANT,0", "PROPHET,0", "GHOST,0"]
+    }
+  },
+  {
+    "event_id": "gen_misc_any_vulturefeatherboa",
+    "location": ["any"],
+    "season": ["any"],
+    "sub_type": ["accessory"],
+    "tags": ["skill_trait_required"],
+    "weight": 20,
+    "event_text": "m_c fought a vulture and won. {PRONOUN/m_c/subject/CAP} made a boa out of its feathers as a trophy.",
+    "new_accessory": ["FEATHERBOAS"],
+    "m_c":{
+      "age": ["adolescent", "young adult", "adult", "senior adult", "senior"],
+      "skill": ["FIGHTER,0"]
     }
   },
   {
@@ -4700,7 +4755,7 @@
     "sub_type": ["war"],
     "weight": 20,
     "event_text": "m_c always carries acc_plural around, now that enemy warriors might be around any corner.",
-    "new_accessory": ["SPEAR", "EXPLOSPEAR", "ELESPEAR", "GRENADE", "FLASHFRUIT", "REDFLASHFRUIT"],
+    "new_accessory": ["SPEAR", "EXPLOSPEAR", "ELESPEAR", "GRENADE", "FLASHFRUIT", "REDFLASHFRUIT", "SCRAPARMOR"],
     "m_c": {
       "age": ["adolescent", "young adult", "adult", "senior adult", "senior"],
       "status": ["any"]

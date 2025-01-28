@@ -23,7 +23,7 @@
         "m_c has been having a lot of trouble keeping up while playing. r_c listens to {PRONOUN/m_c/poss} chest and diagnoses {PRONOUN/m_c/object} with raspy lungs.",
         "As m_c grows, {PRONOUN/m_c/subject} {VERB/m_c/seem/seems} incapable of not snoring and panting loudly, until eventually it's clear {PRONOUN/m_c/poss} lungs are a little weaker than normal."
     ],
-    "rotplague": [
+    "the rot": [
         "r_c has been called in by m_c's worried parent. Unfortunately, that worry was well-founded, as m_c seems to have the Rot.",
         "m_c seems weaker lately - Rot cysts have started to form on {PRONOUN/m_c/poss} back.",
         "m_c is a sickly pup and the Clan fears {PRONOUN/m_c/subject} may not live past puphood. Even if {PRONOUN/m_c/subject} {VERB/m_c/do/does}, this sickness may never leave {PRONOUN/m_c/object}."

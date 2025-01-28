@@ -49,7 +49,7 @@
         "m_c has healed well from the broken jaw {PRONOUN/m_c/subject} suffered.",
         "m_c's jaw no longer bothers {PRONOUN/m_c/object}: it seems to have healed from its break."
     ],
-    "rotsickness": [
+    "rot poisoning": [
         "The stench coming from m_c is finally fading. {PRONOUN/m_c/subject/CAP}{VERB/m_c/'ve/'s} recovered from rot poisoning.",
         "m_c has recovered from rot poisoning."
     ],

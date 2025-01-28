@@ -1,110 +1,208 @@
-<strong>v0.12.2</strong>
+<strong>v1.5.2</strong>
+Added:
+- bog moss and symbiotic plants by Foxett
+- catfish and dragon whiskers bu Squid Say Moo
+- updated inv egg and implant accessories by Harley
+- more accessories can now be obtained from events
+- you can get lantern mouse friends on patrols
 
-<b>QoL</b>
-- Changed fullscreen toggle to F11
+Fixed:
+- the changelog
+- slugcats with "conductor" pelts won't break the game anymore
+- renamed "rotplague" into "the rot" and "rotsickness" into "rot poisoning"
 
-<b>Bugfixes</b>
-- Fixed new cat moon event crash
-- Fixed patrol grammar
-- Fixed issue with problematic dependent names
-- Added missing stat attributes to certain patrols 
-- Fixed prefix and suffix list loading
-- Fixed tail accessories appearing on cats without tails
-- Fixed missing bracket
-- Fixed murdermittens issue
-- Removed torn pelt from scarring list
-- Fixed "Viscous Kittypets" typo
-- Added missing relationship descriptor in grief event
-- Fixed errors in patrol text
-- Prevented underage cats from having mates
-- Fixed history crash
-- Fixed error dialogue persisting between screens
+<strong>v1.5.1</strong>
+Added:
+- new accessories:
+ - scrap armor by Foxett
+ - murder facepaint and red blindfold by Mimalot99
+ - pocket watches by Flamedash
+- new features:
+ - anglerfish by Foxett
+ - 3 new gill variants by Mimalot99
+- 4 new whitepatches
+- revamped classic pelt by SilveryShingu
 
-<strong>v0.12.1</strong>
-- Fix builds
+Fixed:
+- button eyes won't explode your cats anymore
+- rotsickness works slightly better now
+- fixed a bug that could cause crashes on patrols
+- fixed a bug that erased some accessories if your scug got a scar
 
-<strong>v0.12.0</strong>
+<strong>v1.5.0</strong>
+Added:
+- new accessories!
+  - scarves by Foxett
+  - vulture feather boas by Squid Say Moo
+  - more pride drapery variants by Squid Say Moo
+- swing pelt by Foxett
+- reworked rusted pelt by Harley
+- LOTS of new bodyparts and a balancing system! 
+  - whiskers and moth antennae by Cosmonaught
+  - cyan lizard patterns and fluffy fins by Loveskies
+  - needle whiskers by restlessRenegade
+  - now you can use game_config.json to control how often slugcats with certain bodyparts will spawn
+- rivulet eyes by Bucket Of Mackerels
+- button eyes by Squid Say Moo
+- new patrol art by Foxett and Sunflowering
+- new skills by Lars
+- medicine cats are clerics now
+- certain bodyparts will display above accessories (for example a tongue will bo longer look like it's inside a cloak) 
+- SO MANY TEXT FIXES you don't even know
 
-<b>Features</b>
-- CLAN FOCUS: New feature accessed via the Warrior's Den. Direct your warriors' Focus towards specific goals, such as feeding the Clan or sabotaging other neighboring Clans. When the Focus is changed, there is a cooldown of 3 moons before it can be changed again, so choose wisely! Please note that some Focuses aren't accessible in Classic mode and that some Focuses require certain cat ranks to be present.
-- PRONOUNS: Wow! The cats have pronouns other than they/them? Yes it's true! Cats can now naturally generate with they/them, he/him, or she/her pronouns. Want a cat to have different pronouns than those options? You can do that to! Check out their profile page and the Change Gender option to add any pronoun under the sun. These pronouns will be used in text throughout the game when referring to that cat (give a big hand to our writing team for the monumental amount of work they did to get pronouns integrated into all the text!) Please note a new game setting to revert the game to only generating they/them pronouns for all cats.
-- LEADER'S DEN: You can now access the Leader's Den to view the other Clans neighboring your Clan as well as the known Outsiders. Decide how you want to interact with these other cats: will you appease the hostile Clans? Or antagonize them further? Will you hunt down that one pesky rogue? Or perhaps you've decided an exiled Clanmate should be allowed a second chance...
-- CLAN SYMBOLS: You can now choose a Clan symbol during Clan creation. Other Clans also generate with symbols, which you will see in the Leader's Den. There are currently 484 symbols available to choose from, a roster that we plan to continue expanding with each stable update. Please note that old Clan saves will not be able to choose a Clan symbol in-game, though save editing to change the symbol is relatively simple. When loading an old save, the game will attempt to assign a symbol matching with it's prefix, if no symbol exists then it will randomly choose a symbol.
-- CLASSIC CONDITIONS: Classic mode can now access illnesses, injuries, and permanent conditions!  Please note that this still differs in some ways from Expanded mode. In Classic Mode, a single cleric can care for the entire Clan, specific herb amounts are not displayed on the med den screen, an herb will treat a condition regardless of the Clan's actual herb amounts, the Clan's herb supply is randomly generated and is not dependent on events.
-- AUDIO: What in StarClan?? Clangen with sound!? Clangen now comes with shiny new sound effects and one very lovely music track that plays during Clan creation. More music is on the horizon... and don't worry! There is a handy dandy mute button in the corner of the screen and audio settings to control music/ambiance and sound effects volume separately.
+<strong>v1.4.0</strong>
+Added:
+- THE CHANGELOG IS NOW REAL
+- changing slugcat mentor icon slugcatified by Flamedash
+- credits tab updated for Raingen credits
+- 23 new pelts:
+  - dragonfruit, sparklecat, wolf, cherry, impish(colour corrected by Lars) pelts by Harley
+  - necklace, duskdawn, dreamer, seer, rotten, fire, oldgrowth, ringed, shred, and glowing pelts by Foxett
+  - countershaded, sunet, and hypnotist pelts by Cosmonaught
+  - skinny, and sparse pelts by Loveskies
+  - sporty(colour corrected by Lars) pelt by Mimalot 
+  - fizzy pelt by Squidsaymoo
+  - skeleslug pelt by Silveryshingu
+- 17 new white and tortie patches
+  - night, halfface, halfbody, baller, and paint splat whitepatches by Loveskies
+  - defender colorpoint, meistersaint, meisterriv, needlemaster, and meistergourm whitepatches by Harley
+  - third eye, sprite error, plushie seams, skelescug, eyeliner, strong signal, and weak signal whitepatches by Cosmonaught
+- 49 new eye colours by Lars, 1 new eye colour by Sunflowering + multieye variants by Harley
+- 14 new unique accessories (127 new accessories overall including color variants)
+  - 4 Lantern Mice Plushies variants by Lars, original sprite by Mimalot
+  - 8 Inv Mouth variants by Cosmonaught
+  - 5 Inspecter Eye Implant variations by Harley
+  - 14 Neuron Glow variantions by Cosmonaught
+  - Pearl Drapery by Lars
+  - 7 Handheld Pearl variants by Lars
+  - 4 Jewlery (Straight earings and all seeing earings) variants by Lars
+  - 13 Besieged Mask variants by flamedash, original sprite by Lars
+  - 18 Pride Drapery variants by Harley
+  - 26 Solid Drapery variants by Loveskies
+  - 19 Makeshift Eyepatch variants by Loveskies
+  - Faux Mane by Harley
+  - Fallen Star Mask and Paws by Harley
+  - 5 Torn Cloak variants by Harley
+- 27 new scars
+  - Artiburnarm, Artiburn, Artiburnface, Fullbodyburns, Enoyface, Envoychest, Neutrinoscars, Doublebite, Dangerous, Restitchedhead, Restitchedupper,     
+    Restitchedlower, Messiah, Dragonslayerscars, Crossedface, Dragonbitearm, Dragonbiteleg, Smokingface, Charredarm, and Charredleg scars by Harley
+  - Hollyhock scar by Cosmonaught
+  - Labratface, Labratvivisection, Labratchest, Labratlimbs and Pearlextraction scars by RestlessRenegade
+  - Besieged scar by Mimalot
+- 2 new injuries, chest wound, mangled pelt
+- Rainworlded prophecy text
+- New events for accessories
+- Outsider cats can now be transgender and can come with top surgery scars
+- Some injury renames to be rainworld themed
+Fixes:
+- Accessory menu buttons now properly work
+- Caught some more clangen text and rainworldified it
 
-<b>QoL</b>
-- Fullscreen new and improved! Art no longer looks oddly crunched and the black frame has been replaced with pretty background art. This comes with a new setting to turn off anti-aliasing and a setting to ignore fullscreen scaling rules, just in case you want it a little extra large (please note that this setting will come with some visual quirks if enabled)
-- You can now search cats on the mediator page
-- More special characters are allowed in user notes
-- Leaders can now be affected by mass extinction events
-- Mass extinction events are now limited to affecting 11 cats at most, but they can occur multiple times in a single moon.
-- When leaders die of starvation, they now revive with enough nutrition to bring them up to malnourished, giving a little extra time to find food before starving once more.
-- Moon events that previously mentioned an Outsider, but did not generate an Outsider cat, will now generate an Outsider
-- Moon events that mention an Outsider can now pull an Outsider from the existing list of Outsiders, rather than generating a new one
-- War events will now match with the affect of the overarching war event for that moon (i.e. if the Clans are having peace talks that moon, no clan relation lowering events will occur at the same time)
-- More moon events are now recorded in the relationship log if they changed a relationship
-- "show dead/living" button on cat list is now "view dead/living"
-- "filtered by" button on cat list is now "sort by"
-- Last and First page buttons are now available on the cat list screen.
-- Players can now input a page number on the cat list screen to move to that page immediately
-- Leader death history now displays as a single sentence for each death, rather than one long run-on sentence
-- Custom cursor setting now comes with a warning about increased chance of crashes
-- All text (or at least, the vast majority) can now be copy-pasted!
-- Buttons on moon events that lead to the profiles of cats involved now generates a horizontal scroll bar if the buttons go off-screen
-- If a moon event had no cats specifically involved, the involved cat button no longer displays
-- Alert exclamation marks now persist until the tab is clicked
-- When keybinds are on, you can now use the arrow keys to move up and down the event tab buttons, and the enter button to switch to the selected tab
-- Cats can now be quickly added to and removed from patrols via double clicking
-- Herb moon events no longer destroy herb supplies in their entirety (with the exception of one war event) and any large destruction events no longer occur if herb stores are already low
-- Herb gained on moonskip and patrols has been slightly buffed
-- Relationship value changes when cats break up is now dynamic, meaning some break ups have larger impacts than others
-- Newborn kits are now listed in the involved cat buttons on moon events
-- Quick start! You can click Quick Start at the beginning of Clan Creation to skip to the end. All choices will be made randomly
+<strong>v1.3.1</strong>
+Added:
+- a complete overhaul of the accessories by Devilkitten! now you can see accessories in a separate tab and turn on and off every accessory individually
+- silly little christmas hats by Sunflowering (turn on in settings)
+- 4 new accessories: potted pole plant, potted worm grass and mushroom hat by Mimalot99, grenade by Cosmonaught
+- 3 new pelts: leafy and scaled by Harley, solace by Flamedash
+- updated tabby pelt by Bucketofmackerels
+- new camp: Fjord
+- even more names by Harley
+Fixed:
+- replaced more real life animals with Rain World creatures
+- slightly lowered the accessory chances 
 
-<b>Content</b>
-- 100s of new patrol art additions
-- Many many new patrols! Many requiring specific traits or skills.
-- New outcomes for existing patrols! Many requiring specific traits or skills.
-- New Camps! The Mountainous camp, Ruins, and the Beach camp, Fjord.
-- New moon events, such as murders and new ways to gain accessories.
-- Literally 1000+ new relationship events
-- Many many new thoughts, many of which are exclusive to certain traits, ages, conditions, seasons, and skills
-- New leader ceremony possibilities, many of which are exclusive to cats of certain traits (both the dead cats and the new leader)
-- Prefix list updated to include new canon names (looking at you, Stretchkit)
-- Many new loner/kittypet names
-- Many outcomes for Leader Den events, many of which are specific to certain skills, traits, and ages
-- New events for pregnancy announcements and speculations
-- New grief events and thoughts
-- New accessories!
 
-<b>Bugfixes</b>
-- Murders will no longer occasionally crash the game
-- Fixed a bug caused by the training app murder event
-- You can no longer sort living cats by death date
-- Players no longer get stuck in the med den backrooms (when accessing the med den through cat profiles, the back button would return you to the cat profile. attempting to back out of the cat profile would take you back to the med den. rinse and repeat, it's a loop)
-- Buttons now disable/enable properly when closing relationship logs on first and last cats in the cat list
-- You can no longer enter negative page numbers by clicking the back button very very fast
-- Leaders now receive appropriate birth event text when dying from childbirth
-- Outsider kittens can no longer join as warriors
-- Long term conditions, like wasting disease, will now display in leader's history if they took a life
-- When leaders are lost on patrol, patrol result text no longer mentions them by their warrior name
-- Litters can no longer spawn with duplicate names (i.e. two kits named Stonekit)
-- clerics captured by twolegs no longer have their role erased
-- Cat history no longer lists cats as murdering themselves
-- Kicked cats out of the walls (fixed some possible cat positionings on camp screen)
-- Adolescents can no longer be considered "normal adults" in patrols simply because they graduated to warrior early.
-- Kits adopted during moon events now receive correct inheritance info and begin with a positive relationship toward new adoptive parent(s)
-- Mates of adoptive parents now automatically adopt any newly adopted kits received on moonskip
-- Check added for matching age when assigning random romantic relationship values at Clan creation
-- When assigning random relationship values at Clan creation, the Guide cat will now only generate relationships with living cats old enough to have known the Guide in life.
-- Adopted litters now always generate with a bio parent, ensuring their inheritance lists them as littermates
-- The generation of half-clan litters no longer assumes the birthing parent can only be the (biologically) female parent (this is important for "ignore biology" game setting)
-- Cats with no romantic interest in each other will no longer receive romance decreasing events
-- Poly cat love confessions no longer read as though one cat is asking their dead mate for permission before accepting a new cat into the polycule.
-- Rosemary is no longer applied to the "dead body" of a lost cat
-- Affair birth events no longer mention nonexistent mates
-- Fixed mistagging in patrols that would lead to unintended effects
-- Many small UI issues
-- Many small sprite fixes
-- Many typo fixes
+<strong>v1.2.3.1</strong>
+- Fixed some buttons causing crashes or simply not working
+
+<strong>v1.2.3</strong>
+- Fixed some accessory patrols! You should be able to get monster kelp and other accessories again!
+- Fixed accessories being deleted!! Accessory system should now be FULLY FUNCTIONAL
+
+<strong>v1.2.2</strong>
+- Added the accessory system!!
+-- BE WARNED! If you save and quit with an accessory deselected, IT WILL BE DELETED!
+
+
+<strong>v1.2.1</strong>
+- Rewrote a bunch of injury short events! 
+- Foxes will now be white lizards
+- Dogs are now red lizards
+- Rats and snakes became spiders
+- Twolegs are removed and replaced with various things
+- Fixed a likely crash that one missed short event would have caused
+
+
+<strong>v1.2.0</strong>
+Added:
+- 4000 new slugcat titles (by Harley, Ceru, Lythorus, Mimalot99, Devilkitten and Lars) (more is coming!!)
+- drizzle pelt (by Ceru)
+- new white patches (by raintailed)
+- tiny horns (by squidsaymoo)
+- new loading animations
+Fixed:
+- you can hide accessories in the sprite inspect screen
+- minor sprite cleanup
+- a million minor text fixes 
+
+
+<strong>v1.1.0</strong>
+Added:
+- 262 new names (by Ceru)
+- new white patches and tortie masks (by Harley and cosmo)
+- new Rotwound background (by cosmo)
+- an option to use alternate sprites for antennae and tail spots (by Bea)
+- Changed up the Leader ceremony for both the Ascended and the Rotwound
+- Allowed accessories to be toggled in the Sprite Inspect screen
+Fixed:
+- choosing a clan icon shouldn't crash your game
+- Clangen's save files won't pretend to be Raingen's and break your game
+- the file is finally called Raingen
+- and a million other tiny fixes
+- Changed a bunch of text in some random events. 
+
+
+<strong>v1.0.0</strong>
+- Github repositry created!
+
+
+<strong>v0.9.0</strong>
+THE ACCESSORY UPDATE!! 
+added:
+- a ton of new accessories and events for all of them!! 
+- multiple eyes and black claws that your slugcats can be born with!! 
+- a million minor text and code edits
+
+
+<strong>v0.8.1</strong>
+- Readded the Faded sprites (again)
+- All Forest Hunting patrols have been revamped!
+
+
+<strong>v0.8.0</strong>
+- Added 2 new camps for Outer Expanse and Ourskirts with art from Hydro-City-Zone!
+-- If you're experiencing any bugs or crashes - please let us know in the raingen discord!
+- Added Bea's full scar sprite!
+- Changed up the Create Clan screens to properly display your scugs leader role as 'The Leader' instead of '-Star'! 
+- Added an easy method for folks to change the game into the no extra tints version, until I go about actually making a button for it
+- Added spear-wounds to the injury list to prep for incoming scavenger patrols!
+- Added scav toll patrols to accompany the vulture ones!
+
+
+<strong>v0.7.0</strong>
+- Updated many patrol arts to be scugified!! Enjoy more scug patrols!
+- Rotsickness now has a very rare chance to give scugs Rotplague! (VERY RARE)
+- Rotsickness can now be gained through Strange Hunt patrols instead of poisoning. Might not wanna hunt that strange yeek, lizard, or lanternmouse anymore!
+- We now have a few new hunt patrols! Your scugs can now encounter pole plants in greater depth!
+
+
+<strong>v0.6.0</strong>
+- Updated all hunt patrols to replace thunderpaths with vulture encounters
+- Updated a few patrols to use the new lanternmouse patrol art
+- Redid most of forest's greenleaf patrols
+- Edited terminology in patrols! Medicine cats will now show as Clerics, and Moons will now show as cycles in all your patrols!
+- Relowered lizard tame chances to their intended rarity
+- Changed up many gen border patrols and some gen hunting patrols
+
+
+Any updates that come before v0.6.0 check the original mod thread in the Clangen server!

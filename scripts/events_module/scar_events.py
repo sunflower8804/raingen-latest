@@ -99,8 +99,8 @@ class Scar_Events():
         "broken jaw": head_scars,
         "broken back": back_scars,
         "broken bone": bone_scars,
-        "rotplague": rot_scars,
-        "rotsickness": rotrecovery_scars
+        "the rot": rot_scars,
+        "rot poisoning": rotrecovery_scars
     }
 
     @staticmethod
@@ -120,7 +120,7 @@ class Scar_Events():
         if medical_cats_condition_fulfilled(game.cat_class.all_cats.values(), amount_per_med):
             chance += 2
 
-        if injury_name == "rotsickness":
+        if injury_name == "rot poisoning":
             chance -=1
 
         if len(cat.pelt.scars) < 4 and not int(random.random() * chance):

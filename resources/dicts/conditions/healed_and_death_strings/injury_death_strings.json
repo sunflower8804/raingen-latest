@@ -81,7 +81,7 @@
         "m_c died from a bee sting.",
         "m_c seemed to have a horrible reaction to {PRONOUN/m_c/poss} bee sting. Cats usually don't die from a sting, but it seems this time was different."
     ],
-    "rotsickness": [
-        "m_c succumbed to rotsickness."
+    "rot poisoning": [
+        "m_c succumbed to rot poisoning."
     ]
 }

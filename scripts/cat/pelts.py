@@ -517,6 +517,14 @@ class Pelt:
         that are stored in Pelt, and converts them. To be run when loading a cat in. """
         
         # First, convert from some old names that may be in white_patches. 
+        
+        if self.name == "Conductor":
+            self.name = "Con"
+        if self.tortiebase == "conductor":
+            self.tortiebase = "con"
+        if self.tortiepattern == "conductor":
+            self.tortiepattern = "con"
+
         if self.white_patches == 'POINTMARK':
             self.white_patches = "SEALPOINT"
         elif self.white_patches == 'PANTS2':

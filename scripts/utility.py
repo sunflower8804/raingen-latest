@@ -864,7 +864,7 @@ def create_new_cat(
 
         if age > 12:
             if not randint(0, 50):   #0 = trans
-                print('TRANS!!!!')
+                print('TRANS OUTSIDER!!!!')
                 if not randint(0, 2):   #0 = nonbinary
                     if _gender == "male":
                         new_cat.genderalign = "trans female"
@@ -978,7 +978,7 @@ def create_new_cat(
                     new_cat.pelt.scars.append("NOPAW")
                 elif chosen_condition in ["lost their tail", "born without a tail"]:
                     new_cat.pelt.scars.append("NOTAIL")
-                elif chosen_condition in ["rotplague"]:
+                elif chosen_condition in ["the rot"]:
                     new_cat.pelt.scars.append("ROTRIDDEN")
 
         if outside:

@@ -526,7 +526,7 @@
                 "injury": [
                     {
                         "cats": ["n_c:0"],
-                        "injuries": ["rotsickness"],
+                        "injuries": ["rot poisoning"],
                         "scars": "ROTRIDDEN",
                         "no_results": true
                     }
@@ -553,7 +553,7 @@
                 "injury": [
                     {
                         "cats": ["n_c:0"],
-                        "injuries": ["rotsickness"],
+                        "injuries": ["rot poisoning"],
                         "scars": "ROTRIDDEN",
                         "no_results": true
                     }

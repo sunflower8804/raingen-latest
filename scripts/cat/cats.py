@@ -1941,7 +1941,7 @@ class Cat:
             return
         if name == "torn ear" and "NOEAR" in self.pelt.scars:
             return
-        if name == "rotplague" and "ROTRIDDEN" in self.pelt.scars:
+        if name == "the rot" and "ROTRIDDEN" in self.pelt.scars:
             return
 
         injury = INJURIES[name]
@@ -2043,7 +2043,7 @@ class Cat:
             cat.pelt.scars.append("NOPAW")
         elif new_condition == "born without a tail":
             cat.pelt.scars.append("NOTAIL")
-        elif new_condition == "rotplague":
+        elif new_condition == "the rot":
             cat.pelt.scars.append("ROTRIDDEN")
 
         self.get_permanent_condition(new_condition, born_with=True)
