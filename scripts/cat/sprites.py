@@ -129,7 +129,7 @@ class Sprites:
             'collars', 'bellcollars', 'bowcollars', 'nyloncollars', 'rwlizards', 'drones', 'muddypaws', 
             'herbs2', 'insectwings', 'buddies', 'newaccs', 'bodypaint', 'implant', 'magic', 'necklaces',
             'newaccs2', 'drapery', 'eyepatches', 'pridedrapery', 'larsaccs', 'harleyaccs',
-            'featherboas', 'scarves',
+            'featherboas', 'scarves', 'chains', 'neckbandanas',
             'singlecolours', 'speckledcolours', 'tabbycolours', 'bengalcolours', 'marbledcolours',
             'rosettecolours', 'smokecolours', 'tickedcolours', 'mackerelcolours', 'classiccolours',
             'sokokecolours', 'agouticolours', 'singlestripecolours', 'maskedcolours', 'bananacolours',
@@ -142,7 +142,7 @@ class Sprites:
             'oldgrowthcolours', 'sparklecatcolours', 'wolfcolours', 'sunsetcolours', 'hypnotistcolours',
             'ringedcolours', 'skinnycolours', 'sparsecolours', 'impishcolours', 'sportycolours', 
             'fizzycolours', 'skeletoncolours', 'shredcolours', 'glowingcolours', 'moldcolours',
-            'swingcolours',
+            'swingcolours', 'lovebirdcolours', 'budgiecolours'
             'raineyes', 'raineyes2', 'multieyes', 'multiraineyes', 'larseyes', 'multilarseyes', 'larseyes2', 
             'rivuleteyes', 'rivuleteyes2', 'buttoneyes', 'buttoneyes2',
             'shadersnewwhite', 'lightingnew',
@@ -324,7 +324,7 @@ class Sprites:
             'oldgrowthcolours', 'sparklecatcolours', 'wolfcolours', 'sunsetcolours', 'hypnotistcolours',
             'ringedcolours', 'skinnycolours', 'sparsecolours', 'impishcolours', 'sportycolours', 
             'fizzycolours', 'skeletoncolours', 'shredcolours', 'glowingcolours', 'moldcolours',
-            'swingcolours'
+            'swingcolours', 'lovebirdcolours', 'budgiecolours'
         ]
 
         for row, colors in enumerate(color_categories):
@@ -599,6 +599,22 @@ class Sprites:
             ["BLUESCARF", "DARKBLUESCARF", "PURPLESCARF", "MAGENTASCARF", "BLACKSCARF", "GRAYSCARF", "BROWNSCARF"],
             ["NSHSCARF", "SAWYERSCARF"]
         ]
+        
+        neckbandanas_data = [
+            ["DICEYNBANDANA", "EOUSNBANDANA", "FLUIDNBANDANA", "GUILDNBANDANA", "SKULLNBANDANA", "SKYNBANDANA", "SPACENBANDANA", "SWEETIENBANDANA"],
+            ["TCYANNBANDANA", "TIEDYEMUDDYNBANDANA", "TIEDYENBANDANA", "TSAVNBANDANA", "BLUEGRADNBANDANA", "ORANGEGRADNBANDANA",  "YELLOWGRADNBANDANA", "LIMEGRADNBANDANA"],
+            ["TEALGRADNBANDANA", "MAGENTAGRADNBANDANA", "REDGRADNBANDANA", "WHITENBANDANA", "LIGHTGRAYNBANDANA", "DARKGRAYNBANDANA", "BLACKNBANDANA", "PEACHNBANDANA"],
+            ["PALEREDNBANDANA", "REDNBANDANA", "MAROONNBANDANA", "PALEORANGENBANDANA", "LIGHTORANGENBANDANA", "ORANGENBANDANA", "BROWNNBANDANA", "PALEYELLOWNBANDANA"],
+            ["LIGHTYELLOWNBANDANA", "YELLOWNBANDANA", "PALEGREENNBANDANA", "LIGHTGREENNBANDANA", "GREENNBANDANA", "DARKGREENNBANDANA", "PALETEALNBANDANA", "LIGHTTEALNBANDANA"],
+            ["TEALNBANDANA", "DARKTEALNBANDANA", "PALEBLUENBANDANA", "LIGHTBLUENBANDANA", "DARKBLUENBANDANA", "BLUENBANDANA", "LAVENDERNBANDANA", "PURPLENBANDANA"],
+            ["DARKPURPLENBANDANA", "PALEPINKNBANDANA", "LIGHTPINKNBANDANA", "PINKNBANDANA", "DARKPINKNBANDANA", "PATCHWORKREDNBANDANA", "PATCHWORKORANGENBANDANA", "PATCHWORKYELLOWNBANDANA"],
+            ["PATCHWORKGREENNBANDANA", "PATCHWORKTEALNBANDANA", "PATCHWORKBLUENBANDANA", "PATCHWORKINDIGONBANDANA", "PATCHWORKPURPLENBANDANA", "PATCHWORKPINKNBANDANA"]
+        ]
+        
+        chains_data = [
+            ["AMBERCHAIN", "PINKCHAIN", "PURPLECHAIN", "YELLOWCHAIN", "TEALCHAIN"],
+            ["GREENCHAIN", "REDCHAIN", "ORANGECHAIN", "BLUECHAIN", "BLACKCHAIN"]
+        ]
 
         # medcatherbs
         for row, herbs in enumerate(medcatherbs_data):
@@ -720,6 +736,14 @@ class Sprites:
         for row, scarves in enumerate(scarves_data):
             for col, scarves in enumerate(scarves):
                 self.make_group('scarves', (col, row), f'scarves{scarves}')
+        #neckbandanas
+        for row, neckbandanas in enumerate(neckbandanas_data):
+            for col, neckbandanas in enumerate(neckbandanas):
+                self.make_group('neckbandanas', (col, row), f'neckbandanas{neckbandanas}')
+        #chains
+        for row, chains in enumerate(chains_data):
+            for col, chains in enumerate(chains):
+                self.make_group('chains', (col, row), f'chains{chains}')
 
     def load_symbols(self):
         """
