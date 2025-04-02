@@ -2522,7 +2522,7 @@
   "PURPLECHAIN": {
     "default": "purple chain",
     "plural": "purple chains",
-    "singular": "purple chain",
+    "singular": "purple chain"
   },
   "YELLOWCHAIN": {
     "default": "yellow chain",
