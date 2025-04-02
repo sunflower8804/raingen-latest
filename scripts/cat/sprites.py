@@ -142,7 +142,7 @@ class Sprites:
             'oldgrowthcolours', 'sparklecatcolours', 'wolfcolours', 'sunsetcolours', 'hypnotistcolours',
             'ringedcolours', 'skinnycolours', 'sparsecolours', 'impishcolours', 'sportycolours', 
             'fizzycolours', 'skeletoncolours', 'shredcolours', 'glowingcolours', 'moldcolours',
-            'swingcolours', 'lovebirdcolours', 'budgiecolours'
+            'swingcolours', 'lovebirdcolours', 'budgiecolours',
             'raineyes', 'raineyes2', 'multieyes', 'multiraineyes', 'larseyes', 'multilarseyes', 'larseyes2', 
             'rivuleteyes', 'rivuleteyes2', 'buttoneyes', 'buttoneyes2',
             'shadersnewwhite', 'lightingnew',
