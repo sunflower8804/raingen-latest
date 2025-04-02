@@ -142,7 +142,9 @@ class Sprites:
             'oldgrowthcolours', 'sparklecatcolours', 'wolfcolours', 'sunsetcolours', 'hypnotistcolours',
             'ringedcolours', 'skinnycolours', 'sparsecolours', 'impishcolours', 'sportycolours', 
             'fizzycolours', 'skeletoncolours', 'shredcolours', 'glowingcolours', 'moldcolours',
-            'swingcolours', 'lovebirdcolours', 'budgiecolours',
+            'swingcolours', 'lovebirdcolours', 'budgiecolours', 'amazoncolours', 'applecolours', 'bobacolours',
+            'glittercolours', 'icecolours', 'iggycolours', 'manedcolours', 'patchworkcolours', 'robotcolours',
+            'sunkencolours', 'tomocolours', 'whalecolours', 
             'raineyes', 'raineyes2', 'multieyes', 'multiraineyes', 'larseyes', 'multilarseyes', 'larseyes2', 
             'rivuleteyes', 'rivuleteyes2', 'buttoneyes', 'buttoneyes2',
             'shadersnewwhite', 'lightingnew',
@@ -297,7 +299,11 @@ class Sprites:
              'BLOSSOMSTEP', 'PEBBLE', 'TAILTWO', 'BUDDY', 'BACKSPOT', 'EYEBAGS'],
             ['BULLSEYE', 'FINN', 'DIGIT', 'KROPKA', 'FCTWO', 'FCONE', 'MIA', 'SCAR', 'BUSTER', 'SMOKEY', 'HAWKBLAZE',
              'CAKE', 'ROSINA', 'PRINCESS'],
-            ['LOCKET', 'BLAZEMASK', 'TEARS', 'DOUGIE']
+            ['LOCKET', 'BLAZEMASK', 'TEARS', 'DOUGIE', 'BALLER', 'PAINTSPLAT', 'REVERSETEARS', 'ELDER', 'TREFOIL',
+             'MANUL', 'REVERSETEARSTWO', 'GLOVE', 'REVERSENECK', 'NECK'],
+            ['REVERSEHEAD', 'HEAD', 'DOTS', 'SPARSE', 'BADGER', 'FIVEPEBBLE', 'BELLY', 'CHARCOAL', 'MASK', 'LIGHTNING',
+             'SIAMESE', 'FROSTBITTEN', 'HEX', 'SNOWBELLY'],
+            ['LIMBS', 'STRIPES', 'GLOWSTAR', 'STAR', 'SLICE', 'DEADPIXEL', 'ESCAPEE', 'INSPECTOR', 'FACEDOTS', 'TOONY']
         ]
 
         for row, patches in enumerate(white_patches):
@@ -324,7 +330,9 @@ class Sprites:
             'oldgrowthcolours', 'sparklecatcolours', 'wolfcolours', 'sunsetcolours', 'hypnotistcolours',
             'ringedcolours', 'skinnycolours', 'sparsecolours', 'impishcolours', 'sportycolours', 
             'fizzycolours', 'skeletoncolours', 'shredcolours', 'glowingcolours', 'moldcolours',
-            'swingcolours', 'lovebirdcolours', 'budgiecolours'
+            'swingcolours', 'lovebirdcolours', 'budgiecolours', 'amazoncolours', 'applecolours', 'bobacolours',
+            'glittercolours', 'icecolours', 'iggycolours', 'manedcolours', 'patchworkcolours', 'robotcolours',
+            'sunkencolours', 'tomocolours', 'whalecolours', 
         ]
 
         for row, colors in enumerate(color_categories):
