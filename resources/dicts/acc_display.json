@@ -2558,5 +2558,95 @@
     "default": "black chain",
     "plural": "black chains",
     "singular": "black chain"
+  },
+  "SCAVMPAINT": {
+    "default": "scavenger murder paint",
+    "plural": "scavenger murder paints",
+    "singular": "scavenger murder paint"
+  },
+  "FALLMPAINT": {
+    "default": "falling murder paint",
+    "plural": "falling murder paints",
+    "singular": "falling murder paint"
+  },
+  "SPEARMPAINT": {
+    "default": "spear murder paint",
+    "plural": "spear murder paints",
+    "singular": "spear murder paint"
+  },
+  "BLUECLOUDS": {
+    "default": "blue cloud cover",
+    "plural": "blue cloud covers",
+    "singular": "blue cloud cover"
+  },
+  "YELLOWCLOUDS": {
+    "default": "yellow cloud cover",
+    "plural": "yellow cloud covers",
+    "singular": "yellow cloud cover"
+  },
+  "PURPLECLOUDS": {
+    "default": "purple cloud cover",
+    "plural": "purple cloud covers",
+    "singular": "purple cloud cover"
+  },
+  "PINKCLOUDS": {
+    "default": "pink cloud cover",
+    "plural": "pink cloud covers",
+    "singular": "pink cloud cover"
+  },
+  "GOGGLES": {
+    "default": "goggles",
+    "plural": "multiple goggles",
+    "singular": "goggles"
+  },
+  "PINKPOLEPLANTBUDDY": {
+    "default": "pink pole plant buddy",
+    "plural": "pink pole plant buddies",
+    "singular": "pink pole plant buddy"
+  },
+  "ORANGEPOLEPLANTBUDDY": {
+    "default": "orange pole plant buddy",
+    "plural": "orange pole plant buddies",
+    "singular": "orange pole plant buddy"
+  },
+  "REDPOLEPLANTBUDDY": {
+    "default": "red pole plant buddy",
+    "plural": "red pole plant buddies",
+    "singular": "red pole plant buddy"
+  },
+  "YELLOWFLOATYEYES": {
+    "default": "yellow floaty eyes",
+    "plural": "multiple yellow floaty eyes",
+    "singular": "yellow floaty eyes"
+  },
+  "REDFLOATYEYES": {
+    "default": "red floaty eyes",
+    "plural": "multiple red floaty eyes",
+    "singular": "red floaty eyes"
+  },
+  "ORANGEFLOATYEYES": {
+    "default": "orange floaty eyes",
+    "plural": "multiple orange floaty eyes",
+    "singular": "orange floaty eyes"
+  },
+  "LIMEFLOATYEYES": {
+    "default": "lime floaty eyes",
+    "plural": "multiple lime floaty eyes",
+    "singular": "lime floaty eyes"
+  },
+  "GREENFLOATYEYES": {
+    "default": "green floaty eyes",
+    "plural": "multiple green floaty eyes",
+    "singular": "green floaty eyes"
+  },
+  "BLUEFLOATYEYES": {
+    "default": "blue floaty eyes",
+    "plural": "multiple blue floaty eyes",
+    "singular": "blue floaty eyes"
+  },
+  "INDIGOFLOATYEYES": {
+    "default": "indigo floaty eyes",
+    "plural": "multiple indigo floaty eyes",
+    "singular": "indigo floaty eyes"
   }
 }
