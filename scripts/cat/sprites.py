@@ -255,6 +255,9 @@ class Sprites:
         for a, i in enumerate(
                 ['MULTISIXER', 'MULTISPLIT', 'MULTISUN', 'MULTISWEET', 'MULTITIDE', 'MULTIVIVID', 'MULTIWAVE', 'MULTIWINKS', 'MULTIZENI', 'MULTIBEAST']):
             self.make_group('multilarseyes', (a, 4), f'eyes2{i}')
+        for a, i in enumerate(
+                ['MULTIBROWNTBOI', 'MUTIORANGETBOI', 'MULTIBREDTBOI', 'MULTIREDTBOI']):
+            self.make_group('multilarseyes', (a, 5), f'eyes2{i}')
                     
         #rivulet eyes
         for a, i in enumerate(
