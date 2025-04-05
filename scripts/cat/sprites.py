@@ -128,7 +128,8 @@ class Sprites:
             'medcatherbs',
             'collars', 'bellcollars', 'bowcollars', 'nyloncollars', 'rwlizards', 'drones', 'muddypaws', 
             'herbs2', 'insectwings', 'buddies', 'newaccs', 'bodypaint', 'implant', 'magic', 'necklaces',
-            'newaccs2', 'drapery', 'eyepatches', 'pridedrapery', 'larsaccs', 'harleyaccs',
+            'newaccs2', 'drapery', 'eyepatches', 'pridedrapery', 'larsaccs', 'harleyaccs', 'newaccs3',
+            'floatyeyes',
             'featherboas', 'scarves', 'chains', 'neckbandanas',
             'singlecolours', 'speckledcolours', 'tabbycolours', 'bengalcolours', 'marbledcolours',
             'rosettecolours', 'smokecolours', 'tickedcolours', 'mackerelcolours', 'classiccolours',
@@ -233,6 +234,10 @@ class Sprites:
                 ['SIXER', 'SPLIT', 'SUN', 'SWEET', 'TIDE', 'VIVID', 'WAVE', 'WINKS', 'ZENI', 'BEAST']):
             self.make_group('larseyes', (a, 4), f'eyes{i}')
             self.make_group('larseyes2', (a, 4), f'eyes2{i}')
+        for a, i in enumerate(
+                ['BROWNTBOI', 'ORANGETBOI', 'BREDTBOI', 'REDTBOI']):
+            self.make_group('larseyes', (a, 5), f'eyes{i}')
+            self.make_group('larseyes2', (a, 5), f'eyes2{i}')
 
         #lars' multi eyes
         for a, i in enumerate(
@@ -624,6 +629,18 @@ class Sprites:
             ["GREENCHAIN", "REDCHAIN", "ORANGECHAIN", "BLUECHAIN", "BLACKCHAIN"]
         ]
 
+        newaccs3_data = [
+            ["FALLMPAINT"], ["SCAVMPAINT"], ["SPEARMPAINT"], ["BLUECLOUDS"],
+            ["YELLOWCLOUDS"], ["PURPLECLOUDS"], ["PINKCLOUDS"], ["GOGGLES"],
+            ["PINKPOLEPLANTBUDDY"], ["ORANGEPOLEPLANTBUDDY"], ["REDPOLEPLANTBUDDY"]
+        ]
+
+        floatyeyes_data = [
+            ["YELLOWFLOATYEYES"], ["REDFLOATYEYES"], ["ORANGEFLOATYEYES"],
+            ["LIMEFLOATYEYES"], ["GREENFLOATYEYES"], ["BLUEFLOATYEYES"],
+            ["INDIGOFLOATYEYES"]
+        ]
+
         # medcatherbs
         for row, herbs in enumerate(medcatherbs_data):
             for col, herb in enumerate(herbs):
@@ -752,6 +769,14 @@ class Sprites:
         for row, chains in enumerate(chains_data):
             for col, chains in enumerate(chains):
                 self.make_group('chains', (col, row), f'chains{chains}')
+        #newaccs3
+        for row, newaccs3 in enumerate(newaccs3_data):
+            for col, newaccs3 in enumerate(newaccs3):
+                self.make_group('newaccs3', (col, row), f'newaccs3{newaccs3}')
+        #floatyeyes
+        for row, floatyeyes in enumerate(floatyeyes_data):
+            for col, floatyeyes in enumerate(floatyeyes):
+                self.make_group('floatyeyes', (col, row), f'floatyeyes{floatyeyes}')
 
     def load_symbols(self):
         """
