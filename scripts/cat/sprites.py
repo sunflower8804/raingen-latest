@@ -124,7 +124,7 @@ class Sprites:
         for x in [
             'lineart', 'lineartdf', 'lineartdead',
             'eyes', 'eyes2', 
-            'skin', 'gilltongue', 'beagilltongue', 'horns', 'fancyskin', 'whiskers', 'orbitals'
+            'skin', 'gilltongue', 'beagilltongue', 'horns', 'fancyskin', 'whiskers', 'orbitals',
             'scars', 'missingscars',
             'medcatherbs',
             'collars', 'bellcollars', 'bowcollars', 'nyloncollars', 'rwlizards', 'drones', 'muddypaws', 
