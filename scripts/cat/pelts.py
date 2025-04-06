@@ -195,7 +195,8 @@ class Pelt:
               "LEGBITE", "NECKBITE", "FACE", "MANLEG", "BRIGHTHEART", "MANTAIL", "BRIDGE", "RIGHTBLIND", "LEFTBLIND",
               "BOTHBLIND", "BEAKCHEEK", "BEAKLOWER", "CATBITE", "RATBITE", "QUILLCHUNK", "QUILLSCRATCH", "HINDLEG",
               "BACK", "QUILLSIDE", "SCRATCHSIDE", "BEAKSIDE", "CATBITETWO", "LABRATFACE", "LABRATCHEST", 
-              "NEUTRINO", "MANGLEDARM", "DOUBLEBITE", "DANGEROUS", "X-FACE"]
+              "NEUTRINO", "MANGLEDARM", "DOUBLEBITE", "DANGEROUS", "X-FACE", "VULTURESHOULDER", "CHEEKCUT", "MIROSNOM",
+              "SPEARWOUND"]
 
     # missing parts
     scars2 = ["LEFTEAR", "RIGHTEAR", "NOTAIL", "HALFTAIL", "NOPAW", "NOLEFTEAR", "NORIGHTEAR", "NOEAR"]
@@ -205,7 +206,8 @@ class Pelt:
               "FROSTMITT", "FROSTSOCK", "TOE", "SNAKETWO", "ROTMARKED", "ROTRIDDEN", "TOPSURGERY", "CUTOPEN", 
               "VIVISECTION", "LABRATLIMBS", "HALFFACELEFT", "FULLBODYBURNS", "BESIEGED", "HALFFACERIGHT", 
               "STARBURN", "ARMBURN", "ENVOYCHEST", "EXTRACTIONTWO", "RESTITCHEDUPPER", 
-              "RESTITCHEDLOWER", "STITCHEDHEAD", "MESSIAH", "SMOKINGFACE", "BURNTLEG", "BURNTARM"]
+              "RESTITCHEDLOWER", "STITCHEDHEAD", "MESSIAH", "SMOKINGFACE", "BURNTLEG", "BURNTARM", 
+              "ARTIRIGHT", "ARTIGLOWRIGHT", "ARTILEFT", "ARTIGLOWLEFT", "PATCHWORK"]
 
     # make sure to add plural and singular forms of new accs to acc_display.json so that they will display nicely
     plant_accessories = ["MAPLE LEAF", "HOLLY", "BLUE BERRIES", "FORGET ME NOTS", "RYE STALK", "LAUREL",
@@ -490,9 +492,10 @@ class Pelt:
     cyanwings = ['CYANWINGS']
     cyanfeatures = ['WHITECYAN', 'ORANGECYAN', 'BROWNCYAN', 'PINKCYAN', 'PINKERCYAN', 'TEALCYAN', 'GREENCYAN', 'BLOODYCYAN', 'LAVENDERCYAN', 'PURPLECYAN', 'CYANCYAN', 'BLUECYAN', 'DARKBLUECYAN', 'DARKPURPLECYAN', 'BLACKCYAN', 'EGGCYAN', 'YELLOWCYAN']
     anglerfish = ['ANGLERFISH']
+    newskins = ['FIREBUGPART', 'TEARS', 'BLACKTHORNS', 'WHITETHORNS', 'GLASSBACK', 'SEASLUGPAPILLAE', 'GRASSSHEEPBACK', 'SEANGLEWINGS']
     catfish_whiskers = ['WHITECATFISHWHISKERS', 'PINKCATFISHWHISKERS', 'REDCATFISHWHISKERS', 'YELLOWCATFISHWHISKERS', 'GREENCATFISHWHISKERS', 'REDYELLOWCATFISHWHISKERS', 'BLUECATFISHWHISKERS', 'PURPLECATFISHWHISKERS', 'BLACKCATFISHWHISKERS', 'BLUEGREENCATFISHWHISKERS', 'BLUEPINKCATFISHWHISKERS', 'BROWNCATFISHWHISKERS']
     dragon_whiskers = ['WHITEDRAGONWHISKERS', 'PINKDRAGONWHISKERS', 'REDDRAGONWHISKERS', 'YELLOWDRAGONWHISKERS', 'GREENDRAGONWHISKERS', 'REDYELLOWDRAGONWHISKERS', 'BLUEDRAGONWHISKERS', 'PURPLEDRAGONWHISKERS', 'BLACKDRAGONWHISKERS', 'BLUEGREENDRAGONWHISKERS', 'BLUEPINKDRAGONWHISKERS', 'BROWNDRAGONWHISKERS']
-    skin_categories = [empty, gills, tongues, spearholes, claws, antennae, glowspots, ramhorns, scavhorns, elitehorns, sharphorns, dragonhorns, unihorns, moth, whiskers, lizardfins, lizardneedles, cyanwings, cyanfeatures, anglerfish, catfish_whiskers, dragon_whiskers]
+    skin_categories = [empty, gills, tongues, spearholes, claws, antennae, glowspots, ramhorns, scavhorns, elitehorns, sharphorns, dragonhorns, unihorns, moth, whiskers, lizardfins, lizardneedles, cyanwings, cyanfeatures, anglerfish, newskins, catfish_whiskers, dragon_whiskers]
     #list for stuff that should logically be below a cloak
     closest_skin = [
         'WHITESPOTS', 'BLACKSPOTS', 'MIXSPOTS', 'RAINBOWSPOTS',
@@ -500,7 +503,8 @@ class Pelt:
         'WHITECYAN', 'ORANGECYAN', 'BROWNCYAN', 'PINKCYAN', 'PINKERCYAN', 'TEALCYAN', 'GREENCYAN', 'BLOODYCYAN', 'LAVENDERCYAN', 
         'PURPLECYAN', 'CYANCYAN', 'BLUECYAN', 'DARKBLUECYAN', 'DARKPURPLECYAN', 'BLACKCYAN', 'EGGCYAN', 'YELLOWCYAN',
         'PINKFINS', 'BLUEFINS', 'REDFINS', 'GREENFINS', 'YELLOWFINS', 'WHITEFINS',
-        'BLACKNEEDLES', 'WHITENEEDLES', 'RAINBOWNEEDLES'
+        'BLACKNEEDLES', 'WHITENEEDLES', 'RAINBOWNEEDLES',
+        'TEARS', 'GLASSBACK', 'GRASSSHEEPBACK'
     ]
     #skin_weights = [40, 10, 10, 6, 4, 10, 8, 2, 3, 2, 2, 1, 2]
     skin_weights = game.config["feature_generation"]["feature_chances"]
@@ -1054,7 +1058,8 @@ class Pelt:
             "STITCHEDHEAD",
             "EXTRACTIONTWO", 
             "MESSIAH", 
-            "ENVOYCHEST"
+            "ENVOYCHEST",
+            "PATCHWORK"
         ]
 
         if scar_choice == 1:
@@ -1102,7 +1107,9 @@ class Pelt:
                 choice(Pelt.featherboas),
                 choice(Pelt.scarves),
                 choice(Pelt.neckbandanas),
-                choice(Pelt.chains)
+                choice(Pelt.chains),
+                choice(Pelt.newaccs3),
+                choice(Pelt.floatyeyes)
             ]))
         else:
             self.accessories = []
