@@ -504,9 +504,9 @@ class Pelt:
         'PURPLECYAN', 'CYANCYAN', 'BLUECYAN', 'DARKBLUECYAN', 'DARKPURPLECYAN', 'BLACKCYAN', 'EGGCYAN', 'YELLOWCYAN',
         'PINKFINS', 'BLUEFINS', 'REDFINS', 'GREENFINS', 'YELLOWFINS', 'WHITEFINS',
         'BLACKNEEDLES', 'WHITENEEDLES', 'RAINBOWNEEDLES',
-        'TEARS', 'GLASSBACK', 'GRASSSHEEPBACK'
+        'TEARS', 'SEANGLEWINGS', 'GLASSBACK', 'GRASSSHEEPBACK'
     ]
-    #skin_weights = [40, 10, 10, 6, 4, 10, 8, 2, 3, 2, 2, 1, 2]
+    #skin_weights = [40, 10, 10, 6, 4, 10, 8, 2, 3, 2, 2, 1, 2, 3]
     skin_weights = game.config["feature_generation"]["feature_chances"]
 
     """Holds all appearance information for a cat. """
