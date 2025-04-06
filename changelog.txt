@@ -1,3 +1,35 @@
+<strong>Current Dev</strong>
+Added:
+- 4 new eye colours
+  - TBOI Brown, TBOI Orange, TBOI red, TBOI red & black, concepts by Lars, sprites by Mimalot, multi eye & heterochromia sprites by Cosmonaught
+- 9 new scars
+  - Vulture Shoulder and Cheek Cut by Foxett
+  - Patchwork and Spear Wound by Starcatcher
+  - 4 new arti face scars, currently unknown who made them!
+  - Miros Nom by Cosmonaught
+- 8 Unique Accessories (91 in total)
+  - 55 Neck Bandanas by Squid Say Moo
+  - 10 Chains, and 4 Cloud Covers by Squid Say Moo
+  - 3 Murder Paints, Suspicious Key, 7 Floaty Eyes, and 7 Gradiant Neck Bandanas, by Mimalot
+  - Goggles, and 3 Pole Plant Buddies by Foxett
+- 15 New Body Parts
+  - Firebug Parts, Sea Angel Wings, Leaf Sheep Back, Sea Bunny Papillae, Glass Back, 7 Orbitals, and Teary, by Mimalot
+  - 2 Thorns by Starcatcher
+- 16 New Pelts
+  - Robot, Boba, and Constellation by Mimalot (revisions by Squid Say Moo)
+  - Lovebird, Budgie, Patchwork, Sunken (concept by Flamedash), Glitter (concept by Lars), Iggy (concept by Lars), Amazon, Tomo, Apple, and Malibu by Squid Say Moo
+  - Ice, Whale (concept by Lars), and Maned (concept by Lars), by Foxett
+- 31 New White & Tortie Patches
+  - Lightning, Mask, Charcoal, Belly, Five Pebbles, Badger, Escapee, Dead Pixel, Stripes, Limbs, Snowbelly, Hex, Frostbitten, Hermes, and 1 others by Foxett
+  - Sparse, and 2 Chest Stars by Squid Say Moo
+  - 12 Patches by Starcatcher
+  - Toony by Mimalot
+
+Fixed:
+- Sparse pelt missing, sprite sheet revision by Squid Say Moo
+- Implants edited, rarefraction cell overlay issue by Harley
+- Improved Inv bomb sprite by Harley
+
 <strong>v1.5.2</strong>
 Added:
 - bog moss and symbiotic plants by Foxett
