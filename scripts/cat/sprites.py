@@ -123,7 +123,8 @@ class Sprites:
 
         for x in [
             'lineart', 'lineartdf', 'lineartdead',
-            'eyes', 'eyes2', 'skin', 'gilltongue', 'beagilltongue', 'horns', 'fancyskin', 'whiskers',
+            'eyes', 'eyes2', 
+            'skin', 'gilltongue', 'beagilltongue', 'horns', 'fancyskin', 'whiskers', 'orbitals'
             'scars', 'missingscars',
             'medcatherbs',
             'collars', 'bellcollars', 'bowcollars', 'nyloncollars', 'rwlizards', 'drones', 'muddypaws', 
@@ -431,6 +432,15 @@ class Sprites:
             self.make_group('fancyskin', (a, 5), f"skin{i}")
         for a, i in enumerate(['GLASSBACK', 'SEASLUGPAPILLAE', 'GRASSSHEEPBACK', 'SEANGLEWINGS']):
             self.make_group('fancyskin', (a, 6), f"skin{i}")
+
+        # orbitals spritesheet
+        for a, i in enumerate(['ORANGEORBITAL', 'YELLOWORBITAL', 'EARTHORBITAL']):
+            self.make_group('orbitals', (a, 0), f"skin{i}")
+        for a, i in enumerate(['EARTHTWOORBITAL', 'PURPLEORBITAL', 'PINKORBITAL']):
+            self.make_group('orbitals', (a, 1), f"skin{i}")
+        for a, i in enumerate(['REDORBITAL']):
+            self.make_group('orbitals', (a, 2), f"skin{i}")
+
 
         self.load_scars()
         self.load_symbols()
