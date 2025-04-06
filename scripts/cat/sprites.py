@@ -427,8 +427,10 @@ class Sprites:
             self.make_group('fancyskin', (a, 3), f"skin{i}")
         for a, i in enumerate(['LAVENDERCYAN', 'PURPLECYAN', 'CYANCYAN', 'BLUECYAN', 'DARKBLUECYAN', 'DARKPURPLECYAN', 'BLACKCYAN', 'EGGCYAN']):
             self.make_group('fancyskin', (a, 4), f"skin{i}")
-        for a, i in enumerate(['YELLOWCYAN', 'RAINBOWNEEDLES', 'CYANWINGS', 'ANGLERFISH']):
+        for a, i in enumerate(['YELLOWCYAN', 'RAINBOWNEEDLES', 'CYANWINGS', 'ANGLERFISH', 'FIREBUGPART', 'TEARS', 'BLACKTHORNS', 'WHITETHORNS']):
             self.make_group('fancyskin', (a, 5), f"skin{i}")
+        for a, i in enumerate(['GLASSBACK', 'SEASLUGPAPILLAE', 'GRASSSHEEPBACK', 'SEANGLEWINGS']):
+            self.make_group('fancyskin', (a, 6), f"skin{i}")
 
         self.load_scars()
         self.load_symbols()
@@ -452,7 +454,8 @@ class Sprites:
              "ENVOYCHEST", "HALFFACELEFT", "FULLBODYBURNS", "BESIEGED", "HALFFACERIGHT"],
             ["STARBURN", "ARMBURN", "DOUBLEBITE", "DANGEROUS", "SMOKINGFACE", "NIBBLEDIDIOT", "X-FACE",
              "NIBBEDAGAIN", "MESSIAH", "EXTRACTIONTWO", "RESTITCHEDUPPER", "RESTITCHEDLOWER"],
-            ["STITCHEDHEAD", "BURNTLEG", "BURNTARM"],
+            ["STITCHEDHEAD", "BURNTLEG", "BURNTARM", "VULTURESHOULDER", "CHEEKCUT", "MIROSNOM", "ARTIRIGHT",
+            "ARTIGLOWRIGHT", "ARTILEFT", "ARTIGLOWLEFT", "SPEARWOUND", "PATCHWORK"]
         ]
 
         # define missing parts
