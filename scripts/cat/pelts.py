@@ -495,7 +495,7 @@ class Pelt:
     patterns = ['FIREBUGPART', 'TEARS', 'BLACKTHORNS', 'WHITETHORNS', 'GLASSBACK', 'SEASLUGPAPILLAE', 'GRASSSHEEPBACK', 'SEANGLEWINGS']
     catfish_whiskers = ['WHITECATFISHWHISKERS', 'PINKCATFISHWHISKERS', 'REDCATFISHWHISKERS', 'YELLOWCATFISHWHISKERS', 'GREENCATFISHWHISKERS', 'REDYELLOWCATFISHWHISKERS', 'BLUECATFISHWHISKERS', 'PURPLECATFISHWHISKERS', 'BLACKCATFISHWHISKERS', 'BLUEGREENCATFISHWHISKERS', 'BLUEPINKCATFISHWHISKERS', 'BROWNCATFISHWHISKERS']
     dragon_whiskers = ['WHITEDRAGONWHISKERS', 'PINKDRAGONWHISKERS', 'REDDRAGONWHISKERS', 'YELLOWDRAGONWHISKERS', 'GREENDRAGONWHISKERS', 'REDYELLOWDRAGONWHISKERS', 'BLUEDRAGONWHISKERS', 'PURPLEDRAGONWHISKERS', 'BLACKDRAGONWHISKERS', 'BLUEGREENDRAGONWHISKERS', 'BLUEPINKDRAGONWHISKERS', 'BROWNDRAGONWHISKERS']
-    skin_categories = [empty, gills, tongues, spearholes, claws, antennae, glowspots, ramhorns, scavhorns, elitehorns, sharphorns, dragonhorns, unihorns, moth, whiskers, lizardfins, lizardneedles, cyanwings, cyanfeatures, anglerfish, newskins, catfish_whiskers, dragon_whiskers]
+    skin_categories = [empty, gills, tongues, spearholes, claws, antennae, glowspots, ramhorns, scavhorns, elitehorns, sharphorns, dragonhorns, unihorns, moth, whiskers, lizardfins, lizardneedles, cyanwings, cyanfeatures, anglerfish, patterns, catfish_whiskers, dragon_whiskers]
     #list for stuff that should logically be below a cloak
     closest_skin = [
         'WHITESPOTS', 'BLACKSPOTS', 'MIXSPOTS', 'RAINBOWSPOTS',
