@@ -83,6 +83,7 @@ class Pelt:
         'Sunken': 'sunken',
         'Tomo': 'tomo',
         'Whale': 'whale',
+        'Pidgeon': 'pidgeon',
         'Tortie': None,
         'Calico': None,
     }
@@ -110,7 +111,7 @@ class Pelt:
                       'CHIMERA', 'DAUB', 'EMBER', 'BLANKET',
                       'ROBIN', 'BRINDLE', 'PAIGE', 'ROSETAIL', 'SAFI', 'SMUDGED', 'DAPPLENIGHT', 'STREAK', 'MASK',
                       'CHEST', 'ARMTAIL', 'SMOKE', 'GRUMPYFACE',
-                      'BRIE', 'BELOVED', 'BODY', 'SHILOH', 'FRECKLED', 'HEARTBEAT']
+                      'BRIE', 'BELOVED', 'BODY', 'SHILOH', 'FRECKLED', 'HEARTBEAT', 'SPECKLES', 'TIGER']
     tortiebases = ['single', 'tabby', 'bengal', 'marbled', 'ticked', 'smoke', 'rosette', 'speckled', 'mackerel',
                 'classic', 'sokoke', 'agouti', 'singlestripe', 'masked', 'gravel', 'collared', 'slimemold',
                 'cyanlizard', 'vulture', 'banana', 'centipede', 'con', 'lizard', 'lantern', 'leviathan',
@@ -118,7 +119,7 @@ class Pelt:
                 'necklace', 'dreamer', 'duskdawn', 'seer', 'rotten', 'fire', 'countershaded', 'sunset', 'oldgrowth', 
                 'sparklecat', 'wolf', 'cherry', 'hypnotist', 'ringed', 'skinny', 'sparse', 'impish', 'sporty', 
                 'skeleton', 'shred', 'glowing', 'mold', 'swing', 'lovebird', 'budgie', 'amazon', 'apple', 'boba',
-                'glitter', 'ice', 'iggy', 'maned', 'patchwork', 'robot', 'sunken', 'tomo', 'whale']
+                'glitter', 'ice', 'iggy', 'maned', 'patchwork', 'robot', 'sunken', 'tomo', 'whale', 'pidgeon']
 
     pelt_length = ["short", "medium", "long"]
     eye_colours = ['YELLOW', 'AMBER', 'HAZEL', 'PALEGREEN', 'GREEN', 'BLUE', 'DARKBLUE', 'GREY', 'CYAN', 'EMERALD', 'PALEBLUE', 
@@ -403,7 +404,7 @@ class Pelt:
     ]
     spotted = [
         "Speckled", "Rosette", "Gravel", "Banana", "Con", "Bengal", "Dreamer", "Oldgrowth", "Cherry",
-        "Sparse", "Impish", "Ringed", "Mold", "Apple", "Glitter", "Patchwork", "Whale"
+        "Sparse", "Impish", "Ringed", "Mold", "Apple", "Glitter", "Patchwork", "Whale", "Pidgeon"
     ]
     plain = [
         "SingleColour", "TwoColour", "Smoke", "Singlestripe", "Collared", "Lizard", "Slimemold",
@@ -449,13 +450,13 @@ class Pelt:
                     'BACKSPOT',
                     'EYEBAGS', 'LOCKET', 'BLAZEMASK', 'TEARS', 'GLOVE', 'NECK'
                     'DOTS', 'FIVEPEBBLE', 'SIAMESE', 'SNOWBELLY',
-                    'GLOWSTAR', 'STAR', 'DEADPIXEL', 'INSPECTOR', 'FACEDOTS']
+                    'GLOWSTAR', 'STAR', 'DEADPIXEL', 'INSPECTOR', 'FACEDOTS', 'WPTEARS', 'ONEEARTIP', 'NOSETIP']
     mid_white = ['TUXEDO', 'FANCY', 'UNDERS', 'DAMIEN', 'SKUNK', 'MITAINE', 'SQUEAKS', 'STAR', 'WINGS',
                  'DIVA', 'SAVANNAH', 'FADESPOTS', 'BEARD', 'DAPPLEPAW', 'TOPCOVER', 'WOODPECKER', 'MISS', 'BOWTIE',
                  'VEST',
                  'FADEBELLY', 'DIGIT', 'FCTWO', 'FCONE', 'MIA', 'ROSINA', 'PRINCESS', 'BALLER', 'TREFOIL', 'MANUL',
                  'HEAD', 'SPARSE', 'BADGER', 'BELLY', 'MASK', 'LIGHTNING', 'FROSTBITTEN',
-                 'LIMBS', 'STRIPES', 'SLICE', 'TOONY']
+                 'LIMBS', 'STRIPES', 'SLICE', 'TOONY', 'ACROBAT']
     high_white = ['ANY', 'ANYTWO', 'BROKEN', 'FRECKLES', 'RINGTAIL', 'HALFFACE', 'PANTSTWO',
                   'GOATEE', 'PRINCE', 'FAROFA', 'MISTER', 'PANTS', 'REVERSEPANTS', 'HALFWHITE', 'APPALOOSA', 'PIEBALD',
                   'CURVED', 'GLASS', 'MASKMANTLE', 'MAO', 'PAINTED', 'SHIBAINU', 'OWL', 'BUB', 'SPARROW', 'TRIXIE',
@@ -492,7 +493,7 @@ class Pelt:
     cyanwings = ['CYANWINGS']
     cyanfeatures = ['WHITECYAN', 'ORANGECYAN', 'BROWNCYAN', 'PINKCYAN', 'PINKERCYAN', 'TEALCYAN', 'GREENCYAN', 'BLOODYCYAN', 'LAVENDERCYAN', 'PURPLECYAN', 'CYANCYAN', 'BLUECYAN', 'DARKBLUECYAN', 'DARKPURPLECYAN', 'BLACKCYAN', 'EGGCYAN', 'YELLOWCYAN']
     anglerfish = ['ANGLERFISH']
-    patterns = ['FIREBUGPART', 'TEARS', 'BLACKTHORNS', 'WHITETHORNS', 'GLASSBACK', 'SEASLUGPAPILLAE', 'GRASSSHEEPBACK', 'SEANGLEWINGS']
+    patterns = ['FIREBUGPART', 'TEARS', 'BLACKTHORNS', 'WHITETHORNS', 'GLASSBACK', 'SEASLUGPAPILLAE', 'GRASSSHEEPBACK', 'SEANGLEWINGS', 'ACROTAIL']
     catfish_whiskers = ['WHITECATFISHWHISKERS', 'PINKCATFISHWHISKERS', 'REDCATFISHWHISKERS', 'YELLOWCATFISHWHISKERS', 'GREENCATFISHWHISKERS', 'REDYELLOWCATFISHWHISKERS', 'BLUECATFISHWHISKERS', 'PURPLECATFISHWHISKERS', 'BLACKCATFISHWHISKERS', 'BLUEGREENCATFISHWHISKERS', 'BLUEPINKCATFISHWHISKERS', 'BROWNCATFISHWHISKERS']
     dragon_whiskers = ['WHITEDRAGONWHISKERS', 'PINKDRAGONWHISKERS', 'REDDRAGONWHISKERS', 'YELLOWDRAGONWHISKERS', 'GREENDRAGONWHISKERS', 'REDYELLOWDRAGONWHISKERS', 'BLUEDRAGONWHISKERS', 'PURPLEDRAGONWHISKERS', 'BLACKDRAGONWHISKERS', 'BLUEGREENDRAGONWHISKERS', 'BLUEPINKDRAGONWHISKERS', 'BROWNDRAGONWHISKERS']
     orbitals = ['ORANGEORBITAL', 'YELLOWORBITAL', 'EARTHORBITAL', 'EARTHTWOORBITAL', 'PURPLEORBITAL', 'PINKORBITAL', 'REDORBITAL']
