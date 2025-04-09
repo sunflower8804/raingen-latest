@@ -124,7 +124,7 @@ class Sprites:
         for x in [
             'lineart', 'lineartdf', 'lineartdead',
             'eyes', 'eyes2', 
-            'skin', 'gilltongue', 'beagilltongue', 'horns', 'fancyskin', 'whiskers', 'orbitals',
+            'skin', 'gilltongue', 'beagilltongue', 'horns', 'fancyskin', 'whiskers', 'orbitals', 'datagamesstuff',
             'scars', 'missingscars',
             'medcatherbs',
             'collars', 'bellcollars', 'bowcollars', 'nyloncollars', 'rwlizards', 'drones', 'muddypaws', 
@@ -433,6 +433,16 @@ class Sprites:
             self.make_group('fancyskin', (a, 5), f"skin{i}")
         for a, i in enumerate(['GLASSBACK', 'SEASLUGPAPILLAE', 'GRASSSHEEPBACK', 'SEANGLEWINGS', 'ACROTAIL']):
             self.make_group('fancyskin', (a, 6), f"skin{i}")
+
+        # data games stuff spritesheet
+        for a, i in enumerate(['FAMILIARMARK', 'BLUETAILFRILLS', 'ORANGETAILFRILLS', 'GREENTAILFRILLS', 'PURPLETAILFRILLS']):
+            self.make_group('datagamesstuff', (a, 0), f"skin{i}")
+        for a, i in enumerate(['PINKTAILFRILLS', 'REDTAILFRILLS', 'YELLOWTAILFRILLS', 'CYANTAILFRILLS', 'WHITEQUILLS']):
+            self.make_group('datagamesstuff', (a, 1), f"skin{i}")
+        for a, i in enumerate(['BLACKQUILLS', 'YELLOWSPIKES', 'GREENSPIKES', 'AQUASPIKES', 'CYANSPIKES']):
+            self.make_group('datagamesstuff', (a, 2), f"skin{i}")
+        for a, i in enumerate(['BLUESPIKES', 'PURPLESPIKES', 'PINKSPIKES', 'REDSPIKES', 'ORANGESPIKES']):
+            self.make_group('datagamesstuff', (a, 3), f"skin{i}")
 
         # orbitals spritesheet
         for a, i in enumerate(['ORANGEORBITAL', 'YELLOWORBITAL', 'EARTHORBITAL']):
