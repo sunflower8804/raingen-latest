@@ -2203,5 +2203,450 @@
     "default": "sawyer scarf",
     "plural": "sawyer scarves",
     "singular": "sawyer scarf"
+  },
+  "DICEYNBANDANA": {
+    "default": "dicey neck bandana",
+    "plural": "dicey neck bandanas",
+    "singular": "dicey neck bandana"
+  },
+  "EOUSNBANDANA": {
+    "default": "eous neck bandana",
+    "plural": "eous neck bandanas",
+    "singular": "eous neck bandana"
+  },
+  "FLUIDNBANDANA": {
+    "default": "fluid neck bandana",
+    "plural": "fluid neck bandanas",
+    "singular": "fluid neck bandana"
+  },
+  "GUILDNBANDANA": {
+    "default": "guild neck bandana",
+    "plural": "guild neck bandanas",
+    "singular": "guild neck bandana"
+  },
+  "SKULLNBANDANA": {
+    "default": "skull neck bandana",
+    "plural": "skull neck bandanas",
+    "singular": "skull neck bandana"
+  },
+  "SKYNBANDANA": {
+    "default": "sky neck bandana",
+    "plural": "sky neck bandanas",
+    "singular": "sky neck bandana"
+  },
+  "SPACENBANDANA": {
+    "default": "space neck bandana",
+    "plural": "space neck bandanas",
+    "singular": "space neck bandana"
+  },
+  "SWEETIENBANDANA": {
+    "default": "sweetie neck bandana",
+    "plural": "sweetie neck bandanas",
+    "singular": "sweetie neck bandana"
+  },
+  "TCYANNBANDANA": {
+    "default": "Tcyan neck bandana",
+    "plural": "Tcyan neck bandanas",
+    "singular": "Tcyan neck bandana"
+  },
+  "TIEDYEMUDDYNBANDANA": {
+    "default": "muddy tie dye neck bandana",
+    "plural": "muddy tie dye neck bandanas",
+    "singular": "muddy tie dye neck bandana"
+  },
+  "TIEDYENBANDANA": {
+    "default": "tie dye neck bandana",
+    "plural": "tie dye neck bandanas",
+    "singular": "tie dye neck bandana"
+  },
+  "TSAVNBANDANA": {
+    "default": "Tsav neck bandana",
+    "plural": "Tsav neck bandanas",
+    "singular": "Tsav neck bandana"
+  },
+  "BLUEGRADNBANDANA": {
+    "default": "blue gradient neck bandana",
+    "plural": "blue gradient neck bandanas",
+    "singular": "blue gradient neck bandana"
+  },
+  "ORANGEGRADNBANDANA": {
+    "default": "orange gradient neck bandana",
+    "plural": "orange gradient neck bandanas",
+    "singular": "orange gradient neck bandana"
+  },
+  "YELLOWGRADNBANDANA": {
+    "default": "yellow gradient neck bandana",
+    "plural": "yellow gradient neck bandanas",
+    "singular": "yellow gradient neck bandana"
+  },
+  "LIMEGRADNBANDANA": {
+    "default": "lime gradient neck bandana",
+    "plural": "lime gradient neck bandanas",
+    "singular": "lime gradient neck bandana"
+  },
+  "TEALGRADNBANDANA": {
+    "default": "teal gradient neck bandana",
+    "plural": "teal gradient neck bandanas",
+    "singular": "teal gradient neck bandana"
+  },
+  "MAGENTAGRADNBANDANA": {
+    "default": "magenta gradient neck bandana",
+    "plural": "magenta gradient neck bandanas",
+    "singular": "magenta gradient neck bandana"
+  },
+  "REDGRADNBANDANA": {
+    "default": "red gradient neck bandana",
+    "plural": "red gradient neck bandanas",
+    "singular": "red gradient neck bandana"
+  },
+  "WHITENBANDANA": {
+    "default": "white neck bandana",
+    "plural": "white neck bandanas",
+    "singular": "white neck bandana"
+  },
+  "LiGHTGRAYNBANDANA": {
+    "default": "light gray neck bandana",
+    "plural": "light gray neck bandanas",
+    "singular": "light gray neck bandana"
+  },
+  "DARKGRAYNBANDANA": {
+    "default": "dark gray neck bandana",
+    "plural": "dark gray neck bandanas",
+    "singular": "dark gray neck bandana"
+  },
+  "BLACKNBANDANA": {
+    "default": "black neck bandana",
+    "plural": "black neck bandanas",
+    "singular": "black neck bandana"
+  },
+  "PEACHNBANDANA": {
+    "default": "peach neck bandana",
+    "plural": "peach neck bandanas",
+    "singular": "peach neck bandana"
+  },
+  "PALEREDNBANDANA": {
+    "default": "pale red neck bandana",
+    "plural": "pale red neck bandanas",
+    "singular": "pale red neck bandana"
+  },
+  "REDNBANDANA": {
+    "default": "red neck bandana",
+    "plural": "red neck bandanas",
+    "singular": "red neck bandana"
+  },
+  "MAROONNBANDANA": {
+    "default": "maroon neck bandana",
+    "plural": "maroon neck bandanas",
+    "singular": "maroon neck bandana"
+  },
+  "PALEORANGENBANDANA": {
+    "default": "pale orange neck bandana",
+    "plural": "pale orange neck bandanas",
+    "singular": "pale orange neck bandana"
+  },
+  "LIGHTORANGENBANDANA": {
+    "default": "light orange neck bandana",
+    "plural": "light orange neck bandanas",
+    "singular": "light orange neck bandana"
+  },
+  "ORANGENBANDANA": {
+    "default": "orange neck bandana",
+    "plural": "orange neck bandanas",
+    "singular": "orange neck bandana"
+  },
+  "BROWNNBANDANA": {
+    "default": "brown neck bandana",
+    "plural": "brown neck bandanas",
+    "singular": "brown neck bandana"
+  },
+  "PALEYELLOWNBANDANA": {
+    "default": "pale yellow neck bandana",
+    "plural": "pale yellow neck bandanas",
+    "singular": "pale yellow neck bandana"
+  },
+  "LIGHTYELLOWNBANDANA": {
+    "default": "light yellow neck bandana",
+    "plural": "light yellow neck bandanas",
+    "singular": "light yellow neck bandana"
+  },
+  "YELLOWNBANDANA": {
+    "default": "yellow neck bandana",
+    "plural": "yellow neck bandanas",
+    "singular": "yellow neck bandana"
+  },
+  "PALEGREENNBANDANA": {
+    "default": "pale green neck bandana",
+    "plural": "pale green neck bandanas",
+    "singular": "pale green neck bandana"
+  },
+  "LIGHTGREENNBANDANA": {
+    "default": "light green neck bandana",
+    "plural": "light green neck bandanas",
+    "singular": "light green neck bandana"
+  },
+  "GREENNBANDANA": {
+    "default": "green neck bandana",
+    "plural": "green neck bandanas",
+    "singular": "green neck bandana"
+  },
+  "DARKGREENNBANDANA": {
+    "default": "dark green neck bandana",
+    "plural": "dark green neck bandanas",
+    "singular": "dark green neck bandana"
+  },
+  "PALETEALNBANDANA": {
+    "default": "pale teal neck bandana",
+    "plural": "pale teal neck bandanas",
+    "singular": "pale teal neck bandana"
+  },
+  "LIGHTTEALNBANDANA": {
+    "default": "light teal neck bandana",
+    "plural": "light teal neck bandanas",
+    "singular": "light teal neck bandana"
+  },
+  "TEALNBANDANA": {
+    "default": "teal neck bandana",
+    "plural": "teal neck bandanas",
+    "singular": "teal neck bandana"
+  },
+  "DARKTEALNBANDANA": {
+    "default": "dark teal neck bandana",
+    "plural": "dark teal neck bandanas",
+    "singular": "dark teal neck bandana"
+  },
+  "PALEBLUENBANDANA": {
+    "default": "pale blue neck bandana",
+    "plural": "pale blue neck bandanas",
+    "singular": "pale blue neck bandana"
+  },
+  "LIGHTBLUENBANDANA": {
+    "default": "light blue neck bandana",
+    "plural": "light blue neck bandanas",
+    "singular": "light blue neck bandana"
+  },
+  "DARKBLUENBANDANA": {
+    "default": "dark blue neck bandana",
+    "plural": "dark blue neck bandanas",
+    "singular": "dark blue neck bandana"
+  },
+  "BLUENBANDANA": {
+    "default": "blue neck bandana",
+    "plural": "blue neck bandanas",
+    "singular": "blue neck bandana"
+  },
+  "LAVENDERNBANDANA": {
+    "default": "lavender neck bandana",
+    "plural": "lavender neck bandanas",
+    "singular": "lavender neck bandana"
+  },
+  "PURPLENBANDANA": {
+    "default": "purple neck bandana",
+    "plural": "purple neck bandanas",
+    "singular": "purple neck bandana"
+  },
+  "DARKPURPLENBANDANA": {
+    "default": "dark purple neck bandana",
+    "plural": "dark purple neck bandanas",
+    "singular": "dark purple neck bandana"
+  },
+  "PALEPINKNBANDANA": {
+    "default": "pale pink neck bandana",
+    "plural": "pale pink neck bandanas",
+    "singular": " neck bandana"
+  },
+  "LIGHTPINKNBANDANA": {
+    "default": "light pink neck bandana",
+    "plural": "light pink neck bandanas",
+    "singular": "light pink neck bandana"
+  },
+  "PINKNBANDANA": {
+    "default": "pink neck bandana",
+    "plural": "pink neck bandanas",
+    "singular": "pink neck bandana"
+  },
+  "DARKPINKNBANDANA": {
+    "default": "dark pink neck bandana",
+    "plural": "dark pink neck bandanas",
+    "singular": "dark pink neck bandana"
+  },
+  "PATCHWORKREDNBANDANA": {
+    "default": "red patchwork neck bandana",
+    "plural": "red patchwork neck bandanas",
+    "singular": "red patchwork neck bandana"
+  },
+  "PATCHWORKORANGENBANDANA": {
+    "default": "orange patchwork neck bandana",
+    "plural": "orange patchwork neck bandanas",
+    "singular": "orange patchwork neck bandana"
+  },
+  "PATCHWORKYELLOWNBANDANA": {
+    "default": "yellow patchwork neck bandana",
+    "plural": "yellow patchwork neck bandanas",
+    "singular": "yellow patchwork neck bandana"
+  },
+  "PATCHWORKTEALNBANDANA": {
+    "default": "teal patchwork neck bandana",
+    "plural": "teal patchwork neck bandanas",
+    "singular": "teal patchwork neck bandana"
+  },
+  "PATCHWORKBLUENBANDANA": {
+    "default": "blue patchwork neck bandana",
+    "plural": "blue patchwork neck bandanas",
+    "singular": "blue patchwork neck bandana"
+  },
+  "PATCHWORKINDIGONBANDANA": {
+    "default": "indigo patchwork neck bandana",
+    "plural": "indigo patchwork neck bandanas",
+    "singular": "indigo neck bandana"
+  },
+  "PATCHWORKPURPLENBANDANA": {
+    "default": "purple patchwork neck bandana",
+    "plural": "purple patchwork neck bandanas",
+    "singular": "purple patchwork neck bandana"
+  },
+  "PATCHWORKNPINKBANDANA": {
+    "default": "pink patchwork neck bandana",
+    "plural": "pink patchwork neck bandanas",
+    "singular": "pink patchwork neck bandana"
+  },
+  "AMBERCHAIN": {
+    "default": "amber chain",
+    "plural": "amber chains",
+    "singular": "amber chain"
+  },
+  "PINKCHAIN": {
+    "default": "pink chain",
+    "plural": "pink chains",
+    "singular": "pink chain"
+  },
+  "PURPLECHAIN": {
+    "default": "purple chain",
+    "plural": "purple chains",
+    "singular": "purple chain"
+  },
+  "YELLOWCHAIN": {
+    "default": "yellow chain",
+    "plural": "yellow chains",
+    "singular": "yellow chain"
+  },
+  "TEALCHAIN": {
+    "default": "teal chain",
+    "plural": "teal chains",
+    "singular": "teal chain"
+  },
+  "GREENCHAIN": {
+    "default": "green chain",
+    "plural": "green chains",
+    "singular": "green chain"
+  },
+  "REDCHAIN": {
+    "default": "red chain",
+    "plural": "red chains",
+    "singular": "red chain"
+  },
+  "ORANGECHAIN": {
+    "default": "orange chain",
+    "plural": "orange chains",
+    "singular": "orange chain"
+  },
+  "BLUECHAIN": {
+    "default": "blue chain",
+    "plural": "blue chains",
+    "singular": "blue chain"
+  },
+  "BLACKCHAIN": {
+    "default": "black chain",
+    "plural": "black chains",
+    "singular": "black chain"
+  },
+  "SCAVMPAINT": {
+    "default": "scavenger murder paint",
+    "plural": "scavenger murder paints",
+    "singular": "scavenger murder paint"
+  },
+  "FALLMPAINT": {
+    "default": "falling murder paint",
+    "plural": "falling murder paints",
+    "singular": "falling murder paint"
+  },
+  "SPEARMPAINT": {
+    "default": "spear murder paint",
+    "plural": "spear murder paints",
+    "singular": "spear murder paint"
+  },
+  "BLUECLOUDS": {
+    "default": "blue cloud cover",
+    "plural": "blue cloud covers",
+    "singular": "blue cloud cover"
+  },
+  "YELLOWCLOUDS": {
+    "default": "yellow cloud cover",
+    "plural": "yellow cloud covers",
+    "singular": "yellow cloud cover"
+  },
+  "PURPLECLOUDS": {
+    "default": "purple cloud cover",
+    "plural": "purple cloud covers",
+    "singular": "purple cloud cover"
+  },
+  "PINKCLOUDS": {
+    "default": "pink cloud cover",
+    "plural": "pink cloud covers",
+    "singular": "pink cloud cover"
+  },
+  "GOGGLES": {
+    "default": "goggles",
+    "plural": "multiple goggles",
+    "singular": "goggles"
+  },
+  "PINKPOLEPLANTBUDDY": {
+    "default": "pink pole plant buddy",
+    "plural": "pink pole plant buddies",
+    "singular": "pink pole plant buddy"
+  },
+  "ORANGEPOLEPLANTBUDDY": {
+    "default": "orange pole plant buddy",
+    "plural": "orange pole plant buddies",
+    "singular": "orange pole plant buddy"
+  },
+  "REDPOLEPLANTBUDDY": {
+    "default": "red pole plant buddy",
+    "plural": "red pole plant buddies",
+    "singular": "red pole plant buddy"
+  },
+  "YELLOWFLOATYEYES": {
+    "default": "yellow floaty eyes",
+    "plural": "multiple yellow floaty eyes",
+    "singular": "yellow floaty eyes"
+  },
+  "REDFLOATYEYES": {
+    "default": "red floaty eyes",
+    "plural": "multiple red floaty eyes",
+    "singular": "red floaty eyes"
+  },
+  "ORANGEFLOATYEYES": {
+    "default": "orange floaty eyes",
+    "plural": "multiple orange floaty eyes",
+    "singular": "orange floaty eyes"
+  },
+  "LIMEFLOATYEYES": {
+    "default": "lime floaty eyes",
+    "plural": "multiple lime floaty eyes",
+    "singular": "lime floaty eyes"
+  },
+  "GREENFLOATYEYES": {
+    "default": "green floaty eyes",
+    "plural": "multiple green floaty eyes",
+    "singular": "green floaty eyes"
+  },
+  "BLUEFLOATYEYES": {
+    "default": "blue floaty eyes",
+    "plural": "multiple blue floaty eyes",
+    "singular": "blue floaty eyes"
+  },
+  "INDIGOFLOATYEYES": {
+    "default": "indigo floaty eyes",
+    "plural": "multiple indigo floaty eyes",
+    "singular": "indigo floaty eyes"
   }
 }

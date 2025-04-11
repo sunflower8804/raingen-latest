@@ -2879,6 +2879,14 @@ def generate_sprite(
                             new_sprite.blit(sprites.sprites['featherboas' + i + cat_sprite], (0, 0))
                         elif i in cat.pelt.scarves:
                             new_sprite.blit(sprites.sprites['scarves' + i + cat_sprite], (0, 0))
+                        elif i in cat.pelt.neckbandanas:
+                            new_sprite.blit(sprites.sprites['neckbandanas' + i + cat_sprite], (0, 0))
+                        elif i in cat.pelt.chains:
+                            new_sprite.blit(sprites.sprites['chains' + i + cat_sprite], (0, 0))
+                        elif i in cat.pelt.newaccs3:
+                            new_sprite.blit(sprites.sprites['newaccs3' + i + cat_sprite], (0, 0))
+                        elif i in cat.pelt.floatyeyes:
+                            new_sprite.blit(sprites.sprites['floatyeyes' + i + cat_sprite], (0, 0))
                     #THIS SECTION ABOVE IS ONLY FOR CLOSE-TO-BODY ACCESSORIES
 
                     except:
@@ -2956,6 +2964,14 @@ def generate_sprite(
                             new_sprite.blit(sprites.sprites['featherboas' + i + cat_sprite], (0, 0))
                         elif i in cat.pelt.scarves:
                             new_sprite.blit(sprites.sprites['scarves' + i + cat_sprite], (0, 0))
+                        elif i in cat.pelt.neckbandanas:
+                            new_sprite.blit(sprites.sprites['neckbandanas' + i + cat_sprite], (0, 0))
+                        elif i in cat.pelt.chains:
+                            new_sprite.blit(sprites.sprites['chains' + i + cat_sprite], (0, 0))
+                        elif i in cat.pelt.newaccs3:
+                            new_sprite.blit(sprites.sprites['newaccs3' + i + cat_sprite], (0, 0))
+                        elif i in cat.pelt.floatyeyes:
+                            new_sprite.blit(sprites.sprites['floatyeyes' + i + cat_sprite], (0, 0))
 
                     except:
                         continue
