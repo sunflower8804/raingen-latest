@@ -2,9 +2,7 @@
     {
         "event_id": "gen_death_murder_any1",
         "location": [ "any" ],
-        "season": [
-            "any"
-        ],
+        "season": ["any"],
         "sub_type": ["murder"],
         "tags": [],
         "weight": 20,
@@ -68,6 +66,7 @@
         "tags": [],
         "weight": 20,
         "event_text": "m_c was murdered. r_c stands over {PRONOUN/m_c/object}, brandishing a bloodied spear.",
+        "new_accessory": ["SPEARMPAINT"],
         "m_c": {
             "age": ["any"],
             "status": [
@@ -1732,6 +1731,7 @@
         "tags": [ "all_lives" ],
         "weight": 20,
         "event_text": "A yowl took m_c by surprise as {PRONOUN/m_c/subject} {VERB/m_c/were/was} patrolling the territory. r_c crashed into view, meowing about how m_c had to come and see. m_c followed the distressed warrior to a small ravine. Suddenly, {PRONOUN/m_c/subject} felt a sharp shove from behind, letting out a yowl of surprise that was cut short as {PRONOUN/m_c/subject} landed on the sharp rocks below.",
+        "new_accessory": ["FALLMPAINT"],
         "m_c": {
             "status": [
                 "deputy", "leader"
@@ -2513,6 +2513,7 @@
         "tags": [],
         "weight": 20,
         "event_text": "m_c was pushed off a cliff onto the sharp rocks at the bottom. The culprit is unknown.",
+        "new_accessory": ["FALLMPAINT"],
         "m_c": {
             "status": [ "apprentice", "mediator apprentice", "medicine cat apprentice", "warrior", "medicine cat", "mediator", "deputy" ],
             "not_skill": [
@@ -2572,6 +2573,7 @@
         "tags": [],
         "weight": 20,
         "event_text": "m_c was pushed off a cliff onto the sharp rocks at the bottom. r_c stands above {PRONOUN/m_c/object}, watching as they fall.",
+        "new_accessory": ["FALLMPAINT"],
         "m_c": {
             "status": [ "apprentice", "mediator apprentice", "medicine cat apprentice", "warrior", "medicine cat", "mediator", "deputy"],
             "not_skill": [
@@ -2842,7 +2844,7 @@
         ],
         "tags": [],
         "weight": 30,
-        "event_text": "m_c grew weak as the days passed and now walks the stars of Silverpelt.",
+        "event_text": "m_c grew weak as the days passed and now swims with The Ascended.",
         "m_c": {
             "age": [
                 "kitten"
@@ -3054,7 +3056,7 @@
         "sub_type": [ "murder" ],
         "tags": [],
         "weight": 20,
-        "event_text": "m_c excitedly follows r_c a short distance from camp to begin the promised battle training. r_c says something about how real warriors don't hold back, even in a spar. m_c nods eagerly. {PRONOUN/m_c/subject/CAP} barely {VERB/m_c/have/has} time to duck as r_c's paw whistles past {PRONOUN/m_c/poss} head. The slugpup stumbles backwards, tripping over {PRONOUN/m_c/poss} paws, {PRONOUN/m_c/poss} head landing hard on a rock.",
+        "event_text": "m_c excitedly follows r_c a short distance from camp to begin the promised battle training. r_c says something about how real warriors don't hold back, even in a spar. m_c nods eagerly. {PRONOUN/m_c/subject/CAP} barely {VERB/m_c/have/has} time to duck as r_c's spear whistles past {PRONOUN/m_c/poss} head. The slugpup stumbles backwards, tripping over {PRONOUN/m_c/poss} paws, {PRONOUN/m_c/poss} head landing hard on a rock.",
         "m_c": {
             "age": [
                 "kitten"
@@ -6010,5 +6012,21 @@
             "reg_death": "r_c died when {PRONOUN/r_c/subject} tried to kill m_c and failed."
         }
     ]
-  }
+  },
+    {
+        "event_id": "gen_death_spearfromheaven_any1",
+        "location": ["any"],
+        "season": ["any"],
+        "tags": ["all_lives"],
+        "weight": 20,
+        "event_text": "m_c was out in the territory when a spear dropped from the sky from a kill a vulture had, killing m_c instantly.",
+        "m_c": {
+            "dies": true
+        },
+        "history": [{
+            "cats": ["m_c"],
+            "reg_death": "m_c was killed by a rogue falling spear.",
+            "lead_death": "was killed by a rogue falling spear."
+        }]
+    }
 ]
