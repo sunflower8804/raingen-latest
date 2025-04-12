@@ -84,6 +84,7 @@ class Pelt:
         'Tomo': 'tomo',
         'Whale': 'whale',
         'Pidgeon': 'pidgeon',
+        'Watermelon': 'watermelon',
         'Tortie': None,
         'Calico': None,
     }
@@ -355,6 +356,14 @@ class Pelt:
         "LIMEFLOATYEYES", "GREENFLOATYEYES", "BLUEFLOATYEYES",
         "INDIGOFLOATYEYES"
         ]
+    morespears = [
+        "PURPLEINDIGOPSPEAR", "INDIGOPSPEAR", "PURPLEPSPEAR", "CYANPSPEAR", "BLUEPSPEAR", "BLURCYANPSPEAR",
+        "GAYPSPEAR", "TURQUOISEPSPEAR", "TURQUOISEGREENPSPEAR", "LIMEGREENPSPEAR", "LIMEPSPEAR", "GREYPSPEAR",
+        "GREENPSPEAR", "ORANGEPSPEAR", "REDPSPEAR", "REDPINKPSPEAR", "PURPLEPINKPSPEAR", "PINKPSPEAR",
+        "MAGENTAPINKPSPEAR", "REDPURPLEPSPEAR", "BLUEPURPLEPSPEAR", "ROSEPINKPSPEAR", "GREENYELLOWPSPEAR", "LIMEYELLOWPSPEAR",
+        "YELLOWPSPEAR", "REDFIRESPEAR", "ORANGEFIRESPEAR", "YELLOWFIRESPEAR", "PINKFIRESPEAR", "PURPLEFIRESPEAR",
+        "DARKREDFIRESPEAR", "DARKPINKFIRESPEAR", "DARKORANGEFIRESPEAR", "DARKYELLOWFIRESPEAR"
+        ]
     closest_accs = [
         "CRIMSON", "BLUE", "YELLOW", "CYAN", "RED", "LIME", "GREEN", "RAINBOW",
         "BLACK", "SPIKES", "WHITE", "PINK", "PURPLE", "MULTI", "INDIGO", "CRIMSONBELL", "BLUEBELL",
@@ -404,7 +413,8 @@ class Pelt:
     ]
     spotted = [
         "Speckled", "Rosette", "Gravel", "Banana", "Con", "Bengal", "Dreamer", "Oldgrowth", "Cherry",
-        "Sparse", "Impish", "Ringed", "Mold", "Apple", "Glitter", "Patchwork", "Whale", "Pidgeon"
+        "Sparse", "Impish", "Ringed", "Mold", "Apple", "Glitter", "Patchwork", "Whale", "Pidgeon", 
+        "Watermelon"
     ]
     plain = [
         "SingleColour", "TwoColour", "Smoke", "Singlestripe", "Collared", "Lizard", "Slimemold",
@@ -1114,7 +1124,8 @@ class Pelt:
                 choice(Pelt.neckbandanas),
                 choice(Pelt.chains),
                 choice(Pelt.newaccs3),
-                choice(Pelt.floatyeyes)
+                choice(Pelt.floatyeyes),
+                choice(Pelt.morespears)
             ]))
         else:
             self.accessories = []
