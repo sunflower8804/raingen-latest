@@ -130,7 +130,7 @@ class Sprites:
             'collars', 'bellcollars', 'bowcollars', 'nyloncollars', 'rwlizards', 'drones', 'muddypaws', 
             'herbs2', 'insectwings', 'buddies', 'newaccs', 'bodypaint', 'implant', 'magic', 'necklaces',
             'newaccs2', 'drapery', 'eyepatches', 'pridedrapery', 'larsaccs', 'harleyaccs', 'newaccs3',
-            'floatyeyes',
+            'floatyeyes', 'morespears',
             'featherboas', 'scarves', 'chains', 'neckbandanas',
             'singlecolours', 'speckledcolours', 'tabbycolours', 'bengalcolours', 'marbledcolours',
             'rosettecolours', 'smokecolours', 'tickedcolours', 'mackerelcolours', 'classiccolours',
@@ -146,7 +146,7 @@ class Sprites:
             'fizzycolours', 'skeletoncolours', 'shredcolours', 'glowingcolours', 'moldcolours',
             'swingcolours', 'lovebirdcolours', 'budgiecolours', 'amazoncolours', 'applecolours', 'bobacolours',
             'glittercolours', 'icecolours', 'iggycolours', 'manedcolours', 'patchworkcolours', 'robotcolours',
-            'sunkencolours', 'tomocolours', 'whalecolours', 'pidgeoncolours',
+            'sunkencolours', 'tomocolours', 'whalecolours', 'pidgeoncolours', 'watermeloncolours',
             'raineyes', 'raineyes2', 'multieyes', 'multiraineyes', 'larseyes', 'multilarseyes', 'larseyes2', 
             'rivuleteyes', 'rivuleteyes2', 'buttoneyes', 'buttoneyes2',
             'shadersnewwhite', 'lightingnew',
@@ -342,7 +342,7 @@ class Sprites:
             'fizzycolours', 'skeletoncolours', 'shredcolours', 'glowingcolours', 'moldcolours',
             'swingcolours', 'lovebirdcolours', 'budgiecolours', 'amazoncolours', 'applecolours', 'bobacolours',
             'glittercolours', 'icecolours', 'iggycolours', 'manedcolours', 'patchworkcolours', 'robotcolours',
-            'sunkencolours', 'tomocolours', 'whalecolours', 'pidgeoncolours',
+            'sunkencolours', 'tomocolours', 'whalecolours', 'pidgeoncolours', 'watermeloncolours',
         ]
 
         for row, colors in enumerate(color_categories):
@@ -668,6 +668,15 @@ class Sprites:
             ["INDIGOFLOATYEYES"]
         ]
 
+        morespears_data = [
+            ["PURPLEINDIGOPSPEAR", "INDIGOPSPEAR", "PURPLEPSPEAR", "CYANPSPEAR", "BLUEPSPEAR", "BLURCYANPSPEAR"],
+            ["GAYPSPEAR", "TURQUOISEPSPEAR", "TURQUOISEGREENPSPEAR", "LIMEGREENPSPEAR", "LIMEPSPEAR", "GREYPSPEAR"],
+            ["GREENPSPEAR", "ORANGEPSPEAR", "REDPSPEAR", "REDPINKPSPEAR", "PURPLEPINKPSPEAR", "PINKPSPEAR"],
+            ["MAGENTAPINKPSPEAR", "REDPURPLEPSPEAR", "BLUEPURPLEPSPEAR", "ROSEPINKPSPEAR", "GREENYELLOWPSPEAR", "LIMEYELLOWPSPEAR"],
+            ["YELLOWPSPEAR", "REDFIRESPEAR", "ORANGEFIRESPEAR", "YELLOWFIRESPEAR", "PINKFIRESPEAR", "PURPLEFIRESPEAR"],
+            ["DARKREDFIRESPEAR", "DARKPINKFIRESPEAR", "DARKORANGEFIRESPEAR", "DARKYELLOWFIRESPEAR"]
+        ]
+
         # medcatherbs
         for row, herbs in enumerate(medcatherbs_data):
             for col, herb in enumerate(herbs):
@@ -760,50 +769,66 @@ class Sprites:
         for row, necklaces in enumerate(necklaces_data):
             for col, necklaces in enumerate(necklaces):
                 self.make_group('necklaces', (col, row), f'necklaces{necklaces}')
+                
         #drapery
         for row, drapery in enumerate(drapery_data):
             for col, drapery in enumerate(drapery):
                 self.make_group('drapery', (col, row), f'drapery{drapery}')
+                
         #pridedrapery
         for row, pridedrapery in enumerate(pridedrapery_data):
             for col, pridedrapery in enumerate(pridedrapery):
                 self.make_group('pridedrapery', (col, row), f'pridedrapery{pridedrapery}')
+                
         #eyepatches
         for row, eyepatches in enumerate(eyepatch_data):
             for col, eyepatches in enumerate(eyepatches):
                 self.make_group('eyepatches', (col, row), f'eyepatches{eyepatches}')
+                
         #larsaccs
         for row, larsaccs in enumerate(larsaccs_data):
             for col, larsaccs in enumerate(larsaccs):
                 self.make_group('larsaccs', (col, row), f'larsaccs{larsaccs}')
+                
         #harleyaccs
         for row, harleyaccs in enumerate(harleyaccs_data):
             for col, harleyaccs in enumerate(harleyaccs):
                 self.make_group('harleyaccs', (col, row), f'harleyaccs{harleyaccs}')
+                
         #featherboas
         for row, featherboas in enumerate(featherboas_data):
             for col, featherboas in enumerate(featherboas):
                 self.make_group('featherboas', (col, row), f'featherboas{featherboas}')
+                
         #scarves
         for row, scarves in enumerate(scarves_data):
             for col, scarves in enumerate(scarves):
                 self.make_group('scarves', (col, row), f'scarves{scarves}')
+                
         #neckbandanas
         for row, neckbandanas in enumerate(neckbandanas_data):
             for col, neckbandanas in enumerate(neckbandanas):
                 self.make_group('neckbandanas', (col, row), f'neckbandanas{neckbandanas}')
+                
         #chains
         for row, chains in enumerate(chains_data):
             for col, chains in enumerate(chains):
                 self.make_group('chains', (col, row), f'chains{chains}')
+                
         #newaccs3
         for row, newaccs3 in enumerate(newaccs3_data):
             for col, newaccs3 in enumerate(newaccs3):
                 self.make_group('newaccs3', (col, row), f'newaccs3{newaccs3}')
+                
         #floatyeyes
         for row, floatyeyes in enumerate(floatyeyes_data):
             for col, floatyeyes in enumerate(floatyeyes):
                 self.make_group('floatyeyes', (col, row), f'floatyeyes{floatyeyes}')
+                
+        #morespears
+        for row, morespears in enumerate(morespears_data):
+            for col, morespears in enumerate(morespears):
+                self.make_group('morespears', (col, row), f'morespears{morespears}')
 
     def load_symbols(self):
         """
