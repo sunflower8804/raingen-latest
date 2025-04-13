@@ -2648,5 +2648,175 @@
     "default": "indigo floaty eyes",
     "plural": "multiple indigo floaty eyes",
     "singular": "indigo floaty eyes"
+  },
+  "PURPLEINDIGOPSPEAR": {
+    "default": "purple indigo poison spear",
+    "plural": "purple indigo poison spears",
+    "singular": "purple indigo poison spear"
+  },
+  "INDIGOPSPEAR": {
+    "default": "indigo poison spear",
+    "plural": "indigo poison spears",
+    "singular": "indigo poison spear"
+  },
+  "PURPLEPSPEAR": {
+    "default": "purple poison spear",
+    "plural": "purple poison spears",
+    "singular": "purple poison spear"
+  },
+  "CYANPSPEAR": {
+    "default": "cyan poison spear",
+    "plural": "cyan poison spears",
+    "singular": "cyan poison spear"
+  },
+  "BLUEPSPEAR": {
+    "default": "blue poison spear",
+    "plural": "blue poison spears",
+    "singular": "blue poison spear"
+  },
+  "CYANBLUEPSPEAR": {
+    "default": "cyan blue poison spear",
+    "plural": "cyan blue poison spears",
+    "singular": "cyan blue poison spear"
+  },
+  "GAYPSPEAR": {
+    "default": "rainbow poison spear",
+    "plural": "rainbow poison spears",
+    "singular": "rainbow poison spear"
+  },
+  "TURQUOISEPSPEAR": {
+    "default": "turquoise poison spear",
+    "plural": "turquoise poison spears",
+    "singular": "turquoise poison spear"
+  },
+  "TURQUOISEGREENPSPEAR": {
+    "default": "turquoise green poison spear",
+    "plural": "turquoise green poison spears",
+    "singular": "turquoise green poison spear"
+  },
+  "LIMEGREENPSPEAR": {
+    "default": "lime green poison spear",
+    "plural": "lime green poison spears",
+    "singular": "lime green poison spear"
+  },
+  "LIMEPSPEAR": {
+    "default": "lime poison spear",
+    "plural": "lime poison spears",
+    "singular": "lime poison spear"
+  },
+  "GREYPSPEAR": {
+    "default": "grey poison spear",
+    "plural": "grey poison spears",
+    "singular": "grey poison spear"
+  },
+  "GREENPSPEAR": {
+    "default": "green poison spear",
+    "plural": "green poison spears",
+    "singular": "green poison spear"
+  },
+  "ORANGEPSPEAR": {
+    "default": "orange poison spear",
+    "plural": "orange poison spears",
+    "singular": "orange poison spear"
+  },
+  "REDPSPEAR": {
+    "default": "red poison spear",
+    "plural": "red poison spears",
+    "singular": "red poison spear"
+  },
+  "REDPINKPSPEAR": {
+    "default": "red pink poison spear",
+    "plural": "red pink poison spears",
+    "singular": "red pink poison spear"
+  },
+  "PURPLEPINKPSPEAR": {
+    "default": "purple pink poison spear",
+    "plural": "purple pink poison spears",
+    "singular": "purple pink poison spear"
+  },
+  "PINKPSPEAR": {
+    "default": "pink poison spear",
+    "plural": "pink poison spears",
+    "singular": "pink poison spear"
+  },
+  "MAGENTAPINKPSPEAR": {
+    "default": "magenta pink poison spear",
+    "plural": "magenta pink poison spears",
+    "singular": "magenta pink poison spear"
+  },
+  "REDPURPLEPSPEAR": {
+    "default": "red purple poison spear",
+    "plural": "red purple poison spears",
+    "singular": "red purple poison spear"
+  },
+  "BLUEPURPLEPSPEAR": {
+    "default": "blue purple poison spear",
+    "plural": "blue purple poison spears",
+    "singular": "blue purple poison spear"
+  },
+  "ROSEPINKPSPEAR": {
+    "default": "rose pink poison spear",
+    "plural": "rose pink poison spears",
+    "singular": "rose pink poison spear"
+  },
+  "GREENYELLOWPSPEAR": {
+    "default": "green yellow poison spear",
+    "plural": "green yellow poison spears",
+    "singular": "green yellow poison spear"
+  },
+  "LIMEYELLOWPSPEAR": {
+    "default": "lime yellow poison spear",
+    "plural": "lime yellow poison spears",
+    "singular": "lime yellow poison spear"
+  },
+  "YELLOWPSPEAR": {
+    "default": "yellow poison spear",
+    "plural": "yellow poison spears",
+    "singular": "yellow poison spear"
+  },
+  "REDFIRESPEAR": {
+    "default": "red fire spear",
+    "plural": "red fire spears",
+    "singular": "red fire spear"
+  },
+  "ORANGEFIRESPEAR": {
+    "default": "orange fire spear",
+    "plural": "orange fire spears",
+    "singular": "orange fire spear"
+  },
+  "YELLOWFIRESPEAR": {
+    "default": "yellow fire spear",
+    "plural": "yellow fire spears",
+    "singular": "yellow fire spear"
+  },
+  "PINKFIRESPEAR": {
+    "default": "pink fire spear",
+    "plural": "pink fire spears",
+    "singular": "pink fire spear"
+  },
+  "PURPLEFIRESPEAR": {
+    "default": "purple fire spear",
+    "plural": "purple fire spears",
+    "singular": "purple fire spear"
+  },
+  "DARKREDFIRESPEAR": {
+    "default": "dark red fire spear",
+    "plural": "dark red fire spears",
+    "singular": "dark red fire spear"
+  },
+  "DARKPINKFIRESPEAR": {
+    "default": "dark pink fire spear",
+    "plural": "dark pink fire spears",
+    "singular": "dark pink fire spear"
+  },
+  "DARKORANGEFIRESPEAR": {
+    "default": "dark orange fire spear",
+    "plural": "dark orange fire spears",
+    "singular": "dark orange fire spear"
+  },
+  "DARKYELLOWFIRESPEAR": {
+    "default": "dark yellow fire spear",
+    "plural": "dark yellow fire spears",
+    "singular": "dark yellow fire spear"
   }
 }
