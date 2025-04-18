@@ -85,6 +85,10 @@ class Pelt:
         'Whale': 'whale',
         'Pidgeon': 'pidgeon',
         'Watermelon': 'watermelon',
+        'Dragonet': 'dragonet',
+        'Salmon': 'salmon',
+        'Lightecho': 'lightecho',
+        'Darkecho' : 'darkecho',
         'Tortie': None,
         'Calico': None,
     }
@@ -112,7 +116,7 @@ class Pelt:
                       'CHIMERA', 'DAUB', 'EMBER', 'BLANKET',
                       'ROBIN', 'BRINDLE', 'PAIGE', 'ROSETAIL', 'SAFI', 'SMUDGED', 'DAPPLENIGHT', 'STREAK', 'MASK',
                       'CHEST', 'ARMTAIL', 'SMOKE', 'GRUMPYFACE',
-                      'BRIE', 'BELOVED', 'BODY', 'SHILOH', 'FRECKLED', 'HEARTBEAT', 'SPECKLES', 'TIGER']
+                      'BRIE', 'BELOVED', 'BODY', 'SHILOH', 'FRECKLED', 'HEARTBEAT', 'SPECKLES', 'TIGER', 'SHROOM']
     tortiebases = ['single', 'tabby', 'bengal', 'marbled', 'ticked', 'smoke', 'rosette', 'speckled', 'mackerel',
                 'classic', 'sokoke', 'agouti', 'singlestripe', 'masked', 'gravel', 'collared', 'slimemold',
                 'cyanlizard', 'vulture', 'banana', 'centipede', 'con', 'lizard', 'lantern', 'leviathan',
@@ -120,13 +124,14 @@ class Pelt:
                 'necklace', 'dreamer', 'duskdawn', 'seer', 'rotten', 'fire', 'countershaded', 'sunset', 'oldgrowth', 
                 'sparklecat', 'wolf', 'cherry', 'hypnotist', 'ringed', 'skinny', 'sparse', 'impish', 'sporty', 
                 'skeleton', 'shred', 'glowing', 'mold', 'swing', 'lovebird', 'budgie', 'amazon', 'apple', 'boba',
-                'glitter', 'ice', 'iggy', 'maned', 'patchwork', 'robot', 'sunken', 'tomo', 'whale', 'pidgeon']
+                'glitter', 'ice', 'iggy', 'maned', 'patchwork', 'robot', 'sunken', 'tomo', 'whale', 'pidgeon', 'watermelon',
+                'dragonet', 'salmon', 'lightecho', 'darkecho']
 
     pelt_length = ["short", "medium", "long"]
     eye_colours = ['YELLOW', 'AMBER', 'HAZEL', 'PALEGREEN', 'GREEN', 'BLUE', 'DARKBLUE', 'GREY', 'CYAN', 'EMERALD', 'PALEBLUE', 
         'PALEYELLOW', 'GOLD', 'HEATHERBLUE', 'COPPER', 'SAGE', 'COBALT', 'SUNLITICE', 'GREENYELLOW', 'BRONZE', 'SILVER', 'RED', 'PURPLE', 'MAUVE',
         'ELECTRICBLUE', 'VIOLET', 'PINK', 'SNOW', 'ORANGE', 'CREAM', 'SEAFOAM', 'CRIMSON', 'NAVY', 'VOIDGOLD', 'COOLBROWN', 'PLUM',
-        'INDIGO', 'LILAC', 
+        'INDIGO', 'LILAC', 'ACROBLUE', 'ACROGREEN', 'ACROGREY', 'ACROINDIGO', 'ACROAMBER', 'ACROPINK', 'ACRORED', 'ACROTEAL',
         'ALBA', 'ALBINO', 'ANGEL', 'APPLE', 'AQUA', 'ARID', 'BANANA', 'BLOOD', 'CARNI', 'CHAIN', 
         'CREAMY', 'DAWN', 'ESES', 'EXILE', 'FAE', 'FALLSTAR', 'FIELD', 'FOAM', 'HOT', 'IRID', 
         'KARMA', 'KIND', 'MARTI', 'MEISTALT', 'MEISTER', 'MELON', 'MESS', 'MHUNT', 'MINT', 'MINV', 
@@ -135,13 +140,13 @@ class Pelt:
         'BROWNTBOI', 'ORANGETBOI', 'BREDTBOI', 'REDTBOI'
         ]
     yellow_eyes = ['YELLOW', 'AMBER', 'PALEYELLOW', 'GOLD', 'COPPER', 'GREENYELLOW', 'BRONZE', 'SILVER', 'ORANGE', 'CREAM', 'VOIDGOLD',
-                   'BROWNTBOI', 'ORANGETBOI']
+                   'BROWNTBOI', 'ORANGETBOI', 'ACROAMBER', 'ACROGREY']
     blue_eyes = ['BLUE', 'DARKBLUE', 'CYAN', 'PALEBLUE', 'HEATHERBLUE', 'COBALT', 'SUNLITICE', 'GREY', 'ELECTRICBLUE', 'SNOW', 'INDIGO',
-                 'ANGEL']
+                 'ANGEL', 'ACROBLUE', 'ACROINDIGO']
     green_eyes = ['PALEGREEN', 'GREEN', 'EMERALD', 'SAGE', 'HAZEL', 'SEAFOAM', 'NAVY',
-                  'MESS']
+                  'MESS', 'ACROGREEN', 'ACROTEAL']
     red_eyes = ['RED', 'PURPLE', 'MAUVE', 'VIOLET', 'PINK', 'CRIMSON', 'COOLBROWN', 'PLUM', 'LILAC', 
-                'MINT', 'PEACH', 'ALBINO', 'DAWN', 'BREDTBOI', 'REDTBOI']
+                'MINT', 'PEACH', 'ALBINO', 'DAWN', 'BREDTBOI', 'REDTBOI', 'ACROPINK', 'ACRORED']
     
     riveye_colours = ['RIVYELLOW', 'RIVAMBER', 'RIVHAZEL', 'RIVPALEGREEN', 'RIVGREEN', 'RIVBLUE', 'RIVDARKBLUE', 'RIVGREY', 'RIVCYAN', 'RIVEMERALD', 'RIVPALEBLUE', 
                'RIVPALEYELLOW', 'RIVGOLD', 'RIVHEATHERBLUE', 'RIVCOPPER', 'RIVSAGE', 'RIVCOBALT', 'RIVSUNLITICE', 'RIVGREENYELLOW', 'RIVBRONZE', 'RIVSILVER']
@@ -177,6 +182,8 @@ class Pelt:
                 'MULTIELECTRICBLUE', 'MULTIVIOLET', 'MULTIPINK', 'MULTISNOW',
                 'MULTIORANGE', 'MULTICREAM', 'MULTISEAFOAM', 'MULTICRIMSON', 'MULTINAVY',
                 'MULTIVOIDGOLD', 'MULTICOOLBROWN', 'MULTIPLUM', 'MULTIINDIGO', 'MULTILILAC',
+                'MULTIACROBLUE', 'MULTIACROGREEN', 'MULTIACROGREY', 'MULTIACROINDIGO',
+                'MULTIACROAMBER', 'MULTIACROPINK', 'MULTIACRORED', 'MULTIACROTEAL',
                 'MULTIALBA', 'MULTIALBINO', 'MULTIANGEL', 'MULTIAPPLE', 'MULTIAQUA', 
                 'MULTIARID', 'MULTIBANANA', 'MULTIBLOOD', 'MULTICARNI', 'MULTICHAIN',
                 'MULTICREAMY', 'MULTIDAWN', 'MULTIESES', 'MULTIEXILE', 'MULTIFAE', 
@@ -320,7 +327,9 @@ class Pelt:
     #Harley's accessories, could be merged with other files
     harleyaccs = [
         "FALLENSTARMASK", "TORNCLOAKFALL", "FALLENSTARPAWS", "TORNCLOAKWINTER",
-        "TORNCLOAKNIGHT", "TORNCLOAKSHADOW", "TORNCLOAKSILVER", "FAUXMANE"
+        "TORNCLOAKNIGHT", "TORNCLOAKSHADOW", "TORNCLOAKSILVER", "FAUXMANE",
+        "SLEEPYROBEPURPLE", "SLEEPYROBEGREEN", "SLEEPYROBEBLACK", "SLEEPYROBERED",
+        "SLEEPYROBEBLUE", "SLEEPYROBEFLOAH", "ITERATORPEARLNECKLACE", "AMBERJEWLERY"
     ]
     featherboas = [
         "DPINKFEATHERBOA", "DREDFEATHERBOA", "DGREENFEATHERBOA", "DBLUEFEATHERBOA", "DGREENERFEATHERBOA",
@@ -364,6 +373,16 @@ class Pelt:
         "YELLOWPSPEAR", "REDFIRESPEAR", "ORANGEFIRESPEAR", "YELLOWFIRESPEAR", "PINKFIRESPEAR", "PURPLEFIRESPEAR",
         "DARKREDFIRESPEAR", "DARKPINKFIRESPEAR", "DARKORANGEFIRESPEAR", "DARKYELLOWFIRESPEAR"
         ]
+    flagaccs = [
+        "BLUEFLAG", "COOLFLAG", "GREENFLAG", "GREYFLAG", "ORANGEFLAG",
+        "PINKFLAG", "PURPLEFLAG", "RAINBOWFLAG", "REDFLAG", "SINFLAG",
+        "TEALFLAG", "WARMFLAG", "WHITEFLAG", "YELLOWFLAG"
+    ]
+    haloaccs = [
+        "REDHALO", "ORANGEHALO", "YELLOWHALO", "GREENHALO", "TEALHALO",
+        "CYANHALO", "INDIGOHALO", "BLUEHALO", "PURPLEHALO", "MAGENTAHALO",
+        "PINKHALO", "WHITEHALO", "BLACKHALO"
+    ]
     closest_accs = [
         "CRIMSON", "BLUE", "YELLOW", "CYAN", "RED", "LIME", "GREEN", "RAINBOW",
         "BLACK", "SPIKES", "WHITE", "PINK", "PURPLE", "MULTI", "INDIGO", "CRIMSONBELL", "BLUEBELL",
@@ -387,7 +406,8 @@ class Pelt:
         "DEMIBOYDRAPERY", "DEMIGENDERDRAPERY", "DEMIFLUIDDRAPERY", "DEMIFLUXDRAPERY", "ABRODRAPERY", "ARODRAPERY", "DEMISEXDRAPERY",
         "DEMIRODRAPERY", "ACHILLEANDRAPERY", "SAPPHICDRAPERY", "DIAMORICDRAPERY", "UNLABELEDDRAPERY", "TRANSFEMDRAPERY", "TRANSMASCDRAPERY",
         "BIGENDERDRAPERY", "MULTISEXDRAPERY", "ACESPECDRAPERY", "AROSPECDRAPERY"
-        "TORNCLOAKFALL", "TORNCLOAKWINTER", "TORNCLOAKNIGHT", "TORNCLOAKSHADOW", "TORNCLOAKSILVER", "FALLENSTARMASK",
+        "TORNCLOAKFALL", "TORNCLOAKWINTER", "TORNCLOAKNIGHT", "TORNCLOAKSHADOW", "TORNCLOAKSILVER", "FALLENSTARMASK", "SLEEPYROBEPURPLE",
+        "SLEEPYROBEGREEN", "SLEEPYROBEBLACK", "SLEEPYROBERED", "SLEEPYROBEBLUE", "SLEEPYROBEFLOAH",
         "DPINKFEATHERBOA", "DREDFEATHERBOA", "DGREENFEATHERBOA", "DBLUEFEATHERBOA", "DGREENERFEATHERBOA",
         "DORANGEFEATHERBOA", "LWHITEFEATHERBOA", "LPURPLEFEATHERBOA", "LBLUEFEATHERBOA", "LPINKFEATHERBOA",
         "DMAGENTAFEATHERBOA", "DCRIMSONFEATHERBOA", "DPURPLEFEATHERBOA",
@@ -414,7 +434,7 @@ class Pelt:
     spotted = [
         "Speckled", "Rosette", "Gravel", "Banana", "Con", "Bengal", "Dreamer", "Oldgrowth", "Cherry",
         "Sparse", "Impish", "Ringed", "Mold", "Apple", "Glitter", "Patchwork", "Whale", "Pidgeon", 
-        "Watermelon"
+        "Watermelon", "Lightecho", "Darkecho", "Salmon"
     ]
     plain = [
         "SingleColour", "TwoColour", "Smoke", "Singlestripe", "Collared", "Lizard", "Slimemold",
@@ -424,7 +444,7 @@ class Pelt:
     exotic = [
         "Mackerel", "Marbled", "Cyanlizard", "Centipede", "Lantern", "Amoeba", "Seaslug", "Dragonfruit",
         "Duskdawn", "Seer", "Wolf", "Sparklecat", "Hypnotist", "Fizzy", "Glowing", "Budgie", "Lovebird",
-        "Amazon", "Boba", "Iggy", "Tomo"
+        "Amazon", "Boba", "Iggy", "Tomo", "Dragonet"
     ]
     torties = ["Tortie", "Calico"]
     pelt_categories = [tabbies, spotted, plain, exotic, torties]
@@ -445,7 +465,7 @@ class Pelt:
         'GREY', 'CYAN', 'EMERALD', 'PALEBLUE', 'PALEYELLOW', 'GOLD', 'HEATHERBLUE', 'COPPER', 'SAGE', 'COBALT',
         'SUNLITICE', 'GREENYELLOW', 'BRONZE', 'SILVER', 'RED', 'PURPLE', 'MAUVE',
         'ELECTRICBLUE', 'VIOLET', 'PINK', 'SNOW', 'ORANGE', 'CREAM', 'SEAFOAM', 'CRIMSON', 'NAVY', 'VOIDGOLD', 'COOLBROWN', 'PLUM',
-        'INDIGO', 'LILAC', 
+        'INDIGO', 'LILAC', 'ACROBLUE', 'ACROGREEN', 'ACROGREY', 'ACROINDIGO', 'ACROAMBER', 'ACROPINK', 'ACRORED', 'ACROTEAL',
         'ALBA', 'ALBINO', 'ANGEL', 'APPLE', 'AQUA', 'ARID', 'BANANA', 'BLOOD', 'CARNI', 'CHAIN', 
         'CREAMY', 'DAWN', 'ESES', 'EXILE', 'FAE', 'FALLSTAR', 'FIELD', 'FOAM', 'HOT', 'IRID', 
         'KARMA', 'KIND', 'MARTI', 'MEISTALT', 'MEISTER', 'MELON', 'MESS', 'MHUNT', 'MINT', 'MINV', 
@@ -466,7 +486,8 @@ class Pelt:
                  'VEST',
                  'FADEBELLY', 'DIGIT', 'FCTWO', 'FCONE', 'MIA', 'ROSINA', 'PRINCESS', 'BALLER', 'TREFOIL', 'MANUL',
                  'HEAD', 'SPARSE', 'BADGER', 'BELLY', 'MASK', 'LIGHTNING', 'FROSTBITTEN',
-                 'LIMBS', 'STRIPES', 'SLICE', 'TOONY', 'ACROBAT']
+                 'LIMBS', 'STRIPES', 'SLICE', 'TOONY', 'ACROBAT',
+                 'DEFIBULATOR']
     high_white = ['ANY', 'ANYTWO', 'BROKEN', 'FRECKLES', 'RINGTAIL', 'HALFFACE', 'PANTSTWO',
                   'GOATEE', 'PRINCE', 'FAROFA', 'MISTER', 'PANTS', 'REVERSEPANTS', 'HALFWHITE', 'APPALOOSA', 'PIEBALD',
                   'CURVED', 'GLASS', 'MASKMANTLE', 'MAO', 'PAINTED', 'SHIBAINU', 'OWL', 'BUB', 'SPARROW', 'TRIXIE',
@@ -1125,7 +1146,9 @@ class Pelt:
                 choice(Pelt.chains),
                 choice(Pelt.newaccs3),
                 choice(Pelt.floatyeyes),
-                choice(Pelt.morespears)
+                choice(Pelt.morespears),
+                choice(Pelt.flagaccs),
+                choice(Pelt.haloaccs)
             ]))
         else:
             self.accessories = []
