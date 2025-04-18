@@ -130,7 +130,7 @@ class Sprites:
             'collars', 'bellcollars', 'bowcollars', 'nyloncollars', 'rwlizards', 'drones', 'muddypaws', 
             'herbs2', 'insectwings', 'buddies', 'newaccs', 'bodypaint', 'implant', 'magic', 'necklaces',
             'newaccs2', 'drapery', 'eyepatches', 'pridedrapery', 'larsaccs', 'harleyaccs', 'newaccs3',
-            'floatyeyes', 'morespears',
+            'floatyeyes', 'morespears', 'haloaccs', 'flagaccs',
             'featherboas', 'scarves', 'chains', 'neckbandanas',
             'singlecolours', 'speckledcolours', 'tabbycolours', 'bengalcolours', 'marbledcolours',
             'rosettecolours', 'smokecolours', 'tickedcolours', 'mackerelcolours', 'classiccolours',
@@ -147,6 +147,7 @@ class Sprites:
             'swingcolours', 'lovebirdcolours', 'budgiecolours', 'amazoncolours', 'applecolours', 'bobacolours',
             'glittercolours', 'icecolours', 'iggycolours', 'manedcolours', 'patchworkcolours', 'robotcolours',
             'sunkencolours', 'tomocolours', 'whalecolours', 'pidgeoncolours', 'watermeloncolours',
+            'dragonetcolours', 'salmoncolours', 'darkechocolours', 'lightechocolours',
             'raineyes', 'raineyes2', 'multieyes', 'multiraineyes', 'larseyes', 'multilarseyes', 'larseyes2', 
             'rivuleteyes', 'rivuleteyes2', 'buttoneyes', 'buttoneyes2',
             'shadersnewwhite', 'lightingnew',
@@ -192,7 +193,7 @@ class Sprites:
             self.make_group('raineyes', (a, 0), f'eyes{i}')
             self.make_group('raineyes2', (a, 0), f'eyes2{i}')
         for a, i in enumerate(
-                ['INDIGO', 'LILAC']):
+                ['INDIGO', 'LILAC', 'ACROBLUE', 'ACROGREEN', 'ACROGREY', 'ACROINDIGO', 'ACROAMBER', 'ACROPINK', 'ACRORED', 'ACROTEAL']):
             self.make_group('raineyes', (a, 1), f'eyes{i}')
             self.make_group('raineyes2', (a, 1), f'eyes2{i}')
         #multieyes
@@ -211,7 +212,8 @@ class Sprites:
                  'MULTICOOLBROWN', 'MULTIPLUM']):
             self.make_group('multiraineyes', (a, 0), f'eyes2{i}')
         for a, i in enumerate(
-                ['MULTIINDIGO', 'MULTILILAC']):
+                ['MULTIINDIGO', 'MULTILILAC', 'MULTIACROBLUE', 'MULTIACROGREEN', 'MULTIACROGREY',
+                 'MULTIACROINDIGO', 'MULTIACROAMBER', 'MULTIACROPINK', 'MULTIACRORED', 'MULTIACROTEAL']):
             self.make_group('multiraineyes', (a, 1), f'eyes2{i}')
 
         #lars' eyes
@@ -313,7 +315,8 @@ class Sprites:
             ['REVERSEHEAD', 'HEAD', 'DOTS', 'SPARSE', 'BADGER', 'FIVEPEBBLE', 'BELLY', 'CHARCOAL', 'MASK', 'LIGHTNING',
              'SIAMESE', 'FROSTBITTEN', 'HEX', 'SNOWBELLY'],
             ['LIMBS', 'STRIPES', 'GLOWSTAR', 'STAR', 'SLICE', 'DEADPIXEL', 'ESCAPEE', 'INSPECTOR', 'FACEDOTS', 'TOONY',
-             'ACROBAT', 'WPTEARS', 'ONEEARTIP', 'NOSETIP']
+             'ACROBAT', 'WPTEARS', 'ONEEARTIP', 'NOSETIP'],
+            ['DEFIBULATOR']
         ]
 
         for row, patches in enumerate(white_patches):
@@ -343,6 +346,7 @@ class Sprites:
             'swingcolours', 'lovebirdcolours', 'budgiecolours', 'amazoncolours', 'applecolours', 'bobacolours',
             'glittercolours', 'icecolours', 'iggycolours', 'manedcolours', 'patchworkcolours', 'robotcolours',
             'sunkencolours', 'tomocolours', 'whalecolours', 'pidgeoncolours', 'watermeloncolours',
+            'dragonetcolours', 'salmoncolours', 'darkechocolours', 'lightechocolours'
         ]
 
         for row, colors in enumerate(color_categories):
@@ -357,7 +361,7 @@ class Sprites:
              'GRUMPYFACE'],
             ['MOTTLED', 'SIDEMASK', 'EYEDOT', 'BANDANA', 'PACMAN', 'STREAMSTRIKE', 'SMUDGED', 'DAUB', 'EMBER', 'BRIE'],
             ['ORIOLE', 'ROBIN', 'BRINDLE', 'PAIGE', 'ROSETAIL', 'SAFI', 'DAPPLENIGHT', 'BLANKET', 'BELOVED', 'BODY'],
-            ['SHILOH', 'FRECKLED', 'HEARTBEAT', 'SPECKLES', 'TIGER']
+            ['SHILOH', 'FRECKLED', 'HEARTBEAT', 'SPECKLES', 'TIGER', 'SHROOM']
         ]
 
         for row, masks in enumerate(tortiepatchesmasks):
@@ -625,7 +629,9 @@ class Sprites:
     
         harleyaccs_data = [
             ["FALLENSTARMASK", "TORNCLOAKFALL", "FALLENSTARPAWS", "TORNCLOAKWINTER"],
-            ["TORNCLOAKNIGHT", "TORNCLOAKSHADOW", "TORNCLOAKSILVER", "FAUXMANE"]
+            ["TORNCLOAKNIGHT", "TORNCLOAKSHADOW", "TORNCLOAKSILVER", "FAUXMANE"],
+            ["SLEEPYROBEPURPLE", "SLEEPYROBEGREEN", "SLEEPYROBEBLACK", "SLEEPYROBERED"],
+            ["SLEEPYROBEBLUE", "SLEEPYROBEFLOAH", "ITERATORPEARLNECKLACE", "AMBERJEWLERY"]
         ]
 
         featherboas_data = [
@@ -675,6 +681,18 @@ class Sprites:
             ["MAGENTAPINKPSPEAR", "REDPURPLEPSPEAR", "BLUEPURPLEPSPEAR", "ROSEPINKPSPEAR", "GREENYELLOWPSPEAR", "LIMEYELLOWPSPEAR"],
             ["YELLOWPSPEAR", "REDFIRESPEAR", "ORANGEFIRESPEAR", "YELLOWFIRESPEAR", "PINKFIRESPEAR", "PURPLEFIRESPEAR"],
             ["DARKREDFIRESPEAR", "DARKPINKFIRESPEAR", "DARKORANGEFIRESPEAR", "DARKYELLOWFIRESPEAR"]
+        ]
+
+        flagaccs_data = [
+            ["BLUEFLAG", "COOLFLAG", "GREENFLAG", "GREYFLAG", "ORANGEFLAG"],
+            ["PINKFLAG", "PURPLEFLAG", "RAINBOWFLAG", "REDFLAG", "SINFLAG"],
+            ["TEALFLAG", "WARMFLAG", "WHITEFLAG", "YELLOWFLAG"]
+        ]
+
+         haloaccs_data = [
+            ["REDHALO", "ORANGEHALO", "YELLOWHALO", "GREENHALO", "TEALHALO"],
+            ["CYANHALO", "INDIGOHALO", "BLUEHALO", "PURPLEHALO", "MAGENTAHALO"],
+            ["PINKHALO", "WHITEHALO", "BLACKHALO"]
         ]
 
         # medcatherbs
@@ -829,6 +847,16 @@ class Sprites:
         for row, morespears in enumerate(morespears_data):
             for col, morespears in enumerate(morespears):
                 self.make_group('morespears', (col, row), f'morespears{morespears}')
+
+        #flagaccs
+        for row, flagaccs in enumerate(flagaccs_data):
+            for col, flagaccs in enumerate(flagaccs):
+                self.make_group('flagaccs', (col, row), f'flagaccs{flagaccs}')
+
+        #haloaccs
+        for row, haloaccs in enumerate(haloaccs_data):
+            for col, haloaccs in enumerate(haloaccs):
+                self.make_group('haloaccs', (col, row), f'haloaccs{haloaccs}')
 
     def load_symbols(self):
         """
