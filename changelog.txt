@@ -1,39 +1,54 @@
-<strong>Current Dev</strong>
+<strong>v1.6</strong>
+
+!!NOTE THERE ARE WATCHER SPOILERS HERE NOW, WORKING ON A SETTING TO CHANGE THIS THOUGH!!
+
 Added:
-- 4 new eye colours
+- 12 new eye colours
   - TBOI Brown, TBOI Orange, TBOI red, TBOI red & black, concepts by Lars, sprites by Mimalot, multi eye & heterochromia sprites by Cosmonaught
-- 9 new scars
+  - Acro Eye Colors by Mimalot, multi eye & heterochromia sprites by Squid Say Moo
+- 10 new scars
   - Vulture Shoulder and Cheek Cut by Foxett
   - Patchwork and Spear Wound by Starcatcher
   - 4 new arti face scars, currently unknown who made them!
-  - Miros Nom by Cosmonaught
-- 8 Unique Accessories (91 in total)
+  - Miros Nom & Blizzard Lizard Blast by Cosmonaught
+- 15 Unique Accessories (159 in total)
   - 55 Neck Bandanas by Squid Say Moo
   - 10 Chains, and 4 Cloud Covers by Squid Say Moo
   - 3 Murder Paints, Suspicious Key, 7 Floaty Eyes, and 7 Gradiant Neck Bandanas, by Mimalot
   - Goggles, and 3 Pole Plant Buddies by Foxett
+  - 9 Fire Spears by ___
+  - 25 Poison Spears by ___
+  - 13 Halos by Squid Say Moo
+  - 14 Flags by ___
+  - 4 Fluffy Cloaks, Amber Jewlery, Iterator Pearl Necklace by Harley
+  - Orange (FLOAH) Fluffy Cloak by Mimalot
 - 15 New Body Parts
   - Firebug Parts, Sea Angel Wings, Leaf Sheep Back, Sea Bunny Papillae, Glass Back, 7 Orbitals, and Teary, by Mimalot
   - 2 Thorns by Starcatcher
-- 16 New Pelts
+- 20 New Pelts
   - Robot, Boba, and Constellation by Mimalot (revisions by Squid Say Moo)
-  - Lovebird, Budgie, Patchwork, Sunken (concept by Flamedash), Glitter (concept by Lars), Iggy (concept by Lars), Amazon, Tomo, Apple, and Malibu by Squid Say Moo
-  - Ice, Whale (concept by Lars), and Maned (concept by Lars), by Foxett
-- 31 New White & Tortie Patches
-  - Lightning, Mask, Charcoal, Belly, Five Pebbles, Badger, Escapee, Dead Pixel, Stripes, Limbs, Snowbelly, Hex, Frostbitten, Hermes, and 1 others by Foxett
+  - Lovebird, Budgie, Patchwork, Sunken (concept by Flamedash), Glitter (concept by Lars), Iggy (concept by Lars), Amazon, Tomo, Apple, Malibu, Dragonet, and Salmon by Squid Say Moo
+  - Ice, Whale (concept by Lars), Maned (concept by Lars), Light/Dark Echo by Foxett
+- 33 New White & Tortie Patches
+  - Lightning, Mask, Charcoal, Belly, Five Pebbles, Badger, Escapee, Dead Pixel, Stripes, Limbs, Snowbelly, Hex, Frostbitten, Hermes, Shroom, and 1 others by Foxett
   - Sparse, and 2 Chest Stars by Squid Say Moo
-  - 12 Patches by Starcatcher
+  - 13 Patches by Starcatcher
   - Toony by Mimalot
+- A handful of new events for accessories, plus a new death event
 
 Fixed:
 - Sparse pelt missing, sprite sheet revision by Squid Say Moo
 - Implants edited, rarefraction cell overlay issue by Harley
 - Improved Inv bomb sprite by Harley
+- Major sprite improvements/fixes across the board by Harley
+- Fixed torti patches and scars that were not registered in the code
+- Various pelt sprite revisions
+- Changed Loveskies to be known as Starcatcher in credits
 
 <strong>v1.5.2</strong>
 Added:
 - bog moss and symbiotic plants by Foxett
-- catfish and dragon whiskers bu Squid Say Moo
+- catfish and dragon whiskers by Squid Say Moo
 - updated inv egg and implant accessories by Harley
 - more accessories can now be obtained from events
 - you can get lantern mouse friends on patrols
