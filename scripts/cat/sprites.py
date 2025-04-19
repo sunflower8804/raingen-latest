@@ -148,7 +148,7 @@ class Sprites:
             'glittercolours', 'icecolours', 'iggycolours', 'manedcolours', 'patchworkcolours', 'robotcolours',
             'sunkencolours', 'tomocolours', 'whalecolours', 'pidgeoncolours', 'watermeloncolours',
             'dragonetcolours', 'salmoncolours', 'darkechocolours', 'lightechocolours', 'plantaincolours',
-            'daenixcolours', 'seltzercolours', 'sworncolours',
+            'daenixcolours', 'seltzercolours', 'sworncolours', 'spookycolours',
             'raineyes', 'raineyes2', 'multieyes', 'multiraineyes', 'larseyes', 'multilarseyes', 'larseyes2', 
             'rivuleteyes', 'rivuleteyes2', 'buttoneyes', 'buttoneyes2', 'bobaeyes', 'bobaeyes2', 'bobaeyeslars',
             'bobaeyeslars2',
@@ -394,7 +394,7 @@ class Sprites:
              'ACROBAT', 'WPTEARS', 'ONEEARTIP', 'NOSETIP'],
             ['DEFIBULATOR', 'WOLFX', 'TICKEDSPOTS', 'SHREDPATCH', 'TICKEDSTRIPE', 'SHREDONE', 'WOLFINSIDE', 'TICKEDSPOTSSTRIPE',
              'SHREDTWO', 'WOLFOUTSIDETWO', 'TICKEDONE', 'WOLDOUTSIDEONE', 'TICKEDTWO', 'WOLFFILLONE'],
-            ['TICKEDFILLONE', 'WOLFFILLTWO', 'TICKEDFILLTWO', 'TICKEDFILLTHREE', 'TREEFROG', 'GLOWWOLFX', 'ECHOBELLY']
+            ['TICKEDFILLONE', 'WOLFFILLTWO', 'TICKEDFILLTWO', 'TICKEDFILLTHREE', 'TREEFROG', 'GLOWWOLFX', 'ECHOBELLY', 'SPOOKYBONES']
         ]
 
         for row, patches in enumerate(white_patches):
