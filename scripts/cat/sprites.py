@@ -347,24 +347,24 @@ class Sprites:
         #lars' colors boba eyes
         for a, i in enumerate(
                 ['BOBAALBA', 'BOBAALBINO', 'BOBAANGEL', 'BOBAAPPLE', 'BOBAAQUA', 'BOBAARID', 'BOBABANANA', 'BOBABLOOD', 'BOBACARNI', 'BOBACHAIN']):
-            self.make_group('bobaeyelars', (a, 0), f'eyes{i}')
-            self.make_group('larseyes2', (a, 0), f'eyes2{i}')
+            self.make_group('bobaeyeslars', (a, 0), f'eyes{i}')
+            self.make_group('bobaeyeslars2', (a, 0), f'eyes2{i}')
         for a, i in enumerate(
                 ['BOBACREAMY', 'BOBADAWN', 'BOBAESES', 'BOBAEXILE', 'BOBAFAE', 'BOBAFALLSTAR', 'BOBAFIELD', 'BOBAFOAM', 'BOBAHOT', 'BOBAIRID']):
-            self.make_group('larseyes', (a, 1), f'eyes{i}')
-            self.make_group('larseyes2', (a, 1), f'eyes2{i}')
+            self.make_group('bobaeyeslars', (a, 1), f'eyes{i}')
+            self.make_group('bobaeyeslars2', (a, 1), f'eyes2{i}')
         for a, i in enumerate(
                 ['BOBAKARMA', 'BOBAKIND', 'BOBAMARTI', 'BOBAMEISTALT', 'BOBAMHUNT', 'BOBAMELON', 'BOBAMESS', 'BOBAMEISTER', 'BOBAMINT', 'BOBAMINV']):
-            self.make_group('larseyes', (a, 2), f'eyes{i}')
-            self.make_group('larseyes2', (a, 2), f'eyes2{i}')
+            self.make_group('bobaeyeslars', (a, 2), f'eyes{i}')
+            self.make_group('bobaeyeslars2', (a, 2), f'eyes2{i}')
         for a, i in enumerate(
                 ['BOBAMOON', 'BOBAMRIV', 'BOBAPEACH', 'BOBAPEBB', 'BOBAPELA', 'BOBAPEPPER', 'BOBARETRO', 'BOBARUNT', 'BOBARUST', 'BOBASIG']):
-            self.make_group('larseyes', (a, 3), f'eyes{i}')
-            self.make_group('larseyes2', (a, 3), f'eyes2{i}')
+            self.make_group('bobaeyeslars', (a, 3), f'eyes{i}')
+            self.make_group('bobaeyeslars2', (a, 3), f'eyes2{i}')
         for a, i in enumerate(
                 ['BOBASIXER', 'BOBASPLIT', 'BOBASUN', 'BOBASWEET', 'BOBATIDE', 'BOBAVIVID', 'BOBAWAVE', 'BOBAWINKS', 'BOBAZENI', 'BOBABEAST']):
-            self.make_group('larseyes', (a, 4), f'eyes{i}')
-            self.make_group('larseyes2', (a, 4), f'eyes2{i}')
+            self.make_group('bobaeyeslars', (a, 4), f'eyes{i}')
+            self.make_group('bobaeyeslars2', (a, 4), f'eyes2{i}')
         
         # Define white patches
         white_patches = [
