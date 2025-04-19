@@ -187,6 +187,7 @@
 		"base_multieyes": 50,
 		"base_riveyes": 20,
 		"base_buttoneyes": 50,
+		"base_bobaeyes": 17,
 		"direct_inheritance": 15,
 		"wildcard_tortie": 9,
 		"vit_chance": 8,
