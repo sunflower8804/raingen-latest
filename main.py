@@ -183,7 +183,7 @@ game.rpc = _DiscordRPC("1076277970060185701", daemon=True)
 game.rpc.start()
 game.rpc.start_rpc.set()
 
-somenumber = randrange(1,7)
+somenumber = randrange(1,8)
 
 # LOAD cats & clan
 finished_loading = False
@@ -276,6 +276,14 @@ def loading_animation(scale: float = 1):
             images.append(im)
     elif somenumber == 6:
         for i in range(1, 17):
+            im = pygame.transform.scale_by(
+                pygame.image.load(f"resources/images/loading_animate/startup/{somenumber}/{i}.png"),
+                screen_scale,
+            )
+            im.blit(color, (0, 0), special_flags=pygame.BLEND_RGBA_MULT)
+            images.append(im)
+    elif somenumber == 7:
+        for i in range(1, 13):
             im = pygame.transform.scale_by(
                 pygame.image.load(f"resources/images/loading_animate/startup/{somenumber}/{i}.png"),
                 screen_scale,

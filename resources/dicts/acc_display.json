@@ -2648,5 +2648,40 @@
     "default": "indigo floaty eyes",
     "plural": "multiple indigo floaty eyes",
     "singular": "indigo floaty eyes"
+  },
+  "ORANGEORBITAL": {
+    "default": "orange orbital",
+    "plural": "orange orbitals",
+    "singular": "orange orbital"
+  },
+  "YELLOWORBITAL": {
+    "default": "yellow orbital",
+    "plural": "yellow orbitals",
+    "singular": "yellow orbital"
+  },
+  "EARTHORBITAL": {
+    "default": "earth orbital",
+    "plural": "earth orbitals",
+    "singular": "earth orbital"
+  },
+  "EARTHTWOORBITAL": {
+    "default": "earth orbital",
+    "plural": "earth orbitals",
+    "singular": "earth orbital"
+  },
+  "PURPLEORBITAL": {
+    "default": "purple orbital",
+    "plural": "purple orbitals",
+    "singular": "purple orbital"
+  },
+  "PINKORBITAL": {
+    "default": "pink orbital",
+    "plural": "pink orbitals",
+    "singular": "pink orbital"
+  },
+  "REDORBITAL": {
+    "default": "red orbital",
+    "plural": "red orbitals",
+    "singular": "red orbital"
   }
 }

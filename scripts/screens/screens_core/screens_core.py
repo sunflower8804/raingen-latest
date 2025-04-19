@@ -144,7 +144,7 @@ def rebuild_core(*, should_rebuild_bgs=True):
         },
     )
     # it has to be at least 193 to make "cats outside the clan" fit
-    heading_rect = ui_scale(pygame.Rect((0, 0), (193, 35)))
+    heading_rect = ui_scale(pygame.Rect((0, 0), (250, 35)))
     heading_rect.bottomleft = ui_scale_offset((0, 1))  # yes, this is intentional.
     menu_buttons["heading"] = pygame_gui.elements.UITextBox(
         "",

@@ -438,6 +438,8 @@ class ProfileScreen(Screens):
                                 self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['floatyeyes' + accessory + cat_sprite], manager=MANAGER)
                             elif accessory in cat.pelt.neckbandanas:
                                 self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['neckbandanas' + accessory + cat_sprite], manager=MANAGER)
+                            elif accessory in cat.pelt.orbitals:
+                                self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['orbitals' + accessory + cat_sprite], manager=MANAGER)
                             pos_x += 60
                             if pos_x >= 600:
                                 pos_x = 5
@@ -806,6 +808,8 @@ class ProfileScreen(Screens):
                                     self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['floatyeyes' + accessory + cat_sprite], manager=MANAGER)
                                 elif accessory in cat.pelt.neckbandanas:
                                     self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['neckbandanas' + accessory + cat_sprite], manager=MANAGER)
+                                elif accessory in cat.pelt.orbitals:
+                                    self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['orbitals' + accessory + cat_sprite], manager=MANAGER)
                                 pos_x += 60
                                 if pos_x >= 600:
                                     pos_x = 5
@@ -1179,6 +1183,169 @@ class ProfileScreen(Screens):
         output += "fur length: " + the_cat.pelt.length
         # NEWLINE ----------
 
+
+
+        # FEATURES
+        #god forgive me
+        #i do not know a better way to do this
+        if the_cat.pelt.skin not in the_cat.pelt.empty:
+            output += "\n"
+            featurename = "feature: " + the_cat.pelt.skin.lower()
+
+            #gills
+            if the_cat.pelt.skin in the_cat.pelt.gills:
+                featurename = featurename.replace("gills", " gills")
+                output += featurename
+
+            #tongues
+            elif the_cat.pelt.skin in the_cat.pelt.tongues:
+                featurename = featurename.replace("tongue", " tongue")
+                output += featurename
+                
+            #spearholes
+            elif the_cat.pelt.skin in the_cat.pelt.spearholes:
+                featurename = featurename.replace("mix", "black & white")
+                featurename = featurename.replace("spots", " tail spots")
+                output += featurename
+
+            #claws
+            elif the_cat.pelt.skin in the_cat.pelt.claws:
+                featurename = featurename.replace("claws", " claws")
+                output += featurename
+                
+            #antennae
+            elif the_cat.pelt.skin in the_cat.pelt.antennae:
+                output += "feature: antennae"
+                
+            #glowspots
+            elif the_cat.pelt.skin in the_cat.pelt.glowspots:
+                output += "feature: glowing tail spots"
+                
+            #ramhorns
+            elif the_cat.pelt.skin in the_cat.pelt.ramhorns:
+                featurename = featurename.replace("hornsram", " ram horns")
+                output += featurename
+                
+            #scavhorns
+            elif the_cat.pelt.skin in the_cat.pelt.scavhorns:
+                featurename = featurename.replace("hornsscav", " scav antlers")
+                output += featurename
+                
+            #elitehorns
+            elif the_cat.pelt.skin in the_cat.pelt.elitehorns:
+                featurename = featurename.replace("hornselite", " elite scav antlers")
+                output += featurename
+                
+            #sharphorns
+            elif the_cat.pelt.skin in the_cat.pelt.sharphorns:
+                featurename = featurename.replace("hornssharp", " horns")
+                output += featurename
+                
+            #dragonhorns
+            elif the_cat.pelt.skin in the_cat.pelt.dragonhorns:
+                featurename = featurename.replace("hornsdragon", " dragon horns")
+                output += featurename
+                
+            #unihorns
+            elif the_cat.pelt.skin in the_cat.pelt.unihorns:
+                featurename = featurename.replace("hornslancer", " lancer horn")
+                output += featurename
+                
+            #moth
+            elif the_cat.pelt.skin in the_cat.pelt.moth:
+                featurename = featurename.replace("moth", " moth feelers")
+                output += featurename
+                
+            #whiskers
+            elif the_cat.pelt.skin in the_cat.pelt.whiskers:
+                featurename = featurename.replace("whiskers", " whiskers")
+                output += featurename
+                
+            #lizardfins
+            elif the_cat.pelt.skin in the_cat.pelt.lizardfins:
+                featurename = featurename.replace("fins", " fins")
+                output += featurename
+                
+            #lizardneedles
+            elif the_cat.pelt.skin in the_cat.pelt.lizardneedles:
+                featurename = featurename.replace("needles", " needles")
+                output += featurename
+                
+            #catfish_whiskers
+            elif the_cat.pelt.skin in the_cat.pelt.catfish_whiskers:
+                featurename = featurename.replace("catfishwhiskers", " catfish whiskers")
+                output += featurename
+                
+            #dragon_whiskers
+            elif the_cat.pelt.skin in the_cat.pelt.dragon_whiskers:
+                featurename = featurename.replace("dragonwhiskers", " dragon whiskers")
+                output += featurename
+
+            #cyanwings
+            elif the_cat.pelt.skin in the_cat.pelt.cyanwings:
+                featurename = featurename.replace("wings", " lizard wings")
+                output += featurename
+                
+            #cyanfeatures
+            elif the_cat.pelt.skin in the_cat.pelt.cyanfeatures:
+                featurename = featurename.replace("dark", "dark ")
+                featurename = featurename.replace("pinker", "pink")
+                featurename = featurename.replace("egg", "cream")
+                featurename = featurename.replace("cyancyan", "cyan")
+                featurename = featurename.replace("cyan", " cyan lizard tail & rings")
+                output += featurename
+                
+            #anglerfish
+            elif the_cat.pelt.skin in the_cat.pelt.anglerfish:
+                featurename = featurename.replace("h", "h thingy")
+                output += featurename
+                
+            #spikes
+            elif the_cat.pelt.skin in the_cat.pelt.spikes:
+                featurename = featurename.replace("spikes", " spikes")
+                output += featurename
+                
+            #tailfrills
+            elif the_cat.pelt.skin in the_cat.pelt.tailfrills:
+                featurename = featurename.replace("tailfrills", " tail frills")
+                output += featurename
+                
+            #quills
+            elif the_cat.pelt.skin in the_cat.pelt.quills:
+                featurename = featurename.replace("quills", " quills")
+                output += featurename
+                
+            #firebugpart
+            elif the_cat.pelt.skin in the_cat.pelt.firebugpart:
+                output += "feature: firebug antennae"
+
+            #seaangelwings
+            elif the_cat.pelt.skin in the_cat.pelt.seaangelwings:
+                output += "feature: sea angel wings"
+                
+            #grasssheepback
+            elif the_cat.pelt.skin in the_cat.pelt.grasssheepback:
+                output += "feature: grass sheep back"
+                
+            #glassback
+            elif the_cat.pelt.skin in the_cat.pelt.glassback:
+                output += "feature: molten glass back"
+                
+            #seaslugpapillae
+            elif the_cat.pelt.skin in the_cat.pelt.seaslugpapillae:
+                output += "feature: sea slug papillae"
+                
+            #familiar
+            elif the_cat.pelt.skin in the_cat.pelt.familiar:
+                featurename = featurename.replace("familiarmark", "something familiar")
+                output += featurename
+                
+            else:
+                output += featurename
+            # NEWLINE ----------
+
+
+
         # ACCESSORY
         if the_cat.pelt.accessories:
             if len(the_cat.pelt.accessories) > 0:
@@ -1197,25 +1364,6 @@ class ProfileScreen(Screens):
                 ACC_DISPLAY[the_cat.pelt.accessory]["default"]
             )
             # NEWLINE ----------
-
-        # PARENTS
-        all_parents = [Cat.fetch_cat(i) for i in the_cat.get_parents()]
-        if all_parents:
-            output += "\n"
-            if len(all_parents) == 1:
-                output += "parent: " + str(all_parents[0].name)
-            elif len(all_parents) > 2:
-                output += (
-                    "parents: "
-                    + ", ".join([str(i.name) for i in all_parents[:2]])
-                    + f", and {len(all_parents) - 2} "
-                )
-                if len(all_parents) - 2 == 1:
-                    output += "other"
-                else:
-                    output += "others"
-            else:
-                output += "parents: " + ", ".join([str(i.name) for i in all_parents])
 
         # MOONS
         output += "\n"
@@ -1396,6 +1544,26 @@ class ProfileScreen(Screens):
             else:
                 bs_text = "Clanborn"
         output += f"backstory: {bs_text}"
+        
+        # PARENTS
+        all_parents = [Cat.fetch_cat(i) for i in the_cat.get_parents()]
+        if all_parents:
+            output += "\n"
+            if len(all_parents) == 1:
+                output += "parent: " + str(all_parents[0].name)
+            elif len(all_parents) > 2:
+                output += (
+                    "parents: "
+                    + ", ".join([str(i.name) for i in all_parents[:2]])
+                    + f", and {len(all_parents) - 2} "
+                )
+                if len(all_parents) - 2 == 1:
+                    output += "other"
+                else:
+                    output += "others"
+            else:
+                output += "parents: " + ", ".join([str(i.name) for i in all_parents])
+
         # NEWLINE ----------
         output += "\n"
 
@@ -2727,7 +2895,9 @@ class ProfileScreen(Screens):
                             self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['floatyeyes' + accessory + cat_sprite], manager=MANAGER)
                         elif accessory in cat.pelt.neckbandanas:
                             self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['neckbandanas' + accessory + cat_sprite], manager=MANAGER)
-
+                        elif accessory in cat.pelt.orbitals:
+                            self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['orbitals' + accessory + cat_sprite], manager=MANAGER)
+                        
                         self.accessories_list.append(accessory)
                         pos_x += 60
                         if pos_x >= 600:

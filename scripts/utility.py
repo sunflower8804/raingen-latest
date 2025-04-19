@@ -2887,6 +2887,8 @@ def generate_sprite(
                             new_sprite.blit(sprites.sprites['newaccs3' + i + cat_sprite], (0, 0))
                         elif i in cat.pelt.floatyeyes:
                             new_sprite.blit(sprites.sprites['floatyeyes' + i + cat_sprite], (0, 0))
+                        elif i in cat.pelt.orbitals:
+                            new_sprite.blit(sprites.sprites['orbitals' + i + cat_sprite], (0, 0))
                     #THIS SECTION ABOVE IS ONLY FOR CLOSE-TO-BODY ACCESSORIES
 
                     except:
@@ -2972,6 +2974,8 @@ def generate_sprite(
                             new_sprite.blit(sprites.sprites['newaccs3' + i + cat_sprite], (0, 0))
                         elif i in cat.pelt.floatyeyes:
                             new_sprite.blit(sprites.sprites['floatyeyes' + i + cat_sprite], (0, 0))
+                        elif i in cat.pelt.orbitals:
+                            new_sprite.blit(sprites.sprites['orbitals' + i + cat_sprite], (0, 0))
 
                     except:
                         continue

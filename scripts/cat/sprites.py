@@ -444,14 +444,6 @@ class Sprites:
         for a, i in enumerate(['BLUESPIKES', 'PURPLESPIKES', 'PINKSPIKES', 'REDSPIKES', 'ORANGESPIKES']):
             self.make_group('datagamesstuff', (a, 3), f"skin{i}")
 
-        # orbitals spritesheet
-        for a, i in enumerate(['ORANGEORBITAL', 'YELLOWORBITAL', 'EARTHORBITAL']):
-            self.make_group('orbitals', (a, 0), f"skin{i}")
-        for a, i in enumerate(['EARTHTWOORBITAL', 'PURPLEORBITAL', 'PINKORBITAL']):
-            self.make_group('orbitals', (a, 1), f"skin{i}")
-        for a, i in enumerate(['REDORBITAL']):
-            self.make_group('orbitals', (a, 2), f"skin{i}")
-
 
         self.load_scars()
         self.load_symbols()
@@ -668,6 +660,12 @@ class Sprites:
             ["INDIGOFLOATYEYES"]
         ]
 
+        orbitals_data = [
+            ['ORANGEORBITAL', 'YELLOWORBITAL', 'EARTHORBITAL'],
+            ['EARTHTWOORBITAL', 'PURPLEORBITAL', 'PINKORBITAL'], 
+            ['REDORBITAL']
+        ]
+
         # medcatherbs
         for row, herbs in enumerate(medcatherbs_data):
             for col, herb in enumerate(herbs):
@@ -804,6 +802,10 @@ class Sprites:
         for row, floatyeyes in enumerate(floatyeyes_data):
             for col, floatyeyes in enumerate(floatyeyes):
                 self.make_group('floatyeyes', (col, row), f'floatyeyes{floatyeyes}')
+        #orbitals
+        for row, orbitals in enumerate(orbitals_data):
+            for col, orbitals in enumerate(orbitals):
+                self.make_group('orbitals', (col, row), f'orbitals{orbitals}')
 
     def load_symbols(self):
         """

@@ -387,7 +387,7 @@
         "misc": {"text_horiz_alignment": "center"}
     },
     "#text_box_34_horizcenter_vertcenter": {
-        "prototype": "#text_box_34",
+        "prototype": "#text_box_34", "font": {"size": "17", "name": "clangen"},
         "misc": {"text_horiz_alignment": "center", "text_vert_alignment": "center"}
     },
     "#text_box_34_horizleft": {
