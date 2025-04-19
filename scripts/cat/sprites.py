@@ -332,6 +332,40 @@ class Sprites:
             self.make_group('buttoneyes', (a, 2), f'eyes{i}')
             self.make_group('buttoneyes2', (a, 2), f'eyes2{i}')
 
+        #boba eyes
+        for a, i in enumerate(
+               ['BOBAYELLOW', 'BOBAAMBER', 'BOBAHAZEL', 'BOBAPALEGREEN', 'BOBAGREEN', 'BOBABLUE',
+               'BOBADARKBLUE', 'BOBAGREY', 'BOBACYAN', 'BOBAEMERALD', 'BOBAHEATHERBLUE', 'BOBASUNLITICE']):
+            self.make_group('bobaeyes', (a, 0), f'eyes{i}')
+            self.make_group('bobaeyes2', (a, 0), f'eyes2{i}')
+        for a, i in enumerate(
+               ['BOBACOPPER', 'BOBASAGE', 'BOBACOBALT', 'BOBAPALEBLUE', 'BOBABRONZE', 'BOBASILVER',
+               'BOBAPALEYELLOW', 'BOBAGOLD', 'BOBAGREENYELLOW', 'BOBARED', 'BOBAPURPLE', 'BOBAMAUVE']):
+            self.make_group('bobaeyes', (a, 1), f'eyes{i}')
+            self.make_group('bobaeyes2', (a, 1), f'eyes2{i}')
+
+        #lars' colors boba eyes
+        for a, i in enumerate(
+                ['BOBAALBA', 'BOBAALBINO', 'BOBAANGEL', 'BOBAAPPLE', 'BOBAAQUA', 'BOBAARID', 'BOBABANANA', 'BOBABLOOD', 'BOBACARNI', 'BOBACHAIN']):
+            self.make_group('bobaeyelars', (a, 0), f'eyes{i}')
+            self.make_group('larseyes2', (a, 0), f'eyes2{i}')
+        for a, i in enumerate(
+                ['BOBACREAMY', 'BOBADAWN', 'BOBAESES', 'BOBAEXILE', 'BOBAFAE', 'BOBAFALLSTAR', 'BOBAFIELD', 'BOBAFOAM', 'BOBAHOT', 'BOBAIRID']):
+            self.make_group('larseyes', (a, 1), f'eyes{i}')
+            self.make_group('larseyes2', (a, 1), f'eyes2{i}')
+        for a, i in enumerate(
+                ['BOBAKARMA', 'BOBAKIND', 'BOBAMARTI', 'BOBAMEISTALT', 'BOBAMHUNT', 'BOBAMELON', 'BOBAMESS', 'BOBAMEISTER', 'BOBAMINT', 'BOBAMINV']):
+            self.make_group('larseyes', (a, 2), f'eyes{i}')
+            self.make_group('larseyes2', (a, 2), f'eyes2{i}')
+        for a, i in enumerate(
+                ['BOBAMOON', 'BOBAMRIV', 'BOBAPEACH', 'BOBAPEBB', 'BOBAPELA', 'BOBAPEPPER', 'BOBARETRO', 'BOBARUNT', 'BOBARUST', 'BOBASIG']):
+            self.make_group('larseyes', (a, 3), f'eyes{i}')
+            self.make_group('larseyes2', (a, 3), f'eyes2{i}')
+        for a, i in enumerate(
+                ['BOBASIXER', 'BOBASPLIT', 'BOBASUN', 'BOBASWEET', 'BOBATIDE', 'BOBAVIVID', 'BOBAWAVE', 'BOBAWINKS', 'BOBAZENI', 'BOBABEAST']):
+            self.make_group('larseyes', (a, 4), f'eyes{i}')
+            self.make_group('larseyes2', (a, 4), f'eyes2{i}')
+        
         # Define white patches
         white_patches = [
             ['FULLWHITE', 'ANY', 'TUXEDO', 'LITTLE', 'COLOURPOINT', 'VAN', 'ANYTWO', 'MOON', 'PHANTOM', 'POWDER',
@@ -358,7 +392,9 @@ class Sprites:
              'SIAMESE', 'FROSTBITTEN', 'HEX', 'SNOWBELLY'],
             ['LIMBS', 'STRIPES', 'GLOWSTAR', 'STAR', 'SLICE', 'DEADPIXEL', 'ESCAPEE', 'INSPECTOR', 'FACEDOTS', 'TOONY',
              'ACROBAT', 'WPTEARS', 'ONEEARTIP', 'NOSETIP'],
-            ['DEFIBULATOR']
+            ['DEFIBULATOR', 'WOLFX', 'TICKEDSPOTS', 'SHREDPATCH', 'TICKEDSTRIPE', 'SHREDONE', 'WOLFINSIDE', 'TICKEDSPOTSSTRIPE',
+             'SHREDTWO', 'WOLFOUTSIDETWO', 'TICKEDONE', 'WOLDOUTSIDEONE', 'TICKEDTWO', 'WOLFFILLONE'],
+            ['TICKEDFILLONE', 'WOLFFILLTWO', 'TICKEDFILLTWO', 'TICKEDFILLTHREE', 'TREEFROG', 'GLOWWOLFX', 'ECHOBELLY']
         ]
 
         for row, patches in enumerate(white_patches):
@@ -388,7 +424,8 @@ class Sprites:
             'swingcolours', 'lovebirdcolours', 'budgiecolours', 'amazoncolours', 'applecolours', 'bobacolours',
             'glittercolours', 'icecolours', 'iggycolours', 'manedcolours', 'patchworkcolours', 'robotcolours',
             'sunkencolours', 'tomocolours', 'whalecolours', 'pidgeoncolours', 'watermeloncolours',
-            'dragonetcolours', 'salmoncolours', 'darkechocolours', 'lightechocolours'
+            'dragonetcolours', 'salmoncolours', 'darkechocolours', 'lightechocolours', 'plantaincolours',
+            'daenixcolours', 'seltzercolours', 'sworncolours',
         ]
 
         for row, colors in enumerate(color_categories):
@@ -403,7 +440,9 @@ class Sprites:
              'GRUMPYFACE'],
             ['MOTTLED', 'SIDEMASK', 'EYEDOT', 'BANDANA', 'PACMAN', 'STREAMSTRIKE', 'SMUDGED', 'DAUB', 'EMBER', 'BRIE'],
             ['ORIOLE', 'ROBIN', 'BRINDLE', 'PAIGE', 'ROSETAIL', 'SAFI', 'DAPPLENIGHT', 'BLANKET', 'BELOVED', 'BODY'],
-            ['SHILOH', 'FRECKLED', 'HEARTBEAT', 'SPECKLES', 'TIGER', 'SHROOM']
+            ['SHILOH', 'FRECKLED', 'HEARTBEAT', 'SPECKLES', 'TIGER', 'SHROOM', 'MAILBOX', 'GILAMONSTER', 'RINGEDMIMIC',
+             'NECKLACEMIMIC'],
+            ['LEVIATHANMIMIC', 'SPORTYMIMICONE', 'SPORTYMIMICTWO', 'SPORTYMIMICTHREE', 'ECHOMIMIC']
         ]
 
         for row, masks in enumerate(tortiepatchesmasks):
@@ -477,7 +516,7 @@ class Sprites:
             self.make_group('fancyskin', (a, 4), f"skin{i}")
         for a, i in enumerate(['YELLOWCYAN', 'RAINBOWNEEDLES', 'CYANWINGS', 'ANGLERFISH', 'FIREBUGPART', 'TEARS', 'BLACKTHORNS', 'WHITETHORNS']):
             self.make_group('fancyskin', (a, 5), f"skin{i}")
-        for a, i in enumerate(['GLASSBACK', 'SEASLUGPAPILLAE', 'GRASSSHEEPBACK', 'SEANGLEWINGS', 'ACROTAIL']):
+        for a, i in enumerate(['GLASSBACK', 'SEASLUGPAPILLAE', 'GRASSSHEEPBACK', 'SEANGLEWINGS', 'ANTLERS', 'LOACH', 'CENTIPEDEGROWTHS', 'ACROTAIL']):
             self.make_group('fancyskin', (a, 6), f"skin{i}")
 
         # data games stuff spritesheet
@@ -707,7 +746,9 @@ class Sprites:
         newaccs3_data = [
             ["FALLMPAINT", "SCAVMPAINT", "SPEARMPAINT", "BLUECLOUDS"],
             ["YELLOWCLOUDS", "PURPLECLOUDS", "PINKCLOUDS", "GOGGLES"],
-            ["PINKPOLEPLANTBUDDY", "ORANGEPOLEPLANTBUDDY", "REDPOLEPLANTBUDDY"]
+            ["PINKPOLEPLANTBUDDY", "ORANGEPOLEPLANTBUDDY", "REDPOLEPLANTBUDDY", "EYEBAGS"],
+            ["MAGNATEJEWLERY", "YELLOWKARMAWEATH", "BLUEKARMAWREATH", "PURPLEKARMAWREATH"],
+            ["MOTHBUDDY"]
         ]
 
         floatyeyes_data = [
@@ -736,6 +777,13 @@ class Sprites:
             ["CYANHALO", "INDIGOHALO", "BLUEHALO", "PURPLEHALO", "MAGENTAHALO"],
             ["PINKHALO", "WHITEHALO", "BLACKHALO"]
         ]
+
+         ponchoaccs_data = [
+            ["ORANGEPONNCHO", "YELLOWPONCHO", "GREENPONCHO", "TEALPONCHO", "CYANPONCHO"],
+            ["BLUEPONCHO", "PURPLEPONCHO", "PINKPONCHO", "REDPONCHO", "WHITEPONCHO"],
+            ["BROWNPONCHO", "SILVERPONCHO", "BLACKPONCHO", "MLOCPONCHO", "VSSCPONCHO"],
+            ["FAMILIARPONCHO", "NSHPONCHO"]
+         ]
 
         # medcatherbs
         for row, herbs in enumerate(medcatherbs_data):
@@ -899,6 +947,11 @@ class Sprites:
         for row, haloaccs in enumerate(haloaccs_data):
             for col, haloaccs in enumerate(haloaccs):
                 self.make_group('haloaccs', (col, row), f'haloaccs{haloaccs}')
+
+        #ponchoaccs
+        for row, ponchoaccs in enumerate(ponchoaccs_data):
+            for col, ponchoaccs in enumerate(ponchoaccs):
+                self.make_group('ponchoaccs', (col, row), f'ponchoaccs{ponchoaccs}')
 
     def load_symbols(self):
         """
