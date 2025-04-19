@@ -778,7 +778,7 @@ class Sprites:
             ["PINKHALO", "WHITEHALO", "BLACKHALO"]
         ]
 
-         ponchoaccs_data = [
+        ponchoaccs_data = [
             ["ORANGEPONNCHO", "YELLOWPONCHO", "GREENPONCHO", "TEALPONCHO", "CYANPONCHO"],
             ["BLUEPONCHO", "PURPLEPONCHO", "PINKPONCHO", "REDPONCHO", "WHITEPONCHO"],
             ["BROWNPONCHO", "SILVERPONCHO", "BLACKPONCHO", "MLOCPONCHO", "VSSCPONCHO"],
