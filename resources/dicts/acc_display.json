@@ -2654,6 +2654,36 @@
     "plural": "red pole plant buddies",
     "singular": "red pole plant buddy"
   },
+  "EYEBAGS": {
+    "default": "eye bags",
+    "plural": "multiple eye bags",
+    "singular": "eye bags"
+  },
+  "MAGNATEJEWLERY": {
+    "default": "magnate jewlery",
+    "plural": "magnate jewleries",
+    "singular": "magnate jewlery"
+  },
+  "YELLOWKARMAWREATH": {
+    "default": "yellow karma flower wreath",
+    "plural": "yellow karma flower wreaths",
+    "singular": "yellow karma flower wreath"
+  },
+  "BLUEKARMAWREATH": {
+    "default": "blue karma flower wreath",
+    "plural": "blue karma flower wreaths",
+    "singular": "blue karma flower wreath"
+  },
+  "PURPLEKARMAWREATH": {
+    "default": "purple karma flower wreath",
+    "plural": "purple karma flower wreaths",
+    "singular": "purple karma flower wreath"
+  },
+  "MOTHBUDDY": {
+    "default": "moth buddy",
+    "plural": "moth buddies",
+    "singular": "moth buddy"
+  },
   "YELLOWFLOATYEYES": {
     "default": "yellow floaty eyes",
     "plural": "multiple yellow floaty eyes",
@@ -2998,4 +3028,89 @@
     "default": "black halo",
     "plural": "black halos",
     "singular": "black halo"
+  },
+  "ORANGEPONCHO": {
+    "default": "orange poncho",
+    "plural": "orange ponchos",
+    "singular": "orange poncho"
+  },
+  "YELLOWPONCHO": {
+    "default": "yellow poncho",
+    "plural": "yellow ponchos",
+    "singular": "yellow poncho"
+  },
+  "GREENPONCHO": {
+    "default": "green poncho",
+    "plural": "green ponchos",
+    "singular": "green poncho"
+  },
+  "TEALPONCHO": {
+    "default": "teal poncho",
+    "plural": "teal ponchos",
+    "singular": "teal poncho"
+  },
+  "CYANPONCHO": {
+    "default": "cyan poncho",
+    "plural": "cyan ponchos",
+    "singular": "cyan poncho"
+  },
+  "BLUEPONCHO": {
+    "default": "blue poncho",
+    "plural": "blue ponchos",
+    "singular": "blue poncho"
+  },
+  "PURPLEPONCHO": {
+    "default": "purple poncho",
+    "plural": "purple ponchos",
+    "singular": "purple poncho"
+  },
+  "PINKPONCHO": {
+    "default": "pink poncho",
+    "plural": "pink ponchos",
+    "singular": "pink poncho"
+  },
+  "REDPONCHO": {
+    "default": "red poncho",
+    "plural": "red ponchos",
+    "singular": "red poncho"
+  },
+  "WHITEPONCHO": {
+    "default": "white poncho",
+    "plural": "white ponchos",
+    "singular": "white poncho"
+  },
+  "BROWNPONCHO": {
+    "default": "brown poncho",
+    "plural": "brown ponchos",
+    "singular": "brown poncho"
+  },
+  "SILVERPONCHO": {
+    "default": "silver poncho",
+    "plural": "silver ponchos",
+    "singular": "silver poncho"
+  },
+  "BLACKPONCHO": {
+    "default": "black poncho",
+    "plural": "black ponchos",
+    "singular": "black poncho"
+  },
+  "MLOCPONCHO": {
+    "default": "MLOC poncho",
+    "plural": "MLOC ponchos",
+    "singular": "MLOC poncho"
+  },
+  "VSSCPONCHO": {
+    "default": "VSSC poncho",
+    "plural": "VSSC ponchos",
+    "singular": "VSSC poncho"
+  },
+  "FAMILIARPONCHO": {
+    "default": "Familiar poncho",
+    "plural": "Familiar ponchos",
+    "singular": "Familiar poncho"
+  },
+  "NSHPONCHO": {
+    "default": "NSH poncho",
+    "plural": "NSH ponchos",
+    "singular": "NSH poncho"
   }
