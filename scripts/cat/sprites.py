@@ -772,7 +772,7 @@ class Sprites:
             ["TEALFLAG", "WARMFLAG", "WHITEFLAG", "YELLOWFLAG"]
         ]
 
-         haloaccs_data = [
+        haloaccs_data = [
             ["REDHALO", "ORANGEHALO", "YELLOWHALO", "GREENHALO", "TEALHALO"],
             ["CYANHALO", "INDIGOHALO", "BLUEHALO", "PURPLEHALO", "MAGENTAHALO"],
             ["PINKHALO", "WHITEHALO", "BLACKHALO"]
