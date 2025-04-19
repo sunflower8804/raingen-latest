@@ -15,7 +15,7 @@ Click on "assets" and choose the version that works with your OS.
 
 It's a standalone mod, which means it functions as a separate game from ClanGen - no need to replace any files, just open RainGen.exe and play!
 
-
+-----------------------------
 
 If you're a developer or a modder, you can open RainGen from source code. Works exactly the same as opening source code version of ClanGen. If you're not familiar with it:
 
