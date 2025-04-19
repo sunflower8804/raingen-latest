@@ -130,8 +130,8 @@ class Sprites:
             'collars', 'bellcollars', 'bowcollars', 'nyloncollars', 'rwlizards', 'drones', 'muddypaws', 
             'herbs2', 'insectwings', 'buddies', 'newaccs', 'bodypaint', 'implant', 'magic', 'necklaces',
             'newaccs2', 'drapery', 'eyepatches', 'pridedrapery', 'larsaccs', 'harleyaccs', 'newaccs3',
-            'floatyeyes', 'morespears', 'haloaccs', 'flagaccs',
-            'featherboas', 'scarves', 'chains', 'neckbandanas',
+            'featherboas', 'scarves', 'chains', 'neckbandanas', 'floatyeyes', 'morespears', 'haloaccs',
+            'flagaccs', 'ponchoaccs',
             'singlecolours', 'speckledcolours', 'tabbycolours', 'bengalcolours', 'marbledcolours',
             'rosettecolours', 'smokecolours', 'tickedcolours', 'mackerelcolours', 'classiccolours',
             'sokokecolours', 'agouticolours', 'singlestripecolours', 'maskedcolours', 'bananacolours',
@@ -147,9 +147,11 @@ class Sprites:
             'swingcolours', 'lovebirdcolours', 'budgiecolours', 'amazoncolours', 'applecolours', 'bobacolours',
             'glittercolours', 'icecolours', 'iggycolours', 'manedcolours', 'patchworkcolours', 'robotcolours',
             'sunkencolours', 'tomocolours', 'whalecolours', 'pidgeoncolours', 'watermeloncolours',
-            'dragonetcolours', 'salmoncolours', 'darkechocolours', 'lightechocolours',
+            'dragonetcolours', 'salmoncolours', 'darkechocolours', 'lightechocolours', 'plantaincolours',
+            'daenixcolours', 'seltzercolours', 'sworncolours',
             'raineyes', 'raineyes2', 'multieyes', 'multiraineyes', 'larseyes', 'multilarseyes', 'larseyes2', 
-            'rivuleteyes', 'rivuleteyes2', 'buttoneyes', 'buttoneyes2',
+            'rivuleteyes', 'rivuleteyes2', 'buttoneyes', 'buttoneyes2', 'bobaeyes', 'bobaeyes2', 'bobaeyeslars',
+            'bobaeyeslars2',
             'shadersnewwhite', 'lightingnew',
             'whitepatches', 'tortiepatchesmasks',
             'fademask', 'fadestarclan', 'fadedarkforest',
@@ -270,10 +272,50 @@ class Sprites:
             self.make_group('rivuleteyes2', (a, 0), f'eyes2{i}')
         for a, i in enumerate(
                 ['RIVCOPPER', 'RIVSAGE', 'RIVCOBALT', 'RIVPALEBLUE', 'RIVBRONZE', 'RIVSILVER',
-                'RIVPALEYELLOW', 'RIVGOLD', 'RIVGREENYELLOW']):
+                'RIVPALEYELLOW', 'RIVGOLD', 'RIVGREENYELLOW', 'ALTRIVYELLOW', 'ALTRIVAMBER', 'ALTRIVHAZEL']):
             self.make_group('rivuleteyes', (a, 1), f'eyes{i}')
             self.make_group('rivuleteyes2', (a, 1), f'eyes2{i}')
-
+        for a, i in enumerate(
+                ['ALTRIVPALEGREEN', 'ALTRIVGREEN', 'ALTRIVBLUE', 'ALTRIVDARKBLUE', 'ALTRIVCYAN', 'ALTRIVEMERALD',
+                'ALTRIVHEATHERBLUE', 'ALTRIVSUNLITICE', 'ALTRIVCOPPER', 'ALTRIVSILVER', 'ALTRIVPALEYELLOW', 'ALTRIVGOLD']):
+            self.make_group('rivuleteyes', (a, 2), f'eyes{i}')
+            self.make_group('rivuleteyes2', (a, 2), f'eyes2{i}')
+        for a, i in enumerate(
+                ['ALTRIVGREENYELLOW', 'RIVRED', 'RIVPURPLE', 'RIVMAUVE','RIVELECTRICBLUE', 'RIVVIOLET',
+                'RIVPINK', 'RIVSNOW', 'RIVORANGE', 'RIVCREAM', 'RIVSEAFOAM', 'RIVCRIMSON']):
+            self.make_group('rivuleteyes', (a, 3), f'eyes{i}')
+            self.make_group('rivuleteyes2', (a, 3), f'eyes2{i}')
+        for a, i in enumerate(
+                ['RIVNAVY', 'RIVVOIDGOLD', 'RIVCOOLBROWN', 'RIVPLUM', 'RIVINDIGO', 'RIVLILAC',
+                'RIVALBA', 'RIVALBINO', 'RIVANGEL', 'RIVAPPLE', 'RIVAQUA', 'RIVARID']):
+            self.make_group('rivuleteyes', (a, 4), f'eyes{i}')
+            self.make_group('rivuleteyes2', (a, 4), f'eyes2{i}')
+        for a, i in enumerate(
+                ['RIVBANANA', 'RIVBLOOD', 'RIVCARNI', 'RIVCHAIN', 'RIVCREAMY', 'RIVDAWN',
+                'RIVESES', 'RIVEXILE', 'RIVFAE', 'RIVFALLSTAR', 'RIVFIELD', 'RIVFOAM']):
+            self.make_group('rivuleteyes', (a, 5), f'eyes{i}')
+            self.make_group('rivuleteyes2', (a, 5), f'eyes2{i}')
+        for a, i in enumerate(
+                ['RIVHOT', 'RIVIRID', 'RIVKARMA', 'RIVKIND', 'RIVMARTI', 'RIVMEISTALT',
+                'RIVMHUNT', 'RIVMELON', 'RIVMESS', 'RIVMEISTER', 'RIVMINT', 'RIVMINV']):
+            self.make_group('rivuleteyes', (a, 6), f'eyes{i}')
+            self.make_group('rivuleteyes2', (a, 6), f'eyes2{i}')
+        for a, i in enumerate(
+                ['RIVMOON', 'RIVMRIV', 'RIVPEACH', 'RIVPEBB', 'RIVPELA', 'RIVPEPPER',
+                'RIVRETRO', 'RIVRUNT', 'RIVRUST', 'RIVSIG', 'RIVSIXER', 'RIVSPLIT']):
+            self.make_group('rivuleteyes', (a, 7), f'eyes{i}')
+            self.make_group('rivuleteyes2', (a, 7), f'eyes2{i}')
+        for a, i in enumerate(
+                ['RIVSUN', 'RIVSWEET', 'RIVTIDE', 'RIVVIVID', 'RIVWAVE', 'RIVWINKS',
+                 'RIVZENI', 'RIVBROWNTBOI', 'RIVORANGETBOI', 'RIVBREDTBOI', 'RIVREDTBOI', 'RIVACROINDIGO']):
+            self.make_group('rivuleteyes', (a, 8), f'eyes{i}')
+            self.make_group('rivuleteyes2', (a, 8), f'eyes2{i}')
+        for a, i in enumerate(
+                ['RIVACROAMBER', 'RIVACROTEAL', 'RIVACROGREY', 'RIVACROGREEN', 'RIVACROBLUE', 'RIVACRORED',
+                'RIVACROPINK', 'TBA THERES FUCKIN NEW ONES AAAAAAAAAAAA']):
+            self.make_group('rivuleteyes', (a, 9), f'eyes{i}')
+            self.make_group('rivuleteyes2', (a, 9), f'eyes2{i}')
+                     
         #button eyes
         for a, i in enumerate(
                 ['BUTTONYELLOW', 'BUTTONAMBER', 'BUTTONHAZEL', 'BUTTONPALEGREEN', 'BUTTONGREEN', 'BUTTONBLUE', 
