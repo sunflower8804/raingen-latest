@@ -783,7 +783,7 @@ class Sprites:
             ["BLUEPONCHO", "PURPLEPONCHO", "PINKPONCHO", "REDPONCHO", "WHITEPONCHO"],
             ["BROWNPONCHO", "SILVERPONCHO", "BLACKPONCHO", "MLOCPONCHO", "VSSCPONCHO"],
             ["FAMILIARPONCHO", "NSHPONCHO"]
-         ]
+        ]
 
         # medcatherbs
         for row, herbs in enumerate(medcatherbs_data):
