@@ -94,6 +94,8 @@ class Pelt:
         'Seltzer' : 'seltzer',
         'Sworn' : 'sworn',
         'Spooky' : 'spooky',
+        'Conure' : 'conure',
+        'Noble' : 'noble',
         'Tortie': None,
         'Calico': None,
     }
@@ -123,7 +125,7 @@ class Pelt:
                       'CHEST', 'ARMTAIL', 'SMOKE', 'GRUMPYFACE',
                       'BRIE', 'BELOVED', 'BODY', 'SHILOH', 'FRECKLED', 'HEARTBEAT', 'SPECKLES', 'TIGER', 'SHROOM',
                       'MAILBOX', 'GILAMONSTER', 'RINGEDMIMIC', 'NECKLACEMIMIC',
-                      'LEVIATHANMIMIC', 'SPORTYMIMICONE', 'SPORTYMIMICTWO', 'SPORTYMIMICTHREE', 'ECHOMIMIC']
+                      'LEVIATHANMIMIC', 'SPORTYMIMICONE', 'SPORTYMIMICTWO', 'SPORTYMIMICTHREE', 'ECHOMIMIC', 'TLURE']
     tortiebases = ['single', 'tabby', 'bengal', 'marbled', 'ticked', 'smoke', 'rosette', 'speckled', 'mackerel',
                 'classic', 'sokoke', 'agouti', 'singlestripe', 'masked', 'gravel', 'collared', 'slimemold',
                 'cyanlizard', 'vulture', 'banana', 'centipede', 'con', 'lizard', 'lantern', 'leviathan',
@@ -132,7 +134,8 @@ class Pelt:
                 'sparklecat', 'wolf', 'cherry', 'hypnotist', 'ringed', 'skinny', 'sparse', 'impish', 'sporty', 
                 'skeleton', 'shred', 'glowing', 'mold', 'swing', 'lovebird', 'budgie', 'amazon', 'apple', 'boba',
                 'glitter', 'ice', 'iggy', 'maned', 'patchwork', 'robot', 'sunken', 'tomo', 'whale', 'pidgeon', 'watermelon',
-                'dragonet', 'salmon', 'lightecho', 'darkecho', 'plantain', 'daenix', 'seltzer', 'sworn', 'spooky']
+                'dragonet', 'salmon', 'lightecho', 'darkecho', 'plantain', 'daenix', 'seltzer', 'sworn', 'spooky', 'conure', 
+                'noble']
 
     pelt_length = ["short", "medium", "long"]
     eye_colours = ['YELLOW', 'AMBER', 'HAZEL', 'PALEGREEN', 'GREEN', 'BLUE', 'DARKBLUE', 'GREY', 'CYAN', 'EMERALD', 'PALEBLUE', 
@@ -144,16 +147,24 @@ class Pelt:
         'KARMA', 'KIND', 'MARTI', 'MEISTALT', 'MEISTER', 'MELON', 'MESS', 'MHUNT', 'MINT', 'MINV', 
         'MOON', 'MRIV', 'PEACH', 'PEBB', 'PELA', 'PEPPER', 'RETRO', 'RUNT', 'RUST', 'SIG', 
         'SIXER', 'SPLIT', 'SUN', 'SWEET', 'TIDE', 'VIVID', 'WAVE', 'WINKS', 'ZENI', 'BEAST',
-        'BROWNTBOI', 'ORANGETBOI', 'BREDTBOI', 'REDTBOI'
+        'BROWNTBOI', 'ORANGETBOI', 'BREDTBOI', 'REDTBOI', 'FIRE', 'RUBY', 'RUBYAGAIN', 'ESCAPEE',
+        'REFORGED', 'FLORAVORE', 'REJECT', 'WAYFARER', 'PISTON', 'EXILED', 'THEIF', 'THEIFDOS', 'MORTICIAN',
+        'SWAMPY', 'PORTALMAKER', 'PURIFIER', 'CORROSOL', 'SEVENSEVEN', 'ATLAN', 'BASIC', 'BELL', 'BIS', 'BIT',
+        'CRITTER', 'CUBED', 'DIM', 'DOE', 'FREYR', 'GAMBLE', 'GORB', 'HERO', 'JANE', 'JOHN', 'MATT', 'MESS',
+        'PE', 'POLE', 'RAT', 'RGB', 'ROT', 'SCRATCH', 'SHED', 'SIEGE', 'SPARK', 'SPARKLE', 'SUNSET', 'TELA',
+        'USURP', 'WAR', 'XIII'
         ]
     yellow_eyes = ['YELLOW', 'AMBER', 'PALEYELLOW', 'GOLD', 'COPPER', 'GREENYELLOW', 'BRONZE', 'SILVER', 'ORANGE', 'CREAM', 'VOIDGOLD',
-                   'BROWNTBOI', 'ORANGETBOI', 'ACROAMBER', 'ACROGREY']
+                   'BROWNTBOI', 'ORANGETBOI', 'ACROAMBER', 'ACROGREY', 'FIRE', 'REFORGED', 'PISTON', 'THEIFDOS', 'MORTICIAN', 'SWAMPY',
+                   'PURIFIER', 'CORROSOL', 'ATLAN', 'BASIC', 'BELL', 'GAMBLE', 'GORB', 'POLE', 'SUNSET']
     blue_eyes = ['BLUE', 'DARKBLUE', 'CYAN', 'PALEBLUE', 'HEATHERBLUE', 'COBALT', 'SUNLITICE', 'GREY', 'ELECTRICBLUE', 'SNOW', 'INDIGO',
-                 'ANGEL', 'ACROBLUE', 'ACROINDIGO']
-    green_eyes = ['PALEGREEN', 'GREEN', 'EMERALD', 'SAGE', 'HAZEL', 'SEAFOAM', 'NAVY',
-                  'MESS', 'ACROGREEN', 'ACROTEAL']
+                 'ANGEL', 'ACROBLUE', 'ACROINDIGO', 'ESCAPEE', 'REJECT', 'WAYFARER', 'THIEF', 'PORTALMAKER', 'CRITTER', 'FREYR', 'JOHN',
+                 'PE', 'RAT', 'TELA', 'USURP', 'WAR', 'XIII']
+    green_eyes = ['PALEGREEN', 'GREEN', 'EMERALD', 'SAGE', 'HAZEL', 'SEAFOAM', 'NAVY', 'MESS', 'ACROGREEN', 'ACROTEAL', 'EXILED', 'CUBED',
+                 'RGB', 'ROT']
     red_eyes = ['RED', 'PURPLE', 'MAUVE', 'VIOLET', 'PINK', 'CRIMSON', 'COOLBROWN', 'PLUM', 'LILAC', 
-                'MINT', 'PEACH', 'ALBINO', 'DAWN', 'BREDTBOI', 'REDTBOI', 'ACROPINK', 'ACRORED']
+                'MINT', 'PEACH', 'ALBINO', 'DAWN', 'BREDTBOI', 'REDTBOI', 'ACROPINK', 'ACRORED', 'RUBY', 'RUBYAGAIN', 'FLORAVORE',
+                'SEVENSEVEN', 'BIS', 'BIT', 'DIM', 'DOE', 'HERO', 'JANE', 'MATT', 'MESS', 'SCRATCH', 'SHED', 'SIEGE', 'SPARK', 'SPARKLE']
     
     riveye_colours = ['RIVYELLOW', 'RIVAMBER', 'RIVHAZEL', 'RIVPALEGREEN', 'RIVGREEN', 'RIVBLUE', 'RIVDARKBLUE', 'RIVGREY', 'RIVCYAN', 'RIVEMERALD', 'RIVPALEBLUE', 
                'RIVPALEYELLOW', 'RIVGOLD', 'RIVHEATHERBLUE', 'RIVCOPPER', 'RIVSAGE', 'RIVCOBALT', 'RIVSUNLITICE', 'RIVGREENYELLOW', 'RIVBRONZE', 'RIVSILVER',
@@ -165,16 +176,22 @@ class Pelt:
                'RIVMHUNT', 'RIVMELON', 'RIVMESS', 'RIVMEISTER', 'RIVMINT', 'RIVMINV', 'RIVMOON', 'RIVMRIV', 'RIVPEACH', 'RIVPEBB', 'RIVPELA', 'RIVPEPPER',
                'RIVRETRO', 'RIVRUNT', 'RIVRUST', 'RIVSIG', 'RIVSIXER', 'RIVSPLIT', 'RIVSUN', 'RIVSWEET', 'RIVTIDE', 'RIVVIVID', 'RIVWAVE', 'RIVWINKS',
                'RIVZENI', 'RIVBROWNTBOI', 'RIVORANGETBOI', 'RIVBREDTBOI', 'RIVREDTBOI', 'RIVACROINDIGO', 'RIVACROAMBER', 'RIVACROTEAL', 'RIVACROGREY', 'RIVACROGREEN', 'RIVACROBLUE', 'RIVACRORED',
-               'RIVACROPINK', 'TBA THERES FUCKIN NEW ONES AAAAAAAAAAAA']
+               'RIVACROPINK', 'RIVSPARKLE', 'RIVSUNSET', 'RIVSIEGE', 'RIVROT', 'RIVUSURP', 'RIVPE', 'RIVBIS', 'RIVCRITTER', 'RIVCUBED', 'RIVGAMBLE', 'RIVDIM', 'RIVBLUEORANGE', 'RIVMENACE',
+               'RIVDEVIOUS', 'RIVGORB', 'RIVSTARSTRUCK', 'RIVAMBERHONEY', 'RIVSUNDOWN', 'RIVPARADISE', 'RIVMOLTENLAVA', 'RIVSILVERMOON', 'RIVSHADOWEDSILVER', 'RIVLACREATURA',
+               'RIVAWAKENED', 'RIVASCENDEDTOUCHED', 'RIVBLUERED', 'RIVWHITESILVER', 'RIVPINKLEMONADE', 'RIVHARVESTMOON', 'RIVPORTALGUN', 'RIVGASLIGHT', 'RIVBRONZEDIRT', 'RIVRBG', 'RIVFIRERUBICON', 'RIVFIREGOLD', 'RIVBLOODRIVER',
+               'RIVPARTYRGB', 'RIVMIDNIGHTGLOW', 'RIVRBGLIGHTS', 'RIVBUBBLEGUM', 'RIVCYN']
     yellow_riv_eyes = ['RIVYELLOW', 'RIVAMBER', 'RIVPALEYELLOW', 'RIVGOLD', 'RIVCOPPER', 'RIVGREENYELLOW', 'RIVBRONZE', 'RIVSILVER', 'ALTRIVYELLOW', 'ALTRIVAMBER', 'ALTRIVPALEYELLOW',
                       'ALTRIVGOLD', 'ALTRIVCOPPER', 'ALTRIVGREENYELLOW', 'ALTRIVBRONZE', 'ALTRIVSILVER', 'RIVORANGE', 'RIVCREAM', 'RIVVOIDGOLD', 'RIVBROWNTBOI', 'RIVORANGETBOI',
-                      'RIVACROAMBER', 'RIVACROGREY']
+                      'RIVACROAMBER', 'RIVACROGREY', 'RIVSUNSET', 'RIVSIEGE', 'RIVAMBERHONEY', 'RIVPARADISE', 'RIVMOLTENLAVA', 'RIVAWAKENED', 'RIVASCENDEDTOUCHED', 'RIVHARVESTMOON'
+                      'RIVBRONZEDIRT', 'RIVFIRERUBICON', 'RIVFIREGOLD', 'RIVCYN']
     blue_riv_eyes = ['RIVBLUE', 'RIVDARKBLUE', 'RIVCYAN', 'RIVPALEBLUE', 'RIVHEATHERBLUE', 'RIVCOBALT', 'RIVSUNLITICE', 'ALTRIVBLUE', 'ALTRIVDARKBLUE', 'ALTRIVCYAN', 'ALTRIVPALEBLUE', 'ALTRIVHEATHERBLUE',
-                     'ALTRIVCOBALT', 'ALTRIVSUNLITICE', 'RIVELECTRICBLUE', 'RIVSNOW', 'RIVINDIGO', 'RIVANGEL', 'RIVACROBLUE', 'RIVACROINDIGO']
+                     'ALTRIVCOBALT', 'ALTRIVSUNLITICE', 'RIVELECTRICBLUE', 'RIVSNOW', 'RIVINDIGO', 'RIVANGEL', 'RIVACROBLUE', 'RIVACROINDIGO', 'RIVROT', 'RIVUSURP', 'RIVPE', 'RIVCRITTER', 'RIVBLUEORANGE',
+                     'RIVSTARSTRUCK', 'RIVSILVERMOON', 'RIVSHADOWEDSILVER', 'RIVWHITESILVER', 'RIVPORTALGUN', 'RIVPARTYRGB', 'RIVMIDNIGHTGLOW']
     green_riv_eyes = ['RIVPALEGREEN', 'RIVGREEN', 'RIVEMERALD', 'RIVSAGE', 'RIVHAZEL', 'ALTRIVPALEGREEN', 'ALTRIVGREEN', 'ALTRIVEMERALD', 'ALTRIVSAGE', 'ALTRIVHAZEL', 'RIVSEAFOAM', 'RIVNAVY',
-                     'RIVMESS', 'RIVACROGREEN', 'RIVACROTEAL']
-    red_riv_eyes = ['RIVRED', 'RIVPURPLE', 'RIVMAUVE', 'RIVVIOLET', 'RIVPINK', 'RIVCRIMSON', 'RIVCOOLBROWN', 'RIVPLUM', 'RIVLILAC', 
-                      'RIVMINT', 'RIVPEACH', 'RIVALBINO', 'RIVDAWN', 'RIVBREDTBOI', 'RIVREDTBOI', 'RIVACROPINK', 'RIVACRORED']
+                     'RIVMESS', 'RIVACROGREEN', 'RIVACROTEAL', 'RIVCUBED', 'RIVGORB', 'RIVRGB', 'RIVRBGLIGHTS']
+    red_riv_eyes = ['RIVRED', 'RIVPURPLE', 'RIVMAUVE', 'RIVVIOLET', 'RIVPINK', 'RIVCRIMSON', 'RIVCOOLBROWN', 'RIVPLUM', 'RIVLILAC', 'RIVMINT', 'RIVPEACH', 'RIVALBINO', 'RIVDAWN', 'RIVBREDTBOI',
+                    'RIVREDTBOI', 'RIVACROPINK', 'RIVACRORED', 'RIVSPARKLE', 'RIVBIS', 'RIVGAMBLE', 'RIVDIM', 'RIVMENACE', 'RIVDEVIOUS', 'RIVSUNDOWN', 'RIVLACREATURA', 'RIVBLUERED',
+                    'RIVPINKLEMONADE', 'RIVGASLIGHT', 'RIVBLOODRIVER', 'RIVBUBBLEGUM']
     
     buttoneye_colours = ['BUTTONYELLOW', 'BUTTONAMBER', 'BUTTONHAZEL', 'BUTTONPALEGREEN', 'BUTTONGREEN', 'BUTTONBLUE', 
                 'BUTTONDARKBLUE', 'BUTTONGREY', 'BUTTONCYAN', 'BUTTONEMERALD', 'BUTTONHEATHERBLUE', 'BUTTONSUNLITICE', 
@@ -256,7 +273,7 @@ class Pelt:
               "VIVISECTION", "LABRATLIMBS", "HALFFACELEFT", "FULLBODYBURNS", "BESIEGED", "HALFFACERIGHT", 
               "STARBURN", "ARMBURN", "ENVOYCHEST", "EXTRACTIONTWO", "RESTITCHEDUPPER", 
               "RESTITCHEDLOWER", "STITCHEDHEAD", "MESSIAH", "SMOKINGFACE", "BURNTLEG", "BURNTARM", 
-              "ARTIRIGHT", "ARTIGLOWRIGHT", "ARTILEFT", "ARTIGLOWLEFT", "PATCHWORK"]
+              "ARTIRIGHT", "ARTIGLOWRIGHT", "ARTILEFT", "ARTIGLOWLEFT", "PATCHWORK", "BLIZZARDBLAST"]
 
     # make sure to add plural and singular forms of new accs to acc_display.json so that they will display nicely
     plant_accessories = ["MAPLE LEAF", "HOLLY", "BLUE BERRIES", "FORGET ME NOTS", "RYE STALK", "LAUREL",
@@ -400,7 +417,7 @@ class Pelt:
         "YELLOWCLOUDS", "PURPLECLOUDS", "PINKCLOUDS", "GOGGLES",
         "PINKPOLEPLANTBUDDY", "ORANGEPOLEPLANTBUDDY", "REDPOLEPLANTBUDDY", "EYEBAGS",
         "MAGNATEJEWLERY", "YELLOWKARMAWEATH", "BLUEKARMAWREATH", "PURPLEKARMAWREATH",
-        "MOTHBUDDY"
+        "MOTHBUDDY", "BOOMERREIGN", "MOTHBUDDYTWO"
     ]
     floatyeyes = [
         "YELLOWFLOATYEYES", "REDFLOATYEYES", "ORANGEFLOATYEYES",
@@ -481,7 +498,7 @@ class Pelt:
     tabbies = [
         "Tabby", "Ticked", "Classic", "Sokoke", "Agouti", "Masked", "Vulture", "Envoy", "Drizzle",
         "Necklace", "Leviathan", "Rotten", "Fire", "Solace", "Swing", "Ice", "Maned", "Sunken", "Daenix",
-        "Seltzer", "Spooky", "Sworn"
+        "Seltzer", "Spooky", "Sworn", "Noble"
     ]
     spotted = [
         "Speckled", "Rosette", "Gravel", "Banana", "Con", "Bengal", "Dreamer", "Oldgrowth", "Cherry",
@@ -496,7 +513,7 @@ class Pelt:
     exotic = [
         "Mackerel", "Marbled", "Cyanlizard", "Centipede", "Lantern", "Amoeba", "Seaslug", "Dragonfruit",
         "Duskdawn", "Seer", "Wolf", "Sparklecat", "Hypnotist", "Fizzy", "Glowing", "Budgie", "Lovebird",
-        "Amazon", "Boba", "Iggy", "Tomo", "Dragonet"
+        "Amazon", "Boba", "Iggy", "Tomo", "Dragonet", "Conure"
     ]
     torties = ["Tortie", "Calico"]
     pelt_categories = [tabbies, spotted, plain, exotic, torties]
@@ -523,7 +540,12 @@ class Pelt:
         'KARMA', 'KIND', 'MARTI', 'MEISTALT', 'MEISTER', 'MELON', 'MESS', 'MHUNT', 'MINT', 'MINV', 
         'MOON', 'MRIV', 'PEACH', 'PEBB', 'PELA', 'PEPPER', 'RETRO', 'RUNT', 'RUST', 'SIG', 
         'SIXER', 'SPLIT', 'SUN', 'SWEET', 'TIDE', 'VIVID', 'WAVE', 'WINKS', 'ZENI', 'BEAST',
-        'BROWNTBOI', 'ORANGETBOI', 'BREDTBOI', 'REDTBOI'
+        'BROWNTBOI', 'ORANGETBOI', 'BREDTBOI', 'REDTBOI', 'FIRE', 'RUBY', 'RUBYAGAIN', 'ESCAPEE',
+        'REFORGED', 'FLORAVORE', 'REJECT', 'WAYFARER', 'PISTON', 'EXILED', 'THEIF', 'THEIFDOS', 'MORTICIAN',
+        'SWAMPY', 'PORTALMAKER', 'PURIFIER', 'CORROSOL', 'SEVENSEVEN', 'ATLAN', 'BASIC', 'BELL', 'BIS', 'BIT',
+        'CRITTER', 'CUBED', 'DIM', 'DOE', 'FREYR', 'GAMBLE', 'GORB', 'HERO', 'JANE', 'JOHN', 'MATT', 'MESS',
+        'PE', 'POLE', 'RAT', 'RGB', 'ROT', 'SCRATCH', 'SHED', 'SIEGE', 'SPARK', 'SPARKLE', 'SUNSET', 'TELA',
+        'USURP', 'WAR', 'XIII'
     ]
     little_white = ['LITTLE', 'LIGHTTUXEDO', 'BUZZARDFANG', 'TIP', 'BLAZE', 'BIB', 'VEE', 'PAWS',
                     'BELLY', 'TAILTIP', 'TOES', 'BROKENBLAZE', 'LILTWO', 'SCOURGE', 'TOESTAIL', 'RAVENPAW', 'HONEY',
@@ -540,7 +562,7 @@ class Pelt:
                  'FADEBELLY', 'DIGIT', 'FCTWO', 'FCONE', 'MIA', 'ROSINA', 'PRINCESS', 'BALLER', 'TREFOIL', 'MANUL',
                  'HEAD', 'SPARSE', 'BADGER', 'BELLY', 'MASK', 'LIGHTNING', 'FROSTBITTEN',
                  'LIMBS', 'STRIPES', 'SLICE', 'TOONY', 'ACROBAT',
-                 'DEFIBULATOR', 'WOLFINSIDE', 'TICKEDSPOTSSTRIPE', 'WOLDOUTSIDEONE', 'WOLFFILLONE', 'ECHOBELLY']
+                 'DEFIBULATOR', 'WOLFINSIDE', 'TICKEDSPOTSSTRIPE', 'WOLDOUTSIDEONE', 'WOLFFILLONE', 'ECHOBELLY', 'LURE']
     high_white = ['ANY', 'ANYTWO', 'BROKEN', 'FRECKLES', 'RINGTAIL', 'HALFFACE', 'PANTSTWO',
                   'GOATEE', 'PRINCE', 'FAROFA', 'MISTER', 'PANTS', 'REVERSEPANTS', 'HALFWHITE', 'APPALOOSA', 'PIEBALD',
                   'CURVED', 'GLASS', 'MASKMANTLE', 'MAO', 'PAINTED', 'SHIBAINU', 'OWL', 'BUB', 'SPARROW', 'TRIXIE',
