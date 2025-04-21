@@ -3,11 +3,12 @@
 !!NOTE THERE ARE WATCHER SPOILERS HERE NOW, WORKING ON A SETTING TO CHANGE THIS THOUGH!!
 
 Added:
-- 48 new unique eye colours (over 350+ in total across all eye types)
+- 69 new unique eye colours (over 350+ in total across all eye types)
   - TBOI Brown, TBOI Orange, TBOI red, TBOI red & black, concepts by Lars, sprites by Mimalot, multi eye & heterochromia sprites by Cosmonaught
   - Acro Eye Colors by Mimalot, multi eye & heterochromia sprites by Squid Say Moo
   - 3 new eye colors by Starcatcher
   - 33 new eye colors by Lars
+  - 21 new eye colors by Foxett
   - Updating riv eye colors to match current amount
   - Multi eye and heterochromia sprites by Harley
 - New eye type, Boba!
