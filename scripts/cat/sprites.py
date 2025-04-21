@@ -356,11 +356,11 @@ class Sprites:
             self.make_group('rivuleteyes2', (a, 10), f'eyes2{i}')
         for a, i in enumerate(
                 ['RIVSUNDOWN', 'RIVPARADISE', 'RIVMOLTENLAVA', 'RIVSILVERMOON', 'RIVSHADOWEDSILVER', 'RIVLACREATURA',
-                'RIVAWAKENED', 'RIVASCENDEDTOUCHED', 'RIVBLUERED', 'RIVWHITESILVER', 'RIVPINKLEMONADE', 'RIVHARVESTMOON']):
+                'RIVAWAKENED', 'RIVASCENDED', 'RIVBLUERED', 'RIVWHITESILVER', 'RIVPINKLEMONADE', 'RIVHARVESTMOON']):
             self.make_group('rivuleteyes', (a, 11), f'eyes{i}')
             self.make_group('rivuleteyes2', (a, 11), f'eyes2{i}')
         for a, i in enumerate(
-                ['RIVPORTALGUN', 'RIVGASLIGHT', 'RIVBRONZEDIRT', 'RIVRBG', 'RIVFIRERUBICON', 'RIVFIREGOLD', 'RIVBLOODRIVER',
+                ['RIVPORTALGUN', 'RIVGASLIGHT', 'RIVBRONZEDIRT', 'RIVRBG', 'RIVRUBICON', 'RIVFIREGOLD', 'RIVBLOODRIVER',
                 'RIVPARTYRGB', 'RIVMIDNIGHTGLOW', 'RIVRBGLIGHTS', 'RIVBUBBLEGUM', 'RIVCYN']):
             self.make_group('rivuleteyes', (a, 12), f'eyes{i}')
             self.make_group('rivuleteyes2', (a, 12), f'eyes2{i}')
@@ -493,7 +493,7 @@ class Sprites:
             ['MOTTLED', 'SIDEMASK', 'EYEDOT', 'BANDANA', 'PACMAN', 'STREAMSTRIKE', 'SMUDGED', 'DAUB', 'EMBER', 'BRIE'],
             ['ORIOLE', 'ROBIN', 'BRINDLE', 'PAIGE', 'ROSETAIL', 'SAFI', 'DAPPLENIGHT', 'BLANKET', 'BELOVED', 'BODY'],
             ['SHILOH', 'FRECKLED', 'HEARTBEAT', 'SPECKLES', 'TIGER', 'SHROOM', 'MAILBOX', 'GILAMONSTER', 'RINGEDMIMIC',
-             'NECKLACEMIMIC'],
+             'NECKLACEMIMIC']
         ]
 
         for row, masks in enumerate(tortiepatchesmasks):
@@ -801,8 +801,8 @@ class Sprites:
             ["FALLMPAINT", "SCAVMPAINT", "SPEARMPAINT", "BLUECLOUDS"],
             ["YELLOWCLOUDS", "PURPLECLOUDS", "PINKCLOUDS", "GOGGLES"],
             ["PINKPOLEPLANTBUDDY", "ORANGEPOLEPLANTBUDDY", "REDPOLEPLANTBUDDY", "EYEBAGS"],
-            ["MAGNATEJEWLERY", "YELLOWKARMAWEATH", "BLUEKARMAWREATH", "PURPLEKARMAWREATH"],
-            ["MOTHBUDDY", "BOOMERREIGN", "MOTHBUDDYTWO"]
+            ["MAGNATEJEWLERY", "YELLOWKARMAWREATH", "BLUEKARMAWREATH", "PURPLEKARMAWREATH"],
+            ["MOTHBUDDY", "BOOMERANG", "MOTHBUDDYTWO"]
         ]
 
         floatyeyes_data = [
@@ -812,7 +812,7 @@ class Sprites:
         ]
 
         morespears_data = [
-            ["PURPLEINDIGOPSPEAR", "INDIGOPSPEAR", "PURPLEPSPEAR", "CYANPSPEAR", "BLUEPSPEAR", "BLURCYANPSPEAR"],
+            ["PURPLEINDIGOPSPEAR", "INDIGOPSPEAR", "PURPLEPSPEAR", "CYANPSPEAR", "BLUEPSPEAR", "BLUECYANPSPEAR"],
             ["GAYPSPEAR", "TURQUOISEPSPEAR", "TURQUOISEGREENPSPEAR", "LIMEGREENPSPEAR", "LIMEPSPEAR", "GREYPSPEAR"],
             ["GREENPSPEAR", "ORANGEPSPEAR", "REDPSPEAR", "REDPINKPSPEAR", "PURPLEPINKPSPEAR", "PINKPSPEAR"],
             ["MAGENTAPINKPSPEAR", "REDPURPLEPSPEAR", "BLUEPURPLEPSPEAR", "ROSEPINKPSPEAR", "GREENYELLOWPSPEAR", "LIMEYELLOWPSPEAR"],
@@ -833,7 +833,7 @@ class Sprites:
         ]
 
         ponchoaccs_data = [
-            ["ORANGEPONNCHO", "YELLOWPONCHO", "GREENPONCHO", "TEALPONCHO", "CYANPONCHO"],
+            ["ORANGEPONCHO", "YELLOWPONCHO", "GREENPONCHO", "TEALPONCHO", "CYANPONCHO"],
             ["BLUEPONCHO", "PURPLEPONCHO", "PINKPONCHO", "REDPONCHO", "WHITEPONCHO"],
             ["BROWNPONCHO", "SILVERPONCHO", "BLACKPONCHO", "MLOCPONCHO", "VSSCPONCHO"],
             ["FAMILIARPONCHO", "NSHPONCHO"]

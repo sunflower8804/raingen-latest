@@ -2684,10 +2684,10 @@
     "plural": "moth buddies",
     "singular": "moth buddy"
   },
-  "BOOMERRANG": {
-    "default": "boomer rang",
-    "plural": "boomer rangs",
-    "singular": "boomer rang"
+  "BOOMERANG": {
+    "default": "boomerang",
+    "plural": "boomerangs",
+    "singular": "boomerang"
   },
   "MOTHBUDDYTWO": {
     "default": "moth buddy",
@@ -2754,7 +2754,7 @@
     "plural": "blue poison spears",
     "singular": "blue poison spear"
   },
-  "CYANBLUEPSPEAR": {
+  "BLUECYANPSPEAR": {
     "default": "cyan blue poison spear",
     "plural": "cyan blue poison spears",
     "singular": "cyan blue poison spear"
@@ -2899,11 +2899,6 @@
     "plural": "dark yellow fire spears",
     "singular": "dark yellow fire spear"
   },
-  "DARKYELLOWFIRESPEAR": {
-    "default": "dark yellow fire spear",
-    "plural": "dark yellow fire spears",
-    "singular": "dark yellow fire spear"
-  },
   "BLUEFLAG": {
     "default": "blue flag",
     "plural": "blue flags",
@@ -3034,7 +3029,7 @@
     "plural": "white halos",
     "singular": "white halo"
   },
-  "REDHALO": {
+  "BLACKHALO": {
     "default": "black halo",
     "plural": "black halos",
     "singular": "black halo"

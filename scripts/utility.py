@@ -2885,6 +2885,8 @@ def generate_sprite(
                             new_sprite.blit(sprites.sprites['chains' + i + cat_sprite], (0, 0))
                         elif i in cat.pelt.newaccs3:
                             new_sprite.blit(sprites.sprites['newaccs3' + i + cat_sprite], (0, 0))
+                        elif i in cat.pelt.ponchoaccs:
+                            new_sprite.blit(sprites.sprites['ponchoaccs' + i + cat_sprite], (0, 0))
                     #THIS SECTION ABOVE IS ONLY FOR CLOSE-TO-BODY ACCESSORIES
 
                     except:
