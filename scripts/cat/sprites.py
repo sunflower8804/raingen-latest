@@ -475,7 +475,7 @@ class Sprites:
             ['ORIOLE', 'ROBIN', 'BRINDLE', 'PAIGE', 'ROSETAIL', 'SAFI', 'DAPPLENIGHT', 'BLANKET', 'BELOVED', 'BODY'],
             ['SHILOH', 'FRECKLED', 'HEARTBEAT', 'SPECKLES', 'TIGER', 'SHROOM', 'MAILBOX', 'GILAMONSTER', 'RINGEDMIMIC',
              'NECKLACEMIMIC'],
-            ['LEVIATHANMIMIC', 'SPORTYMIMICONE', 'SPORTYMIMICTWO', 'SPORTYMIMICTHREE', 'ECHOMIMIC', 'TLURE'],
+            ['LEVIATHANMIMIC', 'SPORTYMIMICONE', 'SPORTYMIMICTWO', 'SPORTYMIMICTHREE', 'ECHOMIMIC', 'TLURE']
         ]
 
         for row, masks in enumerate(tortiepatchesmasks):
@@ -551,6 +551,8 @@ class Sprites:
             self.make_group('fancyskin', (a, 5), f"skin{i}")
         for a, i in enumerate(['GLASSBACK', 'SEASLUGPAPILLAE', 'GRASSSHEEPBACK', 'SEANGLEWINGS', 'ANTLERS', 'LOACH', 'CENTIPEDEGROWTHS', 'ACROTAIL']):
             self.make_group('fancyskin', (a, 6), f"skin{i}")
+        for a, i in enumerate(['WHITECLAWS', 'PINKCLAWS', 'BLUECLAWS', 'GREENCLAWS', 'YELLOWCLAWS', 'REDCLAWS', 'GREYCLAWS']):
+            self.make_group('fancyskin', (a, 7), f"skin{i}")
 
         # data games stuff spritesheet
         for a, i in enumerate(['FAMILIARMARK', 'BLUETAILFRILLS', 'ORANGETAILFRILLS', 'GREENTAILFRILLS', 'PURPLETAILFRILLS']):
