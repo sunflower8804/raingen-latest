@@ -459,6 +459,13 @@ class Pelt:
         "BROWNPONCHO", "SILVERPONCHO", "BLACKPONCHO", "MLOCPONCHO", "VSSCPONCHO",
         "FAMILIARPONCHO", "NSHPONCHO"
     ]
+    glassesaccs = [
+        "SUNGLASSESPINK", "SUNGLASSESRED", "SUNGLASSESORANGE", "SUNGLASSESAMBER", "SUNGLASSESYELLOW", "SUNGLASSESLIME",
+        "SUNGLASSESGREEN", "SUNGLASSESTEAL", "SUNGLASSESCYAN", "SUNGLASSESBLUE", "SUNGLASSESINDIGO", "SUNGLASSESPURPLE",
+        "SUNGLASSESWHITE", "SUNGLASSES", "GLASSESRED", "GLASSESORANGE", "GLASSESAMBER", "GLASSESYELLOW",
+        "GLASSESLIME", "GLASSESGREEN", "GLASSESTEAL", "GLASSESCYAN", "GLASSESBLUE", "GLASSESINDIGO",
+        "GLASSESPURPLE", "GLASSESPINK"
+    ]
     
     closest_accs = [
         "CRIMSON", "BLUE", "YELLOW", "CYAN", "RED", "LIME", "GREEN", "RAINBOW",
@@ -1243,7 +1250,8 @@ class Pelt:
                 choice(Pelt.morespears),
                 choice(Pelt.flagaccs),
                 choice(Pelt.haloaccs),
-                choice(Pelt.ponchoaccs)
+                choice(Pelt.ponchoaccs),
+                choice(Pelt.glassesaccs)
             ]))
         else:
             self.accessories = []
