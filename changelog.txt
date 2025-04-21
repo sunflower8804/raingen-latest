@@ -3,37 +3,57 @@
 !!NOTE THERE ARE WATCHER SPOILERS HERE NOW, WORKING ON A SETTING TO CHANGE THIS THOUGH!!
 
 Added:
-- 12 new eye colours
+- 48 new unique eye colours (over 350+ in total across all eye types)
   - TBOI Brown, TBOI Orange, TBOI red, TBOI red & black, concepts by Lars, sprites by Mimalot, multi eye & heterochromia sprites by Cosmonaught
   - Acro Eye Colors by Mimalot, multi eye & heterochromia sprites by Squid Say Moo
+  - 3 new eye colors by Starcatcher
+  - 33 new eye colors by Lars
+  - Updating riv eye colors to match current amount
+  - Multi eye and heterochromia sprites by Harley
+- New eye type, Boba!
+  - Sprites made by Wildy, updated with base colors and lars's first eye color batch!
 - 10 new scars
   - Vulture Shoulder and Cheek Cut by Foxett
   - Patchwork and Spear Wound by Starcatcher
   - 4 new arti face scars, currently unknown who made them!
   - Miros Nom & Blizzard Lizard Blast by Cosmonaught
-- 15 Unique Accessories (159 in total)
+- 23 Unique Accessories (209 in total)
   - 55 Neck Bandanas by Squid Say Moo
   - 10 Chains, and 4 Cloud Covers by Squid Say Moo
   - 3 Murder Paints, Suspicious Key, 7 Floaty Eyes, and 7 Gradiant Neck Bandanas, by Mimalot
   - Goggles, and 3 Pole Plant Buddies by Foxett
-  - 9 Fire Spears by ___
-  - 25 Poison Spears by ___
+  - 9 Fire Spears by Squid Say Moo
+  - 25 Poison Spears by Starcatcher
   - 13 Halos by Squid Say Moo
-  - 14 Flags by ___
-  - 4 Fluffy Cloaks, Amber Jewlery, Iterator Pearl Necklace by Harley
+  - 14 Flags by Mimalot
+  - 4 Fluffy Cloaks, Amber Jewlery, Iterator Pearl Necklace, Magnate Jewlery, and 3 Karm Flower Wreathes by Harley
   - Orange (FLOAH) Fluffy Cloak by Mimalot
-- 15 New Body Parts
+  - Moth buddies by Mimalot and Starcatcher
+  - 17 Ponchos by Foxett
+  - Eyebags by Wildy
+  - 26 glasses by Squid Say Moo
+- 21 Unique New Body Parts
   - Firebug Parts, Sea Angel Wings, Leaf Sheep Back, Sea Bunny Papillae, Glass Back, 7 Orbitals, and Teary, by Mimalot
   - 2 Thorns by Starcatcher
-- 20 New Pelts
+  - 8 Spikes, 2 Quills, and 8 Tail Frills by flamedash
+  - Loach and rain deer antlers by Foxett
+  - Centipede growths by Harley
+  - More claw colours by Squid Say Moo
+- 29 New Pelts
   - Robot, Boba, and Constellation by Mimalot (revisions by Squid Say Moo)
-  - Lovebird, Budgie, Patchwork, Sunken (concept by Flamedash), Glitter (concept by Lars), Iggy (concept by Lars), Amazon, Tomo, Apple, Malibu, Dragonet, and Salmon by Squid Say Moo
-  - Ice, Whale (concept by Lars), Maned (concept by Lars), Light/Dark Echo by Foxett
-- 33 New White & Tortie Patches
-  - Lightning, Mask, Charcoal, Belly, Five Pebbles, Badger, Escapee, Dead Pixel, Stripes, Limbs, Snowbelly, Hex, Frostbitten, Hermes, Shroom, and 1 others by Foxett
-  - Sparse, and 2 Chest Stars by Squid Say Moo
-  - 13 Patches by Starcatcher
-  - Toony by Mimalot
+  - Lovebird, Budgie, Patchwork, Sunken (concept by flamedash), Glitter (concept by Lars), Iggy (concept by Lars), Amazon, Tomo, Apple, Malibu, Dragonet, Salmon, Watermelon, Seltzer, Conure, and Betta by Squid Say Moo
+  - Ice, Whale (concept by Lars), Maned (concept by Lars), and Spooky by Foxett
+  - Light/Dark Echo by Raintailed
+  - Plantain and Daenix by Wildy
+  - Sworn and Noble by Harley (concepts by Lars)
+- 82 New White & Tortie Patches
+  - 25 by Foxett
+  - 17 by Squid Say Moo
+  - 34 by Starcatcher
+  - 3 by Mimalot
+  - 1 by Furyofthelights
+  - 2 by Raintailed
+- Symbols updated to be more slugcat shaped and some rainworld symbols!
 - A handful of new events for accessories, plus a new death event
 
 Fixed:
