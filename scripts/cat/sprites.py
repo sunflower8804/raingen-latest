@@ -131,7 +131,7 @@ class Sprites:
             'herbs2', 'insectwings', 'buddies', 'newaccs', 'bodypaint', 'implant', 'magic', 'necklaces',
             'newaccs2', 'drapery', 'eyepatches', 'pridedrapery', 'larsaccs', 'harleyaccs', 'newaccs3',
             'featherboas', 'scarves', 'chains', 'neckbandanas', 'floatyeyes', 'morespears', 'haloaccs',
-            'flagaccs', 'ponchoaccs',
+            'flagaccs', 'ponchoaccs', 'glassesaccs',
             'singlecolours', 'speckledcolours', 'tabbycolours', 'bengalcolours', 'marbledcolours',
             'rosettecolours', 'smokecolours', 'tickedcolours', 'mackerelcolours', 'classiccolours',
             'sokokecolours', 'agouticolours', 'singlestripecolours', 'maskedcolours', 'bananacolours',
@@ -840,6 +840,14 @@ class Sprites:
             ["FAMILIARPONCHO", "NSHPONCHO"]
         ]
 
+        glassesaccs_data = [
+            ["SUNGLASSESPINK", "SUNGLASSESRED", "SUNGLASSESORANGE", "SUNGLASSESAMBER", "SUNGLASSESYELLOW", "SUNGLASSESLIME"],
+            ["SUNGLASSESGREEN", "SUNGLASSESTEAL", "SUNGLASSESCYAN", "SUNGLASSESBLUE", "SUNGLASSESINDIGO", "SUNGLASSESPURPLE"],
+            ["SUNGLASSESWHITE", "SUNGLASSES", "GLASSESRED", "GLASSESORANGE", "GLASSESAMBER", "GLASSESYELLOW"],
+            ["GLASSESLIME", "GLASSESGREEN", "GLASSESTEAL", "GLASSESCYAN", "GLASSESBLUE", "GLASSESINDIGO"],
+            ["GLASSESPURPLE", "GLASSESPINK"]
+        ]
+
         # medcatherbs
         for row, herbs in enumerate(medcatherbs_data):
             for col, herb in enumerate(herbs):
@@ -1007,6 +1015,11 @@ class Sprites:
         for row, ponchoaccs in enumerate(ponchoaccs_data):
             for col, ponchoaccs in enumerate(ponchoaccs):
                 self.make_group('ponchoaccs', (col, row), f'ponchoaccs{ponchoaccs}')
+
+        #glassesaccs
+        for row, glassesaccs in enumerate(glassesaccs_data):
+            for col, glassesaccs in enumerate(glassesaccs):
+                self.make_group('glassesaccs', (col, row), f'glassesaccs{glassesaccs}')
 
     def load_symbols(self):
         """
