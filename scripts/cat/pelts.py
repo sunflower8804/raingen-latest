@@ -97,6 +97,7 @@ class Pelt:
         'Conure' : 'conure',
         'Noble' : 'noble',
         'Betta' : 'betta',
+        'Constellation' : 'constellation',
         'Tortie': None,
         'Calico': None,
     }
@@ -135,7 +136,7 @@ class Pelt:
                 'skeleton', 'shred', 'glowing', 'mold', 'swing', 'lovebird', 'budgie', 'amazon', 'apple', 'boba',
                 'glitter', 'ice', 'iggy', 'maned', 'patchwork', 'robot', 'sunken', 'tomo', 'whale', 'pidgeon', 'watermelon',
                 'dragonet', 'salmon', 'lightecho', 'darkecho', 'plantain', 'daenix', 'seltzer', 'sworn', 'spooky', 'conure', 
-                'noble', 'betta']
+                'noble', 'betta', 'constellation']
 
     pelt_length = ["short", "medium", "long"]
     eye_colours = ['YELLOW', 'AMBER', 'HAZEL', 'PALEGREEN', 'GREEN', 'BLUE', 'DARKBLUE', 'GREY', 'CYAN', 'EMERALD', 'PALEBLUE', 
