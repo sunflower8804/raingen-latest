@@ -126,7 +126,7 @@ class Pelt:
                       'CHEST', 'ARMTAIL', 'SMOKE', 'GRUMPYFACE',
                       'BRIE', 'BELOVED', 'BODY', 'SHILOH', 'FRECKLED', 'HEARTBEAT', 'SPECKLES', 'TIGER', 'SHROOM',
                       'MAILBOX', 'GILAMONSTER', 'RINGEDMIMIC', 'NECKLACEMIMIC',
-                      'LEVIATHANMIMIC', 'SPORTYMIMICONE', 'SPORTYMIMICTWO', 'SPORTYMIMICTHREE', 'ECHOMIMIC', 'TLURE']
+                      'LEVIATHANMIMIC', 'SPORTYMIMICONE', 'SPORTYMIMICTWO', 'SPORTYMIMICTHREE']
     tortiebases = ['single', 'tabby', 'bengal', 'marbled', 'ticked', 'smoke', 'rosette', 'speckled', 'mackerel',
                 'classic', 'sokoke', 'agouti', 'singlestripe', 'masked', 'gravel', 'collared', 'slimemold',
                 'cyanlizard', 'vulture', 'banana', 'centipede', 'con', 'lizard', 'lantern', 'leviathan',
@@ -251,7 +251,18 @@ class Pelt:
                 'MULTIPEPPER', 'MULTIRETRO', 'MULTIRUNT', 'MULTIRUST', 'MULTISIG',
                 'MULTISIXER', 'MULTISPLIT', 'MULTISUN', 'MULTISWEET', 'MULTITIDE', 
                 'MULTIVIVID', 'MULTIWAVE', 'MULTIWINKS', 'MULTIZENI', 'MULTIBEAST',
-                'MULTIBROWNTBOI', 'MULTIORANGETBOI', 'MULTIBREDTBOI', 'MULTIREDTBOI'
+                'MULTIBROWNTBOI', 'MULTIORANGETBOI', 'MULTIBREDTBOI', 'MULTIREDTBOI',
+                'MULTIFIRE', 'MULTIRUBY', 'MULTIRUBYAGAIN', 'MULTIESCAPEE', 'MULTIREFORGED',
+                'MULTIFLORAVORE', 'MULTIREJECT', 'MULTIWAYFARER', 'MULTIPISTON',
+                'MULTIEXILED', 'MULTITHEIF', 'MULTITHEIFDOS', 'MULTIMORTICIAN', 'MULTISWAMPY',
+                'MULTIPORTALMAKER', 'MULTIPURIFIER', 'MULTICORROSOL', 'MULTISEVENSEVEN',
+                'MULTIATLAN', 'MULTIBASIC', 'MULTIBELL', 'MULTIBIS', 'MULTIBIT',
+                'MULTICRITTER', 'MULTICUBED', 'MULTIDIM', 'MULTIDOE', 'MULTIFREYR',
+                'MULTIGAMBLE', 'MULTIGORB', 'MULTIHERO', 'MULTIJANE', 'MULTIJOHN',
+                'MULTIMATT', 'MULTIMESS', 'MULTIPE', 'MULTIPOLE', 'MULTIRAT', 'MULTIRGB',
+                'MULTIROT', 'MULTISCRATCH', 'MULTISHED', 'MULTISIEGE', 'MULTISPARK',
+                'MULTISPARKLE', 'MULTISUNSET', 'MULTITELA', 'MULTIUSURP', 'MULTIWAR',
+                'MULTIXIII'
                 ]
 
     # bite scars by @wood pank on discord
@@ -555,26 +566,29 @@ class Pelt:
                     'EYEBAGS', 'LOCKET', 'BLAZEMASK', 'TEARS', 'GLOVE', 'NECK'
                     'DOTS', 'FIVEPEBBLE', 'SIAMESE', 'SNOWBELLY',
                     'GLOWSTAR', 'STAR', 'DEADPIXEL', 'INSPECTOR', 'FACEDOTS', 'WPTEARS', 'ONEEARTIP', 'NOSETIP',
-                    'WOLFX', 'GLOWWOLFX', 'TICKEDSPOTS', 'SHREDPATCH', 'TICKEDSTRIPE', 'TICKEDONE']
+                    'WOLFX', 'GLOWWOLFX', 'TICKEDSPOTS', 'SHREDPATCH', 'TICKEDSTRIPE', 'TICKEDONE', 'BROW',
+                    'TOPFIN', 'LOWFIN']
     mid_white = ['TUXEDO', 'FANCY', 'UNDERS', 'DAMIEN', 'SKUNK', 'MITAINE', 'SQUEAKS', 'STAR', 'WINGS',
                  'DIVA', 'SAVANNAH', 'FADESPOTS', 'BEARD', 'DAPPLEPAW', 'TOPCOVER', 'WOODPECKER', 'MISS', 'BOWTIE',
                  'VEST',
                  'FADEBELLY', 'DIGIT', 'FCTWO', 'FCONE', 'MIA', 'ROSINA', 'PRINCESS', 'BALLER', 'TREFOIL', 'MANUL',
                  'HEAD', 'SPARSE', 'BADGER', 'BELLY', 'MASK', 'LIGHTNING', 'FROSTBITTEN',
                  'LIMBS', 'STRIPES', 'SLICE', 'TOONY', 'ACROBAT',
-                 'DEFIBULATOR', 'WOLFINSIDE', 'TICKEDSPOTSSTRIPE', 'WOLDOUTSIDEONE', 'WOLFFILLONE', 'ECHOBELLY', 'LURE']
+                 'DEFIBULATOR', 'WOLFINSIDE', 'TICKEDSPOTSSTRIPE', 'WOLDOUTSIDEONE', 'WOLFFILLONE', 'ECHOBELLY', 'LURE',
+                 'WATERMELONSEEDS', 'DEEP', 'PLUSHIE', 'SCALETAIL', 'SPARKLING']
     high_white = ['ANY', 'ANYTWO', 'BROKEN', 'FRECKLES', 'RINGTAIL', 'HALFFACE', 'PANTSTWO',
                   'GOATEE', 'PRINCE', 'FAROFA', 'MISTER', 'PANTS', 'REVERSEPANTS', 'HALFWHITE', 'APPALOOSA', 'PIEBALD',
                   'CURVED', 'GLASS', 'MASKMANTLE', 'MAO', 'PAINTED', 'SHIBAINU', 'OWL', 'BUB', 'SPARROW', 'TRIXIE',
                   'SAMMY', 'FRONT', 'BLOSSOMSTEP', 'BULLSEYE', 'FINN', 'SCAR', 'BUSTER', 'HAWKBLAZE', 'CAKE',
                   'PAINTSPLAT', 'ELDER',
                   'REVERSEHEAD', 'HEX', 'SHREDONE', 'SHREDTWO', 'WOLFOUTSIDETWO', 'TICKEDTWO',
-                  'TICKEDFILLONE', 'TICKEDFILLTWO','TICKEDFILLTHREE', 'SPOOKYBONES']
+                  'TICKEDFILLONE', 'TICKEDFILLTWO','TICKEDFILLTHREE', 'SPOOKYBONES', 'WATERMELONWAVE', 'FACEMASK', 'STUFFED',
+                  'CARBON']
     mostly_white = ['VAN', 'ONEEAR', 'LIGHTSONG', 'TAIL', 'HEART', 'MOORISH', 'APRON', 'CAPSADDLE',
                     'CHESTSPECK', 'BLACKSTAR', 'PETAL', 'HEARTTWO', 'PEBBLESHINE', 'BOOTS', 'COW', 'COWTWO', 'LOVEBUG',
                     'SHOOTINGSTAR', 'EYESPOT', 'PEBBLE', 'TAILTWO', 'BUDDY', 'KROPKA',
                     'DOUGIE', 'REVERSETEARS', 'REVERSETEARSTWO', 'REVERSENECK', 'ESCAPEE',
-                    'WOLFFILLTWO', 'TREEFROG']
+                    'WOLFFILLTWO', 'TREEFROG', 'RIPPLE']
     point_markings = ['COLOURPOINT', 'RAGDOLL', 'SEPIAPOINT', 'MINKPOINT', 'SEALPOINT']
     vit = ['VITILIGO', 'VITILIGOTWO', 'MOON', 'PHANTOM', 'KARPATI', 'POWDER', 'BLEACHED', 'SMOKEY', 'CHARCOAL']
     white_sprites = [
