@@ -2684,6 +2684,16 @@
     "plural": "moth buddies",
     "singular": "moth buddy"
   },
+  "BOOMERRANG": {
+    "default": "boomer rang",
+    "plural": "boomer rangs",
+    "singular": "boomer rang"
+  },
+  "MOTHBUDDYTWO": {
+    "default": "moth buddy",
+    "plural": "moth buddies",
+    "singular": "moth buddy"
+  },
   "YELLOWFLOATYEYES": {
     "default": "yellow floaty eyes",
     "plural": "multiple yellow floaty eyes",
