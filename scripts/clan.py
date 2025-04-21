@@ -949,7 +949,7 @@ class Clan:
                     "WILD", "PLANT", "COLLAR", "LIZARD", "HERBS2", "MUDDYPAWS", "INSECTWINGS", "BUDDIES",
                     "NEWACCS", "NEWACCS2", "BODYPAINT", "IMPLANT", "MAGIC", "NECKLACES", "DRAPERY", "PRIDEDRAPERY",
                     "EYEPATCHES", "LARSACCS", "HARLEYACCS", "FEATHERBOAS", "SCARVES", "NECKBANDANAS", "CHAINS",
-                    "FLOATYEYES", "NEWACCS3", "MORESPEARS", "FLAGACCS", "HALOACCS", "PONCHOACCS"
+                    "FLOATYEYES", "NEWACCS3", "MORESPEARS", "FLAGACCS", "HALOACCS", "PONCHOACCS", "GLASSESACCS"
                                 ]
                 acc_list = []
                 if "WILD" in possible_accs:
@@ -1010,6 +1010,8 @@ class Clan:
                     acc_list.extend(Pelt.haloaccs)
                 if "PONCHOACCS" in possible_accs:
                     acc_list.extend(Pelt.ponchoaccs)
+                if "GLASSESACCS" in possible_accs:
+                    acc_list.extend(Pelt.glassesaccs)
                 if "NOTAIL" in c.pelt.scars or "HALFTAIL" in c.pelt.scars:
                     for acc in Pelt.tail_accessories:
                         if acc in acc_list:
