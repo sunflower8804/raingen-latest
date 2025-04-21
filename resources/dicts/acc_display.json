@@ -3123,5 +3123,135 @@
     "default": "NSH poncho",
     "plural": "NSH ponchos",
     "singular": "NSH poncho"
+  },
+  "SUNGLASSESPINK": {
+    "default": "pink sunglasses",
+    "plural": "multiple pink sunglasses",
+    "singular": "pink sunglasses"
+  },
+  "SUNGLASSESRED": {
+    "default": "red sunglasses",
+    "plural": "multiple red sunglasses",
+    "singular": "red sunglasses"
+  },
+  "SUNGLASSESORANGE": {
+    "default": "orange sunglasses",
+    "plural": "multiple orange sunglasses",
+    "singular": "orange sunglasses"
+  },
+  "SUNGLASSESAMBER": {
+    "default": "amber sunglasses",
+    "plural": "multiple amber sunglasses",
+    "singular": "amber sunglasses"
+  },
+  "SUNGLASSESYELLOW": {
+    "default": "yellow sunglasses",
+    "plural": "multiple yellow sunglasses",
+    "singular": "yellow sunglasses"
+  },
+  "SUNGLASSESLIME": {
+    "default": "lime sunglasses",
+    "plural": "multiple lime sunglasses",
+    "singular": "lime sunglasses"
+  },
+  "SUNGLASSESGREEN": {
+    "default": "green sunglasses",
+    "plural": "multiple green sunglasses",
+    "singular": "green sunglasses"
+  },
+  "SUNGLASSESTEAL": {
+    "default": "teal sunglasses",
+    "plural": "multiple teal sunglasses",
+    "singular": "teal sunglasses"
+  },
+  "SUNGLASSESCYAN": {
+    "default": "cyan sunglasses",
+    "plural": "multiple cyan sunglasses",
+    "singular": "cyan sunglasses"
+  },
+  "SUNGLASSESBLUE": {
+    "default": "blue sunglasses",
+    "plural": "multiple blue sunglasses",
+    "singular": "blue sunglasses"
+  },
+  "SUNGLASSESINDIGO": {
+    "default": "indigo sunglasses",
+    "plural": "multiple indigo sunglasses",
+    "singular": "indigo sunglasses"
+  },
+  "SUNGLASSESPURPLE": {
+    "default": "purple sunglasses",
+    "plural": "multiple purple sunglasses",
+    "singular": "purple sunglasses"
+  },
+  "SUNGLASSESWHITE": {
+    "default": "white sunglasses",
+    "plural": "multiple white sunglasses",
+    "singular": "white sunglasses"
+  },
+  "SUNGLASSES": {
+    "default": "sunglasses",
+    "plural": "multiple sunglasses",
+    "singular": "sunglasses"
+  },
+  "GLASSESRED": {
+    "default": "red glasses",
+    "plural": "multiple red glasses",
+    "singular": "red glasses"
+  },
+  "GLASSESORANGE": {
+    "default": "orange glasses",
+    "plural": "multiple orange glasses",
+    "singular": "orange glasses"
+  },
+  "GLASSESAMBER": {
+    "default": "amber glasses",
+    "plural": "multiple amber glasses",
+    "singular": "amber glasses"
+  },
+  "GLASSESYELLOW": {
+    "default": "yellow glasses",
+    "plural": "multiple yellow glasses",
+    "singular": "yellow glasses"
+  },
+  "GLASSESLIME": {
+    "default": "lime glasses",
+    "plural": "multiple lime glasses",
+    "singular": "lime glasses"
+  },
+  "GLASSESGREEN": {
+    "default": "green glasses",
+    "plural": "multiple green glasses",
+    "singular": "green glasses"
+  },
+  "GLASSESTEAL": {
+    "default": "teal glasses",
+    "plural": "multiple teal glasses",
+    "singular": "teal glasses"
+  },
+  "GLASSESCYAN": {
+    "default": "cyan glasses",
+    "plural": "multiple cyan glasses",
+    "singular": "cyan glasses"
+  },
+  "GLASSESBLUE": {
+    "default": "blue glasses",
+    "plural": "multiple blue glasses",
+    "singular": "blue glasses"
+  },
+  "GLASSESINDIGO": {
+    "default": "indigo glasses",
+    "plural": "multiple indigo glasses",
+    "singular": "indigo glasses"
+  },
+  "GLASSESPURPLE": {
+    "default": "purple glasses",
+    "plural": "multiple purple glasses",
+    "singular": "purple glasses"
+  },
+  "GLASSESPINK": {
+    "default": "pink glasses",
+    "plural": "multiple pink glasses",
+    "singular": "pink glasses"
   }
 }
