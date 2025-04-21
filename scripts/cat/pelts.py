@@ -96,6 +96,7 @@ class Pelt:
         'Spooky' : 'spooky',
         'Conure' : 'conure',
         'Noble' : 'noble',
+        'Betta' : 'betta',
         'Tortie': None,
         'Calico': None,
     }
@@ -135,7 +136,7 @@ class Pelt:
                 'skeleton', 'shred', 'glowing', 'mold', 'swing', 'lovebird', 'budgie', 'amazon', 'apple', 'boba',
                 'glitter', 'ice', 'iggy', 'maned', 'patchwork', 'robot', 'sunken', 'tomo', 'whale', 'pidgeon', 'watermelon',
                 'dragonet', 'salmon', 'lightecho', 'darkecho', 'plantain', 'daenix', 'seltzer', 'sworn', 'spooky', 'conure', 
-                'noble']
+                'noble', 'betta']
 
     pelt_length = ["short", "medium", "long"]
     eye_colours = ['YELLOW', 'AMBER', 'HAZEL', 'PALEGREEN', 'GREEN', 'BLUE', 'DARKBLUE', 'GREY', 'CYAN', 'EMERALD', 'PALEBLUE', 
@@ -512,7 +513,7 @@ class Pelt:
     exotic = [
         "Mackerel", "Marbled", "Cyanlizard", "Centipede", "Lantern", "Amoeba", "Seaslug", "Dragonfruit",
         "Duskdawn", "Seer", "Wolf", "Sparklecat", "Hypnotist", "Fizzy", "Glowing", "Budgie", "Lovebird",
-        "Amazon", "Boba", "Iggy", "Tomo", "Dragonet", "Conure"
+        "Amazon", "Boba", "Iggy", "Tomo", "Dragonet", "Conure", "Betta"
     ]
     torties = ["Tortie", "Calico"]
     pelt_categories = [tabbies, spotted, plain, exotic, torties]
