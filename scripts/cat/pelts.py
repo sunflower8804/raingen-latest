@@ -125,8 +125,7 @@ class Pelt:
                       'ROBIN', 'BRINDLE', 'PAIGE', 'ROSETAIL', 'SAFI', 'SMUDGED', 'DAPPLENIGHT', 'STREAK', 'MASK',
                       'CHEST', 'ARMTAIL', 'SMOKE', 'GRUMPYFACE',
                       'BRIE', 'BELOVED', 'BODY', 'SHILOH', 'FRECKLED', 'HEARTBEAT', 'SPECKLES', 'TIGER', 'SHROOM',
-                      'MAILBOX', 'GILAMONSTER', 'RINGEDMIMIC', 'NECKLACEMIMIC',
-                      'LEVIATHANMIMIC', 'SPORTYMIMICONE', 'SPORTYMIMICTWO', 'SPORTYMIMICTHREE']
+                      'MAILBOX', 'GILAMONSTER', 'RINGEDMIMIC', 'NECKLACEMIMIC']
     tortiebases = ['single', 'tabby', 'bengal', 'marbled', 'ticked', 'smoke', 'rosette', 'speckled', 'mackerel',
                 'classic', 'sokoke', 'agouti', 'singlestripe', 'masked', 'gravel', 'collared', 'slimemold',
                 'cyanlizard', 'vulture', 'banana', 'centipede', 'con', 'lizard', 'lantern', 'leviathan',
