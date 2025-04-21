@@ -233,8 +233,24 @@ class Sprites:
             self.make_group('multiraineyes', (a, 0), f'eyes2{i}')
         for a, i in enumerate(
                 ['MULTIINDIGO', 'MULTILILAC', 'MULTIACROBLUE', 'MULTIACROGREEN', 'MULTIACROGREY',
-                 'MULTIACROINDIGO', 'MULTIACROAMBER', 'MULTIACROPINK', 'MULTIACRORED', 'MULTIACROTEAL']):
+                 'MULTIACROINDIGO', 'MULTIACROAMBER', 'MULTIACROPINK', 'MULTIACRORED', 'MULTIACROTEAL', 'MULTIFIRE', 'MULTIRUBY']):
             self.make_group('multiraineyes', (a, 1), f'eyes2{i}')
+        for a, i in enumerate(
+                ['MULTIRUBYAGAIN', 'MULTIESCAPEE', 'MULTIREFORGED', 'MULTIFLORAVORE', 'MULTIREJECT', 'MULTIWAYFARER',
+                 'MULTIPISTON', 'MULTIEXILED', 'MULTITHEIF', 'MULTITHEIFDOS', 'MULTIMORTICIAN', 'MULTISWAMPY']):
+            self.make_group('multiraineyes', (a, 2), f'eyes2{i}')
+        for a, i in enumerate(
+                ['MULTIPORTALMAKER', 'MULTIPURIFIER', 'MULTICORROSOL', 'MULTISEVENSEVEN', 'MULTIATLAN',
+                 'MULTIBASIC', 'MULTIBELL', 'MULTIBIS', 'MULTIBIT', 'MULTICRITTER', 'MULTICUBED', 'MULTIDIM']):
+            self.make_group('multiraineyes', (a, 3), f'eyes2{i}')
+        for a, i in enumerate(
+                ['MULTIDOE', 'MULTIFREYR', 'MULTIGAMBLE', 'MULTIGORB', 'MULTIHERO',
+                 'MULTIJANE', 'MULTIJOHN', 'MULTIMATT', 'MULTIMESS', 'MULTIPE', 'MULTIPOLE', 'MULTIRAT']):
+            self.make_group('multiraineyes', (a, 4), f'eyes2{i}')
+        for a, i in enumerate(
+                ['MULTIRGB', 'MULTIROT', 'MULTISCRATCH', 'MULTISHED', 'MULTISIEGE', 'MULTISPARK',
+                 'MULTISPARKLE', 'MULTISUNSET', 'MULTITELA', 'MULTIUSURP', 'MULTIWAR', 'MULTIXIII']):
+            self.make_group('multiraineyes', (a, 5), f'eyes2{i}')
 
         #lars' eyes
         for a, i in enumerate(
@@ -428,7 +444,8 @@ class Sprites:
             ['DEFIBULATOR', 'WOLFX', 'TICKEDSPOTS', 'SHREDPATCH', 'TICKEDSTRIPE', 'SHREDONE', 'WOLFINSIDE', 'TICKEDSPOTSSTRIPE',
              'SHREDTWO', 'WOLFOUTSIDETWO', 'TICKEDONE', 'WOLDOUTSIDEONE', 'TICKEDTWO', 'WOLFFILLONE'],
             ['TICKEDFILLONE', 'WOLFFILLTWO', 'TICKEDFILLTWO', 'TICKEDFILLTHREE', 'TREEFROG', 'GLOWWOLFX', 'ECHOBELLY', 'SPOOKYBONES', 
-            'LURE']
+            'LURE', 'WATERMELONWAVE', 'WATERMELONSEEDS', 'FACEMASK', 'DEEP', 'STUFFED'],
+            ['PLUSHIE', 'BROW', 'SCALETAIL', 'CARBON', 'SPARKLING', 'TOPFIN', 'LOWFIN', 'RIPPLE']
         ]
 
         for row, patches in enumerate(white_patches):
@@ -477,7 +494,7 @@ class Sprites:
             ['ORIOLE', 'ROBIN', 'BRINDLE', 'PAIGE', 'ROSETAIL', 'SAFI', 'DAPPLENIGHT', 'BLANKET', 'BELOVED', 'BODY'],
             ['SHILOH', 'FRECKLED', 'HEARTBEAT', 'SPECKLES', 'TIGER', 'SHROOM', 'MAILBOX', 'GILAMONSTER', 'RINGEDMIMIC',
              'NECKLACEMIMIC'],
-            ['LEVIATHANMIMIC', 'SPORTYMIMICONE', 'SPORTYMIMICTWO', 'SPORTYMIMICTHREE', 'ECHOMIMIC', 'TLURE']
+            ['LEVIATHANMIMIC', 'SPORTYMIMICONE', 'SPORTYMIMICTWO', 'SPORTYMIMICTHREE']
         ]
 
         for row, masks in enumerate(tortiepatchesmasks):
