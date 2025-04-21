@@ -446,6 +446,8 @@ class ProfileScreen(Screens):
                                 self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['haloaccs' + accessory + cat_sprite], manager=MANAGER)
                             elif accessory in cat.pelt.ponchoaccs:
                                 self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['ponchoaccs' + accessory + cat_sprite], manager=MANAGER)
+                            elif accessory in cat.pelt.glassesaccs:
+                                self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['glassesaccs' + accessory + cat_sprite], manager=MANAGER)
                             pos_x += 60
                             if pos_x >= 600:
                                 pos_x = 5
@@ -822,6 +824,8 @@ class ProfileScreen(Screens):
                                     self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['haloaccs' + accessory + cat_sprite], manager=MANAGER)
                                 elif accessory in cat.pelt.ponchoaccs:
                                     self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['ponchoaccs' + accessory + cat_sprite], manager=MANAGER)
+                                elif accessory in cat.pelt.glassesaccs:
+                                    self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['glassesaccs' + accessory + cat_sprite], manager=MANAGER)
                                 pos_x += 60
                                 if pos_x >= 600:
                                     pos_x = 5
@@ -2751,6 +2755,8 @@ class ProfileScreen(Screens):
                             self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['haloaccs' + accessory + cat_sprite], manager=MANAGER)
                         elif accessory in cat.pelt.ponchoaccs:
                             self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['ponchoaccs' + accessory + cat_sprite], manager=MANAGER)
+                        elif accessory in cat.pelt.glassesaccs:
+                            self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['glassesaccs' + accessory + cat_sprite], manager=MANAGER)
 
                         self.accessories_list.append(accessory)
                         pos_x += 60
