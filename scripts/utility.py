@@ -2978,6 +2978,8 @@ def generate_sprite(
                             new_sprite.blit(sprites.sprites['haloaccs' + i + cat_sprite], (0, 0))
                         elif i in cat.pelt.ponchoaccs:
                             new_sprite.blit(sprites.sprites['ponchoaccs' + i + cat_sprite], (0, 0))
+                        elif i in cat.pelt.glassesaccs:
+                            new_sprite.blit(sprites.sprites['glassesaccs' + i + cat_sprite], (0, 0))
                             
                     except:
                         continue
