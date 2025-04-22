@@ -2064,6 +2064,46 @@
     "plural": "fiery manes",
     "singular": "fiery mane"
   },
+  "SLEEPYROBEPURPLE": {
+    "default": "fluffy purple robe",
+    "plural": "fluffy purple robes",
+    "singular": "fluffy purple robe"
+  },
+  "SLEEPYROBEGREEN": {
+    "default": "fluffy green robe",
+    "plural": "fluffy green robes",
+    "singular": "fluffy green robe"
+  },
+  "SLEEPYROBEBLACK": {
+    "default": "fluffy black robe",
+    "plural": "fluffy black robes",
+    "singular": "fluffy black robe"
+  },
+  "SLEEPYROBERED": {
+    "default": "fluffy red robe",
+    "plural": "fluffy red robes",
+    "singular": "fluffy red robe"
+  },
+  "SLEEPYROBEBLUE": {
+    "default": "fluffy blue robe",
+    "plural": "fluffy blue robes",
+    "singular": "fluffy blue robe"
+  },
+  "SLEEPYROBEFLOAH": {
+    "default": "fluffy orange robe",
+    "plural": "fluffy orange robes",
+    "singular": "fluffy orange robe"
+  },
+  "ITERATORPEARLNECKLACE": {
+    "default": "iterator pearl necklace",
+    "plural": "iterator pearl necklaces",
+    "singular": "iterator pearl necklace"
+  },
+  "AMBERJEWLERY": {
+    "default": "amber jewlery",
+    "plural": "amber jewleries",
+    "singular": "amber jewlery"
+  },
   "DPINKFEATHERBOA": {
     "default": "pink vulture feather boa",
     "plural": "pink vulture feather boas",
@@ -2614,6 +2654,46 @@
     "plural": "red pole plant buddies",
     "singular": "red pole plant buddy"
   },
+  "EYEBAGS": {
+    "default": "eye bags",
+    "plural": "multiple eye bags",
+    "singular": "eye bags"
+  },
+  "MAGNATEJEWLERY": {
+    "default": "magnate jewlery",
+    "plural": "magnate jewleries",
+    "singular": "magnate jewlery"
+  },
+  "YELLOWKARMAWREATH": {
+    "default": "yellow karma flower wreath",
+    "plural": "yellow karma flower wreaths",
+    "singular": "yellow karma flower wreath"
+  },
+  "BLUEKARMAWREATH": {
+    "default": "blue karma flower wreath",
+    "plural": "blue karma flower wreaths",
+    "singular": "blue karma flower wreath"
+  },
+  "PURPLEKARMAWREATH": {
+    "default": "purple karma flower wreath",
+    "plural": "purple karma flower wreaths",
+    "singular": "purple karma flower wreath"
+  },
+  "MOTHBUDDY": {
+    "default": "moth buddy",
+    "plural": "moth buddies",
+    "singular": "moth buddy"
+  },
+  "BOOMERANG": {
+    "default": "boomerang",
+    "plural": "boomerangs",
+    "singular": "boomerang"
+  },
+  "MOTHBUDDYTWO": {
+    "default": "moth buddy",
+    "plural": "moth buddies",
+    "singular": "moth buddy"
+  },
   "YELLOWFLOATYEYES": {
     "default": "yellow floaty eyes",
     "plural": "multiple yellow floaty eyes",
@@ -2648,6 +2728,526 @@
     "default": "indigo floaty eyes",
     "plural": "multiple indigo floaty eyes",
     "singular": "indigo floaty eyes"
+  },
+  "PURPLEINDIGOPSPEAR": {
+    "default": "purple indigo poison spear",
+    "plural": "purple indigo poison spears",
+    "singular": "purple indigo poison spear"
+  },
+  "INDIGOPSPEAR": {
+    "default": "indigo poison spear",
+    "plural": "indigo poison spears",
+    "singular": "indigo poison spear"
+  },
+  "PURPLEPSPEAR": {
+    "default": "purple poison spear",
+    "plural": "purple poison spears",
+    "singular": "purple poison spear"
+  },
+  "CYANPSPEAR": {
+    "default": "cyan poison spear",
+    "plural": "cyan poison spears",
+    "singular": "cyan poison spear"
+  },
+  "BLUEPSPEAR": {
+    "default": "blue poison spear",
+    "plural": "blue poison spears",
+    "singular": "blue poison spear"
+  },
+  "BLUECYANPSPEAR": {
+    "default": "cyan blue poison spear",
+    "plural": "cyan blue poison spears",
+    "singular": "cyan blue poison spear"
+  },
+  "GAYPSPEAR": {
+    "default": "rainbow poison spear",
+    "plural": "rainbow poison spears",
+    "singular": "rainbow poison spear"
+  },
+  "TURQUOISEPSPEAR": {
+    "default": "turquoise poison spear",
+    "plural": "turquoise poison spears",
+    "singular": "turquoise poison spear"
+  },
+  "TURQUOISEGREENPSPEAR": {
+    "default": "turquoise green poison spear",
+    "plural": "turquoise green poison spears",
+    "singular": "turquoise green poison spear"
+  },
+  "LIMEGREENPSPEAR": {
+    "default": "lime green poison spear",
+    "plural": "lime green poison spears",
+    "singular": "lime green poison spear"
+  },
+  "LIMEPSPEAR": {
+    "default": "lime poison spear",
+    "plural": "lime poison spears",
+    "singular": "lime poison spear"
+  },
+  "GREYPSPEAR": {
+    "default": "grey poison spear",
+    "plural": "grey poison spears",
+    "singular": "grey poison spear"
+  },
+  "GREENPSPEAR": {
+    "default": "green poison spear",
+    "plural": "green poison spears",
+    "singular": "green poison spear"
+  },
+  "ORANGEPSPEAR": {
+    "default": "orange poison spear",
+    "plural": "orange poison spears",
+    "singular": "orange poison spear"
+  },
+  "REDPSPEAR": {
+    "default": "red poison spear",
+    "plural": "red poison spears",
+    "singular": "red poison spear"
+  },
+  "REDPINKPSPEAR": {
+    "default": "red pink poison spear",
+    "plural": "red pink poison spears",
+    "singular": "red pink poison spear"
+  },
+  "PURPLEPINKPSPEAR": {
+    "default": "purple pink poison spear",
+    "plural": "purple pink poison spears",
+    "singular": "purple pink poison spear"
+  },
+  "PINKPSPEAR": {
+    "default": "pink poison spear",
+    "plural": "pink poison spears",
+    "singular": "pink poison spear"
+  },
+  "MAGENTAPINKPSPEAR": {
+    "default": "magenta pink poison spear",
+    "plural": "magenta pink poison spears",
+    "singular": "magenta pink poison spear"
+  },
+  "REDPURPLEPSPEAR": {
+    "default": "red purple poison spear",
+    "plural": "red purple poison spears",
+    "singular": "red purple poison spear"
+  },
+  "BLUEPURPLEPSPEAR": {
+    "default": "blue purple poison spear",
+    "plural": "blue purple poison spears",
+    "singular": "blue purple poison spear"
+  },
+  "ROSEPINKPSPEAR": {
+    "default": "rose pink poison spear",
+    "plural": "rose pink poison spears",
+    "singular": "rose pink poison spear"
+  },
+  "GREENYELLOWPSPEAR": {
+    "default": "green yellow poison spear",
+    "plural": "green yellow poison spears",
+    "singular": "green yellow poison spear"
+  },
+  "LIMEYELLOWPSPEAR": {
+    "default": "lime yellow poison spear",
+    "plural": "lime yellow poison spears",
+    "singular": "lime yellow poison spear"
+  },
+  "YELLOWPSPEAR": {
+    "default": "yellow poison spear",
+    "plural": "yellow poison spears",
+    "singular": "yellow poison spear"
+  },
+  "REDFIRESPEAR": {
+    "default": "red fire spear",
+    "plural": "red fire spears",
+    "singular": "red fire spear"
+  },
+  "ORANGEFIRESPEAR": {
+    "default": "orange fire spear",
+    "plural": "orange fire spears",
+    "singular": "orange fire spear"
+  },
+  "YELLOWFIRESPEAR": {
+    "default": "yellow fire spear",
+    "plural": "yellow fire spears",
+    "singular": "yellow fire spear"
+  },
+  "PINKFIRESPEAR": {
+    "default": "pink fire spear",
+    "plural": "pink fire spears",
+    "singular": "pink fire spear"
+  },
+  "PURPLEFIRESPEAR": {
+    "default": "purple fire spear",
+    "plural": "purple fire spears",
+    "singular": "purple fire spear"
+  },
+  "DARKREDFIRESPEAR": {
+    "default": "dark red fire spear",
+    "plural": "dark red fire spears",
+    "singular": "dark red fire spear"
+  },
+  "DARKPINKFIRESPEAR": {
+    "default": "dark pink fire spear",
+    "plural": "dark pink fire spears",
+    "singular": "dark pink fire spear"
+  },
+  "DARKORANGEFIRESPEAR": {
+    "default": "dark orange fire spear",
+    "plural": "dark orange fire spears",
+    "singular": "dark orange fire spear"
+  },
+  "DARKYELLOWFIRESPEAR": {
+    "default": "dark yellow fire spear",
+    "plural": "dark yellow fire spears",
+    "singular": "dark yellow fire spear"
+  },
+  "BLUEFLAG": {
+    "default": "blue flag",
+    "plural": "blue flags",
+    "singular": "blue flag"
+  },
+  "COOLFLAG": {
+    "default": "cool flag",
+    "plural": "cool flags",
+    "singular": "cool flag"
+  },
+  "GREENFLAG": {
+    "default": "green flag",
+    "plural": "green flags",
+    "singular": "green flag"
+  },
+  "GREYFLAG": {
+    "default": "grey flag",
+    "plural": "grey flags",
+    "singular": "grey flag"
+  },
+  "ORANGEFLAG": {
+    "default": "orange flag",
+    "plural": "orange flags",
+    "singular": "orange flag"
+  },
+  "PINKFLAG": {
+    "default": "pink flag",
+    "plural": "pink flags",
+    "singular": "pink flag"
+  },
+  "PURPLEFLAG": {
+    "default": "purple flag",
+    "plural": "purple flags",
+    "singular": "purple flag"
+  },
+  "RAINBOWFLAG": {
+    "default": "rainbow flag",
+    "plural": "rainbow flags",
+    "singular": "rainbow flag"
+  },
+  "REDFLAG": {
+    "default": "red flag",
+    "plural": "red flags",
+    "singular": "red flag"
+  },
+  "SINFLAG": {
+    "default": "sin flag",
+    "plural": "sin flags",
+    "singular": "sin flag"
+  },
+  "TEALFLAG": {
+    "default": "teal flag",
+    "plural": "teal flags",
+    "singular": "teal flag"
+  },
+  "WARMFLAG": {
+    "default": "warm flag",
+    "plural": "warm flags",
+    "singular": "warm flag"
+  },
+  "WHITEFLAG": {
+    "default": "white flag",
+    "plural": "white flags",
+    "singular": "white flag"
+  },
+  "YELLOWFLAG": {
+    "default": "yellow flag",
+    "plural": "yellow flags",
+    "singular": "yellow flag"
+  },
+  "REDHALO": {
+    "default": "red halo",
+    "plural": "red halos",
+    "singular": "red halo"
+  },
+  "ORANGEHALO": {
+    "default": "orange halo",
+    "plural": "orange halos",
+    "singular": "orange halo"
+  },
+  "YELLOWHALO": {
+    "default": "yellow halo",
+    "plural": "yellow halos",
+    "singular": "yellow halo"
+  },
+  "GREENHALO": {
+    "default": "green halo",
+    "plural": "green halos",
+    "singular": "green halo"
+  },
+  "TEALHALO": {
+    "default": "teal halo",
+    "plural": "teal halos",
+    "singular": "teal halo"
+  },
+  "CYANHALO": {
+    "default": "cyan halo",
+    "plural": "cyan halos",
+    "singular": "cyan halo"
+  },
+  "INDIGOHALO": {
+    "default": "indigo halo",
+    "plural": "indigo halos",
+    "singular": "indigo halo"
+  },
+  "BLUEHALO": {
+    "default": "blue halo",
+    "plural": "blue halos",
+    "singular": "blue halo"
+  },
+  "PURPLEHALO": {
+    "default": "purple halo",
+    "plural": "purple halos",
+    "singular": "purple halo"
+  },
+  "MAGENTAHALO": {
+    "default": "magenta halo",
+    "plural": "magenta halos",
+    "singular": "magenta halo"
+  },
+  "PINKHALO": {
+    "default": "pink halo",
+    "plural": "pink halos",
+    "singular": "pink halo"
+  },
+  "WHITEHALO": {
+    "default": "white halo",
+    "plural": "white halos",
+    "singular": "white halo"
+  },
+  "BLACKHALO": {
+    "default": "black halo",
+    "plural": "black halos",
+    "singular": "black halo"
+  },
+  "ORANGEPONCHO": {
+    "default": "orange poncho",
+    "plural": "orange ponchos",
+    "singular": "orange poncho"
+  },
+  "YELLOWPONCHO": {
+    "default": "yellow poncho",
+    "plural": "yellow ponchos",
+    "singular": "yellow poncho"
+  },
+  "GREENPONCHO": {
+    "default": "green poncho",
+    "plural": "green ponchos",
+    "singular": "green poncho"
+  },
+  "TEALPONCHO": {
+    "default": "teal poncho",
+    "plural": "teal ponchos",
+    "singular": "teal poncho"
+  },
+  "CYANPONCHO": {
+    "default": "cyan poncho",
+    "plural": "cyan ponchos",
+    "singular": "cyan poncho"
+  },
+  "BLUEPONCHO": {
+    "default": "blue poncho",
+    "plural": "blue ponchos",
+    "singular": "blue poncho"
+  },
+  "PURPLEPONCHO": {
+    "default": "purple poncho",
+    "plural": "purple ponchos",
+    "singular": "purple poncho"
+  },
+  "PINKPONCHO": {
+    "default": "pink poncho",
+    "plural": "pink ponchos",
+    "singular": "pink poncho"
+  },
+  "REDPONCHO": {
+    "default": "red poncho",
+    "plural": "red ponchos",
+    "singular": "red poncho"
+  },
+  "WHITEPONCHO": {
+    "default": "white poncho",
+    "plural": "white ponchos",
+    "singular": "white poncho"
+  },
+  "BROWNPONCHO": {
+    "default": "brown poncho",
+    "plural": "brown ponchos",
+    "singular": "brown poncho"
+  },
+  "SILVERPONCHO": {
+    "default": "silver poncho",
+    "plural": "silver ponchos",
+    "singular": "silver poncho"
+  },
+  "BLACKPONCHO": {
+    "default": "black poncho",
+    "plural": "black ponchos",
+    "singular": "black poncho"
+  },
+  "MLOCPONCHO": {
+    "default": "MLOC poncho",
+    "plural": "MLOC ponchos",
+    "singular": "MLOC poncho"
+  },
+  "VSSCPONCHO": {
+    "default": "VSSC poncho",
+    "plural": "VSSC ponchos",
+    "singular": "VSSC poncho"
+  },
+  "FAMILIARPONCHO": {
+    "default": "Familiar poncho",
+    "plural": "Familiar ponchos",
+    "singular": "Familiar poncho"
+  },
+  "NSHPONCHO": {
+    "default": "NSH poncho",
+    "plural": "NSH ponchos",
+    "singular": "NSH poncho"
+  },
+  "SUNGLASSESPINK": {
+    "default": "pink sunglasses",
+    "plural": "multiple pink sunglasses",
+    "singular": "pink sunglasses"
+  },
+  "SUNGLASSESRED": {
+    "default": "red sunglasses",
+    "plural": "multiple red sunglasses",
+    "singular": "red sunglasses"
+  },
+  "SUNGLASSESORANGE": {
+    "default": "orange sunglasses",
+    "plural": "multiple orange sunglasses",
+    "singular": "orange sunglasses"
+  },
+  "SUNGLASSESAMBER": {
+    "default": "amber sunglasses",
+    "plural": "multiple amber sunglasses",
+    "singular": "amber sunglasses"
+  },
+  "SUNGLASSESYELLOW": {
+    "default": "yellow sunglasses",
+    "plural": "multiple yellow sunglasses",
+    "singular": "yellow sunglasses"
+  },
+  "SUNGLASSESLIME": {
+    "default": "lime sunglasses",
+    "plural": "multiple lime sunglasses",
+    "singular": "lime sunglasses"
+  },
+  "SUNGLASSESGREEN": {
+    "default": "green sunglasses",
+    "plural": "multiple green sunglasses",
+    "singular": "green sunglasses"
+  },
+  "SUNGLASSESTEAL": {
+    "default": "teal sunglasses",
+    "plural": "multiple teal sunglasses",
+    "singular": "teal sunglasses"
+  },
+  "SUNGLASSESCYAN": {
+    "default": "cyan sunglasses",
+    "plural": "multiple cyan sunglasses",
+    "singular": "cyan sunglasses"
+  },
+  "SUNGLASSESBLUE": {
+    "default": "blue sunglasses",
+    "plural": "multiple blue sunglasses",
+    "singular": "blue sunglasses"
+  },
+  "SUNGLASSESINDIGO": {
+    "default": "indigo sunglasses",
+    "plural": "multiple indigo sunglasses",
+    "singular": "indigo sunglasses"
+  },
+  "SUNGLASSESPURPLE": {
+    "default": "purple sunglasses",
+    "plural": "multiple purple sunglasses",
+    "singular": "purple sunglasses"
+  },
+  "SUNGLASSESWHITE": {
+    "default": "white sunglasses",
+    "plural": "multiple white sunglasses",
+    "singular": "white sunglasses"
+  },
+  "SUNGLASSES": {
+    "default": "sunglasses",
+    "plural": "multiple sunglasses",
+    "singular": "sunglasses"
+  },
+  "GLASSESRED": {
+    "default": "red glasses",
+    "plural": "multiple red glasses",
+    "singular": "red glasses"
+  },
+  "GLASSESORANGE": {
+    "default": "orange glasses",
+    "plural": "multiple orange glasses",
+    "singular": "orange glasses"
+  },
+  "GLASSESAMBER": {
+    "default": "amber glasses",
+    "plural": "multiple amber glasses",
+    "singular": "amber glasses"
+  },
+  "GLASSESYELLOW": {
+    "default": "yellow glasses",
+    "plural": "multiple yellow glasses",
+    "singular": "yellow glasses"
+  },
+  "GLASSESLIME": {
+    "default": "lime glasses",
+    "plural": "multiple lime glasses",
+    "singular": "lime glasses"
+  },
+  "GLASSESGREEN": {
+    "default": "green glasses",
+    "plural": "multiple green glasses",
+    "singular": "green glasses"
+  },
+  "GLASSESTEAL": {
+    "default": "teal glasses",
+    "plural": "multiple teal glasses",
+    "singular": "teal glasses"
+  },
+  "GLASSESCYAN": {
+    "default": "cyan glasses",
+    "plural": "multiple cyan glasses",
+    "singular": "cyan glasses"
+  },
+  "GLASSESBLUE": {
+    "default": "blue glasses",
+    "plural": "multiple blue glasses",
+    "singular": "blue glasses"
+  },
+  "GLASSESINDIGO": {
+    "default": "indigo glasses",
+    "plural": "multiple indigo glasses",
+    "singular": "indigo glasses"
+  },
+  "GLASSESPURPLE": {
+    "default": "purple glasses",
+    "plural": "multiple purple glasses",
+    "singular": "purple glasses"
+  },
+  "GLASSESPINK": {
+    "default": "pink glasses",
+    "plural": "multiple pink glasses",
+    "singular": "pink glasses"
   },
   "ORANGEORBITAL": {
     "default": "orange orbital",

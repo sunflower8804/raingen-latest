@@ -4773,5 +4773,84 @@
       "age": ["adolescent", "young adult", "adult", "senior adult", "senior"],
       "status": ["any"]
     }
+  },
+  {
+    "event_id": "gen_misc_any_cloudcover",
+    "location": ["any"],
+    "season": ["any"],
+    "sub_type": ["accessory"],
+    "weight": 7,
+    "event_text": "m_c has frequented wandering in the fog so much that now it seems like the fog constantly shrouds {PRONOUN/m_c/object}",
+    "new_accessory": ["BLUECLOUDS","YELLOWCLOUDS", "PURPLECLOUDS", "PINKCLOUDS"],
+    "m_c": {
+      "age": ["adolescent", "young adult", "adult", "senior adult", "senior"]
+    }
+  },
+  {
+    "event_id": "gen_misc_any_goggles",
+    "location": ["any"],
+    "season": ["any"],
+    "sub_type": ["accessory"],
+    "weight": 5,
+    "event_text": "m_c left camp one day, but later that cycle returned wearing a pair of goggles {PRONOUN/m_c/subject} found!",
+    "new_accessory": ["GOGGLES"],
+    "m_c": {
+      "age": ["adolescent", "young adult", "adult", "senior adult", "senior"]
+    }
+  },
+  {
+    "event_id": "gen_misc_any_poleplantbuddy",
+    "location": ["any"],
+    "season": ["any"],
+    "sub_type": ["accessory"],
+    "weight": 5,
+    "event_text": "m_c was attacked by a pole plant, but somehow by the void's will, {PRONOUN/m_c/subject} managed to tame it instead of being killed by it!",
+    "new_accessory": ["PINKPOLEPLANTBUDDY", "ORANGEPOLEPLANTBUDDY", "REDPOLEPLANTBUDDY"],
+    "m_c": {
+      "age": ["adolescent", "young adult", "adult", "senior adult", "senior"]
+    }
+  },
+  {
+    "event_id": "gen_misc_any_floatyeyes",
+    "location": ["any"],
+    "season": ["any"],
+    "sub_type": ["accessory"],
+    "weight": 5,
+    "event_text": "m_c has been feeling constantly watched as of late, and a clanmate hastily informs {PRONOUN/m_c/object} that {PRONOUN/m_c/subject} is quite litterally having eyes following behind {PRONOUN/m_c/object}!",
+    "new_accessory": ["FLOATYEYES"],
+    "m_c": {
+      "age": ["adolescent", "young adult", "adult", "senior adult", "senior"]
+    }
+  },
+  {
+    "event_id": "gen_misc_any_poisonspear_WATCHER",
+    "location": ["any"],
+    "season": ["any"],
+    "sub_type": ["accessory"],
+    "weight": 10,
+    "event_text": "m_c had gone out of the camp, but later returned with a acc_singular after stabbing a tardigrade.",
+    "new_accessory": [
+      "PURPLEINDIGOPSPEAR", "INDIGOPSPEAR", "PURPLEPSPEAR", "CYANPSPEAR", "BLUEPSPEAR", "BLURCYANPSPEAR",
+      "GAYPSPEAR", "TURQUOISEPSPEAR", "TURQUOISEGREENPSPEAR", "LIMEGREENPSPEAR", "LIMEPSPEAR", "GREYPSPEAR",
+      "GREENPSPEAR", "ORANGEPSPEAR", "REDPSPEAR", "REDPINKPSPEAR", "PURPLEPINKPSPEAR", "PINKPSPEAR",
+      "MAGENTAPINKPSPEAR", "REDPURPLEPSPEAR", "BLUEPURPLEPSPEAR", "ROSEPINKPSPEAR", "GREENYELLOWPSPEAR", "LIMEYELLOWPSPEAR",
+      "YELLOWPSPEAR"
+    ],
+    "m_c": {
+      "age": ["adolescent", "young adult", "adult", "senior adult", "senior"]
+    }
+  },
+  {
+    "event_id": "gen_misc_any_firespear",
+    "location": ["any"],
+    "season": ["any"],
+    "sub_type": ["accessory"],
+    "weight": 10,
+    "event_text": "m_c had gone out of the camp, but later returned with a acc_singular after killing an elusive firebug.",
+    "new_accessory": ["REDFIRESPEAR", "ORANGEFIRESPEAR", "YELLOWFIRESPEAR", "PINKFIRESPEAR", "PURPLEFIRESPEAR",
+        "DARKREDFIRESPEAR", "DARKPINKFIRESPEAR", "DARKORANGEFIRESPEAR", "DARKYELLOWFIRESPEAR"],
+    "m_c": {
+      "age": ["adolescent", "young adult", "adult", "senior adult", "senior"]
+    }
   }
 ]

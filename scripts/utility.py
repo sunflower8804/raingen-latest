@@ -2783,7 +2783,7 @@ def generate_sprite(
             )
 
         # draw normal eyes
-        if cat.pelt.eye_colour not in Pelt.riveye_colours and cat.pelt.eye_colour not in Pelt.buttoneye_colours:
+        if cat.pelt.eye_colour not in Pelt.riveye_colours and cat.pelt.eye_colour not in Pelt.buttoneye_colours not in Pelt.bobaeye_colours:
             eyes = sprites.sprites["eyes" + cat.pelt.eye_colour + cat_sprite].copy()
             if cat.pelt.eye_colour2 != None:
                 eyes.blit(
@@ -2887,6 +2887,8 @@ def generate_sprite(
                             new_sprite.blit(sprites.sprites['newaccs3' + i + cat_sprite], (0, 0))
                         elif i in cat.pelt.floatyeyes:
                             new_sprite.blit(sprites.sprites['floatyeyes' + i + cat_sprite], (0, 0))
+                        elif i in cat.pelt.ponchoaccs:
+                            new_sprite.blit(sprites.sprites['ponchoaccs' + i + cat_sprite], (0, 0))
                         elif i in cat.pelt.orbitals:
                             new_sprite.blit(sprites.sprites['orbitals' + i + cat_sprite], (0, 0))
                     #THIS SECTION ABOVE IS ONLY FOR CLOSE-TO-BODY ACCESSORIES
@@ -2900,8 +2902,8 @@ def generate_sprite(
         if cat.pelt.skin not in Pelt.closest_skin:
             new_sprite.blit(sprites.sprites["skin" + cat.pelt.skin + cat_sprite], (0, 0))
             
-        # draw riv and button eyes
-        if cat.pelt.eye_colour in Pelt.riveye_colours or cat.pelt.eye_colour in Pelt.buttoneye_colours:
+        # draw riv, button, and boba eyes
+        if cat.pelt.eye_colour in Pelt.riveye_colours or cat.pelt.eye_colour in Pelt.buttoneye_colours or cat.pelt.eye_colour in Pelt.bobaeye_colours:
             eyes = sprites.sprites["eyes" + cat.pelt.eye_colour + cat_sprite].copy()
             if cat.pelt.eye_colour2 != None:
                 eyes.blit(
@@ -2974,6 +2976,16 @@ def generate_sprite(
                             new_sprite.blit(sprites.sprites['newaccs3' + i + cat_sprite], (0, 0))
                         elif i in cat.pelt.floatyeyes:
                             new_sprite.blit(sprites.sprites['floatyeyes' + i + cat_sprite], (0, 0))
+                        elif i in cat.pelt.morespears:
+                            new_sprite.blit(sprites.sprites['morespears' + i + cat_sprite], (0, 0))
+                        elif i in cat.pelt.flagaccs:
+                            new_sprite.blit(sprites.sprites['flagaccs' + i + cat_sprite], (0, 0))
+                        elif i in cat.pelt.haloaccs:
+                            new_sprite.blit(sprites.sprites['haloaccs' + i + cat_sprite], (0, 0))
+                        elif i in cat.pelt.ponchoaccs:
+                            new_sprite.blit(sprites.sprites['ponchoaccs' + i + cat_sprite], (0, 0))
+                        elif i in cat.pelt.glassesaccs:
+                            new_sprite.blit(sprites.sprites['glassesaccs' + i + cat_sprite], (0, 0))
                         elif i in cat.pelt.orbitals:
                             new_sprite.blit(sprites.sprites['orbitals' + i + cat_sprite], (0, 0))
 

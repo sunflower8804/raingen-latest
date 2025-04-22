@@ -992,6 +992,8 @@ class Cat:
             colour = colour.replace("riv", "")
         if self.pelt.eye_colour in Pelt.buttoneye_colours:
             colour = colour.replace("button", "")
+        if self.pelt.eye_colour in Pelt.bobaeye_colours:
+            colour = colour.replace("boba", "")
 
         if colour == "palegreen":
             colour = "pale green"
@@ -1015,6 +1017,9 @@ class Cat:
             
         if self.pelt.eye_colour in Pelt.buttoneye_colours:
             colour = colour + " buttons"
+
+        if self.pelt.eye_colour in Pelt.bobaeye_colours:
+            colour = "large " + colour
             
         if self.pelt.eye_colour2:
             if self.pelt.eye_colour2 in Pelt.multi_eyes:

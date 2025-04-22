@@ -950,7 +950,9 @@ class Clan:
                             Pelt.muddypaws + Pelt.insectwings + Pelt.buddies + Pelt.newaccs + Pelt.newaccs2 + Pelt.bodypaint + \
                             Pelt.implant + Pelt.magic + Pelt.necklaces + Pelt.drapery + Pelt.pridedrapery + Pelt.eyepatches + \
                             Pelt.larsaccs + Pelt.harleyaccs + Pelt.featherboas + Pelt.scarves + Pelt.neckbandanas + \
-                            Pelt.chains + Pelt.floatyeyes + Pelt.newaccs3 + Pelt.orbitals
+                            Pelt.chains + Pelt.floatyeyes + Pelt.newaccs3 + Pelt.morespears + Pelt.flagaccs + Pelt.orbitals + \
+                            Pelt.haloaccs + Pelt.ponchoaccs + Pelt.glassesaccs
+
                 if "NOTAIL" in c.pelt.scars or "HALFTAIL" in c.pelt.scars:
                     for acc in Pelt.tail_accessories:
                         if acc in acc_list:
