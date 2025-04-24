@@ -2,6 +2,7 @@
 
 ### [RainGen Discord Server](https://discord.gg/Zyj6vTq4rS)
 #### [clangen discord](https://discord.gg/clangen) || [clangen website](https://clangen.io/) || [clangen github](https://github.com/ClanGenOfficial/clangen)
+#### [lifegen version](https://github.com/sunflower8804/cyclegen)
 Fan-made community project aiming to change Clangen to take place in Rain World's setting. 
 
 It's work in progress! You can contribute anytime through our [discord server](https://discord.gg/Zyj6vTq4rS). 
