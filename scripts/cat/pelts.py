@@ -157,7 +157,9 @@ class Pelt:
                    'BROWNTBOI', 'ORANGETBOI', 'ACROAMBER', 'ACROGREY', 'FIRE', 'REFORGED', 'PISTON', 'THEIFDOS', 'MORTICIAN', 'SWAMPY',
                    'PURIFIER', 'CORROSOL', 'ATLAN', 'BASIC', 'BELL', 'GAMBLE', 'GORB', 'POLE', 'SUNSET']
     blue_eyes = ['BLUE', 'DARKBLUE', 'CYAN', 'PALEBLUE', 'HEATHERBLUE', 'COBALT', 'SUNLITICE', 'GREY', 'ELECTRICBLUE', 'SNOW', 'INDIGO',
-                 'ANGEL', 'ACROBLUE', 'ACROINDIGO', 'ESCAPEE', 'REJECT', 'WAYFARER', 'THIEF', 'PORTALMAKER', 'CRITTER', 'FREYR', 'JOHN',
+                 'ANGEL', 'ACROBLUE', 'ACROINDIGO', 'ESCAPEE', 'REJECT', 'WAYFARER', 
+                 #'THIEF',
+                 'PORTALMAKER', 'CRITTER', 'FREYR', 'JOHN',
                  'PE', 'RAT', 'TELA', 'USURP', 'WAR', 'XIII']
     green_eyes = ['PALEGREEN', 'GREEN', 'EMERALD', 'SAGE', 'HAZEL', 'SEAFOAM', 'NAVY', 'MESS', 'ACROGREEN', 'ACROTEAL', 'EXILED', 'CUBED',
                  'RGB', 'ROT']
@@ -219,6 +221,7 @@ class Pelt:
     red_boba_eyes = ['BOBARED', 'BOBAPURPLE', 'BOBAMAUVE', 'BOBAARID', 'BOBABLOOD', 'BOBAESES', 'BOBAEXILE', 'BOBAFALLSTAR', 'BOBAHOT', 'BOBAKIND',
                     'BOBAMARTI', 'BOBAMEISTER', 'BOBAPELA', 'BOBARETRO', 'BOBASIXER', 'BOBASUN', 'BOBASWEET']
     
+    #when a scug has one eye with a pupil and one without it looks bad so please list all eyes with pupils
     pupil_eyes = ['ALBA', 'BANANA', 'CREAMY', 'KARMA', 'MHUNT', 'PEPPER', 'SPLIT', 'WINKS', 'ZENI', 'BEAST',
                 'CARNI', 'CHAIN', 'FOAM', 'MEISTALT', 'MELON', 'MINV', 'MOON', 'MRIV', 'PEBB', 'RUST', 'SIG', 
                 'TIDE', 'VIVID', 'WAVE', 'APPLE', 'AQUA', 'FAE', 'FIELD', 'IRID', 'RUNT', 
@@ -615,6 +618,7 @@ class Pelt:
     scavhorns = ['WHITEHORNSSCAV', 'BLACKHORNSSCAV', 'REDHORNSSCAV', 'YELLOWHORNSSCAV', 'GREENHORNSSCAV', 'BLUEHORNSSCAV', 'ORANGEHORNSSCAV', 'BROWNHORNSSCAV']
     elitehorns = ['WHITEHORNSELITE', 'BLACKHORNSELITE', 'REDHORNSELITE', 'YELLOWHORNSELITE', 'GREENHORNSELITE', 'BLUEHORNSELITE', 'ORANGEHORNSELITE', 'BROWNHORNSELITE']
     unihorns = ['WHITEHORNSLANCER', 'BLACKHORNSLANCER', 'REDHORNSLANCER', 'YELLOWHORNSLANCER', 'GREENHORNSLANCER', 'BLUEHORNSLANCER', 'ORANGEHORNSLANCER', 'BROWNHORNSLANCER']
+    antlers = ['ANTLERS']
     dragonhorns = ['WHITEHORNSDRAGON', 'BLACKHORNSDRAGON', 'REDHORNSDRAGON', 'YELLOWHORNSDRAGON', 'GREENHORNSDRAGON', 'BLUEHORNSDRAGON', 'ORANGEHORNSDRAGON', 'BROWNHORNSDRAGON']
     tailfrills = ['BLUETAILFRILLS', 'ORANGETAILFRILLS', 'GREENTAILFRILLS', 'PURPLETAILFRILLS', 'PINKTAILFRILLS', 'REDTAILFRILLS', 'YELLOWTAILFRILLS', 'CYANTAILFRILLS']
     spikes = ['YELLOWSPIKES', 'GREENSPIKES', 'AQUASPIKES', 'CYANSPIKES', 'BLUESPIKES', 'PURPLESPIKES', 'PINKSPIKES', 'REDSPIKES', 'ORANGESPIKES']
@@ -630,21 +634,23 @@ class Pelt:
     lizardfins = ['PINKFINS', 'BLUEFINS', 'REDFINS', 'GREENFINS', 'YELLOWFINS', 'WHITEFINS']
     anglerfish = ['ANGLERFISH']
     quills = ['WHITEQUILLS', 'BLACKQUILLS']
+    centipedegrowths = ['CENTIPEDEGROWTHS']
     tears = ['TEARS']
     spearholes = ['WHITESPOTS', 'BLACKSPOTS', 'MIXSPOTS', 'RAINBOWSPOTS']
     cyanfeatures = ['WHITECYAN', 'ORANGECYAN', 'BROWNCYAN', 'PINKCYAN', 'PINKERCYAN', 'TEALCYAN', 'GREENCYAN', 'BLOODYCYAN', 'LAVENDERCYAN', 'PURPLECYAN', 'CYANCYAN', 'BLUECYAN', 'DARKBLUECYAN', 'DARKPURPLECYAN', 'BLACKCYAN', 'EGGCYAN', 'YELLOWCYAN']
     cyanwings = ['CYANWINGS']
     firebugpart = ['FIREBUGPART']
     seaangelwings = ['SEAANGELWINGS']
+    loach = ['LOACH']
     grasssheepback = ['GRASSSHEEPBACK']
     glassback = ['GLASSBACK']
     familiar = ['FAMILIARMARK']
     acrotail = ['ACROTAIL']
     #'ANTLERS', 'LOACH', 'CENTIPEDEGROWTHS'
-    skin_categories = [empty, claws, whiskers, antennae, sharphorns, ramhorns, scavhorns, elitehorns, unihorns, dragonhorns, 
-                       moth, seaslugpapillae, tailfrills, thorns, glowspots, gills, tongues, lizardneedles, spikes, lizardfins, 
-                       catfishwhiskers, dragonwhiskers, quills, anglerfish, spearholes, cyanfeatures, cyanwings, firebugpart, seaangelwings, glassback, 
-                       grasssheepback, familiar, acrotail, tears]
+    skin_categories = [empty, claws, whiskers, antennae, sharphorns, ramhorns, scavhorns, elitehorns, unihorns, antlers, 
+                       dragonhorns, moth, seaslugpapillae, tailfrills, thorns, glowspots, gills, tongues, lizardneedles, spikes, 
+                       lizardfins, catfishwhiskers, dragonwhiskers, quills, centipedegrowths, anglerfish, spearholes, cyanfeatures, cyanwings, firebugpart, 
+                       seaangelwings, loach, glassback, grasssheepback, familiar, acrotail, tears]
     
     #list for stuff that should logically be behind a cloak
     closest_skin = [
@@ -848,19 +854,6 @@ class Pelt:
         else:
             self.eye_colour = choice([i.pelt.eye_colour for i in parents] + [choice(Pelt.eye_colours)])
 
-        # White patches must be initalized before eye color.
-        num = game.config["cat_generation"]["base_heterochromia"]
-        if self.white_patches in [Pelt.high_white, Pelt.mostly_white, 'FULLWHITE'] or self.colour == 'WHITE':
-            num = num - 30
-        if self.white_patches == 'FULLWHITE' or self.colour == 'WHITE':
-            num -= 10
-        for _par in parents:
-            if _par.pelt.eye_colour2:
-                num -= 10
-
-        if num < 0:
-            num = 1
-            
         multieyenum = game.config["cat_generation"]["base_multieyes"]
         riveyenum = game.config["cat_generation"]["base_riveyes"]
         buttoneyenum = game.config["cat_generation"]["base_buttoneyes"]
@@ -873,11 +866,28 @@ class Pelt:
         elif not random.randint(0, bobaeyenum):
             self.eye_colour = choice(Pelt.bobaeye_colours)
 
+        # White patches must be initalized before eye color.
+        num = game.config["cat_generation"]["base_heterochromia"]
+        if self.white_patches in [Pelt.high_white, Pelt.mostly_white, 'FULLWHITE'] or self.colour == 'WHITE':
+            num = num - 20
+        if self.eye_colour in Pelt.buttoneye_colours:
+            num -= 5
+        for _par in parents:
+            if _par.pelt.eye_colour2:
+                num -= 10
+
+        if num < 0:
+            num = 1
+
         if not random.randint(0, num):
             if self.eye_colour in Pelt.pupil_eyes:
                 colour_wheel = [Pelt.yellow_pupil_eyes, Pelt.blue_pupil_eyes, Pelt.green_pupil_eyes, Pelt.red_pupil_eyes]
             elif self.eye_colour in Pelt.riveye_colours:
                 colour_wheel = [Pelt.yellow_riv_eyes, Pelt.blue_riv_eyes, Pelt.green_riv_eyes]
+            elif self.eye_colour in Pelt.buttoneye_colours:
+                colour_wheel = [Pelt.yellow_button_eyes, Pelt.blue_button_eyes, Pelt.green_button_eyes]
+            elif self.eye_colour in Pelt.bobaeye_colours:
+                colour_wheel = [Pelt.yellow_boba_eyes, Pelt.blue_boba_eyes, Pelt.green_boba_eyes]
             else:
                 colour_wheel = [Pelt.yellow_eyes, Pelt.blue_eyes, Pelt.green_eyes, Pelt.red_eyes]
             for colour in colour_wheel[:]:
@@ -886,7 +896,7 @@ class Pelt:
                     self.eye_colour2 = choice(choice(colour_wheel)) # choose from the remaining two lists
                     break
 
-        elif self.eye_colour not in Pelt.riveye_colours and self.eye_colour not in Pelt.buttoneye_colours not in Pelt.bobaeye_colours and not random.randint(0, multieyenum):
+        elif self.eye_colour not in Pelt.riveye_colours and self.eye_colour not in Pelt.buttoneye_colours and self.eye_colour not in Pelt.bobaeye_colours and not random.randint(0, multieyenum):
             self.eye_colour2 = 'MULTI'+self.eye_colour
 
     def pattern_color_inheritance(self, parents: tuple = (), gender="female"):

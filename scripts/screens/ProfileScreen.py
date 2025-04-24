@@ -1219,6 +1219,7 @@ class ProfileScreen(Screens):
 
             #tongues
             elif the_cat.pelt.skin in the_cat.pelt.tongues:
+                featurename = featurename.replace("grey", "bluish grey")
                 featurename = featurename.replace("tongue", " tongue")
                 output += featurename
                 
@@ -1271,9 +1272,13 @@ class ProfileScreen(Screens):
                 featurename = featurename.replace("hornslancer", " lancer horn")
                 output += featurename
                 
+            #antlers
+            elif the_cat.pelt.skin in the_cat.pelt.antlers:
+                output += "feature: deer antlers"
+                
             #moth
             elif the_cat.pelt.skin in the_cat.pelt.moth:
-                featurename = featurename.replace("moth", " moth feelers")
+                featurename = featurename.replace("moth", " moth whiskers")
                 output += featurename
                 
             #whiskers
@@ -1291,13 +1296,13 @@ class ProfileScreen(Screens):
                 featurename = featurename.replace("needles", " needles")
                 output += featurename
                 
-            #catfish_whiskers
-            elif the_cat.pelt.skin in the_cat.pelt.catfish_whiskers:
+            #catfishwhiskers
+            elif the_cat.pelt.skin in the_cat.pelt.catfishwhiskers:
                 featurename = featurename.replace("catfishwhiskers", " catfish whiskers")
                 output += featurename
                 
-            #dragon_whiskers
-            elif the_cat.pelt.skin in the_cat.pelt.dragon_whiskers:
+            #dragonwhiskers
+            elif the_cat.pelt.skin in the_cat.pelt.dragonwhiskers:
                 featurename = featurename.replace("dragonwhiskers", " dragon whiskers")
                 output += featurename
 
@@ -1315,10 +1320,13 @@ class ProfileScreen(Screens):
                 featurename = featurename.replace("cyan", " cyan lizard tail & rings")
                 output += featurename
                 
+            #centipedegrowths
+            elif the_cat.pelt.skin in the_cat.pelt.centipedegrowths:
+                output += "feature: centipede growths"
+
             #anglerfish
             elif the_cat.pelt.skin in the_cat.pelt.anglerfish:
-                featurename = featurename.replace("h", "h thingy")
-                output += featurename
+                output += "feature: anglerfish lure"
                 
             #spikes
             elif the_cat.pelt.skin in the_cat.pelt.spikes:
@@ -1357,8 +1365,7 @@ class ProfileScreen(Screens):
                 
             #familiar
             elif the_cat.pelt.skin in the_cat.pelt.familiar:
-                featurename = featurename.replace("familiarmark", "something familiar")
-                output += featurename
+                output += "feature: something familiar"
                 
             else:
                 output += featurename

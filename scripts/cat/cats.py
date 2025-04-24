@@ -988,13 +988,6 @@ class Cat:
         colour = str(self.pelt.eye_colour).lower()
         colour2 = str(self.pelt.eye_colour2).lower()
 
-        if self.pelt.eye_colour in Pelt.riveye_colours:
-            colour = colour.replace("riv", "")
-        if self.pelt.eye_colour in Pelt.buttoneye_colours:
-            colour = colour.replace("button", "")
-        if self.pelt.eye_colour in Pelt.bobaeye_colours:
-            colour = colour.replace("boba", "")
-
         if colour == "palegreen":
             colour = "pale green"
         elif colour == "darkblue":
@@ -1013,18 +1006,22 @@ class Cat:
             colour = "green-yellow"
 
         if self.pelt.eye_colour in Pelt.riveye_colours:
-            colour = "huge " + colour
-            
+            colour = colour.replace("riv", "")
         if self.pelt.eye_colour in Pelt.buttoneye_colours:
-            colour = colour + " buttons"
-
+            colour = colour.replace("button", "")
         if self.pelt.eye_colour in Pelt.bobaeye_colours:
-            colour = "large " + colour
+            colour = colour.replace("boba", "")
             
         if self.pelt.eye_colour2:
             if self.pelt.eye_colour2 in Pelt.multi_eyes:
                 colour = "multi-eyed " + colour
             else:
+                if self.pelt.eye_colour2 in Pelt.riveye_colours:
+                    colour2 = colour2.replace("riv", "")
+                if self.pelt.eye_colour2 in Pelt.buttoneye_colours:
+                    colour2 = colour2.replace("button", "")
+                if self.pelt.eye_colour2 in Pelt.bobaeye_colours:
+                    colour2 = colour2.replace("boba", "")
                 if colour2 == "palegreen":
                     colour2 = "pale green"
                 if colour2 == "darkblue":
@@ -1040,6 +1037,13 @@ class Cat:
                 if colour2 == "greenyellow":
                     colour2 = "green-yellow"
                 colour = f"{colour} and {colour2}"
+
+        if self.pelt.eye_colour in Pelt.riveye_colours:
+            colour = "huge " + colour
+        if self.pelt.eye_colour in Pelt.buttoneye_colours:
+            colour = colour + " buttons"
+        if self.pelt.eye_colour in Pelt.bobaeye_colours:
+            colour = "large " + colour
 
         return colour
 
