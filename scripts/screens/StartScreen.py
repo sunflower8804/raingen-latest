@@ -423,8 +423,8 @@ class StartScreen(Screens):
                     write_file.write(get_version_info().version_number)
 
         self.warning_label = pygame_gui.elements.UITextBox(
-            "Warning: This game contains mild depictions of gore, canon-typical violence and animal abuse.",
-            ui_scale(pygame.Rect((0, 600), (800, 40))),
+            "Warning: This game contains mild depictions of gore, canon-typical violence and animal abuse.\nAnd minor Watcher spoilers.",
+            ui_scale(pygame.Rect((0, 600), (800, 80))),
             object_id=ObjectID("#text_box_30_horizcenter", "#dark"),
             manager=MANAGER,
             anchors={
