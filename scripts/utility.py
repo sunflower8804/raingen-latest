@@ -2626,6 +2626,7 @@ def generate_sprite(
     acc_hidden=False,
     always_living=False,
     no_not_working=False,
+    feature_hidden=False,
 ) -> pygame.Surface:
     """
     Generates the sprite for a cat, with optional arguments that will override certain things.
@@ -2636,6 +2637,7 @@ def generate_sprite(
     :param always_living: If True, always show the cat with living lineart
     :param no_not_working: If true, never use the not_working lineart.
                     If false, use the cat.not_working() to determine the no_working art.
+    :param feature_hidden: If True, hide the feature. If false, show the feature.
     """
 
     if life_state is not None:
@@ -2829,8 +2831,9 @@ def generate_sprite(
                     )
 
         #draw special skin
-        if cat.pelt.skin in Pelt.closest_skin:
-            new_sprite.blit(sprites.sprites["skin" + cat.pelt.skin + cat_sprite], (0, 0))
+        if not feature_hidden:
+            if cat.pelt.skin in Pelt.closest_skin:
+                new_sprite.blit(sprites.sprites["skin" + cat.pelt.skin + cat_sprite], (0, 0))
 
         #draw CLOSE TO BODY ACCS i'm finally doing it yuppie
         for i in cat.pelt.accessories:
@@ -2899,8 +2902,9 @@ def generate_sprite(
         blendmode = pygame.BLEND_RGBA_MIN
         
         #draw the rest of the skin
-        if cat.pelt.skin not in Pelt.closest_skin:
-            new_sprite.blit(sprites.sprites["skin" + cat.pelt.skin + cat_sprite], (0, 0))
+        if not feature_hidden:
+            if cat.pelt.skin not in Pelt.closest_skin:
+                new_sprite.blit(sprites.sprites["skin" + cat.pelt.skin + cat_sprite], (0, 0))
             
         # draw riv, button, and boba eyes
         if cat.pelt.eye_colour in Pelt.riveye_colours or cat.pelt.eye_colour in Pelt.buttoneye_colours or cat.pelt.eye_colour in Pelt.bobaeye_colours:

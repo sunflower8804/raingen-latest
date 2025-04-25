@@ -147,25 +147,35 @@ class Pelt:
         'KARMA', 'KIND', 'MARTI', 'MEISTALT', 'MEISTER', 'MELON', 'MESS', 'MHUNT', 'MINT', 'MINV', 
         'MOON', 'MRIV', 'PEACH', 'PEBB', 'PELA', 'PEPPER', 'RETRO', 'RUNT', 'RUST', 'SIG', 
         'SIXER', 'SPLIT', 'SUN', 'SWEET', 'TIDE', 'VIVID', 'WAVE', 'WINKS', 'ZENI', 'BEAST',
+
         'BROWNTBOI', 'ORANGETBOI', 'BREDTBOI', 'REDTBOI', 'FIRE', 'RUBY', 'RUBYAGAIN', 'ESCAPEE',
         'REFORGED', 'FLORAVORE', 'REJECT', 'WAYFARER', 'PISTON', 'EXILED', 'THEIF', 'THEIFDOS', 'MORTICIAN',
         'SWAMPY', 'PORTALMAKER', 'PURIFIER', 'CORROSOL', 'SEVENSEVEN', 'ATLAN', 'BASIC', 'BELL', 'BIS', 'BIT',
         'CRITTER', 'CUBED', 'DIM', 'DOE', 'FREYR', 'GAMBLE', 'GORB', 'HERO', 'JANE', 'JOHN', 'MATT', 'MESS',
         'PE', 'POLE', 'RAT', 'RGB', 'ROT', 'SCRATCH', 'SHED', 'SIEGE', 'SPARK', 'SPARKLE', 'SUNSET', 'TELA',
         'USURP', 'WAR', 'XIII']
+    
+    #do NOT add eyes with pupils here!!!! they go in yourcolour_pupil_eyes
     yellow_eyes = ['YELLOW', 'AMBER', 'PALEYELLOW', 'GOLD', 'COPPER', 'GREENYELLOW', 'BRONZE', 'SILVER', 'ORANGE', 'CREAM', 'VOIDGOLD',
-                   'BROWNTBOI', 'ORANGETBOI', 'ACROAMBER', 'ACROGREY', 'FIRE', 'REFORGED', 'PISTON', 'THEIFDOS', 'MORTICIAN', 'SWAMPY',
-                   'PURIFIER', 'CORROSOL', 'ATLAN', 'BASIC', 'BELL', 'GAMBLE', 'GORB', 'POLE', 'SUNSET']
+                   'BROWNTBOI', 'ORANGETBOI', 'ACROAMBER', 'ACROGREY', 'FIRE', 
+                   #'REFORGED', 
+                   'PISTON', 'THEIFDOS', 'MORTICIAN', 'SWAMPY',
+                   'PURIFIER', 'CORROSOL', 
+                   #'ATLAN', 'BASIC', 'BELL', 'GAMBLE', 'GORB', 'POLE', 'SUNSET'
+                   ]
     blue_eyes = ['BLUE', 'DARKBLUE', 'CYAN', 'PALEBLUE', 'HEATHERBLUE', 'COBALT', 'SUNLITICE', 'GREY', 'ELECTRICBLUE', 'SNOW', 'INDIGO',
-                 'ANGEL', 'ACROBLUE', 'ACROINDIGO', 'ESCAPEE', 'REJECT', 'WAYFARER', 
-                 #'THIEF',
-                 'PORTALMAKER', 'CRITTER', 'FREYR', 'JOHN',
-                 'PE', 'RAT', 'TELA', 'USURP', 'WAR', 'XIII']
-    green_eyes = ['PALEGREEN', 'GREEN', 'EMERALD', 'SAGE', 'HAZEL', 'SEAFOAM', 'NAVY', 'MESS', 'ACROGREEN', 'ACROTEAL', 'EXILED', 'CUBED',
-                 'RGB', 'ROT']
+                 'ANGEL', 'ACROBLUE', 'ACROINDIGO', 'ESCAPEE', 'REJECT', 'WAYFARER', 'THEIF',
+                 #'PORTALMAKER', 'CRITTER', 'FREYR', 'JOHN','PE', 'RAT', 'TELA', 'USURP', 'WAR', 'XIII'
+                 ]
+    green_eyes = ['PALEGREEN', 'GREEN', 'EMERALD', 'SAGE', 'HAZEL', 'SEAFOAM', 'NAVY', 'MESS', 'ACROGREEN', 'ACROTEAL', 'EXILED', 
+                  #'CUBED', 'RGB', 'ROT'
+                 ]
     red_eyes = ['RED', 'PURPLE', 'MAUVE', 'VIOLET', 'PINK', 'CRIMSON', 'COOLBROWN', 'PLUM', 'LILAC', 
                 'MINT', 'PEACH', 'ALBINO', 'DAWN', 'BREDTBOI', 'REDTBOI', 'ACROPINK', 'ACRORED', 'RUBY', 'RUBYAGAIN', 'FLORAVORE',
-                'SEVENSEVEN', 'BIS', 'BIT', 'DIM', 'DOE', 'HERO', 'JANE', 'MATT', 'MESS', 'SCRATCH', 'SHED', 'SIEGE', 'SPARK', 'SPARKLE']
+                #'SEVENSEVEN', 'BIS', 'BIT', 'DIM', 'DOE', 
+                'HERO', 
+                #'JANE', 'MATT', 'MESS', 'SCRATCH', 'SHED', 'SIEGE', 'SPARK', 'SPARKLE'
+                ]
     
     riveye_colours = ['RIVYELLOW', 'RIVAMBER', 'RIVHAZEL', 'RIVPALEGREEN', 'RIVGREEN', 'RIVBLUE', 'RIVDARKBLUE', 'RIVGREY', 'RIVCYAN', 'RIVEMERALD', 'RIVPALEBLUE', 
                'RIVPALEYELLOW', 'RIVGOLD', 'RIVHEATHERBLUE', 'RIVCOPPER', 'RIVSAGE', 'RIVCOBALT', 'RIVSUNLITICE', 'RIVGREENYELLOW', 'RIVBRONZE', 'RIVSILVER',
@@ -226,13 +236,21 @@ class Pelt:
                 'CARNI', 'CHAIN', 'FOAM', 'MEISTALT', 'MELON', 'MINV', 'MOON', 'MRIV', 'PEBB', 'RUST', 'SIG', 
                 'TIDE', 'VIVID', 'WAVE', 'APPLE', 'AQUA', 'FAE', 'FIELD', 'IRID', 'RUNT', 
                 'ARID', 'BLOOD', 'ESES', 'EXILE', 'FALLSTAR', 'HOT', 'KIND', 'MARTI', 'MEISTER', 
-                'PELA', 'RETRO', 'SIXER', 'SUN', 'SWEET']
-    yellow_pupil_eyes = ['ALBA', 'BANANA', 'CREAMY', 'KARMA', 'MHUNT', 'PEPPER', 'SPLIT', 'WINKS', 'ZENI', 'BEAST']
+                'PELA', 'RETRO', 'SIXER', 'SUN', 'SWEET',
+                'REFORGED', 'PORTALMAKER', 'SEVENSEVEN', 'ATLAN', 'BASIC', 'BELL', 'BIS', 'BIT', 'CRITTER', 
+                'CUBED', 'DOE', 'FREYR', 'GAMBLE', 'GORB', 'JANE', 'JOHN', 'MATT', 'MESS', 'PE', 'POLE', 
+                'RAT', 'RGB', 'ROT', 'SCRATCH', 'SHED', 'SIEGE', 'SPARK', 'SPARKLE', 'SUNSET', 'TELA', 
+                'USURP', 'WAR', 'XIII']
+    yellow_pupil_eyes = ['ALBA', 'BANANA', 'CREAMY', 'KARMA', 'MHUNT', 'PEPPER', 'SPLIT', 'WINKS', 'ZENI', 'BEAST',
+                        'REFORGED', 'ATLAN', 'BASIC', 'BELL', 'GAMBLE']
     blue_pupil_eyes = ['CARNI', 'CHAIN', 'FOAM', 'MEISTALT', 'MELON', 'MINV', 'MOON', 'MRIV', 'PEBB', 'RUST', 'SIG', 
-                 'TIDE', 'VIVID', 'WAVE']
-    green_pupil_eyes = ['APPLE', 'AQUA', 'FAE', 'FIELD', 'IRID', 'RUNT']
+                        'TIDE', 'VIVID', 'WAVE', 'PORTALMAKER', 'CRITTER', 'FREYR', 'RAT', 'ROT']
+    green_pupil_eyes = ['APPLE', 'AQUA', 'FAE', 'FIELD', 'IRID', 'RUNT', 'CUBED',
+                        'GORB', 'JOHN', 'PE', 'POLE', 'RGB', 'SHED', 'SPARKLE', 'USURP', 'XIII']
     red_pupil_eyes = ['ARID', 'BLOOD', 'ESES', 'EXILE', 'FALLSTAR', 'HOT', 'KIND', 'MARTI', 'MEISTER', 
-                'PELA', 'RETRO', 'SIXER', 'SUN', 'SWEET']
+                        'PELA', 'RETRO', 'SIXER', 'SUN', 'SWEET', 'SEVENSEVEN', 'BIS', 'BIT',
+                        'DOE', 'JANE', 'MATT', 'MESS', 'SCRATCH', 'SIEGE', 'SPARK', 'SUNSET', 'TELA',
+                        'DIM']
 
     multi_eyes = ['MULTIYELLOW', 'MULTIAMBER', 'MULTIHAZEL', 'MULTIPALEGREEN', 'MULTIGREEN', 'MULTIBLUE', 
                 'MULTIDARKBLUE', 'MULTIGREY', 'MULTICYAN', 'MULTIEMERALD', 'MULTIHEATHERBLUE', 'MULTISUNLITICE',
@@ -527,7 +545,10 @@ class Pelt:
         "GREENPSPEAR", "ORANGEPSPEAR", "REDPSPEAR", "REDPINKPSPEAR", "PURPLEPINKPSPEAR", "PINKPSPEAR",
         "MAGENTAPINKPSPEAR", "REDPURPLEPSPEAR", "BLUEPURPLEPSPEAR", "ROSEPINKPSPEAR", "GREENYELLOWPSPEAR", "LIMEYELLOWPSPEAR",
         "YELLOWPSPEAR", "REDFIRESPEAR", "ORANGEFIRESPEAR", "YELLOWFIRESPEAR", "PINKFIRESPEAR", "PURPLEFIRESPEAR",
-        "DARKREDFIRESPEAR", "DARKPINKFIRESPEAR", "DARKORANGEFIRESPEAR", "DARKYELLOWFIRESPEAR"
+        "DARKREDFIRESPEAR", "DARKPINKFIRESPEAR", "DARKORANGEFIRESPEAR", "DARKYELLOWFIRESPEAR",
+        "YELLOWFLOATYEYES", "REDFLOATYEYES", "ORANGEFLOATYEYES",
+        "LIMEFLOATYEYES", "GREENFLOATYEYES", "BLUEFLOATYEYES",
+        "INDIGOFLOATYEYES"
     ]
 
     tabbies = [
@@ -564,24 +585,6 @@ class Pelt:
     white_colours = ['WHITE', 'PALEGREY', 'SILVER']
     brown_colours = ['LIGHTBROWN', 'LILAC', 'BROWN', 'GOLDEN-BROWN', 'DARKBROWN', 'CHOCOLATE']
     colour_categories = [ginger_colours, black_colours, white_colours, brown_colours]
-    eye_sprites = [
-        'YELLOW', 'AMBER', 'HAZEL', 'PALEGREEN', 'GREEN', 'BLUE', 'DARKBLUE', 'BLUEYELLOW', 'BLUEGREEN',
-        'GREY', 'CYAN', 'EMERALD', 'PALEBLUE', 'PALEYELLOW', 'GOLD', 'HEATHERBLUE', 'COPPER', 'SAGE', 'COBALT',
-        'SUNLITICE', 'GREENYELLOW', 'BRONZE', 'SILVER', 'RED', 'PURPLE', 'MAUVE',
-        'ELECTRICBLUE', 'VIOLET', 'PINK', 'SNOW', 'ORANGE', 'CREAM', 'SEAFOAM', 'CRIMSON', 'NAVY', 'VOIDGOLD', 'COOLBROWN', 'PLUM',
-        'INDIGO', 'LILAC', 'ACROBLUE', 'ACROGREEN', 'ACROGREY', 'ACROINDIGO', 'ACROAMBER', 'ACROPINK', 'ACRORED', 'ACROTEAL',
-        'ALBA', 'ALBINO', 'ANGEL', 'APPLE', 'AQUA', 'ARID', 'BANANA', 'BLOOD', 'CARNI', 'CHAIN', 
-        'CREAMY', 'DAWN', 'ESES', 'EXILE', 'FAE', 'FALLSTAR', 'FIELD', 'FOAM', 'HOT', 'IRID', 
-        'KARMA', 'KIND', 'MARTI', 'MEISTALT', 'MEISTER', 'MELON', 'MESS', 'MHUNT', 'MINT', 'MINV', 
-        'MOON', 'MRIV', 'PEACH', 'PEBB', 'PELA', 'PEPPER', 'RETRO', 'RUNT', 'RUST', 'SIG', 
-        'SIXER', 'SPLIT', 'SUN', 'SWEET', 'TIDE', 'VIVID', 'WAVE', 'WINKS', 'ZENI', 'BEAST',
-        'BROWNTBOI', 'ORANGETBOI', 'BREDTBOI', 'REDTBOI', 'FIRE', 'RUBY', 'RUBYAGAIN', 'ESCAPEE',
-        'REFORGED', 'FLORAVORE', 'REJECT', 'WAYFARER', 'PISTON', 'EXILED', 'THEIF', 'THEIFDOS', 'MORTICIAN',
-        'SWAMPY', 'PORTALMAKER', 'PURIFIER', 'CORROSOL', 'SEVENSEVEN', 'ATLAN', 'BASIC', 'BELL', 'BIS', 'BIT',
-        'CRITTER', 'CUBED', 'DIM', 'DOE', 'FREYR', 'GAMBLE', 'GORB', 'HERO', 'JANE', 'JOHN', 'MATT', 'MESS',
-        'PE', 'POLE', 'RAT', 'RGB', 'ROT', 'SCRATCH', 'SHED', 'SIEGE', 'SPARK', 'SPARKLE', 'SUNSET', 'TELA',
-        'USURP', 'WAR', 'XIII'
-    ]
     little_white = ['LITTLE', 'LIGHTTUXEDO', 'BUZZARDFANG', 'TIP', 'BLAZE', 'BIB', 'VEE', 'PAWS',
                     'BELLY', 'TAILTIP', 'TOES', 'BROKENBLAZE', 'LILTWO', 'SCOURGE', 'TOESTAIL', 'RAVENPAW', 'HONEY',
                     'LUNA',
@@ -892,11 +895,11 @@ class Pelt:
             if self.eye_colour in Pelt.pupil_eyes:
                 colour_wheel = [Pelt.yellow_pupil_eyes, Pelt.blue_pupil_eyes, Pelt.green_pupil_eyes, Pelt.red_pupil_eyes]
             elif self.eye_colour in Pelt.riveye_colours:
-                colour_wheel = [Pelt.yellow_riv_eyes, Pelt.blue_riv_eyes, Pelt.green_riv_eyes]
+                colour_wheel = [Pelt.yellow_riv_eyes, Pelt.blue_riv_eyes, Pelt.green_riv_eyes, Pelt.red_riv_eyes]
             elif self.eye_colour in Pelt.buttoneye_colours:
-                colour_wheel = [Pelt.yellow_button_eyes, Pelt.blue_button_eyes, Pelt.green_button_eyes]
+                colour_wheel = [Pelt.yellow_button_eyes, Pelt.blue_button_eyes, Pelt.green_button_eyes, Pelt.red_button_eyes]
             elif self.eye_colour in Pelt.bobaeye_colours:
-                colour_wheel = [Pelt.yellow_boba_eyes, Pelt.blue_boba_eyes, Pelt.green_boba_eyes]
+                colour_wheel = [Pelt.yellow_boba_eyes, Pelt.blue_boba_eyes, Pelt.green_boba_eyes, Pelt.red_boba_eyes]
             else:
                 colour_wheel = [Pelt.yellow_eyes, Pelt.blue_eyes, Pelt.green_eyes, Pelt.red_eyes]
             for colour in colour_wheel[:]:

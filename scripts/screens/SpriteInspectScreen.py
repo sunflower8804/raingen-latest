@@ -39,6 +39,7 @@ class SpriteInspectScreen(Screens):
         self.acc_shown_text = None
         self.override_dead_lineart_text = None
         self.override_not_working_text = None
+        self.show_feature_text = None
         self.save_image_button = None
 
         # Image Settings:
@@ -48,6 +49,7 @@ class SpriteInspectScreen(Screens):
         self.override_dead_lineart = False
         self.acc_shown = True
         self.override_not_working = False
+        self.show_feature = True
 
         super().__init__(name)
 
@@ -118,6 +120,11 @@ class SpriteInspectScreen(Screens):
                     self.override_not_working = False
                 else:
                     self.override_not_working = True
+            elif event.ui_element == self.checkboxes["show_feature"]:
+                if self.show_feature:
+                    self.show_feature = False
+                else:
+                    self.show_feature = True
 
                 self.make_cat_image()
                 self.update_checkboxes()
@@ -202,13 +209,19 @@ class SpriteInspectScreen(Screens):
         )
         self.override_dead_lineart_text = pygame_gui.elements.UITextBox(
             "Show as Living",
-            ui_scale(pygame.Rect((250, 630), (-1, 50))),
+            ui_scale(pygame.Rect((150, 630), (-1, 50))),
             object_id=get_text_box_theme("#text_box_34_horizcenter"),
             starting_height=2,
         )
         self.override_not_working_text = pygame_gui.elements.UITextBox(
             "Show as Healthy",
-            ui_scale(pygame.Rect((450, 630), (-1, 100))),
+            ui_scale(pygame.Rect((350, 630), (-1, 70))),
+            object_id=get_text_box_theme("#text_box_34_horizcenter"),
+            starting_height=2,
+        )
+        self.show_feature_text = pygame_gui.elements.UITextBox(
+            "Show Feature",
+            ui_scale(pygame.Rect((550, 630), (-1, 50))),
             object_id=get_text_box_theme("#text_box_34_horizcenter"),
             starting_height=2,
         )
@@ -261,6 +274,7 @@ class SpriteInspectScreen(Screens):
         self.override_dead_lineart = False
         self.acc_shown = True
         self.override_not_working = False
+        self.show_feature = True
 
         # Make the cat image
         self.make_cat_image()
@@ -333,7 +347,7 @@ class SpriteInspectScreen(Screens):
 
         # "Show as living"
         self.make_one_checkbox(
-            ui_scale_offset((200, 625)),
+            ui_scale_offset((100, 625)),
             "override_dead_lineart",
             self.override_dead_lineart,
             self.the_cat.dead,
@@ -342,10 +356,20 @@ class SpriteInspectScreen(Screens):
 
         # "Show as healthy"
         self.make_one_checkbox(
-            ui_scale_offset((400, 625)),
+            ui_scale_offset((300, 625)),
             "override_not_working",
             self.override_not_working,
             self.the_cat.not_working(),
+            disabled_object_id="@checked_checkbox",
+        )
+
+        # "Show feature"
+        self.make_one_checkbox(
+            ui_scale_offset((500, 625)),
+            "show_feature",
+            self.show_feature,
+            self.the_cat.pelt.skin not in ['BLACK',  'PINK', 'DARKBROWN', 'BROWN', 'LIGHTBROWN', 'DARK', 'DARKGREY', 'GREY', 'DARKSALMON',
+            'SALMON', 'PEACH', 'DARKMARBLED', 'MARBLED', 'LIGHTMARBLED', 'DARKBLUE', 'BLUE', 'LIGHTBLUE', 'RED'],
             disabled_object_id="@checked_checkbox",
         )
 
@@ -396,6 +420,7 @@ class SpriteInspectScreen(Screens):
             acc_hidden=not self.acc_shown,
             always_living=self.override_dead_lineart,
             no_not_working=self.override_not_working,
+            feature_hidden=not self.show_feature
         )
 
         self.cat_elements["cat_image"] = pygame_gui.elements.UIImage(
@@ -436,6 +461,8 @@ class SpriteInspectScreen(Screens):
         self.override_dead_lineart_text = None
         self.override_not_working_text.kill()
         self.override_not_working_text = None
+        self.show_feature_text.kill()
+        self.show_feature_text = None
 
         for ele in self.cat_elements:
             self.cat_elements[ele].kill()
