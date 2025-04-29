@@ -117,5 +117,67 @@
                 "reg_death": "m_c died from {PRONOUN/m_c/poss} wounds after falling from a tall cliff."
         }
         ]
-    }    
+    },
+    {
+        "event_id": "mtn_injury_brokenbonemoth_anyany1_WATCHER",
+        "location": ["mountainous"],
+        "season": ["any"],
+        "weight": 20,
+        "event_text": "m_c was grabbed and dropped by a moth, and by some miracle survived, but not without breaking {PRONOUN/m_c/poss} leg.",
+        "m_c": {
+            "age": [
+                "adolescent",
+                "young adult",
+                "adult",
+                "senior adult",
+                "senior"
+            ]
+        },
+        "injury": [
+            {
+                "cats": ["m_c"],
+                "injuries": ["broken bone"],
+                "scars": ["MANLEG"]
+            }
+        ],
+        "history": [
+            {
+                "cats": ["m_c"],
+                "scar": "m_c was scarred when {PRONOUN/m_c/subject} {VERB/m_c/were/was} dropped by a moth.",
+                "reg_death": "m_c died from {PRONOUN/m_c/poss} wounds after being dropped by a moth.",
+                "lead_death": "died after being dropped by a moth"
+            }
+        ]
+    },
+    {
+        "event_id": "mtn_injury_brokenbackmoth_anyany2_WATCHER",
+        "location": ["mountainous"],
+        "season": ["any"],
+        "weight": 20,
+        "event_text": "m_c was grabbed and dropped by a moth, and by some miracle survived if only barely considering {PRONOUN/m_c/subject} broke {PRONOUN/m_c/poss} back.",
+        "m_c": {
+            "age": [
+                "adolescent",
+                "young adult",
+                "adult",
+                "senior adult",
+                "senior"
+            ]
+        },
+        "injury": [
+            {
+                "cats": ["m_c"],
+                "injuries": ["broken back"],
+                "scars": ["BACK"]
+            }
+        ],
+        "history": [
+            {
+                "cats": ["m_c"],
+                "scar": "m_c was scarred when {PRONOUN/m_c/subject} {VERB/m_c/were/was} dropped by a moth.",
+                "reg_death": "m_c died from {PRONOUN/m_c/poss} wounds after being dropped by a moth.",
+                "lead_death": "died after being dropped by a moth"
+            }
+        ]
+    }
 ]
