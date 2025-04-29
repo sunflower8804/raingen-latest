@@ -4841,14 +4841,74 @@
     }
   },
   {
-    "event_id": "gen_misc_any_firespear",
+    "event_id": "gen_misc_any_firespear_DOWNPOUR",
+    "location": ["any"],
+    "season": ["any"],
+    "sub_type": ["accessory"],
+    "weight": 7,
+    "event_text": "m_c had gone out of the camp, but later returned with a acc_singular after killing an elusive firebug.",
+    "new_accessory": ["REDFIRESPEAR", "ORANGEFIRESPEAR", "YELLOWFIRESPEAR", "PINKFIRESPEAR", "PURPLEFIRESPEAR",
+        "DARKREDFIRESPEAR", "DARKPINKFIRESPEAR", "DARKORANGEFIRESPEAR", "DARKYELLOWFIRESPEAR"],
+    "m_c": {
+      "age": ["adolescent", "young adult", "adult", "senior adult", "senior"]
+    }
+  },
+  {
+    "event_id": "gen_misc_any_flag",
+    "location": ["any"],
+    "season": ["any"],
+    "sub_type": ["accessory"],
+    "weight": 7,
+    "event_text": "m_c was seen taking an Iterator pelt earlier this cycle, and later came back to camp, {PRONOUN/m_c/poss} spear now a acc_singular.",
+    "new_accessory": ["FLAGACCS"],
+    "m_c": {
+      "age": ["adolescent", "young adult", "adult", "senior adult", "senior"]
+    }
+  },
+  {
+    "event_id": "gen_misc_any_halo",
+    "location": ["any"],
+    "season": ["any"],
+    "sub_type": ["accessory"],
+    "weight": 5,
+    "event_text": "m_c had vanished for part of this cycle, later returning with a acc_singular floating above {PRONOUN/m_c/poss} head.",
+    "new_accessory": ["HALOACCS"],
+    "m_c": {
+      "age": ["adolescent", "young adult", "adult", "senior adult", "senior"]
+    }
+  },
+  {
+    "event_id": "gen_misc_any_poncho",
     "location": ["any"],
     "season": ["any"],
     "sub_type": ["accessory"],
     "weight": 10,
-    "event_text": "m_c had gone out of the camp, but later returned with a acc_singular after killing an elusive firebug.",
-    "new_accessory": ["REDFIRESPEAR", "ORANGEFIRESPEAR", "YELLOWFIRESPEAR", "PINKFIRESPEAR", "PURPLEFIRESPEAR",
-        "DARKREDFIRESPEAR", "DARKPINKFIRESPEAR", "DARKORANGEFIRESPEAR", "DARKYELLOWFIRESPEAR"],
+    "event_text": "m_c had dissapeared for most of this cycle, but later returned wearing a acc_singular.",
+    "new_accessory": ["PONCHOACCS"],
+    "m_c": {
+      "age": ["adolescent", "young adult", "adult", "senior adult", "senior"]
+    }
+  },
+  {
+    "event_id": "gen_misc_any_glasses",
+    "location": ["any"],
+    "season": ["any"],
+    "sub_type": ["accessory"],
+    "weight": 7,
+    "event_text": "m_c had vanished for most of this cycle, later returning with some acc_singular saying that it helps {PRONOUN/m_c/object} see.",
+    "new_accessory": ["GLASSESACCS"],
+    "m_c": {
+      "age": ["adolescent", "young adult", "adult", "senior adult", "senior"]
+    }
+  },
+  {
+    "event_id": "gen_misc_any_orbital",
+    "location": ["any"],
+    "season": ["any"],
+    "sub_type": ["accessory"],
+    "weight": 5,
+    "event_text": "m_c was last seen following an overseer, later returning with a strange ball orbiting around {PRONOUN/m_c/object}.",
+    "new_accessory": ["ORBITALS"],
     "m_c": {
       "age": ["adolescent", "young adult", "adult", "senior adult", "senior"]
     }
