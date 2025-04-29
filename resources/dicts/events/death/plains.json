@@ -1,1 +1,35 @@
-[]
+[
+  {
+        "event_id": "pln_death_loach_any1_WATCHER",
+        "location": ["plains"],
+        "season": ["any"],
+        "tags": [],
+        "weight": 20,
+        "event_text": "m_c was out in the territory when a large loach passed by, though when {PRONOUN/m_c/subject} attempted to run away the loach had already grabbed and eaten {PRONOUN/m_c/object}.",
+        "m_c": {
+            "dies": true
+        },
+        "history": [{
+            "cats": ["m_c"],
+            "reg_death": "m_c was eaten by a loach.",
+            "lead_death": "was eaten by a loach."
+        }]
+    },
+  {
+        "event_id": "pln_death_loach_any2_WATCHER",
+        "location": ["plains"],
+        "season": ["any"],
+        "tags": [],
+        "weight": 20,
+        "event_text": "m_c was fighting a lizard, however in {PRONOUN/m_c/poss} distraction a loach had snuck up on the two and consumed both of them",
+        "m_c": {
+            "dies": true
+            "status": ["apprentice", "warrior", "deputy", "leader"]
+        },
+        "history": [{
+            "cats": ["m_c"],
+            "reg_death": "m_c was eaten by a loach.",
+            "lead_death": "was eaten by a loach."
+        }]
+    }
+]
