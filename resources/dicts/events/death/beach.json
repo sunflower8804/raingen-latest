@@ -989,5 +989,37 @@
                 "amount": -25
             }
         ]
+    },
+    {
+        "event_id": "bch_death_tartigrade_any1_WATCHER",
+        "location": ["beach"],
+        "season": ["any"],
+        "tags": [],
+        "weight": 20,
+        "event_text": "m_c had hunted and eaten a tartigrade earlier this cycle, but when its poison kicked in {PRONOUN/m_c/subject} was killed by a bad allergic reaction to it.",
+        "m_c": {
+            "dies": true
+        },
+        "history": [{
+            "cats": ["m_c"],
+            "reg_death": "m_c was poisoned by a tartigrade.",
+            "lead_death": "was poisoned by a tartigrade."
+        }]
+    },
+    {
+        "event_id": "bch_death_tartigrade_any2_WATCHER",
+        "location": ["beach"],
+        "season": ["any"],
+        "tags": [],
+        "weight": 20,
+        "event_text": "m_c had eaten one too many tartigrades this cycle and died to their poison.",
+        "m_c": {
+            "dies": true
+        },
+        "history": [{
+            "cats": ["m_c"],
+            "reg_death": "m_c was poisoned by a tartigrade.",
+            "lead_death": "was poisoned by a tartigrade."
+        }]
     }
 ]
