@@ -76,20 +76,18 @@
   },
 
   "beach_tinyprey_dryland_singular": [
-    "blue fruit", "fog batfly", "beach batfly",
-    "yellow-cheeked vulture grub", "ornate vulture grub", "pocket lantern mouse", "marsh batfly", "batfly", "jellyfish",
-    "pink jellyfish", "purple jellyfish", "white jellyfish", "slime mold"
+    "blue fruit", "fog batfly", "beach batfly", "marsh batfly", "batfly", "jellyfish", "pink jellyfish",
+    "purple jellyfish", "white jellyfish", "slime mold"
   ],
   "beach_tinyprey_dryland_plural": [
-    "blue fruits", "fog batflies", "beach batflies",
-    "yellow-cheeked vulture grubs", "ornate vulture grubs", "pocket lantern mice", "marsh batflies", "batflies", "jellyfish",
-    "pink jellyfish", "purple jellyfish", "white jellyfish", "smile mold"
+    "blue fruits", "fog batflies", "beach batflies", "marsh batflies", "batflies", "jellyfish", "pink jellyfish",
+    "purple jellyfish", "white jellyfish", "smile mold"
   ],
   "beach_tinyprey_aquatic_singular": [
-    "glow fruit", "jellyfish", "baby jetfish"
+    "glow fruit", "jellyfish", "baby jetfish", "hazer", "bubble fruit", "lilypuck"
   ],
   "beach_tinyprey_aquatic_plural": [
-    "glow fruits", "jellyfish", "baby jetfishes"
+    "glow fruits", "jellyfish", "baby jetfishes", "hazers", "bubble fruits", "lilypucks"
   ],
   "beach_midprey_dryland_singular": [
     "noodlefly", "pink noodlefly", "maroon noodlefly", "blue noodlefly", "white noodlefly", "grey noodlefly", "gooeyduck",
@@ -106,10 +104,10 @@
     "baby aquapedes", "juvinile big jellies"
   ],
   "beach_bigprey_dryland_singular": [
-    "squidcada", "white squidcada", "black squidcada", "juvinile centipede"
+    "squidcada", "white squidcada", "black squidcada", "juvinile centipede", "adult noodlefly"
   ],
   "beach_bigprey_dryland_plural": [
-    "squidcadas", "white squidcadas", "black squidcadas", "juvinile centipedes"
+    "squidcadas", "white squidcadas", "black squidcadas", "juvinile centipedes", "adult noodleflies"
   ],
   "beach_bigprey_aquatic_singular": [
     "jetfish", "juvinile aquapede"
@@ -119,110 +117,75 @@
   ],
   
   "desert_tinyprey_singular": [
-    "spotted ground squirrel", "round-tailed ground squirrel", "ground squirrel", "small bird", "desert pocket gopher",
-    "agile kangaroo rat", "spiny pocket mouse", "kangaroo rat", "chisel-toothed kangaroo rat", 
-    "banner-tailed kangaroo rat", "narrow-faced kangaroo rat", "big-eared kangaroo rat", "dark kangaroo mouse", 
-    "pale kangaroo mouse", "long-tailed pocket mouse", "desert pocket mouse", "silky pocket mouse", "canyon mouse", 
-    "cactus mouse", "deermouse", "white-ankled mouse", "desert shrew", "Long-eared bat", "elf owl", "whiptail", 
-    "masked shrike", "red-spotted toad", "jerboa", "golden hamster", "mulgara", "marsupial mole", "wombat", 
-    "pink fairy armadillo", "water-holding frog", "arabian sand boa", "gecko", "lizard", "thorny devil", 
-    "hopping mouse", "fat-tailed gerbil", "pale gerbil","fat sand rat", "bushy tailed jird", "short-eared gerbil", 
-    "hairy-footed gerbil"
+    "blue fruit", "vulture grub", "desert vulture grub", "sandy vulture grub", "batfly", "sandy batfly", "desert batfly", "locust",
+    "fire sprite larva", "slime mold"
   ],
   "desert_tinyprey_plural": [
-    "spotted ground squirrels", "round-tailed ground squirrels", "ground squirrels", "small birds", "desert pocket gophers",
-    "agile kangaroo rats", "spiny pocket mice", "kangaroo rats", "chisel-toothed kangaroo rats", 
-    "banner-tailed kangaroo rats", "narrow-faced kangaroo rats", "big-eared kangaroo rats", "dark kangaroo mice", 
-    "pale kangaroo mice", "long-tailed pocket mice", "desert pocket mice", "silky pocket mice", "canyon mice", 
-    "cactus mice", "deermice", "white-ankled mice", "desert shrews", "Long-eared bats", "elf owls", "whiptails", 
-    "masked shrikes", "red-spotted toads", "jerboas", "golden hamsters", "mulgaras", "marsupial moles", "wombats", 
-    "pink fairy armadillos", "water-holding frogs", "arabian sand boas", "geckos", "lizards", "thorny devils", 
-    "hopping mice", "fat-tailed gerbils", "pale gerbils","fat sand rats", "bushy tailed jirds", "short-eared gerbils", 
-    "hairy-footed gerbils"
+    "blue fruits", "vulture grubs", "desert vulture grubs", "sandy vulture grubs", "batflies", "sandy batflies", "desert batflies",
+    "locusts", "fire sprite larvae", "slime mold"
   ],
   "desert_midprey_singular": [
-    "antelope squirrel", "white-tailed antelope squirrel", "giant kangaroo rat", "rock squirrel",
-    "white-throated woodrat", "desert woodrat", "white-toothed woodrat", "sidewinder", "rattlesnake", "adder",
-    "armadillo", "desert iguana", "bilby", "meerkat", "sandgrouse", "three-banded armadillo", "nine-banded armadillo",
-    "mourning dove", "curve-billed thrasher", "great gerbil"
+    "noodlefly", "pink noodlefly", "maroon noodlefly", "blue noodlefly", "white noodlefly", "grey noodlefly", "desert noodlefly",
+    "sand grub", "desert grub", "baby centipede", "blue eggbug", "teal eggbug", "green eggbug", "lime eggbug", "eggbug"
   ],
   "desert_midprey_plural": [
-    "antelope squirrels", "white-tailed antelope squirrels", "giant kangaroo rats", "rock squirrels",
-    "white-throated woodrats", "desert woodrats", "white-toothed woodrats", "sidewinders", "rattlesnakes", "adders",
-    "armadillos", "desert iguanas", "bilbies", "meerkats", "sandgrouse", "three-banded armadillos", "nine-banded armadillos",
-    "mourning doves", "curve-billed thrashers", "great gerbils"
+    "noodleflies", "pink noodleflies", "maroon noodleflies", "blue noodleflies", "white noodleflies", "grey noodleflies",
+    "desert noodleflies", "sand grubs", "desert grubs", "baby centipies", "blue eggbugs", "teal eggbugs", "green eggbugs",
+    "lime eggbugs", "eggbugs"
   ],
   "desert_bigprey_singular": [
-    "chaparral bird", "roadrunner", "hawk", "jackrabbit", "antelope jackrabbit", "ringtail", "hare", "desert hare",
-    "crow", "vulture", "eagle"
+    "juvenile centipede", "dropwig", "desert dropwig", "sandy dropwig", "adult noodlefly", "pomegranite"
   ],
   "desert_bigprey_plural": [
-    "chaparral birds", "roadrunners", "hawks", "jackrabbits", "antelope jackrabbits", "ringtails", "hares", "desert hares",
-    "crows", "vultures", "eagles"
+    "juvenile centipedes", "dropwigs", "desert dropwigs", "sandy dropwigs", "adult noodleflies", "pomegranites"
   ],
   
   "forest_tinyprey_singular": [
-    "shrew", "robin", "vole", "dormouse", "blackbird", "wood mouse", "lizard", "tiny grass snake", "finch", "sparrow",
-    "small bird", "young rat", "young hedgehog", "big beetle", "woodrat", "white-footed mouse", "golden mouse",
-    "young squirrel", "chipmunk", "white-footed vole", "jumping mouse", "red tree vole", "gray-tailed vole",
-    "gray-footed chipmunk", "red-tailed chipmunk", "red-backed vole", "creeping vole", "woodland vole", "brush mouse",
-    "cotton mouse", "white-ankled mouse", "smoky shrew", "hairy-tailed mole", "mole", "broad-footed mole",
-    "shrew mole", "weasel", "deer mouse", "gnat catcher", "yellow rumped warbler", "rock dove", "stock dove",
-    "bank vole", "green anole", "towhee", "finch", "fantail", "bobwhite quail", "dark-eyed junco", "yellow-eyed junco",
-    "blue-bellies", "gray catbird"
+    "blue fruit", "batfly", "forest batfly", "woodlands batfly", "forest vulture grub", "woodlands vulture grub", "vulture grub",
+    "slime mold", "hazer"
   ],
   "forest_tinyprey_plural": [
-    "shrews", "robins", "voles", "dormice", "blackbirds", "wood mice", "lizards", "tiny grass snakes", "finches", "sparrows",
-    "small birds", "young rats", "young hedgehogs", "big beetles", "woodrats", "white-footed mice", "golden mice",
-    "young squirrels", "chipmunks", "white-footed voles", "jumping mice", "red tree voles", "gray-tailed voles",
-    "gray-footed chipmunks", "red-tailed chipmunks", "red-backed voles", "creeping voles", "woodland voles", "brush mice",
-    "cotton mice", "white-ankled mice", "smoky shrews", "hairy-tailed moles", "moles", "broad-footed moles",
-    "shrew moles", "weasels", "deer mice", "gnat catchers", "yellow rumped warblers", "rock doves", "stock doves",
-    "bank voles", "green anoles", "towhees", "finches", "fantails", "bobwhite quails", "dark-eyed juncos", "yellow-eyed juncos",
-    "blue-bellies", "gray catbirds"
+    "blue fruits", "batflies", "forest batflies", "woodlands batflies", "forest vulture grubs", "woodlands vulture grubs",
+    "vulture grubs", "slime mold", "hazers"
   ],
   "forest_midprey_singular": [
-    "plump shrew", "woodpecker", "mole", "fat dormouse", "blackbird", "field vole", "big lizard", "grass snake",
-    "half-grown rabbit", "hedgehog", "red squirrel", "grey squirrel", "rat", "flying squirrel", "kingfisher", "packrat",
-    "dusky-footed woodrat", "big-eared woodrat", "stoat", "ermine", "ruffed grouse", "cardinal", "ptarmigan",
-    "chukar", "quail", "pheasant", "starling", "blue jay", "stellar jay"
+    "baby centipede", "noodlefly", "pink noodlefly", "maroon noodlefly", "blue noodlefly", "white noodlefly", "grey noodlefly",
+    "gooeyduck", "blue eggbug", "teal eggbug", "green eggbug", "lime eggbug", "eggbug"
   ],
   "forest_midprey_plural": [
-    "plump shrews", "woodpeckers", "moles", "fat dormice", "blackbirds", "field voles", "big lizards", "grass snakes",
-    "half-grown rabbits", "hedgehogs", "red squirrels", "grey squirrels", "rats", "flying squirrels", "kingfishers", "packrats",
-    "dusky-footed woodrats", "big-eared woodrats", "stoats", "ermines", "ruffed grouse", "cardinals", "ptarmigan",
-    "chukars", "quail", "pheasants", "starlings", "blue jays", "stellar jays"
+    "baby centipedes", "noodleflies", "pink noodleflies", "maroon noodleflies", "blue noodleflies", "white noodleflies",
+    "grey noodleflies", "gooeyducks", "blue eggbugs", "teal eggbugs", "green eggbugs", "lime eggbugs", "eggbugs"
   ],
   "forest_bigprey_singular": [
-
+    "juvenile centipede", "dropwig", "forest dropwig", "woodlands dropwig", "adult noodlefly", "squidcada", "white squidcada",
+    "black squidcada", "big spider", "spitter spider"
   ],
   "forest_bigprey_plural": [
-
+    "juvenile centipedes", "dropwigs", "forest dropwigs", "woodlands dropwigs", "adult noodleflies", "squidcadas", "white squidcadas",
+    "black squidcadas", "big spiders", "spitter spiders"
   ],
 
   "mountain_tinyprey_singular": [
-    "meadow mouse", "pocket mouse", "white-eared pocket mouse", "spiny pocket mouse", "chipmunk", 
-    "yellow-pine chipmunk", "gray-collared chipmunk", "pocket gopher", "rock vole", "water vole", 
-    "black-eared mouse", "long-tailed shrew", "dwarf shrew", "water shrew"
+    "bubble fruit", "lilypuck", "blue fruit", "batfly", "snowy batfly", "rocky batfly", "slime mold", "vulture grub",
+    "snowy vulture grub", "rocky vulture grub"
   ],
   "mountain_tinyprey_plural": [
-    "meadow mice", "pocket mice", "white-eared pocket mice", "spiny pocket mice", "chipmunks", 
-    "yellow-pine chipmunks", "gray-collared chipmunks", "pocket gophers", "rock voles", "water voles", 
-    "black-eared mice", "long-tailed shrews", "dwarf shrews", "water shrews"
+    "bubble fruits", "lilypucks", "blue fruits", "batflies", "snowy batflies", "rocky batflies", "slime mold", "vulture grubs",
+    "snowy vulture grubs", "rocky vulture grubs"
   ],
   "mountain_midprey_singular": [
-    "plump shrew", "woodpecker", "blackbird", "golden-mantled ground squirrel", "half-grown rabbit", "fox squirrel", 
-    "yellow-nosed rat", "red squirrel", "grey squirrel", "rat", "flying squirrel", "pika", "collared pika", "pygmy rabbit"
+    "baby centipede", "baby centiwing", "blue eggbug", "teal eggbug", "green eggbug", "lime eggbug", "eggbug", "gooeyduck",
+    "noodlefly", "pink noodlefly", "maroon noodlefly", "blue noodlefly", "white noodlefly", "grey noodlefly"
   ],
   "mountain_midprey_plural": [
-    "plump shrews", "woodpeckers", "blackbirds", "golden-mantled ground squirrels", "half-grown rabbits", "fox squirrels", 
-    "yellow-nosed rats", "red squirrels", "grey squirrels", "rats", "flying squirrels", "pikas", "collared pikas", "pygmy rabbits"
+    "baby centipedes", "baby centiwings", "blue eggbugs", "teal eggbugs", "green eggbugs", "lime eggbugs", "eggbugs", "gooeyducks",
+    "noodleflies", "pink noodleflies", "maroon noodleflies", "blue noodleflies", "white noodleflies", "grey noodleflies"
   ],
   "mountain_bigprey_singular": [
-    
+    "adult noodlefly", "snowy dropwig", "rocky dropwig", "dropwig", "baby big moth", "popcorn plant"
   ],
   "mountain_bigprey_plural": [
-    
+    "adult noodleflies", "snowy dropwigs", "rocky dropwigs", "dropwigs", "baby big moths", "popcorn plants"
   ],
   
   "plains_tinyprey_singular": [
