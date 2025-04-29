@@ -1,3 +1,12 @@
+<strong>Dev Version</strong>
+Added:
+- Added new events
+
+Fixed:
+- Sparse pelt sometimes being invisible
+- Crashes
+- Offset Accessory Sprites (hopefully)
+
 <strong>v1.6</strong>
 
 !!NOTE THERE ARE WATCHER SPOILERS HERE NOW, WORKING ON A SETTING TO CHANGE THIS THOUGH!!
