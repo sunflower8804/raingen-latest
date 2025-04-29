@@ -1021,5 +1021,53 @@
             "reg_death": "m_c was poisoned by a tartigrade.",
             "lead_death": "was poisoned by a tartigrade."
         }]
+    },
+    {
+        "event_id": "bch_death_jellydrown_any1",
+        "location": ["beach"],
+        "season": ["any"],
+        "tags": [],
+        "weight": 20,
+        "event_text": "m_c was out swimming when suddenly {PRONOUN/m_c/subject} got tangled in the tentacles of a jellyfish, but it kept shocking m_c, eventually drowning {PRONOUN/m_c/object}.",
+        "m_c": {
+            "dies": true
+        },
+        "history": [{
+            "cats": ["m_c"],
+            "reg_death": "m_c was drowned by a jellyfish.",
+            "lead_death": "was drowned by a jellyfish."
+        }]
+    },
+    {
+        "event_id": "bch_death_bigjellyshock_any1_DOWNPOUR",
+        "location": ["beach"],
+        "season": ["any"],
+        "tags": [],
+        "weight": 20,
+        "event_text": "m_c was swinning in the sea when a chilling sound came from the depths, before {PRONOUN/m_c/subject} could react the tentacles of a large jellyfish wrapped around {PRONOUN/m_c/object}, dragging {PRONOUN/m_c/object} into the depths, never reemerging.",
+        "m_c": {
+            "dies": true
+        },
+        "history": [{
+            "cats": ["m_c"],
+            "reg_death": "m_c was killed by a big jellyfish.",
+            "lead_death": "was killed by a big jellyfish."
+        }]
+    },
+    {
+        "event_id": "bch_death_aquapede_any1_DOWNPOUR",
+        "location": ["beach"],
+        "season": ["any"],
+        "tags": [],
+        "weight": 20,
+        "event_text": "m_c was out swimming but was suddenly grabbed by an aquapede, getting a lethal shock only moments later.",
+        "m_c": {
+            "dies": true
+        },
+        "history": [{
+            "cats": ["m_c"],
+            "reg_death": "m_c was electrocuted by an aquapede.",
+            "lead_death": "was electrocuted by an aquapede."
+        }]
     }
 ]
