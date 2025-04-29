@@ -21,7 +21,7 @@
         ]
     },
     {
-        "event_id": "gen_death_weasel_death",
+        "event_id": "mtn_death_weasel_death",
         "location": ["mountainous:camp4"],
         "season": ["any"],
         "sub_type": [],
@@ -38,5 +38,68 @@
                 "reg_death": "m_c was eaten by a mountain weasel when {PRONOUN/m_c/subject} tried to sneak out of camp."
             }
         ]
+    },
+    {
+        "event_id": "mtn_death_moth_any1_WATCHER",
+        "location": ["any"],
+        "season": ["any"],
+        "tags": [],
+        "weight": 30,
+        "event_text": "m_c during a walk got grabbed by an angry big moth and dropped from a high place, killing {PRONOUN/m_c/object}",
+        "m_c": {
+            "dies": true
+        },
+        "history": [{
+            "cats": ["m_c"],
+            "reg_death": "m_c was killed by a big moth.",
+            "lead_death": "was killed by a big moth."
+        }]
+    },
+    {
+        "event_id": "mtn_death_moth_any2_WATCHER",
+        "location": ["any"],
+        "season": ["any"],
+        "tags": [],
+        "weight": 30,
+        "event_text": "m_c got grabbed by a big moth whilst saving r_c",
+        "m_c": {
+            "dies": true
+            "status": [
+                "apprentice",
+                "warrior",
+                "deputy",
+                "medicine cat apprentice",
+                "medicine cat",
+                "mediator apprentice",
+                "mediator",
+                "elder"
+            ],
+        },
+        "r_c": {
+            "age": ["adolescent"],
+            "status": [ "any" ]
+        },
+        "history": [{
+            "cats": ["m_c"],
+            "reg_death": "m_c was killed by a big moth.",
+            "lead_death": "was killed by a big moth."
+        }]
+    },
+    {
+        "event_id": "mtn_death_moth_any3_WATCHER",
+        "location": ["any"],
+        "season": ["any"],
+        "tags": [],
+        "weight": 30,
+        "event_text": "m_c was out in the middle of camp when suddeny a large moth descended onto {PRONOUN/m_c/object} and carried {PRONOUN/m_c/object} away, never to be seen again.",
+        "m_c": {
+            "dies": true
+            "status": ["kitten"]
+        },
+        "history": [{
+            "cats": ["m_c"],
+            "reg_death": "m_c was killed by a big moth.",
+            "lead_death": "was killed by a big moth."
+        }]
     }
 ]
