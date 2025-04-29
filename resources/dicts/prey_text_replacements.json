@@ -1,21 +1,22 @@
 {
   "comment": [
     "add new prey species to the relevant biome lists:",
-    "prey species should be added to both the singular and the plural lists e.g mouse, mice",
-    "prey species need to be completely non-seasonal, e.g no eggs, no chicks",
-    "prey species need to have names that make sense for cats",
-    "e.g yellow mouse (great), New York rat (no)",
+    "prey species should be added to both the singular and the plural lists e.g eggbug, eggbugs",
+    "prey species need to match general vibe of biome, preferably avoid any 'non real' region species like firebugs.",
+    "prey species need to have names that make sense for slugcats, you can make made up variants of existing rainworld creatures as well!",
+    "e.g yellow lantern mouse (great), New York rat (funny, but no)",
+    "to add onto the real life prey note, try to keep it to rainworld species, but if you have to add in a real life species keep it to one similar to those ingame.",
 
     "wet biomes (beach and wetlands) have both dry land and aquatic lists",
     "some animals e.g crabs are appropriate for both dry land and aquatic lists",
     "these lists allow writers to describe a fishing patrol and not fish up a squirrel",
 
     "be sure to put your snippet in the relevant 'size' category",
-    "do not count tail lengths in these size categories - this is about how much edible meat the cat has hunted",
-    "tiny prey species are an inch to a 3 inches big, could be held in a cat's mouth, e.g a mouse",
-    "medium prey species are 3 inches to 6 inches long, easily carried by a cat e.g a blackbird",
-    "big prey species are 6-12 inches long, heavy enough to be hard to carry by a cat e.g a rabbit",
-    "prey species bigger than this are too large for the randomised prey lists",
+    "do not count tail lengths in these size categories - this is about how a slugcat carries the prey in-game",
+    "tiny prey species are items that can be held in one hand, e.g a batfly",
+    "medium prey species are items that a slugcat can carry/move with lttle difficulty in game or give 2 food pips, e.g an eggbug",
+    "big prey species are corpses that ingame take some determination to get into a shelter but are reasonable for hunter, e.g a squidcada",
+    "prey species that are extremely hard to move or require in-game tricks to move are too big randomised prey lists, e.g a lizard",
     "instead, make them the focus of their own patrol"
   ],
   "abbreviations": {
@@ -75,52 +76,46 @@
   },
 
   "beach_tinyprey_dryland_singular": [
-    "fiddler crab", "hermit crab", "beach vole", "fog shrew", "beach mouse",
-    "yellow-cheeked chipmunk", "ornate shrew", "pocket mouse", "marsh shrew", "crab", "non-toxic jellyfish",
-    "clam cluster", "sandpiper", "crawdad", "jackdaw", "cockle shell", "plover", "finch", "thrush"
+    "blue fruit", "fog batfly", "beach batfly",
+    "yellow-cheeked vulture grub", "ornate vulture grub", "pocket lantern mouse", "marsh batfly", "batfly", "jellyfish",
+    "pink jellyfish", "purple jellyfish", "white jellyfish", "slime mold"
   ],
   "beach_tinyprey_dryland_plural": [
-    "fiddler crabs", "hermit crabs", "beach voles", "fog shrews", "beach mice",
-    "yellow-cheeked chipmunks", "ornate shrews", "pocket mice", "marsh shrews", "crabs", "non-toxic jellyfish",
-    "clam clusters", "sandpipers", "crawdads", "jackdaws", "cockle shells", "plovers", "finches", "thrush"
+    "blue fruits", "fog batflies", "beach batflies",
+    "yellow-cheeked vulture grubs", "ornate vulture grubs", "pocket lantern mice", "marsh batflies", "batflies", "jellyfish",
+    "pink jellyfish", "purple jellyfish", "white jellyfish", "smile mold"
   ],
   "beach_tinyprey_aquatic_singular": [
-    "shad", "anchovy", "sardine", "smelt", "pink shrimp", "white shrimp", "tropical fish", "sand fish", 
-    "flat head fish", "small brine fish", "prawn", "little seahorse", "seahorse", "cherubfish", "fairy basslet", 
-    "sailfin blenny", "yellowhead jawfish", "pinkeye goby", "tetra"
+    "glow fruit", "jellyfish", "baby jetfish"
   ],
   "beach_tinyprey_aquatic_plural": [
-    "shad", "anchovies", "sardines", "smelt", "pink shrimp", "white shrimp", "tropical fish", "sand fish", 
-    "flat head fish", "small brine fish", "prawns", "little seahorses", "seahorses", "cherubfish", "fairy basslets", 
-    "sailfin blenny", "yellowhead jawfish", "pinkeye gobies", "tetras"
+    "glow fruits", "jellyfish", "baby jetfishes"
   ],
   "beach_midprey_dryland_singular": [
-    "dusky-footed woodrat", "auklet", "gannet", "skua", "loon", "herring gull", "ring-billed gull", "common tern",
-    "squirrel"
+    "noodlefly", "pink noodlefly", "maroon noodlefly", "blue noodlefly", "white noodlefly", "grey noodlefly", "gooeyduck",
+    "baby centipede", "blue eggbug", "teal eggbug", "green eggbug", "lime eggbug", "eggbug"
   ],
   "beach_midprey_dryland_plural": [
-    "dusky-footed woodrats", "auklets", "gannets", "skua", "loons", "herring gulls", "ring-billed gulls", "common terns",
-    "squirrels"
+    "noodleflies", "pink noodleflies", "maroon noodleflies", "blue noodleflies", "white noodleflies", "grey noodleflies",
+    "gooeyducks", "baby centipedes", "blue eggbugs", "teal eggbugs", "green eggbugs", "lime eggbugs", "eggbugs"
   ],
   "beach_midprey_aquatic_singular": [
-    "eel", "needlenose", "seagull", "blowfish", "sea bass", "young squid", "lionfish", "lobster", "sea snake",
-    "clown triggerfish", "angel fish", "powder blue tang", "yellow tang", "powder brown tang", "butterfly fish"
+    "baby aquapede", "juvinile big jelly"
   ],
   "beach_midprey_aquatic_plural": [
-    "eels", "needlenoses", "seagulls", "blowfish", "sea bass", "young squids", "lionfish", "lobsters", "sea snakes",
-    "clown triggerfish", "angel fish", "powder blue tangs", "yellow tangs", "powder brown tangs", "butterfly fish"
+    "baby aquapedes", "juvinile big jellies"
   ],
   "beach_bigprey_dryland_singular": [
-    
+    "squidcada", "white squidcada", "black squidcada", "juvinile centipede"
   ],
   "beach_bigprey_dryland_plural": [
-    
+    "squidcadas", "white squidcadas", "black squidcadas", "juvinile centipedes"
   ],
   "beach_bigprey_aquatic_singular": [
-    
+    "jetfish", "juvinile aquapede"
   ],
   "beach_bigprey_aquatic_plural": [
-    
+    "jetfishes", "juvinile aquapedes"
   ],
   
   "desert_tinyprey_singular": [
