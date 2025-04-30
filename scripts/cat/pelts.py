@@ -785,36 +785,36 @@ class Pelt:
             self.vitiligo = "VITILIGOTWO"
 
         # color conversions 
-        if self.colour == 'PALEGREY'
-            self.colour = 'SKY'
-        elif self.colour == 'SILVER'
-            self.colour = 'BLUE'
-        elif self.colour == 'GREY'
-            self.colour = 'INDIGO'
-        elif self.colour == 'DARKGREY'
-            self.colour = 'PURPLE'
-        elif self.colour == 'PALEGINGER'
-            self.colour = 'YELLOW'
-        elif self.colour == 'GOLDEN'
-            self.colour = 'ORANGE'
-        elif self.colour == 'GINGER'
-            self.colour = 'SCARLET'
-        elif self.colour == 'DARKGINGER'
-            self.colour = 'RED'
-        elif self.colour == 'SIENNA'
-            self.colour = 'PINK'
-        elif self.colour == 'LIGHTBROWN'
-            self.colour = 'MINT'
-        elif self.colour == 'LILAC'
-            self.colour = 'LIME'
-        elif self.colour == 'BROWN'
-            self.colour = 'GREEN'
-        elif self.colour == 'GOLDEN-BROWN'
-            self.colour = 'MAROON'
-        elif self.colour == 'DARKBROWN'
-            self.colour = 'PERIWINKLE'
-        elif self.colour == 'CHOCOLATE'
-            self.colour = 'LAVENDER'
+        if self.colour == "PALEGREY"
+            self.colour = "SKY"
+        elif self.colour == "SILVER"
+            self.colour = "BLUE"
+        elif self.colour == "GREY"
+            self.colour = "INDIGO"
+        elif self.colour == "DARKGREY"
+            self.colour = "PURPLE"
+        elif self.colour == "PALEGINGER"
+            self.colour = "YELLOW"
+        elif self.colour == "GOLDEN"
+            self.colour = "ORANGE"
+        elif self.colour == "GINGER"
+            self.colour = "SCARLET"
+        elif self.colour == "DARKGINGER"
+            self.colour = "RED"
+        elif self.colour == "SIENNA"
+            self.colour = "PINK"
+        elif self.colour == "LIGHTBROWN"
+            self.colour = "MINT"
+        elif self.colour == "LILAC"
+            self.colour = "LIME"
+        elif self.colour == "BROWN"
+            self.colour = "GREEN"
+        elif self.colour == "GOLDEN-BROWN"
+            self.colour = "MAROON"
+        elif self.colour == "DARKBROWN"
+            self.colour = "PERIWINKLE"
+        elif self.colour == "CHOCOLATE"
+            self.colour = "LAVENDER"
         
         # Move white_patches that should be in vit or points. 
         if self.white_patches in Pelt.vit:
