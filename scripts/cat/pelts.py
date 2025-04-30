@@ -1751,25 +1751,22 @@ class Pelt:
         
         if cat.pelt.white_patches:
             if cat.pelt.white_patches == "FULLWHITE":
-                # If the cat is fullwhite, discard all other information. They are just white
-                color_name = "white"
-                # However due to raingen's diverse color spread more detail is often needed
-                if cat.pelt.white_patches_tint != "none":
-                    color_name.replace("white", f"{white_patches_tint_name}")
+                # If the cat is fullwhite, discard all other information. They are just whatever white patch tint color they have
+                color_name = f"{white_patches_tint_name}"
             if cat.pelt.white_patches in Pelt.mostly_white and cat.pelt.name != "Calico":
-                color_name = f"white and {color_name}"
-                if cat.pelt.white_patches_tint != "none":
-                    color_name.replace("white and", f"{white_patches_tint_name} and")
+                color_name = f"{white_patches_tint_name} and {color_name}"
             elif cat.pelt.name != "Calico":
-                color_name = f"{color_name} and white"
-                if cat.pelt.white_patches_tint != "none":
-                    color_name.replace("and white", f"and {white_patches_tint_name}")
+                color_name = f"{color_name} and {white_patches_tint_name}"
 
         if cat.pelt.points:
             color_name = f"{color_name} point"
             if "scarlet point" in color_name:
                 color_name.replace("scarlet point", "flame point")
 
+        # Remove none from white patch description
+        if "none" in color_name:
+            color_name = color_name.replace("none", "white")
+        
         # Remove same color descriptors
         if "white and white" in color_name:
             color_name = color_name.replace("white and white", "white")
