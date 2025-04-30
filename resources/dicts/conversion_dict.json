@@ -141,15 +141,24 @@
         "VANCREAMY": "VAN",
         "TUXEDOCREAMY": "TUXEDO"
 },
-"old_sharphorns": {
-    "WHITEHORNS": "WHITEHORNSSHARP",
-    "BLACKHORNS": "BLACKHORNSSHARP",
-    "REDHORNS": "REDHORNSSHARP",
-    "YELLOWHORNS": "YELLOWHORNSSHARP",
-    "GREENHORNS": "GREENHORNSSHARP",
-    "BLUEHORNS": "BLUEHORNSSHARP",
-    "ORANGEHORNS": "ORANGEHORNSSHARP",
-    "BROWNHORNS": "BROWNHORNSSHARP"
+    "old_sharphorns": {
+        "WHITEHORNS": "WHITEHORNSSHARP",
+        "BLACKHORNS": "BLACKHORNSSHARP",
+        "REDHORNS": "REDHORNSSHARP",
+        "YELLOWHORNS": "YELLOWHORNSSHARP",
+        "GREENHORNS": "GREENHORNSSHARP",
+        "BLUEHORNS": "BLUEHORNSSHARP",
+        "ORANGEHORNS": "ORANGEHORNSSHARP",
+        "BROWNHORNS": "BROWNHORNSSHARP"
 
+},
+    "old_white_patch_tints": {
+        "artificier": "ruby",
+        "hunter": "coral",
+        "gourmand": "tan",
+        "monk": "lemon",
+        "saint": "clover",
+        "rivulet": "cyan",
+        "spearmaster": "violet"
 }
 }

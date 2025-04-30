@@ -1014,7 +1014,7 @@ class Cat:
             
         if self.pelt.eye_colour2:
             if self.pelt.eye_colour2 in Pelt.multi_eyes:
-                colour = "multi-eyed " + colour
+                colour = colour + ", multi-eyed"
             else:
                 if self.pelt.eye_colour2 in Pelt.riveye_colours:
                     colour2 = colour2.replace("riv", "")
@@ -1039,11 +1039,11 @@ class Cat:
                 colour = f"{colour} and {colour2}"
 
         if self.pelt.eye_colour in Pelt.riveye_colours:
-            colour = "huge " + colour
+            colour = colour + ", huge"
         if self.pelt.eye_colour in Pelt.buttoneye_colours:
             colour = colour + " buttons"
         if self.pelt.eye_colour in Pelt.bobaeye_colours:
-            colour = "large " + colour
+            colour = colour + ", large"
 
         return colour
 

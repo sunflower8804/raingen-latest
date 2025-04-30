@@ -831,6 +831,45 @@ class Pelt:
             self.colour = 'PERIWINKLE'
         elif self.colour == 'CHOCOLATE':
             self.colour = 'LAVENDER'
+            
+        if self.tortiecolour:
+            if self.tortiecolour == 'PALEGREY':
+                self.tortiecolour = 'SKY'
+            elif self.tortiecolour == 'SILVER':
+                self.tortiecolour = 'BLUE'
+            elif self.tortiecolour == 'GREY':
+                self.tortiecolour = 'INDIGO'
+            elif self.tortiecolour == 'DARKGREY':
+                self.tortiecolour = 'PURPLE'
+            elif self.tortiecolour == 'PALEGINGER':
+                self.tortiecolour = 'YELLOW'
+            elif self.tortiecolour == 'GOLDEN':
+                self.tortiecolour = 'ORANGE'
+            elif self.tortiecolour == 'GINGER':
+                self.tortiecolour = 'SCARLET'
+            elif self.tortiecolour == 'DARKGINGER':
+                self.tortiecolour = 'RED'
+            elif self.tortiecolour == 'SIENNA':
+                self.tortiecolour = 'PINK'
+            elif self.tortiecolour == 'LIGHTBROWN':
+                self.tortiecolour = 'MINT'
+            elif self.tortiecolour == 'LILAC':
+                self.tortiecolour = 'LIME'
+            elif self.tortiecolour == 'BROWN':
+                self.tortiecolour = 'GREEN'
+            elif self.tortiecolour == 'GOLDEN-BROWN':
+                self.tortiecolour = 'MAROON'
+            elif self.tortiecolour == 'DARKBROWN':
+                self.tortiecolour = 'PERIWINKLE'
+            elif self.tortiecolour == 'CHOCOLATE':
+                self.tortiecolour = 'LAVENDER'
+
+        # tint conversions
+        #if self.tint in convert_dict["old_tints"]:
+        #    self.tint = convert_dict["old_tints"][self.tint]
+
+        if self.white_patches_tint in convert_dict["old_white_patch_tints"]:
+            self.white_patches_tint = convert_dict["old_white_patch_tints"][self.white_patches_tint]
         
         # Move white_patches that should be in vit or points. 
         if self.white_patches in Pelt.vit:

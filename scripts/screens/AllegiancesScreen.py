@@ -186,9 +186,9 @@ class AllegiancesScreen(Screens):
         if living_meds:
             _box = ["", ""]
             if len(living_meds) == 1:
-                _box[0] = "<b><u>cleric</u></b>"
+                _box[0] = "<b><u>CLERIC</u></b>"
             else:
-                _box[0] = "<b><u>clericS</u></b>"
+                _box[0] = "<b><u>CLERICS</u></b>"
 
             _box[1] = "\n".join([self.generate_one_entry(i) for i in living_meds])
             outputs.append(_box)
