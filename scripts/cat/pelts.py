@@ -1745,23 +1745,46 @@ class Pelt:
                     color_name = f"{color_name} mottled{base}"
                 else:
                     color_name = f"{color_name} {cat.pelt.name.lower()}{base}"
-
+                    
+        # Grabs tint name for more description
+        white_patch_tint_name = str(cat.pelt.white_patch_tint).lower() 
+        
         if cat.pelt.white_patches:
             if cat.pelt.white_patches == "FULLWHITE":
                 # If the cat is fullwhite, discard all other information. They are just white
                 color_name = "white"
+                # However due to raingen's diverse color spread more detail is often needed
+                if cat.white_patches_tint != "none"
+                    color_name.replace("white", {white_patch_tint_name})
             if cat.pelt.white_patches in Pelt.mostly_white and cat.pelt.name != "Calico":
                 color_name = f"white and {color_name}"
+                if cat.white_patches_tint != "none"
+                    color_name.replace("white and", f"{white_patch_tint_name} and")
             elif cat.pelt.name != "Calico":
                 color_name = f"{color_name} and white"
+                if cat.white_patches_tint != "none"
+                    color_name.replace("and white", f"and {white_patch_tint_name}")
 
         if cat.pelt.points:
             color_name = f"{color_name} point"
             if "scarlet point" in color_name:
                 color_name.replace("scarlet point", "flame point")
 
+        # Remove same color descriptors
         if "white and white" in color_name:
             color_name = color_name.replace("white and white", "white")
+
+        if "black and black" in color_name:
+            color_name = color_name.replace("black and black", "black")
+
+        if "cream and cream" in color_name:
+            color_name = color_name.replace("cream and cream", "cream")
+
+        if "purple and purple" in color_name:
+            color_name = color_name.replace("purple and purple", "purple")
+
+        if "mint and mint" in color_name:
+            color_name = color_name.replace("mint and mint", "mint")
 
         # Now it's time for gender
         if cat.genderalign in ["female", "trans female"]:
