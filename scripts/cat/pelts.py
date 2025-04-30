@@ -1757,7 +1757,7 @@ class Pelt:
                 if cat.pelt.white_patches_tint != "none":
                     color_name.replace("white", f"{white_patches_tint_name}")
             if cat.pelt.white_patches in Pelt.mostly_white and cat.pelt.name != "Calico":
-                    color_name = f"white and {color_name}"
+                color_name = f"white and {color_name}"
                 if cat.pelt.white_patches_tint != "none":
                     color_name.replace("white and", f"{white_patches_tint_name} and")
             elif cat.pelt.name != "Calico":
