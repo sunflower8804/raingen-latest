@@ -163,7 +163,7 @@ class HandleShortEvents:
         try:
             self.chosen_event = random.choice(final_events)
             # this print is good for testing, but gets spammy in large clans
-            # print(f"CHOSEN: {self.chosen_event.event_id}")
+            print(f"CHOSEN: {self.chosen_event.event_id}")
         except IndexError:
             # this doesn't necessarily mean there's a problem, but can be helpful for narrowing down possibilities
             print(
@@ -407,9 +407,13 @@ class HandleShortEvents:
             acc_list.extend(Pelt.featherboas)
         if "SCARVES" in possible_accs:
             acc_list.extend(Pelt.scarves)
+        if "FLOATYEYES" in possible_accs:
+            acc_list.extend(Pelt.floatyeyes)
+        if "VULTUREMASKS" in possible_accs:
+            acc_list.extend(Pelt.vulturemasks)
 
         for acc in possible_accs:
-            if acc not in ["WILD", "PLANT", "COLLAR", "LIZARD", "HERBS2", "MUDDYPAWS", "INSECTWINGS", "BUDDIES", "NEWACCS", "NEWACCS2", "BODYPAINT", "IMPLANT", "MAGIC", "NECKLACES", "DRAPERY", "PRIDEDRAPERY", "EYEPATCHES", "LARSACCS", "HARLEYACCS", "FEATHERBOAS", "SCARVES"]:
+            if acc not in ["WILD", "PLANT", "COLLAR", "LIZARD", "HERBS2", "MUDDYPAWS", "INSECTWINGS", "BUDDIES", "NEWACCS", "NEWACCS2", "BODYPAINT", "IMPLANT", "MAGIC", "NECKLACES", "DRAPERY", "PRIDEDRAPERY", "EYEPATCHES", "LARSACCS", "HARLEYACCS", "FEATHERBOAS", "SCARVES", "FLOATYEYES", "VULTUREMASKS"]:
                 acc_list.append(acc)
 
         if hasattr(self.main_cat.pelt, "scars"):

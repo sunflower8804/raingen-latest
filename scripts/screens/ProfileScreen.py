@@ -450,6 +450,8 @@ class ProfileScreen(Screens):
                                 self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['glassesaccs' + accessory + cat_sprite], manager=MANAGER)
                             elif accessory in cat.pelt.orbitals:
                                 self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['orbitals' + accessory + cat_sprite], manager=MANAGER)
+                            elif accessory in cat.pelt.vulturemasks:
+                                self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['vulturemasks' + accessory + cat_sprite], manager=MANAGER)
                             pos_x += 60
                             if pos_x >= 600:
                                 pos_x = 5
@@ -830,6 +832,9 @@ class ProfileScreen(Screens):
                                     self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['glassesaccs' + accessory + cat_sprite], manager=MANAGER)
                                 elif accessory in cat.pelt.orbitals:
                                     self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['orbitals' + accessory + cat_sprite], manager=MANAGER)
+                                elif accessory in cat.pelt.vulturemasks:
+                                    self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['vulturemasks' + accessory + cat_sprite], manager=MANAGER)
+                                
                                 pos_x += 60
                                 if pos_x >= 600:
                                     pos_x = 5
@@ -1305,6 +1310,11 @@ class ProfileScreen(Screens):
             elif the_cat.pelt.skin in the_cat.pelt.dragonwhiskers:
                 featurename = featurename.replace("dragonwhiskers", " dragon whiskers")
                 output += featurename
+                
+            #stinger
+            elif the_cat.pelt.skin in the_cat.pelt.stinger:
+                featurename = featurename.replace("stinger", " tail stinger")
+                output += featurename
 
             #cyanwings
             elif the_cat.pelt.skin in the_cat.pelt.cyanwings:
@@ -1346,6 +1356,11 @@ class ProfileScreen(Screens):
             #firebugpart
             elif the_cat.pelt.skin in the_cat.pelt.firebugpart:
                 output += "feature: firebug antennae"
+                
+            #dropwig
+            elif the_cat.pelt.skin in the_cat.pelt.dropwig:
+                featurename = featurename.replace("dropwig", " dropwig")
+                output += featurename
 
             #seaangelwings
             elif the_cat.pelt.skin in the_cat.pelt.seaangelwings:
@@ -2934,7 +2949,9 @@ class ProfileScreen(Screens):
                             self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['glassesaccs' + accessory + cat_sprite], manager=MANAGER)
                         elif accessory in cat.pelt.orbitals:
                             self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['orbitals' + accessory + cat_sprite], manager=MANAGER)
-                        
+                        elif accessory in cat.pelt.vulturemasks:
+                            self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['vulturemasks' + accessory + cat_sprite], manager=MANAGER)
+
                         self.accessories_list.append(accessory)
                         pos_x += 60
                         if pos_x >= 600:

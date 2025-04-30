@@ -2992,6 +2992,8 @@ def generate_sprite(
                             new_sprite.blit(sprites.sprites['glassesaccs' + i + cat_sprite], (0, 0))
                         elif i in cat.pelt.orbitals:
                             new_sprite.blit(sprites.sprites['orbitals' + i + cat_sprite], (0, 0))
+                        elif i in cat.pelt.vulturemasks:
+                            new_sprite.blit(sprites.sprites['vulturemasks' + i + cat_sprite], (0, 0))
 
                     except:
                         continue

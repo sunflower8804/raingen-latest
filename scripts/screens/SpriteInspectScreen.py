@@ -77,57 +77,63 @@ class SpriteInspectScreen(Screens):
                 )
                 self.update_disabled_buttons()
                 self.make_cat_image()
+
             elif event.ui_element == self.save_image_button:
                 SaveAsImage(self.generate_image_to_save(), str(self.the_cat.name))
+
             elif event.ui_element == self.previous_life_stage:
                 self.displayed_life_stage = max(self.displayed_life_stage - 1, 0)
                 self.update_disabled_buttons()
                 self.make_cat_image()
+
             elif event.ui_element == self.checkboxes["platform_shown"]:
                 if self.platform_shown:
                     self.platform_shown = False
                 else:
                     self.platform_shown = True
-
                 self.set_background_visibility()
                 self.update_checkboxes()
+
             elif event.ui_element == self.checkboxes["scars_shown"]:
                 if self.scars_shown:
                     self.scars_shown = False
                 else:
                     self.scars_shown = True
-
                 self.make_cat_image()
                 self.update_checkboxes()
+
             elif event.ui_element == self.checkboxes["acc_shown"]:
                 if self.acc_shown:
                     self.acc_shown = False
                 else:
                     self.acc_shown = True
-
                 self.make_cat_image()
                 self.update_checkboxes()
+
             elif event.ui_element == self.checkboxes["override_dead_lineart"]:
                 if self.override_dead_lineart:
                     self.override_dead_lineart = False
                 else:
                     self.override_dead_lineart = True
-
                 self.make_cat_image()
                 self.update_checkboxes()
+
             elif event.ui_element == self.checkboxes["override_not_working"]:
                 if self.override_not_working:
                     self.override_not_working = False
                 else:
                     self.override_not_working = True
+                self.make_cat_image()
+                self.update_checkboxes()
+
             elif event.ui_element == self.checkboxes["show_feature"]:
                 if self.show_feature:
                     self.show_feature = False
                 else:
                     self.show_feature = True
-
                 self.make_cat_image()
                 self.update_checkboxes()
+
             elif event.ui_element == self.cat_elements["favourite_button"]:
                 self.the_cat.favourite = not self.the_cat.favourite
                 self.cat_elements["favourite_button"].change_object_id(
