@@ -454,9 +454,9 @@ class Sprites:
 
         # Define colors and categories
         color_categories = [
-            ['WHITE', 'PALEGREY', 'SILVER', 'GREY', 'DARKGREY', 'GHOST', 'BLACK'],
-            ['CREAM', 'PALEGINGER', 'GOLDEN', 'GINGER', 'DARKGINGER', 'SIENNA'],
-            ['LIGHTBROWN', 'LILAC', 'BROWN', 'GOLDEN-BROWN', 'DARKBROWN', 'CHOCOLATE']
+            ['WHITE', 'SKY', 'BLUE', 'INDIGO', 'PURPLE', 'GHOST', 'BLACK'],
+            ['CREAM', 'YELLOW', 'ORANGE', 'SCARLET', 'RED', 'PINK'],
+            ['MINT', 'LIME', 'GREEN', 'MAROON', 'PERIWINKLE', 'LAVENDER']
         ]
 
         color_types = [
