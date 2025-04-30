@@ -4126,7 +4126,7 @@
     "sub_type": ["accessory"],
     "weight": 30,
     "event_text": "m_c was taking a walk out in the teritory when {PRONOUN/m_c/subject} stumbled into an elite scavenger, after some bartering m_c returns to camp now one acc_singular richer",
-    "new_accessory": ["BESIEGEDMASKOG", "BESIEGEDMASKBLUE", "BESIEGEDMASKCYAN", "BESIEGEDMASKGRAY", "BESIEGEDMASKGREEN", "BESIEGEDMASKINDIGO", "BESIEGEDMASKORANGE", "BESIEGEDMASKPINK", "BESIEGEDMASKPURPLE", "BESIEGEDMASKRED", "BESIEGEDMASKROSE", "BESIEGEDMASKAQUA", "BESIEGEDMASKYELLOW", "VULTMASK", "KINGMASK", "SCAVMASK"],
+    "new_accessory": ["BESIEGEDMASKOG", "BESIEGEDMASKBLUE", "BESIEGEDMASKCYAN", "BESIEGEDMASKGRAY", "BESIEGEDMASKGREEN", "BESIEGEDMASKINDIGO", "BESIEGEDMASKORANGE", "BESIEGEDMASKPINK", "BESIEGEDMASKPURPLE", "BESIEGEDMASKRED", "BESIEGEDMASKROSE", "BESIEGEDMASKAQUA", "BESIEGEDMASKYELLOW", "VULTMASK", "KINGMASK", "SCAVMASK", "VULTUREMASKS"],
     "m_c": {
       "age": ["adolescent", "young adult", "adult", "senior adult", "senior"],
       "skill": ["SCAV,0"]
@@ -4439,7 +4439,7 @@
     "tags": ["skill_trait_required"],
     "weight": 30,
     "event_text": "m_c fought a vulture and won. {PRONOUN/m_c/subject/CAP} decided to keep its mask as a trophy.",
-    "new_accessory": ["VULTMASK"],
+    "new_accessory": ["VULTMASK", "VULTMASK1", "VULTMASK2", "VULTMASK3", "VULTMASK4", "VULTMASK5", "VULTMASK6", "VULTMASK7", "VULTMASK8", "VULTMASK9", "VULTMASK10", "VULTMASK11", "VULTMASK12", "VULTMASK13", "VULTMASK14", "VULTMASK15", "VULTMASK16", "VULTMASK17"],
     "m_c":{
       "age": ["adolescent", "young adult", "adult", "senior adult", "senior"],
       "skill": ["FIGHTER,0"]
@@ -4453,7 +4453,7 @@
     "tags": ["skill_trait_required"],
     "weight": 30,
     "event_text": "m_c fought a king vulture and won. {PRONOUN/m_c/subject/CAP} decided to keep its mask as a trophy.",
-    "new_accessory": ["KINGMASK"],
+    "new_accessory": ["KINGMASK", "VULTMASK18", "VULTMASK19", "VULTMASK20", "VULTMASK21", "VULTMASK22", "VULTMASK23", "VULTMASK24"],
     "m_c":{
       "age": ["adolescent", "young adult", "adult", "senior adult", "senior"],
       "skill": ["FIGHTER,1"]
@@ -4804,7 +4804,7 @@
     "season": ["any"],
     "sub_type": ["accessory"],
     "weight": 5,
-    "event_text": "m_c was attacked by a pole plant, but somehow by the void's will, {PRONOUN/m_c/subject} managed to tame it instead of being killed by it!",
+    "event_text": "m_c was attacked by a pole plant, but somehow by the Void's will, {PRONOUN/m_c/subject} managed to tame it instead of being killed by it!",
     "new_accessory": ["PINKPOLEPLANTBUDDY", "ORANGEPOLEPLANTBUDDY", "REDPOLEPLANTBUDDY"],
     "m_c": {
       "age": ["adolescent", "young adult", "adult", "senior adult", "senior"]
@@ -4828,7 +4828,7 @@
     "season": ["any"],
     "sub_type": ["accessory"],
     "weight": 10,
-    "event_text": "m_c had gone out of the camp, but later returned with a acc_singular after stabbing a tardigrade.",
+    "event_text": "m_c finds a acc_singular and decides to keep it.",
     "new_accessory": [
       "PURPLEINDIGOPSPEAR", "INDIGOPSPEAR", "PURPLEPSPEAR", "CYANPSPEAR", "BLUEPSPEAR", "BLURCYANPSPEAR",
       "GAYPSPEAR", "TURQUOISEPSPEAR", "TURQUOISEGREENPSPEAR", "LIMEGREENPSPEAR", "LIMEPSPEAR", "GREYPSPEAR",
@@ -4846,7 +4846,7 @@
     "season": ["any"],
     "sub_type": ["accessory"],
     "weight": 10,
-    "event_text": "m_c had gone out of the camp, but later returned with a acc_singular after killing an elusive firebug.",
+    "event_text": "m_c finds a acc_singular and decides to keep it.",
     "new_accessory": ["REDFIRESPEAR", "ORANGEFIRESPEAR", "YELLOWFIRESPEAR", "PINKFIRESPEAR", "PURPLEFIRESPEAR",
         "DARKREDFIRESPEAR", "DARKPINKFIRESPEAR", "DARKORANGEFIRESPEAR", "DARKYELLOWFIRESPEAR"],
     "m_c": {

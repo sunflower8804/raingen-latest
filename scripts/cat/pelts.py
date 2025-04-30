@@ -177,6 +177,27 @@ class Pelt:
                 #'JANE', 'MATT', 'MESS', 'SCRATCH', 'SHED', 'SIEGE', 'SPARK', 'SPARKLE'
                 ]
     
+    #when a scug has one eye with a pupil and one without it looks bad so please list all eyes with pupils
+    pupil_eyes = ['ALBA', 'BANANA', 'CREAMY', 'KARMA', 'MHUNT', 'PEPPER', 'SPLIT', 'WINKS', 'ZENI', 'BEAST',
+                'CARNI', 'CHAIN', 'FOAM', 'MEISTALT', 'MELON', 'MINV', 'MOON', 'MRIV', 'PEBB', 'RUST', 'SIG', 
+                'TIDE', 'VIVID', 'WAVE', 'APPLE', 'AQUA', 'FAE', 'FIELD', 'IRID', 'RUNT', 
+                'ARID', 'BLOOD', 'ESES', 'EXILE', 'FALLSTAR', 'HOT', 'KIND', 'MARTI', 'MEISTER', 
+                'PELA', 'RETRO', 'SIXER', 'SUN', 'SWEET',
+                'REFORGED', 'PORTALMAKER', 'SEVENSEVEN', 'ATLAN', 'BASIC', 'BELL', 'BIS', 'BIT', 'CRITTER', 
+                'CUBED', 'DOE', 'FREYR', 'GAMBLE', 'GORB', 'JANE', 'JOHN', 'MATT', 'MESS', 'PE', 'POLE', 
+                'RAT', 'RGB', 'ROT', 'SCRATCH', 'SHED', 'SIEGE', 'SPARK', 'SPARKLE', 'SUNSET', 'TELA', 
+                'USURP', 'WAR', 'XIII']
+    yellow_pupil_eyes = ['ALBA', 'BANANA', 'CREAMY', 'KARMA', 'MHUNT', 'PEPPER', 'SPLIT', 'WINKS', 'ZENI', 'BEAST',
+                        'REFORGED', 'ATLAN', 'BASIC', 'BELL', 'GAMBLE']
+    blue_pupil_eyes = ['CARNI', 'CHAIN', 'FOAM', 'MEISTALT', 'MELON', 'MINV', 'MOON', 'MRIV', 'PEBB', 'RUST', 'SIG', 
+                        'TIDE', 'VIVID', 'WAVE', 'PORTALMAKER', 'CRITTER', 'FREYR', 'RAT', 'ROT']
+    green_pupil_eyes = ['APPLE', 'AQUA', 'FAE', 'FIELD', 'IRID', 'RUNT', 'CUBED',
+                        'GORB', 'JOHN', 'PE', 'POLE', 'RGB', 'SHED', 'SPARKLE', 'USURP', 'XIII']
+    red_pupil_eyes = ['ARID', 'BLOOD', 'ESES', 'EXILE', 'FALLSTAR', 'HOT', 'KIND', 'MARTI', 'MEISTER', 
+                        'PELA', 'RETRO', 'SIXER', 'SUN', 'SWEET', 'SEVENSEVEN', 'BIS', 'BIT',
+                        'DOE', 'JANE', 'MATT', 'MESS', 'SCRATCH', 'SIEGE', 'SPARK', 'SUNSET', 'TELA',
+                        'DIM']
+
     riveye_colours = ['RIVYELLOW', 'RIVAMBER', 'RIVHAZEL', 'RIVPALEGREEN', 'RIVGREEN', 'RIVBLUE', 'RIVDARKBLUE', 'RIVGREY', 'RIVCYAN', 'RIVEMERALD', 'RIVPALEBLUE', 
                'RIVPALEYELLOW', 'RIVGOLD', 'RIVHEATHERBLUE', 'RIVCOPPER', 'RIVSAGE', 'RIVCOBALT', 'RIVSUNLITICE', 'RIVGREENYELLOW', 'RIVBRONZE', 'RIVSILVER',
                'ALTRIVYELLOW', 'ALTRIVAMBER', 'ALTRIVHAZEL', 'ALTRIVPALEGREEN', 'ALTRIVGREEN', 'ALTRIVBLUE', 'ALTRIVDARKBLUE', 'ALTRIVCYAN', 'ALTRIVEMERALD',
@@ -231,27 +252,6 @@ class Pelt:
     red_boba_eyes = ['BOBARED', 'BOBAPURPLE', 'BOBAMAUVE', 'BOBAARID', 'BOBABLOOD', 'BOBAESES', 'BOBAEXILE', 'BOBAFALLSTAR', 'BOBAHOT', 'BOBAKIND',
                     'BOBAMARTI', 'BOBAMEISTER', 'BOBAPELA', 'BOBARETRO', 'BOBASIXER', 'BOBASUN', 'BOBASWEET']
     
-    #when a scug has one eye with a pupil and one without it looks bad so please list all eyes with pupils
-    pupil_eyes = ['ALBA', 'BANANA', 'CREAMY', 'KARMA', 'MHUNT', 'PEPPER', 'SPLIT', 'WINKS', 'ZENI', 'BEAST',
-                'CARNI', 'CHAIN', 'FOAM', 'MEISTALT', 'MELON', 'MINV', 'MOON', 'MRIV', 'PEBB', 'RUST', 'SIG', 
-                'TIDE', 'VIVID', 'WAVE', 'APPLE', 'AQUA', 'FAE', 'FIELD', 'IRID', 'RUNT', 
-                'ARID', 'BLOOD', 'ESES', 'EXILE', 'FALLSTAR', 'HOT', 'KIND', 'MARTI', 'MEISTER', 
-                'PELA', 'RETRO', 'SIXER', 'SUN', 'SWEET',
-                'REFORGED', 'PORTALMAKER', 'SEVENSEVEN', 'ATLAN', 'BASIC', 'BELL', 'BIS', 'BIT', 'CRITTER', 
-                'CUBED', 'DOE', 'FREYR', 'GAMBLE', 'GORB', 'JANE', 'JOHN', 'MATT', 'MESS', 'PE', 'POLE', 
-                'RAT', 'RGB', 'ROT', 'SCRATCH', 'SHED', 'SIEGE', 'SPARK', 'SPARKLE', 'SUNSET', 'TELA', 
-                'USURP', 'WAR', 'XIII']
-    yellow_pupil_eyes = ['ALBA', 'BANANA', 'CREAMY', 'KARMA', 'MHUNT', 'PEPPER', 'SPLIT', 'WINKS', 'ZENI', 'BEAST',
-                        'REFORGED', 'ATLAN', 'BASIC', 'BELL', 'GAMBLE']
-    blue_pupil_eyes = ['CARNI', 'CHAIN', 'FOAM', 'MEISTALT', 'MELON', 'MINV', 'MOON', 'MRIV', 'PEBB', 'RUST', 'SIG', 
-                        'TIDE', 'VIVID', 'WAVE', 'PORTALMAKER', 'CRITTER', 'FREYR', 'RAT', 'ROT']
-    green_pupil_eyes = ['APPLE', 'AQUA', 'FAE', 'FIELD', 'IRID', 'RUNT', 'CUBED',
-                        'GORB', 'JOHN', 'PE', 'POLE', 'RGB', 'SHED', 'SPARKLE', 'USURP', 'XIII']
-    red_pupil_eyes = ['ARID', 'BLOOD', 'ESES', 'EXILE', 'FALLSTAR', 'HOT', 'KIND', 'MARTI', 'MEISTER', 
-                        'PELA', 'RETRO', 'SIXER', 'SUN', 'SWEET', 'SEVENSEVEN', 'BIS', 'BIT',
-                        'DOE', 'JANE', 'MATT', 'MESS', 'SCRATCH', 'SIEGE', 'SPARK', 'SUNSET', 'TELA',
-                        'DIM']
-
     multi_eyes = ['MULTIYELLOW', 'MULTIAMBER', 'MULTIHAZEL', 'MULTIPALEGREEN', 'MULTIGREEN', 'MULTIBLUE', 
                 'MULTIDARKBLUE', 'MULTIGREY', 'MULTICYAN', 'MULTIEMERALD', 'MULTIHEATHERBLUE', 'MULTISUNLITICE',
                 'MULTICOPPER', 'MULTISAGE', 'MULTICOBALT', 'MULTIPALEBLUE', 'MULTIBRONZE', 'MULTISILVER',
@@ -332,8 +332,9 @@ class Pelt:
         "ALBISALAFUSHIA", "ALBISALARED", "MELASALARED", "MELASALAFUSHIA", "MELASALAPURPLE"
     ]
     #sey's accessories
+    #sorry sey i was too lazy to make a new sprite sheet 
     muddypaws = [
-        "MUDDYPAWS"
+        "MUDDYPAWS", "WHITECLAWS", "PINKCLAWS", "BLUECLAWS", "GREENCLAWS", "YELLOWCLAWS", "REDCLAWS", "GREYCLAWS"
     ]
     insectwings = [
         "DEATHSHEAD", "BLUEBORDERED", "BLOODVEIN", "LARGEEMERALD", "CINNABAR", "LUNA", "ROSYMAPLE",
@@ -359,7 +360,7 @@ class Pelt:
         "NEURONWHITE", "KARMAONE", "KARMATWO", "KARMATHREE", "KARMAFOUR", "SCROLL",
         "NECKLACESILVER", "NECKLACEGOLD", "TAILWRAP", "RAINCOAT", "LACESCARF", "TOLLMASK",
         "FLOWEREDMOSS", "MOSS", "MUSHROOMS", "MUSHROOMHAT", "GRENADE", "SANTAHAT",
-        "EYEPATCH", 'INVMOUTH', "MOUSEYELPLUSH", "MOUSEREDPLUSH", "MOUSEBLUEPLUSH", "MOUSEPINKPLUSH"
+        "EYEPATCH", "INVMOUTH", "MOUSEYELPLUSH", "MOUSEREDPLUSH", "MOUSEBLUEPLUSH", "MOUSEPINKPLUSH"
     ]
     newaccs2 = [
         "GLITCHING", "ROBOTARM", "ROBOTLEG", "SCRAPARMOR", "BLINDFOLD",
@@ -448,7 +449,7 @@ class Pelt:
         "YELLOWCLOUDS", "PURPLECLOUDS", "PINKCLOUDS", "GOGGLES",
         "PINKPOLEPLANTBUDDY", "ORANGEPOLEPLANTBUDDY", "REDPOLEPLANTBUDDY", "EYEBAGS",
         "MAGNATEJEWLERY", "YELLOWKARMAWREATH", "BLUEKARMAWREATH", "PURPLEKARMAWREATH",
-        "MOTHBUDDY", "BOOMERANG", "MOTHBUDDYTWO"
+        "MOTHBUDDY", "BOOMERANG", "MOTHBUDDYTWO", "MIST"
     ]
     floatyeyes = [
         "YELLOWFLOATYEYES", "REDFLOATYEYES", "ORANGEFLOATYEYES",
@@ -491,9 +492,19 @@ class Pelt:
         "EARTHTWOORBITAL", "PURPLEORBITAL", "PINKORBITAL", 
         "REDORBITAL"
     ]
+    vulturemasks = [
+        'VULTMASKONE', 'VULTMASKTWO', 'VULTMASK3', 'VULTMASK4', 'VULTMASK5', 'VULTMASK6', 'VULTMASK7', 'VULTMASK8',
+        'VULTMASK9', 'VULTMASK10', 'VULTMASK11', 'VULTMASK12', 'VULTMASK13', 'VULTMASK14', 'VULTMASK15', 'VULTMASK16', 
+        'VULTMASK17', 'VULTMASK18', 'VULTMASK19', 'VULTMASK20', 'VULTMASK21', 'VULTMASK22', 'VULTMASK23', 'VULTMASK24'
+    ]
     
     #list for stuff that should logically be behind a long tongue
     closest_accs = [
+        #adding lizards here is probably a bad idea but,
+        "BLUESKY", "BLUESEA", "PINKMAGENTA", "PINKPURPLE", "GREENEMERALD", "GREENLIME", "WHITEHIDDEN", "WHITEREVEALED", 
+        "BLACKNEUTRAL", "BLACKALERT", "YELLOWORANGE", "YELLOWLEMON", "REDTOMATO", "CYANBLUE", "CYANGREEN", 
+        "ALBISALAFUSHIA", "ALBISALARED", "MELASALARED", "MELASALAFUSHIA", "MELASALAPURPLE",
+
         "CRIMSON", "BLUE", "YELLOW", "CYAN", "RED", "LIME", "GREEN", "RAINBOW",
         "BLACK", "SPIKES", "WHITE", "PINK", "PURPLE", "MULTI", "INDIGO", "CRIMSONBELL", "BLUEBELL",
         "YELLOWBELL", "CYANBELL", "REDBELL", "LIMEBELL", "GREENBELL",
@@ -548,7 +559,8 @@ class Pelt:
         "DARKREDFIRESPEAR", "DARKPINKFIRESPEAR", "DARKORANGEFIRESPEAR", "DARKYELLOWFIRESPEAR",
         "YELLOWFLOATYEYES", "REDFLOATYEYES", "ORANGEFLOATYEYES",
         "LIMEFLOATYEYES", "GREENFLOATYEYES", "BLUEFLOATYEYES",
-        "INDIGOFLOATYEYES"
+        "INDIGOFLOATYEYES",
+        "BOGMOSSBLUE", "BOGMOSSGREEN", "BOGMOSSLIME", "ORANGEPLANTPELT", "LIMEPLANTPELT", "GREENPLANTPELT", "YELLOWPLANTPELT", "BLUEPLANTPELT"
     ]
 
     tabbies = [
@@ -594,7 +606,7 @@ class Pelt:
                     'DOTS', 'FIVEPEBBLE', 'SIAMESE', 'SNOWBELLY',
                     'GLOWSTAR', 'STAR', 'DEADPIXEL', 'INSPECTOR', 'FACEDOTS', 'WPTEARS', 'ONEEARTIP', 'NOSETIP',
                     'WOLFX', 'GLOWWOLFX', 'TICKEDSPOTS', 'SHREDPATCH', 'TICKEDSTRIPE', 'TICKEDONE', 'BROW',
-                    'TOPFIN', 'LOWFIN']
+                    'TOPFIN', 'LOWFIN', 'LINE']
     mid_white = ['TUXEDO', 'FANCY', 'UNDERS', 'DAMIEN', 'SKUNK', 'MITAINE', 'SQUEAKS', 'STAR', 'WINGS',
                  'DIVA', 'SAVANNAH', 'FADESPOTS', 'BEARD', 'DAPPLEPAW', 'TOPCOVER', 'WOODPECKER', 'MISS', 'BOWTIE',
                  'VEST',
@@ -602,7 +614,7 @@ class Pelt:
                  'HEAD', 'SPARSE', 'BADGER', 'BELLY', 'MASK', 'LIGHTNING', 'FROSTBITTEN',
                  'LIMBS', 'STRIPES', 'SLICE', 'TOONY', 'ACROBAT',
                  'DEFIBULATOR', 'WOLFINSIDE', 'TICKEDSPOTSSTRIPE', 'WOLDOUTSIDEONE', 'WOLFFILLONE', 'ECHOBELLY', 'LURE',
-                 'WATERMELONSEEDS', 'DEEP', 'PLUSHIE', 'SCALETAIL', 'SPARKLING']
+                 'WATERMELONSEEDS', 'DEEP', 'PLUSHIE', 'SCALETAIL', 'SPARKLING', 'POPPY', 'RISING']
     high_white = ['ANY', 'ANYTWO', 'BROKEN', 'FRECKLES', 'RINGTAIL', 'HALFFACE', 'PANTSTWO',
                   'GOATEE', 'PRINCE', 'FAROFA', 'MISTER', 'PANTS', 'REVERSEPANTS', 'HALFWHITE', 'APPALOOSA', 'PIEBALD',
                   'CURVED', 'GLASS', 'MASKMANTLE', 'MAO', 'PAINTED', 'SHIBAINU', 'OWL', 'BUB', 'SPARROW', 'TRIXIE',
@@ -658,11 +670,15 @@ class Pelt:
     glassback = ['GLASSBACK']
     familiar = ['FAMILIARMARK']
     acrotail = ['ACROTAIL']
-    #'ANTLERS', 'LOACH', 'CENTIPEDEGROWTHS'
-    skin_categories = [empty, claws, whiskers, antennae, sharphorns, ramhorns, scavhorns, elitehorns, unihorns, antlers, 
-                       dragonhorns, moth, seaslugpapillae, tailfrills, thorns, glowspots, gills, tongues, lizardneedles, spikes, 
-                       lizardfins, catfishwhiskers, dragonwhiskers, quills, centipedegrowths, anglerfish, spearholes, cyanfeatures, cyanwings, firebugpart, 
-                       seaangelwings, loach, glassback, grasssheepback, familiar, acrotail, tears]
+    stinger = ['BLACKSTINGER', 'GREYSTINGER', 'WHITESTINGER', 'GOLDSTINGER']
+    dropwig = ['PURPLEDROPWIG', 'GREENDROPWIG', 'BLUEDROPWIG']
+    #'BLACKSTINGER', 'GREYSTINGER', 'WHITESTINGER', 'GOLDSTINGER', 'PURPLEDROPWIG', 'GREENDROPWIG', 'BLUEDROPWIG'
+    skin_categories = [
+        empty, claws, whiskers, antennae, sharphorns, ramhorns, scavhorns, elitehorns, unihorns, antlers, 
+        dragonhorns, moth, seaslugpapillae, tailfrills, thorns, glowspots, gills, tongues, lizardneedles, spikes, 
+        lizardfins, catfishwhiskers, dragonwhiskers, quills, centipedegrowths, stinger, anglerfish, spearholes, cyanfeatures, cyanwings, 
+        firebugpart, seaangelwings, loach, dropwig, glassback, grasssheepback, familiar, acrotail, tears
+        ]
     
     #list for stuff that should logically be behind a cloak
     closest_skin = [
@@ -671,7 +687,7 @@ class Pelt:
         'WHITECYAN', 'ORANGECYAN', 'BROWNCYAN', 'PINKCYAN', 'PINKERCYAN', 'TEALCYAN', 'GREENCYAN', 'BLOODYCYAN', 'LAVENDERCYAN', 
         'PURPLECYAN', 'CYANCYAN', 'BLUECYAN', 'DARKBLUECYAN', 'DARKPURPLECYAN', 'BLACKCYAN', 'EGGCYAN', 'YELLOWCYAN',
         'PINKFINS', 'BLUEFINS', 'REDFINS', 'GREENFINS', 'YELLOWFINS', 'WHITEFINS',
-        'BLACKNEEDLES', 'WHITENEEDLES', 'RAINBOWNEEDLES',
+        'BLACKNEEDLES', 'WHITENEEDLES', 'RAINBOWNEEDLES', 'BLACKTHORNS', 'WHITETHORNS',
         'TEARS', 'SEAANGELWINGS', 'GLASSBACK', 'GRASSSHEEPBACK', 'LOACH', 'FAMILIARMARK'
     ]
 
@@ -1269,7 +1285,6 @@ class Pelt:
                 choice(Pelt.plant_accessories),
                 choice(Pelt.wild_accessories),
                 choice(Pelt.collars),
-                choice(Pelt.muddypaws),
                 choice(Pelt.lizards),
                 choice(Pelt.insectwings),
                 choice(Pelt.herbs2),
@@ -1278,18 +1293,9 @@ class Pelt:
                 choice(Pelt.bodypaint),
                 choice(Pelt.necklaces),
                 choice(Pelt.larsaccs),
-                choice(Pelt.harleyaccs),
-                choice(Pelt.featherboas),
                 choice(Pelt.scarves),
                 choice(Pelt.neckbandanas),
-                choice(Pelt.chains),
-                choice(Pelt.newaccs3),
-                choice(Pelt.floatyeyes),
                 choice(Pelt.morespears),
-                choice(Pelt.flagaccs),
-                choice(Pelt.haloaccs),
-                choice(Pelt.ponchoaccs),
-                choice(Pelt.glassesaccs)
             ]))
         else:
             self.accessories = []

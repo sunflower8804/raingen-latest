@@ -2651,7 +2651,7 @@
     },
     {
         "event_id": "gen_death_hawk_any1",
-        "location": ["forest:camp1_camp4", "plains:camp1_camp3", "mountainous:camp1_camp4", "beach:camp1_camp3"],
+        "location": ["any"],
         "season": [
             "any"
         ],
@@ -2677,7 +2677,7 @@
     },
     {
         "event_id": "gen_death_hawk_any2",
-        "location": ["forest:camp1_camp4", "plains:camp1_camp3", "mountainous:camp1_camp4", "beach:camp1_camp3"],
+        "location": ["any"],
         "season": [
             "any"
         ],
@@ -2750,7 +2750,7 @@
     },
     {
         "event_id": "gen_death_eagle_anylead3",
-        "location": ["forest:camp1_camp4", "plains:camp1_camp3", "mountainous:camp1_camp4", "beach:camp1_camp3"],
+        "location": ["any"],
         "season": [
             "any"
         ],
@@ -2772,7 +2772,8 @@
         },
         "history": [{
             "cats": ["m_c"],
-            "reg_death": "m_c was carried away by a vulture."
+            "reg_death": "m_c was carried away by a vulture",
+            "lead_death": "{VERB/m_c/were/was} carried away by a vulture"
         }]
     },
     {
@@ -2833,7 +2834,8 @@
         },
         "history": [{
             "cats": ["m_c"],
-            "reg_death": "m_c was taken by a vulture."
+            "reg_death": "m_c was taken by a vulture.",
+            "lead_death": "{VERB/m_c/were/was} carried away by a vulture"
         }]
     },
     {
