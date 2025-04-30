@@ -1747,7 +1747,7 @@ class Pelt:
                     color_name = f"{color_name} {cat.pelt.name.lower()}{base}"
                     
         # Grabs tint name for more description
-        white_patch_tint_name = str(cat.pelt.white_patch_tint).lower() 
+        white_patches_tint_name = str(cat.pelt.white_patches_tint).lower() 
         
         if cat.pelt.white_patches:
             if cat.pelt.white_patches == "FULLWHITE":
