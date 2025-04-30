@@ -22,12 +22,12 @@
     "LAVENDER": "cool"
   },
   "possible_tints": {
-    "basic": ["none", "offwhite", "offwhite", "black", "powderblue", "splash", "purple", "blackberry", "sand", "clay", "brick", "salmon", "seafoam", "mint", "evergreen", "cranberry", "pearl", "orchid", "artificier", "hunter", "gourmand", "monk", "saint", "rivulet", "spearmaster"],
-    "black": ["gray", "darkcream", "cream", "black", "powderblue", "splash", "purple", "blackberry", "sand", "clay", "brick", "salmon", "seafoam", "mint", "evergreen", "cranberry", "pearl", "orchid", "artificier", "hunter", "gourmand", "monk", "saint", "rivulet", "spearmaster", "black"],
-    "cool": ["gray", "black", "powderblue", "splash", "purple", "blackberry", "sand", "clay", "brick", "salmon", "seafoam", "mint", "evergreen", "cranberry", "pearl", "orchid", "artificier", "hunter", "gourmand", "monk", "saint", "rivulet", "spearmaster"],
-    "warm": ["darkcream", "cream", "pink", "black", "powderblue", "splash", "purple", "blackberry", "sand", "clay", "brick", "salmon", "seafoam", "mint", "evergreen", "cranberry", "pearl", "orchid", "artificier", "hunter", "gourmand", "monk", "saint", "rivulet", "spearmaster"],
-    "brown": ["darkcream", "cream", "black", "powderblue", "splash", "purple", "blackberry", "sand", "clay", "brick", "salmon", "seafoam", "mint", "evergreen", "cranberry", "pearl", "orchid", "artificier", "hunter", "gourmand", "monk", "saint", "rivulet", "spearmaster"],
-    "white": ["black", "powderblue", "splash", "purple", "blackberry", "sand", "clay", "brick", "salmon", "seafoam", "mint", "evergreen", "cranberry", "pearl", "orchid", "artificier", "hunter", "gourmand", "monk", "saint", "rivulet", "spearmaster"]
+    "basic": ["none", "offwhite", "offwhite", "black", "powderblue", "splash", "purple", "blackberry", "sand", "clay", "brick", "salmon", "seafoam", "mint", "evergreen", "cranberry", "pearl", "orchid", "ruby", "coral", "tan", "lemon", "clover", "cyan", "violet"],
+    "black": ["gray", "darkcream", "cream", "black", "powderblue", "splash", "purple", "blackberry", "sand", "clay", "brick", "salmon", "seafoam", "mint", "evergreen", "cranberry", "pearl", "orchid", "ruby", "coral", "tan", "lemon", "clover", "cyan", "violet", "black"],
+    "cool": ["gray", "black", "powderblue", "splash", "purple", "blackberry", "sand", "clay", "brick", "salmon", "seafoam", "mint", "evergreen", "cranberry", "pearl", "orchid", "ruby", "coral", "tan", "lemon", "clover", "cyan", "violet"],
+    "warm": ["darkcream", "cream", "pink", "black", "powderblue", "splash", "purple", "blackberry", "sand", "clay", "brick", "salmon", "seafoam", "mint", "evergreen", "cranberry", "pearl", "orchid", "ruby", "coral", "tan", "lemon", "clover", "cyan", "violet"],
+    "brown": ["darkcream", "cream", "black", "powderblue", "splash", "purple", "blackberry", "sand", "clay", "brick", "salmon", "seafoam", "mint", "evergreen", "cranberry", "pearl", "orchid", "ruby", "coral", "tan", "lemon", "clover", "cyan", "violet"],
+    "white": ["black", "powderblue", "splash", "purple", "blackberry", "sand", "clay", "brick", "salmon", "seafoam", "mint", "evergreen", "cranberry", "pearl", "orchid", "ruby", "coral", "tan", "lemon", "clover", "cyan", "violet"]
   },
   "tint_colours":
   {
