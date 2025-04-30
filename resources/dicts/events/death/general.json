@@ -6021,7 +6021,7 @@
         "season": ["any"],
         "tags": ["all_lives"],
         "weight": 20,
-        "event_text": "m_c was out in the territory when a spear dropped from the sky from a kill a vulture had, killing m_c instantly.",
+        "event_text": "m_c was out in the territory when a spear dropped from the sky, killing m_c instantly. The distant form of a vulture carrying something being the only evidence of where it could've come from.",
         "m_c": {
             "dies": true
         },

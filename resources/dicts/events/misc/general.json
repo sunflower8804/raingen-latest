@@ -4113,7 +4113,7 @@
     "sub_type": ["accessory"],
     "weight": 20,
     "event_text": "m_c was seen conversing with a passing patrol of scavenger traders, after some bartering {PRONOUN/m_c/subject} {VERB/m_c/return/returns} now adorning acc_plural.",
-    "new_accessory": ["STRAIGHTGOLD", "STRAIGHTSILVER", "ALLSEEINGGOLD", "ALLSEEINGSILVER"],
+    "new_accessory": ["STRAIGHTGOLD", "STRAIGHTSILVER", "ALLSEEINGGOLD", "ALLSEEINGSILVER", "AMBERJEWLERY", "MAGNATEJEWLERY"],
     "m_c": {
       "age": ["adolescent", "young adult", "adult", "senior adult", "senior"],
       "skill": ["SCAV,0"]
@@ -4755,7 +4755,7 @@
     "sub_type": ["war"],
     "weight": 20,
     "event_text": "m_c always carries acc_plural around, now that enemy warriors might be around any corner.",
-    "new_accessory": ["SPEAR", "EXPLOSPEAR", "ELESPEAR", "GRENADE", "FLASHFRUIT", "REDFLASHFRUIT", "SCRAPARMOR"],
+    "new_accessory": ["SPEAR", "EXPLOSPEAR", "ELESPEAR", "GRENADE", "FLASHFRUIT", "REDFLASHFRUIT", "SCRAPARMOR", "MORESPEARS"],
     "m_c": {
       "age": ["adolescent", "young adult", "adult", "senior adult", "senior"],
       "status": ["any"]
@@ -4841,14 +4841,146 @@
     }
   },
   {
-    "event_id": "gen_misc_any_firespear",
+    "event_id": "gen_misc_any_firespear_DOWNPOUR",
+    "location": ["any"],
+    "season": ["any"],
+    "sub_type": ["accessory"],
+    "weight": 7,
+    "event_text": "m_c finds a acc_singular and decides to keep it.",
+    "new_accessory": ["REDFIRESPEAR", "ORANGEFIRESPEAR", "YELLOWFIRESPEAR", "PINKFIRESPEAR", "PURPLEFIRESPEAR",
+        "DARKREDFIRESPEAR", "DARKPINKFIRESPEAR", "DARKORANGEFIRESPEAR", "DARKYELLOWFIRESPEAR"],
+    "m_c": {
+      "age": ["adolescent", "young adult", "adult", "senior adult", "senior"]
+    }
+  },
+  {
+    "event_id": "gen_misc_any_flag",
+    "location": ["any"],
+    "season": ["any"],
+    "sub_type": ["accessory"],
+    "weight": 7,
+    "event_text": "m_c was seen taking an Iterator pelt earlier this cycle, and later came back to camp, {PRONOUN/m_c/poss} spear now a acc_singular.",
+    "new_accessory": ["FLAGACCS"],
+    "m_c": {
+      "age": ["adolescent", "young adult", "adult", "senior adult", "senior"]
+    }
+  },
+  {
+    "event_id": "gen_misc_any_halo",
+    "location": ["any"],
+    "season": ["any"],
+    "sub_type": ["accessory"],
+    "weight": 5,
+    "event_text": "m_c had vanished for part of this cycle, later returning with a acc_singular floating above {PRONOUN/m_c/poss} head.",
+    "new_accessory": ["HALOACCS"],
+    "m_c": {
+      "age": ["adolescent", "young adult", "adult", "senior adult", "senior"]
+    }
+  },
+  {
+    "event_id": "gen_misc_any_poncho",
     "location": ["any"],
     "season": ["any"],
     "sub_type": ["accessory"],
     "weight": 10,
-    "event_text": "m_c finds a acc_singular and decides to keep it.",
-    "new_accessory": ["REDFIRESPEAR", "ORANGEFIRESPEAR", "YELLOWFIRESPEAR", "PINKFIRESPEAR", "PURPLEFIRESPEAR",
-        "DARKREDFIRESPEAR", "DARKPINKFIRESPEAR", "DARKORANGEFIRESPEAR", "DARKYELLOWFIRESPEAR"],
+    "event_text": "m_c had dissapeared for most of this cycle, but later returned wearing a acc_singular.",
+    "new_accessory": ["PONCHOACCS"],
+    "m_c": {
+      "age": ["adolescent", "young adult", "adult", "senior adult", "senior"]
+    }
+  },
+  {
+    "event_id": "gen_misc_any_glasses",
+    "location": ["any"],
+    "season": ["any"],
+    "sub_type": ["accessory"],
+    "weight": 7,
+    "event_text": "m_c had vanished for most of this cycle, later returning with some acc_singular saying that it helps {PRONOUN/m_c/object} see.",
+    "new_accessory": ["GLASSESACCS"],
+    "m_c": {
+      "age": ["adolescent", "young adult", "adult", "senior adult", "senior"]
+    }
+  },
+  {
+    "event_id": "gen_misc_any_orbital",
+    "location": ["any"],
+    "season": ["any"],
+    "sub_type": ["accessory"],
+    "weight": 5,
+    "event_text": "m_c was last seen following an overseer, later returning with a strange ball orbiting around {PRONOUN/m_c/object}.",
+    "new_accessory": ["ORBITALS"],
+    "m_c": {
+      "age": ["adolescent", "young adult", "adult", "senior adult", "senior"]
+    }
+  },
+  {
+    "event_id": "gen_misc_any_sleepyrobe",
+    "location": ["any"],
+    "season": ["leaf-bare"],
+    "sub_type": ["accessory"],
+    "weight": 10,
+    "event_text": "m_c had been searching around the Scavenger toll nearby and later returned to camp wearing a acc_singular to help warm up during the harsh leaf-bare",
+    "new_accessory": ["SLEEPYROBEPURPLE", "SLEEPYROBEGREEN", "SLEEPYROBEBLACK", "SLEEPYROBERED", "SLEEPYROBEBLUE"],
+    "m_c": {
+      "age": ["adolescent", "young adult", "adult", "senior adult", "senior"]
+    }
+  },
+  {
+    "event_id": "gen_misc_any_iteratorpearlnecklace",
+    "location": ["any"],
+    "season": ["any"],
+    "sub_type": ["accessory"],
+    "weight": 5,
+    "event_text": "As of recent m_c was frequenting the nearby Iterator structure, bringing back pearls until this cycle {PRONOUN/m_c/subject} {VERB/m_c/emerge/emerges} wearing a necklace of all the pearls {PRONOUN/m_c/subject} had 'borrowed'.",
+    "new_accessory": ["ITERATORPEARLNECKLACE"],
+    "m_c": {
+      "age": ["adolescent", "young adult", "adult", "senior adult", "senior"]
+    }
+  },
+  {
+    "event_id": "gen_misc_any_eyebags",
+    "location": ["any"],
+    "season": ["any"],
+    "sub_type": ["accessory"],
+    "weight": 5,
+    "event_text": "m_c for a long time has been finding it hard to sleep, and thanks to many sleepless cycles {PRONOUN/m_c/subject} now has eyebags that wont seem to go away.",
+    "new_accessory": ["EYEBAGS"],
+    "m_c": {
+      "age": ["adolescent", "young adult", "adult", "senior adult", "senior"]
+    }
+  },
+  {
+    "event_id": "gen_misc_any_karmaflowerwreath",
+    "location": ["any"],
+    "season": ["any"],
+    "sub_type": ["accessory"],
+    "weight": 5,
+    "event_text": "m_c had been collection karma flowers for a handful of cycles, weaving them together to eventually form a acc_singular, which {PRONOUN/m_c/subject} proudly wears.",
+    "new_accessory": ["YELLOWKARMAWREATH", "BLUEKARMAWREATH", "PURPLEKARMAWREATH"],
+    "m_c": {
+      "age": ["adolescent", "young adult", "adult", "senior adult", "senior"]
+    }
+  },
+  {
+    "event_id": "gen_misc_any_mothbuddy_WATCHER",
+    "location": ["any"],
+    "season": ["any"],
+    "sub_type": ["accessory"],
+    "weight": 5,
+    "event_text": "m_c was wandering out in the territory when suddenly a moth descended onto {PRONOUN/m_c/object}, but instead of picking {PRONOUN/m_c/object} up it followed {PRONOUN/m_c/object} around, a new ally is always welcome for the clan.",
+    "new_accessory": ["MOTHBUDDY", "MOTHBUDDYTWO"],
+    "m_c": {
+      "age": ["adolescent", "young adult", "adult", "senior adult", "senior"]
+    }
+  },
+  {
+    "event_id": "gen_misc_any_boomerang_WATCHER",
+    "location": ["any"],
+    "season": ["any"],
+    "sub_type": ["accessory"],
+    "weight": 5,
+    "event_text": "m_c had gotten into a fight with a disciple, and was able to snatch a acc_singular before retreating, now carrying it around proudly.",
+    "new_accessory": ["BOOMERANG"],
     "m_c": {
       "age": ["adolescent", "young adult", "adult", "senior adult", "senior"]
     }

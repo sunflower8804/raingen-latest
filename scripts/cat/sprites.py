@@ -149,7 +149,7 @@ class Sprites:
             'sunkencolours', 'tomocolours', 'whalecolours', 'pidgeoncolours', 'watermeloncolours',
             'dragonetcolours', 'salmoncolours', 'darkechocolours', 'lightechocolours', 'plantaincolours',
             'daenixcolours', 'seltzercolours', 'sworncolours', 'spookycolours', 'conurecolours', 'noblecolours',
-            'bettacolours', 'constellationcolours',
+            'bettacolours', 'constellationcolours', 'malibucolours',
             'raineyes', 'raineyes2', 'multieyes', 'multiraineyes', 'larseyes', 'multilarseyes', 'larseyes2', 
             'rivuleteyes', 'rivuleteyes2', 'buttoneyes', 'buttoneyes2', 'bobaeyes', 'bobaeyes2', 'bobaeyeslars',
             'bobaeyeslars2',
@@ -454,9 +454,9 @@ class Sprites:
 
         # Define colors and categories
         color_categories = [
-            ['WHITE', 'PALEGREY', 'SILVER', 'GREY', 'DARKGREY', 'GHOST', 'BLACK'],
-            ['CREAM', 'PALEGINGER', 'GOLDEN', 'GINGER', 'DARKGINGER', 'SIENNA'],
-            ['LIGHTBROWN', 'LILAC', 'BROWN', 'GOLDEN-BROWN', 'DARKBROWN', 'CHOCOLATE']
+            ['WHITE', 'SKY', 'BLUE', 'INDIGO', 'PURPLE', 'GHOST', 'BLACK'],
+            ['CREAM', 'YELLOW', 'ORANGE', 'SCARLET', 'RED', 'PINK'],
+            ['MINT', 'LIME', 'GREEN', 'MAROON', 'PERIWINKLE', 'LAVENDER']
         ]
 
         color_types = [
@@ -477,7 +477,7 @@ class Sprites:
             'sunkencolours', 'tomocolours', 'whalecolours', 'pidgeoncolours', 'watermeloncolours',
             'dragonetcolours', 'salmoncolours', 'darkechocolours', 'lightechocolours', 'plantaincolours',
             'daenixcolours', 'seltzercolours', 'sworncolours', 'spookycolours', 'conurecolours', 'noblecolours',
-            'bettacolours', 'constellationcolours'
+            'bettacolours', 'constellationcolours', 'malibucolours'
         ]
 
         for row, colors in enumerate(color_categories):
