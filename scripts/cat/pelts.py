@@ -105,19 +105,19 @@ class Pelt:
 
     # ATTRIBUTES, including non-pelt related
     pelt_colours = [
-        'WHITE', 'PALEGREY', 'SILVER', 'GREY', 'DARKGREY', 'GHOST', 'BLACK', 'CREAM', 'PALEGINGER',
-        'GOLDEN', 'GINGER', 'DARKGINGER', 'SIENNA', 'LIGHTBROWN', 'LILAC', 'BROWN', 'GOLDEN-BROWN', 'DARKBROWN',
-        'CHOCOLATE'
+        'WHITE', 'SKY', 'BLUE', 'INDIGO', 'PURPLE', 'GHOST', 'BLACK', 'CREAM', 'YELLOW',
+        'ORANGE', 'SCARLET', 'RED', 'PINK', 'MINT', 'LIME', 'GREEN', 'MAROON', 'PERIWINKLE',
+        'LAVENDER'
     ]
     pelt_c_no_white = [
-        'PALEGREY', 'SILVER', 'GREY', 'DARKGREY', 'GHOST', 'BLACK', 'CREAM', 'PALEGINGER',
-        'GOLDEN', 'GINGER', 'DARKGINGER', 'SIENNA', 'LIGHTBROWN', 'LILAC', 'BROWN', 'GOLDEN-BROWN', 'DARKBROWN',
-        'CHOCOLATE'
+        'SKY', 'BLUE', 'INDIGO', 'PURPLE', 'GHOST', 'BLACK', 'CREAM', 'YELLOW',
+        'ORANGE', 'SCARLET', 'RED', 'PINK', 'MINT', 'LIME', 'GREEN', 'MAROON', 'PERIWINKLE',
+        'LAVENDER'
     ]
     pelt_c_no_bw = [
-        'PALEGREY', 'SILVER', 'GREY', 'DARKGREY', 'CREAM', 'PALEGINGER',
-        'GOLDEN', 'GINGER', 'DARKGINGER', 'SIENNA', 'LIGHTBROWN', 'LILAC', 'BROWN', 'GOLDEN-BROWN', 'DARKBROWN',
-        'CHOCOLATE'
+        'SKY', 'BLUE', 'INDIGO', 'PURPLE', 'CREAM', 'YELLOW',
+        'ORANGE', 'SCARLET', 'RED', 'PINK', 'MINT', 'LIME', 'GREEN', 'MAROON', 'PERIWINKLE',
+        'LAVENDER'
     ]
 
     tortiepatterns = ['ONE', 'TWO', 'THREE', 'FOUR', 'REDTAIL', 'DELILAH', 'HALF', 'STREAK', 'MASK', 'SMOKE',
@@ -577,15 +577,15 @@ class Pelt:
 
     # SPRITE NAMES
     single_colours = [
-        'WHITE', 'PALEGREY', 'SILVER', 'GREY', 'DARKGREY', 'GHOST', 'BLACK', 'CREAM', 'PALEGINGER',
-        'GOLDEN', 'GINGER', 'DARKGINGER', 'SIENNA', 'LIGHTBROWN', 'LILAC', 'BROWN', 'GOLDEN-BROWN', 'DARKBROWN',
-        'CHOCOLATE'
+        'WHITE', 'SKY', 'BLUE', 'INDIGO', 'PURPLE', 'GHOST', 'BLACK', 'CREAM', 'YELLOW',
+        'ORANGE', 'SCARLET', 'RED', 'PINK', 'MINT', 'LIME', 'GREEN', 'MAROON', 'PERIWINKLE',
+        'LAVENDER'
     ]
-    ginger_colours = ['CREAM', 'PALEGINGER', 'GOLDEN', 'GINGER', 'DARKGINGER', 'SIENNA']
-    black_colours = ['GREY', 'DARKGREY', 'GHOST', 'BLACK']
-    white_colours = ['WHITE', 'PALEGREY', 'SILVER']
-    brown_colours = ['LIGHTBROWN', 'LILAC', 'BROWN', 'GOLDEN-BROWN', 'DARKBROWN', 'CHOCOLATE']
-    colour_categories = [ginger_colours, black_colours, white_colours, brown_colours]
+    warm_colours = ['YELLOW', 'ORANGE', 'SCARLET', 'RED', 'MAROON']
+    black_colours = ['GHOST', 'BLACK']
+    white_colours = ['WHITE', 'SKY', 'CREAM', 'PERIWINKLE']
+    cool_colours = ['BLUE', 'INDIGO', 'PURPLE', 'MINT', 'LIME', 'GREEN', 'LAVENDER']
+    colour_categories = [warm_colours, black_colours, white_colours, cool_colours]
     little_white = ['LITTLE', 'LIGHTTUXEDO', 'BUZZARDFANG', 'TIP', 'BLAZE', 'BIB', 'VEE', 'PAWS',
                     'BELLY', 'TAILTIP', 'TOES', 'BROKENBLAZE', 'LILTWO', 'SCOURGE', 'TOESTAIL', 'RAVENPAW', 'HONEY',
                     'LUNA',
@@ -784,6 +784,38 @@ class Pelt:
         if self.vitiligo == "VITILIGO2":
             self.vitiligo = "VITILIGOTWO"
 
+        # color conversions 
+        if self.colour == 'PALEGREY'
+            self.colour = 'SKY'
+        elif self.colour == 'SILVER'
+            self.colour = 'BLUE'
+        elif self.colour == 'GREY'
+            self.colour = 'INDIGO'
+        elif self.colour == 'DARKGREY'
+            self.colour = 'PURPLE'
+        elif self.colour == 'PALEGINGER'
+            self.colour = 'YELLOW'
+        elif self.colour == 'GOLDEN'
+            self.colour = 'ORANGE'
+        elif self.colour == 'GINGER'
+            self.colour = 'SCARLET'
+        elif self.colour == 'DARKGINGER'
+            self.colour = 'RED'
+        elif self.colour == 'SIENNA'
+            self.colour = 'PINK'
+        elif self.colour == 'LIGHTBROWN'
+            self.colour = 'MINT'
+        elif self.colour == 'LILAC'
+            self.colour = 'LIME'
+        elif self.colour == 'BROWN'
+            self.colour = 'GREEN'
+        elif self.colour == 'GOLDEN-BROWN'
+            self.colour = 'MAROON'
+        elif self.colour == 'DARKBROWN'
+            self.colour = 'PERIWINKLE'
+        elif self.colour == 'CHOCOLATE'
+            self.colour = 'LAVENDER'
+        
         # Move white_patches that should be in vit or points. 
         if self.white_patches in Pelt.vit:
             self.vitiligo = self.white_patches
@@ -1027,13 +1059,13 @@ class Pelt:
         # Weights for each colour group. It goes: (ginger_colours, black_colours, white_colours, brown_colours)
         weights = [0, 0, 0, 0]
         for p_ in par_peltcolours:
-            if p_ in Pelt.ginger_colours:
+            if p_ in Pelt.warm_colours:
                 add_weight = (40, 0, 0, 10)
             elif p_ in Pelt.black_colours:
                 add_weight = (0, 40, 2, 5)
             elif p_ in Pelt.white_colours:
                 add_weight = (0, 5, 40, 0)
-            elif p_ in Pelt.brown_colours:
+            elif p_ in Pelt.cool_colours:
                 add_weight = (10, 5, 0, 35)
             elif p_ is None:
                 add_weight = (40, 40, 40, 40)
@@ -1334,19 +1366,19 @@ class Pelt:
 
                     # Ginger is often duplicated to increase its chances
                     if (self.colour in Pelt.black_colours) or (self.colour in Pelt.white_colours):
-                        self.tortiecolour = choice((Pelt.ginger_colours * 2) + Pelt.brown_colours)
-                    elif self.colour in Pelt.ginger_colours:
-                        self.tortiecolour = choice(Pelt.brown_colours + Pelt.black_colours * 2)
-                    elif self.colour in Pelt.brown_colours:
-                        possible_colors = Pelt.brown_colours.copy()
+                        self.tortiecolour = choice((Pelt.warm_colours * 2) + Pelt.cool_colours)
+                    elif self.colour in Pelt.warm_colours:
+                        self.tortiecolour = choice(Pelt.warm_colours + Pelt.black_colours * 2)
+                    elif self.colour in Pelt.cool_colours:
+                        possible_colors = Pelt.cool_colours.copy()
                         possible_colors.remove(self.colour)
-                        possible_colors.extend(Pelt.black_colours + (Pelt.ginger_colours * 2))
+                        possible_colors.extend(Pelt.black_colours + (Pelt.warm_colours * 2))
                         self.tortiecolour = choice(possible_colors)
                     else:
-                        self.tortiecolour = "GOLDEN"
+                        self.tortiecolour = "ORANGE"
 
             else:
-                self.tortiecolour = "GOLDEN"
+                self.tortiecolour = "ORANGE"
         else:
             self.tortiebase = None
             self.tortiepattern = None
@@ -1560,33 +1592,25 @@ class Pelt:
         if short:
             renamed_colors = {
                 "white": "pale",
-                "palegrey": "gray",
-                "darkgrey": "gray",
-                "grey": "gray",
-                "paleginger": "ginger",
-                "darkginger": "ginger",
-                "sienna": "ginger",
-                "lightbrown": "brown",
-                "lilac": "brown",
-                "golden-brown": "brown",
-                "darkbrown": "brown",
-                "chocolate": "brown",
+                "sky": "blue",
+                "indigo": "blue",
+                "mint": "green",
+                "lime": "green",
+                "maroon": "red",
+                "periwinkle": "purple",
+                "lavender": "purple",
                 "ghost": "black"
             }
         else:
             renamed_colors = {
                 "white": "pale",
-                "palegrey": "pale gray",
-                "grey": "gray",
-                "darkgrey": "dark gray",
-                "paleginger": "pale ginger",
-                "darkginger": "dark ginger",
-                "sienna": "dark ginger",
-                "lightbrown": "light brown",
-                "lilac": "light brown",
-                "golden-brown": "golden brown",
-                "darkbrown": "dark brown",
-                "chocolate": "dark brown",
+                "sky": "sky",
+                "indigo": "indigo",
+                "mint": "mint",
+                "lime": "lime",
+                "maroon": "maroon",
+                "periwinkle": "periwinkle",
+                "lavender": "lavender",
                 "ghost": "black"
             }
 
@@ -1699,8 +1723,8 @@ class Pelt:
             if short:
                 # If using short, don't describe the colors of calicos and torties.
                 # Just call them calico, tortie, or mottled
-                if cat.pelt.colour in Pelt.black_colours + Pelt.brown_colours + Pelt.white_colours and \
-                        cat.pelt.tortiecolour in Pelt.black_colours + Pelt.brown_colours + Pelt.white_colours:
+                if cat.pelt.colour in Pelt.black_colours + Pelt.cool_colours + Pelt.white_colours and \
+                        cat.pelt.tortiecolour in Pelt.black_colours + Pelt.cool_colours + Pelt.white_colours:
                     color_name = "mottled"
                 else:
                     color_name = cat.pelt.name.lower()
@@ -1716,8 +1740,8 @@ class Pelt:
                     patches_color = renamed_colors[patches_color]
                 color_name = f"{color_name}/{patches_color}"
 
-                if cat.pelt.colour in Pelt.black_colours + Pelt.brown_colours + Pelt.white_colours and \
-                        cat.pelt.tortiecolour in Pelt.black_colours + Pelt.brown_colours + Pelt.white_colours:
+                if cat.pelt.colour in Pelt.black_colours + Pelt.cool_colours + Pelt.white_colours and \
+                        cat.pelt.tortiecolour in Pelt.black_colours + Pelt.cool_colours + Pelt.white_colours:
                     color_name = f"{color_name} mottled{base}"
                 else:
                     color_name = f"{color_name} {cat.pelt.name.lower()}{base}"
@@ -1733,8 +1757,8 @@ class Pelt:
 
         if cat.pelt.points:
             color_name = f"{color_name} point"
-            if "ginger point" in color_name:
-                color_name.replace("ginger point", "flame point")
+            if "scarlet point" in color_name:
+                color_name.replace("scarlet point", "flame point")
 
         if "white and white" in color_name:
             color_name = color_name.replace("white and white", "white")
