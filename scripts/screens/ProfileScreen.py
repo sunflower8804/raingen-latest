@@ -1259,6 +1259,11 @@ class ProfileScreen(Screens):
                 featurename = featurename.replace("needles", " needles")
                 output += featurename
                 
+            #thorns
+            elif the_cat.pelt.skin in the_cat.pelt.thorns:
+                featurename = featurename.replace("thorns", " thorns")
+                output += featurename
+                
             #catfishwhiskers
             elif the_cat.pelt.skin in the_cat.pelt.catfishwhiskers:
                 featurename = featurename.replace("catfishwhiskers", " catfish whiskers")
@@ -1334,7 +1339,7 @@ class ProfileScreen(Screens):
                 
             #seaslugpapillae
             elif the_cat.pelt.skin in the_cat.pelt.seaslugpapillae:
-                output += "feature: sea slug papillae"
+                output += "feature: sea slug ears"
                 
             #familiar
             elif the_cat.pelt.skin in the_cat.pelt.familiar:
