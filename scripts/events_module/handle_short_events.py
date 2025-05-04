@@ -377,8 +377,6 @@ class HandleShortEvents:
             acc_list.extend(Pelt.lizards)
         if "HERBS2" in possible_accs:
             acc_list.extend(Pelt.herbs2)
-        if "MUDDYPAWS" in possible_accs:
-            acc_list.extend(Pelt.muddypaws)
         if "INSECTWINGS" in possible_accs:
             acc_list.extend(Pelt.insectwings)
         if "BUDDIES" in possible_accs:
@@ -411,9 +409,15 @@ class HandleShortEvents:
             acc_list.extend(Pelt.floatyeyes)
         if "VULTUREMASKS" in possible_accs:
             acc_list.extend(Pelt.vulturemasks)
+        if "MORESPEARS" in possible_accs:
+            acc_list.extend(Pelt.vulturemasks)
+        if "PONCHOACCS" in possible_accs:
+            acc_list.extend(Pelt.ponchoaccs)
+        if "GLASSESACCS" in possible_accs:
+            acc_list.extend(Pelt.glassesaccs)
 
         for acc in possible_accs:
-            if acc not in ["WILD", "PLANT", "COLLAR", "LIZARD", "HERBS2", "MUDDYPAWS", "INSECTWINGS", "BUDDIES", "NEWACCS", "NEWACCS2", "BODYPAINT", "IMPLANT", "MAGIC", "NECKLACES", "DRAPERY", "PRIDEDRAPERY", "EYEPATCHES", "LARSACCS", "HARLEYACCS", "FEATHERBOAS", "SCARVES", "FLOATYEYES", "VULTUREMASKS"]:
+            if acc not in ["WILD", "PLANT", "COLLAR", "LIZARD", "HERBS2", "INSECTWINGS", "BUDDIES", "NEWACCS", "NEWACCS2", "BODYPAINT", "IMPLANT", "MAGIC", "NECKLACES", "DRAPERY", "PRIDEDRAPERY", "EYEPATCHES", "LARSACCS", "HARLEYACCS", "FEATHERBOAS", "SCARVES", "FLOATYEYES", "VULTUREMASKS", "MORESPEARS", "PONCHOACCS", "GLASSESACCS"]:
                 acc_list.append(acc)
 
         if hasattr(self.main_cat.pelt, "scars"):
@@ -427,8 +431,15 @@ class HandleShortEvents:
 
         if acc_list:
             new_acc = random.choice(acc_list)
+            counter = 0
+            while new_acc in self.main_cat.pelt.inventory:
+                counter+=1
+                if counter == 30:
+                    break
+                acc = random.choice(acc_list)
             self.main_cat.pelt.accessories.append(new_acc)
-            self.main_cat.pelt.inventory.append(new_acc)
+            if not game.clan.clan_settings['all accessories']:
+                self.main_cat.pelt.inventory.append(new_acc)
 
     def handle_death(self):
         """

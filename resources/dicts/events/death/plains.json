@@ -23,7 +23,7 @@
         "weight": 20,
         "event_text": "m_c was fighting a lizard, however in {PRONOUN/m_c/poss} distraction a loach had snuck up on the two and consumed both of them",
         "m_c": {
-            "dies": true
+            "dies": true,
             "status": ["apprentice", "warrior", "deputy", "leader"]
         },
         "history": [{

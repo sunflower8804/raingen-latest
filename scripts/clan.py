@@ -966,6 +966,7 @@ class Clan:
                 for acc in acc_list:
                     if acc not in c.pelt.inventory:
                         c.pelt.inventory.append(acc)
+                return acc_list
                 # ----
 
     def load_clan_settings(self):

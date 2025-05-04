@@ -567,22 +567,22 @@ class Pelt:
     tabbies = [
         "Tabby", "Ticked", "Classic", "Sokoke", "Agouti", "Masked", "Vulture", "Envoy", "Drizzle",
         "Necklace", "Leviathan", "Rotten", "Fire", "Solace", "Swing", "Ice", "Maned", "Sunken", "Daenix",
-        "Seltzer", "Spooky", "Sworn", "Noble"
+        "Spooky", "Sworn", "Noble", "Marbled"
     ]
     spotted = [
         "Speckled", "Rosette", "Gravel", "Banana", "Con", "Bengal", "Dreamer", "Oldgrowth", "Cherry",
-        "Sparse", "Impish", "Ringed", "Mold", "Apple", "Glitter", "Patchwork", "Whale", "Pidgeon", 
+        "Sparse", "Impish", "Ringed", "Mold", "Apple", "Glitter", "Whale", "Pidgeon", 
         "Watermelon", "Lightecho", "Darkecho", "Salmon", "Plantain", "Malibu"
     ]
     plain = [
         "SingleColour", "TwoColour", "Smoke", "Singlestripe", "Collared", "Lizard", "Slimemold",
         "Fluffy", "Yeek", "Rusted", "Leafy", "Scaled", "Countershaded", "Sunset", "Skinny", 
-        "Sporty", "Skeleton", "Shred", "Robot"
+        "Sporty", "Skeleton", "Shred", "Robot", "Lantern"
     ]
     exotic = [
-        "Mackerel", "Marbled", "Cyanlizard", "Centipede", "Lantern", "Amoeba", "Seaslug", "Dragonfruit",
+        "Mackerel", "Cyanlizard", "Centipede", "Amoeba", "Seaslug", "Dragonfruit",
         "Duskdawn", "Seer", "Wolf", "Sparklecat", "Hypnotist", "Fizzy", "Glowing", "Budgie", "Lovebird",
-        "Amazon", "Boba", "Iggy", "Tomo", "Dragonet", "Conure", "Betta"
+        "Seltzer", "Amazon", "Boba", "Iggy", "Tomo", "Dragonet", "Conure", "Betta", "Patchwork"
     ]
     torties = ["Tortie", "Calico"]
     pelt_categories = [tabbies, spotted, plain, exotic, torties]
@@ -598,37 +598,45 @@ class Pelt:
     white_colours = ['WHITE', 'SKY', 'CREAM', 'PERIWINKLE']
     cool_colours = ['BLUE', 'INDIGO', 'PURPLE', 'MINT', 'LIME', 'GREEN', 'LAVENDER']
     colour_categories = [warm_colours, black_colours, white_colours, cool_colours]
-    little_white = ['LITTLE', 'LIGHTTUXEDO', 'BUZZARDFANG', 'TIP', 'BLAZE', 'BIB', 'VEE', 'PAWS',
-                    'BELLY', 'TAILTIP', 'TOES', 'BROKENBLAZE', 'LILTWO', 'SCOURGE', 'TOESTAIL', 'RAVENPAW', 'HONEY',
-                    'LUNA',
-                    'EXTRA', 'MUSTACHE', 'REVERSEHEART', 'SPARKLE', 'RIGHTEAR', 'LEFTEAR', 'ESTRELLA', 'REVERSEEYE',
-                    'BACKSPOT',
-                    'EYEBAGS', 'LOCKET', 'BLAZEMASK', 'TEARS', 'GLOVE', 'NECK',
-                    'DOTS', 'FIVEPEBBLE', 'SIAMESE', 'SNOWBELLY',
-                    'GLOWSTAR', 'STAR', 'DEADPIXEL', 'INSPECTOR', 'FACEDOTS', 'WPTEARS', 'ONEEARTIP', 'NOSETIP',
-                    'WOLFX', 'GLOWWOLFX', 'TICKEDSPOTS', 'SHREDPATCH', 'TICKEDSTRIPE', 'TICKEDONE', 'BROW',
-                    'TOPFIN', 'LOWFIN', 'LINE']
-    mid_white = ['TUXEDO', 'FANCY', 'UNDERS', 'DAMIEN', 'SKUNK', 'MITAINE', 'SQUEAKS', 'STAR', 'WINGS',
-                 'DIVA', 'SAVANNAH', 'FADESPOTS', 'BEARD', 'DAPPLEPAW', 'TOPCOVER', 'WOODPECKER', 'MISS', 'BOWTIE',
-                 'VEST',
-                 'FADEBELLY', 'DIGIT', 'FCTWO', 'FCONE', 'MIA', 'ROSINA', 'PRINCESS', 'BALLER', 'TREFOIL', 'MANUL',
-                 'HEAD', 'SPARSE', 'BADGER', 'BELLY', 'MASK', 'LIGHTNING', 'FROSTBITTEN',
-                 'LIMBS', 'STRIPES', 'SLICE', 'TOONY', 'ACROBAT',
-                 'DEFIBULATOR', 'WOLFINSIDE', 'TICKEDSPOTSSTRIPE', 'WOLDOUTSIDEONE', 'WOLFFILLONE', 'ECHOBELLY', 'LURE',
-                 'WATERMELONSEEDS', 'DEEP', 'PLUSHIE', 'SCALETAIL', 'SPARKLING', 'POPPY', 'RISING']
-    high_white = ['ANY', 'ANYTWO', 'BROKEN', 'FRECKLES', 'RINGTAIL', 'HALFFACE', 'PANTSTWO',
-                  'GOATEE', 'PRINCE', 'FAROFA', 'MISTER', 'PANTS', 'REVERSEPANTS', 'HALFWHITE', 'APPALOOSA', 'PIEBALD',
-                  'CURVED', 'GLASS', 'MASKMANTLE', 'MAO', 'PAINTED', 'SHIBAINU', 'OWL', 'BUB', 'SPARROW', 'TRIXIE',
-                  'SAMMY', 'FRONT', 'BLOSSOMSTEP', 'BULLSEYE', 'FINN', 'SCAR', 'BUSTER', 'HAWKBLAZE', 'CAKE',
-                  'PAINTSPLAT', 'ELDER',
-                  'REVERSEHEAD', 'HEX', 'SHREDONE', 'SHREDTWO', 'WOLFOUTSIDETWO', 'TICKEDTWO',
-                  'TICKEDFILLONE', 'TICKEDFILLTWO','TICKEDFILLTHREE', 'SPOOKYBONES', 'WATERMELONWAVE', 'FACEMASK', 'STUFFED',
-                  'CARBON']
-    mostly_white = ['VAN', 'ONEEAR', 'LIGHTSONG', 'TAIL', 'HEART', 'MOORISH', 'APRON', 'CAPSADDLE',
-                    'CHESTSPECK', 'BLACKSTAR', 'PETAL', 'HEARTTWO', 'PEBBLESHINE', 'BOOTS', 'COW', 'COWTWO', 'LOVEBUG',
-                    'SHOOTINGSTAR', 'EYESPOT', 'PEBBLE', 'TAILTWO', 'BUDDY', 'KROPKA',
-                    'DOUGIE', 'REVERSETEARS', 'REVERSETEARSTWO', 'REVERSENECK', 'ESCAPEE',
-                    'WOLFFILLTWO', 'TREEFROG', 'RIPPLE']
+    little_white = [
+        'LITTLE', 'LIGHTTUXEDO', 'BUZZARDFANG', 'TIP', 'BLAZE', 'BIB', 'VEE', 'PAWS',
+        'BELLY', 'TAILTIP', 'TOES', 'BROKENBLAZE', 'LILTWO', 'SCOURGE', 'TOESTAIL', 'RAVENPAW', 'HONEY',
+        'LUNA',
+        'EXTRA', 'MUSTACHE', 'REVERSEHEART', 'SPARKLE', 'RIGHTEAR', 'LEFTEAR', 'ESTRELLA', 'REVERSEEYE',
+        'BACKSPOT',
+        'EYEBAGS', 'LOCKET', 'BLAZEMASK', 'TEARS', 'GLOVE', 'NECK',
+        'DOTS', 'FIVEPEBBLE', 'SIAMESE', 'SNOWBELLY',
+        'GLOWSTAR', 'STAR', 'DEADPIXEL', 'INSPECTOR', 'FACEDOTS', 'WPTEARS', 'ONEEARTIP', 'NOSETIP',
+        'WOLFX', 'GLOWWOLFX', 'TICKEDSPOTS', 'SHREDPATCH', 'TICKEDSTRIPE', 'TICKEDONE', 'BROW',
+        'TOPFIN', 'LOWFIN', 'LINE'
+        ]
+    mid_white = [
+        'TUXEDO', 'FANCY', 'UNDERS', 'DAMIEN', 'SKUNK', 'MITAINE', 'SQUEAKS', 'STAR', 'WINGS',
+        'DIVA', 'SAVANNAH', 'FADESPOTS', 'BEARD', 'DAPPLEPAW', 'TOPCOVER', 'WOODPECKER', 'MISS', 'BOWTIE',
+        'VEST',
+        'FADEBELLY', 'DIGIT', 'FCTWO', 'FCONE', 'MIA', 'ROSINA', 'PRINCESS', 'BALLER', 'TREFOIL', 'MANUL',
+        'HEAD', 'SPARSE', 'BADGER', 'BELLY', 'MASK', 'LIGHTNING', 'FROSTBITTEN',
+        'LIMBS', 'STRIPES', 'SLICE', 'TOONY', 'ACROBAT',
+        'DEFIBULATOR', 'WOLFINSIDE', 'TICKEDSPOTSSTRIPE', 'WOLDOUTSIDEONE', 'WOLFFILLONE', 'ECHOBELLY', 'LURE',
+        'WATERMELONSEEDS', 'DEEP', 'PLUSHIE', 'SCALETAIL', 'SPARKLING', 'POPPY', 'RISING'
+                 ]
+    high_white = [
+        'ANY', 'ANYTWO', 'BROKEN', 'FRECKLES', 'RINGTAIL', 'HALFFACE', 'PANTSTWO',
+        'GOATEE', 'PRINCE', 'FAROFA', 'MISTER', 'PANTS', 'REVERSEPANTS', 'HALFWHITE', 'APPALOOSA', 'PIEBALD',
+        'CURVED', 'GLASS', 'MASKMANTLE', 'MAO', 'PAINTED', 'SHIBAINU', 'OWL', 'BUB', 'SPARROW', 'TRIXIE',
+        'SAMMY', 'FRONT', 'BLOSSOMSTEP', 'BULLSEYE', 'FINN', 'SCAR', 'BUSTER', 'HAWKBLAZE', 'CAKE',
+        'PAINTSPLAT', 'ELDER',
+        'REVERSEHEAD', 'HEX', 'SHREDONE', 'SHREDTWO', 'WOLFOUTSIDETWO', 'TICKEDTWO',
+        'TICKEDFILLONE', 'TICKEDFILLTWO','TICKEDFILLTHREE', 'SPOOKYBONES', 'WATERMELONWAVE', 'FACEMASK', 'STUFFED',
+        'CARBON'
+                  ]
+    mostly_white = [
+        'VAN', 'ONEEAR', 'LIGHTSONG', 'TAIL', 'HEART', 'MOORISH', 'APRON', 'CAPSADDLE',
+        'CHESTSPECK', 'BLACKSTAR', 'PETAL', 'HEARTTWO', 'PEBBLESHINE', 'BOOTS', 'COW', 'COWTWO', 'LOVEBUG',
+        'SHOOTINGSTAR', 'EYESPOT', 'PEBBLE', 'TAILTWO', 'BUDDY', 'KROPKA',
+        'DOUGIE', 'REVERSETEARS', 'REVERSETEARSTWO', 'REVERSENECK', 'ESCAPEE',
+        'WOLFFILLTWO', 'TREEFROG', 'RIPPLE'
+                    ]
     point_markings = ['COLOURPOINT', 'RAGDOLL', 'SEPIAPOINT', 'MINKPOINT', 'SEALPOINT']
     vit = ['VITILIGO', 'VITILIGOTWO', 'MOON', 'PHANTOM', 'KARPATI', 'POWDER', 'BLEACHED', 'SMOKEY', 'CHARCOAL']
     white_sprites = [little_white, mid_white, high_white, mostly_white, point_markings, vit, 'FULLWHITE']
@@ -723,7 +731,7 @@ class Pelt:
                  para_adult_sprite: int = None,
                  reverse: bool = False,
                  accessories:list=None,
-                 inventory:list=None
+                 inventory:list=[]
                  ) -> None:
         self.name = name
         self.colour = colour
@@ -772,6 +780,7 @@ class Pelt:
         new_pelt.init_eyes(parents)
         new_pelt.init_pattern()
         new_pelt.init_tint()
+        new_pelt.common_patterns()
 
         return new_pelt
 
@@ -1615,6 +1624,43 @@ class Pelt:
         else:
             self.white_patches_tint = "none"
 
+    def common_patterns(self):
+        if not random.randint(0, game.config["cat_generation"]["common_patterns"]): #1/5
+
+            if self.eye_colour in Pelt.riveye_colours:
+                fishy_features = [Pelt.gills, Pelt.lizardfins, Pelt.catfishwhiskers, Pelt.dragonwhiskers, Pelt.anglerfish]
+                fishy_weights = [50, 30, 15, 10, 1]
+                self.skin = choice(random.choices(fishy_features, fishy_weights, k=1)[0])
+                print("fish spotted!!")
+
+            if self.skin in Pelt.centipedegrowths and self.tortiepattern == None:
+                self.name = "Centipede"
+                print("centipede spotted!!")
+
+            if self.name == "Fluffy" or self.tortiebase == "Fluffy" and self.tortiepattern == "Fluffy":
+                self.skin = choice(Pelt.tongues + Pelt.claws + Pelt.whiskers)
+                print("cat spotted!!")
+
+            if self.name == "Seaslug" or self.tortiebase == "Seaslug" and self.tortiepattern == "Seaslug":
+                self.skin = choice(Pelt.glowspots + Pelt.seaslugpapillae)
+                print("sea slug spotted!!")
+        
+            if self.skin in Pelt.familiar:
+                self.colour = "PURPLE"
+                print("FAMILIAR??!?!?")
+
+        if random.randrange(0, 9): #9/10
+
+            if self.eye_colour in Pelt.buttoneye_colours and self.tortiepattern == None:
+                self.name = "Patchwork"
+                print("someone got turned into a marketable plushie...")
+
+            if self.name == "Fizzy" or self.name == "Boba" or self.name == "Amoeba" or self.name == "Seaslug":
+                self.white_patches = None
+                self.vitiligo = None
+                self.points = None
+                print("clear pattern")
+                
     @property
     def white(self):
         return self.white_patches or self.points

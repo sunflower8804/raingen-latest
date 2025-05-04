@@ -495,34 +495,34 @@
     "singular": "indigo drone"
   },
   "BLUESKY": {
-    "default": "light blue lizard",
-    "plural": "light blue lizards",
-    "singular": "light blue lizard"
+    "default": "blue lizard",
+    "plural": "blue lizards",
+    "singular": "blue lizard"
   },
   "BLUESEA": {
-    "default": "vibrant blue lizard",
-    "plural": "vibrant blue lizards",
-    "singular": "vibrant blue lizard"
+    "default": "blue lizard",
+    "plural": "blue lizards",
+    "singular": "blue lizard"
   },
   "PINKMAGENTA": {
-    "default": "magenta pink lizard",
-    "plural": "magenta pink lizards",
-    "singular": "magenta pink lizard"
+    "default": "pink lizard",
+    "plural": "pink lizards",
+    "singular": "pink lizard"
   },
   "PINKPURPLE": {
-    "default": "vibrant purple lizard",
-    "plural": "vibrant purple lizards",
-    "singular": "vibrant purple lizard"
+    "default": "purple lizard",
+    "plural": "purple lizards",
+    "singular": "purple lizard"
   },
   "GREENEMERALD": {
-    "default": "vibrant green lizard",
-    "plural": "vibrant green lizards",
-    "singular": "vibrant green lizard"
+    "default": "green lizard",
+    "plural": "green lizards",
+    "singular": "green lizard"
   },
   "GREENLIME": {
-    "default": "yellow-green lizard",
-    "plural": "yellow-green lizards",
-    "singular": "yellow-green lizard"
+    "default": "green lizard",
+    "plural": "green lizards",
+    "singular": "green lizard"
   },
   "WHITEHIDDEN": {
     "default": "cloaked white lizard",
@@ -530,9 +530,9 @@
     "singular": "cloaked white lizard"
   },
   "WHITEREVEALED": {
-    "default": "unhidden white lizard",
-    "plural": "unhidden white lizards",
-    "singular": "unhidden white lizard"
+    "default": "white lizard",
+    "plural": "white lizards",
+    "singular": "white lizard"
   },
   "BLACKNEUTRAL": {
     "default": "relaxed black lizard",
@@ -545,54 +545,54 @@
     "singular": "agitated black lizard"
   },
   "YELLOWORANGE": {
-    "default": "yellow-orange lizard",
-    "plural": "yellow-orange lizards",
-    "singular": "yellow-orange lizard"
+    "default": "yellow lizard",
+    "plural": "yellow lizards",
+    "singular": "yellow lizard"
   },
   "YELLOWLEMON": {
-    "default": "vibrant yellow lizard",
-    "plural": "vibrant yellow lizards",
-    "singular": "vibrant yellow lizard"
+    "default": "yellow lizard",
+    "plural": "yellow lizards",
+    "singular": "yellow lizard"
   },
   "REDTOMATO": {
-    "default": "vibrant red lizard",
-    "plural": "vibrant red lizards",
-    "singular": "vibrant red lizard"
+    "default": "red lizard",
+    "plural": "red lizards",
+    "singular": "red lizard"
   },
   "CYANBLUE": {
-    "default": "cyan blue lizard",
-    "plural": "cyan blue lizards",
-    "singular": "cyan blue lizard"
+    "default": "cyan lizard",
+    "plural": "cyan lizards",
+    "singular": "cyan lizard"
   },
   "CYANGREEN": {
-    "default": "cyan green lizard",
-    "plural": "cyan green lizards",
-    "singular": "cyan green lizard"
+    "default": "cyan lizard",
+    "plural": "cyan lizards",
+    "singular": "cyan lizard"
   },
   "ALBISALAFUSHIA": {
-    "default": "albino pink salamander",
-    "plural": "albino pink salamander",
-    "singular": "albino pink salamander"
+    "default": "albino salamander",
+    "plural": "albino salamander",
+    "singular": "albino salamander"
   },
   "ALBISALARED": {
-    "default": "albino red salamander",
-    "plural": "albino red salamander",
-    "singular": "albino red salamander"
+    "default": "albino salamander",
+    "plural": "albino salamander",
+    "singular": "albino salamander"
   },
   "MELASALARED": {
-    "default": "melanistic red salamander",
-    "plural": "melanistic red salamander",
-    "singular": "melanistic red salamander"
+    "default": "melanistic salamander",
+    "plural": "melanistic salamander",
+    "singular": "melanistic salamander"
   },
   "MELASALAFUSHIA": {
-    "default": "melanistic pink salamander",
-    "plural": "melanistic pink salamander",
-    "singular": "melanistic pink salamander"
+    "default": "melanistic salamander",
+    "plural": "melanistic salamander",
+    "singular": "melanistic salamander"
   },
   "MELASALAPURPLE": {
-    "default": "melanistic purple salamander",
-    "plural": "melanistic purple salamander",
-    "singular": "melanistic purple salamander"
+    "default": "melanistic salamander",
+    "plural": "melanistic salamander",
+    "singular": "melanistic salamander"
   },
   "MUDDYPAWS": {
     "default": "muddy paws",
@@ -2129,6 +2129,11 @@
     "plural": "green vulture feather boas",
     "singular": "green vulture feather boa"
   },
+  "DORANGEFEATHERBOA": {
+    "default": "orange vulture feather boa",
+    "plural": "orange vulture feather boas",
+    "singular": "orange vulture feather boa"
+  },
   "LWHITEFEATHERBOA": {
     "default": "white vulture feather boa",
     "plural": "white vulture feather boas",
@@ -2344,7 +2349,7 @@
     "plural": "white neck bandanas",
     "singular": "white neck bandana"
   },
-  "LiGHTGRAYNBANDANA": {
+  "LIGHTGRAYNBANDANA": {
     "default": "light gray neck bandana",
     "plural": "light gray neck bandanas",
     "singular": "light gray neck bandana"
@@ -2524,6 +2529,11 @@
     "plural": "yellow patchwork neck bandanas",
     "singular": "yellow patchwork neck bandana"
   },
+  "PATCHWORKGREENNBANDANA": {
+    "default": "green patchwork neck bandana",
+    "plural": "green patchwork neck bandanas",
+    "singular": "green patchwork neck bandana"
+  },
   "PATCHWORKTEALNBANDANA": {
     "default": "teal patchwork neck bandana",
     "plural": "teal patchwork neck bandanas",
@@ -2544,7 +2554,7 @@
     "plural": "purple patchwork neck bandanas",
     "singular": "purple patchwork neck bandana"
   },
-  "PATCHWORKNPINKBANDANA": {
+  "PATCHWORKPINKNBANDANA": {
     "default": "pink patchwork neck bandana",
     "plural": "pink patchwork neck bandanas",
     "singular": "pink patchwork neck bandana"
@@ -2735,9 +2745,9 @@
     "singular": "indigo floaty eyes"
   },
   "PURPLEINDIGOPSPEAR": {
-    "default": "purple indigo poison spear",
-    "plural": "purple indigo poison spears",
-    "singular": "purple indigo poison spear"
+    "default": "indigo poison spear",
+    "plural": "indigo poison spears",
+    "singular": "indigo poison spear"
   },
   "INDIGOPSPEAR": {
     "default": "indigo poison spear",
@@ -2760,9 +2770,9 @@
     "singular": "blue poison spear"
   },
   "BLUECYANPSPEAR": {
-    "default": "cyan blue poison spear",
-    "plural": "cyan blue poison spears",
-    "singular": "cyan blue poison spear"
+    "default": "cyan poison spear",
+    "plural": "cyan poison spears",
+    "singular": "cyan poison spear"
   },
   "GAYPSPEAR": {
     "default": "rainbow poison spear",
@@ -2775,14 +2785,14 @@
     "singular": "turquoise poison spear"
   },
   "TURQUOISEGREENPSPEAR": {
-    "default": "turquoise green poison spear",
-    "plural": "turquoise green poison spears",
-    "singular": "turquoise green poison spear"
+    "default": "green poison spear",
+    "plural": "green poison spears",
+    "singular": "green poison spear"
   },
   "LIMEGREENPSPEAR": {
-    "default": "lime green poison spear",
-    "plural": "lime green poison spears",
-    "singular": "lime green poison spear"
+    "default": "lime poison spear",
+    "plural": "lime poison spears",
+    "singular": "lime poison spear"
   },
   "LIMEPSPEAR": {
     "default": "lime poison spear",
@@ -2810,14 +2820,14 @@
     "singular": "red poison spear"
   },
   "REDPINKPSPEAR": {
-    "default": "red pink poison spear",
-    "plural": "red pink poison spears",
-    "singular": "red pink poison spear"
+    "default": "red poison spear",
+    "plural": "red poison spears",
+    "singular": "red poison spear"
   },
   "PURPLEPINKPSPEAR": {
-    "default": "purple pink poison spear",
-    "plural": "purple pink poison spears",
-    "singular": "purple pink poison spear"
+    "default": "purple poison spear",
+    "plural": "purple poison spears",
+    "singular": "purple poison spear"
   },
   "PINKPSPEAR": {
     "default": "pink poison spear",
@@ -2825,34 +2835,34 @@
     "singular": "pink poison spear"
   },
   "MAGENTAPINKPSPEAR": {
-    "default": "magenta pink poison spear",
-    "plural": "magenta pink poison spears",
-    "singular": "magenta pink poison spear"
+    "default": "magenta poison spear",
+    "plural": "magenta poison spears",
+    "singular": "magenta poison spear"
   },
   "REDPURPLEPSPEAR": {
-    "default": "red purple poison spear",
-    "plural": "red purple poison spears",
-    "singular": "red purple poison spear"
+    "default": "purple poison spear",
+    "plural": "purple poison spears",
+    "singular": "purple poison spear"
   },
   "BLUEPURPLEPSPEAR": {
-    "default": "blue purple poison spear",
-    "plural": "blue purple poison spears",
-    "singular": "blue purple poison spear"
+    "default": "blue poison spear",
+    "plural": "blue poison spears",
+    "singular": "blue poison spear"
   },
   "ROSEPINKPSPEAR": {
-    "default": "rose pink poison spear",
-    "plural": "rose pink poison spears",
-    "singular": "rose pink poison spear"
+    "default": "rose poison spear",
+    "plural": "rose poison spears",
+    "singular": "rose poison spear"
   },
   "GREENYELLOWPSPEAR": {
-    "default": "green yellow poison spear",
-    "plural": "green yellow poison spears",
-    "singular": "green yellow poison spear"
+    "default": "green poison spear",
+    "plural": "green poison spears",
+    "singular": "green poison spear"
   },
   "LIMEYELLOWPSPEAR": {
-    "default": "lime yellow poison spear",
-    "plural": "lime yellow poison spears",
-    "singular": "lime yellow poison spear"
+    "default": "lime poison spear",
+    "plural": "lime poison spears",
+    "singular": "lime poison spear"
   },
   "YELLOWPSPEAR": {
     "default": "yellow poison spear",
@@ -2885,24 +2895,24 @@
     "singular": "purple fire spear"
   },
   "DARKREDFIRESPEAR": {
-    "default": "dark red fire spear",
-    "plural": "dark red fire spears",
-    "singular": "dark red fire spear"
+    "default": "red fire spear",
+    "plural": "red fire spears",
+    "singular": "red fire spear"
   },
   "DARKPINKFIRESPEAR": {
-    "default": "dark pink fire spear",
-    "plural": "dark pink fire spears",
-    "singular": "dark pink fire spear"
+    "default": "pink fire spear",
+    "plural": "pink fire spears",
+    "singular": "pink fire spear"
   },
   "DARKORANGEFIRESPEAR": {
-    "default": "dark orange fire spear",
-    "plural": "dark orange fire spears",
-    "singular": "dark orange fire spear"
+    "default": "orange fire spear",
+    "plural": "orange fire spears",
+    "singular": "orange fire spear"
   },
   "DARKYELLOWFIRESPEAR": {
-    "default": "dark yellow fire spear",
-    "plural": "dark yellow fire spears",
-    "singular": "dark yellow fire spear"
+    "default": "yellow fire spear",
+    "plural": "yellow fire spears",
+    "singular": "yellow fire spear"
   },
   "BLUEFLAG": {
     "default": "blue flag",

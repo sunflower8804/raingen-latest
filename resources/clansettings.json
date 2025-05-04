@@ -61,8 +61,8 @@
             false
         ],
 		"all accessories": [
-            "Unlimited accessories",
-            "All slugcats have access to all accessories in the game. Warning: this is irreversible!",
+            "All accessories",
+            "Gives all slugcats every single accessoriy in the game.",
             false
         ]
     },

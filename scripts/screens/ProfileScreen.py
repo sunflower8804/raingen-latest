@@ -1,10 +1,9 @@
 #!/usr/bin/env python3
 # -*- coding: ascii -*-
 import os
-from random import choice, randint
+from random import choice
 from re import sub
 
-import i18n
 import math
 import pygame
 import pygame_gui
@@ -42,6 +41,82 @@ from ..ui.generate_box import get_box, BoxStyles
 from ..ui.generate_button import ButtonStyles, get_button_dict
 from ..ui.get_arrow import get_arrow
 from ..ui.icon import Icon
+
+# ---------------------------------------------------------------------------- #
+#                                 accessories                                  #
+# ---------------------------------------------------------------------------- #
+
+#ADD NEW ACCESSORIES HERE!!!!!!!!
+def theHorrors(self, cat, i, accessory, pos_x, pos_y, cat_sprite):
+    if accessory in cat.pelt.accessories:
+        self.accessory_buttons[str(i)] = UIImageButton(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), "", tool_tip_text=accessory, object_id="#fav_marker")
+    else:
+        self.accessory_buttons[str(i)] = UIImageButton(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), "", tool_tip_text=accessory, object_id="#blank_button_small")
+    if accessory in cat.pelt.plant_accessories:
+        self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['acc_herbs' + accessory + cat_sprite], manager=MANAGER)
+    elif accessory in cat.pelt.wild_accessories:
+        self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['acc_wild' + accessory + cat_sprite], manager=MANAGER)
+    elif accessory in cat.pelt.collars:
+        self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['collars' + accessory + cat_sprite], manager=MANAGER)
+    elif accessory in cat.pelt.herbs2:
+        self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['herbs2' + accessory + cat_sprite], manager=MANAGER)
+    elif accessory in cat.pelt.lizards:
+        self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['lizards' + accessory + cat_sprite], manager=MANAGER)
+    elif accessory in cat.pelt.muddypaws:
+        self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['muddypaws' + accessory + cat_sprite], manager=MANAGER)
+    elif accessory in cat.pelt.newaccs:
+        self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['newaccs' + accessory + cat_sprite], manager=MANAGER)
+    elif accessory in cat.pelt.newaccs2:
+        self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['newaccs2' + accessory + cat_sprite], manager=MANAGER)
+    elif accessory in cat.pelt.insectwings:
+        self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['insectwings' + accessory + cat_sprite], manager=MANAGER)
+    elif accessory in cat.pelt.buddies:
+        self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['buddies' + accessory + cat_sprite], manager=MANAGER)
+    elif accessory in cat.pelt.bodypaint:
+        self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['bodypaint' + accessory + cat_sprite], manager=MANAGER)
+    elif accessory in cat.pelt.implant:
+        self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['implant' + accessory + cat_sprite], manager=MANAGER)
+    elif accessory in cat.pelt.magic:
+        self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['magic' + accessory + cat_sprite], manager=MANAGER)
+    elif accessory in cat.pelt.necklaces:
+        self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['necklaces' + accessory + cat_sprite], manager=MANAGER)
+    elif accessory in cat.pelt.drapery:
+        self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['drapery' + accessory + cat_sprite], manager=MANAGER)
+    elif accessory in cat.pelt.pridedrapery:
+        self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['pridedrapery' + accessory + cat_sprite], manager=MANAGER)
+    elif accessory in cat.pelt.eyepatches:
+        self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['eyepatches' + accessory + cat_sprite], manager=MANAGER)
+    elif accessory in cat.pelt.larsaccs:
+        self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['larsaccs' + accessory + cat_sprite], manager=MANAGER)
+    elif accessory in cat.pelt.harleyaccs:
+        self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['harleyaccs' + accessory + cat_sprite], manager=MANAGER)
+    elif accessory in cat.pelt.featherboas:
+        self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['featherboas' + accessory + cat_sprite], manager=MANAGER)
+    elif accessory in cat.pelt.scarves:
+        self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['scarves' + accessory + cat_sprite], manager=MANAGER)
+    elif accessory in cat.pelt.chains:
+        self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['chains' + accessory + cat_sprite], manager=MANAGER)
+    elif accessory in cat.pelt.newaccs3:
+        self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['newaccs3' + accessory + cat_sprite], manager=MANAGER)
+    elif accessory in cat.pelt.floatyeyes:
+        self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['floatyeyes' + accessory + cat_sprite], manager=MANAGER)
+    elif accessory in cat.pelt.neckbandanas:
+        self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['neckbandanas' + accessory + cat_sprite], manager=MANAGER)
+    elif accessory in cat.pelt.morespears:
+        self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['morespears' + accessory + cat_sprite], manager=MANAGER)
+    elif accessory in cat.pelt.flagaccs:
+        self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['flagaccs' + accessory + cat_sprite], manager=MANAGER)
+    elif accessory in cat.pelt.haloaccs:
+        self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['haloaccs' + accessory + cat_sprite], manager=MANAGER)
+    elif accessory in cat.pelt.ponchoaccs:
+        self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['ponchoaccs' + accessory + cat_sprite], manager=MANAGER)
+    elif accessory in cat.pelt.glassesaccs:
+        self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['glassesaccs' + accessory + cat_sprite], manager=MANAGER)
+    elif accessory in cat.pelt.orbitals:
+        self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['orbitals' + accessory + cat_sprite], manager=MANAGER)
+    elif accessory in cat.pelt.vulturemasks:
+        self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['vulturemasks' + accessory + cat_sprite], manager=MANAGER)
+
 
 
 # ---------------------------------------------------------------------------- #
@@ -191,6 +266,9 @@ class ProfileScreen(Screens):
         self.previous_search_text = "search"
         self.checkboxes = {}
         self.profile_elements = {}
+        
+        # LG: all accs
+        self.cat_inventory = []
 
     def handle_event(self, event):
         if event.type == pygame_gui.UI_BUTTON_START_PRESS:
@@ -207,10 +285,10 @@ class ProfileScreen(Screens):
 
                         inventory_len = 0
                         if self.search_bar.get_text() in ["", "search"]:
-                            inventory_len = len(self.the_cat.pelt.inventory)
+                            inventory_len = len(self.cat_inventory)
                         else:
-                            for ac in self.the_cat.pelt.inventory:
-                                if self.search_bar.get_text().lower() in ac.lower():
+                            for ac in self.cat_inventory:
+                                if self.search_bar.get_text().lower() in ACC_DISPLAY[ac]["default"]:
                                     inventory_len+=1
                         self.max_pages = math.ceil(inventory_len/20)
                         if self.page == 0 and self.max_pages == 1:
@@ -239,10 +317,10 @@ class ProfileScreen(Screens):
                         self.next_page_button.enable()
                         inventory_len = 0
                         if self.search_bar.get_text() in ["", "search"]:
-                            inventory_len = len(self.the_cat.pelt.inventory)
+                            inventory_len = len(self.cat_inventory)
                         else:
-                            for ac in self.the_cat.pelt.inventory:
-                                if self.search_bar.get_text().lower() in ac.lower():
+                            for ac in self.cat_inventory:
+                                if self.search_bar.get_text().lower() in ACC_DISPLAY[ac]["default"]:
                                     inventory_len+=1
                         self.max_pages = math.ceil(inventory_len/20)
                         if self.page == 0 and (self.max_pages == 1 or self.max_pages == 0):
@@ -368,11 +446,11 @@ class ProfileScreen(Screens):
                     inventory_len = 0
                     new_inv = []
                     if self.search_bar.get_text() in ["", "search"]:
-                        inventory_len = len(cat.pelt.inventory)
-                        new_inv = cat.pelt.inventory
+                        inventory_len = len(self.cat_inventory)
+                        new_inv = self.cat_inventory
                     else:
-                        for ac in cat.pelt.inventory:
-                            if self.search_bar.get_text().lower() in ac.lower():
+                        for ac in self.cat_inventory:
+                            if self.search_bar.get_text().lower() in ACC_DISPLAY[ac]["default"]:
                                 inventory_len+=1
                                 new_inv.append(ac)
                     self.max_pages = math.ceil(inventory_len/20)
@@ -382,76 +460,9 @@ class ProfileScreen(Screens):
                     if self.page == 0:
                         self.previous_page_button.disable()
                     
-                    if cat.pelt.inventory:
+                    if self.cat_inventory:
                         for i, accessory in enumerate(new_inv[start_index:min(end_index, inventory_len + start_index)], start = start_index):
-                            if accessory in cat.pelt.accessories:
-                                self.accessory_buttons[str(i)] = UIImageButton(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), "", tool_tip_text=accessory, object_id="#fav_marker")
-                            else:
-                                self.accessory_buttons[str(i)] = UIImageButton(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), "", tool_tip_text=accessory, object_id="#blank_button_small")
-                            if accessory in cat.pelt.plant_accessories:
-                                self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['acc_herbs' + accessory + cat_sprite], manager=MANAGER)
-                            elif accessory in cat.pelt.wild_accessories:
-                                self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['acc_wild' + accessory + cat_sprite], manager=MANAGER)
-                            elif accessory in cat.pelt.collars:
-                                self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['collars' + accessory + cat_sprite], manager=MANAGER)
-                            elif accessory in cat.pelt.herbs2:
-                                self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['herbs2' + accessory + cat_sprite], manager=MANAGER)
-                            elif accessory in cat.pelt.lizards:
-                                self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['lizards' + accessory + cat_sprite], manager=MANAGER)
-                            elif accessory in cat.pelt.muddypaws:
-                                self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['muddypaws' + accessory + cat_sprite], manager=MANAGER)
-                            elif accessory in cat.pelt.newaccs:
-                                self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['newaccs' + accessory + cat_sprite], manager=MANAGER)
-                            elif accessory in cat.pelt.newaccs2:
-                                self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['newaccs2' + accessory + cat_sprite], manager=MANAGER)
-                            elif accessory in cat.pelt.insectwings:
-                                self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['insectwings' + accessory + cat_sprite], manager=MANAGER)
-                            elif accessory in cat.pelt.buddies:
-                                self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['buddies' + accessory + cat_sprite], manager=MANAGER)
-                            elif accessory in cat.pelt.bodypaint:
-                                self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['bodypaint' + accessory + cat_sprite], manager=MANAGER)
-                            elif accessory in cat.pelt.implant:
-                                self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['implant' + accessory + cat_sprite], manager=MANAGER)
-                            elif accessory in cat.pelt.magic:
-                                self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['magic' + accessory + cat_sprite], manager=MANAGER)
-                            elif accessory in cat.pelt.necklaces:
-                                self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['necklaces' + accessory + cat_sprite], manager=MANAGER)
-                            elif accessory in cat.pelt.drapery:
-                                self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['drapery' + accessory + cat_sprite], manager=MANAGER)
-                            elif accessory in cat.pelt.pridedrapery:
-                                self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['pridedrapery' + accessory + cat_sprite], manager=MANAGER)
-                            elif accessory in cat.pelt.eyepatches:
-                                self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['eyepatches' + accessory + cat_sprite], manager=MANAGER)
-                            elif accessory in cat.pelt.larsaccs:
-                                self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['larsaccs' + accessory + cat_sprite], manager=MANAGER)
-                            elif accessory in cat.pelt.harleyaccs:
-                                self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['harleyaccs' + accessory + cat_sprite], manager=MANAGER)
-                            elif accessory in cat.pelt.featherboas:
-                                self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['featherboas' + accessory + cat_sprite], manager=MANAGER)
-                            elif accessory in cat.pelt.scarves:
-                                self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['scarves' + accessory + cat_sprite], manager=MANAGER)
-                            elif accessory in cat.pelt.chains:
-                                self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['chains' + accessory + cat_sprite], manager=MANAGER)
-                            elif accessory in cat.pelt.newaccs3:
-                                self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['newaccs3' + accessory + cat_sprite], manager=MANAGER)
-                            elif accessory in cat.pelt.floatyeyes:
-                                self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['floatyeyes' + accessory + cat_sprite], manager=MANAGER)
-                            elif accessory in cat.pelt.neckbandanas:
-                                self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['neckbandanas' + accessory + cat_sprite], manager=MANAGER)
-                            elif accessory in cat.pelt.morespears:
-                                self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['morespears' + accessory + cat_sprite], manager=MANAGER)
-                            elif accessory in cat.pelt.flagaccs:
-                                self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['flagaccs' + accessory + cat_sprite], manager=MANAGER)
-                            elif accessory in cat.pelt.haloaccs:
-                                self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['haloaccs' + accessory + cat_sprite], manager=MANAGER)
-                            elif accessory in cat.pelt.ponchoaccs:
-                                self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['ponchoaccs' + accessory + cat_sprite], manager=MANAGER)
-                            elif accessory in cat.pelt.glassesaccs:
-                                self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['glassesaccs' + accessory + cat_sprite], manager=MANAGER)
-                            elif accessory in cat.pelt.orbitals:
-                                self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['orbitals' + accessory + cat_sprite], manager=MANAGER)
-                            elif accessory in cat.pelt.vulturemasks:
-                                self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['vulturemasks' + accessory + cat_sprite], manager=MANAGER)
+                            theHorrors(self, cat, i, accessory, pos_x, pos_y, cat_sprite)
                             pos_x += 60
                             if pos_x >= 600:
                                 pos_x = 5
@@ -749,11 +760,11 @@ class ProfileScreen(Screens):
                 inventory_len = 0
                 new_inv = []
                 if self.search_bar.get_text() in ["", "search"]:
-                    inventory_len = len(cat.pelt.inventory)
-                    new_inv = cat.pelt.inventory
+                    inventory_len = len(self.cat_inventory)
+                    new_inv = self.cat_inventory
                 else:
-                    for ac in cat.pelt.inventory:
-                        if self.search_bar.get_text().lower() in ac.lower():
+                    for ac in self.cat_inventory:
+                        if self.search_bar.get_text().lower() in ACC_DISPLAY[ac]["default"]:
                             inventory_len+=1
                             new_inv.append(ac)
                 self.max_pages = math.ceil(inventory_len/20)
@@ -762,79 +773,11 @@ class ProfileScreen(Screens):
                     self.next_page_button.disable()
                 if self.page == 0:
                     self.previous_page_button.disable()
-                if cat.pelt.inventory:
+                if self.cat_inventory:
                     for i, accessory in enumerate(new_inv[start_index:min(end_index, inventory_len + start_index)], start = start_index):
                         try:
-                            if self.search_bar.get_text() in ["", "search"] or self.search_bar.get_text().lower() in accessory.lower():
-                                if accessory in cat.pelt.accessories:
-                                    self.accessory_buttons[str(i) + str(randint(0,5000))] = UIImageButton(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), "", tool_tip_text=accessory, object_id="#fav_marker")
-                                else:
-                                    self.accessory_buttons[str(i) + str(randint(0,5000))] = UIImageButton(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), "", tool_tip_text=accessory, object_id="#blank_button_small")
-                                if accessory in cat.pelt.plant_accessories:
-                                    self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['acc_herbs' + accessory + cat_sprite], manager=MANAGER)
-                                elif accessory in cat.pelt.wild_accessories:
-                                    self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['acc_wild' + accessory + cat_sprite], manager=MANAGER)
-                                elif accessory in cat.pelt.collars:
-                                    self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['collars' + accessory + cat_sprite], manager=MANAGER)
-                                elif accessory in cat.pelt.herbs2:
-                                    self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['herbs2' + accessory + cat_sprite], manager=MANAGER)
-                                elif accessory in cat.pelt.lizards:
-                                    self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['lizards' + accessory + cat_sprite], manager=MANAGER)
-                                elif accessory in cat.pelt.muddypaws:
-                                    self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['muddypaws' + accessory + cat_sprite], manager=MANAGER)
-                                elif accessory in cat.pelt.newaccs:
-                                    self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['newaccs' + accessory + cat_sprite], manager=MANAGER)
-                                elif accessory in cat.pelt.newaccs2:
-                                    self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['newaccs2' + accessory + cat_sprite], manager=MANAGER)
-                                elif accessory in cat.pelt.insectwings:
-                                    self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['insectwings' + accessory + cat_sprite], manager=MANAGER)
-                                elif accessory in cat.pelt.buddies:
-                                    self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['buddies' + accessory + cat_sprite], manager=MANAGER)
-                                elif accessory in cat.pelt.bodypaint:
-                                    self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['bodypaint' + accessory + cat_sprite], manager=MANAGER)
-                                elif accessory in cat.pelt.implant:
-                                    self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['implant' + accessory + cat_sprite], manager=MANAGER)
-                                elif accessory in cat.pelt.magic:
-                                    self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['magic' + accessory + cat_sprite], manager=MANAGER)
-                                elif accessory in cat.pelt.necklaces:
-                                    self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['necklaces' + accessory + cat_sprite], manager=MANAGER)
-                                elif accessory in cat.pelt.drapery:
-                                    self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['drapery' + accessory + cat_sprite], manager=MANAGER)
-                                elif accessory in cat.pelt.pridedrapery:
-                                    self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['pridedrapery' + accessory + cat_sprite], manager=MANAGER)
-                                elif accessory in cat.pelt.eyepatches:
-                                    self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['eyepatches' + accessory + cat_sprite], manager=MANAGER)
-                                elif accessory in cat.pelt.larsaccs:
-                                    self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['larsaccs' + accessory + cat_sprite], manager=MANAGER)
-                                elif accessory in cat.pelt.harleyaccs:
-                                    self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['harleyaccs' + accessory + cat_sprite], manager=MANAGER)
-                                elif accessory in cat.pelt.featherboas:
-                                    self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['featherboas' + accessory + cat_sprite], manager=MANAGER)
-                                elif accessory in cat.pelt.scarves:
-                                    self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['scarves' + accessory + cat_sprite], manager=MANAGER)
-                                elif accessory in cat.pelt.chains:
-                                    self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['chains' + accessory + cat_sprite], manager=MANAGER)
-                                elif accessory in cat.pelt.newaccs3:
-                                    self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['newaccs3' + accessory + cat_sprite], manager=MANAGER)
-                                elif accessory in cat.pelt.floatyeyes:
-                                    self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['floatyeyes' + accessory + cat_sprite], manager=MANAGER)
-                                elif accessory in cat.pelt.neckbandanas:
-                                    self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['neckbandanas' + accessory + cat_sprite], manager=MANAGER)
-                                elif accessory in cat.pelt.morespears:
-                                    self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['morespears' + accessory + cat_sprite], manager=MANAGER)
-                                elif accessory in cat.pelt.flagaccs:
-                                    self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['flagaccs' + accessory + cat_sprite], manager=MANAGER)
-                                elif accessory in cat.pelt.haloaccs:
-                                    self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['haloaccs' + accessory + cat_sprite], manager=MANAGER)
-                                elif accessory in cat.pelt.ponchoaccs:
-                                    self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['ponchoaccs' + accessory + cat_sprite], manager=MANAGER)
-                                elif accessory in cat.pelt.glassesaccs:
-                                    self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['glassesaccs' + accessory + cat_sprite], manager=MANAGER)
-                                elif accessory in cat.pelt.orbitals:
-                                    self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['orbitals' + accessory + cat_sprite], manager=MANAGER)
-                                elif accessory in cat.pelt.vulturemasks:
-                                    self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['vulturemasks' + accessory + cat_sprite], manager=MANAGER)
-                                
+                            if self.search_bar.get_text() in ["", "search"] or self.search_bar.get_text().lower() in ACC_DISPLAY[accessory]["default"]:
+                                theHorrors(self, cat, i, accessory, pos_x, pos_y, cat_sprite)
                                 pos_x += 60
                                 if pos_x >= 600:
                                     pos_x = 5
@@ -965,7 +908,7 @@ class ProfileScreen(Screens):
         self.hide_menu_buttons()  # Menu buttons don't appear on the profile screen
         if game.last_screen_forProfile == "med den screen":
             self.toggle_conditions_tab()
-        game.clan.load_accessories()
+        #game.clan.load_accessories()
 
         self.set_cat_location_bg(self.the_cat)
 
@@ -1002,6 +945,21 @@ class ProfileScreen(Screens):
         """Rebuild builds the cat profile. Run when you switch cats
         or for changes in the profile."""
         self.the_cat = Cat.all_cats.get(game.switches["cat"])
+
+        # LIFEGEN: accessory bull shit
+        if game.clan.clan_settings['all accessories']:
+            self.cat_inventory = game.clan.load_accessories()
+        else:
+            self.cat_inventory = self.the_cat.pelt.inventory
+        
+        if self.the_cat.pelt.accessory:
+            if self.the_cat.pelt.accessory not in self.the_cat.pelt.inventory:
+                self.the_cat.pelt.inventory.append(self.the_cat.pelt.accessory)
+
+        for acc in self.the_cat.pelt.accessories:
+            if acc not in self.the_cat.pelt.inventory:
+                self.the_cat.pelt.inventory.append(acc)
+        # ---
 
         # use these attributes to create differing profiles for StarClan cats etc.
         is_sc_instructor = False
@@ -2854,22 +2812,22 @@ class ProfileScreen(Screens):
         start_index = self.page * 20
         end_index = start_index + 20
 
-        if cat.pelt.accessory:
-            if cat.pelt.accessory not in cat.pelt.inventory:
-                cat.pelt.inventory.append(cat.pelt.accessory)
-
-        for acc in cat.pelt.accessories:
-            if acc not in cat.pelt.inventory:
-                cat.pelt.inventory.append(acc)
-
+        #if cat.pelt.accessory:
+        #    if cat.pelt.accessory not in cat.pelt.inventory:
+        #        cat.pelt.inventory.append(cat.pelt.accessory)
+        #
+        #for acc in cat.pelt.accessories:
+        #    if acc not in cat.pelt.inventory:
+        #        cat.pelt.inventory.append(acc)
+#ACC_DISPLAY[the_cat.pelt.accessory]["default"]
         inventory_len = 0
         new_inv = []
         if self.search_bar.get_text() in ["", "search"]:
-            inventory_len = len(cat.pelt.inventory)
-            new_inv = cat.pelt.inventory
+            inventory_len = len(self.cat_inventory)
+            new_inv = self.cat_inventory
         else:
-            for ac in cat.pelt.inventory:
-                if ac and self.search_bar.get_text() and self.search_bar.get_text().lower() in ac.lower():
+            for ac in self.cat_inventory:
+                if ac and self.search_bar.get_text() and self.search_bar.get_text().lower() in ACC_DISPLAY[ac]["default"]:
                     inventory_len+=1
                     new_inv.append(ac)
         self.max_pages = math.ceil(inventory_len/20)
@@ -2879,79 +2837,11 @@ class ProfileScreen(Screens):
             self.next_page_button.disable()
         if self.page == 0:
             self.previous_page_button.disable()
-        if cat.pelt.inventory:
+        if self.cat_inventory:
             for i, accessory in enumerate(new_inv[start_index:min(end_index, inventory_len)], start = start_index):
                 try:
-                    if self.search_bar.get_text() in ["", "search"] or self.search_bar.get_text().lower() in accessory.lower():
-                        if accessory in cat.pelt.accessories:
-                            self.accessory_buttons[str(i)] = UIImageButton(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), "", tool_tip_text=accessory, object_id="#fav_marker")
-                        else:
-                            self.accessory_buttons[str(i)] = UIImageButton(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), "", tool_tip_text=accessory, object_id="#blank_button_small")
-                        if accessory in cat.pelt.plant_accessories:
-                            self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['acc_herbs' + accessory + cat_sprite], manager=MANAGER)
-                        elif accessory in cat.pelt.wild_accessories:
-                            self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['acc_wild' + accessory + cat_sprite], manager=MANAGER)
-                        elif accessory in cat.pelt.collars:
-                            self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['collars' + accessory + cat_sprite], manager=MANAGER)
-                        elif accessory in cat.pelt.herbs2:
-                            self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['herbs2' + accessory + cat_sprite], manager=MANAGER)
-                        elif accessory in cat.pelt.lizards:
-                            self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['lizards' + accessory + cat_sprite], manager=MANAGER)
-                        elif accessory in cat.pelt.muddypaws:
-                            self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['muddypaws' + accessory + cat_sprite], manager=MANAGER)
-                        elif accessory in cat.pelt.newaccs:
-                            self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['newaccs' + accessory + cat_sprite], manager=MANAGER)
-                        elif accessory in cat.pelt.newaccs2:
-                            self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['newaccs2' + accessory + cat_sprite], manager=MANAGER)
-                        elif accessory in cat.pelt.insectwings:
-                            self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['insectwings' + accessory + cat_sprite], manager=MANAGER)
-                        elif accessory in cat.pelt.buddies:
-                            self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['buddies' + accessory + cat_sprite], manager=MANAGER)
-                        elif accessory in cat.pelt.bodypaint:
-                            self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['bodypaint' + accessory + cat_sprite], manager=MANAGER)
-                        elif accessory in cat.pelt.implant:
-                            self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['implant' + accessory + cat_sprite], manager=MANAGER)
-                        elif accessory in cat.pelt.magic:
-                            self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['magic' + accessory + cat_sprite], manager=MANAGER)
-                        elif accessory in cat.pelt.necklaces:
-                            self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['necklaces' + accessory + cat_sprite], manager=MANAGER)
-                        elif accessory in cat.pelt.drapery:
-                            self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['drapery' + accessory + cat_sprite], manager=MANAGER)
-                        elif accessory in cat.pelt.pridedrapery:
-                            self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['pridedrapery' + accessory + cat_sprite], manager=MANAGER)
-                        elif accessory in cat.pelt.eyepatches:
-                            self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['eyepatches' + accessory + cat_sprite], manager=MANAGER)
-                        elif accessory in cat.pelt.larsaccs:
-                            self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['larsaccs' + accessory + cat_sprite], manager=MANAGER)
-                        elif accessory in cat.pelt.harleyaccs:
-                            self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['harleyaccs' + accessory + cat_sprite], manager=MANAGER)
-                        elif accessory in cat.pelt.featherboas:
-                            self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['featherboas' + accessory + cat_sprite], manager=MANAGER)
-                        elif accessory in cat.pelt.scarves:
-                            self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['scarves' + accessory + cat_sprite], manager=MANAGER)
-                        elif accessory in cat.pelt.chains:
-                            self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['chains' + accessory + cat_sprite], manager=MANAGER)
-                        elif accessory in cat.pelt.newaccs3:
-                            self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['newaccs3' + accessory + cat_sprite], manager=MANAGER)
-                        elif accessory in cat.pelt.floatyeyes:
-                            self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['floatyeyes' + accessory + cat_sprite], manager=MANAGER)
-                        elif accessory in cat.pelt.neckbandanas:
-                            self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['neckbandanas' + accessory + cat_sprite], manager=MANAGER)
-                        elif accessory in cat.pelt.morespears:
-                            self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['morespears' + accessory + cat_sprite], manager=MANAGER)
-                        elif accessory in cat.pelt.flagaccs:
-                            self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['flagaccs' + accessory + cat_sprite], manager=MANAGER)
-                        elif accessory in cat.pelt.haloaccs:
-                            self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['haloaccs' + accessory + cat_sprite], manager=MANAGER)
-                        elif accessory in cat.pelt.ponchoaccs:
-                            self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['ponchoaccs' + accessory + cat_sprite], manager=MANAGER)
-                        elif accessory in cat.pelt.glassesaccs:
-                            self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['glassesaccs' + accessory + cat_sprite], manager=MANAGER)
-                        elif accessory in cat.pelt.orbitals:
-                            self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['orbitals' + accessory + cat_sprite], manager=MANAGER)
-                        elif accessory in cat.pelt.vulturemasks:
-                            self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['vulturemasks' + accessory + cat_sprite], manager=MANAGER)
-
+                    if self.search_bar.get_text() in ["", "search"] or self.search_bar.get_text().lower() in ACC_DISPLAY[accessory]["default"]:
+                        theHorrors(self, cat, i, accessory, pos_x, pos_y, cat_sprite)
                         self.accessories_list.append(accessory)
                         pos_x += 60
                         if pos_x >= 600:

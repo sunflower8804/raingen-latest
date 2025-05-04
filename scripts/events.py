@@ -1882,6 +1882,9 @@ class Events:
 
         if cat.dead or cat.outside:
             return
+        
+        if game.clan.clan_settings['all accessories']:
+            return
 
         # check if cat already has acc
         #if cat.pelt.accessory:

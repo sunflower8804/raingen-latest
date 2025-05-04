@@ -896,12 +896,13 @@ def create_new_cat(
             if new_cat.genderalign == "trans male" or new_cat.genderalign == "nonbinary":
                 new_cat.pelt.scars.append("TOPSURGERY")
 
-            if not randint(0, 10): #1 out of 5
+            if not randint(0, 10): #1 out of 10
                 new_cat.pelt.scars.append(choice(mutilation_scars)) 
                 
         # give em a collar if they got one
         if accessory:
             new_cat.pelt.accessories.append(accessory)
+            new_cat.pelt.inventory.append(accessory)
 
         # give apprentice aged cat a mentor
         if new_cat.age == "adolescent":
@@ -2894,6 +2895,8 @@ def generate_sprite(
                             new_sprite.blit(sprites.sprites['ponchoaccs' + i + cat_sprite], (0, 0))
                         elif i in cat.pelt.orbitals:
                             new_sprite.blit(sprites.sprites['orbitals' + i + cat_sprite], (0, 0))
+                        elif i in cat.pelt.morespears:
+                            new_sprite.blit(sprites.sprites['morespears' + i + cat_sprite], (0, 0))
                     #THIS SECTION ABOVE IS ONLY FOR CLOSE-TO-BODY ACCESSORIES
 
                     except:

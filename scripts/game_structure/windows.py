@@ -65,12 +65,12 @@ class SymbolFilterWindow(UIWindow):
         self.set_blocking(True)
 
         self.possible_tags = {
-            "plant": ["flower", "tree", "leaf", "other plant", "fruit"],
-            "animal": ["cat", "fish", "bird", "mammal", "bug", "other animal"],
+            "plant": ["flower", "tree", "leaf", "fruit", "other plant", "rain world plant"],
+            "animal": ["slugcat", "fish", "bird", "mammal", "bug", "other animal", "rain world animal"],
             "element": ["water", "fire", "earth", "air", "light"],
-            "location": [],
+            "location": ["rain world location"],
             "descriptor": [],
-            "miscellaneous": [],
+            "miscellaneous": ["rain world misc"]
         }
 
         self.back_button = UIImageButton(
@@ -87,7 +87,7 @@ class SymbolFilterWindow(UIWindow):
             container=self,
         )
         self.filter_container = pygame_gui.elements.UIScrollingContainer(
-            ui_scale(pygame.Rect((5, 45), (285, 310))),
+            ui_scale(pygame.Rect((5, 45), (285, 380))),
             manager=MANAGER,
             starting_height=1,
             object_id="#filter_container",
