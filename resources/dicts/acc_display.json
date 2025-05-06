@@ -2629,6 +2629,11 @@
     "plural": "blue cloud covers",
     "singular": "blue cloud cover"
   },
+  "RIBS": {
+    "default": "ribs",
+    "plural": "ribs",
+    "singular": "ribs"
+  },
   "YELLOWCLOUDS": {
     "default": "yellow cloud cover",
     "plural": "yellow cloud covers",
@@ -2648,6 +2653,11 @@
     "default": "goggles",
     "plural": "multiple goggles",
     "singular": "goggles"
+  },
+  "MODSPEAR": {
+    "default": "sharpened spear",
+    "plural": "sharpened spears",
+    "singular": "sharpened spear"
   },
   "PINKPOLEPLANTBUDDY": {
     "default": "pink pole plant buddy",
@@ -3336,122 +3346,177 @@
   },
   "VULTMASKONE": {
     "default": "vulture mask",
-    "plural": "vulture masks1",
+    "plural": "vulture masks",
     "singular": "vulture mask"
   },
   "VULTMASKTWO": {
     "default": "vulture mask",
-    "plural": "vulture masks2",
+    "plural": "vulture masks",
     "singular": "vulture mask"
   },
   "VULTMASK3": {
     "default": "vulture mask",
-    "plural": "vulture masks3",
+    "plural": "vulture masks",
     "singular": "vulture mask"
   },
   "VULTMASK4": {
     "default": "vulture mask",
-    "plural": "vulture masks4",
+    "plural": "vulture masks",
     "singular": "vulture mask"
   },
   "VULTMASK5": {
     "default": "vulture mask",
-    "plural": "vulture masks5",
+    "plural": "vulture masks",
     "singular": "vulture mask"
   },
   "VULTMASK6": {
     "default": "vulture mask",
-    "plural": "vulture masks6",
+    "plural": "vulture masks",
     "singular": "vulture mask"
   },
   "VULTMASK7": {
     "default": "vulture mask",
-    "plural": "vulture masks7",
+    "plural": "vulture masks",
     "singular": "vulture mask"
   },
   "VULTMASK8": {
     "default": "vulture mask",
-    "plural": "vulture masks8",
+    "plural": "vulture masks",
     "singular": "vulture mask"
   },
   "VULTMASK9": {
     "default": "vulture mask",
-    "plural": "vulture masks9",
+    "plural": "vulture masks",
     "singular": "vulture mask"
   },
   "VULTMASK10": {
     "default": "vulture mask",
-    "plural": "vulture masks10",
+    "plural": "vulture masks",
     "singular": "vulture mask"
   },
   "VULTMASK11": {
     "default": "vulture mask",
-    "plural": "vulture masks11",
+    "plural": "vulture masks",
     "singular": "vulture mask"
   },
   "VULTMASK12": {
     "default": "vulture mask",
-    "plural": "vulture masks12",
+    "plural": "vulture masks",
     "singular": "vulture mask"
   },
   "VULTMASK13": {
     "default": "vulture mask",
-    "plural": "vulture masks13",
+    "plural": "vulture masks",
     "singular": "vulture mask"
   },
   "VULTMASK14": {
     "default": "vulture mask",
-    "plural": "vulture masks14",
+    "plural": "vulture masks",
     "singular": "vulture mask"
   },
   "VULTMASK15": {
     "default": "vulture mask",
-    "plural": "vulture masks15",
+    "plural": "vulture masks",
     "singular": "vulture mask"
   },
   "VULTMASK16": {
     "default": "vulture mask",
-    "plural": "vulture masks16",
+    "plural": "vulture masks",
     "singular": "vulture mask"
   },
   "VULTMASK17": {
     "default": "vulture mask",
-    "plural": "vulture masks17",
+    "plural": "vulture masks",
     "singular": "vulture mask"
   },
   "VULTMASK18": {
     "default": "king vulture mask",
-    "plural": "king vulture masks18",
+    "plural": "king vulture masks",
     "singular": "king vulture mask"
   },
   "VULTMASK19": {
     "default": "king vulture mask",
-    "plural": "king vulture masks19",
+    "plural": "king vulture masks",
     "singular": "king vulture mask"
   },
   "VULTMASK20": {
     "default": "king vulture mask",
-    "plural": "king vulture masks20",
+    "plural": "king vulture masks",
     "singular": "king vulture mask"
   },
   "VULTMASK21": {
     "default": "king vulture mask",
-    "plural": "king vulture masks21",
+    "plural": "king vulture masks",
     "singular": "king vulture mask"
   },
   "VULTMASK22": {
     "default": "king vulture mask",
-    "plural": "king vulture masks22",
+    "plural": "king vulture masks",
     "singular": "king vulture mask"
   },
   "VULTMASK23": {
     "default": "king vulture mask",
-    "plural": "king vulture masks23",
+    "plural": "king vulture masks",
     "singular": "king vulture mask"
   },
   "VULTMASK24": {
     "default": "king vulture mask",
-    "plural": "king vulture masks24",
+    "plural": "king vulture masks",
     "singular": "king vulture mask"
+  },
+  "BLUEITERATOR": {
+    "default": "blue iterator mask",
+    "plural": "blue iterator masks",
+    "singular": "blue iterator mask"
+  },
+  "BLACKITERATOR": {
+    "default": "black iterator mask",
+    "plural": "black iterator masks",
+    "singular": "black iterator mask"
+  },
+  "GREENITERATOR": {
+    "default": "green iterator mask",
+    "plural": "green iterator masks",
+    "singular": "green iterator mask"
+  },
+  "ORANGEITERATOR": {
+    "default": "orange iterator mask",
+    "plural": "orange iterator masks",
+    "singular": "orange iterator mask"
+  },
+  "PINKITERATOR": {
+    "default": "pink iterator mask",
+    "plural": "pink iterator masks",
+    "singular": "pink iterator mask"
+  },
+  "CYANITERATOR": {
+    "default": "cyan iterator mask",
+    "plural": "cyan iterator masks",
+    "singular": "cyan iterator mask"
+  },
+  "PURPLEITERATOR": {
+    "default": "purple iterator mask",
+    "plural": "purple iterator masks",
+    "singular": "purple iterator mask"
+  },
+  "REDITERATOR": {
+    "default": "red iterator mask",
+    "plural": "red iterator masks",
+    "singular": "red iterator mask"
+  },
+  "CREAMITERATOR": {
+    "default": "cream iterator mask",
+    "plural": "cream iterator masks",
+    "singular": "cream iterator mask"
+  },
+  "WHITEITERATOR": {
+    "default": "white iterator mask",
+    "plural": "white iterator masks",
+    "singular": "white iterator mask"
+  },
+  "YELLOWITERATOR": {
+    "default": "yellow iterator mask",
+    "plural": "yellow iterator masks",
+    "singular": "yellow iterator mask"
   }
 }

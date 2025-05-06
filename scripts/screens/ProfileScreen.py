@@ -116,6 +116,9 @@ def theHorrors(self, cat, i, accessory, pos_x, pos_y, cat_sprite):
         self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['orbitals' + accessory + cat_sprite], manager=MANAGER)
     elif accessory in cat.pelt.vulturemasks:
         self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['vulturemasks' + accessory + cat_sprite], manager=MANAGER)
+    elif accessory in cat.pelt.iteratormasks:
+        self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['iteratormasks' + accessory + cat_sprite], manager=MANAGER)
+
 
 
 

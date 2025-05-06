@@ -1,15 +1,42 @@
 <strong>Dev Version</strong>
+
+<strong>v1.7</strong>
 Added:
-- Added new events
-- Allegiences screen has been updated to accurately reflect slugcats
+- Accessories:
+- - Iterator masks by Foxett
+- - New vulture mask colours by Squid Say Moo
+- - Mist by Foxett
+- - Ribs by Mimalot99
+- Features:
+- - Dropwig mandibles by Squid Say Moo
+- - Tail stingers by Foxett
+- - Updated horns by Clayteeth
+- Clay pelt by Foxett
+- 3 white patches by Foxett
+- 1 tortie patch by Foxett
+- 10 eye colours by Foxett
+- New clan symbols and filter settings to filter out rain world related symbols
+- You can hide features in the sprite inspect tab
+- New accessory events
+- New death events
+- Started fixing the allegiances screen
+- Made the credits look really cool
+- Added a system of common combinations. It makes slugcats with certain pelts and eye colours get certain features more often. For example, slugcats with big wet eyes will be more likely to have gills or fins, slugcats with the centipede pelt will often have centipede growths, etc. You can disable it in game_config.json
 
 Fixed:
-- Sparse pelt sometimes being invisible
-- Crashes
-- Offset Accessory Sprites (hopefully)
-
-Code Side:
-- Colors have been renamed in files to accurately reflect sprite sheets
+- Eyes, eye bag accessory, white patches, and tortie patches aren't offset anymore
+- Fixed a broken eye colour
+- Fixed an invisible pelt colour
+- The unlimited accessories setting is no longer irreversible
+- The search looks for the actual name of the accessory instead of the code name (now you can search "lizard" and actually see lizards)
+- Fixed duplicate accessories
+- Fixed some accessory names not displaying
+- Fixed some accessories being invisible
+- Fixed plains death events
+- Fixed mislabeled clan symbols
+- Fixed iggy pelt going out of lineart
+- Fixed several timeskip-related crashes
+- - Added a way to debug crashes related to timeskip events. If your game ever crashes on timeskip - please let us know!
 
 <strong>v1.6</strong>
 

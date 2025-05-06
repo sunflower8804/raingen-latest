@@ -410,14 +410,16 @@ class HandleShortEvents:
         if "VULTUREMASKS" in possible_accs:
             acc_list.extend(Pelt.vulturemasks)
         if "MORESPEARS" in possible_accs:
-            acc_list.extend(Pelt.vulturemasks)
+            acc_list.extend(Pelt.morespears)
         if "PONCHOACCS" in possible_accs:
             acc_list.extend(Pelt.ponchoaccs)
         if "GLASSESACCS" in possible_accs:
             acc_list.extend(Pelt.glassesaccs)
+        if "ITERATORMASKS" in possible_accs:
+            acc_list.extend(Pelt.iteratormasks)
 
         for acc in possible_accs:
-            if acc not in ["WILD", "PLANT", "COLLAR", "LIZARD", "HERBS2", "INSECTWINGS", "BUDDIES", "NEWACCS", "NEWACCS2", "BODYPAINT", "IMPLANT", "MAGIC", "NECKLACES", "DRAPERY", "PRIDEDRAPERY", "EYEPATCHES", "LARSACCS", "HARLEYACCS", "FEATHERBOAS", "SCARVES", "FLOATYEYES", "VULTUREMASKS", "MORESPEARS", "PONCHOACCS", "GLASSESACCS"]:
+            if acc not in ["WILD", "PLANT", "COLLAR", "LIZARD", "HERBS2", "INSECTWINGS", "BUDDIES", "NEWACCS", "NEWACCS2", "BODYPAINT", "IMPLANT", "MAGIC", "NECKLACES", "DRAPERY", "PRIDEDRAPERY", "EYEPATCHES", "LARSACCS", "HARLEYACCS", "FEATHERBOAS", "SCARVES", "FLOATYEYES", "VULTUREMASKS", "MORESPEARS", "PONCHOACCS", "GLASSESACCS", "ITERATORMASKS"]:
                 acc_list.append(acc)
 
         if hasattr(self.main_cat.pelt, "scars"):

@@ -88,17 +88,18 @@ class Pelt:
         'Dragonet': 'dragonet',
         'Salmon': 'salmon',
         'Lightecho': 'lightecho',
-        'Darkecho' : 'darkecho',
-        'Plantain' : 'plantain',
-        'Daenix' : 'daenix',
-        'Seltzer' : 'seltzer',
-        'Sworn' : 'sworn',
-        'Spooky' : 'spooky',
-        'Conure' : 'conure',
-        'Noble' : 'noble',
-        'Betta' : 'betta',
-        'Constellation' : 'constellation',
-        'Malibu' : 'malibu',
+        'Darkecho': 'darkecho',
+        'Plantain': 'plantain',
+        'Daenix': 'daenix',
+        'Seltzer': 'seltzer',
+        'Sworn': 'sworn',
+        'Spooky': 'spooky',
+        'Conure': 'conure',
+        'Noble': 'noble',
+        'Betta': 'betta',
+        'Constellation': 'constellation',
+        'Malibu': 'malibu',
+        'Clay': 'clay',
         'Tortie': None,
         'Calico': None,
     }
@@ -136,7 +137,7 @@ class Pelt:
                 'skeleton', 'shred', 'glowing', 'mold', 'swing', 'lovebird', 'budgie', 'amazon', 'apple', 'boba',
                 'glitter', 'ice', 'iggy', 'maned', 'patchwork', 'robot', 'sunken', 'tomo', 'whale', 'pidgeon', 'watermelon',
                 'dragonet', 'salmon', 'lightecho', 'darkecho', 'plantain', 'daenix', 'seltzer', 'sworn', 'spooky', 'conure', 
-                'noble', 'betta', 'constellation']
+                'noble', 'betta', 'constellation', 'malibu', 'clay']
 
     pelt_length = ["short", "medium", "long"]
     eye_colours = ['YELLOW', 'AMBER', 'HAZEL', 'PALEGREEN', 'GREEN', 'BLUE', 'DARKBLUE', 'GREY', 'CYAN', 'EMERALD', 'PALEBLUE', 
@@ -154,29 +155,32 @@ class Pelt:
         'SWAMPY', 'PORTALMAKER', 'PURIFIER', 'CORROSOL', 'SEVENSEVEN', 'ATLAN', 'BASIC', 'BELL', 'BIS', 'BIT',
         'CRITTER', 'CUBED', 'DIM', 'DOE', 'FREYR', 'GAMBLE', 'GORB', 'HERO', 'JANE', 'JOHN', 'MATT', 'MESS',
         'PE', 'POLE', 'RAT', 'RGB', 'ROT', 'SCRATCH', 'SHED', 'SIEGE', 'SPARK', 'SPARKLE', 'SUNSET', 'TELA',
-        'USURP', 'WAR', 'XIII']
+        'USURP', 'WAR', 'XIII', 
+        
+        'BUTCHER', 'DREAMER', 'FAKEGOLD', 'GREENDREAM', 'HEATSTROKE', 'VIBRANCY', 'SIGNAL', 'PURPLEDREAM', 
+        'NOVEMBER', 'LEADER']
     
     #do NOT add eyes with pupils here!!!! they go in yourcolour_pupil_eyes
-    yellow_eyes = ['YELLOW', 'AMBER', 'PALEYELLOW', 'GOLD', 'COPPER', 'GREENYELLOW', 'BRONZE', 'SILVER', 'ORANGE', 'CREAM', 'VOIDGOLD',
-                   'BROWNTBOI', 'ORANGETBOI', 'ACROAMBER', 'ACROGREY', 'FIRE', 
-                   #'REFORGED', 
-                   'PISTON', 'THEIFDOS', 'MORTICIAN', 'SWAMPY',
-                   'PURIFIER', 'CORROSOL', 
-                   #'ATLAN', 'BASIC', 'BELL', 'GAMBLE', 'GORB', 'POLE', 'SUNSET'
-                   ]
-    blue_eyes = ['BLUE', 'DARKBLUE', 'CYAN', 'PALEBLUE', 'HEATHERBLUE', 'COBALT', 'SUNLITICE', 'GREY', 'ELECTRICBLUE', 'SNOW', 'INDIGO',
-                 'ANGEL', 'ACROBLUE', 'ACROINDIGO', 'ESCAPEE', 'REJECT', 'WAYFARER', 'THEIF',
-                 #'PORTALMAKER', 'CRITTER', 'FREYR', 'JOHN','PE', 'RAT', 'TELA', 'USURP', 'WAR', 'XIII'
-                 ]
-    green_eyes = ['PALEGREEN', 'GREEN', 'EMERALD', 'SAGE', 'HAZEL', 'SEAFOAM', 'NAVY', 'MESS', 'ACROGREEN', 'ACROTEAL', 'EXILED', 
-                  #'CUBED', 'RGB', 'ROT'
-                 ]
-    red_eyes = ['RED', 'PURPLE', 'MAUVE', 'VIOLET', 'PINK', 'CRIMSON', 'COOLBROWN', 'PLUM', 'LILAC', 
-                'MINT', 'PEACH', 'ALBINO', 'DAWN', 'BREDTBOI', 'REDTBOI', 'ACROPINK', 'ACRORED', 'RUBY', 'RUBYAGAIN', 'FLORAVORE',
-                #'SEVENSEVEN', 'BIS', 'BIT', 'DIM', 'DOE', 
-                'HERO', 
-                #'JANE', 'MATT', 'MESS', 'SCRATCH', 'SHED', 'SIEGE', 'SPARK', 'SPARKLE'
-                ]
+    yellow_eyes = [
+        'YELLOW', 'AMBER', 'PALEYELLOW', 'GOLD', 'COPPER', 'GREENYELLOW', 'BRONZE', 'SILVER', 'ORANGE', 'CREAM', 'VOIDGOLD',
+        'BROWNTBOI', 'ORANGETBOI', 'ACROAMBER', 'ACROGREY', 'FIRE', 'PISTON', 'THEIFDOS', 'MORTICIAN', 'SWAMPY',
+        'PURIFIER', 'CORROSOL',
+        'BUTCHER', 'FAKEGOLD', 'HEATSTROKE', 'VIBRANCY'
+        ]
+    blue_eyes = [
+        'BLUE', 'DARKBLUE', 'CYAN', 'PALEBLUE', 'HEATHERBLUE', 'COBALT', 'SUNLITICE', 'GREY', 'ELECTRICBLUE', 'SNOW', 'INDIGO',
+        'ANGEL', 'ACROBLUE', 'ACROINDIGO', 'ESCAPEE', 'REJECT', 'WAYFARER', 'THEIF', 'GREENDREAM', 'SIGNAL', 'PURPLEDREAM',
+        'NOVEMBER'
+        ]
+    green_eyes = [
+        'PALEGREEN', 'GREEN', 'EMERALD', 'SAGE', 'HAZEL', 'SEAFOAM', 'NAVY', 'MESS', 'ACROGREEN', 'ACROTEAL', 'EXILED',
+        'DREAMER', 'LEADER'
+        ]
+    red_eyes = [
+        'RED', 'PURPLE', 'MAUVE', 'VIOLET', 'PINK', 'CRIMSON', 'COOLBROWN', 'PLUM', 'LILAC', 
+        'MINT', 'PEACH', 'ALBINO', 'DAWN', 'BREDTBOI', 'REDTBOI', 'ACROPINK', 'ACRORED', 'RUBY', 'RUBYAGAIN', 'FLORAVORE',
+        'HERO'
+        ]
     
     #when a scug has one eye with a pupil and one without it looks bad so please list all eyes with pupils
     pupil_eyes = ['ALBA', 'BANANA', 'CREAMY', 'KARMA', 'MHUNT', 'PEPPER', 'SPLIT', 'WINKS', 'ZENI', 'BEAST',
@@ -294,7 +298,7 @@ class Pelt:
               "BOTHBLIND", "BEAKCHEEK", "BEAKLOWER", "CATBITE", "RATBITE", "QUILLCHUNK", "QUILLSCRATCH", "HINDLEG",
               "BACK", "QUILLSIDE", "SCRATCHSIDE", "BEAKSIDE", "CATBITETWO", "LABRATFACE", "LABRATCHEST", 
               "NEUTRINO", "MANGLEDARM", "DOUBLEBITE", "DANGEROUS", "X-FACE", "VULTURESHOULDER", "CHEEKCUT", "MIROSNOM",
-              "SPEARWOUND"]
+              "SPEARWOUND", "TAIL", "SHOULDER", "EYE", "ARM"]
 
     # missing parts
     scars2 = ["LEFTEAR", "RIGHTEAR", "NOTAIL", "HALFTAIL", "NOPAW", "NOLEFTEAR", "NORIGHTEAR", "NOEAR"]
@@ -446,8 +450,8 @@ class Pelt:
         "GREENCHAIN", "REDCHAIN", "ORANGECHAIN", "BLUECHAIN", "BLACKCHAIN"
     ]
     newaccs3 = [
-        "FALLMPAINT", "SCAVMPAINT", "SPEARMPAINT", "BLUECLOUDS",
-        "YELLOWCLOUDS", "PURPLECLOUDS", "PINKCLOUDS", "GOGGLES",
+        "FALLMPAINT", "SCAVMPAINT", "SPEARMPAINT", "BLUECLOUDS", "RIBS",
+        "YELLOWCLOUDS", "PURPLECLOUDS", "PINKCLOUDS", "GOGGLES", "MODSPEAR",
         "PINKPOLEPLANTBUDDY", "ORANGEPOLEPLANTBUDDY", "REDPOLEPLANTBUDDY", "EYEBAGS",
         "MAGNATEJEWLERY", "YELLOWKARMAWREATH", "BLUEKARMAWREATH", "PURPLEKARMAWREATH",
         "MOTHBUDDY", "BOOMERANG", "MOTHBUDDYTWO", "MIST"
@@ -497,6 +501,10 @@ class Pelt:
         'VULTMASKONE', 'VULTMASKTWO', 'VULTMASK3', 'VULTMASK4', 'VULTMASK5', 'VULTMASK6', 'VULTMASK7', 'VULTMASK8',
         'VULTMASK9', 'VULTMASK10', 'VULTMASK11', 'VULTMASK12', 'VULTMASK13', 'VULTMASK14', 'VULTMASK15', 'VULTMASK16', 
         'VULTMASK17', 'VULTMASK18', 'VULTMASK19', 'VULTMASK20', 'VULTMASK21', 'VULTMASK22', 'VULTMASK23', 'VULTMASK24'
+    ]
+    iteratormasks = [
+        'BLUEITERATOR', 'BLACKITERATOR', 'GREENITERATOR', 'ORANGEITERATOR', 'PINKITERATOR', 'CYANITERATOR',
+        'PURPLEITERATOR', 'REDITERATOR', 'CREAMITERATOR', 'WHITEITERATOR', 'YELLOWITERATOR'
     ]
     
     #list for stuff that should logically be behind a long tongue
@@ -572,7 +580,7 @@ class Pelt:
     spotted = [
         "Speckled", "Rosette", "Gravel", "Banana", "Con", "Bengal", "Dreamer", "Oldgrowth", "Cherry",
         "Sparse", "Impish", "Ringed", "Mold", "Apple", "Glitter", "Whale", "Pidgeon", 
-        "Watermelon", "Lightecho", "Darkecho", "Salmon", "Plantain", "Malibu"
+        "Watermelon", "Lightecho", "Darkecho", "Salmon", "Plantain", "Malibu", "Clay"
     ]
     plain = [
         "SingleColour", "TwoColour", "Smoke", "Singlestripe", "Collared", "Lizard", "Slimemold",
@@ -580,9 +588,10 @@ class Pelt:
         "Sporty", "Skeleton", "Shred", "Robot", "Lantern"
     ]
     exotic = [
-        "Mackerel", "Cyanlizard", "Centipede", "Amoeba", "Seaslug", "Dragonfruit",
-        "Duskdawn", "Seer", "Wolf", "Sparklecat", "Hypnotist", "Fizzy", "Glowing", "Budgie", "Lovebird",
-        "Seltzer", "Amazon", "Boba", "Iggy", "Tomo", "Dragonet", "Conure", "Betta", "Patchwork"
+        "Mackerel", "Cyanlizard", "Centipede", "Amoeba", "Seaslug", "Dragonfruit", "Duskdawn", 
+        "Seer", "Wolf", "Sparklecat", "Hypnotist", "Fizzy", "Glowing", "Budgie", "Lovebird",
+        "Seltzer", "Amazon", "Boba", "Iggy", "Tomo", "Dragonet", "Conure", "Betta", "Patchwork", 
+        "Constellation"
     ]
     torties = ["Tortie", "Calico"]
     pelt_categories = [tabbies, spotted, plain, exotic, torties]
@@ -780,7 +789,7 @@ class Pelt:
         new_pelt.init_eyes(parents)
         new_pelt.init_pattern()
         new_pelt.init_tint()
-        new_pelt.common_patterns()
+        new_pelt.common_combinations()
 
         return new_pelt
 
@@ -1002,10 +1011,10 @@ class Pelt:
             for colour in colour_wheel[:]:
                 if self.eye_colour in colour:
                     colour_wheel.remove(colour) # removes the selected list from the options
-                    self.eye_colour2 = choice(choice(colour_wheel)) # choose from the remaining two lists
+                    self.eye_colour2 = choice(choice(colour_wheel)) # choose from the remaining 3 lists
                     break
 
-        elif self.eye_colour not in Pelt.riveye_colours and self.eye_colour not in Pelt.buttoneye_colours and self.eye_colour not in Pelt.bobaeye_colours and not random.randint(0, multieyenum):
+        elif 'MULTI'+self.eye_colour in Pelt.multi_eyes and not random.randint(0, multieyenum):
             self.eye_colour2 = 'MULTI'+self.eye_colour
 
     def pattern_color_inheritance(self, parents: tuple = (), gender="female"):
@@ -1624,8 +1633,8 @@ class Pelt:
         else:
             self.white_patches_tint = "none"
 
-    def common_patterns(self):
-        if not random.randint(0, game.config["cat_generation"]["common_patterns"]): #1/5
+    def common_combinations(self):
+        if int(game.config["cat_generation"]["common_combinations"]) and random.randint(1, game.config["cat_generation"]["common_combinations"]) == 1: #1/5 default
 
             if self.eye_colour in Pelt.riveye_colours:
                 fishy_features = [Pelt.gills, Pelt.lizardfins, Pelt.catfishwhiskers, Pelt.dragonwhiskers, Pelt.anglerfish]
@@ -1649,7 +1658,7 @@ class Pelt:
                 self.colour = "PURPLE"
                 print("FAMILIAR??!?!?")
 
-        if random.randrange(0, 9): #9/10
+        if int(game.config["cat_generation"]["most_common_combinations"]) and random.randint(1, game.config["cat_generation"]["most_common_combinations"]) == 1: #1/10 default
 
             if self.eye_colour in Pelt.buttoneye_colours and self.tortiepattern == None:
                 self.name = "Patchwork"
@@ -1659,7 +1668,7 @@ class Pelt:
                 self.white_patches = None
                 self.vitiligo = None
                 self.points = None
-                print("clear pattern")
+                print("clear pelt")
                 
     @property
     def white(self):

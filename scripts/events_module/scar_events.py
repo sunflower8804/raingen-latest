@@ -32,13 +32,14 @@ class Scar_Events():
         "ONE", "TWO", "SNOUT", "TAILSCAR", "CHEEK",
         "SIDE", "THROAT", "TAILBASE", "BELLY", "FACE",
         "BRIDGE", "HINDLEG", "BACK", "SCRATCHSIDE",
-        "LABRATFACE", "NEUTRINO", "ENVOYCHEST", "X-FACE"
+        "LABRATFACE", "NEUTRINO", "ENVOYCHEST", "X-FACE",
+        "TAIL", "SHOULDER", "EYE", "ARM"
     ]
     leg_scars = [
-        "NOPAW", "TOETRAP", "MANLEG", "FOUR", "MANGLEDARM"
+        "NOPAW", "TOETRAP", "MANLEG", "FOUR", "MANGLEDARM", "ARM"
     ]
     tail_scars = [
-        "TAILSCAR", "TAILBASE", "NOTAIL", "HALFTAIL", "MANTAIL"
+        "TAILSCAR", "TAILBASE", "NOTAIL", "HALFTAIL", "MANTAIL", "TAIL"
     ]
     ear_scars = [
         "LEFTEAR", "RIGHTEAR", 'NOLEFTEAR', 'NORIGHTEAR'
@@ -48,7 +49,7 @@ class Scar_Events():
         "FROSTFACE", "FROSTTAIL", "FROSTMITT", "FROSTSOCK"
     ]
     eye_scars = [
-        "THREE", "RIGHTBLIND", "LEFTBLIND", "BOTHBLIND"
+        "THREE", "RIGHTBLIND", "LEFTBLIND", "BOTHBLIND", "EYE"
     ]
     burn_scars = [
         "BRIGHTHEART", "BURNPAWS", "BURNTAIL", "BURNBELLY", "BURNRUMP",
@@ -68,7 +69,8 @@ class Scar_Events():
         "TWO", "TAILBASE", "BACK", "NEUTRINO"
     ]
     iterator_mangle = [
-        "VIVISECTION", "LABRATCHEST", "LABRATLIMBS", "DANGEROUS", "RESTITCHEDUPPER", "RESTITCHEDLOWER", "STITCHEDHEAD", "FULLBODYBURNS"
+        "VIVISECTION", "LABRATCHEST", "LABRATLIMBS", "DANGEROUS", 
+        "RESTITCHEDUPPER", "RESTITCHEDLOWER", "STITCHEDHEAD", "FULLBODYBURNS"
     ]
     iterator_extraction = [
         "CUTOPEN", "EXTRACTIONTWO", "MESSIAH", "ENVOYCHEST"

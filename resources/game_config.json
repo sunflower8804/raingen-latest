@@ -192,7 +192,13 @@
 		"wildcard_tortie": 9,
 		"vit_chance": 8,
 		"random_point_chance": 5,
-		"common_patterns": 4
+		"common_combinations": 5,
+		"most_common_combinations": 10,
+		"comment": [
+			"Higher numbers = smaller chances.",
+			"Except for most common combinations. Higher number = bigger chance.",
+			"Set common or most common combinations to 0 if you don't want them to appear."
+		]
 	},
 	"cat_name_controls": {
 		"always_name_after_appearance": false,

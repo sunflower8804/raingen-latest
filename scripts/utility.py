@@ -2897,7 +2897,10 @@ def generate_sprite(
                             new_sprite.blit(sprites.sprites['orbitals' + i + cat_sprite], (0, 0))
                         elif i in cat.pelt.morespears:
                             new_sprite.blit(sprites.sprites['morespears' + i + cat_sprite], (0, 0))
-                    #THIS SECTION ABOVE IS ONLY FOR CLOSE-TO-BODY ACCESSORIES
+                        elif i in cat.pelt.vulturemasks:
+                            new_sprite.blit(sprites.sprites['vulturemasks' + i + cat_sprite], (0, 0))
+                        elif i in cat.pelt.iteratormasks:
+                            new_sprite.blit(sprites.sprites['iteratormasks' + i + cat_sprite], (0, 0))
 
                     except:
                         continue
@@ -2997,6 +3000,8 @@ def generate_sprite(
                             new_sprite.blit(sprites.sprites['orbitals' + i + cat_sprite], (0, 0))
                         elif i in cat.pelt.vulturemasks:
                             new_sprite.blit(sprites.sprites['vulturemasks' + i + cat_sprite], (0, 0))
+                        elif i in cat.pelt.iteratormasks:
+                            new_sprite.blit(sprites.sprites['iteratormasks' + i + cat_sprite], (0, 0))
 
                     except:
                         continue
