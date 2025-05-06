@@ -81,6 +81,8 @@ class Scar_Events():
     rotrecovery_scars = [
         "ROTRIDDEN"
     ]
+    echo_scars = []
+    rift_scars = []
 
     scar_allowed = {
         "bite-wound": canid_scars,
@@ -102,7 +104,9 @@ class Scar_Events():
         "broken back": back_scars,
         "broken bone": bone_scars,
         "the rot": rot_scars,
-        "rot poisoning": rotrecovery_scars
+        "rot poisoning": rotrecovery_scars,
+        "void burn": echo_scars,
+        "rift warping": rift_scars
     }
 
     @staticmethod
@@ -123,6 +127,12 @@ class Scar_Events():
             chance += 2
 
         if injury_name == "rot poisoning":
+            chance -=1
+
+        if injury_name == "void burn":
+            chance -=1
+
+        if injury_name == "rift warping":
             chance -=1
 
         if len(cat.pelt.scars) < 4 and not int(random.random() * chance):
