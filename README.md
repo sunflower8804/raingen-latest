@@ -18,4 +18,4 @@ It's a standalone mod, which means it functions as a separate game from ClanGen 
 
 -----------------------------
 
-If you're a developer or a modder, you can open RainGen from source code. Works exactly the same as opening the source code version of ClanGen. [Here](https://github.com/ClanGenOfficial/clangen?tab=readme-ov-file#running-from-source) is a tutorial from ClanGen devs. If you're struggling to follow it, [here](https://docs.google.com/document/d/1Iakhi3sWnx9ubc3njK4k07xttQilN5W4WITgknla59Q/edit) is a more in-depth guide. The described process is for LifeGen, but it works for RainGen too.
+If you're a developer or a modder, you can open RainGen from source code. Works exactly the same as opening the source code version of ClanGen. [Here](https://github.com/ClanGenOfficial/clangen?tab=readme-ov-file#running-from-source) is a tutorial from ClanGen devs. If you struggle to follow it, [here](https://docs.google.com/document/d/1Iakhi3sWnx9ubc3njK4k07xttQilN5W4WITgknla59Q/edit) is a more in-depth guide. The described process is for LifeGen, but it works for RainGen too.
