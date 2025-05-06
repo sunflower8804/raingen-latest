@@ -10,5 +10,5 @@ timeout /t 5
 rmdir /s /q %arg1%
 robocopy /E ".\clangen_update" "%arg1%"
 echo "" > "%arg1%\auto-update"
-echo "%arg1%/Clangen.exe"
-"%arg1%/Clangen.exe"
+echo "%arg1%/Raingen.exe"
+"%arg1%/Raingen.exe"
