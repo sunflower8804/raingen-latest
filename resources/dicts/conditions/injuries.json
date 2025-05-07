@@ -1420,6 +1420,58 @@
             "poppy"
         ]
     },
+
+    "void burn": {
+        "duration": 4,
+        "severity": "major",
+        "medicine_duration": 3,
+        "mortality": {
+            "newborn": 10,
+            "kitten": 20,
+            "adolescent": 40,
+            "young adult": 50,
+            "adult": 50,
+            "senior adult": 50,
+            "senior": 45
+        },
+        "illness_infectiousness": [
+        ],
+        "risks": [
+        ],
+        "also_got": [
+        ],
+        "cause_permanent": [
+        ],
+        "herbs": [
+            "rosemary"
+        ]
+    },
+
+    "rift warping": {
+        "duration": 4,
+        "severity": "major",
+        "medicine_duration": 3,
+        "mortality": {
+            "newborn": 10,
+            "kitten": 20,
+            "adolescent": 40,
+            "young adult": 50,
+            "adult": 50,
+            "senior adult": 50,
+            "senior": 45
+        },
+        "illness_infectiousness": [
+        ],
+        "risks": [
+        ],
+        "also_got": [
+        ],
+        "cause_permanent": [
+        ],
+        "herbs": [
+            "rosemary"
+        ]
+    },
     
     "poisoned": {
         "duration": 2,
