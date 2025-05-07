@@ -74,12 +74,12 @@
         "m_c is no longer suffering from joint pain.",
         "m_c's joint pain is gone.",
         "m_c's joint pain is feeling much better.",
-      "m_c has recovered from {PRONOUN/m_c/poss} joint pain and is happy to be moving around pain-free."
+        "m_c has recovered from {PRONOUN/m_c/poss} joint pain and is happy to be moving around pain-free."
     ],
     "sprain": [
         "m_c's sprain has healed.",
         "m_c's sprain is feeling much better.",
-      "m_c can walk and move without pain - {PRONOUN/m_c/poss} sprain must have healed.",
+        "m_c can walk and move without pain - {PRONOUN/m_c/poss} sprain must have healed.",
         "m_c has recovered from {PRONOUN/m_c/poss} sprain."
     ],
     "mangled tail": [
@@ -98,7 +98,7 @@
     ],
     "bruises": [
         "m_c's bruises have healed.",
-      "m_c is feeling much better - {PRONOUN/m_c/poss} bruises are gone.",
+        "m_c is feeling much better - {PRONOUN/m_c/poss} bruises are gone.",
         "m_c's bruises are gone.",
         "m_c's bruises have disappeared.",
         "m_c is no longer bruised."
@@ -113,14 +113,14 @@
     "sore": [
         "m_c is no longer sore.",
         "m_c's soreness has abated.",
-      "m_c feels much better: {PRONOUN/m_c/poss} soreness is gone.",
+        "m_c feels much better: {PRONOUN/m_c/poss} soreness is gone.",
         "m_c's soreness is gone."
     ],
     "phantom pain": [
         "m_c's phantom pain has abated.",
         "m_c's phantom pain is gone.",
         "m_c's missing limb no longer hurts.",
-      "m_c feels much better: {PRONOUN/m_c/poss} missing limb no longer causing {PRONOUN/m_c/object} pain.",
+        "m_c feels much better: {PRONOUN/m_c/poss} missing limb no longer causing {PRONOUN/m_c/object} pain.",
         "m_c is relieved to find {PRONOUN/m_c/poss} phantom pain gone."
     ],
     "scrapes": [
@@ -223,6 +223,12 @@
     "broken back": [
       "m_c's broken back has healed. {PRONOUN/m_c/subject/CAP}{VERB/m_c/'ve/'s} made a full recovery against all odds.",
         "m_c is ecstatic to be walking around freely again, {PRONOUN/m_c/poss} broken back finally healed."
+    ],
+    "void burn": [
+        "m_c's will was strong enough to overcome the void's whispers, having recovered from {PRONOUN/m_c/poss} void fluid burn."
+    ],
+    "rift warping": [
+        "m_c's body has stopped warping and has returned to normal."
     ],
     "bee sting": [
         "m_c's bee sting is feeling all better."
