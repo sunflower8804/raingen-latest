@@ -9,7 +9,7 @@
         "m_c died from a spear-wound."
     ],
     "cat bite": [
-        "m_c died from a cat bite."
+        "m_c died from a slugcat bite."
     ],
     "beak bite": [
         "m_c died from a beak bite."
@@ -77,9 +77,15 @@
     "broken back": [
         "m_c couldn't survive {PRONOUN/m_c/poss} broken back."
     ],
+    "void burn": [
+        "m_c's will to overcome the promises of the void was not enough."
+    ],
+    "rift warping": [
+        "m_c's died from the warped state of {PRONOUN/m_c/poss} body."
+    ],
     "bee sting": [
         "m_c died from a bee sting.",
-        "m_c seemed to have a horrible reaction to {PRONOUN/m_c/poss} bee sting. Cats usually don't die from a sting, but it seems this time was different."
+        "m_c seemed to have a horrible reaction to {PRONOUN/m_c/poss} bee sting. Slugcats usually don't die from a sting, but it seems this time was different."
     ],
     "rot poisoning": [
         "m_c succumbed to rot poisoning."
