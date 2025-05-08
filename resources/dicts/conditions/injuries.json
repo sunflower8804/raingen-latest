@@ -1423,7 +1423,7 @@
 
     "void burn": {
         "duration": 4,
-        "severity": "major",
+        "severity": "severe",
         "medicine_duration": 3,
         "mortality": {
             "newborn": 10,
@@ -1451,7 +1451,7 @@
     },
     "rift warping": {
         "duration": 4,
-        "severity": "major",
+        "severity": "severe",
         "medicine_duration": 3,
         "mortality": {
             "newborn": 10,
