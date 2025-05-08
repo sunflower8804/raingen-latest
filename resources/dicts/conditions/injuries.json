@@ -1441,12 +1441,14 @@
         "also_got": [
         ],
         "cause_permanent": [
+            "partially echoed",
+            "echoed",
+            "persistent headaches"
         ],
         "herbs": [
             "rosemary"
         ]
     },
-
     "rift warping": {
         "duration": 4,
         "severity": "major",
