@@ -62,6 +62,10 @@
             {
                 "name": "headache",
                 "chance": 40
+            },
+            {
+                "name": "severe headache",
+                "chance": 70
             }
         ],
         "herbs": [
