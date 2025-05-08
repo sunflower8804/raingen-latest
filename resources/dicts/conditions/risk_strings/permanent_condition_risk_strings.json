@@ -145,5 +145,21 @@
             "m_c is distraught to find that infection has set in on {PRONOUN/m_c/poss} rot cysts.",
             "The wounds left by the rot cysts on m_c's back are becoming infected."
         ]
+    },
+    "partially echoed": {
+        "headache": [
+            "m_c is curled up in {PRONOUN/m_c/poss} nest today, the Void's whisperings giving {PRONOUN/m_c/object} a headache.",
+            "The whispers of the void are making m_c's head ache."
+        ]
+    },
+    "echoed": {
+        "headache": [
+            "m_c is curled up in {PRONOUN/m_c/poss} nest today, the Void's whisperings giving {PRONOUN/m_c/object} a headache.",
+            "The whispers of the void are making m_c's head ache."
+        ],
+        "severe headache": [
+            "m_c is seen shaking in {PRONOUN/m_c/poss} nest, the Void's whispers becoming screams, deafening out almost everything else, giving {PRONOUN/m_c/object} a severe headache.",
+            "The screams of the void are making m_c writhe in pain from {PRONOUN/m_c/poss} severe headache caused by them."
+        ]
     }
 }
