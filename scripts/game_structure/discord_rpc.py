@@ -18,7 +18,7 @@ status_dict = {
     "make clan screen": "Making a Clan",
     "mediation screen": "Mediating a dispute",
     "patrol screen": "On a patrol",
-    "profile screen": "Viewing a cat's profile",
+    "profile screen": "Viewing a slugcat's profile",
     "ceremony screen": "Holding a ceremony",
     "starclan screen": "Viewing the Void",
     "dark forest screen": "Viewing the RotWound",
@@ -103,7 +103,7 @@ class _DiscordRPC(threading.Thread):
                 print("Failed to get image string, game may not be fully loaded yet. "
                       "Don't worry, it will fix itself. Hopefully.")
                 img_str = "discord"  # fallback incase the game isn't loaded yet
-                img_text = "Clangen!!"
+                img_text = "Raingen!!"
 
             # Example: beach_greenleaf_camp1_dark
 
@@ -118,16 +118,16 @@ class _DiscordRPC(threading.Thread):
             try:
                 self._rpc.update(
                     state=state_text,
-                    details=f"Managing {clan_name} for {clan_age} moons",
+                    details=f"Managing {clan_name} for {clan_age} cycles",
                     large_image=img_str.lower(),
                     large_text=img_text,
                     small_image="discord",
-                    small_text=f"Managing {cats_amount} cats",
+                    small_text=f"Managing {cats_amount} slugcats",
                     start=self._start_time,
                     buttons=[
                         {
                             "label": "Join The Server",
-                            "url": "https://discord.gg/clangen",
+                            "url": "https://discord.gg/Fqdg6jev",
                         }
                     ],
                 )
