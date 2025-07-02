@@ -121,7 +121,16 @@ class Sprites:
 
         del width, height  # unneeded
 
-        for x in [
+        sprite_folders = [
+            'sprites/accs',
+            'sprites/eyes',
+            'sprites/lineart',
+            'sprites/parts',
+            'sprites/pelts',
+            'sprites'
+        ]
+
+        sprite_names = [
             'lineart', 'lineartdf', 'lineartdead',
             'eyes', 'eyes2', 
             'skin', 'gilltongue', 'beagilltongue', 'horns', 'fancyskin', 'whiskers', 'orbitals', 'datagamesstuff',
@@ -157,11 +166,25 @@ class Sprites:
             'whitepatches', 'tortiepatchesmasks',
             'fademask', 'fadestarclan', 'fadedarkforest',
             'symbols'
-        ]:
+        ]
+        
+        for x in sprite_names:
+            loaded = False
             if 'lineart' in x and game.config['fun']['april_fools']:
-                self.spritesheet(f"sprites/lineart/aprilfools{x}.png", x)
+                path = f"sprites/lineart/aprilfools{x}.png"
+                if os.path.exists(path):
+                    self.spritesheet(path, x)
+                    loaded = True
             else:
-                self.spritesheet(f"sprites/lineart/{x}.png", x)
+                for folder in sprite_folders:
+                    path = os.path.join(folder, f"{x}.png")
+                    if os.path.exists(path):
+                        self.spritesheet(path, x)
+                        loaded = True
+                        break 
+
+            if not loaded:
+                print(f"Warning: Sprite for '{x}' not found in any folder.")
 
         # Line art
         self.make_group('lineart', (0, 0), 'lines')
