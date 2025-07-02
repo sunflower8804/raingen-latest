@@ -104,7 +104,7 @@ class Sprites:
 
     def load_all(self):
         # get the width and height of the spritesheet
-        lineart = pygame.image.load('sprites/lineart.png')
+        lineart = pygame.image.load('sprites/lineart/lineart.png')
         width, height = lineart.get_size()
         del lineart  # unneeded
 
@@ -159,9 +159,13 @@ class Sprites:
             'symbols'
         ]:
             if 'lineart' in x and game.config['fun']['april_fools']:
-                self.spritesheet(f"sprites/aprilfools{x}.png", x)
+                self.spritesheet(f"sprites/lineart/aprilfools{x}.png", x)
             else:
-                self.spritesheet(f"sprites/{x}.png", x)
+                self.spritesheet(f"sprites/lineart/{x}.png", x)
+                self.spritesheet(f"sprites/accs/{x}.png", x)
+                self.spritesheet(f"sprites/eyes/{x}.png", x)
+                self.spritesheet(f"sprites/parts/{x}.png", x)
+                self.spritesheet(f"sprites/pelts/{x}.png", x)
 
         # Line art
         self.make_group('lineart', (0, 0), 'lines')
