@@ -1849,7 +1849,11 @@ class Pelt:
             'Betta' : 'c_n betta patterned',
             'Constellation' : 'c_n star patterned',
             'Malibu' : 'c_n speckled',
-            '
+            'Clay' : 'patchy c_n smoke',
+            'Antethisis': 'vibrant blotchy c_n',
+            'Citadel': 'banded c_n',
+            'Grave': 'patchily striped c_n',
+            'Interloper': 'vibrantly patched c_n',
         }
 
         # Start with determining the base color name
