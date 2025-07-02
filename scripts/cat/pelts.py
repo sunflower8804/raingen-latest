@@ -1661,6 +1661,20 @@ class Pelt:
                 self.name = "Centipede"
                 print("centipede spotted!!")
 
+            if self.skin in Pelt.overseertenna and self.tortiepattern == None:
+                self.name = "Iggy"
+                print("overseer spotted!!")
+
+            if self.skin in Pelt.manes and self.tortiepattern == None:
+                self.name = "Maned"
+                print("maned slugcat spotted!!")
+
+            if self.name == "Leafy" or self.tortiebase == "Leafy" and self.tortiepattern == "Leafy":
+                wing_options = [Pelt.wings, Pelt.whitefadewings, Pelt.colorwings]
+                wing_weights = [50, 40, 10]
+                self.skin = choice(random.choices(wing_options, wing_weights, k=1)[0])
+                print("winged slugcat spotted!!")
+
             if self.name == "Fluffy" or self.tortiebase == "Fluffy" and self.tortiepattern == "Fluffy":
                 self.skin = choice(Pelt.tongues + Pelt.claws + Pelt.whiskers)
                 print("cat spotted!!")
@@ -1834,7 +1848,8 @@ class Pelt:
             'Noble' : 'c_n patchy tabby',
             'Betta' : 'c_n betta patterned',
             'Constellation' : 'c_n star patterned',
-            'Malibu' : 'c_n speckled'
+            'Malibu' : 'c_n speckled',
+            '
         }
 
         # Start with determining the base color name
