@@ -100,6 +100,10 @@ class Pelt:
         'Constellation': 'constellation',
         'Malibu': 'malibu',
         'Clay': 'clay',
+        'Antethisis': 'antethisis',
+        'Citadel': 'citadel',
+        'Grave': 'grave',
+        'Interloper': 'interloper',
         'Tortie': None,
         'Calico': None,
     }
@@ -691,11 +695,22 @@ class Pelt:
     stinger = ['BLACKSTINGER', 'GREYSTINGER', 'WHITESTINGER', 'GOLDSTINGER']
     dropwig = ['PURPLEDROPWIG', 'GREENDROPWIG', 'BLUEDROPWIG']
     #'BLACKSTINGER', 'GREYSTINGER', 'WHITESTINGER', 'GOLDSTINGER', 'PURPLEDROPWIG', 'GREENDROPWIG', 'BLUEDROPWIG'
+    manes = ['DARKBROWNMANE', 'CHOCOLATEMANE', 'GOLDENMANE', 'BLONDMANE', 'GINGERMANE', 'SILVERMANE']
+    overseertenna = ['WHITEOVERSEERTENNA', 'SKYOVERSEERTENNA', 'BLUEOVERSEERTENNA', 'INDIGOOVERSEERTENNA', 'PURPLEOVERSEERTENNA', 'GHOSTOVERSEERTENNA', 'BLACKOVERSEERTENNA', 'CREAMOVERSEERTENNA', 'YELLOWOVERSEERTENNA', 'ORANGEOVERSEERTENNA', 'SCARLETOVERSEERTENNA', 'REDOVERSEERTENNA', 'PINKOVERSEERTENNA', 'MINTOVERSEERTENNA', 'LIMEOVERSEERTENNA', 'GREENOVERSEERTENNA', 'MAROONOVERSEERTENNA', 'PERIWINKLEOVERSEERTENNA', 'LAVENDEROVERSEERTENNA']
+    budgiewings = ['WHITEBUDGIEWINGS', 'SKYBUDGIEWINGS', 'BLUEBUDGIEWINGS', 'INDIGOBUDGIEWINGS', 'PURPLEBUDGIEWINGS', 'GHOSTBUDGIEWINGS', 'BLACKBUDGIEWINGS', 'CREAMBUDGIEWINGS', 'YELLOWBUDGIEWINGS', 'ORANGEBUDGIEWINGS', 'SCARLETBUDGIEWINGS', 'REDBUDGIEWINGS', 'PINKBUDGIEWINGS', 'MINTBUDGIEWINGS', 'LIMEBUDGIEWINGS', 'GREENBUDGIEWINGS', 'MAROONBUDGIEWINGS', 'PERIWINKLEBUDGIEWINGS', 'LAVENDERBUDGIEWINGS']
+    conurewings = ['WHITECONUREWINGS', 'SKYCONUREWINGS', 'BLUECONUREWINGS', 'INDIGOCONUREWINGS', 'PURPLECONUREWINGS', 'GHOSTCONUREWINGS', 'BLACKCONUREWINGS', 'CREAMCONUREWINGS', 'YELLOWCONUREWINGS', 'ORANGECONUREWINGS', 'SCARLETCONUREWINGS', 'REDCONUREWINGS', 'PINKCONUREWINGS', 'MINTCONUREWINGS', 'LIMECONUREWINGS', 'GREENCONUREWINGS', 'MAROONCONUREWINGS', 'PERIWINKLECONUREWINGS', 'LAVENDERCONUREWINGS']
+    lovebirdwings = ['WHITELOVEBIRDWINGS', 'SKYLOVEBIRDWINGS', 'BLUELOVEBIRDWINGS', 'INDIGOLOVEBIRDWINGS', 'PURPLELOVEBIRDWINGS', 'GHOSTLOVEBIRDWINGS', 'BLACKLOVEBIRDWINGS', 'CREAMLOVEBIRDWINGS', 'YELLOWLOVEBIRDWINGS', 'ORANGELOVEBIRDWINGS', 'SCARLETLOVEBIRDWINGS', 'REDLOVEBIRDWINGS', 'PINKLOVEBIRDWINGS', 'MINTLOVEBIRDWINGS', 'LIMELOVEBIRDWINGS', 'GREENLOVEBIRDWINGS', 'MAROONLOVEBIRDWINGS', 'PERIWINKLELOVEBIRDWINGS', 'LAVENDERLOVEBIRDWINGS']
+    pidgeonwings = ['WHITEPIDGEONWINGS', 'SKYPIDGEONWINGS', 'BLUEPIDGEONWINGS', 'INDIGOPIDGEONWINGS', 'PURPLEPIDGEONWINGS', 'GHOSTPIDGEONWINGS', 'BLACKPIDGEONWINGS', 'CREAMPIDGEONWINGS', 'YELLOWPIDGEONWINGS', 'ORANGEPIDGEONWINGS', 'SCARLETPIDGEONWINGS', 'REDPIDGEONWINGS', 'PINKPIDGEONWINGS', 'MINTPIDGEONWINGS', 'LIMEPIDGEONWINGS', 'GREENPIDGEONWINGS', 'MAROONPIDGEONWINGS', 'PERIWINKLEPIDGEONWINGS', 'LAVENDERPIDGEONWINGS']
+    vulturewings = ['WHITEVULTUREWINGS', 'SKYVULTUREWINGS', 'BLUEVULTUREWINGS', 'INDIGOVULTUREWINGS', 'PURPLEVULTUREWINGS', 'GHOSTVULTUREWINGS', 'BLACKVULTUREWINGS', 'CREAMVULTUREWINGS', 'YELLOWVULTUREWINGS', 'ORANGEVULTUREWINGS', 'SCARLETVULTUREWINGS', 'REDVULTUREWINGS', 'PINKVULTUREWINGS', 'MINTVULTUREWINGS', 'LIMEVULTUREWINGS', 'GREENVULTUREWINGS', 'MAROONVULTUREWINGS', 'PERIWINKLEVULTUREWINGS', 'LAVENDERVULTUREWINGS']
+    colorwings = ['WATCHERWINGS', 'ARTIFICERWINGS', 'HUNTERWINGS', 'SAINTWINGS', 'RIVULETWINGS', 'SPEARMASTERWINGS', 'GOURMANDWINGS']
+    whitefadewings = ['WHITEWINGSFADE', 'DARKCREAMWINGSFADE', 'CREAMWINGSFADE', 'OFFWHITEWINGSFADE', 'GRAYWINGSFADE', 'PINKWINGSFADE', 'BLACKWINGSFADE', 'POWDERBLUEWINGSFADE', 'SPLASHWINGSFADE', 'PURPLEWINGSFADE', 'BLACKBERRYWINGSFADE', 'SANDWINGSFADE', 'CLAYWINGSFADE', 'BRICKWINGSFADE', 'SALMONWINGSFADE', 'SEAFOAMWINGSFADE', 'MINTWINGSFADE', 'EVERGREENWINGSFADE', 'CRANBERRYWINGSFADEfade', 'PEARLWINGSFADE', 'ORCHIDWINGSFADE', 'RUBYWINGSFADE', 'CORALWINGSFADE', 'TANWINGSFADE', 'LEMONWINGSFADE', 'CLOVERWINGSFADE', 'CYANWINGSFADE', 'VIOLETWINGSFADE', 'GOLDENWINGSFADE']
+    wings = ['WHITEWINGS', 'DARKCREAMWINGS', 'CREAMWINGS', 'OFFWHITEWINGS', 'GRAYWINGS', 'PINKWINGS', 'BLACKWINGS', 'POWDERBLUEWINGS', 'SPLASHWINGS', 'PURPLEWINGS', 'BLACKBERRYWINGS', 'SANDWINGS', 'CLAYWINGS', 'BRICKWINGS', 'SALMONWINGS', 'SEAFOAMWINGS', 'MINTWINGS', 'EVERGREENWINGS', 'CRANBERRYWINGS', 'PEARLWINGS', 'ORCHIDWINGS', 'RUBYWINGS', 'CORALWINGS', 'TANWINGS', 'LEMONWINGS', 'CLOVERWINGS', 'CYANWINGS', 'VIOLETWINGS', 'GOLDENWINGS']
     skin_categories = [
         empty, claws, whiskers, antennae, sharphorns, ramhorns, scavhorns, elitehorns, unihorns, antlers, 
         dragonhorns, moth, seaslugpapillae, tailfrills, thorns, glowspots, gills, tongues, lizardneedles, spikes, 
         lizardfins, catfishwhiskers, dragonwhiskers, quills, centipedegrowths, stinger, anglerfish, spearholes, cyanfeatures, cyanwings, 
-        firebugpart, seaangelwings, loach, dropwig, glassback, grasssheepback, familiar, acrotail, tears
+        firebugpart, seaangelwings, loach, dropwig, glassback, grasssheepback, familiar, acrotail, tears, manes, overseertenna, budgiewings,
+        conurewings, lovebirdwings, pidgeonwings, pidgeonwings, vulturewing, colorwings, whitefadewings, wings
         ]
     
     #list for stuff that should logically be behind a cloak
@@ -1653,6 +1668,22 @@ class Pelt:
             if self.name == "Seaslug" or self.tortiebase == "Seaslug" and self.tortiepattern == "Seaslug":
                 self.skin = choice(Pelt.glowspots + Pelt.seaslugpapillae)
                 print("sea slug spotted!!")
+
+            if self.name == "Pidgeon" or self.tortiebase == "Pidgeon" and self.tortiepattern == "Pidgeon":
+                self.skin = choice(Pelt.pidgeonwings)
+                print("Pidgeon spotted!!")
+
+            if self.name == "Conure" or self.tortiebase == "Conure" and self.tortiepattern == "Conure":
+                self.skin = choice(Pelt.conurewings)
+                print("Conure spotted!!")
+
+            if self.name == "Lovebird" or self.tortiebase == "Lovebird" and self.tortiepattern == "Lovebird":
+                self.skin = choice(Pelt.lovebirdwings)
+                print("Lovebird spotted!!")
+
+            if self.name == "Budgie" or self.tortiebase == "Budgie" and self.tortiepattern == "Budgie":
+                self.skin = choice(Pelt.budgiewings)
+                print("Budgie spotted!!")
         
             if self.skin in Pelt.familiar:
                 self.colour = "PURPLE"
