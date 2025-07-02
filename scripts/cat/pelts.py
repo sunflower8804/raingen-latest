@@ -710,7 +710,7 @@ class Pelt:
         dragonhorns, moth, seaslugpapillae, tailfrills, thorns, glowspots, gills, tongues, lizardneedles, spikes, 
         lizardfins, catfishwhiskers, dragonwhiskers, quills, centipedegrowths, stinger, anglerfish, spearholes, cyanfeatures, cyanwings, 
         firebugpart, seaangelwings, loach, dropwig, glassback, grasssheepback, familiar, acrotail, tears, manes, overseertenna, budgiewings,
-        conurewings, lovebirdwings, pidgeonwings, pidgeonwings, vulturewing, colorwings, whitefadewings, wings
+        conurewings, lovebirdwings, pidgeonwings, vulturewing, colorwings, whitefadewings, wings
         ]
     
     #list for stuff that should logically be behind a cloak
