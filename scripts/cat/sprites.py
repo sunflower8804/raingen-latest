@@ -162,10 +162,6 @@ class Sprites:
                 self.spritesheet(f"sprites/lineart/aprilfools{x}.png", x)
             else:
                 self.spritesheet(f"sprites/lineart/{x}.png", x)
-                self.spritesheet(f"sprites/accs/{x}.png", x)
-                self.spritesheet(f"sprites/eyes/{x}.png", x)
-                self.spritesheet(f"sprites/parts/{x}.png", x)
-                self.spritesheet(f"sprites/pelts/{x}.png", x)
 
         # Line art
         self.make_group('lineart', (0, 0), 'lines')
