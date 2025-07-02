@@ -7,7 +7,7 @@ Added:
 - Pelts:
 - - Citadel, and Grave by Foxett
 - - Interloper, and Anethisis by Wildy
-- 3 New conditions with scars to go alongside them
+HEAVY WIP - 3 New conditions with scars to go alongside them
 - Redo of sprite code (better organized files)
 
 <strong>v1.7</strong>
