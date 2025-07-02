@@ -1,4 +1,14 @@
 <strong>Dev Version</strong>
+Added:
+- Features:
+- - Wings by Foxett and Wildy
+- - Manes by Foxett
+- - Overseertenna by Foxett
+- Pelts:
+- - Citadel, and Grave by Foxett
+- - Interloper, and Anethisis by Wildy
+- 3 New conditions
+- Redo of sprite code (better organized files)
 
 <strong>v1.7</strong>
 Added:
