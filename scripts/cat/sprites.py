@@ -134,6 +134,8 @@ class Sprites:
             'lineart', 'lineartdf', 'lineartdead',
             'eyes', 'eyes2', 
             'skin', 'gilltongue', 'beagilltongue', 'horns', 'fancyskin', 'whiskers', 'orbitals', 'datagamesstuff',
+            'budgiewings', 'colorwings', 'conurewings', 'lovebirdwings', 'manes', 'overseertenna', 'pidgeonwings',
+            'vulturewings', 'whitepatchwings', 'whitepatchwingsfade',
             'scars', 'missingscars',
             'medcatherbs',
             'collars', 'bellcollars', 'bowcollars', 'nyloncollars', 'rwlizards', 'drones', 'muddypaws', 
@@ -158,7 +160,8 @@ class Sprites:
             'sunkencolours', 'tomocolours', 'whalecolours', 'pidgeoncolours', 'watermeloncolours',
             'dragonetcolours', 'salmoncolours', 'darkechocolours', 'lightechocolours', 'plantaincolours',
             'daenixcolours', 'seltzercolours', 'sworncolours', 'spookycolours', 'conurecolours', 'noblecolours',
-            'bettacolours', 'constellationcolours', 'malibucolours', 'claycolours',
+            'bettacolours', 'constellationcolours', 'malibucolours', 'claycolours', 'antethisiscolours',
+            'citadelcolours', 'gravecolours', 'interlopercolours',
             'raineyes', 'raineyes2', 'multieyes', 'multiraineyes', 'larseyes', 'multilarseyes', 'larseyes2', 
             'rivuleteyes', 'rivuleteyes2', 'buttoneyes', 'buttoneyes2', 'bobaeyes', 'bobaeyes2', 'bobaeyeslars',
             'bobaeyeslars2',
@@ -500,7 +503,8 @@ class Sprites:
             'sunkencolours', 'tomocolours', 'whalecolours', 'pidgeoncolours', 'watermeloncolours',
             'dragonetcolours', 'salmoncolours', 'darkechocolours', 'lightechocolours', 'plantaincolours',
             'daenixcolours', 'seltzercolours', 'sworncolours', 'spookycolours', 'conurecolours', 'noblecolours',
-            'bettacolours', 'constellationcolours', 'malibucolours', 'claycolours'
+            'bettacolours', 'constellationcolours', 'malibucolours', 'claycolours', 'antethisiscolours',
+            'citadelcolours', 'gravecolours', 'interlopercolours'
         ]
 
         for row, colors in enumerate(color_categories):
@@ -607,6 +611,89 @@ class Sprites:
         for a, i in enumerate(['BLUESPIKES', 'PURPLESPIKES', 'PINKSPIKES', 'REDSPIKES', 'ORANGESPIKES']):
             self.make_group('datagamesstuff', (a, 3), f"skin{i}")
 
+        # manes spritesheet
+        for a, i in enumerate(['DARKBROWNMANE', 'CHOCOLATEMANE', 'GOLDENMANE']):
+            self.make_group('manes', (a, 0), f"skin{i}")
+        for a, i in enumerate(['BLONDMANE', 'GINGERMANE', 'SILVERMANE']):
+            self.make_group('manes', (a, 1), f"skin{i}")
+
+        # overseertenna spritesheet
+        for a, i in enumerate(['WHITEOVERSEERTENNA', 'SKYOVERSEERTENNA', 'BLUEOVERSEERTENNA', 'INDIGOOVERSEERTENNA', 'PURPLEOVERSEERTENNA', 'GHOSTOVERSEERTENNA', 'BLACKOVERSEERTENNA']):
+            self.make_group('overseertenna', (a, 0), f"skin{i}")
+        for a, i in enumerate(['CREAMOVERSEERTENNA', 'YELLOWOVERSEERTENNA', 'ORANGEOVERSEERTENNA', 'SCARLETOVERSEERTENNA', 'REDOVERSEERTENNA', 'PINKOVERSEERTENNA']):
+            self.make_group('overseertenna', (a, 1), f"skin{i}")
+        for a, i in enumerate(['MINTOVERSEERTENNA', 'LIMEOVERSEERTENNA', 'GREENOVERSEERTENNA', 'MAROONOVERSEERTENNA', 'PERIWINKLEOVERSEERTENNA', 'LAVENDEROVERSEERTENNA']):
+            self.make_group('overseertenna', (a, 2), f"skin{i}")
+
+        # budgiewings spritesheet
+        for a, i in enumerate(['WHITEBUDGIEWINGS', 'SKYBUDGIEWINGS', 'BLUEBUDGIEWINGS', 'INDIGOBUDGIEWINGS', 'PURPLEBUDGIEWINGS', 'GHOSTBUDGIEWINGS', 'BLACKBUDGIEWINGS']):
+            self.make_group('budgiewings', (a, 0), f"skin{i}")
+        for a, i in enumerate(['CREAMBUDGIEWINGS', 'YELLOWBUDGIEWINGS', 'ORANGEBUDGIEWINGS', 'SCARLETBUDGIEWINGS', 'REDBUDGIEWINGS', 'PINKBUDGIEWINGS']):
+            self.make_group('budgiewings', (a, 1), f"skin{i}")
+        for a, i in enumerate(['MINTBUDGIEWINGS', 'LIMEBUDGIEWINGS', 'GREENBUDGIEWINGS', 'MAROONBUDGIEWINGS', 'PERIWINKLEBUDGIEWINGS', 'LAVENDERBUDGIEWINGS']):
+            self.make_group('budgiewings', (a, 2), f"skin{i}")
+
+        # conurewings spritesheet
+        for a, i in enumerate(['WHITECONUREWINGS', 'SKYCONUREWINGS', 'BLUECONUREWINGS', 'INDIGOCONUREWINGS', 'PURPLECONUREWINGS', 'GHOSTCONUREWINGS', 'BLACKCONUREWINGS']):
+            self.make_group('conurewings', (a, 0), f"skin{i}")
+        for a, i in enumerate(['CREAMCONUREWINGS', 'YELLOWCONUREWINGS', 'ORANGECONUREWINGS', 'SCARLETCONUREWINGS', 'REDCONUREWINGS', 'PINKCONUREWINGS']):
+            self.make_group('conurewings', (a, 1), f"skin{i}")
+        for a, i in enumerate(['MINTCONUREWINGS', 'LIMECONUREWINGS', 'GREENCONUREWINGS', 'MAROONCONUREWINGS', 'PERIWINKLECONUREWINGS', 'LAVENDERCONUREWINGS']):
+            self.make_group('conurewings', (a, 2), f"skin{i}")
+
+        # lovebirdwings spritesheet
+        for a, i in enumerate(['WHITELOVEBIRDWINGS', 'SKYLOVEBIRDWINGS', 'BLUELOVEBIRDWINGS', 'INDIGOLOVEBIRDWINGS', 'PURPLELOVEBIRDWINGS', 'GHOSTLOVEBIRDWINGS', 'BLACKLOVEBIRDWINGS']):
+            self.make_group('lovebirdwings', (a, 0), f"skin{i}")
+        for a, i in enumerate(['CREAMLOVEBIRDWINGS', 'YELLOWLOVEBIRDWINGS', 'ORANGELOVEBIRDWINGS', 'SCARLETLOVEBIRDWINGS', 'REDLOVEBIRDWINGS', 'PINKLOVEBIRDWINGS']):
+            self.make_group('lovebirdwings', (a, 1), f"skin{i}")
+        for a, i in enumerate(['MINTLOVEBIRDWINGS', 'LIMELOVEBIRDWINGS', 'GREENLOVEBIRDWINGS', 'MAROONLOVEBIRDWINGS', 'PERIWINKLELOVEBIRDWINGS', 'LAVENDERLOVEBIRDWINGS']):
+            self.make_group('lovebirdwings', (a, 2), f"skin{i}")
+
+        # pidgeonwings spritesheet
+        for a, i in enumerate(['WHITEPIDGEONWINGS', 'SKYPIDGEONWINGS', 'BLUEPIDGEONWINGS', 'INDIGOPIDGEONWINGS', 'PURPLEPIDGEONWINGS', 'GHOSTPIDGEONWINGS', 'BLACKPIDGEONWINGS']):
+            self.make_group('pidgeonwings', (a, 0), f"skin{i}")
+        for a, i in enumerate(['CREAMPIDGEONWINGS', 'YELLOWPIDGEONWINGS', 'ORANGEPIDGEONWINGS', 'SCARLETPIDGEONWINGS', 'REDPIDGEONWINGS', 'PINKPIDGEONWINGS']):
+            self.make_group('pidgeonwings', (a, 1), f"skin{i}")
+        for a, i in enumerate(['MINTPIDGEONWINGS', 'LIMEPIDGEONWINGS', 'GREENPIDGEONWINGS', 'MAROONPIDGEONWINGS', 'PERIWINKLEPIDGEONWINGS', 'LAVENDERPIDGEONWINGS']):
+            self.make_group('pidgeonwings', (a, 2), f"skin{i}")
+
+        # vulturewings spritesheet
+        for a, i in enumerate(['WHITEVULTUREWINGS', 'SKYVULTUREWINGS', 'BLUEVULTUREWINGS', 'INDIGOVULTUREWINGS', 'PURPLEVULTUREWINGS', 'GHOSTVULTUREWINGS', 'BLACKVULTUREWINGS']):
+            self.make_group('vulturewings', (a, 0), f"skin{i}")
+        for a, i in enumerate(['CREAMVULTUREWINGS', 'YELLOWVULTUREWINGS', 'ORANGEVULTUREWINGS', 'SCARLETVULTUREWINGS', 'REDVULTUREWINGS', 'PINKVULTUREWINGS']):
+            self.make_group('vulturewings', (a, 1), f"skin{i}")
+        for a, i in enumerate(['MINTVULTUREWINGS', 'LIMEVULTUREWINGS', 'GREENVULTUREWINGS', 'MAROONVULTUREWINGS', 'PERIWINKLEVULTUREWINGS', 'LAVENDERVULTUREWINGS']):
+            self.make_group('vulturewings', (a, 2), f"skin{i}")
+
+        # colorwings spritesheet
+        for a, i in enumerate(['WATCHERWINGS', 'ARTIFICERWINGS', 'HUNTERWINGS', 'SAINTWINGS']):
+            self.make_group('colorwings', (a, 0), f"skin{i}")
+        for a, i in enumerate(['RIVULETWINGS', 'SPEARMASTERWINGS', 'GOURMANDWINGS']):
+            self.make_group('colorwings', (a, 1), f"skin{i}")
+
+        # whitepatchwings spritesheet
+        for a, i in enumerate(['WHITEWINGS', 'DARKCREAMWINGS', 'CREAMWINGS', 'OFFWHITEWINGS', 'GRAYWINGS', 'PINKWINGS']):
+            self.make_group('whitepatchwings', (a, 0), f"skin{i}")
+        for a, i in enumerate(['BLACKWINGS', 'POWDERBLUEWINGS', 'SPLASHWINGS', 'PURPLEWINGS', 'BLACKBERRYWINGS', 'SANDWINGS']):
+            self.make_group('whitepatchwings', (a, 1), f"skin{i}")
+        for a, i in enumerate(['CLAYWINGS', 'BRICKWINGS', 'SALMONWINGS', 'SEAFOAMWINGS', 'MINTWINGS', 'EVERGREENWINGS']):
+            self.make_group('whitepatchwings', (a, 2), f"skin{i}")
+        for a, i in enumerate(['CRANBERRYWINGS', 'PEARLWINGS', 'ORCHIDWINGS', 'RUBYWINGS', 'CORALWINGS', 'TANWINGS']):
+            self.make_group('whitepatchwings', (a, 3), f"skin{i}")
+        for a, i in enumerate(['LEMONWINGS', 'CLOVERWINGS', 'CYANWINGS', 'VIOLETWINGS', 'GOLDENWINGS']):
+            self.make_group('whitepatchwings', (a, 4), f"skin{i}")
+
+        # whitepatchwingsfade spritesheet
+        for a, i in enumerate(['WHITEWINGSFADE', 'DARKCREAMWINGSFADE', 'CREAMWINGSFADE', 'OFFWHITEWINGSFADE', 'GRAYWINGSFADE', 'PINKWINGSFADE']):
+            self.make_group('whitepatchwingsfade', (a, 0), f"skin{i}")
+        for a, i in enumerate(['BLACKWINGSFADE', 'POWDERBLUEWINGSFADE', 'SPLASHWINGSFADE', 'PURPLEWINGSFADE', 'BLACKBERRYWINGSFADE', 'SANDWINGSFADE']):
+            self.make_group('whitepatchwingsfade', (a, 1), f"skin{i}")
+        for a, i in enumerate(['CLAYWINGSFADE', 'BRICKWINGSFADE', 'SALMONWINGSFADE', 'SEAFOAMWINGSFADE', 'MINTWINGSFADE', 'EVERGREENWINGSFADE']):
+            self.make_group('whitepatchwingsfade', (a, 2), f"skin{i}")
+        for a, i in enumerate(['CRANBERRYWINGSFADEfade', 'PEARLWINGSFADE', 'ORCHIDWINGSFADE', 'RUBYWINGSFADE', 'CORALWINGSFADE', 'TANWINGSFADE']):
+            self.make_group('whitepatchwingsfade', (a, 3), f"skin{i}")
+        for a, i in enumerate(['LEMONWINGSFADE', 'CLOVERWINGSFADE', 'CYANWINGSFADE', 'VIOLETWINGSFADE', 'GOLDENWINGSFADE']):
+            self.make_group('whitepatchwingsfade', (a, 4), f"skin{i}")
 
         self.load_scars()
         self.load_symbols()
@@ -911,6 +998,7 @@ class Sprites:
         for row, nyloncollars in enumerate(nyloncollars_data):
             for col, nyloncollar in enumerate(nyloncollars):
                 self.make_group('nyloncollars', (col, row), f'collars{nyloncollar}')
+                
         # rw lizards     
         for a, i in enumerate(
                 ["BLUESKY", "BLUESEA", "PINKMAGENTA", "PINKPURPLE", "GREENEMERALD", "GREENLIME", "WHITEHIDDEN", "WHITEREVEALED", "BLACKNEUTRAL", "BLACKALERT"]):
