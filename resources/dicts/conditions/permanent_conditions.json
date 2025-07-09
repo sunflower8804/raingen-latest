@@ -18,6 +18,60 @@
         ],
         "herbs": []
     },
+    "partially echoed": {
+        "severity": "major",
+        "congenital": "never",
+        "moons_until": 0,
+        "mortality": {
+            "newborn": 0,
+            "kitten": 0,
+            "adolescent": 0,
+            "young adult": 0,
+            "adult": 0,
+            "senior adult": 0,
+            "senior": 0
+        },
+        "illness_infectiousness": [
+        ],
+        "risks": [
+            {
+                "name": "headache",
+                "chance": 70
+            }
+        ],
+        "herbs": [
+            "rosemary"
+        ]
+    },
+    "echoed": {
+        "severity": "major",
+        "congenital": "never",
+        "moons_until": 0,
+        "mortality": {
+            "newborn": 0,
+            "kitten": 0,
+            "adolescent": 0,
+            "young adult": 0,
+            "adult": 0,
+            "senior adult": 0,
+            "senior": 0
+        },
+        "illness_infectiousness": [
+        ],
+        "risks": [
+            {
+                "name": "headache",
+                "chance": 40
+            },
+            {
+                "name": "severe headache",
+                "chance": 70
+            }
+        ],
+        "herbs": [
+            "rosemary"
+        ]
+    },
     "lost a leg": {
         "severity": "major",
         "congenital": "never",

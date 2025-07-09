@@ -970,7 +970,7 @@ class Condition_Events:
                     if cat.age == "adolescent":
                         event = (
                             f"{cat.name} decides they'd rather spend their time helping around camp and entertaining the "
-                            f"kits, they're warmly welcomed into the elders' den."
+                            f"pups, they're warmly welcomed into the elders' den."
                         )
                     elif game.clan.leader is not None:
                         if (
@@ -981,7 +981,7 @@ class Condition_Events:
                         ):
                             retire_involved.append(game.clan.leader.ID)
                             event = (
-                                f"{game.clan.leader.name}, seeing {cat.name} struggling the last few moons "
+                                f"{game.clan.leader.name}, seeing {cat.name} struggling the last few cycles "
                                 f"approaches them and promises them that no one would think less of them for "
                                 f"retiring early and that they would still be a valuable member of the Clan "
                                 f"as an elder. {cat.name} agrees and later that day their elder ceremony "

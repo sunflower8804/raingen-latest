@@ -239,6 +239,16 @@
             "m_c continues to do {PRONOUN/m_c/poss} exercises dutifully, hoping beyond hope that someday it will pay off. For now though, {PRONOUN/m_c/subject} {VERB/m_c/know/knows} this paralysis is {PRONOUN/m_c/poss} new reality."
         ]
     },
+    "void burn": {
+        "partially echoed": [
+            "r_c looks at m_c with deep worry, the void burn may have healed, but {PRONOUN/m_c/subject} had been partialy ascended. Still alive, but its unknown the effects this will have on {PRONOUN/m_c/object}.",
+            "m_c tries to keep the fear off of {PRONOUN/m_c/poss} face as r_c breaks the news, whilst {PRONOUN/m_c/subject} was going to live, its unknown what effects being partially ascended would have on {PRONOUN/m_c/oject}.",
+            "m_c may have recovered from the void fluid burn, however such a close call with the void would not leave {PRONOUN/m_c/object} unscathed. r_c carefully unwraps the healed wound, m_c now having a small portion of {PRONOUN/m_c/object} turned into an echo."
+        ],
+        "echoed": [
+            "When r_c goes to check on m_c, {PRONOUN/r_c/subject} almost jumps out of {PRONOUN/r_c/poss} pelt at seeing an echoed slugcat. However when m_c asks what's wrong, r_c tries to break the news calmly. {PRONOUN/m_c/subject} has become an echo, but somehow is still walking amongst them, whether its a cruel trick by the void, or a miracle, no slugcat knows what to expect going forward."
+        ]
+    },
     "rot poisoning": {
         "the rot": [
             "r_c is gentle when {PRONOUN/r_c/subject} {VERB/r_c/break/breaks} the news, but m_c already knows. {PRONOUN/m_c/subject/CAP} has the Rot.",

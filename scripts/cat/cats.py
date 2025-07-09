@@ -2078,7 +2078,46 @@ class Cat:
                 "DAISY CORSAGE", "GULL FEATHERS",
                 "SPARROW FEATHERS", "CLOVER",
                 "DAISY", "MUSHROOMS",
-                "FLOWEREDMOSS", "MOSS"
+                "FLOWEREDMOSS", "MOSS",
+                "ORANGEFIRE", "GREENFIRE",
+                "BLUEFIRE", "YELLOWFIRE",
+                "WHITEFIRE", "PINKFIRE",
+                "REDFIRE"
+                ]:
+                if acc in self.pelt.accessories:
+                    self.pelt.inventory.remove(acc)
+                if acc in self.pelt.inventory:
+                    self.pelt.inventory.remove(acc)
+
+        if 'NOPAW' in self.pelt.scars:
+            for acc in [
+                "HANDPEARLBLANK", "HANDPEARLBLUE",
+                "HANDPEARLGREEN", "HANDPEARLORANGE",
+                "HANDPEARLPURPLE", "HANDPEARLRED",
+                "HANDPEARLYELLOW", "REDPAINT",
+                "PINKPAINT", "VOIDPAINT",
+                "YELLOWPAINT", "GREENPAINT",
+                "PALEPAINT", "CYANPAINT",
+                "BLUEPAINT", "PURPLEPAINT",
+                "MAGENTAPAINT", "BLACKPAINT",
+                "WHITEPAINT", "FALLENSTARPAWS",
+                "MUDDYPAWS"
+                ]:
+                if acc in self.pelt.accessories:
+                    self.pelt.inventory.remove(acc)
+                if acc in self.pelt.inventory:
+                    self.pelt.inventory.remove(acc)
+
+        if 'NOEAR' in self.pelt.scars or 'NOLEFTEAR' in self.pelt.scars or 'NORIGHTEAR' in self.pelt.scars:
+            for acc in [
+                "STRAIGHTGOLD", "STRAIGHTSILVER",
+                "MAGNATEJEWLERY", "REDPAINT",
+                "PINKPAINT", "VOIDPAINT",
+                "YELLOWPAINT", "GREENPAINT",
+                "PALEPAINT", "CYANPAINT",
+                "BLUEPAINT", "PURPLEPAINT",
+                "MAGENTAPAINT", "BLACKPAINT",
+                "WHITEPAINT"
                 ]:
                 if acc in self.pelt.accessories:
                     self.pelt.inventory.remove(acc)
