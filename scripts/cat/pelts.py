@@ -606,7 +606,7 @@ class Pelt:
     empty = ['BLACK', 'PINK', 'DARKBROWN', 'BROWN', 'LIGHTBROWN', 'DARK', 'DARKGREY', 'GREY', 'DARKSALMON', 'SALMON', 'PEACH', 'DARKMARBLED', 'MARBLED', 'LIGHTMARBLED', 'DARKBLUE', 'BLUE', 'LIGHTBLUE', 'RED']
     claws = ['BLACKCLAWS']
     whiskers = Pelt.with_suffix(['WHITE', 'BLACK', 'RED', 'YELLOW', 'GREEN', 'BLUE', 'ORANGE', 'BROWN'], 'WHISKERS')
-    antennae = ['WHITETENNA', 'REDTENNA', 'PINKTENNA', 'ORANGETENNA', 'YELLOWTENNA', 'BLUETENNA', 'GREENTENNA']
+    antennae = Pelt.with_suffix(['WHITE', 'RED', 'PINK', 'ORANGE', 'YELLOW', 'BLUE', 'GREEN'], 'TENNA')
     sharphorns = Pelt.with_suffix(['WHITE', 'BLACK', 'RED', 'YELLOW', 'GREEN', 'BLUE', 'ORANGE', 'BROWN'], 'HORNSSHARP')
     ramhorns = Pelt.with_suffix(['WHITE', 'BLACK', 'RED', 'YELLOW', 'GREEN', 'BLUE', 'ORANGE', 'BROWN'], 'HORNSRAM')
     scavhorns = Pelt.with_suffix(['WHITE', 'BLACK', 'RED', 'YELLOW', 'GREEN', 'BLUE', 'ORANGE', 'BROWN'], 'HORNSSCAV')
