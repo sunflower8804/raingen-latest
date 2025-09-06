@@ -520,7 +520,7 @@ class Pelt:
     closest_accs = (
         lizards + bodypaint + collars + implant + drapery + 
         pridedrapery + scarves + bandanas + featherboas + chains + ponchos + morespears + floatyeyes +
-        harleyaccs
+        harleyaccs + neckbandanas + ponchos +
         ["MUDDYPAWS", "CELLIMPLANT", "GOGGLES", "FALLMPAINT", "SCAVMPAINT", "SPEARMPAINT", "EYEBAGS", "MAGNATEJEWLERY", "YELLOWKARMAWREATH", "BLUEKARMAWREATH", "PURPLEKARMAWREATH",
         "MURDERPAINT", "BOGMOSSBLUE", "BOGMOSSGREEN", "BOGMOSSLIME", "ORANGEPLANTPELT", "LIMEPLANTPELT", "GREENPLANTPELT", "YELLOWPLANTPELT", "BLUEPLANTPELT"]
 )
