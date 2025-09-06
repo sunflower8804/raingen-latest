@@ -43,9 +43,7 @@ class Sprites:
 
         # Shared empty sprite for placeholders
         self.blank_sprite = None
-        if self.blank_sprite is None:
-            self.blank_sprite = pygame.Surface((self.size, self.size), pygame.HWSURFACE | pygame.SRCALPHA)
-
+        
         self.load_tints()
 
     def make_sprite_groups(self, groupname, color_rows, prefix, **kwargs):
@@ -153,6 +151,10 @@ class Sprites:
             print(f"lineart.png is not 3x7, falling back to {self.size}")
             print(f"if you are a modder, please update scripts/cat/sprites.py and "
                   f"do a search for 'if width / 3 == height / 7:'")
+
+        if self.blank_sprite is None:
+            self.blank_sprite = pygame.Surface((self.size, self.size), pygame.HWSURFACE | pygame.SRCALPHA)
+
 
         del width, height  # unneeded
 
