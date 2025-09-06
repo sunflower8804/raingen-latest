@@ -518,10 +518,11 @@ class Pelt:
     
     #list for stuff that should logically be behind a long tongue   
     closest_accs = (
-        lizards + bells + bows + nylons + paints + implants + eye_implants + glows + drapery + 
+        lizards + bodypaint + collars + implant + drapery + 
         pridedrapery + scarves + bandanas + featherboas + chains + ponchos + morespears + floatyeyes +
-        bogmosses + plantpelts +
-        ["MUDDYPAWS", "CELLIMPLANT", "GOGGLES", "EYEBAGS", "MAGNATEJEWLERY", "YELLOWKARMAWREATH", "BLUEKARMAWREATH", "PURPLEKARMAWREATH"]
+        harleyaccs
+        ["MUDDYPAWS", "CELLIMPLANT", "GOGGLES", "FALLMPAINT", "SCAVMPAINT", "SPEARMPAINT", "EYEBAGS", "MAGNATEJEWLERY", "YELLOWKARMAWREATH", "BLUEKARMAWREATH", "PURPLEKARMAWREATH",
+        "MURDERPAINT", "BOGMOSSBLUE", "BOGMOSSGREEN", "BOGMOSSLIME", "ORANGEPLANTPELT", "LIMEPLANTPELT", "GREENPLANTPELT", "YELLOWPLANTPELT", "BLUEPLANTPELT"]
 )
 
     tabbies = [
