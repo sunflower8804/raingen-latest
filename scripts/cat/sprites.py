@@ -51,7 +51,7 @@ class Sprites:
     def make_sprite_groups(self, groupname, color_rows, prefix, row_override=None, col_override=None, **kwargs):
         """
         OPTIMIZATIONS ARE TASTY.
-        
+    
         groupname: str, the spritesheet/group name
         color_rows: list of lists, each inner list is a row of sprite names
         prefix: str, the string to prepend to each sprite name
@@ -61,7 +61,7 @@ class Sprites:
             for col, color in enumerate(colors):
                 actual_row = row_override if row_override is not None else row
                 actual_col = col_override if col_override is not None else col
-                self.make_group(groupname, (col, row), f'{prefix}{color}', **kwargs)
+                self.make_group(groupname, (actual_col, actual_row), f'{prefix}{color}', **kwargs)
 
     def load_tints(self):
         try:
