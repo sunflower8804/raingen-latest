@@ -606,9 +606,9 @@ class Pelt:
     # Colorized features using inline color lists with with_suffix
     empty = ['BLACK', 'PINK', 'DARKBROWN', 'BROWN', 'LIGHTBROWN', 'DARK', 'DARKGREY', 'GREY', 'DARKSALMON', 'SALMON', 'PEACH', 'DARKMARBLED', 'MARBLED', 'LIGHTMARBLED', 'DARKBLUE', 'BLUE', 'LIGHTBLUE', 'RED']
     claws = ['BLACKCLAWS']
-    whiskers = Pelt.with_suffix(['WHITE', 'BLACK', 'RED', 'YELLOW', 'GREEN', 'BLUE', 'ORANGE', 'BROWN'], 'WHISKERS')
-    antennae = Pelt.with_suffix(['WHITE', 'RED', 'PINK', 'ORANGE', 'YELLOW', 'BLUE', 'GREEN'], 'TENNA')
-    sharphorns = Pelt.with_suffix(['WHITE', 'BLACK', 'RED', 'YELLOW', 'GREEN', 'BLUE', 'ORANGE', 'BROWN'], 'HORNSSHARP')
+    whiskers = with_suffix(['WHITE', 'BLACK', 'RED', 'YELLOW', 'GREEN', 'BLUE', 'ORANGE', 'BROWN'], 'WHISKERS')
+    antennae = with_suffix(['WHITE', 'RED', 'PINK', 'ORANGE', 'YELLOW', 'BLUE', 'GREEN'], 'TENNA')
+    sharphorns = with_suffix(['WHITE', 'BLACK', 'RED', 'YELLOW', 'GREEN', 'BLUE', 'ORANGE', 'BROWN'], 'HORNSSHARP')
     ramhorns = Pelt.with_suffix(['WHITE', 'BLACK', 'RED', 'YELLOW', 'GREEN', 'BLUE', 'ORANGE', 'BROWN'], 'HORNSRAM')
     scavhorns = Pelt.with_suffix(['WHITE', 'BLACK', 'RED', 'YELLOW', 'GREEN', 'BLUE', 'ORANGE', 'BROWN'], 'HORNSSCAV')
     elitehorns = Pelt.with_suffix(['WHITE', 'BLACK', 'RED', 'YELLOW', 'GREEN', 'BLUE', 'ORANGE', 'BROWN'], 'HORNSELITE')
