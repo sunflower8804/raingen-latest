@@ -312,7 +312,7 @@ class Cat:
 
         # species
         if self.species is None:
-            self.species = chioce(["terrestrial", "insectoid", "aquatic", "avian", "reptilian", "mamilian", "mechanical"])
+            self.species = choice(["terrestrial", "insectoid", "aquatic", "avian", "reptilian", "mamilian", "mechanical"])
         
         # sex!?!??!?!?!??!?!?!?!??
         if self.gender is None:
