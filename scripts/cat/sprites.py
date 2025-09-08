@@ -9,6 +9,7 @@ from scripts.game_structure.game_essentials import game
 image_cache = {}
 
 def load_sprite(path):
+    global image_cache
     if path not in image_cache:
         image_cache[path] = pygame.image.load(path).convert_alpha()
     return image_cache[path]
