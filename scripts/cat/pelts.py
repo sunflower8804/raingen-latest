@@ -653,11 +653,13 @@ class Pelt:
     colorwings = with_suffix(['WATCHER', 'ARTIFICER','HUNTER', 'SAINT', 'RIVULETWINGS', 'SPEARMASTER', 'GOURMAND'], 'WINGS')
     whitefadewings = with_suffix(['WHITE','DARKCREAM','CREAM','OFFWHITE','GRAY','PINK','BLACK','POWDERBLUE','SPLASH','PURPLE','BLACKBERRY','SAND','CLAY','BRICK','SALMON','SEAFOAM','MINT','EVERGREEN','CRANBERRY','PEARL','ORCHID','RUBY','CORAL','TAN','LEMON','CLOVER','CYAN','VIOLET','GOLDEN'],'WINGSFADE')
     wings = with_suffix(['WHITE','DARKCREAM','CREAM','OFFWHITE','GRAY','PINK','BLACK','POWDERBLUE','SPLASH','PURPLE','BLACKBERRY','SAND','CLAY','BRICK','SALMON','SEAFOAM','MINT','EVERGREEN','CRANBERRY','PEARL','ORCHID','RUBY','CORAL','TAN','LEMON','CLOVER','CYAN','VIOLET','GOLDEN'],'WINGS')
-    skin_categories = [dragonhorns, moth, seaslugpapillae, tailfrills, thorns, glowspots, gills, tongues, lizardneedles, 
-                       spikes, lizardfins, catfishwhiskers, dragonwhiskers, quills, centipedegrowths, stinger, anglerfish, 
-                       spearholes, cyanfeatures, cyanwings, firebugpart, seaangelwings, loach, dropwig, glassback, grasssheepback, 
-                       familiar, acrotail, tears, manes, overseertenna, budgiewings, conurewings, lovebirdwings, pidgeonwings, 
-                       vulturewings, colorwings, whitefadewings, wings]
+    skin_categories = [ empty, claws, whiskers, antennae, sharphorns, ramhorns, scavhorns, elitehorns, unihorns, antlers,
+                        dragonhorns, moth, seaslugpapillae, tailfrills, thorns, glowspots, gills, tongues, lizardneedles,
+                        spikes, lizardfins, catfishwhiskers, dragonwhiskers, quills, centipedegrowths, stinger, anglerfish,
+                        spearholes, cyanfeatures, cyanwings, firebugpart, seaangelwings, loach, dropwig, glassback, grasssheepback,
+                        familiar, acrotail, tears, manes, overseertenna, budgiewings, conurewings, lovebirdwings, pidgeonwings,
+                        vulturewings, colorwings, whitefadewings, wings
+                    ]
     
     #list for stuff that should logically be behind a cloak
     closest_skin = [
