@@ -271,7 +271,7 @@ class Sprites:
         #generating multieyes
         multiraineye_colors = [[f"MULTI{color}" for color in row] for row in raineye_colors]
 
-        self.make_sprite_groups('raineyes', multiraineye_colors, 'raineyes')
+        self.make_sprite_groups('multiraineyes', multiraineye_colors, 'multiraineyes')
 
         #lars' eyes
         larseye_colors = [
@@ -296,7 +296,7 @@ class Sprites:
             ['MULTIBROWNTBOI', 'MULTIORANGETBOI', 'MULTIBREDTBOI', 'MULTIREDTBOI'],
         ]
         
-        self.make_sprite_groups('larseyes', multilarseye_colors, 'larseyes')
+        self.make_sprite_groups('multilarseyes', multilarseye_colors, 'multilarseyes')
                     
         rivuleteye_colors = [
             ['RIVYELLOW', 'RIVAMBER', 'RIVHAZEL', 'RIVPALEGREEN', 'RIVGREEN', 'RIVBLUE', 'RIVDARKBLUE', 'RIVGREY', 'RIVCYAN', 'RIVEMERALD', 'RIVHEATHERBLUE', 'RIVSUNLITICE'],
