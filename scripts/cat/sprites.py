@@ -48,7 +48,7 @@ class Sprites:
         
         self.load_tints()
 
-    def make_sprite_groups(self, groupname, color_rows, prefix, **kwargs):
+    def make_sprite_groups(self, groupname, color_rows, prefix, row_override = None, col_override = None, **kwargs):
         """
         OPTIMIZATIONS ARE TASTY.
         
