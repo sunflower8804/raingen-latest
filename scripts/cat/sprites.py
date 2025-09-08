@@ -335,8 +335,8 @@ class Sprites:
             ['BOBASIXER', 'BOBASPLIT', 'BOBASUN', 'BOBASWEET', 'BOBATIDE', 'BOBAVIVID', 'BOBAWAVE', 'BOBAWINKS', 'BOBAZENI', 'BOBABEAST']
         ]
 
-        self.make_sprite_groups('bobaeyelars', bobaeyelars_colors, 'bobaeyelars')
-        self.make_sprite_groups('bobaeyelars2', bobaeyelars_colors, 'bobaeyeslar2')
+        self.make_sprite_groups('bobaeyelars', bobaeyeslars_colors, 'bobaeyelars')
+        self.make_sprite_groups('bobaeyelars2', bobaeyeslars_colors, 'bobaeyeslar2')
         
         # Define white patches
         white_patches = [
