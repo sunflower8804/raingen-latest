@@ -7,7 +7,9 @@ import ujson
 from scripts.game_structure.game_essentials import game
 
 
+
 def load_sprite(path):
+    image_cache = {}
     if path not in image_cache:
         image_cache[path] = pygame.image.load(path).convert_alpha()
     return image_cache[path]
