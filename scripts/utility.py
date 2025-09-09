@@ -2631,6 +2631,18 @@ def find_eye_sprite(cat, cat_sprite):
     print(f"WARNING: Eye sprite not found for color '{color}' and pose '{cat_sprite}'. Using error sprite.")
     return sprites.error_placeholder.copy()
 
+def find_skin_sprite(cat, cat_sprite):
+    """
+    Finds correct skin/feature sprite by searching all loaded sprite keys for matching suffix.
+    """
+    skin = cat.pelt.skin
+    suffix = f"{skin}{cat_sprite}"
+    for key in sprites.sprites:
+        if key.endswith(suffix):
+            return sprites.sprites[key].copy()
+    print(f"WARNING: Skin sprite not found for skin '{skin}' and pose '{cat_sprite}'. Using error sprite.")
+    return sprites.error_placeholder.copy()
+
 def generate_sprite(
     cat,
     life_state=None,
@@ -2850,7 +2862,7 @@ def generate_sprite(
         #draw special skin
         if not feature_hidden:
             if cat.pelt.skin in Pelt.closest_skin:
-                new_sprite.blit(sprites.sprites["skin" + cat.pelt.skin + cat_sprite], (0, 0))
+                new_sprite.blit(find_skin_sprite(cat, cat_sprite), (0, 0))
 
         #draw CLOSE TO BODY ACCS i'm finally doing it yuppie
         for i in cat.pelt.accessories:
@@ -2926,7 +2938,7 @@ def generate_sprite(
         #draw the rest of the skin
         if not feature_hidden:
             if cat.pelt.skin not in Pelt.closest_skin:
-                new_sprite.blit(sprites.sprites["skin" + cat.pelt.skin + cat_sprite], (0, 0))
+                new_sprite.blit(find_skin_sprite(cat, cat_sprite), (0, 0))
 
         # draw scars2
         if not scars_hidden:
