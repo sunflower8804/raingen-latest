@@ -2641,7 +2641,7 @@ def find_skin_sprite(cat, cat_sprite):
         if key.endswith(suffix):
             return sprites.sprites[key].copy()
     print(f"WARNING: Skin sprite not found for skin '{skin}' and pose '{cat_sprite}'. Using error sprite.")
-    return sprites.error_placeholder.copy()
+    return f"sprites/error_placeholder.png"
 
 def generate_sprite(
     cat,
