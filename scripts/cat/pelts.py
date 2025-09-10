@@ -1890,8 +1890,12 @@ class Pelt:
             color_name = f"{color_name} slugcat"
 
         # Here is the place where we can add some additional details about the cat, for the full non-short one
-        # These include notable missing limbs, vitiligo, long-furred-ness, and 3 or more scars
+        # These include notable missing limbs, vitiligo, long-furred-ness, features, and 3 or more scars
         if not short:
+
+            feature_details =  {
+                "WIP": "Im having to make a json file for this HELP. ME."
+            }
 
             scar_details = {
                 "NOTAIL": "no tail",
