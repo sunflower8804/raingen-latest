@@ -23,7 +23,7 @@
         "Art is licensed under <a href=https://creativecommons.org/licenses/by-nc/4.0/legalcode>CC-BY-NC 4.0</a> "
     ],
     "contrib": {
-        "<SENIORS>": "SENIOR DEVELOPERS BELOW HERE",
+        "<RAINGEN>": "RAINGEN DEVELOPERS BELOW HERE",
         "acorn": "Names, electric spear acc",
         "bea": "Original mod creator; white patches, tortie patches, original lineart, original pelt colours, original rot faded sprites, alternate antenna & glowspots sprites",
         "bucketofmackerels": "White patches, tortie patches, extra white patch tints, void sea background, Tabby, Gravel, Vulture, Slimemold, and Collared pelts",
@@ -60,7 +60,7 @@
 	    "wildy": "Plantain and Daenix pelts, boba eyes, eyebags",
         "winter": "Cyan lizard pelt",
         
-        "<CONTRIBUTORS>": "PLACE CONTRIBUTORS BELOW HERE",
+        "<CLANGEN>": "CLANGEN DEVELOPERS & CONTRIBUTORS BELOW HERE",
         "anju": "-Senior Dev-<br>Creating the Original Game- Old Base Code (Clan creation, Clan screen, Timeskip, Mates and kits, StarClan), Base Sprites & Pelts, Patrol Arts, New Sprite Revisions, Shaders",
         "Archanyhm": "-Senior Dev-<br>Contributed Auto-Updater, Update-API, macOS fixes, changelog display",
         "Blackfur": "-Former Senior Dev-<br>Initial macOS port, former maintainer of Clangen-Web",
