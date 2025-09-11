@@ -11,7 +11,7 @@ from scripts.game_structure.game_essentials import game
 class Pelt:
 
     with open("sprites/dicts/sprite_names.json", "r") as f:
-            sprite_names_dict = json.load(f)
+            sprite_names_dict = ujson.loads(f.read)
     
     sprites_names = sprite_names_dict['sprites_names']
 
