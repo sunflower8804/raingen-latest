@@ -642,7 +642,8 @@ class Pelt:
     familiar = ['FAMILIARMARK']
     acrotail = ['ACROTAIL']
     stinger = with_suffix(['BLACK', 'GREY', 'WHITE', 'GOLD'], 'STINGER')
-    dropwig = with_suffix(['PURPLE', 'GREEN', 'BLUE'], 'DROPWIG')
+    fangs = ['FANGS']
+    dropwig = with_suffix(['PURPLE', 'GREEN', 'BLUE', 'WHITE'], 'DROPWIG')
     manes = with_suffix(['DARKBROWN', 'CHOCOLATE', 'GOLDEN', 'BLOND', 'GINGER', 'SILVER'], 'MANE')
     overseertenna = with_suffix(['WHITE', 'SKY', 'BLUE', 'INDIGO', 'PURPLE', 'GHOST', 'BLACK', 'CREAM', 'YELLOW', 'ORANGE', 'SCARLET', 'RED', 'PINK', 'MINT', 'LIME', 'GREEN', 'MAROON', 'PERIWINKLE', 'LAVENDER'], 'OVERSEERTENNA')
     budgiewings = with_suffix(['WHITE', 'SKY', 'BLUE', 'INDIGO', 'PURPLE', 'GHOST', 'BLACK', 'CREAM', 'YELLOW', 'ORANGE', 'SCARLET', 'RED', 'PINK', 'MINT', 'LIME', 'GREEN', 'MAROON', 'PERIWINKLE', 'LAVENDER'], 'BUDGIEWINGS')
@@ -655,7 +656,7 @@ class Pelt:
     wings = with_suffix(['WHITE','DARKCREAM','CREAM','OFFWHITE','GRAY','PINK','BLACK','POWDERBLUE','SPLASH','PURPLE','BLACKBERRY','SAND','CLAY','BRICK','SALMON','SEAFOAM','MINT','EVERGREEN','CRANBERRY','PEARL','ORCHID','RUBY','CORAL','TAN','LEMON','CLOVER','CYAN','VIOLET','GOLDEN'],'WINGS')
     skin_categories = [ empty, claws, whiskers, antennae, sharphorns, ramhorns, scavhorns, elitehorns, unihorns, antlers,
                         dragonhorns, moth, seaslugpapillae, tailfrills, thorns, glowspots, gills, tongues, lizardneedles,
-                        spikes, lizardfins, catfishwhiskers, dragonwhiskers, quills, centipedegrowths, stinger, anglerfish,
+                        spikes, lizardfins, catfishwhiskers, dragonwhiskers, quills, centipedegrowths, stinger, fangs, anglerfish,
                         spearholes, cyanfeatures, cyanwings, firebugpart, seaangelwings, loach, dropwig, glassback, grasssheepback,
                         familiar, acrotail, tears, manes, overseertenna, budgiewings, conurewings, lovebirdwings, pidgeonwings,
                         vulturewings, colorwings, whitefadewings, wings
@@ -669,7 +670,7 @@ class Pelt:
         'PURPLECYAN', 'CYANCYAN', 'BLUECYAN', 'DARKBLUECYAN', 'DARKPURPLECYAN', 'BLACKCYAN', 'EGGCYAN', 'YELLOWCYAN',
         'PINKFINS', 'BLUEFINS', 'REDFINS', 'GREENFINS', 'YELLOWFINS', 'WHITEFINS',
         'BLACKNEEDLES', 'WHITENEEDLES', 'RAINBOWNEEDLES', 'BLACKTHORNS', 'WHITETHORNS',
-        'TEARS', 'SEAANGELWINGS', 'GLASSBACK', 'GRASSSHEEPBACK', 'LOACH', 'FAMILIARMARK'
+        'TEARS', 'SEAANGELWINGS', 'GLASSBACK', 'GRASSSHEEPBACK', 'LOACH', 'FAMILIARMARK', 'FANGS'
     ]
 
     skin_weights = game.config["feature_generation"]["feature_chances"]
