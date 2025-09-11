@@ -2631,7 +2631,7 @@ def find_eye_sprite(cat, cat_sprite):
                 return sprites.sprites[key].copy()
     except (TypeError, KeyError):
         print(f"WARNING: Eye sprite not found for color '{color}' and pose '{cat_sprite}'.")
-        continue
+    continue
 
 def find_skin_sprite(cat, cat_sprite):
     """
@@ -2645,7 +2645,7 @@ def find_skin_sprite(cat, cat_sprite):
                 return sprites.sprites[key].copy()
     except (TypeError, KeyError):
         print(f"WARNING: Skin sprite not found for skin '{skin}' and pose '{cat_sprite}'.")
-        continue
+    continue
 
 def generate_sprite(
     cat,
