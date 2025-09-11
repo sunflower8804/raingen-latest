@@ -1,4 +1,26 @@
 {
+  "short_renamed_colors": {
+            "white": "pale",
+            "sky": "blue",
+            "indigo": "blue",
+            "mint": "green",
+            "lime": "green",
+            "maroon": "red",
+            "periwinkle": "purple",
+            "lavender": "purple",
+            "ghost": "black"
+        },
+  "renamed_colors": {
+                "white": "pale",
+                "sky": "sky",
+                "indigo": "indigo",
+                "mint": "mint",
+                "lime": "lime",
+                "maroon": "maroon",
+                "periwinkle": "periwinkle",
+                "lavender": "lavender",
+                "ghost": "black"
+            },
   "pattern_des": {
             "Tabby": "c_n tabby",
             "Speckled": "speckled c_n",
