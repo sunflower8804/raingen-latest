@@ -15,11 +15,6 @@ class Pelt:
     
     sprites_names = sprite_names_dict['sprites_names']
 
-    @staticmethod
-    def with_suffix(colours, suffix):
-        #Helper code for OPTIMIZATION WOOOO
-        return [f"{c}{suffix}" for c in colours]
-
     # ATTRIBUTES, including non-pelt related
     eye_colours = sprite_names_dict['eye_colours']
     yellow_eyes = sprite_names_dict['yellow_eyes']
