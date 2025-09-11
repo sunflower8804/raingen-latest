@@ -10,7 +10,7 @@ from scripts.game_structure.game_essentials import game
 
 class Pelt:
 
-    with open("sprites/dicts/sprite_names.json", "f") as f:
+    with open("sprites/dicts/sprite_names.json", "r") as f:
             sprite_names_dict = json.load(f)
     
     sprites_names = sprite_names_dict['sprites_names']
