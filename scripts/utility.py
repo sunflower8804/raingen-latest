@@ -2625,13 +2625,13 @@ def find_eye_sprite(cat, cat_sprite):
     """
     color = cat.pelt.eye_colour
     suffix = f"{color}{cat_sprite}"
-    try:
-        for key in sprites.sprites:
+    for key in sprites.sprites:
+        try:
             if key.endswith(suffix):
                 return sprites.sprites[key].copy()
-    except (TypeError, KeyError):
-        print(f"WARNING: Eye sprite not found for color '{color}' and pose '{cat_sprite}'.")
-    continue
+        except (TypeError, KeyError):
+            print(f"WARNING: Eye sprite not found for color '{color}' and pose '{cat_sprite}'.")
+            continue
 
 def find_skin_sprite(cat, cat_sprite):
     """
@@ -2639,13 +2639,13 @@ def find_skin_sprite(cat, cat_sprite):
     """
     skin = cat.pelt.skin
     suffix = f"{skin}{cat_sprite}"
-    try:
-        for key in sprites.sprites:
+    for key in sprites.sprites:
+        try:
             if key.endswith(suffix):
                 return sprites.sprites[key].copy()
-    except (TypeError, KeyError):
-        print(f"WARNING: Skin sprite not found for skin '{skin}' and pose '{cat_sprite}'.")
-    continue
+        except (TypeError, KeyError):
+            print(f"WARNING: Skin sprite not found for skin '{skin}' and pose '{cat_sprite}'.")
+            continue
 
 def generate_sprite(
     cat,
