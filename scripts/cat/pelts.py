@@ -100,7 +100,9 @@ class Pelt:
     point_markings = sprite_names_dict['point_markings']
     vit = sprite_names_dict['vit']
 
-    white_sprites = [little_white, mid_white, high_white, mostly_white, point_markings, vit, 'FULLWHITE']    
+    white_sprites = [little_white, mid_white, high_white, mostly_white, point_markings, vit, 'FULLWHITE']  
+
+    pelt_length = sprite_names_dict['pelt_length']
 
     empty = sprite_names_dict['empty']
     claws = sprite_names_dict['claws']
