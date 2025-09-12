@@ -27,6 +27,12 @@ class Pelt:
     green_pupil_eyes = sprite_names_dict['green_pupil_eyes']
     red_pupil_eyes = sprite_names_dict['red_pupil_eyes']
 
+    tabbies = sprite_names_dict['tabbies']
+    spotted = sprite_names_dict['spotted']
+    plain = sprite_names_dict['plain']
+    exotic = sprite_names_dict['exotic']
+    torties = sprite_names_dict['torties']
+
     pelt_categories = [tabbies, spotted, plain, exotic, torties]
 
     plant_accessories = sprite_names_dict['plant_accessories']
