@@ -15,7 +15,6 @@ class Pelt:
     
     sprites_names = sprite_names_dict['sprites_names']
 
-    # ATTRIBUTES, including non-pelt related
     eye_colours = sprite_names_dict['eye_colours']
     yellow_eyes = sprite_names_dict['yellow_eyes']
     blue_eyes = sprite_names_dict['blue_eyes']
@@ -26,6 +25,22 @@ class Pelt:
     blue_pupil_eyes = sprite_names_dict['blue_pupil_eyes']
     green_pupil_eyes = sprite_names_dict['green_pupil_eyes']
     red_pupil_eyes = sprite_names_dict['red_pupil_eyes']
+    riveye_colours = sprite_names_dict['riveye_colours']
+    yellow_riv_eyes = sprite_names_dict['yellow_riv_eyes']
+    blue_riv_eyes = sprite_names_dict['blue_riv_eyes']
+    green_riv_eyes = sprite_names_dict['green_riv_eyes']
+    red_riv_eyes = sprite_names_dict['red_riv_eyes']
+    buttoneye_colours = sprite_names_dict['buttoneye_colours']
+    yellow_button_eyes = sprite_names_dict['yellow_button_eyes']
+    blue_button_eyes = sprite_names_dict['blue_button_eyes']
+    green_button_eyes = sprite_names_dict['green_button_eyes']
+    red_button_eyes = sprite_names_dict['red_button_eyes']
+    bobaeye_colours = sprite_names_dict['bobaeye_colours']
+    yellow_boba_eyes = sprite_names_dict['yellow_boba_eyes']
+    blue_boba_eyes = sprite_names_dict['blue_boba_eyes']
+    green_boba_eyes = sprite_names_dict['green_boba_eyes']
+    red_boba_eyes = sprite_names_dict['red_boba_eyes']
+    multi_eyes = sprite_names_dict['multi_eyes']
 
     tabbies = sprite_names_dict['tabbies']
     spotted = sprite_names_dict['spotted']
