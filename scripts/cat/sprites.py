@@ -144,8 +144,8 @@ class Sprites:
         del lineart  # unneeded
 
         #grab the json lists
-        with open("sprites/dicts/sprites_py_lists.json", "f") as f:
-            sprites_py_dict = json.load(f)
+        with open("sprites/dicts/sprites_py_lists.json", "r") as f:
+            sprites_py_dict = ujson.loads(f.read())
 
         # if anyone changes lineart for whatever reason update this
         if isinstance(self.size, int):
