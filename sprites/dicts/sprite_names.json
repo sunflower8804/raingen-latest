@@ -678,6 +678,9 @@
   "fangs": [
     "FANGS"
   ],
+  "anglerfish": [
+      "ANGLERFISH"
+  ],
   "manes": [
     "DARKBROWNMANE", "CHOCOLATEMANE", "GOLDENMANE", "BLONDMANE", "GINGERMANE", "SILVERMANE"
   ],
