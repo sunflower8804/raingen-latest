@@ -83,12 +83,6 @@ class Pelt:
     scars3 = sprite_names_dict['scars3']
 
     skin_weights = game.config["feature_generation"]["feature_chances"]
-
-    tabbies = sprite_names_dict['tabbies']
-    spotted = sprite_names_dict['spotted']
-    plain = sprite_names_dict['plain']
-    exotic = sprite_names_dict['exotic']
-    torties = sprite_names_dict['torties']
     
     single_colours = sprite_names_dict['single_colours']
     warm_colours = sprite_names_dict['warm_colours']
