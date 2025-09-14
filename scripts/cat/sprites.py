@@ -244,6 +244,10 @@ class Sprites:
         bobaeyeslars_colors = sprites_py_dict['bobaeyeslars_colors']
         self.make_sprite_groups('bobaeyeslars', bobaeyeslars_colors, 'bobaeyeslars')
         self.make_sprite_groups('bobaeyeslars2', bobaeyeslars_colors, 'bobaeyeslar2')
+
+        #geckoeyes seperate as their coloring is weird
+        geckoeyes_colors = sprites_py_dict['geckoeyes_colors']
+        self.make_sprite_groups('geckoeyes', geckoeye_colors, 'geckoeyes')
         
         # Define white patches
         white_patches = sprites_py_dict['white_patches']
@@ -287,11 +291,11 @@ class Sprites:
         # fancyskin spritesheet
         fancyskin_colors = sprites_py_dict['fancyskin_colors']
         # Handle rows 0-6 with function
-        self.make_sprite_groups('fancyskin', fancyskin_colors[:7], 'skin')
-        # Handle row 8 seperately because it will suffer alone
-        if len(fancyskin_colors) > 8:
-            for col, color in enumerate(fancyskin_colors[8]):
-                self.make_group('fancyskin', (col, 8), f"muddypaws{color}")
+        self.make_sprite_groups('fancyskin', fancyskin_colors[:10], 'skin')
+        # Handle row 11 seperately because it will suffer alone
+        if len(fancyskin_colors) > 10:
+            for col, color in enumerate(fancyskin_colors[11]):
+                self.make_group('fancyskin', (col, 11), f"muddypaws{color}")
 
         # data games stuff spritesheet
         datagamesstuff_colors = sprites_py_dict['datagamesstuff_colors']
@@ -336,6 +340,18 @@ class Sprites:
         # whitepatchwingsfade spritesheet
         whitepatchwingsfade_colors = [[f"{color}FADE" for color in row] for row in whitepatchwings_colors]
         self.make_sprite_groups('whitepatchwingsfade', whitepatchwingsfade_colors, 'whitepatchwingsfade')
+
+        # bodyeyes spritesheet
+        bodyeyes_colors = sprites_py_dict['bodyeyes_colors']
+        self.make_sprite_groups('bodyeyes', bodyeyes_colors, 'skin')
+
+        # limbfades spritesheet
+        limbfades_colors = sprites_py_dict['limbfades_colors']
+        self.make_sprite_groups('limbfades', limbfades_colors, 'skin')
+
+        # roboticspines spritesheet
+        roboticspines_colors = sprites_py_dict['roboticspines_colors']
+        self.make_sprite_groups('roboticspines', roboticspines_colors, 'skin')
 
 
         self.load_scars()
@@ -400,6 +416,11 @@ class Sprites:
         orbitals_data = sprites_py_dict['orbitals_data']
         vulturemasks_data = sprites_py_dict['vulturemasks_data']
         iteratormasks_data = sprites_py_dict['iteratormasks_data']
+        basecollars_data = sprites_py_dict['basecollars_data']
+        pearlcollars_data = sprites_py_dict['pearlcollars_data']
+        studdedcollars_data = sprites_py_dict['studdedcollars_data']
+        newaccs4_data = sprites_py_dict['newaccs4_data']
+        newaccs5_data = sprites_py_dict['newaccs5_data']
 
         # medcatherbs
         self.make_sprite_groups('medcatherbs', medcatherbs_data, 'acc_herbs')
@@ -512,6 +533,21 @@ class Sprites:
 
         # iterator masks
         self.make_sprite_groups('iteratormasks', iteratormasks_data, 'iteratormasks')
+
+        # base collars
+        self.make_sprite_groups('basecollars', basecollars_data, 'basecollars')
+        
+        # pearl collars
+        self.make_sprite_groups('pearlcollars', pearlcollars_data, 'pearlcollars')
+
+        # studded collars
+        self.make_sprite_groups('studdedcollars', studdedcollars_data, 'studdedcollars')
+
+        # newaccs4
+        self.make_sprite_groups('newaccs4', newaccs4_data, 'newaccs4')
+
+        # newaccs5
+        self.make_sprite_groups('newaccs5', newaccs_5data, 'newaccs5')
 
     def load_symbols(self):
         """
