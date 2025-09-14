@@ -2941,9 +2941,13 @@ def generate_sprite(
         blendmode = pygame.BLEND_RGBA_MIN
         
         #draw the rest of the skin
-        if not feature_hidden:
-            if cat.pelt.skin not in Pelt.closest_skin:
-                new_sprite.blit(find_skin_sprite(cat, cat_sprite), (0, 0))
+        try:
+            if not feature_hidden:
+                if cat.pelt.skin not in Pelt.closest_skin:
+                    new_sprite.blit(find_skin_sprite(cat, cat_sprite), (0, 0))
+        except TypeError: 
+            skin = cat.pelt.skin
+            print(f"ERROR sprite for {skin} invalid")
 
         # draw scars2
         if not scars_hidden:
