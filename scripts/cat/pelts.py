@@ -502,7 +502,7 @@ class Pelt:
                 colour_wheel = [Pelt.yellow_button_eyes, Pelt.blue_button_eyes, Pelt.green_button_eyes, Pelt.red_button_eyes]
             elif self.eye_colour in Pelt.bobaeye_colours:
                 colour_wheel = [Pelt.yellow_boba_eyes, Pelt.blue_boba_eyes, Pelt.green_boba_eyes, Pelt.red_boba_eyes]
-            elif self.eye_colour in Pelt.geckoeye_colours:
+            elif self.eye_colour in Pelt.geckoeye_colors:
                 colour_wheel = [Pelt.yellow_gecko_eyes, Pelt.blue_gecko_eyes, Pelt.green_gecko_eyes, Pelt.red_gecko_eyes]
             else:
                 colour_wheel = [Pelt.yellow_eyes, Pelt.blue_eyes, Pelt.green_eyes, Pelt.red_eyes]
@@ -1150,7 +1150,7 @@ class Pelt:
                 self.skin = choice(random.choices(fishy_features, fishy_weights, k=1)[0])
                 print("fish spotted!!")
 
-            if self.eye_colour in Pelt.geckoeye_colours:
+            if self.eye_colour in Pelt.geckoeye_colors:
                 reptile_features = [Pelt.tailfrills, Pelt.cyanfeatures, Pelt.cyanwings, Pelt.spikes]
                 reptile_weights = [50, 30, 15, 10]
                 self.skin = choice(random.choices(reptile_features, reptile_weights, k=1)[0])
