@@ -146,7 +146,7 @@
                 "skeleton", "shred", "glowing", "mold", "swing", "lovebird", "budgie", "amazon", "apple", "boba",
                 "glitter", "ice", "iggy", "maned", "patchwork", "robot", "sunken", "tomo", "whale", "pidgeon", "watermelon",
                 "dragonet", "salmon", "lightecho", "darkecho", "plantain", "daenix", "seltzer", "sworn", "spooky", "conure", 
-                "noble", "betta", "constellation", "malibu", "clay", "anthesis", "citadel", "grave", "interloper", "painted",
+                "noble", "betta", "constellation", "malibu", "clay", "antethisis", "citadel", "grave", "interloper", "painted",
                 "plated", "mono", "slime", "voidmass", "xelsquid", "mima", "xelstar", "bowie", "xelflame", "toonie", "lunatic",
                 "cosmos", "snuff", "kiwi", "lacuna"],
   
@@ -570,7 +570,7 @@
   "spotted": [
         "Speckled", "Rosette", "Gravel", "Banana", "Con", "Bengal", "Dreamer", "Oldgrowth", "Cherry",
         "Sparse", "Impish", "Ringed", "Mold", "Apple", "Glitter", "Whale", "Pidgeon", 
-        "Watermelon", "Lightecho", "Darkecho", "Salmon", "Plantain", "Malibu", "Clay", "Anthesis",
+        "Watermelon", "Lightecho", "Darkecho", "Salmon", "Plantain", "Malibu", "Clay", "Antethisis",
         "Interloper", "Painted", "Voidmass", "Lunatic", "Kiwi", "Lacuna"
     ],
   "plain": [
