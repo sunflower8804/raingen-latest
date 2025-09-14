@@ -41,6 +41,11 @@ class Pelt:
     green_boba_eyes = sprite_names_dict['green_boba_eyes']
     red_boba_eyes = sprite_names_dict['red_boba_eyes']
     multi_eyes = sprite_names_dict['multi_eyes']
+    geckoeyes_colours = sprite_names_dict['geckoeyes_colours']
+    yellow_gecko_eyes = sprite_names_dict['yellow_gecko_eyes']
+    blue_gecko_eyes = sprite_names_dict['blue_gecko_eyes']
+    green_gecko_eyes = sprite_names_dict['green_gecko_eyes']
+    red_gecko_eyes = sprite_names_dict['red_gecko_eyes']
 
     tabbies = sprite_names_dict['tabbies']
     spotted = sprite_names_dict['spotted']
@@ -84,14 +89,22 @@ class Pelt:
     orbitals = sprite_names_dict['orbitals']
     vulturemasks = sprite_names_dict['vulturemasks']
     iteratormasks = sprite_names_dict['iteratormasks']
+    basecollars = sprite_names_dict['basecollars']
+    pearlcollars = sprite_names_dict['pearlcollars']
+    studdedcollars = sprite_names_dict['studdedcollars']
+    newaccs4 = sprite_names_dict['newaccs4']
+    newaccs5 = sprite_names_dict['newaccs5']
 
         #list for stuff that should logically be behind a long tongue   
     closest_accs = (
         lizards + bodypaint + collars + implant + drapery + 
         pridedrapery + scarves + featherboas + chains + ponchoaccs + morespears + floatyeyes +
-        harleyaccs + neckbandanas +
+        harleyaccs + neckbandanas + basecollars + pearlcollars + studdedcollars +
         ["MUDDYPAWS", "CELLIMPLANT", "GOGGLES", "FALLMPAINT", "SCAVMPAINT", "SPEARMPAINT", "EYEBAGS", "MAGNATEJEWLERY", "YELLOWKARMAWREATH", "BLUEKARMAWREATH", "PURPLEKARMAWREATH",
-        "MURDERPAINT", "BOGMOSSBLUE", "BOGMOSSGREEN", "BOGMOSSLIME", "ORANGEPLANTPELT", "LIMEPLANTPELT", "GREENPLANTPELT", "YELLOWPLANTPELT", "BLUEPLANTPELT"]
+        "MURDERPAINT", "BOGMOSSBLUE", "BOGMOSSGREEN", "BOGMOSSLIME", "ORANGEPLANTPELT", "LIMEPLANTPELT", "GREENPLANTPELT", "YELLOWPLANTPELT", "BLUEPLANTPELT", "FAUXMANE",
+        "BLACKKARMAFLOWERWREATH", "GREENKARMAFLOWERWREATH", "PURPLEKARMAFLOWERWREATH", "REDKARMAFLOWERWREATH", "BLUEFLAMEMANE", "COOLFLAMEMANE", "COLORFULKARMAFLOWERWREATH",
+        "MOONPEARLNECKLACE", "NSHPEARLNECKLACE", "BLOODYPAWS", "INKYPAWS", "INKTEARS", "REDBOW", "GREYBOW", "WHITEBOW", "BROWNBOW", "ORANGEBOW", "YELLOWBOW", "GREENBOW", 
+        "TEALBOW", "BLUEBOW", "PURPLEBOW", "PINKBOW", "BLACKBOW"
 )
     scars1 = sprite_names_dict['scars1']
     scars2 = sprite_names_dict['scars2']
@@ -172,12 +185,21 @@ class Pelt:
     whitefadewings = sprite_names_dict['whitefadewings']
     wings = sprite_names_dict['wings']
     dropwig = sprite_names_dict['dropwig']
+    bodyeyes = sprite_names_dict['bodyeyes']
+    limbfades = sprite_names_dict['limbfades']
+    roboticspines = sprite_names_dict['roboticspines']
+    chimneytail = sprite_names_dict['chimneytail']
+    slimetraits = sprite_names_dict['slimetraits']
+    kingtendrils = sprite_names_dict['kingtendrils']
+    mechanical = sprite_names_dict['mechanical']
+    wool = sprite_names_dict['wool']
     skin_categories = [ empty, claws, whiskers, antennae, sharphorns, ramhorns, scavhorns, elitehorns, unihorns, antlers,
                         dragonhorns, moth, seaslugpapillae, tailfrills, thorns, glowspots, gills, tongues, lizardneedles,
                         spikes, lizardfins, catfishwhiskers, dragonwhiskers, quills, centipedegrowths, stinger, fangs, anglerfish,
                         spearholes, cyanfeatures, cyanwings, firebugpart, seaangelwings, loach, dropwig, glassback, grasssheepback,
                         familiar, acrotail, tears, manes, overseertenna, budgiewings, conurewings, lovebirdwings, pidgeonwings,
-                        vulturewings, colorwings, whitefadewings, wings
+                        vulturewings, colorwings, whitefadewings, wings, bodyeyes, limbfades, chimneytail, slimetraits, kingtendrils,
+                        mechanical, wool
                     ]
     #list for stuff that should logically be behind a cloak
     closest_skin = sprite_names_dict['closest_skin']
@@ -447,6 +469,7 @@ class Pelt:
         riveyenum = game.config["cat_generation"]["base_riveyes"]
         buttoneyenum = game.config["cat_generation"]["base_buttoneyes"]
         bobaeyenum = game.config["cat_generation"]["base_bobaeyes"]
+        geckoeyenum = game.config["cat_generation"]["base_geckoeyes"]
 
         if not random.randint(0, riveyenum):
             self.eye_colour = choice(Pelt.riveye_colours)
@@ -454,6 +477,8 @@ class Pelt:
             self.eye_colour = choice(Pelt.buttoneye_colours)
         elif not random.randint(0, bobaeyenum):
             self.eye_colour = choice(Pelt.bobaeye_colours)
+        elif not random.randint(0, geckoeyenum):
+            self.eye_colour = choice(Pelt.geckoeye_colours)
 
         # White patches must be initalized before eye color.
         num = game.config["cat_generation"]["base_heterochromia"]
@@ -477,6 +502,8 @@ class Pelt:
                 colour_wheel = [Pelt.yellow_button_eyes, Pelt.blue_button_eyes, Pelt.green_button_eyes, Pelt.red_button_eyes]
             elif self.eye_colour in Pelt.bobaeye_colours:
                 colour_wheel = [Pelt.yellow_boba_eyes, Pelt.blue_boba_eyes, Pelt.green_boba_eyes, Pelt.red_boba_eyes]
+            elif self.eye_colour in Pelt.geckoeye_colours:
+                colour_wheel = [Pelt.yellow_gecko_eyes, Pelt.blue_gecko_eyes, Pelt.green_gecko_eyes, Pelt.red_gecko_eyes]
             else:
                 colour_wheel = [Pelt.yellow_eyes, Pelt.blue_eyes, Pelt.green_eyes, Pelt.red_eyes]
             for colour in colour_wheel[:]:
@@ -857,6 +884,16 @@ class Pelt:
                 choice(Pelt.scarves),
                 choice(Pelt.neckbandanas),
                 choice(Pelt.morespears),
+                choice(Pelt.drapery),
+                choice(Pelt.pridedrapery),
+                choice(Pelt.featherboas),
+                choice(Pelt.chains),
+                choice(Pelt.floatyeyes),
+                choice(Pelt.flagaccs),
+                choice(Pelt.ponchoaccs),
+                choice(Pelt.glassesaccs),
+                choice(Pelt.orbitals),
+                choice(Pelt.vulturemasks)
             ]))
         else:
             self.accessories = []
@@ -1113,6 +1150,13 @@ class Pelt:
                 self.skin = choice(random.choices(fishy_features, fishy_weights, k=1)[0])
                 print("fish spotted!!")
 
+            if self.eye_colour in Pelt.geckoeye_colours:
+                reptile_features = [Pelt.tailfrills, Pelt.cyanfeatures, Pelt.cyanwings, Pelt.spikes]
+                reptile_weights = [50, 30, 15, 10]
+                self.skin = choice(random.choices(reptile_features, reptile_weights, k=1)[0])
+                self.name = "Scaley"
+                print("reptile spotted!!")
+
             if self.skin in Pelt.centipedegrowths and self.tortiepattern == None:
                 self.name = "Centipede"
                 print("centipede spotted!!")
@@ -1154,6 +1198,10 @@ class Pelt:
             if self.name == "Budgie" or self.tortiebase == "Budgie" and self.tortiepattern == "Budgie":
                 self.skin = choice(Pelt.budgiewings)
                 print("Budgie spotted!!")
+
+            if self.name == "Plated" or self.tortiebase == "Plated" and self.tortiepattern == "Plated":
+                self.skin = choice(Pelt.mechanical)
+                print("Mecha scug spotted!!")
         
             if self.skin in Pelt.familiar:
                 self.colour = "PURPLE"
