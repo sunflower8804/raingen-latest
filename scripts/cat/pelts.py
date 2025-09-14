@@ -41,7 +41,7 @@ class Pelt:
     green_boba_eyes = sprite_names_dict['green_boba_eyes']
     red_boba_eyes = sprite_names_dict['red_boba_eyes']
     multi_eyes = sprite_names_dict['multi_eyes']
-    geckoeyes_colours = sprite_names_dict['geckoeyes_colours']
+    geckoeyes_colors = sprite_names_dict['geckoeyes_colors']
     yellow_gecko_eyes = sprite_names_dict['yellow_gecko_eyes']
     blue_gecko_eyes = sprite_names_dict['blue_gecko_eyes']
     green_gecko_eyes = sprite_names_dict['green_gecko_eyes']
