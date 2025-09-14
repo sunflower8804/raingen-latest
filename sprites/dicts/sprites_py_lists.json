@@ -31,7 +31,10 @@
             "dragonetcolours", "salmoncolours", "darkechocolours", "lightechocolours", "plantaincolours",
             "daenixcolours", "seltzercolours", "sworncolours", "spookycolours", "conurecolours", "noblecolours",
             "bettacolours", "constellationcolours", "malibucolours", "claycolours", "antethisiscolours",
-            "citadelcolours", "gravecolours", "interlopercolours",
+            "citadelcolours", "gravecolours", "interlopercolours", "paintedcolours", "platedcolours", "monocolours",
+            "slimecolours", "voidmasscolours", "xelsquidcolours", "mimacolours", "xelstarcolours", "bowiecolours",
+            "xelflamecolours", "tooniecolours", "lunaticcolours", "cosmoscolours", "snuffcolours", "kiwicolours",
+            "lacunacolours",
             "raineyes", "raineyes2", "multieyes", "multiraineyes", "larseyes", "multilarseyes", "larseyes2", 
             "rivuleteyes", "rivuleteyes2", "buttoneyes", "buttoneyes2", "bobaeyes", "bobaeyes2", "bobaeyeslars",
             "bobaeyeslars2",
@@ -136,7 +139,10 @@
             "dragonetcolours", "salmoncolours", "darkechocolours", "lightechocolours", "plantaincolours",
             "daenixcolours", "seltzercolours", "sworncolours", "spookycolours", "conurecolours", "noblecolours",
             "bettacolours", "constellationcolours", "malibucolours", "claycolours", "antethisiscolours",
-            "citadelcolours", "gravecolours", "interlopercolours"
+            "citadelcolours", "gravecolours", "interlopercolours", "paintedcolours", "platedcolours", "monocolours",
+            "slimecolours", "voidmasscolours", "xelsquidcolours", "mimacolours", "xelstarcolours", "bowiecolours",
+            "xelflamecolours", "tooniecolours", "lunaticcolours", "cosmoscolours", "snuffcolours", "kiwicolours",
+            "lacunacolours",
         ],
   "tortiepatchesmasks": [
             ["ONE", "TWO", "THREE", "FOUR", "REDTAIL", "DELILAH", "HALF", "STREAK", "MASK", "SMOKE"],
