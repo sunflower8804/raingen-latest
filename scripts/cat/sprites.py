@@ -288,7 +288,7 @@ class Sprites:
         fancyskin_colors = sprites_py_dict['fancyskin_colors']
         # Handle rows 0-6 with function
         self.make_sprite_groups('fancyskin', fancyskin_colors[:7], 'skin')
-        # Handle row 7 seperately because it will suffer alone
+        # Handle row 8 seperately because it will suffer alone
         if len(fancyskin_colors) > 8:
             for col, color in enumerate(fancyskin_colors[8]):
                 self.make_group('fancyskin', (col, 8), f"muddypaws{color}")
