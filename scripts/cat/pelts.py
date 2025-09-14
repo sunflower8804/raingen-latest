@@ -478,7 +478,7 @@ class Pelt:
         elif not random.randint(0, bobaeyenum):
             self.eye_colour = choice(Pelt.bobaeye_colours)
         elif not random.randint(0, geckoeyenum):
-            self.eye_colour = choice(Pelt.geckoeye_colours)
+            self.eye_colour = choice(Pelt.geckoeye_colors)
 
         # White patches must be initalized before eye color.
         num = game.config["cat_generation"]["base_heterochromia"]
