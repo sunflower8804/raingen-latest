@@ -292,10 +292,10 @@ class Sprites:
         fancyskin_colors = sprites_py_dict['fancyskin_colors']
         # Handle rows 0-6 with function
         self.make_sprite_groups('fancyskin', fancyskin_colors[:10], 'skin')
-        # Handle row 11 seperately because it will suffer alone
+        # Handle row 10 seperately because it will suffer alone
         if len(fancyskin_colors) > 10:
-            for col, color in enumerate(fancyskin_colors[11]):
-                self.make_group('fancyskin', (col, 11), f"muddypaws{color}")
+            for col, color in enumerate(fancyskin_colors[10]):
+                self.make_group('fancyskin', (col, 10), f"muddypaws{color}")
 
         # data games stuff spritesheet
         datagamesstuff_colors = sprites_py_dict['datagamesstuff_colors']
