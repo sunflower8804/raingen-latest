@@ -507,23 +507,25 @@
   "tabbies": [
         "Tabby", "Ticked", "Classic", "Sokoke", "Agouti", "Masked", "Vulture", "Envoy", "Drizzle",
         "Necklace", "Leviathan", "Rotten", "Fire", "Solace", "Swing", "Ice", "Maned", "Sunken", "Daenix",
-        "Spooky", "Sworn", "Noble", "Marbled"
+        "Spooky", "Sworn", "Noble", "Marbled", "Citadel", "Mono", "Xelflame"
     ],
   "spotted": [
         "Speckled", "Rosette", "Gravel", "Banana", "Con", "Bengal", "Dreamer", "Oldgrowth", "Cherry",
         "Sparse", "Impish", "Ringed", "Mold", "Apple", "Glitter", "Whale", "Pidgeon", 
-        "Watermelon", "Lightecho", "Darkecho", "Salmon", "Plantain", "Malibu", "Clay"
+        "Watermelon", "Lightecho", "Darkecho", "Salmon", "Plantain", "Malibu", "Clay", "Anthesis",
+        "Interloper", "Painted", "Voidmass", "Lunatic", "Kiwi", "Lacuna"
     ],
   "plain": [
         "SingleColour", "TwoColour", "Smoke", "Singlestripe", "Collared", "Lizard", "Slimemold",
         "Fluffy", "Yeek", "Rusted", "Leafy", "Scaled", "Countershaded", "Sunset", "Skinny", 
-        "Sporty", "Skeleton", "Shred", "Robot", "Lantern"
+        "Sporty", "Skeleton", "Shred", "Robot", "Lantern", "Grave", "Xelsquid", "Mima", "Xelstar",
+        "Bowie"
     ],
   "exotic": [
         "Mackerel", "Cyanlizard", "Centipede", "Amoeba", "Seaslug", "Dragonfruit", "Duskdawn", 
         "Seer", "Wolf", "Sparklecat", "Hypnotist", "Fizzy", "Glowing", "Budgie", "Lovebird",
         "Seltzer", "Amazon", "Boba", "Iggy", "Tomo", "Dragonet", "Conure", "Betta", "Patchwork", 
-        "Constellation"
+        "Constellation", "Plated", "Slime", "Toonie", "Cosmos", "Snuff"
     ],
   "torties": ["Tortie", "Calico"],
 
