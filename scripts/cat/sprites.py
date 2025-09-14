@@ -247,7 +247,7 @@ class Sprites:
 
         #geckoeyes seperate as their coloring is weird
         geckoeyes_colors = sprites_py_dict['geckoeyes_colors']
-        self.make_sprite_groups('geckoeyes', geckoeye_colors, 'geckoeyes')
+        self.make_sprite_groups('geckoeyes', geckoeyes_colors, 'geckoeyes')
         
         # Define white patches
         white_patches = sprites_py_dict['white_patches']
