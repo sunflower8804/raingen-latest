@@ -248,6 +248,7 @@ class Sprites:
         #geckoeyes seperate as their coloring is weird
         geckoeyes_colors = sprites_py_dict['geckoeyes_colors']
         self.make_sprite_groups('geckoeyes', geckoeyes_colors, 'geckoeyes')
+        self.make_sprite_groups('geckoeyes2', geckoeyes_colors, 'geckoeyes2')
         
         # Define white patches
         white_patches = sprites_py_dict['white_patches']
@@ -292,10 +293,10 @@ class Sprites:
         fancyskin_colors = sprites_py_dict['fancyskin_colors']
         # Handle rows 0-6 with function
         self.make_sprite_groups('fancyskin', fancyskin_colors[:10], 'skin')
-        # Handle row 10 seperately because it will suffer alone
-        if len(fancyskin_colors) > 10:
-            for col, color in enumerate(fancyskin_colors[10]):
-                self.make_group('fancyskin', (col, 10), f"muddypaws{color}")
+        # Handle row 11 seperately because it will suffer alone
+        if len(fancyskin_colors) > 11:
+            for col, color in enumerate(fancyskin_colors[11]):
+                self.make_group('fancyskin', (col, 11), f"muddypaws{color}")
 
         # data games stuff spritesheet
         datagamesstuff_colors = sprites_py_dict['datagamesstuff_colors']
