@@ -117,6 +117,9 @@ class Pelt:
 
     white_sprites = [little_white, mid_white, high_white, mostly_white, point_markings, vit, 'FULLWHITE']  
 
+    tortiepatterns = sprite_names_dict['tortiepatterns']
+    tortiebases = sprite_names_dict['tortiebases']
+
     pelt_length = sprite_names_dict['pelt_length']
 
     empty = sprite_names_dict['empty']
