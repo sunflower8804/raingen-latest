@@ -1,7 +1,7 @@
 {
   "sprite_folders": ["sprites/accs", "sprites/eyes", "sprites/lineart", "sprites/parts", "sprites/pelts", "sprites"],
   "sprite_names": [
-            "linart", "lineartdf", "lineartdead",
+            "lineart", "lineartdf", "lineartdead",
             "eyes", "eyes2", 
             "skin", "gilltongue", "beagilltongue", "horns", "fancyskin", "whiskers", "orbitals", "datagamesstuff",
             "budgiewings", "colorwings", "conurewings", "lovebirdwings", "manes", "overseertenna", "pidgeonwings",
