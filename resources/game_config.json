@@ -216,23 +216,24 @@
 			5, 55, 50, 50, 50, 45, 36, 36, 36, 36, 
 			36, 14, 8, 16, 16, 16, 50, 10, 6, 4, 2, 
 			3, 2, 2, 2, 2, 2, 1, 1, 1, 4, 2, 2,
-			2, 2, 2, 2, 2, 4, 6
+			2, 2, 2, 2, 2, 4, 6, 4, 10, 2, 2, 2, 2, 2
 						],
 		"comment": [
-			"These are the chances of each feature, AKA skin, AKA bodyparts. They add up to 1028, basically take the number of the feature you want and divide it by 1028 then multiply by 100 and you get your percentage.",
+			"These are the chances of each feature, AKA skin, AKA bodyparts. They used to add up to 1028, basically take the number of the feature you want and divide it by 1028 then multiply by 100 and you get your percentage.",
 			"The higher the number - the more common the feature is. If a feature's chance is 0 - it doesn't spawn.",
 			"The order is:",
 			"empty, claws, whiskers, antennae, sharphorns, ramhorns, scavhorns, elitehorns, unihorns, antlers, ",
 			"dragonhorns, moth, seaslugpapillae, tailfrills, thorns, glowspots, gills, tongues, lizardneedles, spikes, ",
 			"lizardfins, catfishwhiskers, dragonwhiskers, quills, centipedegrowths, stinger, fangs, anglerfish, spearholes, cyanfeatures, cyanwings, ",
 			"firebugpart, seaangelwings, loach, dropwig, glassback, grasssheepback, familiar, acrotail, tears, manes, overseertenna, budgiewings, ",
-			"conurewings, lovebirdwings, pidgeonwings, vulturewings, colorwings, whitefadewings, wings",
+			"conurewings, lovebirdwings, pidgeonwings, vulturewings, colorwings, whitefadewings, wings, bodyeyes, limbfades, chimneytail, ",
+			"slimetraits, kingtendrils, mechanical, wool",
 			"The default chances are:",
 			"150, 80, 80, 70, 17, 14, 14, 10, 10, 10, ",
 			"5, 55, 50, 50, 50, 45, 36, 36, 36, 36, ", 
 			"36, 14, 8, 16, 16, 16, 50, 10, 6, 4, 2, ",
 			"3, 2, 2, 2, 2, 2, 1, 1, 1, 4, 2, 2, ",
-			"2, 2, 2, 2, 2, 4, 6"
+			"2, 2, 2, 2, 2, 4, 6, 4, 10, 2, 2, 2, 2, 2"
 		]
 	},
 	"accessory_generation": {
