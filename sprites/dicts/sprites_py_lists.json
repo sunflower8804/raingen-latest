@@ -148,7 +148,7 @@
             "citadelcolours", "gravecolours", "interlopercolours", "paintedcolours", "platedcolours", "monocolours",
             "slimecolours", "voidmasscolours", "xelsquidcolours", "mimacolours", "xelstarcolours", "bowiecolours",
             "xelflamecolours", "tooniecolours", "lunaticcolours", "cosmoscolours", "snuffcolours", "kiwicolours",
-            "lacunacolours",
+            "lacunacolours"
         ],
   "tortiepatchesmasks": [
             ["ONE", "TWO", "THREE", "FOUR", "REDTAIL", "DELILAH", "HALF", "STREAK", "MASK", "SMOKE"],
