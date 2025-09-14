@@ -547,7 +547,7 @@ class Sprites:
         self.make_sprite_groups('newaccs4', newaccs4_data, 'newaccs4')
 
         # newaccs5
-        self.make_sprite_groups('newaccs5', newaccs_5data, 'newaccs5')
+        self.make_sprite_groups('newaccs5', newaccs5_data, 'newaccs5')
 
     def load_symbols(self):
         """
