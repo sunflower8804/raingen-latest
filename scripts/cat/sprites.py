@@ -346,6 +346,10 @@ class Sprites:
         Loads scar sprites and puts them into groups.
         """
 
+        #load json
+        with open("sprites/dicts/sprites_py_lists.json", "r") as f:
+            sprites_py_dict = ujson.loads(f.read())
+        
         # Define scars
         scars_data = sprites_py_dict['scars_data']
 
