@@ -1154,7 +1154,7 @@ class Pelt:
                 reptile_features = [Pelt.tailfrills, Pelt.cyanfeatures, Pelt.cyanwings, Pelt.spikes]
                 reptile_weights = [50, 30, 15, 10]
                 self.skin = choice(random.choices(reptile_features, reptile_weights, k=1)[0])
-                self.name = "Scaley"
+                self.name = "Scaled"
                 print("reptile spotted!!")
 
             if self.skin in Pelt.centipedegrowths and self.tortiepattern == None:
