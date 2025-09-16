@@ -2,674 +2,207 @@ import random
 from random import choice
 from re import sub
 
+import ujson
+
 from scripts.cat.sprites import sprites
 from scripts.game_structure.game_essentials import game
 
 
 class Pelt:
-    sprites_names = {
-        "SingleColour": 'single',
-        'TwoColour': 'single',
-        'Tabby': 'tabby',
-        'Marbled': 'marbled',
-        'Rosette': 'rosette',
-        'Smoke': 'smoke',
-        'Ticked': 'ticked',
-        'Speckled': 'speckled',
-        'Bengal': 'bengal',
-        'Mackerel': 'mackerel',
-        'Classic': 'classic',
-        'Sokoke': 'sokoke',
-        'Agouti': 'agouti',
-        'Singlestripe': 'singlestripe',
-        'Masked': 'masked',
-        'Gravel': 'gravel',
-        'Collared': 'collared',
-        'Slimemold': 'slimemold',
-        'Cyanlizard': 'cyanlizard',
-        'Vulture': 'vulture',
-        'Banana': 'banana',
-        'Centipede': 'centipede',
-        'Con': 'con',
-        'Lizard': 'lizard',
-        'Lantern': 'lantern',
-        'Leviathan': 'leviathan',
-        'Fluffy': 'fluffy',
-        'Amoeba': 'amoeba',
-        'Seaslug': 'seaslug',
-        'Yeek': 'yeek',
-        'Rusted': 'rusted',
-        'Envoy': 'envoy',
-        'Drizzle': 'drizzle',
-        'Solace': 'solace',
-        'Leafy': 'leafy',
-        'Scaled': 'scaled',
-        'Dragonfruit': 'dragonfruit',
-        'Necklace': 'necklace',
-        'Dreamer': 'dreamer',
-        'Duskdawn': 'duskdawn',
-        'Seer': 'seer',
-        'Rotten': 'rotten',
-        'Fire': 'fire',
-        'Countershaded': 'countershaded',
-        'Sunset': 'sunset',
-        'Oldgrowth': 'oldgrowth',
-        'Sparklecat': 'sparklecat',
-        'Wolf': 'wolf',
-        'Cherry': 'cherry',
-        'Hypnotist': 'hypnotist',
-        'Ringed': 'ringed',
-        'Skinny': 'skinny',
-        'Sparse': 'sparse',
-        'Impish': 'impish',
-        'Sporty': 'sporty',
-        'Fizzy': 'fizzy',
-        'Skeleton': 'skeleton',
-        'Shred': 'shred',
-        'Glowing': 'glowing',
-        'Mold': 'mold',
-        'Swing': 'swing',
-        'Lovebird': 'lovebird',
-        'Budgie': 'budgie',
-        'Amazon': 'amazon',
-        'Apple': 'apple',
-        'Boba': 'boba',
-        'Glitter': 'glitter',
-        'Ice': 'ice',
-        'Iggy': 'iggy',
-        'Maned': 'maned',
-        'Patchwork': 'patchwork',
-        'Robot': 'robot',
-        'Sunken': 'sunken',
-        'Tomo': 'tomo',
-        'Whale': 'whale',
-        'Pidgeon': 'pidgeon',
-        'Watermelon': 'watermelon',
-        'Dragonet': 'dragonet',
-        'Salmon': 'salmon',
-        'Lightecho': 'lightecho',
-        'Darkecho': 'darkecho',
-        'Plantain': 'plantain',
-        'Daenix': 'daenix',
-        'Seltzer': 'seltzer',
-        'Sworn': 'sworn',
-        'Spooky': 'spooky',
-        'Conure': 'conure',
-        'Noble': 'noble',
-        'Betta': 'betta',
-        'Constellation': 'constellation',
-        'Malibu': 'malibu',
-        'Clay': 'clay',
-        'Antethisis': 'antethisis',
-        'Citadel': 'citadel',
-        'Grave': 'grave',
-        'Interloper': 'interloper',
-        'Tortie': None,
-        'Calico': None,
-    }
 
-    @staticmethod
-    def with_suffix(colours, suffix):
-        #Helper code for OPTIMIZATION WOOOO
-        return [f"{c}{suffix}" for c in colours]
-
-    # ATTRIBUTES, including non-pelt related
-    pelt_colours = [
-        'WHITE', 'SKY', 'BLUE', 'INDIGO', 'PURPLE', 'GHOST', 'BLACK', 'CREAM', 'YELLOW',
-        'ORANGE', 'SCARLET', 'RED', 'PINK', 'MINT', 'LIME', 'GREEN', 'MAROON', 'PERIWINKLE',
-        'LAVENDER'
-    ]
-    pelt_c_no_white = [
-        'SKY', 'BLUE', 'INDIGO', 'PURPLE', 'GHOST', 'BLACK', 'CREAM', 'YELLOW',
-        'ORANGE', 'SCARLET', 'RED', 'PINK', 'MINT', 'LIME', 'GREEN', 'MAROON', 'PERIWINKLE',
-        'LAVENDER'
-    ]
-    pelt_c_no_bw = [
-        'SKY', 'BLUE', 'INDIGO', 'PURPLE', 'CREAM', 'YELLOW',
-        'ORANGE', 'SCARLET', 'RED', 'PINK', 'MINT', 'LIME', 'GREEN', 'MAROON', 'PERIWINKLE',
-        'LAVENDER'
-    ]
-
-    tortiepatterns = ['ONE', 'TWO', 'THREE', 'FOUR', 'REDTAIL', 'DELILAH', 'HALF', 'STREAK', 'MASK', 'SMOKE',
-                    'MINIMALONE', 'MINIMALTWO', 'MINIMALTHREE', 'MINIMALFOUR', 'OREO', 'SWOOP', 'CHIMERA', 'CHEST', 'ARMTAIL',
-                    'GRUMPYFACE',
-                    'MOTTLED', 'SIDEMASK', 'EYEDOT', 'BANDANA', 'PACMAN', 'STREAMSTRIKE', 'SMUDGED', 'DAUB', 'EMBER', 'BRIE',
-                    'ORIOLE', 'ROBIN', 'BRINDLE', 'PAIGE', 'ROSETAIL', 'SAFI', 'DAPPLENIGHT', 'BLANKET', 'BELOVED', 'BODY',
-                    'SHILOH', 'FRECKLED', 'HEARTBEAT', 'SPECKLES', 'TIGER', 'SHROOM', 'MAILBOX', 'GILAMONSTER', 'RINGEDMIMIC',
-                    'NECKLACEMIMIC']
-    tortiebases = ['single', 'tabby', 'bengal', 'marbled', 'ticked', 'smoke', 'rosette', 'speckled', 'mackerel',
-                'classic', 'sokoke', 'agouti', 'singlestripe', 'masked', 'gravel', 'collared', 'slimemold',
-                'cyanlizard', 'vulture', 'banana', 'centipede', 'con', 'lizard', 'lantern', 'leviathan',
-                'fluffy', 'amoeba', 'yeek', 'rusted', 'envoy', 'drizzle', 'solace', 'leafy', 'scaled', 'dragonfruit', 
-                'necklace', 'dreamer', 'duskdawn', 'seer', 'rotten', 'fire', 'countershaded', 'sunset', 'oldgrowth', 
-                'sparklecat', 'wolf', 'cherry', 'hypnotist', 'ringed', 'skinny', 'sparse', 'impish', 'sporty', 
-                'skeleton', 'shred', 'glowing', 'mold', 'swing', 'lovebird', 'budgie', 'amazon', 'apple', 'boba',
-                'glitter', 'ice', 'iggy', 'maned', 'patchwork', 'robot', 'sunken', 'tomo', 'whale', 'pidgeon', 'watermelon',
-                'dragonet', 'salmon', 'lightecho', 'darkecho', 'plantain', 'daenix', 'seltzer', 'sworn', 'spooky', 'conure', 
-                'noble', 'betta', 'constellation', 'malibu', 'clay']
-
-    pelt_length = ["short", "medium", "long"]
-    eye_colours = ['YELLOW', 'AMBER', 'HAZEL', 'PALEGREEN', 'GREEN', 'BLUE', 'DARKBLUE', 'GREY', 'CYAN', 'EMERALD', 'PALEBLUE', 
-        'PALEYELLOW', 'GOLD', 'HEATHERBLUE', 'COPPER', 'SAGE', 'COBALT', 'SUNLITICE', 'GREENYELLOW', 'BRONZE', 'SILVER', 'RED', 'PURPLE', 'MAUVE',
-        'ELECTRICBLUE', 'VIOLET', 'PINK', 'SNOW', 'ORANGE', 'CREAM', 'SEAFOAM', 'CRIMSON', 'NAVY', 'VOIDGOLD', 'COOLBROWN', 'PLUM',
-        'INDIGO', 'LILAC', 'ACROBLUE', 'ACROGREEN', 'ACROGREY', 'ACROINDIGO', 'ACROAMBER', 'ACROPINK', 'ACRORED', 'ACROTEAL',
-        'ALBA', 'ALBINO', 'ANGEL', 'APPLE', 'AQUA', 'ARID', 'BANANA', 'BLOOD', 'CARNI', 'CHAIN', 
-        'CREAMY', 'DAWN', 'ESES', 'EXILE', 'FAE', 'FALLSTAR', 'FIELD', 'FOAM', 'HOT', 'IRID', 
-        'KARMA', 'KIND', 'MARTI', 'MEISTALT', 'MEISTER', 'MELON', 'MESS', 'MHUNT', 'MINT', 'MINV', 
-        'MOON', 'MRIV', 'PEACH', 'PEBB', 'PELA', 'PEPPER', 'RETRO', 'RUNT', 'RUST', 'SIG', 
-        'SIXER', 'SPLIT', 'SUN', 'SWEET', 'TIDE', 'VIVID', 'WAVE', 'WINKS', 'ZENI', 'BEAST',
-
-        'BROWNTBOI', 'ORANGETBOI', 'BREDTBOI', 'REDTBOI', 'FIRE', 'RUBY', 'RUBYAGAIN', 'ESCAPEE',
-        'REFORGED', 'FLORAVORE', 'REJECT', 'WAYFARER', 'PISTON', 'EXILED', 'THEIF', 'THEIFDOS', 'MORTICIAN',
-        'SWAMPY', 'PORTALMAKER', 'PURIFIER', 'CORROSOL', 'SEVENSEVEN', 'ATLAN', 'BASIC', 'BELL', 'BIS', 'BIT',
-        'CRITTER', 'CUBED', 'DIM', 'DOE', 'FREYR', 'GAMBLE', 'GORB', 'HERO', 'JANE', 'JOHN', 'MATT', 'MESS',
-        'PE', 'POLE', 'RAT', 'RGB', 'ROT', 'SCRATCH', 'SHED', 'SIEGE', 'SPARK', 'SPARKLE', 'SUNSET', 'TELA',
-        'USURP', 'WAR', 'XIII', 
-        
-        'BUTCHER', 'DREAMER', 'FAKEGOLD', 'GREENDREAM', 'HEATSTROKE', 'VIBRANCY', 'SIGNAL', 'PURPLEDREAM', 
-        'NOVEMBER', 'LEADER']
+    with open("sprites/dicts/sprite_names.json", "r") as f:
+            sprite_names_dict = ujson.loads(f.read())
     
-    #do NOT add eyes with pupils here!!!! they go in yourcolour_pupil_eyes
-    yellow_eyes = [
-        'YELLOW', 'AMBER', 'PALEYELLOW', 'GOLD', 'COPPER', 'GREENYELLOW', 'BRONZE', 'SILVER', 'ORANGE', 'CREAM', 'VOIDGOLD',
-        'BROWNTBOI', 'ORANGETBOI', 'ACROAMBER', 'ACROGREY', 'FIRE', 'PISTON', 'THEIFDOS', 'MORTICIAN', 'SWAMPY',
-        'PURIFIER', 'CORROSOL',
-        'BUTCHER', 'FAKEGOLD', 'HEATSTROKE', 'VIBRANCY'
-        ]
-    blue_eyes = [
-        'BLUE', 'DARKBLUE', 'CYAN', 'PALEBLUE', 'HEATHERBLUE', 'COBALT', 'SUNLITICE', 'GREY', 'ELECTRICBLUE', 'SNOW', 'INDIGO',
-        'ANGEL', 'ACROBLUE', 'ACROINDIGO', 'ESCAPEE', 'REJECT', 'WAYFARER', 'THEIF', 'GREENDREAM', 'SIGNAL', 'PURPLEDREAM',
-        'NOVEMBER'
-        ]
-    green_eyes = [
-        'PALEGREEN', 'GREEN', 'EMERALD', 'SAGE', 'HAZEL', 'SEAFOAM', 'NAVY', 'MESS', 'ACROGREEN', 'ACROTEAL', 'EXILED',
-        'DREAMER', 'LEADER'
-        ]
-    red_eyes = [
-        'RED', 'PURPLE', 'MAUVE', 'VIOLET', 'PINK', 'CRIMSON', 'COOLBROWN', 'PLUM', 'LILAC', 
-        'MINT', 'PEACH', 'ALBINO', 'DAWN', 'BREDTBOI', 'REDTBOI', 'ACROPINK', 'ACRORED', 'RUBY', 'RUBYAGAIN', 'FLORAVORE',
-        'HERO'
-        ]
-    
-    #when a scug has one eye with a pupil and one without it looks bad so please list all eyes with pupils
-    pupil_eyes = ['ALBA', 'BANANA', 'CREAMY', 'KARMA', 'MHUNT', 'PEPPER', 'SPLIT', 'WINKS', 'ZENI', 'BEAST',
-                'CARNI', 'CHAIN', 'FOAM', 'MEISTALT', 'MELON', 'MINV', 'MOON', 'MRIV', 'PEBB', 'RUST', 'SIG', 
-                'TIDE', 'VIVID', 'WAVE', 'APPLE', 'AQUA', 'FAE', 'FIELD', 'IRID', 'RUNT', 
-                'ARID', 'BLOOD', 'ESES', 'EXILE', 'FALLSTAR', 'HOT', 'KIND', 'MARTI', 'MEISTER', 
-                'PELA', 'RETRO', 'SIXER', 'SUN', 'SWEET',
-                'REFORGED', 'PORTALMAKER', 'SEVENSEVEN', 'ATLAN', 'BASIC', 'BELL', 'BIS', 'BIT', 'CRITTER', 
-                'CUBED', 'DOE', 'FREYR', 'GAMBLE', 'GORB', 'JANE', 'JOHN', 'MATT', 'MESS', 'PE', 'POLE', 
-                'RAT', 'RGB', 'ROT', 'SCRATCH', 'SHED', 'SIEGE', 'SPARK', 'SPARKLE', 'SUNSET', 'TELA', 
-                'USURP', 'WAR', 'XIII']
-    yellow_pupil_eyes = ['ALBA', 'BANANA', 'CREAMY', 'KARMA', 'MHUNT', 'PEPPER', 'SPLIT', 'WINKS', 'ZENI', 'BEAST',
-                        'REFORGED', 'ATLAN', 'BASIC', 'BELL', 'GAMBLE']
-    blue_pupil_eyes = ['CARNI', 'CHAIN', 'FOAM', 'MEISTALT', 'MELON', 'MINV', 'MOON', 'MRIV', 'PEBB', 'RUST', 'SIG', 
-                        'TIDE', 'VIVID', 'WAVE', 'PORTALMAKER', 'CRITTER', 'FREYR', 'RAT', 'ROT']
-    green_pupil_eyes = ['APPLE', 'AQUA', 'FAE', 'FIELD', 'IRID', 'RUNT', 'CUBED',
-                        'GORB', 'JOHN', 'PE', 'POLE', 'RGB', 'SHED', 'SPARKLE', 'USURP', 'XIII']
-    red_pupil_eyes = ['ARID', 'BLOOD', 'ESES', 'EXILE', 'FALLSTAR', 'HOT', 'KIND', 'MARTI', 'MEISTER', 
-                        'PELA', 'RETRO', 'SIXER', 'SUN', 'SWEET', 'SEVENSEVEN', 'BIS', 'BIT',
-                        'DOE', 'JANE', 'MATT', 'MESS', 'SCRATCH', 'SIEGE', 'SPARK', 'SUNSET', 'TELA',
-                        'DIM']
+    sprites_names = sprite_names_dict['sprites_names']
 
-    riveye_colours = ['RIVYELLOW', 'RIVAMBER', 'RIVHAZEL', 'RIVPALEGREEN', 'RIVGREEN', 'RIVBLUE', 'RIVDARKBLUE', 'RIVGREY', 'RIVCYAN', 'RIVEMERALD', 'RIVPALEBLUE', 
-               'RIVPALEYELLOW', 'RIVGOLD', 'RIVHEATHERBLUE', 'RIVCOPPER', 'RIVSAGE', 'RIVCOBALT', 'RIVSUNLITICE', 'RIVGREENYELLOW', 'RIVBRONZE', 'RIVSILVER',
-               'ALTRIVYELLOW', 'ALTRIVAMBER', 'ALTRIVHAZEL', 'ALTRIVPALEGREEN', 'ALTRIVGREEN', 'ALTRIVBLUE', 'ALTRIVDARKBLUE', 'ALTRIVCYAN', 'ALTRIVEMERALD',
-               'ALTRIVHEATHERBLUE', 'ALTRIVSUNLITICE', 'ALTRIVCOPPER', 'ALTRIVSILVER', 'ALTRIVPALEYELLOW', 'ALTRIVGOLD', 'ALTRIVGREENYELLOW', 'RIVRED', 'RIVPURPLE', 'RIVMAUVE','RIVELECTRICBLUE', 'RIVVIOLET',
-               'RIVPINK', 'RIVSNOW', 'RIVORANGE', 'RIVCREAM', 'RIVSEAFOAM', 'RIVCRIMSON', 'RIVNAVY', 'RIVVOIDGOLD', 'RIVCOOLBROWN', 'RIVPLUM', 'RIVINDIGO', 'RIVLILAC',
-               'RIVALBA', 'RIVALBINO', 'RIVANGEL', 'RIVAPPLE', 'RIVAQUA', 'RIVARID', 'RIVBANANA', 'RIVBLOOD', 'RIVCARNI', 'RIVCHAIN', 'RIVCREAMY', 'RIVDAWN',
-               'RIVESES', 'RIVEXILE', 'RIVFAE', 'RIVFALLSTAR', 'RIVFIELD', 'RIVFOAM', 'RIVHOT', 'RIVIRID', 'RIVKARMA', 'RIVKIND', 'RIVMARTI', 'RIVMEISTALT',
-               'RIVMHUNT', 'RIVMELON', 'RIVMESS', 'RIVMEISTER', 'RIVMINT', 'RIVMINV', 'RIVMOON', 'RIVMRIV', 'RIVPEACH', 'RIVPEBB', 'RIVPELA', 'RIVPEPPER',
-               'RIVRETRO', 'RIVRUNT', 'RIVRUST', 'RIVSIG', 'RIVSIXER', 'RIVSPLIT', 'RIVSUN', 'RIVSWEET', 'RIVTIDE', 'RIVVIVID', 'RIVWAVE', 'RIVWINKS',
-               'RIVZENI', 'RIVBROWNTBOI', 'RIVORANGETBOI', 'RIVBREDTBOI', 'RIVREDTBOI', 'RIVACROINDIGO', 'RIVACROAMBER', 'RIVACROTEAL', 'RIVACROGREY', 'RIVACROGREEN', 'RIVACROBLUE', 'RIVACRORED',
-               'RIVACROPINK', 'RIVSPARKLE', 'RIVSUNSET', 'RIVSIEGE', 'RIVROT', 'RIVUSURP', 'RIVPE', 'RIVBIS', 'RIVCRITTER', 'RIVCUBED', 'RIVGAMBLE', 'RIVDIM', 'RIVBLUEORANGE', 'RIVMENACE',
-               'RIVDEVIOUS', 'RIVGORB', 'RIVSTARSTRUCK', 'RIVAMBERHONEY', 'RIVSUNDOWN', 'RIVPARADISE', 'RIVMOLTENLAVA', 'RIVSILVERMOON', 'RIVSHADOWEDSILVER', 'RIVLACREATURA',
-               'RIVAWAKENED', 'RIVASCENDED', 'RIVBLUERED', 'RIVWHITESILVER', 'RIVPINKLEMONADE', 'RIVHARVESTMOON', 'RIVPORTALGUN', 'RIVGASLIGHT', 'RIVBRONZEDIRT', 'RIVRBG', 'RIVRUBICON', 'RIVFIREGOLD', 'RIVBLOODRIVER',
-               'RIVPARTYRGB', 'RIVMIDNIGHTGLOW', 'RIVRBGLIGHTS', 'RIVBUBBLEGUM', 'RIVCYN']
-    yellow_riv_eyes = ['RIVYELLOW', 'RIVAMBER', 'RIVPALEYELLOW', 'RIVGOLD', 'RIVCOPPER', 'RIVGREENYELLOW', 'RIVBRONZE', 'RIVSILVER', 'ALTRIVYELLOW', 'ALTRIVAMBER', 'ALTRIVPALEYELLOW',
-                      'ALTRIVGOLD', 'ALTRIVCOPPER', 'ALTRIVGREENYELLOW', 'ALTRIVBRONZE', 'ALTRIVSILVER', 'RIVORANGE', 'RIVCREAM', 'RIVVOIDGOLD', 'RIVBROWNTBOI', 'RIVORANGETBOI',
-                      'RIVACROAMBER', 'RIVACROGREY', 'RIVSUNSET', 'RIVSIEGE', 'RIVAMBERHONEY', 'RIVPARADISE', 'RIVMOLTENLAVA', 'RIVAWAKENED', 'RIVASCENDED', 'RIVHARVESTMOON',
-                      'RIVBRONZEDIRT', 'RIVRUBICON', 'RIVFIREGOLD', 'RIVCYN']
-    blue_riv_eyes = ['RIVBLUE', 'RIVDARKBLUE', 'RIVCYAN', 'RIVPALEBLUE', 'RIVHEATHERBLUE', 'RIVCOBALT', 'RIVSUNLITICE', 'ALTRIVBLUE', 'ALTRIVDARKBLUE', 'ALTRIVCYAN', 'ALTRIVPALEBLUE', 'ALTRIVHEATHERBLUE',
-                     'ALTRIVCOBALT', 'ALTRIVSUNLITICE', 'RIVELECTRICBLUE', 'RIVSNOW', 'RIVINDIGO', 'RIVANGEL', 'RIVACROBLUE', 'RIVACROINDIGO', 'RIVROT', 'RIVUSURP', 'RIVPE', 'RIVCRITTER', 'RIVBLUEORANGE',
-                     'RIVSTARSTRUCK', 'RIVSILVERMOON', 'RIVSHADOWEDSILVER', 'RIVWHITESILVER', 'RIVPORTALGUN', 'RIVPARTYRGB', 'RIVMIDNIGHTGLOW']
-    green_riv_eyes = ['RIVPALEGREEN', 'RIVGREEN', 'RIVEMERALD', 'RIVSAGE', 'RIVHAZEL', 'ALTRIVPALEGREEN', 'ALTRIVGREEN', 'ALTRIVEMERALD', 'ALTRIVSAGE', 'ALTRIVHAZEL', 'RIVSEAFOAM', 'RIVNAVY',
-                     'RIVMESS', 'RIVACROGREEN', 'RIVACROTEAL', 'RIVCUBED', 'RIVGORB', 'RIVRGB', 'RIVRBGLIGHTS']
-    red_riv_eyes = ['RIVRED', 'RIVPURPLE', 'RIVMAUVE', 'RIVVIOLET', 'RIVPINK', 'RIVCRIMSON', 'RIVCOOLBROWN', 'RIVPLUM', 'RIVLILAC', 'RIVMINT', 'RIVPEACH', 'RIVALBINO', 'RIVDAWN', 'RIVBREDTBOI',
-                    'RIVREDTBOI', 'RIVACROPINK', 'RIVACRORED', 'RIVSPARKLE', 'RIVBIS', 'RIVGAMBLE', 'RIVDIM', 'RIVMENACE', 'RIVDEVIOUS', 'RIVSUNDOWN', 'RIVLACREATURA', 'RIVBLUERED',
-                    'RIVPINKLEMONADE', 'RIVGASLIGHT', 'RIVBLOODRIVER', 'RIVBUBBLEGUM']
-    
-    buttoneye_colours = ['BUTTONYELLOW', 'BUTTONAMBER', 'BUTTONHAZEL', 'BUTTONPALEGREEN', 'BUTTONGREEN', 'BUTTONBLUE', 
-                'BUTTONDARKBLUE', 'BUTTONGREY', 'BUTTONCYAN', 'BUTTONEMERALD', 'BUTTONHEATHERBLUE', 'BUTTONSUNLITICE', 
-                'BUTTONCOPPER', 'BUTTONSAGE', 'BUTTONCOBALT', 'BUTTONPALEBLUE', 'BUTTONBRONZE', 'BUTTONSILVER', 'BUTTONPALEYELLOW',
-                'BUTTONGOLD', 'BUTTONGREENYELLOW', 'BUTTONIRED', 'BUTTONPURPLE', 'BUTTONMAUVE', 'BUTTONINDIGO', 'BUTTONLILAC']
-    yellow_button_eyes = ['BUTTONYELLOW', 'BUTTONAMBER', 'BUTTONPALEYELLOW', 'BUTTONGOLD', 'BUTTONCOPPER', 'BUTTONGREENYELLOW', 'BUTTONBRONZE', 'BUTTONSILVER']
-    blue_button_eyes = ['BUTTONBLUE', 'BUTTONDARKBLUE', 'BUTTONCYAN', 'BUTTONPALEBLUE', 'BUTTONHEATHERBLUE', 'BUTTONCOBALT', 'BUTTONSUNLITICE', 'BUTTONINDIGO']
-    green_button_eyes = ['BUTTONPALEGREEN', 'BUTTONGREEN', 'BUTTONEMERALD', 'BUTTONSAGE']
-    red_button_eyes = ['BUTTONIRED', 'BUTTONPURPLE', 'BUTTONMAUVE', 'BUTTONLILAC']
+    eye_colours = sprite_names_dict['eye_colours']
+    yellow_eyes = sprite_names_dict['yellow_eyes']
+    blue_eyes = sprite_names_dict['blue_eyes']
+    green_eyes = sprite_names_dict['green_eyes']
+    red_eyes = sprite_names_dict['red_eyes']
+    pupil_eyes = sprite_names_dict['pupil_eyes']
+    yellow_pupil_eyes = sprite_names_dict['yellow_pupil_eyes']
+    blue_pupil_eyes = sprite_names_dict['blue_pupil_eyes']
+    green_pupil_eyes = sprite_names_dict['green_pupil_eyes']
+    red_pupil_eyes = sprite_names_dict['red_pupil_eyes']
+    riveye_colours = sprite_names_dict['riveye_colours']
+    yellow_riv_eyes = sprite_names_dict['yellow_riv_eyes']
+    blue_riv_eyes = sprite_names_dict['blue_riv_eyes']
+    green_riv_eyes = sprite_names_dict['green_riv_eyes']
+    red_riv_eyes = sprite_names_dict['red_riv_eyes']
+    buttoneye_colours = sprite_names_dict['buttoneye_colours']
+    yellow_button_eyes = sprite_names_dict['yellow_button_eyes']
+    blue_button_eyes = sprite_names_dict['blue_button_eyes']
+    green_button_eyes = sprite_names_dict['green_button_eyes']
+    red_button_eyes = sprite_names_dict['red_button_eyes']
+    bobaeye_colours = sprite_names_dict['bobaeye_colours']
+    yellow_boba_eyes = sprite_names_dict['yellow_boba_eyes']
+    blue_boba_eyes = sprite_names_dict['blue_boba_eyes']
+    green_boba_eyes = sprite_names_dict['green_boba_eyes']
+    red_boba_eyes = sprite_names_dict['red_boba_eyes']
+    multi_eyes = sprite_names_dict['multi_eyes']
+    geckoeyes_colors = sprite_names_dict['geckoeyes_colors']
+    yellow_gecko_eyes = sprite_names_dict['yellow_gecko_eyes']
+    blue_gecko_eyes = sprite_names_dict['blue_gecko_eyes']
+    green_gecko_eyes = sprite_names_dict['green_gecko_eyes']
+    red_gecko_eyes = sprite_names_dict['red_gecko_eyes']
 
-    bobaeye_colours = ['BOBAYELLOW', 'BOBAAMBER', 'BOBAHAZEL', 'BOBAPALEGREEN', 'BOBAGREEN', 'BOBABLUE', 'BOBADARKBLUE', 'BOBAGREY', 'BOBACYAN',
-                       'BOBAEMERALD', 'BOBAHEATHERBLUE', 'BOBASUNLITICE', 'BOBACOPPER', 'BOBASAGE', 'BOBACOBALT', 'BOBAPALEBLUE', 'BOBABRONZE', 'BOBASILVER',
-                       'BOBAPALEYELLOW', 'BOBAGOLD', 'BOBAGREENYELLOW', 'BOBARED', 'BOBAPURPLE', 'BOBAMAUVE', 'BOBAALBA', 'BOBAALBINO', 'BOBAANGEL', 'BOBAAPPLE',
-                       'BOBAAQUA', 'BOBAARID', 'BOBABANANA', 'BOBABLOOD', 'BOBACARNI', 'BOBACHAIN', 'BOBACREAMY', 'BOBADAWN', 'BOBAESES', 'BOBAEXILE', 'BOBAFAE',
-                       'BOBAFALLSTAR', 'BOBAFIELD', 'BOBAFOAM', 'BOBAHOT', 'BOBAIRID', 'BOBAKARMA', 'BOBAKIND', 'BOBAMARTI', 'BOBAMEISTALT', 'BOBAMHUNT', 'BOBAMELON',
-                       'BOBAMESS', 'BOBAMEISTER', 'BOBAMINT', 'BOBAMINV', 'BOBAMOON', 'BOBAMRIV', 'BOBAPEACH', 'BOBAPEBB', 'BOBAPELA', 'BOBAPEPPER', 'BOBARETRO',
-                       'BOBARUNT', 'BOBARUST', 'BOBASIG', 'BOBASIXER', 'BOBASPLIT', 'BOBASUN', 'BOBASWEET', 'BOBATIDE', 'BOBAVIVID', 'BOBAWAVE', 'BOBAWINKS', 'BOBAZENI',
-                       'BOBABEAST']
-    yellow_boba_eyes = ['BOBAYELLOW', 'BOBAAMBER', 'BOBAPALEYELLOW', 'BOBAGOLD', 'BOBACOPPER', 'BOBAGREENYELLOW', 'BOBABRONZE', 'BOBASILVER',
-                       'BOBAALBA', 'BOBABANANA', 'BOBACREAMY', 'BOBAKARMA', 'BOBAMHUNT', 'BOBAPEPPER', 'BOBASPLIT', 'BOBAWINKS', 'BOBAZENI', 'BOBABEAST']
-    blue_boba_eyes = ['BOBABLUE', 'BOBADARKBLUE', 'BOBACYAN', 'BOBAPALEBLUE', 'BOBAHEATHERBLUE', 'BOBACOBALT', 'BOBASUNLITICE', 'BOBAGREY',
-                     'BOBACARNI', 'BOBACHAIN', 'BOBAFOAM', 'BOBAMEISTALT', 'BOBAMELON', 'BOBAMINV', 'BOBAMOON', 'BOBAMRIV', 'BOBAPEBB', 'BOBARUST',
-                     'BOBASIG', 'BOBATIDE', 'BOBAVIVID', 'BOBAWAVE']
-    green_boba_eyes = ['BOBAPALEGREEN', 'BOBAGREEN', 'BOBAEMERALD', 'BOBASAGE', 'BOBAHAZEL', 'BOBAAPPLE', 'BOBAAQUA', 'BOBAFAE', 'BOBAFIELD', 'BOBAIRID',
-                     'BOBARUNT']
-    red_boba_eyes = ['BOBARED', 'BOBAPURPLE', 'BOBAMAUVE', 'BOBAARID', 'BOBABLOOD', 'BOBAESES', 'BOBAEXILE', 'BOBAFALLSTAR', 'BOBAHOT', 'BOBAKIND',
-                    'BOBAMARTI', 'BOBAMEISTER', 'BOBAPELA', 'BOBARETRO', 'BOBASIXER', 'BOBASUN', 'BOBASWEET']
-    
-    multi_eyes = ['MULTIYELLOW', 'MULTIAMBER', 'MULTIHAZEL', 'MULTIPALEGREEN', 'MULTIGREEN', 'MULTIBLUE', 
-                'MULTIDARKBLUE', 'MULTIGREY', 'MULTICYAN', 'MULTIEMERALD', 'MULTIHEATHERBLUE', 'MULTISUNLITICE',
-                'MULTICOPPER', 'MULTISAGE', 'MULTICOBALT', 'MULTIPALEBLUE', 'MULTIBRONZE', 'MULTISILVER',
-                'MULTIPALEYELLOW', 'MULTIGOLD', 'MULTIGREENYELLOW', 'MULTIRED', 'MULTIPURPLE', 'MULTIMAUVE',
-                'MULTIELECTRICBLUE', 'MULTIVIOLET', 'MULTIPINK', 'MULTISNOW',
-                'MULTIORANGE', 'MULTICREAM', 'MULTISEAFOAM', 'MULTICRIMSON', 'MULTINAVY',
-                'MULTIVOIDGOLD', 'MULTICOOLBROWN', 'MULTIPLUM', 'MULTIINDIGO', 'MULTILILAC',
-                'MULTIACROBLUE', 'MULTIACROGREEN', 'MULTIACROGREY', 'MULTIACROINDIGO',
-                'MULTIACROAMBER', 'MULTIACROPINK', 'MULTIACRORED', 'MULTIACROTEAL',
-                'MULTIALBA', 'MULTIALBINO', 'MULTIANGEL', 'MULTIAPPLE', 'MULTIAQUA', 
-                'MULTIARID', 'MULTIBANANA', 'MULTIBLOOD', 'MULTICARNI', 'MULTICHAIN',
-                'MULTICREAMY', 'MULTIDAWN', 'MULTIESES', 'MULTIEXILE', 'MULTIFAE', 
-                'MULTIFALLSTAR', 'MULTIFIELD', 'MULTIFOAM', 'MULTIHOT', 'MULTIIRID',
-                'MULTIKARMA', 'MULTIKIND', 'MULTIMARTI', 'MULTIMEISTALT', 'MULTIMEISTER', 
-                'MULTIMELON', 'MULTIMESS', 'MULTIMHUNT', 'MULTIMINT', 'MULTIMINV',
-                'MULTIMOON', 'MULTIMRIV', 'MULTIPEACH', 'MULTIPEBB', 'MULTIPELA', 
-                'MULTIPEPPER', 'MULTIRETRO', 'MULTIRUNT', 'MULTIRUST', 'MULTISIG',
-                'MULTISIXER', 'MULTISPLIT', 'MULTISUN', 'MULTISWEET', 'MULTITIDE', 
-                'MULTIVIVID', 'MULTIWAVE', 'MULTIWINKS', 'MULTIZENI', 'MULTIBEAST',
-                'MULTIBROWNTBOI', 'MULTIORANGETBOI', 'MULTIBREDTBOI', 'MULTIREDTBOI',
-                'MULTIFIRE', 'MULTIRUBY', 'MULTIRUBYAGAIN', 'MULTIESCAPEE', 'MULTIREFORGED',
-                'MULTIFLORAVORE', 'MULTIREJECT', 'MULTIWAYFARER', 'MULTIPISTON',
-                'MULTIEXILED', 'MULTITHEIF', 'MULTITHEIFDOS', 'MULTIMORTICIAN', 'MULTISWAMPY',
-                'MULTIPORTALMAKER', 'MULTIPURIFIER', 'MULTICORROSOL', 'MULTISEVENSEVEN',
-                'MULTIATLAN', 'MULTIBASIC', 'MULTIBELL', 'MULTIBIS', 'MULTIBIT',
-                'MULTICRITTER', 'MULTICUBED', 'MULTIDIM', 'MULTIDOE', 'MULTIFREYR',
-                'MULTIGAMBLE', 'MULTIGORB', 'MULTIHERO', 'MULTIJANE', 'MULTIJOHN',
-                'MULTIMATT', 'MULTIMESS', 'MULTIPE', 'MULTIPOLE', 'MULTIRAT', 'MULTIRGB',
-                'MULTIROT', 'MULTISCRATCH', 'MULTISHED', 'MULTISIEGE', 'MULTISPARK',
-                'MULTISPARKLE', 'MULTISUNSET', 'MULTITELA', 'MULTIUSURP', 'MULTIWAR',
-                'MULTIXIII'
-                ]
+    tabbies = sprite_names_dict['tabbies']
+    spotted = sprite_names_dict['spotted']
+    plain = sprite_names_dict['plain']
+    exotic = sprite_names_dict['exotic']
+    torties = sprite_names_dict['torties']
 
-    # bite scars by @wood pank on discord
-
-    # scars from other cats, other animals
-    scars1 = ["ONE", "TWO", "THREE", "FOUR", "TAILSCAR", "SNOUT", "CHEEK", "SIDE", "THROAT", "TAILBASE", "BELLY",
-              "LEGBITE", "NECKBITE", "FACE", "MANLEG", "BRIGHTHEART", "MANTAIL", "BRIDGE", "RIGHTBLIND", "LEFTBLIND",
-              "BOTHBLIND", "BEAKCHEEK", "BEAKLOWER", "CATBITE", "RATBITE", "QUILLCHUNK", "QUILLSCRATCH", "HINDLEG",
-              "BACK", "QUILLSIDE", "SCRATCHSIDE", "BEAKSIDE", "CATBITETWO", "LABRATFACE", "LABRATCHEST", 
-              "NEUTRINO", "MANGLEDARM", "DOUBLEBITE", "DANGEROUS", "X-FACE", "VULTURESHOULDER", "CHEEKCUT", "MIROSNOM",
-              "SPEARWOUND", "TAIL", "SHOULDER", "EYE", "ARM"]
-
-    # missing parts
-    scars2 = ["LEFTEAR", "RIGHTEAR", "NOTAIL", "HALFTAIL", "NOPAW", "NOLEFTEAR", "NORIGHTEAR", "NOEAR"]
-
-    # "special" scars that could only happen in a special event
-    scars3 = ["SNAKE", "TOETRAP", "BURNPAWS", "BURNTAIL", "BURNBELLY", "BURNRUMP", "FROSTFACE", "FROSTTAIL",
-              "FROSTMITT", "FROSTSOCK", "TOE", "SNAKETWO", "ROTMARKED", "ROTRIDDEN", "TOPSURGERY", "CUTOPEN", 
-              "VIVISECTION", "LABRATLIMBS", "HALFFACELEFT", "FULLBODYBURNS", "BESIEGED", "HALFFACERIGHT", 
-              "STARBURN", "ARMBURN", "ENVOYCHEST", "EXTRACTIONTWO", "RESTITCHEDUPPER", 
-              "RESTITCHEDLOWER", "STITCHEDHEAD", "MESSIAH", "SMOKINGFACE", "BURNTLEG", "BURNTARM", 
-              "ARTIRIGHT", "ARTIGLOWRIGHT", "ARTILEFT", "ARTIGLOWLEFT", "PATCHWORK", "BLIZZARDBLAST"]
-
-    # make sure to add plural and singular forms of new accs to acc_display.json so that they will display nicely
-    plant_accessories = ["MAPLE LEAF", "HOLLY", "BLUE BERRIES", "FORGET ME NOTS", "RYE STALK", "LAUREL",
-                         "BLUEBELLS", "NETTLE", "POPPY", "LAVENDER", "HERBS", "PETALS", "DRY HERBS",
-                         "OAK LEAVES", "SCUGMINT", "MAPLE SEED", "JUNIPER", "SAKURA"]
-
-    wild_accessories = ["RED FEATHERS", "BLUE FEATHERS", "JAY FEATHERS", "MOTH WINGS", "CICADA WINGS"]
-    tail_accessories = ["RED FEATHERS", "BLUE FEATHERS", "JAY FEATHERS"]
-    collars = [
-        "CRIMSON", "BLUE", "YELLOW", "CYAN", "RED", "LIME", "GREEN", "RAINBOW",
-        "BLACK", "SPIKES", "WHITE", "PINK", "PURPLE", "MULTI", "INDIGO", "CRIMSONBELL", "BLUEBELL",
-        "YELLOWBELL", "CYANBELL", "REDBELL", "LIMEBELL", "GREENBELL",
-        "RAINBOWBELL", "BLACKBELL", "SPIKESBELL", "WHITEBELL", "PINKBELL", "PURPLEBELL",
-        "MULTIBELL", "INDIGOBELL", "CRIMSONBOW", "BLUEBOW", "YELLOWBOW", "CYANBOW", "REDBOW",
-        "LIMEBOW", "GREENBOW", "RAINBOWBOW", "BLACKBOW", "SPIKESBOW", "WHITEBOW", "PINKBOW",
-        "PURPLEBOW", "MULTIBOW", "INDIGOBOW", "CRIMSONNYLON", "BLUENYLON", "YELLOWNYLON", "CYANNYLON",
-        "REDNYLON", "LIMENYLON", "GREENNYLON", "RAINBOWNYLON",
-        "BLACKNYLON", "SPIKESNYLON", "WHITENYLON", "PINKNYLON", "PURPLENYLON", "MULTINYLON", "INDIGONYLON",
-        "CRIMSONDRONE", "BLUEDRONE", "YELLOWDRONE", "CYANDRONE", "REDDRONE", "LIMEDRONE", "GREENDRONE",
-        "RAINBOWDRONE", "BLACKDRONE", "SPIKESDRONE", "WHITEDRONE", "PINKDRONE", "PURPLEDRONE", "MULTIDRONE", "INDIGODRONE"]
-    #Lex's RW Lizards
-    lizards = [
-        "BLUESKY", "BLUESEA", "PINKMAGENTA", "PINKPURPLE", "GREENEMERALD", "GREENLIME", "WHITEHIDDEN", "WHITEREVEALED", 
-        "BLACKNEUTRAL", "BLACKALERT", "YELLOWORANGE", "YELLOWLEMON", "REDTOMATO", "CYANBLUE", "CYANGREEN", 
-        "ALBISALAFUSHIA", "ALBISALARED", "MELASALARED", "MELASALAFUSHIA", "MELASALAPURPLE"
-    ]
-    #sey's accessories
-    #sorry sey i was too lazy to make a new sprite sheet 
-    muddypaws = [
-        "MUDDYPAWS", "WHITECLAWS", "PINKCLAWS", "BLUECLAWS", "GREENCLAWS", "YELLOWCLAWS", "REDCLAWS", "GREYCLAWS"
-    ]
-    insectwings = [
-        "DEATHSHEAD", "BLUEBORDERED", "BLOODVEIN", "LARGEEMERALD", "CINNABAR", "LUNA", "ROSYMAPLE",
-        "ATLAS", "HERCULES", "SUNSET", "PURPLEEMPEROR", "WHITEADMIRAL", "SWALLOWTAIL"
-    ]
-    #other
-    herbs2 = [
-        "SPEAR", "PEARLEAR", "KARMAFLOWER", "LILCENTI", "PEARLNECK", "REDBATNIP", 
-        "LILFLY", "BATNIP", "FLASHFRUIT", "REDFLASHFRUIT", "GREENKELP", "REDKELP", 
-        "VULTMASK", "KINGMASK", "SCAVMASK", "TREESEED", "GLOWSTONE", "BROWNKELP", 
-        "LILBEETLE", "EXPLOSPEAR", "GREENDRAGFLY", "BLUEDRAGFLY", "ELESPEAR"
-    ]
-    buddies = [
-        "MOUSEBLUE", "MOUSEYEL", "MOUSEPINK", "MOUSERED", "YEEKRED", "YEEKBLUE",
-        "VULTGRUB", "GRAPPLE", "SNAILGREEN", "SNAILBLUE", "SNAILRED", "SNAILPURPLE",
-        "NOODLERED", "NOODLEPURPLE", "NOODLEGREY", "NOODLEBLUE", "NOODLEWHITE", "NOODLEPINK",
-        "IGGYYELLOW", "IGGYPURPLE", "IGGYWHITE", "IGGYGREEN", "IGGYRED", "IGGYBLUE",
-        "SQUIDBLACK", "SQUIDWHITE", "BUBBLE", "WORMGRASSPOT", "POLEPLANTPOT"
-    ]
-    newaccs = [
-        "BATFLY", "BLUEFRUIT", "EMPTYBAG", "HERBSBAG", "INVEGG", "VOIDSPAWN",
-        "REDARMOR", "OVERSEEREYE", "SPIDEREAR", "NEURONBLUE", "NEURONRED", "NEURONGREEN",
-        "NEURONWHITE", "KARMAONE", "KARMATWO", "KARMATHREE", "KARMAFOUR", "SCROLL",
-        "NECKLACESILVER", "NECKLACEGOLD", "TAILWRAP", "RAINCOAT", "LACESCARF", "TOLLMASK",
-        "FLOWEREDMOSS", "MOSS", "MUSHROOMS", "MUSHROOMHAT", "GRENADE", "SANTAHAT",
-        "EYEPATCH", "INVMOUTH", "MOUSEYELPLUSH", "MOUSEREDPLUSH", "MOUSEBLUEPLUSH", "MOUSEPINKPLUSH"
-    ]
-    newaccs2 = [
-        "GLITCHING", "ROBOTARM", "ROBOTLEG", "SCRAPARMOR", "BLINDFOLD",
-        "BRONZEPOCKETWATCH", "SILVERPOCKETWATCH", "GOLDPOCKETWATCH", "MURDERPAINT", "BOGMOSSBLUE",
-        "BOGMOSSGREEN", "BOGMOSSLIME",
-        "ORANGEPLANTPELT", "LIMEPLANTPELT", "GREENPLANTPELT", "YELLOWPLANTPELT", "BLUEPLANTPELT"
-    ]
-    bodypaint = [
-        "REDPAINT", "PINKPAINT", "VOIDPAINT", "YELLOWPAINT", "GREENPAINT", "PALEPAINT",
-        "CYANPAINT", "BLUEPAINT", "PURPLEPAINT", "MAGENTAPAINT", "BLACKPAINT", "WHITEPAINT"
-    ]
-    implant = [
-        "IMPLANTWHITE", "IMPLANTPURPLE", "IMPLANTGREEN", "IMPLANTYELLOW", "IMPLANTBLUE",
-        "EYEIMPLANTWHITE", "EYEIMPLANTRED", "EYEIMPLANTGREEN", "EYEIMPLANTYELLOW", "EYEIMPLANTBLUE",
-        "GLOWWHITE", "GLOWPURPLE", "GLOWGREEN", "GLOWYELLOW", "GLOWBLUE",
-        "CELLIMPLANT"
-    ]
-    magic = [
-        "ORANGEFIRE", "GREENFIRE", "BLUEFIRE", "YELLOWFIRE", "WHITEFIRE", "PINKFIRE", "REDFIRE",
-        "GREENRING", "CYANRING", "SILVERRING", "WHITERING", "YELLOWRING", "VOIDRING", "GOLDRING",
-        "PETPEBBLE", "PETCLAY", "PETLAPIS", "PETAMETHYST", "PETJADE", "PETGRANITE", "PETSANDSTONE"
-    ]
-    necklaces = [
-        "NECKLACEWHITE", "NECKLACEPINK", "NECKLACEPURPLE", "NECKLACEYELLOW", "NECKLACECYAN",
-        "NECKLACEGREEN", "NECKLACERED", "NECKLACEORANGE", "NECKLACEBLUE", "NECKLACEBLACK"
-    ]
-    drapery = [
-        "DRAPERYWHITE", "DRAPERYORANGE", "DRAPERYTAN", "DRAPERYPALEYELLOW", "DRAPERYYELLOW", "DRAPERYMINT", "DRAPERYGREEN", "DRAPERYLIGHTAQUA",
-        "DRAPERYAQUA", "DRAPERYCYAN", "DRAPERYLIGHTGRAY", "DRAPERYPURPLE", "DRAPERYLIGHTINDIGO", "DRAPERYBLUE", "DRAPERYLAVENDER", "DRAPERYLIGHTPINK", "DRAPERYPINK",
-        "DRAPERYHOTPINK", "DRAPERYGRAY", "DRAPERYDARKGRAY", "DRAPERYLIGHTRED", "DRAPERYRED", "DRAPERYPEACH", "DRAPERYLIGHTORANGE"
-    ]
-    pridedrapery = [
-        "ORIGINALGAYDRAPERY", "TRANSDRAPERY", "GENDERQUEERDRAPERY", "AGENDERDRAPERY", "NONBINARYDRAPERY", "POLYAMDRAPERY", "GENDERFLUIDDRAPERY",
-        "GENDERFLUXDRAPERY", "GAYDRAPERY", "OMNISEXUALDRAPERY", "OBJECTUMDRAPERY", "RAINBOWDRAPERY", "PHILIDRAPERY", "BISEXUALDRAPERY",
-        "PANSEXUALDRAPERY", "POLYSEXUALDRAPERY", "ASEXUALDRAPERY", "LESBIANDRAPERY", "INTERSEXDRAPERY", "AROACEDRAPERY", "DEMIGIRLDRAPERY",
-        "DEMIBOYDRAPERY", "DEMIGENDERDRAPERY", "DEMIFLUIDDRAPERY", "DEMIFLUXDRAPERY", "ABRODRAPERY", "ARODRAPERY", "DEMISEXDRAPERY",
-        "DEMIRODRAPERY", "ACHILLEANDRAPERY", "SAPPHICDRAPERY", "DIAMORICDRAPERY", "UNLABELEDDRAPERY", "TRANSFEMDRAPERY", "TRANSMASCDRAPERY",
-        "BIGENDERDRAPERY", "MULTISEXDRAPERY", "ACESPECDRAPERY", "AROSPECDRAPERY"
-    ]
-    eyepatches = [
-        "EYEPATCHWHITE", "EYEPATCHGREEN", "EYEPATCHAQUA", "EYEPATCHTURQUOISE", "EYEPATCHCYAN", "EYEPATCHBLUE", "EYEPATCHINDIGO",
-        "EYEPATCHPURPLE", "EYEPATCHMAGENTA", "EYEPATCHPINK", "EYEPATCHROSE", "EYEPATCHLIGHTGRAY", "EYEPATCHDARKGRAY", "EYEPATCHBLACK",
-        "EYEPATCHRED", "EYEPATCHORANGE", "EYEPATCHAMBER", "EYEPATCHYELLOW", "EYEPATCHLIME"
-    ]
-    #Lars's accessories 
-    larsaccs = [
-        "ALLSEEINGGOLD", "ALLSEEINGSILVER", "BESIEGEDMASKOG", "BESIEGEDMASKBLUE", "BESIEGEDMASKCYAN",
-        "BESIEGEDMASKGRAY", "BESIEGEDMASKGREEN", "BESIEGEDMASKINDIGO", "BESIEGEDMASKORANGE", "BESIEGEDMASKPINK",
-        "BESIEGEDMASKPURPLE", "BESIEGEDMASKRED", "BESIEGEDMASKROSE", "BESIEGEDMASKAQUA", "BESIEGEDMASKYELLOW",
-        "HANDPEARLBLANK", "HANDPEARLBLUE", "HANDPEARLGREEN", "HANDPEARLORANGE", "HANDPEARLPURPLE",
-        "HANDPEARLRED", "HANDPEARLYELLOW", "PEARLDRAPERY", "STRAIGHTGOLD", "STRAIGHTSILVER"
-    ]
-    #Harley's accessories, could be merged with other files
-    harleyaccs = [
-        "FALLENSTARMASK", "TORNCLOAKFALL", "FALLENSTARPAWS", "TORNCLOAKWINTER",
-        "TORNCLOAKNIGHT", "TORNCLOAKSHADOW", "TORNCLOAKSILVER", "FAUXMANE",
-        "SLEEPYROBEPURPLE", "SLEEPYROBEGREEN", "SLEEPYROBEBLACK", "SLEEPYROBERED",
-        "SLEEPYROBEBLUE", "SLEEPYROBEFLOAH", "ITERATORPEARLNECKLACE", "AMBERJEWLERY"
-    ]
-    featherboas = [
-        "DPINKFEATHERBOA", "DREDFEATHERBOA", "DGREENFEATHERBOA", "DBLUEFEATHERBOA", "DGREENERFEATHERBOA",
-        "DORANGEFEATHERBOA", "LWHITEFEATHERBOA", "LPURPLEFEATHERBOA", "LBLUEFEATHERBOA", "LPINKFEATHERBOA",
-        "DMAGENTAFEATHERBOA", "DCRIMSONFEATHERBOA", "DPURPLEFEATHERBOA"
-    ]
-    scarves = [
-        "REDSCARF", "ORANGESCARF", "YELLOWSCARF", "LIMESCARF", "GREENSCARF", "CYANSCARF", "WHITESCARF",
-        "BLUESCARF", "DARKBLUESCARF", "PURPLESCARF", "MAGENTASCARF", "BLACKSCARF", "GRAYSCARF", "BROWNSCARF",
-        "NSHSCARF", "SAWYERSCARF"
-    ]
-    neckbandanas = [
-        "DICEYNBANDANA", "EOUSNBANDANA", "FLUIDNBANDANA", "GUILDNBANDANA", "SKULLNBANDANA", "SKYNBANDANA", "SPACENBANDANA", "SWEETIENBANDANA",
-        "TCYANNBANDANA", "TIEDYEMUDDYNBANDANA", "TIEDYENBANDANA", "TSAVNBANDANA", "BLUEGRADNBANDANA", "ORANGEGRADNBANDANA",  "YELLOWGRADNBANDANA", "LIMEGRADNBANDANA",
-        "TEALGRADNBANDANA", "MAGENTAGRADNBANDANA", "REDGRADNBANDANA", "WHITENBANDANA", "LIGHTGRAYNBANDANA", "DARKGRAYNBANDANA", "BLACKNBANDANA", "PEACHNBANDANA",
-        "PALEREDNBANDANA", "REDNBANDANA", "MAROONNBANDANA", "PALEORANGENBANDANA", "LIGHTORANGENBANDANA", "ORANGENBANDANA", "BROWNNBANDANA", "PALEYELLOWNBANDANA",
-        "LIGHTYELLOWNBANDANA", "YELLOWNBANDANA", "PALEGREENNBANDANA", "LIGHTGREENNBANDANA", "GREENNBANDANA", "DARKGREENNBANDANA", "PALETEALNBANDANA", "LIGHTTEALNBANDANA",
-        "TEALNBANDANA", "DARKTEALNBANDANA", "PALEBLUENBANDANA", "LIGHTBLUENBANDANA", "DARKBLUENBANDANA", "BLUENBANDANA", "LAVENDERNBANDANA", "PURPLENBANDANA",
-        "DARKPURPLENBANDANA", "PALEPINKNBANDANA", "LIGHTPINKNBANDANA", "PINKNBANDANA", "DARKPINKNBANDANA", "PATCHWORKREDNBANDANA", "PATCHWORKORANGENBANDANA", "PATCHWORKYELLOWNBANDANA",
-        "PATCHWORKGREENNBANDANA", "PATCHWORKTEALNBANDANA", "PATCHWORKBLUENBANDANA", "PATCHWORKINDIGONBANDANA", "PATCHWORKPURPLENBANDANA", "PATCHWORKPINKNBANDANA"
-    ]
-    chains = [
-        "AMBERCHAIN", "PINKCHAIN", "PURPLECHAIN", "YELLOWCHAIN", "TEALCHAIN",
-        "GREENCHAIN", "REDCHAIN", "ORANGECHAIN", "BLUECHAIN", "BLACKCHAIN"
-    ]
-    newaccs3 = [
-        "FALLMPAINT", "SCAVMPAINT", "SPEARMPAINT", "BLUECLOUDS", "RIBS",
-        "YELLOWCLOUDS", "PURPLECLOUDS", "PINKCLOUDS", "GOGGLES", "MODSPEAR",
-        "PINKPOLEPLANTBUDDY", "ORANGEPOLEPLANTBUDDY", "REDPOLEPLANTBUDDY", "EYEBAGS",
-        "MAGNATEJEWLERY", "YELLOWKARMAWREATH", "BLUEKARMAWREATH", "PURPLEKARMAWREATH",
-        "MOTHBUDDY", "BOOMERANG", "MOTHBUDDYTWO", "MIST"
-    ]
-    floatyeyes = [
-        "YELLOWFLOATYEYES", "REDFLOATYEYES", "ORANGEFLOATYEYES",
-        "LIMEFLOATYEYES", "GREENFLOATYEYES", "BLUEFLOATYEYES",
-        "INDIGOFLOATYEYES"
-    ]
-    morespears = [
-        "PURPLEINDIGOPSPEAR", "INDIGOPSPEAR", "PURPLEPSPEAR", "CYANPSPEAR", "BLUEPSPEAR", "BLUECYANPSPEAR",
-        "GAYPSPEAR", "TURQUOISEPSPEAR", "TURQUOISEGREENPSPEAR", "LIMEGREENPSPEAR", "LIMEPSPEAR", "GREYPSPEAR",
-        "GREENPSPEAR", "ORANGEPSPEAR", "REDPSPEAR", "REDPINKPSPEAR", "PURPLEPINKPSPEAR", "PINKPSPEAR",
-        "MAGENTAPINKPSPEAR", "REDPURPLEPSPEAR", "BLUEPURPLEPSPEAR", "ROSEPINKPSPEAR", "GREENYELLOWPSPEAR", "LIMEYELLOWPSPEAR",
-        "YELLOWPSPEAR", "REDFIRESPEAR", "ORANGEFIRESPEAR", "YELLOWFIRESPEAR", "PINKFIRESPEAR", "PURPLEFIRESPEAR",
-        "DARKREDFIRESPEAR", "DARKPINKFIRESPEAR", "DARKORANGEFIRESPEAR", "DARKYELLOWFIRESPEAR"
-        ]
-    flagaccs = [
-        "BLUEFLAG", "COOLFLAG", "GREENFLAG", "GREYFLAG", "ORANGEFLAG",
-        "PINKFLAG", "PURPLEFLAG", "RAINBOWFLAG", "REDFLAG", "SINFLAG",
-        "TEALFLAG", "WARMFLAG", "WHITEFLAG", "YELLOWFLAG"
-    ]
-    haloaccs = [
-        "REDHALO", "ORANGEHALO", "YELLOWHALO", "GREENHALO", "TEALHALO",
-        "CYANHALO", "INDIGOHALO", "BLUEHALO", "PURPLEHALO", "MAGENTAHALO",
-        "PINKHALO", "WHITEHALO", "BLACKHALO"
-    ]
-    ponchoaccs = [
-        "ORANGEPONCHO", "YELLOWPONCHO", "GREENPONCHO", "TEALPONCHO", "CYANPONCHO",
-        "BLUEPONCHO", "PURPLEPONCHO", "PINKPONCHO", "REDPONCHO", "WHITEPONCHO",
-        "BROWNPONCHO", "SILVERPONCHO", "BLACKPONCHO", "MLOCPONCHO", "VSSCPONCHO",
-        "FAMILIARPONCHO", "NSHPONCHO"
-    ]
-    glassesaccs = [
-        "SUNGLASSESPINK", "SUNGLASSESRED", "SUNGLASSESORANGE", "SUNGLASSESAMBER", "SUNGLASSESYELLOW", "SUNGLASSESLIME",
-        "SUNGLASSESGREEN", "SUNGLASSESTEAL", "SUNGLASSESCYAN", "SUNGLASSESBLUE", "SUNGLASSESINDIGO", "SUNGLASSESPURPLE",
-        "SUNGLASSESWHITE", "SUNGLASSES", "GLASSESRED", "GLASSESORANGE", "GLASSESAMBER", "GLASSESYELLOW",
-        "GLASSESLIME", "GLASSESGREEN", "GLASSESTEAL", "GLASSESCYAN", "GLASSESBLUE", "GLASSESINDIGO",
-        "GLASSESPURPLE", "GLASSESPINK"
-    ]
-    orbitals = [
-        "ORANGEORBITAL", "YELLOWORBITAL", "EARTHORBITAL",
-        "EARTHTWOORBITAL", "PURPLEORBITAL", "PINKORBITAL", 
-        "REDORBITAL"
-    ]
-    vulturemasks = [
-        'VULTMASKONE', 'VULTMASKTWO', 'VULTMASK3', 'VULTMASK4', 'VULTMASK5', 'VULTMASK6', 'VULTMASK7', 'VULTMASK8',
-        'VULTMASK9', 'VULTMASK10', 'VULTMASK11', 'VULTMASK12', 'VULTMASK13', 'VULTMASK14', 'VULTMASK15', 'VULTMASK16', 
-        'VULTMASK17', 'VULTMASK18', 'VULTMASK19', 'VULTMASK20', 'VULTMASK21', 'VULTMASK22', 'VULTMASK23', 'VULTMASK24'
-    ]
-    iteratormasks = [
-        'BLUEITERATOR', 'BLACKITERATOR', 'GREENITERATOR', 'ORANGEITERATOR', 'PINKITERATOR', 'CYANITERATOR',
-        'PURPLEITERATOR', 'REDITERATOR', 'CREAMITERATOR', 'WHITEITERATOR', 'YELLOWITERATOR'
-    ]
-    
-    #list for stuff that should logically be behind a long tongue   
-    closest_accs = (
-        lizards + bells + bows + nylons + paints + implants + eye_implants + glows + drapery + 
-        pridedrapery + scarves + bandanas + featherboas + chains + ponchos + morespears + floatyeyes +
-        bogmosses + plantpelts +
-        ["MUDDYPAWS", "CELLIMPLANT", "GOGGLES", "EYEBAGS", "MAGNATEJEWLERY", "YELLOWKARMAWREATH", "BLUEKARMAWREATH", "PURPLEKARMAWREATH"]
-)
-
-    tabbies = [
-        "Tabby", "Ticked", "Classic", "Sokoke", "Agouti", "Masked", "Vulture", "Envoy", "Drizzle",
-        "Necklace", "Leviathan", "Rotten", "Fire", "Solace", "Swing", "Ice", "Maned", "Sunken", "Daenix",
-        "Spooky", "Sworn", "Noble", "Marbled"
-    ]
-    spotted = [
-        "Speckled", "Rosette", "Gravel", "Banana", "Con", "Bengal", "Dreamer", "Oldgrowth", "Cherry",
-        "Sparse", "Impish", "Ringed", "Mold", "Apple", "Glitter", "Whale", "Pidgeon", 
-        "Watermelon", "Lightecho", "Darkecho", "Salmon", "Plantain", "Malibu", "Clay"
-    ]
-    plain = [
-        "SingleColour", "TwoColour", "Smoke", "Singlestripe", "Collared", "Lizard", "Slimemold",
-        "Fluffy", "Yeek", "Rusted", "Leafy", "Scaled", "Countershaded", "Sunset", "Skinny", 
-        "Sporty", "Skeleton", "Shred", "Robot", "Lantern"
-    ]
-    exotic = [
-        "Mackerel", "Cyanlizard", "Centipede", "Amoeba", "Seaslug", "Dragonfruit", "Duskdawn", 
-        "Seer", "Wolf", "Sparklecat", "Hypnotist", "Fizzy", "Glowing", "Budgie", "Lovebird",
-        "Seltzer", "Amazon", "Boba", "Iggy", "Tomo", "Dragonet", "Conure", "Betta", "Patchwork", 
-        "Constellation"
-    ]
-    torties = ["Tortie", "Calico"]
     pelt_categories = [tabbies, spotted, plain, exotic, torties]
 
-    # SPRITE NAMES
-    single_colours = [
-        'WHITE', 'SKY', 'BLUE', 'INDIGO', 'PURPLE', 'GHOST', 'BLACK', 'CREAM', 'YELLOW',
-        'ORANGE', 'SCARLET', 'RED', 'PINK', 'MINT', 'LIME', 'GREEN', 'MAROON', 'PERIWINKLE',
-        'LAVENDER'
-    ]
-    warm_colours = ['YELLOW', 'ORANGE', 'SCARLET', 'RED', 'MAROON']
-    black_colours = ['GHOST', 'BLACK']
-    white_colours = ['WHITE', 'SKY', 'CREAM', 'PERIWINKLE']
-    cool_colours = ['BLUE', 'INDIGO', 'PURPLE', 'MINT', 'LIME', 'GREEN', 'LAVENDER']
-    colour_categories = [warm_colours, black_colours, white_colours, cool_colours]
-    little_white = [
-        'LITTLE', 'LIGHTTUXEDO', 'BUZZARDFANG', 'TIP', 'BLAZE', 'BIB', 'VEE', 'PAWS',
-        'BELLY', 'TAILTIP', 'TOES', 'BROKENBLAZE', 'LILTWO', 'SCOURGE', 'TOESTAIL', 'RAVENPAW', 'HONEY',
-        'LUNA',
-        'EXTRA', 'MUSTACHE', 'REVERSEHEART', 'SPARKLE', 'RIGHTEAR', 'LEFTEAR', 'ESTRELLA', 'REVERSEEYE',
-        'BACKSPOT',
-        'EYEBAGS', 'LOCKET', 'BLAZEMASK', 'TEARS', 'GLOVE', 'NECK',
-        'DOTS', 'FIVEPEBBLE', 'SIAMESE', 'SNOWBELLY',
-        'GLOWSTAR', 'STAR', 'DEADPIXEL', 'INSPECTOR', 'FACEDOTS', 'WPTEARS', 'ONEEARTIP', 'NOSETIP',
-        'WOLFX', 'GLOWWOLFX', 'TICKEDSPOTS', 'SHREDPATCH', 'TICKEDSTRIPE', 'TICKEDONE', 'BROW',
-        'TOPFIN', 'LOWFIN', 'LINE'
-        ]
-    mid_white = [
-        'TUXEDO', 'FANCY', 'UNDERS', 'DAMIEN', 'SKUNK', 'MITAINE', 'SQUEAKS', 'STAR', 'WINGS',
-        'DIVA', 'SAVANNAH', 'FADESPOTS', 'BEARD', 'DAPPLEPAW', 'TOPCOVER', 'WOODPECKER', 'MISS', 'BOWTIE',
-        'VEST',
-        'FADEBELLY', 'DIGIT', 'FCTWO', 'FCONE', 'MIA', 'ROSINA', 'PRINCESS', 'BALLER', 'TREFOIL', 'MANUL',
-        'HEAD', 'SPARSE', 'BADGER', 'BELLY', 'MASK', 'LIGHTNING', 'FROSTBITTEN',
-        'LIMBS', 'STRIPES', 'SLICE', 'TOONY', 'ACROBAT',
-        'DEFIBULATOR', 'WOLFINSIDE', 'TICKEDSPOTSSTRIPE', 'WOLDOUTSIDEONE', 'WOLFFILLONE', 'ECHOBELLY', 'LURE',
-        'WATERMELONSEEDS', 'DEEP', 'PLUSHIE', 'SCALETAIL', 'SPARKLING', 'POPPY', 'RISING'
-                 ]
-    high_white = [
-        'ANY', 'ANYTWO', 'BROKEN', 'FRECKLES', 'RINGTAIL', 'HALFFACE', 'PANTSTWO',
-        'GOATEE', 'PRINCE', 'FAROFA', 'MISTER', 'PANTS', 'REVERSEPANTS', 'HALFWHITE', 'APPALOOSA', 'PIEBALD',
-        'CURVED', 'GLASS', 'MASKMANTLE', 'MAO', 'PAINTED', 'SHIBAINU', 'OWL', 'BUB', 'SPARROW', 'TRIXIE',
-        'SAMMY', 'FRONT', 'BLOSSOMSTEP', 'BULLSEYE', 'FINN', 'SCAR', 'BUSTER', 'HAWKBLAZE', 'CAKE',
-        'PAINTSPLAT', 'ELDER',
-        'REVERSEHEAD', 'HEX', 'SHREDONE', 'SHREDTWO', 'WOLFOUTSIDETWO', 'TICKEDTWO',
-        'TICKEDFILLONE', 'TICKEDFILLTWO','TICKEDFILLTHREE', 'SPOOKYBONES', 'WATERMELONWAVE', 'FACEMASK', 'STUFFED',
-        'CARBON'
-                  ]
-    mostly_white = [
-        'VAN', 'ONEEAR', 'LIGHTSONG', 'TAIL', 'HEART', 'MOORISH', 'APRON', 'CAPSADDLE',
-        'CHESTSPECK', 'BLACKSTAR', 'PETAL', 'HEARTTWO', 'PEBBLESHINE', 'BOOTS', 'COW', 'COWTWO', 'LOVEBUG',
-        'SHOOTINGSTAR', 'EYESPOT', 'PEBBLE', 'TAILTWO', 'BUDDY', 'KROPKA',
-        'DOUGIE', 'REVERSETEARS', 'REVERSETEARSTWO', 'REVERSENECK', 'ESCAPEE',
-        'WOLFFILLTWO', 'TREEFROG', 'RIPPLE'
-                    ]
-    point_markings = ['COLOURPOINT', 'RAGDOLL', 'SEPIAPOINT', 'MINKPOINT', 'SEALPOINT']
-    vit = ['VITILIGO', 'VITILIGOTWO', 'MOON', 'PHANTOM', 'KARPATI', 'POWDER', 'BLEACHED', 'SMOKEY', 'CHARCOAL']
-    white_sprites = [little_white, mid_white, high_white, mostly_white, point_markings, vit, 'FULLWHITE']
-    
-    # Colorized features using inline color lists with with_suffix
-    empty = ['BLACK', 'PINK', 'DARKBROWN', 'BROWN', 'LIGHTBROWN', 'DARK', 'DARKGREY', 'GREY', 'DARKSALMON', 'SALMON', 'PEACH', 'DARKMARBLED', 'MARBLED', 'LIGHTMARBLED', 'DARKBLUE', 'BLUE', 'LIGHTBLUE', 'RED']
-    claws = ['BLACKCLAWS']
-    whiskers = Pelt.with_suffix(['WHITE', 'BLACK', 'RED', 'YELLOW', 'GREEN', 'BLUE', 'ORANGE', 'BROWN'], 'WHISKERS')
-    antennae = ['WHITETENNA', 'REDTENNA', 'PINKTENNA', 'ORANGETENNA', 'YELLOWTENNA', 'BLUETENNA', 'GREENTENNA']
-    sharphorns = Pelt.with_suffix(['WHITE', 'BLACK', 'RED', 'YELLOW', 'GREEN', 'BLUE', 'ORANGE', 'BROWN'], 'HORNSSHARP')
-    ramhorns = Pelt.with_suffix(['WHITE', 'BLACK', 'RED', 'YELLOW', 'GREEN', 'BLUE', 'ORANGE', 'BROWN'], 'HORNSRAM')
-    scavhorns = Pelt.with_suffix(['WHITE', 'BLACK', 'RED', 'YELLOW', 'GREEN', 'BLUE', 'ORANGE', 'BROWN'], 'HORNSSCAV')
-    elitehorns = Pelt.with_suffix(['WHITE', 'BLACK', 'RED', 'YELLOW', 'GREEN', 'BLUE', 'ORANGE', 'BROWN'], 'HORNSELITE')
-    unihorns = Pelt.with_suffix(['WHITE', 'BLACK', 'RED', 'YELLOW', 'GREEN', 'BLUE', 'ORANGE', 'BROWN'], 'HORNSLANCER')
-    antlers = ['ANTLERS']
-    dragonhorns = Pelt.with_suffix(['WHITE', 'BLACK', 'RED', 'YELLOW', 'GREEN', 'BLUE', 'ORANGE', 'BROWN'], 'HORNSDRAGON')
-    tailfrills = Pelt.with_suffix(['BLUE', 'ORANGE', 'GREEN', 'PURPLE', 'PINK', 'RED', 'YELLOW', 'CYAN'], 'TAILFRILLS')
-    spikes = Pelt.with_suffix(['YELLOW', 'GREEN', 'AQUA', 'CYAN', 'BLUE', 'PURPLE', 'PINK', 'RED', 'ORANGE'], 'SPIKES')
-    seaslugpapillae = ['SEASLUGPAPILLAE']
-    thorns = Pelt.with_suffix(['BLACK', 'WHITE'], 'THORNS')
-    gills = Pelt.with_suffix(['PINK', 'BLUE', 'RED', 'LIME', 'YELLOW', 'WHITE', 'RAINBOW', 'GRAY', 'HOT', 'COLD'], 'GILLS')
-    tongues = Pelt.with_suffix(['FUCHSIA', 'PASTEL', 'KOBI', 'RED', 'GREY', 'ORANGE'], 'TONGUE')
-    moth = Pelt.with_suffix(['WHITE', 'BLACK', 'RED', 'YELLOW', 'GREEN', 'BLUE', 'ORANGE', 'BROWN'], 'MOTH')
-    glowspots = Pelt.with_suffix(['WHITE', 'RED', 'PINK', 'ORANGE', 'YELLOW', 'BLUE', 'GREEN'], 'GLOWSPOTS')
-    lizardneedles = Pelt.with_suffix(['BLACK', 'WHITE', 'RAINBOW'], 'NEEDLES')
-    catfishwhiskers = Pelt.with_suffix(['WHITE', 'PINK', 'RED', 'YELLOW', 'GREEN', 'REDYELLOW', 'BLUE', 'PURPLE', 'BLACK', 'BLUEGREEN', 'BLUEPINK', 'BROWN'], 'CATFISHWHISKERS')
-    dragonwhiskers = Pelt.with_suffix(['WHITE', 'PINK', 'RED', 'YELLOW', 'GREEN', 'REDYELLOW', 'BLUE', 'PURPLE', 'BLACK', 'BLUEGREEN', 'BLUEPINK', 'BROWN'], 'DRAGONWHISKERS')
-    lizardfins = Pelt.with_suffix(['PINK', 'BLUE', 'RED', 'GREEN', 'YELLOW', 'WHITE'], 'FINS')
-    anglerfish = ['ANGLERFISH']
-    quills = Pelt.with_suffix(['WHITE', 'BLACK'], 'QUILLS')
-    centipedegrowths = ['CENTIPEDEGROWTHS']
-    tears = ['TEARS']
-    spearholes = Pelt.with_suffix(['WHITE', 'BLACK', 'MIX', 'RAINBOW'], 'SPOTS')
-    cyanfeatures = Pelt.with_suffix(['WHITE', 'ORANGE', 'BROWN', 'PINK', 'PINKER', 'TEAL', 'GREEN', 'BLOODY', 'LAVENDER', 'PURPLE', 'CYAN', 'BLUE', 'DARKBLUE', 'DARKPURPLE', 'BLACK', 'EGG', 'YELLOW'], 'CYAN')
-    cyanwings = ['CYANWINGS']
-    firebugpart = ['FIREBUGPART']
-    seaangelwings = ['SEAANGELWINGS']
-    loach = ['LOACH']
-    grasssheepback = ['GRASSSHEEPBACK']
-    glassback = ['GLASSBACK']
-    familiar = ['FAMILIARMARK']
-    acrotail = ['ACROTAIL']
-    stinger = Pelt.with_suffix(['BLACK', 'GREY', 'WHITE', 'GOLD'], 'STINGER')
-    dropwig = Pelt.with_suffix(['PURPLE', 'GREEN', 'BLUE'], 'DROPWIG')
-    manes = Pelt.with_suffix(['DARKBROWN', 'CHOCOLATE', 'GOLDEN', 'BLOND', 'GINGER', 'SILVER'], 'MANE')
-    overseertenna = Pelt.with_suffix(['WHITE', 'SKY', 'BLUE', 'INDIGO', 'PURPLE', 'GHOST', 'BLACK', 'CREAM', 'YELLOW', 'ORANGE', 'SCARLET', 'RED', 'PINK', 'MINT', 'LIME', 'GREEN', 'MAROON', 'PERIWINKLE', 'LAVENDER'], 'OVERSEERTENNA')
-    budgiewings = Pelt.with_suffix(['WHITE', 'SKY', 'BLUE', 'INDIGO', 'PURPLE', 'GHOST', 'BLACK', 'CREAM', 'YELLOW', 'ORANGE', 'SCARLET', 'RED', 'PINK', 'MINT', 'LIME', 'GREEN', 'MAROON', 'PERIWINKLE', 'LAVENDER'], 'BUDGIEWINGS')
-    conurewings = Pelt.with_suffix(['WHITE', 'SKY', 'BLUE', 'INDIGO', 'PURPLE', 'GHOST', 'BLACK', 'CREAM', 'YELLOW', 'ORANGE', 'SCARLET', 'RED', 'PINK', 'MINT', 'LIME', 'GREEN', 'MAROON', 'PERIWINKLE', 'LAVENDER'], 'CONUREWINGS')
-    lovebirdwings = Pelt.with_suffix(['WHITE', 'SKY', 'BLUE', 'INDIGO', 'PURPLE', 'GHOST', 'BLACK', 'CREAM', 'YELLOW', 'ORANGE', 'SCARLET', 'RED', 'PINK', 'MINT', 'LIME', 'GREEN', 'MAROON', 'PERIWINKLE', 'LAVENDER'], 'LOVEBIRDWINGS')
-    pidgeonwings = Pelt.with_suffix(['WHITE', 'SKY', 'BLUE', 'INDIGO', 'PURPLE', 'GHOST', 'BLACK', 'CREAM', 'YELLOW', 'ORANGE', 'SCARLET', 'RED', 'PINK', 'MINT', 'LIME', 'GREEN', 'MAROON', 'PERIWINKLE', 'LAVENDER'], 'PIDGEONWINGS')
-    vulturewings = Pelt.with_suffix(['WHITE', 'SKY', 'BLUE', 'INDIGO', 'PURPLE', 'GHOST', 'BLACK', 'CREAM', 'YELLOW', 'ORANGE', 'SCARLET', 'RED', 'PINK', 'MINT', 'LIME', 'GREEN', 'MAROON', 'PERIWINKLE', 'LAVENDER'], 'VULTUREWINGS')
-    colorwings = Pelt.with_suffix(['WATCHER', 'ARTIFICER','HUNTER', 'SAINT', 'RIVULETWINGS', 'SPEARMASTER', 'GOURMAND'], 'WINGS')
-    whitefadewings = Pelt.with_suffix(['WHITE','DARKCREAM','CREAM','OFFWHITE','GRAY','PINK','BLACK','POWDERBLUE','SPLASH','PURPLE','BLACKBERRY','SAND','CLAY','BRICK','SALMON','SEAFOAM','MINT','EVERGREEN','CRANBERRY','PEARL','ORCHID','RUBY','CORAL','TAN','LEMON','CLOVER','CYAN','VIOLET','GOLDEN'],'WINGSFADE')
-    wings = Pelt.with_suffix(['WHITE','DARKCREAM','CREAM','OFFWHITE','GRAY','PINK','BLACK','POWDERBLUE','SPLASH','PURPLE','BLACKBERRY','SAND','CLAY','BRICK','SALMON','SEAFOAM','MINT','EVERGREEN','CRANBERRY','PEARL','ORCHID','RUBY','CORAL','TAN','LEMON','CLOVER','CYAN','VIOLET','GOLDEN'],'WINGS')
-        dragonhorns, moth, seaslugpapillae, tailfrills, thorns, glowspots, gills, tongues, lizardneedles, spikes, 
-        lizardfins, catfishwhiskers, dragonwhiskers, quills, centipedegrowths, stinger, anglerfish, spearholes, cyanfeatures, cyanwings, 
-        firebugpart, seaangelwings, loach, dropwig, glassback, grasssheepback, familiar, acrotail, tears, manes, overseertenna, budgiewings,
-        conurewings, lovebirdwings, pidgeonwings, vulturewings, colorwings, whitefadewings, wings
-        ]
-    
-    #list for stuff that should logically be behind a cloak
-    closest_skin = [
-        'WHITESPOTS', 'BLACKSPOTS', 'MIXSPOTS', 'RAINBOWSPOTS',
-        'WHITEGLOWSPOTS', 'REDGLOWSPOTS', 'PINKGLOWSPOTS', 'ORANGEGLOWSPOTS', 'YELLOWGLOWSPOTS', 'BLUEGLOWSPOTS', 'GREENGLOWSPOTS',
-        'WHITECYAN', 'ORANGECYAN', 'BROWNCYAN', 'PINKCYAN', 'PINKERCYAN', 'TEALCYAN', 'GREENCYAN', 'BLOODYCYAN', 'LAVENDERCYAN', 
-        'PURPLECYAN', 'CYANCYAN', 'BLUECYAN', 'DARKBLUECYAN', 'DARKPURPLECYAN', 'BLACKCYAN', 'EGGCYAN', 'YELLOWCYAN',
-        'PINKFINS', 'BLUEFINS', 'REDFINS', 'GREENFINS', 'YELLOWFINS', 'WHITEFINS',
-        'BLACKNEEDLES', 'WHITENEEDLES', 'RAINBOWNEEDLES', 'BLACKTHORNS', 'WHITETHORNS',
-        'TEARS', 'SEAANGELWINGS', 'GLASSBACK', 'GRASSSHEEPBACK', 'LOACH', 'FAMILIARMARK'
-    ]
+    plant_accessories = sprite_names_dict['plant_accessories']
+    wild_accessories = sprite_names_dict['wild_accessories']
+    tail_accessories = sprite_names_dict['tail_accessories']
+    collars = sprite_names_dict['collars']
+    lizards = sprite_names_dict['lizards']
+    muddypaws = sprite_names_dict['muddypaws']
+    insectwings = sprite_names_dict['insectwings']
+    herbs2 = sprite_names_dict['herbs2']
+    buddies = sprite_names_dict['buddies']
+    newaccs = sprite_names_dict['newaccs']
+    newaccs2 = sprite_names_dict['newaccs2']
+    bodypaint = sprite_names_dict['bodypaint']
+    implant = sprite_names_dict['implant']
+    magic = sprite_names_dict['magic']
+    necklaces = sprite_names_dict['necklaces']
+    drapery = sprite_names_dict['drapery']
+    pridedrapery = sprite_names_dict['pridedrapery']
+    eyepatches = sprite_names_dict['eyepatches']
+    larsaccs = sprite_names_dict['larsaccs']
+    harleyaccs = sprite_names_dict['harleyaccs']
+    featherboas = sprite_names_dict['featherboas']
+    scarves = sprite_names_dict['scarves']
+    neckbandanas = sprite_names_dict['neckbandanas']
+    chains = sprite_names_dict['chains']
+    newaccs3 = sprite_names_dict['newaccs3']
+    floatyeyes = sprite_names_dict['floatyeyes']
+    morespears = sprite_names_dict['morespears']
+    flagaccs = sprite_names_dict['flagaccs']
+    haloaccs = sprite_names_dict['haloaccs']
+    ponchoaccs = sprite_names_dict['ponchoaccs']
+    glassesaccs = sprite_names_dict['glassesaccs']
+    orbitals = sprite_names_dict['orbitals']
+    vulturemasks = sprite_names_dict['vulturemasks']
+    iteratormasks = sprite_names_dict['iteratormasks']
+    basecollars = sprite_names_dict['basecollars']
+    pearlcollars = sprite_names_dict['pearlcollars']
+    studdedcollars = sprite_names_dict['studdedcollars']
+    newaccs4 = sprite_names_dict['newaccs4']
+    newaccs5 = sprite_names_dict['newaccs5']
+
+        #list for stuff that should logically be behind a long tongue   
+    closest_accs = (
+        lizards + bodypaint + collars + implant + drapery + 
+        pridedrapery + scarves + featherboas + chains + ponchoaccs + morespears + floatyeyes +
+        harleyaccs + neckbandanas + basecollars + pearlcollars + studdedcollars +
+        ["MUDDYPAWS", "CELLIMPLANT", "GOGGLES", "FALLMPAINT", "SCAVMPAINT", "SPEARMPAINT", "EYEBAGS", "MAGNATEJEWLERY", "YELLOWKARMAWREATH", "BLUEKARMAWREATH", "PURPLEKARMAWREATH",
+        "MURDERPAINT", "BOGMOSSBLUE", "BOGMOSSGREEN", "BOGMOSSLIME", "ORANGEPLANTPELT", "LIMEPLANTPELT", "GREENPLANTPELT", "YELLOWPLANTPELT", "BLUEPLANTPELT", "FAUXMANE",
+        "BLACKKARMAFLOWERWREATH", "GREENKARMAFLOWERWREATH", "PURPLEKARMAFLOWERWREATH", "REDKARMAFLOWERWREATH", "BLUEFLAMEMANE", "COOLFLAMEMANE", "COLORFULKARMAFLOWERWREATH",
+        "MOONPEARLNECKLACE", "NSHPEARLNECKLACE", "BLOODYPAWS", "INKYPAWS", "INKTEARS", "REDBOW", "GREYBOW", "WHITEBOW", "BROWNBOW", "ORANGEBOW", "YELLOWBOW", "GREENBOW", 
+        "TEALBOW", "BLUEBOW", "PURPLEBOW", "PINKBOW", "BLACKBOW"]
+)
+    scars1 = sprite_names_dict['scars1']
+    scars2 = sprite_names_dict['scars2']
+    scars3 = sprite_names_dict['scars3']
 
     skin_weights = game.config["feature_generation"]["feature_chances"]
+    
+    single_colours = sprite_names_dict['single_colours']
+    warm_colours = sprite_names_dict['warm_colours']
+    black_colours = sprite_names_dict['black_colours']
+    white_colours = sprite_names_dict['white_colours']
+    cool_colours = sprite_names_dict['cool_colours']
+        # SPRITE NAMES
+    colour_categories = [warm_colours, black_colours, white_colours, cool_colours]
+    
+
+    little_white = sprite_names_dict['little_white']
+    mid_white = sprite_names_dict['mid_white']
+    high_white = sprite_names_dict['high_white']
+    mostly_white = sprite_names_dict['mostly_white']
+    point_markings = sprite_names_dict['point_markings']
+    vit = sprite_names_dict['vit']
+
+    white_sprites = [little_white, mid_white, high_white, mostly_white, point_markings, vit, 'FULLWHITE']  
+
+    tortiepatterns = sprite_names_dict['tortiepatterns']
+    tortiebases = sprite_names_dict['tortiebases']
+
+    pelt_length = sprite_names_dict['pelt_length']
+
+    empty = sprite_names_dict['empty']
+    claws = sprite_names_dict['claws']
+    whiskers = sprite_names_dict['whiskers']
+    antennae = sprite_names_dict['antennae']
+    sharphorns = sprite_names_dict['sharphorns']
+    ramhorns = sprite_names_dict['ramhorns']
+    scavhorns = sprite_names_dict['scavhorns']
+    elitehorns = sprite_names_dict['elitehorns']
+    unihorns = sprite_names_dict['unihorns']
+    antlers = sprite_names_dict['antlers']
+    dragonhorns = sprite_names_dict['dragonhorns']
+    moth = sprite_names_dict['moth']
+    seaslugpapillae = sprite_names_dict['seaslugpapillae']
+    tailfrills = sprite_names_dict['tailfrills']
+    thorns = sprite_names_dict['thorns']
+    glowspots = sprite_names_dict['glowspots']
+    gills = sprite_names_dict['gills']
+    tongues = sprite_names_dict['tongues']
+    lizardneedles = sprite_names_dict['lizardneedles']
+    spikes = sprite_names_dict['spikes']
+    lizardfins = sprite_names_dict['lizardfins']
+    catfishwhiskers = sprite_names_dict['catfishwhiskers']
+    dragonwhiskers = sprite_names_dict['dragonwhiskers']
+    quills = sprite_names_dict['quills']
+    centipedegrowths = sprite_names_dict['centipedegrowths']
+    stinger = sprite_names_dict['stinger']
+    fangs = sprite_names_dict['fangs']
+    anglerfish = sprite_names_dict['anglerfish']
+    spearholes = sprite_names_dict['spearholes']
+    cyanfeatures = sprite_names_dict['cyanfeatures']
+    cyanwings = sprite_names_dict['cyanwings']
+    firebugpart = sprite_names_dict['firebugpart']
+    seaangelwings = sprite_names_dict['seaangelwings']
+    loach = sprite_names_dict['loach']
+    glassback = sprite_names_dict['glassback']
+    grasssheepback = sprite_names_dict['grasssheepback']
+    familiar = sprite_names_dict['familiar']
+    acrotail = sprite_names_dict['acrotail']
+    tears = sprite_names_dict['tears']
+    manes = sprite_names_dict['manes']
+    overseertenna = sprite_names_dict['overseertenna']
+    budgiewings = sprite_names_dict['budgiewings']
+    conurewings = sprite_names_dict['conurewings']
+    lovebirdwings = sprite_names_dict['lovebirdwings']
+    pidgeonwings = sprite_names_dict['pidgeonwings']
+    vulturewings = sprite_names_dict['vulturewings']
+    colorwings = sprite_names_dict['colorwings']
+    whitefadewings = sprite_names_dict['whitefadewings']
+    wings = sprite_names_dict['wings']
+    dropwig = sprite_names_dict['dropwig']
+    bodyeyes = sprite_names_dict['bodyeyes']
+    limbfades = sprite_names_dict['limbfades']
+    roboticspines = sprite_names_dict['roboticspines']
+    chimneytail = sprite_names_dict['chimneytail']
+    slimetraits = sprite_names_dict['slimetraits']
+    kingtendrils = sprite_names_dict['kingtendrils']
+    mechanical = sprite_names_dict['mechanical']
+    wool = sprite_names_dict['wool']
+    skin_categories = [ empty, claws, whiskers, antennae, sharphorns, ramhorns, scavhorns, elitehorns, unihorns, antlers,
+                        dragonhorns, moth, seaslugpapillae, tailfrills, thorns, glowspots, gills, tongues, lizardneedles,
+                        spikes, lizardfins, catfishwhiskers, dragonwhiskers, quills, centipedegrowths, stinger, fangs, anglerfish,
+                        spearholes, cyanfeatures, cyanwings, firebugpart, seaangelwings, loach, dropwig, glassback, grasssheepback,
+                        familiar, acrotail, tears, manes, overseertenna, budgiewings, conurewings, lovebirdwings, pidgeonwings,
+                        vulturewings, colorwings, whitefadewings, wings, bodyeyes, limbfades, chimneytail, slimetraits, kingtendrils,
+                        mechanical, wool
+                    ]
+    #list for stuff that should logically be behind a cloak
+    closest_skin = sprite_names_dict['closest_skin']
 
     """Holds all appearance information for a cat. """
 
@@ -936,6 +469,7 @@ class Pelt:
         riveyenum = game.config["cat_generation"]["base_riveyes"]
         buttoneyenum = game.config["cat_generation"]["base_buttoneyes"]
         bobaeyenum = game.config["cat_generation"]["base_bobaeyes"]
+        geckoeyenum = game.config["cat_generation"]["base_geckoeyes"]
 
         if not random.randint(0, riveyenum):
             self.eye_colour = choice(Pelt.riveye_colours)
@@ -943,6 +477,8 @@ class Pelt:
             self.eye_colour = choice(Pelt.buttoneye_colours)
         elif not random.randint(0, bobaeyenum):
             self.eye_colour = choice(Pelt.bobaeye_colours)
+        elif not random.randint(0, geckoeyenum):
+            self.eye_colour = choice(Pelt.geckoeyes_colors)
 
         # White patches must be initalized before eye color.
         num = game.config["cat_generation"]["base_heterochromia"]
@@ -966,6 +502,8 @@ class Pelt:
                 colour_wheel = [Pelt.yellow_button_eyes, Pelt.blue_button_eyes, Pelt.green_button_eyes, Pelt.red_button_eyes]
             elif self.eye_colour in Pelt.bobaeye_colours:
                 colour_wheel = [Pelt.yellow_boba_eyes, Pelt.blue_boba_eyes, Pelt.green_boba_eyes, Pelt.red_boba_eyes]
+            elif self.eye_colour in Pelt.geckoeyes_colors:
+                colour_wheel = [Pelt.yellow_gecko_eyes, Pelt.blue_gecko_eyes, Pelt.green_gecko_eyes, Pelt.red_gecko_eyes]
             else:
                 colour_wheel = [Pelt.yellow_eyes, Pelt.blue_eyes, Pelt.green_eyes, Pelt.red_eyes]
             for colour in colour_wheel[:]:
@@ -1346,6 +884,16 @@ class Pelt:
                 choice(Pelt.scarves),
                 choice(Pelt.neckbandanas),
                 choice(Pelt.morespears),
+                choice(Pelt.drapery),
+                choice(Pelt.pridedrapery),
+                choice(Pelt.featherboas),
+                choice(Pelt.chains),
+                choice(Pelt.floatyeyes),
+                choice(Pelt.flagaccs),
+                choice(Pelt.ponchoaccs),
+                choice(Pelt.glassesaccs),
+                choice(Pelt.orbitals),
+                choice(Pelt.vulturemasks)
             ]))
         else:
             self.accessories = []
@@ -1602,6 +1150,13 @@ class Pelt:
                 self.skin = choice(random.choices(fishy_features, fishy_weights, k=1)[0])
                 print("fish spotted!!")
 
+            if self.eye_colour in Pelt.geckoeyes_colors:
+                reptile_features = [Pelt.tailfrills, Pelt.cyanfeatures, Pelt.cyanwings, Pelt.spikes]
+                reptile_weights = [50, 30, 15, 10]
+                self.skin = choice(random.choices(reptile_features, reptile_weights, k=1)[0])
+                self.name = "Scaled"
+                print("reptile spotted!!")
+
             if self.skin in Pelt.centipedegrowths and self.tortiepattern == None:
                 self.name = "Centipede"
                 print("centipede spotted!!")
@@ -1643,6 +1198,10 @@ class Pelt:
             if self.name == "Budgie" or self.tortiebase == "Budgie" and self.tortiepattern == "Budgie":
                 self.skin = choice(Pelt.budgiewings)
                 print("Budgie spotted!!")
+
+            if self.name == "Plated" or self.tortiebase == "Plated" and self.tortiepattern == "Plated":
+                self.skin = choice(Pelt.mechanical)
+                print("Mecha scug spotted!!")
         
             if self.skin in Pelt.familiar:
                 self.colour = "PURPLE"
@@ -1677,129 +1236,18 @@ class Pelt:
         :param bool short: Whether to return a heavily-truncated description, default False
         :return str: The cat's description
         """
-
+        
+        with open("sprites/dicts/descriptions.json", "f") as f:
+            descriptions_dict = json.load(f)
+            
         # Define look-up dictionaries
         if short:
-            renamed_colors = {
-                "white": "pale",
-                "sky": "blue",
-                "indigo": "blue",
-                "mint": "green",
-                "lime": "green",
-                "maroon": "red",
-                "periwinkle": "purple",
-                "lavender": "purple",
-                "ghost": "black"
-            }
+            renamed_colors = descriptions_dict['short_renamed_colors']
         else:
-            renamed_colors = {
-                "white": "pale",
-                "sky": "sky",
-                "indigo": "indigo",
-                "mint": "mint",
-                "lime": "lime",
-                "maroon": "maroon",
-                "periwinkle": "periwinkle",
-                "lavender": "lavender",
-                "ghost": "black"
-            }
+            renamed_colors = descriptions_dict['renamed_colors']
 
-        pattern_des = {
-            "Tabby": "c_n tabby",
-            "Speckled": "speckled c_n",
-            "Bengal": "unusually striped c_n",
-            "Marbled": "c_n tabby",
-            "Ticked": "vivid splotchy c_n",
-            "Smoke": "c_n smoke",
-            "Mackerel": "c_n tabby",
-            "Classic": "c_n tabby",
-            "Agouti": "speckled c_n",
-            "Singlestripe": "dorsal-striped c_n",
-            "Rosette": "unusually spotted c_n",
-            "Sokoke": "unusually colored c_n tabby",
-            "Masked": "masked c_n smoke",
-            'Gravel': 'speckled c_n',
-            'Collared': 'c_n collared',
-            'Slimemold': 'c_n vivid smoke',
-            'Cyanlizard': 'c_n cyan lizard patterned',
-            'Vulture': 'masked c_n',
-            'Banana': 'dotted c_n',
-            'Centipede': 'centipede patterned',
-            'Con': 'layered c_n',
-            'Lizard': 'c_n lizard patterned',
-            'Lantern': 'spotted c_n',
-            'Leviathan': 'c_n tabby',
-            'Fluffy': 'fluffy c_n',
-            'Amoeba': 'c_n amoeba patterned',
-            'Seaslug': 'vividly striped c_n',
-            'Yeek': 'vividly banded c_n',
-            'Rusted': 'c_n smoke',
-            'Envoy': 'c_n patchy ticked',
-            'Drizzle': 'c_n drizzled',
-            'Solace': 'vivid dorsal-striped c_n',
-            'Leafy': 'leafy c_n',
-            'Scaled': 'scaley c_n',
-            'Dragonfruit': 'dragonfruit hued and patterned',
-            'Necklace': 'c_n collared',
-            'Dreamer': 'c_n smoke',
-            'Duskdawn': 'c_n dusky gradient',
-            'Seer': 'vividly tipped patchy c_n',
-            'Rotten': 'rotted c_n',
-            'Fire': 'c_n blotchy tabby',
-            'Countershaded': 'patchy c_n',
-            'Sunset': 'vivid c_n smoke',
-            'Oldgrowth': 'mossy c_n patched',
-            'Sparklecat': 'inverted patchy c_n',
-            'Wolf': 'rotten patchy c_n',
-            'Cherry': 'c_n cyan lizard patterned',
-            'Hypnotist': 'hypnotic c_n',
-            'Ringed': 'vividly pawed patchy c_n',
-            'Skinny': 'masked c_n smoke',
-            'Sparse': 'unusually striped c_n collared',
-            'Impish': 'c_n impish pattern',
-            'Sporty': 'vividly patched c_n',
-            'Fizzy': 'glass soda bottle patterned',
-            'Skeleton': 'unusually spotted c_n',
-            'Shred': 'patchy c_n',
-            'Glowing': 'glowy c_n',
-            'Mold': 'blotchy c_n',
-            'Swing': 'blocky c_n smoke',
-            'Lovebird': 'lovebird hued and patterned',
-            'Budgie': 'budgie hued and patterned',
-            'Amazon': 'neon striped',
-            'Apple': 'apple hued and patterned',
-            'Boba': 'c_n boba themed',
-            'Glitter': 'c_n smoke',
-            'Ice': 'c_n striped and speckled',
-            'Iggy': 'c_n overseer patterned',
-            'Maned': 'c_n striped',
-            'Patchwork': 'c_n false calico',
-            'Robot': 'robotic c_n',
-            'Sunken': 'vibrantly ribbed c_n',
-            'Tomo': 'glowy skeleton-patterned c_n',
-            'Whale': 'vividly speckled and ticked c_n',
-            'Pidgeon': 'speckled and ticked c_n',
-            'Watermelon': 'watermelon hued and patterned',
-            'Dragonet': 'vivid c_n tabby',
-            'Salmon': 'salmon hued and patterned',
-            'Lightecho': 'light c_n echo patterned',
-            'Darkecho' : 'dark c_n echo patterned',
-            'Plantain' : 'banana hued and patterned',
-            'Daenix' : 'banded c_n',
-            'Seltzer' : 'ticked c_n',
-            'Sworn' : 'vividly thin-ringed c_n',
-            'Spooky' : 'unusual c_n tabby',
-            'Conure' : 'conure hued and patterned',
-            'Noble' : 'c_n patchy tabby',
-            'Betta' : 'c_n betta patterned',
-            'Constellation' : 'c_n star patterned',
-            'Malibu' : 'c_n speckled',
-            'Clay' : 'patchy c_n smoke',
-            'Antethisis': 'vibrant blotchy c_n',
-            'Citadel': 'banded c_n',
-            'Grave': 'patchily striped c_n',
-            'Interloper': 'vibrantly patched c_n',
-        }
+        # Pelt pattern descriptions
+        pattern_des = descriptions_dict['pattern_des']
 
         # Start with determining the base color name
         color_name = str(cat.pelt.colour).lower()
@@ -1887,18 +1335,11 @@ class Pelt:
             color_name = f"{color_name} slugcat"
 
         # Here is the place where we can add some additional details about the cat, for the full non-short one
-        # These include notable missing limbs, vitiligo, long-furred-ness, and 3 or more scars
+        # These include notable missing limbs, vitiligo, long-furred-ness, features, and 3 or more scars
         if not short:
+            feature_details = descriptions_dict['feature_details']
 
-            scar_details = {
-                "NOTAIL": "no tail",
-                "HALFTAIL": "half a tail",
-                "NOPAW": "three legs",
-                "NOLEFTEAR": "a missing ear",
-                "NORIGHTEAR": "a missing ear",
-                "NOEAR": "no ears",
-                "ROTRIDDEN": "the rot"
-            }
+            scar_details = descriptions_dict['scar_details']
 
             additional_details = []
             if cat.pelt.vitiligo:

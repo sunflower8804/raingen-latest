@@ -72,7 +72,7 @@
             "Didn't get enough sleep",
             "Is stretching out",
             "Is watching slugcats come and go from camp",
-            "Thinks about the Void",
+            "Thinks about the Rot Wound",
             "Is watching the sky for vultures",
             "Is watching the sky for rain",
             "Is cloudwatching",
@@ -98,7 +98,9 @@
             "Is looking up, watching the clouds roll by",
             "Is watching the breeze blow around the camp",
             "Is waiting to watch the sunrise",
-            "Is waiting to watch the sunset"
+            "Is waiting to watch the sunset",
+            "Saw a vulture fly overhead",
+            "Saw a big moth fly overhead"
         ],
         "main_status_constraint": [
             "apprentice",

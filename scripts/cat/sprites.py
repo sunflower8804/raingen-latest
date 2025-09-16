@@ -6,8 +6,10 @@ import ujson
 
 from scripts.game_structure.game_essentials import game
 
+image_cache = {}
 
 def load_sprite(path):
+    global image_cache
     if path not in image_cache:
         image_cache[path] = pygame.image.load(path).convert_alpha()
     return image_cache[path]
@@ -43,15 +45,13 @@ class Sprites:
 
         # Shared empty sprite for placeholders
         self.blank_sprite = None
-        if self.blank_sprite is None:
-            self.blank_sprite = pygame.Surface((self.size, self.size), pygame.HWSURFACE | pygame.SRCALPHA)
-
+        
         self.load_tints()
 
-    def make_sprite_groups(self, groupname, color_rows, prefix, **kwargs):
+    def make_sprite_groups(self, groupname, color_rows, prefix, row_override=None, col_override=None, **kwargs):
         """
         OPTIMIZATIONS ARE TASTY.
-        
+    
         groupname: str, the spritesheet/group name
         color_rows: list of lists, each inner list is a row of sprite names
         prefix: str, the string to prepend to each sprite name
@@ -61,7 +61,7 @@ class Sprites:
             for col, color in enumerate(colors):
                 actual_row = row_override if row_override is not None else row
                 actual_col = col_override if col_override is not None else col
-                self.make_group(groupname, (col, row), f'{prefix}{color}', **kwargs)
+                self.make_group(groupname, (actual_col, actual_row), f'{prefix}{color}', **kwargs)
 
     def load_tints(self):
         try:
@@ -143,6 +143,10 @@ class Sprites:
         width, height = lineart.get_size()
         del lineart  # unneeded
 
+        #grab the json lists
+        with open("sprites/dicts/sprites_py_lists.json", "r") as f:
+            sprites_py_dict = ujson.loads(f.read())
+
         # if anyone changes lineart for whatever reason update this
         if isinstance(self.size, int):
             pass
@@ -154,50 +158,15 @@ class Sprites:
             print(f"if you are a modder, please update scripts/cat/sprites.py and "
                   f"do a search for 'if width / 3 == height / 7:'")
 
+        if self.blank_sprite is None:
+            self.blank_sprite = pygame.Surface((self.size, self.size), pygame.HWSURFACE | pygame.SRCALPHA)
+
+
         del width, height  # unneeded
 
-        sprite_folders = ['sprites/accs', 'sprites/eyes', 'sprites/lineart', 'sprites/parts', 'sprites/pelts', 'sprites']
-
-        sprite_names = [
-            'lineart', 'lineartdf', 'lineartdead',
-            'eyes', 'eyes2', 
-            'skin', 'gilltongue', 'beagilltongue', 'horns', 'fancyskin', 'whiskers', 'orbitals', 'datagamesstuff',
-            'budgiewings', 'colorwings', 'conurewings', 'lovebirdwings', 'manes', 'overseertenna', 'pidgeonwings',
-            'vulturewings', 'whitepatchwings', 'whitepatchwingsfade',
-            'scars', 'missingscars',
-            'medcatherbs',
-            'collars', 'bellcollars', 'bowcollars', 'nyloncollars', 'rwlizards', 'drones', 'muddypaws', 
-            'herbs2', 'insectwings', 'buddies', 'newaccs', 'bodypaint', 'implant', 'magic', 'necklaces',
-            'newaccs2', 'drapery', 'eyepatches', 'pridedrapery', 'larsaccs', 'harleyaccs', 'newaccs3',
-            'featherboas', 'scarves', 'chains', 'neckbandanas', 'floatyeyes', 'morespears', 'haloaccs',
-            'flagaccs', 'ponchoaccs', 'glassesaccs', 'vulturemasks', 'iteratormasks',
-            'singlecolours', 'speckledcolours', 'tabbycolours', 'bengalcolours', 'marbledcolours',
-            'rosettecolours', 'smokecolours', 'tickedcolours', 'mackerelcolours', 'classiccolours',
-            'sokokecolours', 'agouticolours', 'singlestripecolours', 'maskedcolours', 'bananacolours',
-            'centipedecolours', 'collaredcolours', 'concolours', 'gravelcolours', 'cyanlizardcolours',
-            'slimemoldcolours', 'lanterncolours', 'vulturecolours', 'lizardcolours', 'leviathancolours',
-            'fluffycolours', 'amoebacolours', 'seaslugcolours', 'yeekcolours', 'rustedcolours',
-            'envoycolours', 'drizzlecolours', 'solacecolours', 'leafycolours', 'scaledcolours', 
-            'dragonfruitcolours', 'necklacecolours', 'dreamercolours', 'duskdawncolours', 
-            'seercolours', 'rottencolours', 'firecolours', 'countershadedcolours', 'cherrycolours',
-            'oldgrowthcolours', 'sparklecatcolours', 'wolfcolours', 'sunsetcolours', 'hypnotistcolours',
-            'ringedcolours', 'skinnycolours', 'sparsecolours', 'impishcolours', 'sportycolours', 
-            'fizzycolours', 'skeletoncolours', 'shredcolours', 'glowingcolours', 'moldcolours',
-            'swingcolours', 'lovebirdcolours', 'budgiecolours', 'amazoncolours', 'applecolours', 'bobacolours',
-            'glittercolours', 'icecolours', 'iggycolours', 'manedcolours', 'patchworkcolours', 'robotcolours',
-            'sunkencolours', 'tomocolours', 'whalecolours', 'pidgeoncolours', 'watermeloncolours',
-            'dragonetcolours', 'salmoncolours', 'darkechocolours', 'lightechocolours', 'plantaincolours',
-            'daenixcolours', 'seltzercolours', 'sworncolours', 'spookycolours', 'conurecolours', 'noblecolours',
-            'bettacolours', 'constellationcolours', 'malibucolours', 'claycolours', 'antethisiscolours',
-            'citadelcolours', 'gravecolours', 'interlopercolours',
-            'raineyes', 'raineyes2', 'multieyes', 'multiraineyes', 'larseyes', 'multilarseyes', 'larseyes2', 
-            'rivuleteyes', 'rivuleteyes2', 'buttoneyes', 'buttoneyes2', 'bobaeyes', 'bobaeyes2', 'bobaeyeslars',
-            'bobaeyeslars2',
-            'shadersnewwhite', 'lightingnew',
-            'whitepatches', 'tortiepatchesmasks',
-            'fademask', 'fadestarclan', 'fadedarkforest',
-            'symbols'
-        ]
+        sprite_folders = sprites_py_dict['sprite_folders']
+        
+        sprite_names = sprites_py_dict['sprite_names']
         
         for x in sprite_names:
             loaded = False
@@ -232,195 +201,75 @@ class Sprites:
             self.make_group('fadedarkforest', (i, 0), f'fadedf{i}')
 
         # Define eye colors
-        eye_colors = [
-            ['YELLOW', 'AMBER', 'HAZEL', 'PALEGREEN', 'GREEN', 'BLUE', 'DARKBLUE', 'GREY', 'CYAN', 'EMERALD', 'HEATHERBLUE', 'SUNLITICE'],
-            ['COPPER', 'SAGE', 'COBALT', 'PALEBLUE', 'BRONZE', 'SILVER', 'PALEYELLOW', 'GOLD', 'GREENYELLOW', 'RED', 'PURPLE', 'MAUVE']
-        ]
-
+        eye_colors = sprites_py_dict['eye_colors']
         self.make_sprite_groups('eyes', eye_colors, 'eyes')
         self.make_sprite_groups('eyes2', eye_colors, 'eyes2')
 
         #generating multieyes
         multieye_colors = [[f"MULTI{color}" for color in row] for row in eye_colors]
-
         self.make_sprite_groups('multieyes', multieye_colors, 'multieyes')
-        self.make_sprite_groups('multieyes2', multieye_colors, 'multieyes2')
 
         #generating bobaeyes
         bobaeye_colors = [[f"BOBA{color}" for color in row] for row in eye_colors]
-
         self.make_sprite_groups('bobaeyes', bobaeye_colors, 'bobaeyes')
         self.make_sprite_groups('bobaeyes2', bobaeye_colors, 'bobaeyes2')
 
         #rain's eyes
-        raineye_colors = [
-            ['ELECTRICBLUE', 'VIOLET', 'PINK', 'SNOW', 'ORANGE', 'CREAM', 'SEAFOAM', 'CRIMSON', 'NAVY', 'VOIDGOLD', 'COOLBROWN', 'PLUM'],
-            ['INDIGO', 'LILAC', 'ACROBLUE', 'ACROGREEN', 'ACROGREY', 'ACROINDIGO', 'ACROAMBER', 'ACROPINK', 'ACRORED', 'ACROTEAL', 'FIRE', 'RUBY'],
-            ['RUBYAGAIN', 'ESCAPEE', 'REFORGED', 'FLORAVORE', 'REJECT', 'WAYFARER', 'PISTON', 'EXILED', 'THEIF', 'THEIFDOS', 'MORTICIAN', 'SWAMPY'],
-            ['PORTALMAKER', 'PURIFIER', 'CORROSOL', 'SEVENSEVEN', 'ATLAN', 'BASIC', 'BELL', 'BIS', 'BIT', 'CRITTER', 'CUBED', 'DIM'],
-            ['DOE', 'FREYR', 'GAMBLE', 'GORB', 'HERO', 'JANE', 'JOHN', 'MATT', 'MESS', 'PE', 'POLE', 'RAT'],
-            ['RGB', 'ROT', 'SCRATCH', 'SHED', 'SIEGE', 'SPARK', 'SPARKLE', 'SUNSET', 'TELA', 'USURP', 'WAR', 'XIII']
-        ]
-
+        raineye_colors = sprites_py_dict['raineye_colors']
         self.make_sprite_groups('raineyes', raineye_colors, 'raineyes')
         self.make_sprite_groups('raineyes2', raineye_colors, 'raineyes2')
         
         #generating multieyes
         multiraineye_colors = [[f"MULTI{color}" for color in row] for row in raineye_colors]
-
-        self.make_sprite_groups('raineyes', multiraineye_colors, 'raineyes')
-        self.make_sprite_groups('raineyes2', multiraineye_colors, 'raineyes2')
+        self.make_sprite_groups('multiraineyes', multiraineye_colors, 'multiraineyes')
 
         #lars' eyes
-        larseye_colors = [
-            ['ALBA', 'ALBINO', 'ANGEL', 'APPLE', 'AQUA', 'ARID', 'BANANA', 'BLOOD', 'CARNI', 'CHAIN', 'BUTCHER'],
-            ['CREAMY', 'DAWN', 'ESES', 'EXILE', 'FAE', 'FALLSTAR', 'FIELD', 'FOAM', 'HOT', 'IRID', 'DREAMER'],
-            ['KARMA', 'KIND', 'MARTI', 'MEISTALT', 'MHUNT', 'MELON', 'MESS', 'MEISTER', 'MINT', 'MINV', 'FAKEGOLD'],
-            ['MOON', 'MRIV', 'PEACH', 'PEBB', 'PELA', 'PEPPER', 'RETRO', 'RUNT', 'RUST', 'SIG', 'GREENDREAM'],
-            ['SIXER', 'SPLIT', 'SUN', 'SWEET', 'TIDE', 'VIVID', 'WAVE', 'WINKS', 'ZENI', 'BEAST', 'HEATSTROKE'],
-            ['BROWNTBOI', 'ORANGETBOI', 'BREDTBOI', 'REDTBOI', 'VIBRANCY', 'SIGNAL', 'PURPLEDREAM', 'NOVEMBER', 'LEADER'],
-        ]
-        
+        larseye_colors = sprites_py_dict['larseye_colors']
         self.make_sprite_groups('larseyes', larseye_colors, 'larseyes')
         self.make_sprite_groups('larseyes2', larseye_colors, 'larseyes2')
 
         #lars' multi eyes
-        multilarseye_colors = [
-            ['MULTIALBA', 'MULTIALBINO', 'MULTIANGEL', 'MULTIAPPLE', 'MULTIAQUA', 'MULTIARID', 'MULTIBANANA', 'MULTIBLOOD', 'MULTICARNI', 'MULTICHAIN'],
-            ['MULTICREAMY', 'MULTIDAWN', 'MULTIESES', 'MULTIEXILE', 'MULTIFAE', 'MULTIFALLSTAR', 'MULTIFIELD', 'MULTIFOAM', 'MULTIHOT', 'MULTIIRID'],
-            ['MULTIKARMA', 'MULTIKIND', 'MULTIMARTI', 'MULTIMEISTALT', 'MULTIMHUNT', 'MULTIMELON', 'MULTIMESS', 'MULTIMEISTER', 'MULTIMINT', 'MULTIMINV'],
-            ['MULTIMOON', 'MULTIMRIV', 'MULTIPEACH', 'MULTIPEBB', 'MULTIPELA', 'MULTIPEPPER', 'MULTIRETRO', 'MULTIRUNT', 'MULTIRUST', 'MULTISIG'],
-            ['MULTISIXER', 'MULTISPLIT', 'MULTISUN', 'MULTISWEET', 'MULTITIDE', 'MULTIVIVID', 'MULTIWAVE', 'MULTIWINKS', 'MULTIZENI', 'MULTIBEAST'],
-            ['MULTIBROWNTBOI', 'MULTIORANGETBOI', 'MULTIBREDTBOI', 'MULTIREDTBOI'],
-        ]
-        
-        self.make_sprite_groups('larseyes', multilarseye_colors, 'larseyes')
-        self.make_sprite_groups('larseyes2', multilarseye_colors, 'larseyes2')
+        multilarseye_colors = sprites_py_dict['multilarseye_colors']
+        self.make_sprite_groups('multilarseyes', multilarseye_colors, 'multilarseyes')
                     
-        rivuleteye_colors = [
-            ['RIVYELLOW', 'RIVAMBER', 'RIVHAZEL', 'RIVPALEGREEN', 'RIVGREEN', 'RIVBLUE', 'RIVDARKBLUE', 'RIVGREY', 'RIVCYAN', 'RIVEMERALD', 'RIVHEATHERBLUE', 'RIVSUNLITICE'],
-            ['RIVCOPPER', 'RIVSAGE', 'RIVCOBALT', 'RIVPALEBLUE', 'RIVBRONZE', 'RIVSILVER', 'RIVPALEYELLOW', 'RIVGOLD', 'RIVGREENYELLOW', 'ALTRIVYELLOW', 'ALTRIVAMBER', 'ALTRIVHAZEL'],
-            ['ALTRIVPALEGREEN', 'ALTRIVGREEN', 'ALTRIVBLUE', 'ALTRIVDARKBLUE', 'ALTRIVCYAN', 'ALTRIVEMERALD', 'ALTRIVHEATHERBLUE', 'ALTRIVSUNLITICE', 'ALTRIVCOPPER', 'ALTRIVSILVER', 'ALTRIVPALEYELLOW', 'ALTRIVGOLD'],
-            ['ALTRIVGREENYELLOW', 'RIVRED', 'RIVPURPLE', 'RIVMAUVE', 'RIVELECTRICBLUE', 'RIVVIOLET', 'RIVPINK', 'RIVSNOW', 'RIVORANGE', 'RIVCREAM', 'RIVSEAFOAM', 'RIVCRIMSON'],
-            ['RIVNAVY', 'RIVVOIDGOLD', 'RIVCOOLBROWN', 'RIVPLUM', 'RIVINDIGO', 'RIVLILAC','RIVALBA', 'RIVALBINO', 'RIVANGEL', 'RIVAPPLE', 'RIVAQUA', 'RIVARID'],
-            ['RIVBANANA', 'RIVBLOOD', 'RIVCARNI', 'RIVCHAIN', 'RIVCREAMY', 'RIVDAWN', 'RIVESES', 'RIVEXILE', 'RIVFAE', 'RIVFALLSTAR', 'RIVFIELD', 'RIVFOAM'],
-            ['RIVHOT', 'RIVIRID', 'RIVKARMA', 'RIVKIND', 'RIVMARTI', 'RIVMEISTALT', 'RIVMHUNT', 'RIVMELON', 'RIVMESS', 'RIVMEISTER', 'RIVMINT', 'RIVMINV'],
-            ['RIVMOON', 'RIVMRIV', 'RIVPEACH', 'RIVPEBB', 'RIVPELA', 'RIVPEPPER', 'RIVRETRO', 'RIVRUNT', 'RIVRUST', 'RIVSIG', 'RIVSIXER', 'RIVSPLIT'],
-            ['RIVSUN', 'RIVSWEET', 'RIVTIDE', 'RIVVIVID', 'RIVWAVE', 'RIVWINKS', 'RIVZENI', 'RIVBROWNTBOI', 'RIVORANGETBOI', 'RIVBREDTBOI', 'RIVREDTBOI', 'RIVACROINDIGO'],
-            ['RIVACROAMBER', 'RIVACROTEAL', 'RIVACROGREY', 'RIVACROGREEN', 'RIVACROBLUE', 'RIVACRORED', 'RIVACROPINK', 'RIVSPARKLE', 'RIVSUNSET', 'RIVSIEGE', 'RIVROT', 'RIVUSURP'],
-            ['RIVPE', 'RIVBIS', 'RIVCRITTER', 'RIVCUBED', 'RIVGAMBLE', 'RIVDIM', 'RIVBLUEORANGE', 'RIVMENACE', 'RIVDEVIOUS', 'RIVGORB', 'RIVSTARSTRUCK', 'RIVAMBERHONEY'],
-            ['RIVSUNDOWN', 'RIVPARADISE', 'RIVMOLTENLAVA', 'RIVSILVERMOON', 'RIVSHADOWEDSILVER', 'RIVLACREATURA', 'RIVAWAKENED', 'RIVASCENDED', 'RIVBLUERED', 'RIVWHITESILVER', 'RIVPINKLEMONADE', 'RIVHARVESTMOON'],
-            ['RIVPORTALGUN', 'RIVGASLIGHT', 'RIVBRONZEDIRT', 'RIVRBG', 'RIVRUBICON', 'RIVFIREGOLD', 'RIVBLOODRIVER', 'RIVPARTYRGB', 'RIVMIDNIGHTGLOW', 'RIVRBGLIGHTS', 'RIVBUBBLEGUM', 'RIVCYN']
-        ]
-
+        rivuleteye_colors = sprites_py_dict['rivuleteye_colors']
         self.make_sprite_groups('rivuleteyes', rivuleteye_colors, 'rivuleteyes')
         self.make_sprite_groups('rivuleteyes2', rivuleteye_colors, 'rivuleteyes2')
                      
-        buttoneye_colors = [
-            ['BUTTONYELLOW', 'BUTTONAMBER', 'BUTTONHAZEL', 'BUTTONPALEGREEN', 'BUTTONGREEN', 'BUTTONBLUE', 'BUTTONDARKBLUE', 'BUTTONGREY', 'BUTTONCYAN', 'BUTTONEMERALD', 'BUTTONHEATHERBLUE', 'BUTTONSUNLITICE'],
-            ['BUTTONCOPPER', 'BUTTONSAGE', 'BUTTONCOBALT', 'BUTTONPALEBLUE', 'BUTTONBRONZE', 'BUTTONSILVER', 'BUTTONPALEYELLOW', 'BUTTONGOLD', 'BUTTONGREENYELLOW', 'BUTTONIRED', 'BUTTONPURPLE', 'BUTTONMAUVE'],
-            ['BUTTONINDIGO', 'BUTTONLILAC']
-        ]
-
+        buttoneye_colors = sprites_py_dict['buttoneye_colors']
         self.make_sprite_groups('buttoneyes', buttoneye_colors, 'buttoneyes')
         self.make_sprite_groups('buttoneyes2', buttoneye_colors, 'buttoneyes2')
 
         #lars boba eyes seperate due to being behind the main list
-        bobaeyeslars_colors = [
-            ['BOBAALBA', 'BOBAALBINO', 'BOBAANGEL', 'BOBAAPPLE', 'BOBAAQUA', 'BOBAARID', 'BOBABANANA', 'BOBABLOOD', 'BOBACARNI', 'BOBACHAIN'],
-            ['BOBACREAMY', 'BOBADAWN', 'BOBAESES', 'BOBAEXILE', 'BOBAFAE', 'BOBAFALLSTAR', 'BOBAFIELD', 'BOBAFOAM', 'BOBAHOT', 'BOBAIRID'],
-            ['BOBAKARMA', 'BOBAKIND', 'BOBAMARTI', 'BOBAMEISTALT', 'BOBAMHUNT', 'BOBAMELON', 'BOBAMESS', 'BOBAMEISTER', 'BOBAMINT', 'BOBAMINV'],
-            ['BOBAMOON', 'BOBAMRIV', 'BOBAPEACH', 'BOBAPEBB', 'BOBAPELA', 'BOBAPEPPER', 'BOBARETRO', 'BOBARUNT', 'BOBARUST', 'BOBASIG'],
-            ['BOBASIXER', 'BOBASPLIT', 'BOBASUN', 'BOBASWEET', 'BOBATIDE', 'BOBAVIVID', 'BOBAWAVE', 'BOBAWINKS', 'BOBAZENI', 'BOBABEAST']
-        ]
+        bobaeyeslars_colors = sprites_py_dict['bobaeyeslars_colors']
+        self.make_sprite_groups('bobaeyeslars', bobaeyeslars_colors, 'bobaeyeslars')
+        self.make_sprite_groups('bobaeyeslars2', bobaeyeslars_colors, 'bobaeyeslar2')
 
-        self.make_sprite_groups('bobaeyelars', bobaeyelars_colors, 'bobaeyelars')
-        self.make_sprite_groups('bobaeyelars2', bobaeyelars_colors, 'bobaeyeslar2')
+        #geckoeyes seperate as their coloring is weird
+        geckoeyes_colors = sprites_py_dict['geckoeyes_colors']
+        self.make_sprite_groups('geckoeyes', geckoeyes_colors, 'geckoeyes')
+        self.make_sprite_groups('geckoeyes2', geckoeyes_colors, 'geckoeyes2')
         
         # Define white patches
-        white_patches = [
-            ['FULLWHITE', 'ANY', 'TUXEDO', 'LITTLE', 'COLOURPOINT', 'VAN', 'ANYTWO', 'MOON', 'PHANTOM', 'POWDER', 'BLEACHED', 'SAVANNAH', 'FADESPOTS', 'PEBBLESHINE'],
-            ['EXTRA', 'ONEEAR', 'BROKEN', 'LIGHTTUXEDO', 'BUZZARDFANG', 'RAGDOLL', 'LIGHTSONG', 'VITILIGO', 'BLACKSTAR', 'PIEBALD', 'CURVED', 'PETAL', 'SHIBAINU', 'OWL'],
-            ['TIP', 'FANCY', 'FRECKLES', 'RINGTAIL', 'HALFFACE', 'PANTSTWO', 'GOATEE', 'VITILIGOTWO', 'PAWS', 'MITAINE', 'BROKENBLAZE', 'SCOURGE', 'DIVA', 'BEARD'],
-            ['TAIL', 'BLAZE', 'PRINCE', 'BIB', 'VEE', 'UNDERS', 'HONEY', 'FAROFA', 'DAMIEN', 'MISTER', 'BELLY', 'TAILTIP', 'TOES', 'TOPCOVER'],
-            ['APRON', 'CAPSADDLE', 'MASKMANTLE', 'SQUEAKS', 'STAR', 'TOESTAIL', 'RAVENPAW', 'PANTS', 'REVERSEPANTS', 'SKUNK', 'KARPATI', 'HALFWHITE', 'APPALOOSA', 'DAPPLEPAW'],
-            ['HEART', 'LILTWO', 'GLASS', 'MOORISH', 'SEPIAPOINT', 'MINKPOINT', 'SEALPOINT', 'MAO', 'LUNA', 'CHESTSPECK', 'WINGS', 'PAINTED', 'HEARTTWO', 'WOODPECKER'],
-            ['BOOTS', 'MISS', 'COW', 'COWTWO', 'BUB', 'BOWTIE', 'MUSTACHE', 'REVERSEHEART', 'SPARROW', 'VEST', 'LOVEBUG', 'TRIXIE', 'SAMMY', 'SPARKLE'],
-            ['RIGHTEAR', 'LEFTEAR', 'ESTRELLA', 'SHOOTINGSTAR', 'EYESPOT', 'REVERSEEYE', 'FADEBELLY', 'FRONT', 'BLOSSOMSTEP', 'PEBBLE', 'TAILTWO', 'BUDDY', 'BACKSPOT', 'EYEBAGS'],
-            ['BULLSEYE', 'FINN', 'DIGIT', 'KROPKA', 'FCTWO', 'FCONE', 'MIA', 'SCAR', 'BUSTER', 'SMOKEY', 'HAWKBLAZE', 'CAKE', 'ROSINA', 'PRINCESS'],
-            ['LOCKET', 'BLAZEMASK', 'TEARS', 'DOUGIE', 'BALLER', 'PAINTSPLAT', 'REVERSETEARS', 'ELDER', 'TREFOIL', 'MANUL', 'REVERSETEARSTWO', 'GLOVE', 'REVERSENECK', 'NECK'],
-            ['REVERSEHEAD', 'HEAD', 'DOTS', 'SPARSE', 'BADGER', 'FIVEPEBBLE', 'BELLY', 'CHARCOAL', 'MASK', 'LIGHTNING', 'SIAMESE', 'FROSTBITTEN', 'HEX', 'SNOWBELLY'],
-            ['LIMBS', 'STRIPES', 'GLOWSTAR', 'STAR', 'SLICE', 'DEADPIXEL', 'ESCAPEE', 'INSPECTOR', 'FACEDOTS', 'TOONY', 'ACROBAT', 'WPTEARS', 'ONEEARTIP', 'NOSETIP'],
-            ['DEFIBULATOR', 'WOLFX', 'TICKEDSPOTS', 'SHREDPATCH', 'TICKEDSTRIPE', 'SHREDONE', 'WOLFINSIDE', 'TICKEDSPOTSSTRIPE', 'SHREDTWO', 'WOLFOUTSIDETWO', 'TICKEDONE', 'WOLDOUTSIDEONE', 'TICKEDTWO', 'WOLFFILLONE'],
-            ['TICKEDFILLONE', 'WOLFFILLTWO', 'TICKEDFILLTWO', 'TICKEDFILLTHREE', 'TREEFROG', 'GLOWWOLFX', 'ECHOBELLY', 'SPOOKYBONES',  'LURE', 'WATERMELONWAVE', 'WATERMELONSEEDS', 'FACEMASK', 'DEEP', 'STUFFED'],
-            ['PLUSHIE', 'BROW', 'SCALETAIL', 'CARBON', 'SPARKLING', 'TOPFIN', 'LOWFIN', 'RIPPLE', "POPPY", "RISING", "LINE"]
-        ]
-
+        white_patches = sprites_py_dict['white_patches']
         self.make_sprite_groups('whitepatches', white_patches, 'white')
 
         # Define colors and categories
-        color_categories = [
-            ['WHITE', 'SKY', 'BLUE', 'INDIGO', 'PURPLE', 'GHOST', 'BLACK'],
-            ['CREAM', 'YELLOW', 'ORANGE', 'SCARLET', 'RED', 'PINK'],
-            ['MINT', 'LIME', 'GREEN', 'MAROON', 'PERIWINKLE', 'LAVENDER']
-        ]
-
-        color_types = [
-            'singlecolours', 'speckledcolours', 'tabbycolours', 'bengalcolours', 'marbledcolours',
-            'rosettecolours', 'smokecolours', 'tickedcolours', 'mackerelcolours', 'classiccolours',
-            'sokokecolours', 'agouticolours', 'singlestripecolours', 'maskedcolours', 'bananacolours',
-            'centipedecolours', 'collaredcolours', 'concolours', 'gravelcolours', 'cyanlizardcolours',
-            'slimemoldcolours', 'lanterncolours', 'vulturecolours', 'lizardcolours', 'leviathancolours',
-            'fluffycolours', 'amoebacolours', 'seaslugcolours', 'yeekcolours', 'rustedcolours',
-            'envoycolours', 'drizzlecolours', 'solacecolours', 'leafycolours', 'scaledcolours', 
-            'dragonfruitcolours', 'necklacecolours', 'dreamercolours', 'duskdawncolours', 
-            'seercolours', 'rottencolours', 'firecolours', 'countershadedcolours', 'cherrycolours',
-            'oldgrowthcolours', 'sparklecatcolours', 'wolfcolours', 'sunsetcolours', 'hypnotistcolours',
-            'ringedcolours', 'skinnycolours', 'sparsecolours', 'impishcolours', 'sportycolours', 
-            'fizzycolours', 'skeletoncolours', 'shredcolours', 'glowingcolours', 'moldcolours',
-            'swingcolours', 'lovebirdcolours', 'budgiecolours', 'amazoncolours', 'applecolours', 'bobacolours',
-            'glittercolours', 'icecolours', 'iggycolours', 'manedcolours', 'patchworkcolours', 'robotcolours',
-            'sunkencolours', 'tomocolours', 'whalecolours', 'pidgeoncolours', 'watermeloncolours',
-            'dragonetcolours', 'salmoncolours', 'darkechocolours', 'lightechocolours', 'plantaincolours',
-            'daenixcolours', 'seltzercolours', 'sworncolours', 'spookycolours', 'conurecolours', 'noblecolours',
-            'bettacolours', 'constellationcolours', 'malibucolours', 'claycolours', 'antethisiscolours',
-            'citadelcolours', 'gravecolours', 'interlopercolours'
-        ]
-
+        color_categories = sprites_py_dict['color_categories']
+        color_types = sprites_py_dict['color_types']
         for color_type in color_types:
             self.make_sprite_groups(color_type, color_categories, color_type[:-7])
 
         # tortiepatchesmasks
-        tortiepatchesmasks = [
-            ['ONE', 'TWO', 'THREE', 'FOUR', 'REDTAIL', 'DELILAH', 'HALF', 'STREAK', 'MASK', 'SMOKE'],
-            ['MINIMALONE', 'MINIMALTWO', 'MINIMALTHREE', 'MINIMALFOUR', 'OREO', 'SWOOP', 'CHIMERA', 'CHEST', 'ARMTAIL',
-             'GRUMPYFACE'],
-            ['MOTTLED', 'SIDEMASK', 'EYEDOT', 'BANDANA', 'PACMAN', 'STREAMSTRIKE', 'SMUDGED', 'DAUB', 'EMBER', 'BRIE'],
-            ['ORIOLE', 'ROBIN', 'BRINDLE', 'PAIGE', 'ROSETAIL', 'SAFI', 'DAPPLENIGHT', 'BLANKET', 'BELOVED', 'BODY'],
-            ['SHILOH', 'FRECKLED', 'HEARTBEAT', 'SPECKLES', 'TIGER', 'SHROOM', 'MAILBOX', 'GILAMONSTER', 'RINGEDMIMIC',
-             'NECKLACEMIMIC']
-        ]
-
+        tortiepatchesmasks = sprites_py_dict['tortiepatchesmasks']
         self.make_sprite_groups('tortiepatchesmasks', tortiepatchesmasks, 'tortiemask')
                 
         # Empty skins
-        skin_colors = [
-            ['BLACK', 'PINK', 'DARKBROWN', 'BROWN', 'LIGHTBROWN', 'RED'],
-            ['DARK', 'DARKGREY', 'GREY', 'DARKSALMON', 'SALMON', 'PEACH'],
-            ['DARKMARBLED', 'MARBLED', 'LIGHTMARBLED', 'DARKBLUE', 'BLUE', 'LIGHTBLUE']
-        ]
-
+        skin_colors = sprites_py_dict['skin_colors']
         self.make_sprite_groups('skin', skin_colors, 'skin')
                 
         # Gills, Tongues, Quills
-        gilltongue_rows = [
-            ['PINKGILLS', 'BLUEGILLS', 'REDGILLS', 'LIMEGILLS', 'YELLOWGILLS', 'WHITEGILLS'],
-            ['RAINBOWGILLS', 'FUCHSIATONGUE', 'PASTELTONGUE', 'KOBITONGUE', 'REDTONGUE', 'GREYTONGUE'],
-            ['ORANGETONGUE', 'WHITESPOTS', 'BLACKSPOTS', 'MIXSPOTS', 'RAINBOWSPOTS', 'BLACKCLAWS'],
-            ['WHITETENNA', 'REDTENNA', 'PINKTENNA', 'ORANGETENNA', 'YELLOWTENNA', 'BLUETENNA'],
-            ['GREENTENNA', 'WHITEGLOWSPOTS', 'REDGLOWSPOTS', 'PINKGLOWSPOTS', 'ORANGEGLOWSPOTS', 'YELLOWGLOWSPOTS'],
-            ['BLUEGLOWSPOTS', 'GREENGLOWSPOTS', 'GRAYGILLS', 'HOTGILLS', 'COLDGILLS']
-        ]
+        gilltongue_rows = sprites_py_dict['gilltongue_rows']
 
         # Determine group name per row
         if game.settings["bea_gilltongue"]:
@@ -433,123 +282,77 @@ class Sprites:
             self.make_sprite_groups(group, [colors], 'skin')
 
         # Horns - Ram, Scav, Elite, Sharp, Dragon, Lancer
-        horns_colors = [
-            ['WHITEHORNSRAM', 'BLACKHORNSRAM', 'REDHORNSRAM', 'YELLOWHORNSRAM', 'GREENHORNSRAM', 'BLUEHORNSRAM', 'ORANGEHORNSRAM', 'BROWNHORNSRAM'],
-            ['WHITEHORNSSCAV', 'BLACKHORNSSCAV', 'REDHORNSSCAV', 'YELLOWHORNSSCAV', 'GREENHORNSSCAV', 'BLUEHORNSSCAV', 'ORANGEHORNSSCAV', 'BROWNHORNSSCAV'],
-            ['WHITEHORNSELITE', 'BLACKHORNSELITE', 'REDHORNSELITE', 'YELLOWHORNSELITE', 'GREENHORNSELITE', 'BLUEHORNSELITE', 'ORANGEHORNSELITE', 'BROWNHORNSELITE'],
-            ['WHITEHORNSSHARP', 'BLACKHORNSSHARP', 'REDHORNSSHARP', 'YELLOWHORNSSHARP', 'GREENHORNSSHARP', 'BLUEHORNSSHARP', 'ORANGEHORNSSHARP', 'BROWNHORNSSHARP'],
-            ['WHITEHORNSDRAGON', 'BLACKHORNSDRAGON', 'REDHORNSDRAGON', 'YELLOWHORNSDRAGON', 'GREENHORNSDRAGON', 'BLUEHORNSDRAGON', 'ORANGEHORNSDRAGON', 'BROWNHORNSDRAGON'],
-            ['WHITEHORNSLANCER', 'BLACKHORNSLANCER', 'REDHORNSLANCER', 'YELLOWHORNSLANCER', 'GREENHORNSLANCER', 'BLUEHORNSLANCER', 'ORANGEHORNSLANCER', 'BROWNHORNSLANCER']
-        ]
-
+        horns_colors = sprites_py_dict['horns_colors']
         self.make_sprite_groups('horns', horns_colors, 'skin')
 
         #Whiskers - Catfish, Dragon
-        whiskers_colors = [
-            ['WHITECATFISHWHISKERS', 'PINKCATFISHWHISKERS', 'REDCATFISHWHISKERS', 'YELLOWCATFISHWHISKERS', 'GREENCATFISHWHISKERS', 'REDYELLOWCATFISHWHISKERS'],
-            ['BLUECATFISHWHISKERS', 'PURPLECATFISHWHISKERS', 'BLACKCATFISHWHISKERS', 'BLUEGREENCATFISHWHISKERS', 'BLUEPINKCATFISHWHISKERS', 'BROWNCATFISHWHISKERS'],
-            ['WHITEDRAGONWHISKERS', 'PINKDRAGONWHISKERS', 'REDDRAGONWHISKERS', 'YELLOWDRAGONWHISKERS', 'GREENDRAGONWHISKERS', 'REDYELLOWDRAGONWHISKERS'],
-            ['BLUEDRAGONWHISKERS', 'PURPLEDRAGONWHISKERS', 'BLACKDRAGONWHISKERS', 'BLUEGREENDRAGONWHISKERS', 'BLUEPINKDRAGONWHISKERS', 'BROWNDRAGONWHISKERS']
-        ]
-
+        whiskers_colors = sprites_py_dict['whiskers_colors']
         self.make_sprite_groups('whiskers', whiskers_colors, 'skin')
 
         # fancyskin spritesheet
-        fancyskin_colors = [
-            ['WHITEMOTH', 'BLACKMOTH', 'REDMOTH', 'YELLOWMOTH', 'GREENMOTH', 'BLUEMOTH', 'ORANGEMOTH', 'BROWNMOTH'],
-            ['WHITEWHISKERS', 'BLACKWHISKERS', 'REDWHISKERS', 'YELLOWWHISKERS', 'GREENWHISKERS', 'BLUEWHISKERS', 'ORANGEWHISKERS', 'BROWNWHISKERS'],
-            ['PINKFINS', 'BLUEFINS', 'REDFINS', 'GREENFINS', 'YELLOWFINS', 'WHITEFINS', 'BLACKNEEDLES', 'WHITENEEDLES'],
-            ['WHITECYAN', 'ORANGECYAN', 'BROWNCYAN', 'PINKCYAN', 'PINKERCYAN', 'TEALCYAN', 'GREENCYAN', 'BLOODYCYAN'],
-            ['LAVENDERCYAN', 'PURPLECYAN', 'CYANCYAN', 'BLUECYAN', 'DARKBLUECYAN', 'DARKPURPLECYAN', 'BLACKCYAN', 'EGGCYAN'],
-            ['YELLOWCYAN', 'RAINBOWNEEDLES', 'CYANWINGS', 'ANGLERFISH', 'FIREBUGPART', 'TEARS', 'BLACKTHORNS', 'WHITETHORNS'],
-            ['GLASSBACK', 'SEASLUGPAPILLAE', 'GRASSSHEEPBACK', 'SEAANGELWINGS', 'ANTLERS', 'LOACH', 'CENTIPEDEGROWTHS', 'ACROTAIL'],
-            ['WHITECLAWS', 'PINKCLAWS', 'BLUECLAWS', 'GREENCLAWS', 'YELLOWCLAWS', 'REDCLAWS', 'GREYCLAWS'],
-            ['BLACKSTINGER', 'GREYSTINGER', 'WHITESTINGER', 'GOLDSTINGER', 'PURPLEDROPWIG', 'GREENDROPWIG', 'BLUEDROPWIG']
-        ]
-
+        fancyskin_colors = sprites_py_dict['fancyskin_colors']
         # Handle rows 0-6 with function
-        self.make_sprite_groups('fancyskin', fancyskin_colors[:7], 'skin')
-
-        # Handle row 7 seperately because it will suffer alone
-        if len(fancyskin_colors) > 7:
-            for col, color in enumerate(fancyskin_colors[7]):
-                self.make_group('fancyskin', (col, 7), f"muddypaws{color}")
+        self.make_sprite_groups('fancyskin', fancyskin_colors[:10], 'skin')
+        # Handle row 11 seperately because it will suffer alone
+        if len(fancyskin_colors) > 11:
+            for col, color in enumerate(fancyskin_colors[11]):
+                self.make_group('fancyskin', (col, 11), f"muddypaws{color}")
 
         # data games stuff spritesheet
-        datagamesstuff_colors = [
-            ['FAMILIARMARK', 'BLUETAILFRILLS', 'ORANGETAILFRILLS', 'GREENTAILFRILLS', 'PURPLETAILFRILLS'],
-            ['PINKTAILFRILLS', 'REDTAILFRILLS', 'YELLOWTAILFRILLS', 'CYANTAILFRILLS', 'WHITEQUILLS'],
-            ['BLACKQUILLS', 'YELLOWSPIKES', 'GREENSPIKES', 'AQUASPIKES', 'CYANSPIKES'],
-            ['BLUESPIKES', 'PURPLESPIKES', 'PINKSPIKES', 'REDSPIKES', 'ORANGESPIKES']
-        ]
-
+        datagamesstuff_colors = sprites_py_dict['datagamesstuff_colors']
         self.make_sprite_groups('datagamesstuff', datagamesstuff_colors, 'skin')
 
         # manes spritesheet
-        manes_colors = [
-            ['DARKBROWNMANE', 'CHOCOLATEMANE', 'GOLDENMANE'],
-            ['BLONDMANE', 'GINGERMANE', 'SILVERMANE']
-        ]
-
+        manes_colors = sprites_py_dict['manes_colors']
         self.make_sprite_groups('manes', manes_colors, 'skin')
                 
         # overseertenna spritesheet
-        overseertenna_colors = [
-            ['WHITEOVERSEERTENNA', 'SKYOVERSEERTENNA', 'BLUEOVERSEERTENNA', 'INDIGOOVERSEERTENNA', 'PURPLEOVERSEERTENNA', 'GHOSTOVERSEERTENNA', 'BLACKOVERSEERTENNA'],
-            ['CREAMOVERSEERTENNA', 'YELLOWOVERSEERTENNA', 'ORANGEOVERSEERTENNA', 'SCARLETOVERSEERTENNA', 'REDOVERSEERTENNA', 'PINKOVERSEERTENNA'],
-            ['MINTOVERSEERTENNA', 'LIMEOVERSEERTENNA', 'GREENOVERSEERTENNA', 'MAROONOVERSEERTENNA', 'PERIWINKLEOVERSEERTENNA', 'LAVENDEROVERSEERTENNA']
-        ]
-
+        overseertenna_colors = sprites_py_dict['overseertenna_colors']
         self.make_sprite_groups('overseertenna', overseertenna_colors, 'skin')
 
         # budgiewings spritesheet
         budgiewings_colors = [[f"{color}BUDGIEWINGS" for color in row] for row in color_categories]
-        
         self.make_sprite_groups('budgiewings', budgiewings_colors, 'budgiewings')
 
         # conurewings spritesheet
         conurewings_colors = [[f"{color}CONUREWINGS" for color in row] for row in color_categories]
-        
         self.make_sprite_groups('conurewings', conurewings_colors, 'skin')
 
         # lovebirdwings spritesheet
         lovebirdwings_colors = [[f"{color}LOVEBIRDWINGS" for color in row] for row in color_categories]
-        
         self.make_sprite_groups('lovebirdwings', lovebirdwings_colors, 'skin')
                 
         # pidgeonwings spritesheet
         pidgeonwings_colors = [[f"{color}PIDGEONWINGS" for color in row] for row in color_categories]
-
         self.make_sprite_groups('pidgeonwings', pidgeonwings_colors, 'skin')
 
         # vulturewings spritesheet
         vulturewings_colors = [[f"{color}VULTUREWINGS" for color in row] for row in color_categories]
-
         self.make_sprite_groups('vulturewings', vulturewings_colors, 'skin')
 
         # colorwings spritesheet
-        colorwings_colors = [
-            ['WATCHERWINGS', 'ARTIFICERWINGS', 'HUNTERWINGS', 'SAINTWINGS'],
-            ['RIVULETWINGS', 'SPEARMASTERWINGS', 'GOURMANDWINGS']
-        ]
-
+        colorwings_colors = sprites_py_dict['colorwings_colors']
         self.make_sprite_groups('colorwings', colorwings_colors, 'skin')
 
         # whitepatchwings spritesheet
-        whitepatchwings_colors = [
-            ['WHITEWINGS', 'DARKCREAMWINGS', 'CREAMWINGS', 'OFFWHITEWINGS', 'GRAYWINGS', 'PINKWINGS'],
-            ['BLACKWINGS', 'POWDERBLUEWINGS', 'SPLASHWINGS', 'PURPLEWINGS', 'BLACKBERRYWINGS', 'SANDWINGS'],
-            ['CLAYWINGS', 'BRICKWINGS', 'SALMONWINGS', 'SEAFOAMWINGS', 'MINTWINGS', 'EVERGREENWINGS'],
-            ['CRANBERRYWINGS', 'PEARLWINGS', 'ORCHIDWINGS', 'RUBYWINGS', 'CORALWINGS', 'TANWINGS'],
-            ['LEMONWINGS', 'CLOVERWINGS', 'CYANWINGS', 'VIOLETWINGS', 'GOLDENWINGS']
-        ]
-
+        whitepatchwings_colors = sprites_py_dict['whitepatchwings_colors']
         self.make_sprite_groups('whitepatchwings', whitepatchwings_colors, 'skin')
 
         # whitepatchwingsfade spritesheet
         whitepatchwingsfade_colors = [[f"{color}FADE" for color in row] for row in whitepatchwings_colors]
-
         self.make_sprite_groups('whitepatchwingsfade', whitepatchwingsfade_colors, 'whitepatchwingsfade')
+
+        # bodyeyes spritesheet
+        bodyeyes_colors = sprites_py_dict['bodyeyes_colors']
+        self.make_sprite_groups('bodyeyes', bodyeyes_colors, 'skin')
+
+        # limbfades spritesheet
+        limbfades_colors = sprites_py_dict['limbfades_colors']
+        self.make_sprite_groups('limbfades', limbfades_colors, 'skin')
+
+        # roboticspines spritesheet
+        roboticspines_colors = sprites_py_dict['roboticspines_colors']
+        self.make_sprite_groups('roboticspines', roboticspines_colors, 'skin')
 
 
         self.load_scars()
@@ -560,29 +363,15 @@ class Sprites:
         Loads scar sprites and puts them into groups.
         """
 
+        #load json
+        with open("sprites/dicts/sprites_py_lists.json", "r") as f:
+            sprites_py_dict = ujson.loads(f.read())
+        
         # Define scars
-        scars_data = [
-            ["ONE", "TWO", "THREE", "MANLEG", "BRIGHTHEART", "MANTAIL", "BRIDGE", "RIGHTBLIND", "LEFTBLIND",
-             "BOTHBLIND", "BURNPAWS", "BURNTAIL"],
-            ["BURNBELLY", "BEAKCHEEK", "BEAKLOWER", "BURNRUMP", "CATBITE", "RATBITE", "FROSTFACE", "FROSTTAIL",
-             "FROSTMITT", "FROSTSOCK", "QUILLCHUNK", "QUILLSCRATCH"],
-            ["TAILSCAR", "SNOUT", "CHEEK", "SIDE", "THROAT", "TAILBASE", "BELLY", "TOETRAP", "SNAKE", "LEGBITE",
-             "NECKBITE", "FACE"],
-            ["HINDLEG", "BACK", "QUILLSIDE", "SCRATCHSIDE", "TOE", "BEAKSIDE", "CATBITETWO", "SNAKETWO", "FOUR", 
-             "ROTMARKED", "ROTRIDDEN", "TOPSURGERY"],
-            ["CUTOPEN", "LABRATFACE", "VIVISECTION", "LABRATCHEST", "LABRATLIMBS", "NEUTRINO", "MANGLEDARM", 
-             "ENVOYCHEST", "HALFFACELEFT", "FULLBODYBURNS", "BESIEGED", "HALFFACERIGHT"],
-            ["STARBURN", "ARMBURN", "DOUBLEBITE", "DANGEROUS", "SMOKINGFACE", "NIBBLEDIDIOT", "X-FACE",
-             "NIBBEDAGAIN", "MESSIAH", "EXTRACTIONTWO", "RESTITCHEDUPPER", "RESTITCHEDLOWER"],
-            ["STITCHEDHEAD", "BURNTLEG", "BURNTARM", "VULTURESHOULDER", "CHEEKCUT", "MIROSNOM", "ARTIRIGHT",
-            "ARTIGLOWRIGHT", "ARTILEFT", "ARTIGLOWLEFT", "SPEARWOUND", "PATCHWORK"],
-            ["BLIZZARDBLAST", "TAIL", "SHOULDER", "EYE", "ARM"]
-        ]
+        scars_data = sprites_py_dict['scars_data']
 
         # define missing parts
-        missing_parts_data = [
-            ["LEFTEAR", "RIGHTEAR", "NOTAIL", "NOLEFTEAR", "NORIGHTEAR", "NOEAR", "HALFTAIL", "NOPAW"]
-        ]
+        missing_parts_data = sprites_py_dict['missing_parts_data']
 
         # scars 
         self.make_sprite_groups('scars', scars_data, 'scars')
@@ -591,229 +380,48 @@ class Sprites:
         self.make_sprite_groups('missingscars', missing_parts_data, 'scars')
 
         # accessories
-        medcatherbs_data = [
-            ["MAPLE LEAF", "HOLLY", "BLUE BERRIES", "FORGET ME NOTS", "RYE STALK", "LAUREL"],
-            ["BLUEBELLS", "NETTLE", "POPPY", "LAVENDER", "HERBS", "PETALS"],
-            [],  # Empty row because this is the wild data, except dry herbs.
-            ["OAK LEAVES", "SCUGMINT", "MAPLE SEED", "JUNIPER", "SAKURA"]
-        ]
-        wild_data = [
-            ["RED FEATHERS", "BLUE FEATHERS", "JAY FEATHERS", "MOTH WINGS", "CICADA WINGS"]
-        ]
-        collars_data = [
-            ["CRIMSON", "BLUE", "YELLOW", "CYAN", "RED", "LIME"],
-            ["GREEN", "RAINBOW", "BLACK", "SPIKES", "WHITE"],
-            ["PINK", "PURPLE", "MULTI", "INDIGO"]
-        ]
-        bellcollars_data = [
-            ["CRIMSONBELL", "BLUEBELL", "YELLOWBELL", "CYANBELL", "REDBELL", "LIMEBELL"],
-            ["GREENBELL", "RAINBOWBELL", "BLACKBELL", "SPIKESBELL", "WHITEBELL"],
-            ["PINKBELL", "PURPLEBELL", "MULTIBELL", "INDIGOBELL"]
-        ]
-        bowcollars_data = [
-            ["CRIMSONBOW", "BLUEBOW", "YELLOWBOW", "CYANBOW", "REDBOW", "LIMEBOW"],
-            ["GREENBOW", "RAINBOWBOW", "BLACKBOW", "SPIKESBOW", "WHITEBOW"],
-            ["PINKBOW", "PURPLEBOW", "MULTIBOW", "INDIGOBOW"]
-        ]
-        nyloncollars_data = [
-            ["CRIMSONNYLON", "BLUENYLON", "YELLOWNYLON", "CYANNYLON", "REDNYLON", "LIMENYLON"],
-            ["GREENNYLON", "RAINBOWNYLON", "BLACKNYLON", "SPIKESNYLON", "WHITENYLON"],
-            ["PINKNYLON", "PURPLENYLON", "MULTINYLON", "INDIGONYLON"]
-        ]
-        rwlizards_data = [
-            ["BLUESKY", "BLUESEA", "PINKMAGENTA", "PINKPURPLE", "GREENEMERALD", "GREENLIME", "WHITEHIDDEN", "WHITEREVEALED", "BLACKNEUTRAL", "BLACKALERT"],
-            ["YELLOWORANGE", "YELLOWLEMON", "REDTOMATO", "CYANBLUE", "CYANGREEN", "ALBISALAFUSHIA", "ALBISALARED", "MELASALARED", "MELASALAFUSHIA", "MELASALAPURPLE"]
-        ]
-        drones_data = [
-            ["CRIMSONDRONE", "BLUEDRONE", "YELLOWDRONE", "CYANDRONE", "REDDRONE", "LIMEDRONE"],
-            ["GREENDRONE", "RAINBOWDRONE", "BLACKDRONE", "SPIKESDRONE", "WHITEDRONE"],
-            ["PINKDRONE", "PURPLEDRONE", "MULTIDRONE", "INDIGODRONE"]
-        ]
-        muddypaws_data = [
-            ["MUDDYPAWS"]
-        ]
-        herbs2_data = [
-            ["SPEAR", "PEARLEAR", "KARMAFLOWER", "LILCENTI", "PEARLNECK", "REDBATNIP"], 
-            ["LILFLY","BATNIP", "FLASHFRUIT", "REDFLASHFRUIT", "GREENKELP", "REDKELP"], 
-            ["VULTMASK", "KINGMASK", "SCAVMASK", "TREESEED", "GLOWSTONE", "BROWNKELP"], 
-            ["LILBEETLE", "EXPLOSPEAR", "GREENDRAGFLY", "BLUEDRAGFLY", "ELESPEAR"]
-        ]
-        insectwings_data = [
-            ["DEATHSHEAD", "BLUEBORDERED", "BLOODVEIN", "LARGEEMERALD", "CINNABAR", "LUNA", "ROSYMAPLE"],
-            ["ATLAS", "HERCULES", "SUNSET", "PURPLEEMPEROR", "WHITEADMIRAL", "SWALLOWTAIL"]
-        ]
-        drones_data = [
-            ["CRIMSONDRONE", "BLUEDRONE", "YELLOWDRONE", "CYANDRONE", "REDDRONE", "LIMEDRONE"],
-            ["GREENDRONE", "RAINBOWDRONE", "BLACKDRONE", "SPIKESDRONE", "WHITEDRONE"],
-            ["PINKDRONE", "PURPLEDRONE", "MULTIDRONE", "INDIGODRONE"]
-        ]
-        buddies_data = [
-            ["MOUSEBLUE", "MOUSEYEL", "MOUSEPINK", "MOUSERED", "YEEKRED", "YEEKBLUE"], 
-            ["VULTGRUB", "GRAPPLE", "SNAILGREEN", "SNAILBLUE", "SNAILRED", "SNAILPURPLE"],
-            ["NOODLERED", "NOODLEPURPLE", "NOODLEGREY", "NOODLEBLUE", "NOODLEWHITE", "NOODLEPINK"],
-            ["IGGYYELLOW", "IGGYPURPLE", "IGGYWHITE", "IGGYGREEN", "IGGYRED", "IGGYBLUE"],
-            ["SQUIDBLACK", "SQUIDWHITE", "BUBBLE", "WORMGRASSPOT", "POLEPLANTPOT"]
-        ]
-        newaccs_data = [
-            ["BATFLY", "BLUEFRUIT", "EMPTYBAG", "HERBSBAG", "INVEGG", "VOIDSPAWN"],
-            ["REDARMOR", "OVERSEEREYE", "SPIDEREAR", "NEURONBLUE", "NEURONRED", "NEURONGREEN"],
-            ["NEURONWHITE", "KARMAONE", "KARMATWO", "KARMATHREE", "KARMAFOUR", "SCROLL"],
-            ["NECKLACESILVER", "NECKLACEGOLD", "TAILWRAP", "RAINCOAT", "LACESCARF", "TOLLMASK"],
-            ["FLOWEREDMOSS", "MOSS", "MUSHROOMS", "MUSHROOMHAT", "GRENADE", "SANTAHAT"],
-            ["EYEPATCH", 'INVMOUTH', "MOUSEYELPLUSH", "MOUSEREDPLUSH", "MOUSEBLUEPLUSH", "MOUSEPINKPLUSH"]
-        ]
-        newaccs2_data = [
-            ["GLITCHING", "ROBOTARM", "ROBOTLEG", "SCRAPARMOR", "BLINDFOLD"],
-            ["BRONZEPOCKETWATCH", "SILVERPOCKETWATCH", "GOLDPOCKETWATCH", "MURDERPAINT", "BOGMOSSBLUE"],
-            ["BOGMOSSGREEN", "BOGMOSSLIME"],
-            ["ORANGEPLANTPELT", "LIMEPLANTPELT", "GREENPLANTPELT", "YELLOWPLANTPELT", "BLUEPLANTPELT"]
-        ]
-        bodypaint_data = [
-            ["REDPAINT", "PINKPAINT", "VOIDPAINT", "YELLOWPAINT", "GREENPAINT", "PALEPAINT"],
-            ["CYANPAINT", "BLUEPAINT", "PURPLEPAINT", "MAGENTAPAINT", "BLACKPAINT", "WHITEPAINT"]
-        ]
-        implant_data = [
-            ["IMPLANTWHITE", "IMPLANTPURPLE", "IMPLANTGREEN", "IMPLANTYELLOW", "IMPLANTBLUE"],
-            ["EYEIMPLANTWHITE", "EYEIMPLANTRED", "EYEIMPLANTGREEN", "EYEIMPLANTYELLOW", "EYEIMPLANTBLUE"],
-            ["GLOWWHITE", "GLOWPURPLE", "GLOWGREEN", "GLOWYELLOW", "GLOWBLUE"],
-            ["CELLIMPLANT"]
-        ]
-        magic_data = [
-            ["ORANGEFIRE", "GREENFIRE", "BLUEFIRE", "YELLOWFIRE", "WHITEFIRE", "PINKFIRE", "REDFIRE"],
-            ["GREENRING", "CYANRING", "SILVERRING", "WHITERING", "YELLOWRING", "VOIDRING", "GOLDRING"],
-            ["PETPEBBLE", "PETCLAY", "PETLAPIS", "PETAMETHYST", "PETJADE", "PETGRANITE", "PETSANDSTONE"]
-        ]
-        necklaces_data = [
-            ["NECKLACEWHITE", "NECKLACEPINK", "NECKLACEPURPLE", "NECKLACEYELLOW", "NECKLACECYAN"],
-            ["NECKLACEGREEN", "NECKLACERED", "NECKLACEORANGE", "NECKLACEBLUE", "NECKLACEBLACK"]
-        ]
-        drapery_data = [
-            ["DRAPERYWHITE", "DRAPERYORANGE", "DRAPERYTAN", "DRAPERYPALEYELLOW", "DRAPERYYELLOW", "DRAPERYLIGHTMINT", "DRAPERYMINT", "DRAPERYGREEN", "DRAPERYLIGHTAQUA"],
-            ["DRAPERYAQUA", "DRAPERYCYAN", "DRAPERYLIGHTGRAY", "DRAPERYPURPLE", "DRAPERYLIGHTINDIGO", "DRAPERYBLUE", "DRAPERYLAVENDER", "DRAPERYLIGHTPINK", "DRAPERYPINK"],
-            ["DRAPERYHOTPINK", "DRAPERYGRAY", "DRAPERYDARKGRAY", "DRAPERYPALEPINK", "DRAPERYLIGHTRED", "DRAPERYRED", "DRAPERYPEACH", "DRAPERYLIGHTORANGE"]
-        ]
-        pridedrapery_data = [
-            ["ORIGINALGAYDRAPERY", "TRANSDRAPERY", "GENDERQUEERDRAPERY", "AGENDERDRAPERY", "NONBINARYDRAPERY", "POLYAMDRAPERY", "GENDERFLUIDDRAPERY"],
-            ["GENDERFLUXDRAPERY", "GAYDRAPERY", "OMNISEXUALDRAPERY", "OBJECTUMDRAPERY", "RAINBOWDRAPERY", "PHILIDRAPERY", "BISEXUALDRAPERY"],
-            ["PANSEXUALDRAPERY", "POLYSEXUALDRAPERY", "ASEXUALDRAPERY", "LESBIANDRAPERY", "INTERSEXDRAPERY", "AROACEDRAPERY", "DEMIGIRLDRAPERY"],
-            ["DEMIBOYDRAPERY", "DEMIGENDERDRAPERY", "DEMIFLUIDDRAPERY", "DEMIFLUXDRAPERY", "ABRODRAPERY", "ARODRAPERY", "DEMISEXDRAPERY"],
-            ["DEMIRODRAPERY", "ACHILLEANDRAPERY", "SAPPHICDRAPERY", "DIAMORICDRAPERY", "UNLABELEDDRAPERY", "TRANSFEMDRAPERY", "TRANSMASCDRAPERY"],
-            ["BIGENDERDRAPERY", "MULTISEXDRAPERY", "ACESPECDRAPERY", "AROSPECDRAPERY"]
-        ]
-        eyepatch_data = [
-            ["EYEPATCHWHITE", "EYEPATCHGREEN", "EYEPATCHAQUA", "EYEPATCHTURQUOISE", "EYEPATCHCYAN", "EYEPATCHBLUE", "EYEPATCHINDIGO"],
-            ["EYEPATCHPURPLE", "EYEPATCHMAGENTA", "EYEPATCHPINK", "EYEPATCHROSE", "EYEPATCHLIGHTGRAY", "EYEPATCHDARKGRAY", "EYEPATCHBLACK"],
-            ["EYEPATCHRED", "EYEPATCHORANGE", "EYEPATCHAMBER", "EYEPATCHYELLOW", "EYEPATCHLIME"]
-        ]
-        larsaccs_data = [
-            ["ALLSEEINGGOLD", "ALLSEEINGSILVER", "BESIEGEDMASKOG", "BESIEGEDMASKBLUE", "BESIEGEDMASKCYAN"],
-            ["BESIEGEDMASKGRAY", "BESIEGEDMASKGREEN", "BESIEGEDMASKINDIGO", "BESIEGEDMASKORANGE", "BESIEGEDMASKPINK"],
-            ["BESIEGEDMASKPURPLE", "BESIEGEDMASKRED", "BESIEGEDMASKROSE", "BESIEGEDMASKAQUA", "BESIEGEDMASKYELLOW"],
-            ["HANDPEARLBLANK", "HANDPEARLBLUE", "HANDPEARLGREEN", "HANDPEARLORANGE", "HANDPEARLPURPLE"],
-            ["HANDPEARLRED", "HANDPEARLYELLOW", "PEARLDRAPERY", "STRAIGHTGOLD", "STRAIGHTSILVER"]
-        ]
-    
-        harleyaccs_data = [
-            ["FALLENSTARMASK", "TORNCLOAKFALL", "FALLENSTARPAWS", "TORNCLOAKWINTER"],
-            ["TORNCLOAKNIGHT", "TORNCLOAKSHADOW", "TORNCLOAKSILVER", "FAUXMANE"],
-            ["SLEEPYROBEPURPLE", "SLEEPYROBEGREEN", "SLEEPYROBEBLACK", "SLEEPYROBERED"],
-            ["SLEEPYROBEBLUE", "SLEEPYROBEFLOAH", "ITERATORPEARLNECKLACE", "AMBERJEWLERY"]
-        ]
-
-        featherboas_data = [
-            ["DPINKFEATHERBOA", "DREDFEATHERBOA", "DGREENFEATHERBOA", "DBLUEFEATHERBOA", "DGREENERFEATHERBOA"],
-            ["DORANGEFEATHERBOA", "LWHITEFEATHERBOA", "LPURPLEFEATHERBOA", "LBLUEFEATHERBOA", "LPINKFEATHERBOA"],
-            ["DMAGENTAFEATHERBOA", "DCRIMSONFEATHERBOA", "DPURPLEFEATHERBOA"]
-        ]
-
-        scarves_data = [
-            ["REDSCARF", "ORANGESCARF", "YELLOWSCARF", "LIMESCARF", "GREENSCARF", "CYANSCARF", "WHITESCARF"],
-            ["BLUESCARF", "DARKBLUESCARF", "PURPLESCARF", "MAGENTASCARF", "BLACKSCARF", "GRAYSCARF", "BROWNSCARF"],
-            ["NSHSCARF", "SAWYERSCARF"]
-        ]
-        
-        neckbandanas_data = [
-            ["DICEYNBANDANA", "EOUSNBANDANA", "FLUIDNBANDANA", "GUILDNBANDANA", "SKULLNBANDANA", "SKYNBANDANA", "SPACENBANDANA", "SWEETIENBANDANA"],
-            ["TCYANNBANDANA", "TIEDYEMUDDYNBANDANA", "TIEDYENBANDANA", "TSAVNBANDANA", "BLUEGRADNBANDANA", "ORANGEGRADNBANDANA",  "YELLOWGRADNBANDANA", "LIMEGRADNBANDANA"],
-            ["TEALGRADNBANDANA", "MAGENTAGRADNBANDANA", "REDGRADNBANDANA", "WHITENBANDANA", "LIGHTGRAYNBANDANA", "DARKGRAYNBANDANA", "BLACKNBANDANA", "PEACHNBANDANA"],
-            ["PALEREDNBANDANA", "REDNBANDANA", "MAROONNBANDANA", "PALEORANGENBANDANA", "LIGHTORANGENBANDANA", "ORANGENBANDANA", "BROWNNBANDANA", "PALEYELLOWNBANDANA"],
-            ["LIGHTYELLOWNBANDANA", "YELLOWNBANDANA", "PALEGREENNBANDANA", "LIGHTGREENNBANDANA", "GREENNBANDANA", "DARKGREENNBANDANA", "PALETEALNBANDANA", "LIGHTTEALNBANDANA"],
-            ["TEALNBANDANA", "DARKTEALNBANDANA", "PALEBLUENBANDANA", "LIGHTBLUENBANDANA", "DARKBLUENBANDANA", "BLUENBANDANA", "LAVENDERNBANDANA", "PURPLENBANDANA"],
-            ["DARKPURPLENBANDANA", "PALEPINKNBANDANA", "LIGHTPINKNBANDANA", "PINKNBANDANA", "DARKPINKNBANDANA", "PATCHWORKREDNBANDANA", "PATCHWORKORANGENBANDANA", "PATCHWORKYELLOWNBANDANA"],
-            ["PATCHWORKGREENNBANDANA", "PATCHWORKTEALNBANDANA", "PATCHWORKBLUENBANDANA", "PATCHWORKINDIGONBANDANA", "PATCHWORKPURPLENBANDANA", "PATCHWORKPINKNBANDANA"]
-        ]
-        
-        chains_data = [
-            ["AMBERCHAIN", "PINKCHAIN", "PURPLECHAIN", "YELLOWCHAIN", "TEALCHAIN"],
-            ["GREENCHAIN", "REDCHAIN", "ORANGECHAIN", "BLUECHAIN", "BLACKCHAIN"]
-        ]
-
-        newaccs3_data = [
-            ["FALLMPAINT", "SCAVMPAINT", "SPEARMPAINT", "BLUECLOUDS", "RIBS"],
-            ["YELLOWCLOUDS", "PURPLECLOUDS", "PINKCLOUDS", "GOGGLES", "MODSPEAR"],
-            ["PINKPOLEPLANTBUDDY", "ORANGEPOLEPLANTBUDDY", "REDPOLEPLANTBUDDY", "EYEBAGS"],
-            ["MAGNATEJEWLERY", "YELLOWKARMAWREATH", "BLUEKARMAWREATH", "PURPLEKARMAWREATH"],
-            ["MOTHBUDDY", "BOOMERANG", "MOTHBUDDYTWO", "MIST"]
-        ]
-
-        floatyeyes_data = [
-            ["YELLOWFLOATYEYES", "REDFLOATYEYES", "ORANGEFLOATYEYES"],
-            ["LIMEFLOATYEYES", "GREENFLOATYEYES", "BLUEFLOATYEYES"],
-            ["INDIGOFLOATYEYES"]
-        ]
-
-        morespears_data = [
-            ["PURPLEINDIGOPSPEAR", "INDIGOPSPEAR", "PURPLEPSPEAR", "CYANPSPEAR", "BLUEPSPEAR", "BLUECYANPSPEAR"],
-            ["GAYPSPEAR", "TURQUOISEPSPEAR", "TURQUOISEGREENPSPEAR", "LIMEGREENPSPEAR", "LIMEPSPEAR", "GREYPSPEAR"],
-            ["GREENPSPEAR", "ORANGEPSPEAR", "REDPSPEAR", "REDPINKPSPEAR", "PURPLEPINKPSPEAR", "PINKPSPEAR"],
-            ["MAGENTAPINKPSPEAR", "REDPURPLEPSPEAR", "BLUEPURPLEPSPEAR", "ROSEPINKPSPEAR", "GREENYELLOWPSPEAR", "LIMEYELLOWPSPEAR"],
-            ["YELLOWPSPEAR", "REDFIRESPEAR", "ORANGEFIRESPEAR", "YELLOWFIRESPEAR", "PINKFIRESPEAR", "PURPLEFIRESPEAR"],
-            ["DARKREDFIRESPEAR", "DARKPINKFIRESPEAR", "DARKORANGEFIRESPEAR", "DARKYELLOWFIRESPEAR"]
-        ]
-
-        flagaccs_data = [
-            ["BLUEFLAG", "COOLFLAG", "GREENFLAG", "GREYFLAG", "ORANGEFLAG"],
-            ["PINKFLAG", "PURPLEFLAG", "RAINBOWFLAG", "REDFLAG", "SINFLAG"],
-            ["TEALFLAG", "WARMFLAG", "WHITEFLAG", "YELLOWFLAG"]
-        ]
-
-        haloaccs_data = [
-            ["REDHALO", "ORANGEHALO", "YELLOWHALO", "GREENHALO", "TEALHALO"],
-            ["CYANHALO", "INDIGOHALO", "BLUEHALO", "PURPLEHALO", "MAGENTAHALO"],
-            ["PINKHALO", "WHITEHALO", "BLACKHALO"]
-        ]
-
-        ponchoaccs_data = [
-            ["ORANGEPONCHO", "YELLOWPONCHO", "GREENPONCHO", "TEALPONCHO", "CYANPONCHO"],
-            ["BLUEPONCHO", "PURPLEPONCHO", "PINKPONCHO", "REDPONCHO", "WHITEPONCHO"],
-            ["BROWNPONCHO", "SILVERPONCHO", "BLACKPONCHO", "MLOCPONCHO", "VSSCPONCHO"],
-            ["FAMILIARPONCHO", "NSHPONCHO"]
-        ]
-
-        glassesaccs_data = [
-            ["SUNGLASSESPINK", "SUNGLASSESRED", "SUNGLASSESORANGE", "SUNGLASSESAMBER", "SUNGLASSESYELLOW", "SUNGLASSESLIME"],
-            ["SUNGLASSESGREEN", "SUNGLASSESTEAL", "SUNGLASSESCYAN", "SUNGLASSESBLUE", "SUNGLASSESINDIGO", "SUNGLASSESPURPLE"],
-            ["SUNGLASSESWHITE", "SUNGLASSES", "GLASSESRED", "GLASSESORANGE", "GLASSESAMBER", "GLASSESYELLOW"],
-            ["GLASSESLIME", "GLASSESGREEN", "GLASSESTEAL", "GLASSESCYAN", "GLASSESBLUE", "GLASSESINDIGO"],
-            ["GLASSESPURPLE", "GLASSESPINK"]
-        ]
-
-        orbitals_data = [
-            ['ORANGEORBITAL', 'YELLOWORBITAL', 'EARTHORBITAL'],
-            ['EARTHTWOORBITAL', 'PURPLEORBITAL', 'PINKORBITAL'], 
-            ['REDORBITAL']
-        ]
-        
-        vulturemasks_data = [
-            ['VULTMASKONE', 'VULTMASKTWO', 'VULTMASK3', 'VULTMASK4', 'VULTMASK5', 'VULTMASK6', 'VULTMASK7', 'VULTMASK8'],
-            ['VULTMASK9', 'VULTMASK10', 'VULTMASK11', 'VULTMASK12', 'VULTMASK13', 'VULTMASK14', 'VULTMASK15', 'VULTMASK16'], 
-            ['VULTMASK17', 'VULTMASK18', 'VULTMASK19', 'VULTMASK20', 'VULTMASK21', 'VULTMASK22', 'VULTMASK23', 'VULTMASK24']
-        ]
-        
-        iteratormasks_data = [
-            ['BLUEITERATOR', 'BLACKITERATOR', 'GREENITERATOR', 'ORANGEITERATOR', 'PINKITERATOR', 'CYANITERATOR'],
-            ['PURPLEITERATOR', 'REDITERATOR', 'CREAMITERATOR', 'WHITEITERATOR', 'YELLOWITERATOR']
-        ]
+        medcatherbs_data = sprites_py_dict['medcatherbs_data']
+        wild_data = sprites_py_dict['wild_data']
+        collars_data = sprites_py_dict['collars_data']
+        bellcollars_data = sprites_py_dict['bellcollars_data']
+        bowcollars_data = sprites_py_dict['bowcollars_data']
+        nyloncollars_data = sprites_py_dict['nyloncollars_data']
+        rwlizards_data = sprites_py_dict['rwlizards_data']
+        drones_data = sprites_py_dict['drones_data']
+        muddypaws_data = sprites_py_dict['muddypaws_data']
+        herbs2_data = sprites_py_dict['herbs2_data']
+        insectwings_data = sprites_py_dict['insectwings_data']
+        buddies_data = sprites_py_dict['buddies_data']
+        newaccs_data = sprites_py_dict['newaccs_data']
+        newaccs2_data = sprites_py_dict['newaccs2_data']
+        bodypaint_data = sprites_py_dict['bodypaint_data']
+        implant_data = sprites_py_dict['implant_data']
+        magic_data = sprites_py_dict['magic_data']
+        necklaces_data = sprites_py_dict['necklaces_data']
+        drapery_data = sprites_py_dict['drapery_data']
+        pridedrapery_data = sprites_py_dict['pridedrapery_data']
+        eyepatch_data = sprites_py_dict['eyepatch_data']
+        larsaccs_data = sprites_py_dict['larsaccs_data']
+        harleyaccs_data = sprites_py_dict['harleyaccs_data']
+        featherboas_data = sprites_py_dict['featherboas_data']
+        scarves_data = sprites_py_dict['scarves_data']
+        neckbandanas_data = sprites_py_dict['neckbandanas_data']
+        chains_data = sprites_py_dict['chains_data']
+        newaccs3_data = sprites_py_dict['newaccs3_data']
+        floatyeyes_data = sprites_py_dict['floatyeyes_data']
+        morespears_data = sprites_py_dict['morespears_data']
+        flagaccs_data = sprites_py_dict['flagaccs_data']
+        haloaccs_data = sprites_py_dict['haloaccs_data']
+        ponchoaccs_data = sprites_py_dict['ponchoaccs_data']
+        glassesaccs_data = sprites_py_dict['glassesaccs_data']
+        orbitals_data = sprites_py_dict['orbitals_data']
+        vulturemasks_data = sprites_py_dict['vulturemasks_data']
+        iteratormasks_data = sprites_py_dict['iteratormasks_data']
+        basecollars_data = sprites_py_dict['basecollars_data']
+        pearlcollars_data = sprites_py_dict['pearlcollars_data']
+        studdedcollars_data = sprites_py_dict['studdedcollars_data']
+        newaccs4_data = sprites_py_dict['newaccs4_data']
+        newaccs5_data = sprites_py_dict['newaccs5_data']
 
         # medcatherbs
         self.make_sprite_groups('medcatherbs', medcatherbs_data, 'acc_herbs')
@@ -926,6 +534,21 @@ class Sprites:
 
         # iterator masks
         self.make_sprite_groups('iteratormasks', iteratormasks_data, 'iteratormasks')
+
+        # base collars
+        self.make_sprite_groups('basecollars', basecollars_data, 'basecollars')
+        
+        # pearl collars
+        self.make_sprite_groups('pearlcollars', pearlcollars_data, 'pearlcollars')
+
+        # studded collars
+        self.make_sprite_groups('studdedcollars', studdedcollars_data, 'studdedcollars')
+
+        # newaccs4
+        self.make_sprite_groups('newaccs4', newaccs4_data, 'newaccs4')
+
+        # newaccs5
+        self.make_sprite_groups('newaccs5', newaccs5_data, 'newaccs5')
 
     def load_symbols(self):
         """

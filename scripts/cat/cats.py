@@ -139,6 +139,7 @@ class Cat:
         prefix=None,
         gender=None,
         status="newborn",
+        species=None,
         backstory="clanborn",
         parent1=None,
         parent2=None,
@@ -193,6 +194,7 @@ class Cat:
         self.gender = gender
         self.status = status
         self.backstory = backstory
+        self.species = None
         self.age = None
         self.skills = CatSkills(skill_dict=skill_dict)
         self.personality = Personality(
@@ -308,6 +310,10 @@ class Cat:
         else:
             self.backstory = self.backstory
 
+        # species
+        if self.species is None:
+            self.species = choice(["terrestrial", "insectoid", "aquatic", "avian", "reptilian", "mamilian", "mechanical"])
+        
         # sex!?!??!?!?!??!?!?!?!??
         if self.gender is None:
             self.gender = choice(["female", "male"])

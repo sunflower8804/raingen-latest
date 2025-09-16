@@ -2619,6 +2619,34 @@ def clan_symbol_sprite(clan, return_string=False, force_light=False):
                 sprites.sprites[f"{choice(sprites.clan_symbols)}"]
             )
 
+def find_eye_sprite(cat, cat_sprite):
+    """
+    Finds correct eye sprite by searching all loaded sprite keys.
+    """
+    color = cat.pelt.eye_colour
+    suffix = f"{color}{cat_sprite}"
+    for key in sprites.sprites:
+        try:
+            if key.endswith(suffix):
+                return sprites.sprites[key].copy()
+        except (TypeError, KeyError):
+            print(f"WARNING: Eye sprite not found for color '{color}' and pose '{cat_sprite}'.")
+            continue
+
+def find_skin_sprite(cat, cat_sprite):
+    """
+    Finds correct skin/feature sprite by searching all loaded sprite keys for matching suffix.
+    """
+    skin = cat.pelt.skin
+    suffix = f"{skin}{cat_sprite}"
+    for key in sprites.sprites:
+        try:
+            if key.endswith(suffix):
+                return sprites.sprites[key].copy()
+        except (TypeError, KeyError):
+            print(f"WARNING: Skin sprite not found for skin '{skin}' and pose '{cat_sprite}', setting to BLACK ie empty.")
+            skin = "BLACK"
+            continue
 
 def generate_sprite(
     cat,
@@ -2785,13 +2813,18 @@ def generate_sprite(
                 sprites.sprites["white" + cat.pelt.vitiligo + cat_sprite], (0, 0)
             )
 
-        # draw normal eyes
-        if cat.pelt.eye_colour not in Pelt.riveye_colours and cat.pelt.eye_colour not in Pelt.buttoneye_colours not in Pelt.bobaeye_colours:
-            eyes = sprites.sprites["eyes" + cat.pelt.eye_colour + cat_sprite].copy()
-            if cat.pelt.eye_colour2 != None:
-                eyes.blit(
-                    sprites.sprites["eyes2" + cat.pelt.eye_colour2 + cat_sprite], (0, 0)
-                )
+        # draw eyes
+        if cat.pelt.eye_colour:
+            eyes = find_eye_sprite(cat, cat_sprite)
+            if cat.pelt.eye_colour2 is not None:
+                suffix2 = f"{cat.pelt.eye_colour2}{cat_sprite}"
+                found2 = None
+                for key in sprites.sprites:
+                    if key.endswith(suffix2) and key[:key.find(cat.pelt.eye_colour2)].endswith("2"):
+                        found2 = sprites.sprites[key]
+                        break
+                if found2:
+                    eyes.blit(found2, (0, 0))
             new_sprite.blit(eyes, (0, 0))
 
         # draw scars1
@@ -2834,7 +2867,7 @@ def generate_sprite(
         #draw special skin
         if not feature_hidden:
             if cat.pelt.skin in Pelt.closest_skin:
-                new_sprite.blit(sprites.sprites["skin" + cat.pelt.skin + cat_sprite], (0, 0))
+                new_sprite.blit(find_skin_sprite(cat, cat_sprite), (0, 0))
 
         #draw CLOSE TO BODY ACCS i'm finally doing it yuppie
         for i in cat.pelt.accessories:
@@ -2901,6 +2934,16 @@ def generate_sprite(
                             new_sprite.blit(sprites.sprites['vulturemasks' + i + cat_sprite], (0, 0))
                         elif i in cat.pelt.iteratormasks:
                             new_sprite.blit(sprites.sprites['iteratormasks' + i + cat_sprite], (0, 0))
+                        elif i in cat.pelt.basecollars:
+                            new_sprite.blit(sprites.sprites['basecollars' + i + cat_sprite], (0, 0))
+                        elif i in cat.pelt.pearlcollars:
+                            new_sprite.blit(sprites.sprites['pearcollars' + i + cat_sprite], (0, 0))
+                        elif i in cat.pelt.studdedcollars:
+                            new_sprite.blit(sprites.sprites['studdedcollars' + i + cat_sprite], (0, 0))
+                        elif i in cat.pelt.newaccs4:
+                            new_sprite.blit(sprites.sprites['newaccs4' + i + cat_sprite], (0, 0))
+                        elif i in cat.pelt.newaccs5:
+                            new_sprite.blit(sprites.sprites['newaccs5' + i + cat_sprite], (0, 0))
 
                     except:
                         continue
@@ -2908,18 +2951,13 @@ def generate_sprite(
         blendmode = pygame.BLEND_RGBA_MIN
         
         #draw the rest of the skin
-        if not feature_hidden:
-            if cat.pelt.skin not in Pelt.closest_skin:
-                new_sprite.blit(sprites.sprites["skin" + cat.pelt.skin + cat_sprite], (0, 0))
-            
-        # draw riv, button, and boba eyes
-        if cat.pelt.eye_colour in Pelt.riveye_colours or cat.pelt.eye_colour in Pelt.buttoneye_colours or cat.pelt.eye_colour in Pelt.bobaeye_colours:
-            eyes = sprites.sprites["eyes" + cat.pelt.eye_colour + cat_sprite].copy()
-            if cat.pelt.eye_colour2 != None:
-                eyes.blit(
-                    sprites.sprites["eyes2" + cat.pelt.eye_colour2 + cat_sprite], (0, 0)
-                )
-            new_sprite.blit(eyes, (0, 0))
+        try:
+            if not feature_hidden:
+                if cat.pelt.skin not in Pelt.closest_skin:
+                    new_sprite.blit(find_skin_sprite(cat, cat_sprite), (0, 0))
+        except TypeError: 
+            skin = cat.pelt.skin
+            print(f"ERROR sprite for {skin} invalid")
 
         # draw scars2
         if not scars_hidden:
@@ -3002,6 +3040,16 @@ def generate_sprite(
                             new_sprite.blit(sprites.sprites['vulturemasks' + i + cat_sprite], (0, 0))
                         elif i in cat.pelt.iteratormasks:
                             new_sprite.blit(sprites.sprites['iteratormasks' + i + cat_sprite], (0, 0))
+                        elif i in cat.pelt.basecollars:
+                            new_sprite.blit(sprites.sprites['basecollars' + i + cat_sprite], (0, 0))
+                        elif i in cat.pelt.pearlcollars:
+                            new_sprite.blit(sprites.sprites['pearcollars' + i + cat_sprite], (0, 0))
+                        elif i in cat.pelt.studdedcollars:
+                            new_sprite.blit(sprites.sprites['studdedcollars' + i + cat_sprite], (0, 0))
+                        elif i in cat.pelt.newaccs4:
+                            new_sprite.blit(sprites.sprites['newaccs4' + i + cat_sprite], (0, 0))
+                        elif i in cat.pelt.newaccs5:
+                            new_sprite.blit(sprites.sprites['newaccs5' + i + cat_sprite], (0, 0))
 
                     except:
                         continue

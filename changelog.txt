@@ -4,11 +4,14 @@ Added:
 - - Wings by Foxett and Wildy
 - - Manes by Foxett
 - - Overseertenna by Foxett
+- - White dropwig mandibles by Squid Say Moo
 - Pelts:
 - - Citadel, and Grave by Foxett
 - - Interloper, and Anethisis by Wildy
 HEAVY WIP - 3 New conditions with scars to go alongside them
-- Redo of sprite code (better organized files)
+- Moved sprite names into json files for cleanup
+
+Fixes:
 
 <strong>v1.7</strong>
 Added:
