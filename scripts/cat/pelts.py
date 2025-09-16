@@ -1238,7 +1238,7 @@ class Pelt:
         """
         
         with open("sprites/dicts/descriptions.json", "f") as f:
-            descriptions_dict = json.load(f)
+            descriptions_dict = ujson.load(f)
             
         # Define look-up dictionaries
         if short:

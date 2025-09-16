@@ -2813,20 +2813,6 @@ def generate_sprite(
                 sprites.sprites["white" + cat.pelt.vitiligo + cat_sprite], (0, 0)
             )
 
-        # draw eyes
-        if cat.pelt.eye_colour:
-            eyes = find_eye_sprite(cat, cat_sprite)
-            if cat.pelt.eye_colour2 is not None:
-                suffix2 = f"{cat.pelt.eye_colour2}{cat_sprite}"
-                found2 = None
-                for key in sprites.sprites:
-                    if key.endswith(suffix2) and key[:key.find(cat.pelt.eye_colour2)].endswith("2"):
-                        found2 = sprites.sprites[key]
-                        break
-                if found2:
-                    eyes.blit(found2, (0, 0))
-            new_sprite.blit(eyes, (0, 0))
-
         # draw scars1
         if not scars_hidden:
             for scar in cat.pelt.scars:
@@ -2856,6 +2842,20 @@ def generate_sprite(
         elif dead:
             new_sprite.blit(sprites.sprites["lineartdead" + cat_sprite], (0, 0))
             
+        # draw eyes
+        if cat.pelt.eye_colour:
+            eyes = find_eye_sprite(cat, cat_sprite)
+            if cat.pelt.eye_colour2 is not None:
+                suffix2 = f"{cat.pelt.eye_colour2}{cat_sprite}"
+                found2 = None
+                for key in sprites.sprites:
+                    if key.endswith(suffix2) and key[:key.find(cat.pelt.eye_colour2)].endswith("2"):
+                        found2 = sprites.sprites[key]
+                        break
+                if found2:
+                    eyes.blit(found2, (0, 0))
+            new_sprite.blit(eyes, (0, 0))
+
         # draw the rot
         if not scars_hidden:
             for scar in cat.pelt.scars:
@@ -2865,9 +2865,13 @@ def generate_sprite(
                     )
 
         #draw special skin
-        if not feature_hidden:
-            if cat.pelt.skin in Pelt.closest_skin:
-                new_sprite.blit(find_skin_sprite(cat, cat_sprite), (0, 0))
+        try:
+            if not feature_hidden:
+                if cat.pelt.skin in Pelt.closest_skin:
+                    new_sprite.blit(find_skin_sprite(cat, cat_sprite), (0, 0))
+        except TypeError: 
+            skin = cat.pelt.skin
+            print(f"ERROR sprite for {skin} invalid")
 
         #draw CLOSE TO BODY ACCS i'm finally doing it yuppie
         for i in cat.pelt.accessories:

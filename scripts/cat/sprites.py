@@ -270,16 +270,10 @@ class Sprites:
                 
         # Gills, Tongues, Quills
         gilltongue_rows = sprites_py_dict['gilltongue_rows']
-
-        # Determine group name per row
         if game.settings["bea_gilltongue"]:
-            group_rows = ['gilltongue', 'gilltongue', 'gilltongue', 'beagilltongue', 'beagilltongue', 'beagilltongue']
+            self.make_sprite_groups('beagilltongue', gilltongue_rows, 'skin')
         else:
-            group_rows = ['gilltongue'] * 6
-
-        # Loop through and assign
-        for group, colors in zip(group_rows, gilltongue_rows):
-            self.make_sprite_groups(group, [colors], 'skin')
+            self.make_sprite_groups('gilltongue', gilltongue_rows, 'skin')
 
         # Horns - Ram, Scav, Elite, Sharp, Dragon, Lancer
         horns_colors = sprites_py_dict['horns_colors']
@@ -292,7 +286,7 @@ class Sprites:
         # fancyskin spritesheet
         fancyskin_colors = sprites_py_dict['fancyskin_colors']
         # Handle rows 0-6 with function
-        self.make_sprite_groups('fancyskin', fancyskin_colors[:10], 'skin')
+        self.make_sprite_groups('fancyskin', fancyskin_colors[:11], 'skin')
         # Handle row 11 seperately because it will suffer alone
         if len(fancyskin_colors) > 11:
             for col, color in enumerate(fancyskin_colors[11]):
