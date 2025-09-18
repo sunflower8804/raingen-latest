@@ -210,6 +210,8 @@ class Pelt:
                  name: str = "SingleColour",
                  length: str = "short",
                  colour: str = "WHITE",
+                 texture: str = "smooth",
+                 size: str = "medium",
                  white_patches: str = None,
                  eye_color: str = "BLUE",
                  eye_colour2: str = None,
@@ -237,6 +239,8 @@ class Pelt:
                  ) -> None:
         self.name = name
         self.colour = colour
+        self.texture = choice("smooth", "fuzzy", "velvety", "greasy", "slimey", "rough", "soft", "fluffy")
+        self.size = choice("tiny", "small", "medium", "large", "huge")
         self.white_patches = white_patches
         self.eye_colour = eye_color
         self.eye_colour2 = eye_colour2
