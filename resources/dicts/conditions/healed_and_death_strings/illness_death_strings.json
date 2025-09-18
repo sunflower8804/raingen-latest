@@ -14,11 +14,11 @@
         "Greencough killed m_c.",
         "Greencough has taken m_c's life."
     ],
-    "kittencough": [
-        "m_c died of kittencough.",
-        "m_c was killed by kittencough.",
-        "Kittencough has killed m_c.",
-        "Kittencough has taken m_c's life."
+    "pupcough": [
+        "m_c died of pupcough.",
+        "m_c was killed by pupcough.",
+        "pupcough has killed m_c.",
+        "pupcough has taken m_c's life."
     ],
     "an infected wound": [
         "m_c died from an infection.",
