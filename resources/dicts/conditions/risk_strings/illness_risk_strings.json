@@ -6,9 +6,9 @@
 
         ]
     },
-    "kittencough": {
+    "pupcough": {
         "whitecough": [
-            "r_c quietly tells m_c's parent that {PRONOUN/r_c/subject} {VERB/r_c/need/needs} to move m_c to the cleric den. m_c's kittencough has progressed to whitecough.",
+            "r_c quietly tells m_c's parent that {PRONOUN/r_c/subject} {VERB/r_c/need/needs} to move m_c to the cleric den. m_c's pupcough has progressed to whitecough.",
             "m_c coughs pathetically, wondering why it's not getting better - and why {PRONOUN/m_c/subject} {VERB/m_c/have/has} to be in the stinky cleric den now."
 
         ]
