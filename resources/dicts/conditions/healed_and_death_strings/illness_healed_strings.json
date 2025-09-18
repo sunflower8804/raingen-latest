@@ -16,10 +16,10 @@
         "m_c is no longer coughing and sputtering, {PRONOUN/m_c/poss} case of greencough now cured.",
         "m_c no longer has greencough."
     ],
-    "kittencough": [
-        "m_c is free of kittencough, once again able to play and frolic.",
-        "m_c has recovered from kittencough.",
-        "m_c no longer has kittencough."
+    "pupcough": [
+        "m_c is free of pupcough, once again able to play and frolic.",
+        "m_c has recovered from pupcough.",
+        "m_c no longer has pupcough."
     ],
     "an infected wound": [
         "The infection in m_c's wound has abated.",
