@@ -243,8 +243,8 @@ class Pelt:
                  ) -> None:
         self.name = name
         self.colour = colour
-        self.texture = choice(texture)
-        self.size = choice(size)
+        self.texture = texture
+        self.size = size
         self.white_patches = white_patches
         self.eye_colour = eye_color
         self.eye_colour2 = eye_colour2
@@ -763,6 +763,19 @@ class Pelt:
         chosen_pelt_length = random.choice(Pelt.pelt_length)
 
         # ------------------------------------------------------------------------------------------------------------#
+        #   TEXTURE
+        # ------------------------------------------------------------------------------------------------------------#
+
+        chosen_texture = random.choice(Pelt.texture)
+
+        # ------------------------------------------------------------------------------------------------------------#
+        #   SIZE
+        # ------------------------------------------------------------------------------------------------------------#
+
+        chosen_size = random.choice(Pelt.size)
+
+
+        # ------------------------------------------------------------------------------------------------------------#
         #   PELT WHITE
         # ------------------------------------------------------------------------------------------------------------#
 
@@ -781,6 +794,8 @@ class Pelt:
         self.name = chosen_pelt
         self.colour = chosen_pelt_color
         self.length = chosen_pelt_length
+        self.texture = chosen_texture
+        self.size = chosen_size
         self.tortiebase = chosen_tortie_base  # This will be none if the cat isn't a tortie.
         return chosen_white
 
