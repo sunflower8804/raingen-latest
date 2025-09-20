@@ -243,8 +243,8 @@ class Pelt:
                  ) -> None:
         self.name = name
         self.colour = colour
-        self.texture = random.choice(texture)
-        self.size = random.choice(size)
+        self.texture = choice(texture)
+        self.size = choice(size)
         self.white_patches = white_patches
         self.eye_colour = eye_color
         self.eye_colour2 = eye_colour2
