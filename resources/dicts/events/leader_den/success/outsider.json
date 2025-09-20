@@ -432,7 +432,7 @@
   },
   {
     "interaction_type": "hunt",
-    "event_text": "c_n finds m_c lounging on a fence. The c_n patrol descends on {PRONOUN/m_c/object}, teeth bared and claws unsheathed. m_c yowls for help from {PRONOUN/m_c/poss} Iterator, but {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} no match for warrior training.",
+    "event_text": "c_n finds m_c lounging on a fence. The c_n patrol descends on {PRONOUN/m_c/object}, teeth bared and spears unsheathed. m_c yowls for help from {PRONOUN/m_c/poss} Iterator, but {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} no match for warrior training.",
     "reputation": ["any"],
     "rep_change": -10,
     "m_c": {

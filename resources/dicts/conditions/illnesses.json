@@ -135,7 +135,7 @@
             "moss"
         ]
     },
-    "kittencough": {
+    "pupcough": {
         "severity": "severe",
         "mortality": {
             "newborn": 2,

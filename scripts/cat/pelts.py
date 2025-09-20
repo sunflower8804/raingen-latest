@@ -204,12 +204,18 @@ class Pelt:
     #list for stuff that should logically be behind a cloak
     closest_skin = sprite_names_dict['closest_skin']
 
+    #misc descriptors
+    texture = ["smooth", "fuzzy", "velvety", "greasy", "slimey", "rough", "soft", "fluffy"]
+    size = ["tiny", "small", "medium", "large", "huge"]
+
     """Holds all appearance information for a cat. """
 
     def __init__(self,
                  name: str = "SingleColour",
                  length: str = "short",
                  colour: str = "WHITE",
+                 texture: str = "smooth",
+                 size: str = "medium",
                  white_patches: str = None,
                  eye_color: str = "BLUE",
                  eye_colour2: str = None,
@@ -237,6 +243,8 @@ class Pelt:
                  ) -> None:
         self.name = name
         self.colour = colour
+        self.texture = texture
+        self.size = size
         self.white_patches = white_patches
         self.eye_colour = eye_color
         self.eye_colour2 = eye_colour2
@@ -418,7 +426,7 @@ class Pelt:
         if self.skin in convert_dict["old_sharphorns"]:
             self.skin = convert_dict["old_sharphorns"][self.skin]
 
-        if self.length == 'long':
+        if self.length == 'bulky':
             if self.cat_sprites['adult'] not in [9, 10, 11]:
                 if self.cat_sprites['adult'] == 0:
                     self.cat_sprites['adult'] = 9
@@ -655,16 +663,16 @@ class Pelt:
         )
 
         # ------------------------------------------------------------------------------------------------------------#
-        #   PELT LENGTH
+        #   PELT LENGTH (BUILD)
         # ------------------------------------------------------------------------------------------------------------#
 
-        weights = [0, 0, 0]  # Weights for each length. It goes (short, medium, long)
+        weights = [0, 0, 0]  # Weights for each length (build). It goes (slim, average, bulky)
         for p_ in par_peltlength:
-            if p_ == "short":
+            if p_ == "slim":
                 add_weight = (50, 10, 2)
-            elif p_ == "medium":
+            elif p_ == "average":
                 add_weight = (25, 50, 25)
-            elif p_ == "long":
+            elif p_ == "bulky":
                 add_weight = (2, 10, 50)
             elif p_ is None:
                 add_weight = (10, 10, 10)
@@ -755,6 +763,19 @@ class Pelt:
         chosen_pelt_length = random.choice(Pelt.pelt_length)
 
         # ------------------------------------------------------------------------------------------------------------#
+        #   TEXTURE
+        # ------------------------------------------------------------------------------------------------------------#
+
+        chosen_texture = random.choice(Pelt.texture)
+
+        # ------------------------------------------------------------------------------------------------------------#
+        #   SIZE
+        # ------------------------------------------------------------------------------------------------------------#
+
+        chosen_size = random.choice(Pelt.size)
+
+
+        # ------------------------------------------------------------------------------------------------------------#
         #   PELT WHITE
         # ------------------------------------------------------------------------------------------------------------#
 
@@ -773,6 +794,8 @@ class Pelt:
         self.name = chosen_pelt
         self.colour = chosen_pelt_color
         self.length = chosen_pelt_length
+        self.texture = chosen_texture
+        self.size = chosen_size
         self.tortiebase = chosen_tortie_base  # This will be none if the cat isn't a tortie.
         return chosen_white
 
@@ -806,7 +829,7 @@ class Pelt:
             random.choices(Pelt.skin_categories, Pelt.skin_weights, k=1)[0]
         )
 
-        if self.length != 'long':
+        if self.length != 'bulky':
             self.cat_sprites['adult'] = random.randint(6, 8)
             self.cat_sprites['para_adult'] = 16
         else:
@@ -1357,7 +1380,7 @@ class Pelt:
 
             if len(cat.pelt.scars) >= 3:
                 color_name = f"scarred {color_name}"
-            if cat.pelt.length == "long":
+            if cat.pelt.length == "bulky":
                 color_name = f"bulky {color_name}"
 
         return color_name

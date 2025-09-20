@@ -9,7 +9,7 @@
   },
   {
     "interaction_type": "offend",
-    "event_text": "During the Gathering, m_c makes jokes at the expense of one of o_c_n's warriors. o_c_n's leader, horrified, informs m_c that this particular warrior passed away in the last moon. No way... m_c had no idea and totally can't see them hanging around in a white wisp at the edge of the meeting place.",
+    "event_text": "During the Gathering, m_c makes jokes at the expense of one of o_c_n's warriors. o_c_n's leader, horrified, informs m_c that this particular warrior passed away in the last cycle. No way... m_c had no idea and totally can't see them hanging around in a white wisp at the edge of the meeting place.",
     "rel_change": -4,
     "m_c": {
         "skill": ["GHOST, 2"],
@@ -28,7 +28,7 @@
   },
   {
     "interaction_type": "offend",
-    "event_text": "At the Gathering, m_c insists on going first, shouldering in front of o_c_n's leader. o_c_n's leader doesn't mind whatsoever, since they have no real news to share this moon.",
+    "event_text": "At the Gathering, m_c insists on going first, shouldering in front of o_c_n's leader. o_c_n's leader doesn't mind whatsoever, since they have no real news to share this cycle.",
     "rel_change": 0,
     "m_c": {},
     "player_clan_temper": ["any"],
@@ -52,7 +52,7 @@
   },
   {
     "interaction_type": "offend",
-    "event_text": "At the Gathering, m_c threatens a skirmish with o_c_n if their warriors are found too close to the border. o_c_n's leader grins at the idea, agreeing that allies should help keep each other's claws sharp.",
+    "event_text": "At the Gathering, m_c threatens a skirmish with o_c_n if their warriors are found too close to the border. o_c_n's leader grins at the idea, agreeing that allies should help keep each other's spears sharp.",
     "rel_change": 1,
     "m_c": {},
     "player_clan_temper": ["any"],
@@ -142,7 +142,7 @@
   },
   {
     "interaction_type": "offend",
-    "event_text": "Despite the horrendous weather, m_c strikes out with {PRONOUN/m_c/poss} Gathering patrol to the meeting place. It's deserted. Any attempt to offend o_c_n will have to wait until next moon.",
+    "event_text": "Despite the horrendous weather, m_c strikes out with {PRONOUN/m_c/poss} Gathering patrol to the meeting place. It's deserted. Any attempt to offend o_c_n will have to wait until next cycle.",
     "rel_change": 0,
     "m_c": {},
     "player_clan_temper": ["any"],
@@ -185,7 +185,7 @@
   },
   {
     "interaction_type": "praise",
-    "event_text": "While trying to scramble up onto the leader's perch at the Gathering, o_c_n's new young leader slips and scrabbles with their hindlegs for purchase. Thinking fast, m_c grabs their scruff and lifts them onto the perch easily. o_c_n's leader screeches that they're not a kit and need <i>no</i> help!",
+    "event_text": "While trying to scramble up onto the leader's perch at the Gathering, o_c_n's new young leader slips and scrabbles with their hindlegs for purchase. Thinking fast, m_c grabs their scruff and lifts them onto the perch easily. o_c_n's leader screeches that they're not a pup and need <i>no</i> help!",
     "rel_change": -5,
     "m_c": {
       "skill": ["CLIMBER,3", "KIT,3"],
@@ -225,7 +225,7 @@
   },
   {
     "interaction_type": "praise",
-    "event_text": "Before the Gathering, m_c takes o_c_n's leader aside and warns them that their mate will be caught in a flood in the next moon. o_c_n's leader cuts {PRONOUN/m_c/object} off in disbelief, finding it too terrible to imagine. m_c watches o_c_n's leader leave after the Gathering, {PRONOUN/m_c/poss} heart sinking.",
+    "event_text": "Before the Gathering, m_c takes o_c_n's leader aside and warns them that their mate will be caught in a flood in the next cycle. o_c_n's leader cuts {PRONOUN/m_c/object} off in disbelief, finding it too terrible to imagine. m_c watches o_c_n's leader leave after the Gathering, {PRONOUN/m_c/poss} heart sinking.",
     "rel_change": -3,
     "m_c": {
       "trait": ["sincere"],
@@ -246,7 +246,7 @@
   },
   {
     "interaction_type": "praise",
-    "event_text": "m_c spends most of the Gathering cheerfully chatting with an o_c_n warrior who is surprisingly easy to talk to. During their speech, o_c_n's leader announces that same warrior died in the previous moon. m_c glances at {PRONOUN/m_c/poss} new friend, who winks and vanishes in a sparkle of stardust.",
+    "event_text": "m_c spends most of the Gathering cheerfully chatting with an o_c_n warrior who is surprisingly easy to talk to. During their speech, o_c_n's leader announces that same warrior died in the previous cycle. m_c glances at {PRONOUN/m_c/poss} new friend, who winks and vanishes in a sparkle of stardust.",
     "rel_change": 0,
     "m_c": {
       "trait": ["lonesome"],
@@ -285,7 +285,7 @@
   },
   {
     "interaction_type": "praise",
-    "event_text": "Despite the horrendous weather, m_c strikes out with {PRONOUN/m_c/poss} Gathering patrol to the meeting place. It's deserted. Any praising of o_c_n will have to wait until next moon.",
+    "event_text": "Despite the horrendous weather, m_c strikes out with {PRONOUN/m_c/poss} Gathering patrol to the meeting place. It's deserted. Any praising of o_c_n will have to wait until next cycle.",
     "rel_change": 0,
     "m_c": {},
     "player_clan_temper": ["any"],
@@ -311,7 +311,7 @@
   },
   {
     "interaction_type": "praise",
-    "event_text": "At the Gathering, m_c comments on what delicious prey must be found on o_c_n territory. o_c_n's leader looks uneasy - they may be allies, but they know m_c to be a troublesome cat, and that sure sounded like {PRONOUN/m_c/subject}{VERB/m_c/'d/'s} like to take some for {PRONOUN/m_c/self}.",
+    "event_text": "At the Gathering, m_c comments on what delicious prey must be found on o_c_n territory. o_c_n's leader looks uneasy - they may be allies, but they know m_c to be a troublesome slugcat, and that sure sounded like {PRONOUN/m_c/subject}{VERB/m_c/'d/'s} like to take some for {PRONOUN/m_c/self}.",
     "rel_change": -1,
     "m_c": { 
       "trait": [ "troublesome" ],
@@ -353,7 +353,7 @@
   },
   {
     "interaction_type": "praise",
-    "event_text": "o_c_n's cats keep their distance from c_n during the Gathering. No matter what tack m_c tries, o_c_n's leader doesn't seem receptive. Perhaps this alliance is weakening for reasons {PRONOUN/m_c/subject} {VERB/m_c/are/is}n't aware of.",
+    "event_text": "o_c_n's slugcats keep their distance from c_n during the Gathering. No matter what tack m_c tries, o_c_n's leader doesn't seem receptive. Perhaps this alliance is weakening for reasons {PRONOUN/m_c/subject} {VERB/m_c/are/is}n't aware of.",
     "rel_change": -2,
     "m_c": { },
     "player_clan_temper": ["any"],
@@ -361,7 +361,7 @@
   },
   {
     "interaction_type": "praise",
-    "event_text": "At the Gathering, m_c suggests a friendly competition of hunting and sparring between o_c_n and c_n to take place during the next half-moon. o_c_n's leader declines, saying some Clans prioritize border safety and feeding the Clan over silly apprentice games.",
+    "event_text": "At the Gathering, m_c suggests a friendly competition of hunting and sparring between o_c_n and c_n to take place during the next half-cycle. o_c_n's leader declines, saying some Clans prioritize border safety and feeding the Clan over silly apprentice games.",
     "rel_change": -2,
     "m_c": {
       "trait": [ "competitive", "ambitious", "arrogant", "bold", "charismatic", "playful", "childish" ]
@@ -371,7 +371,7 @@
   },
   {
     "interaction_type": "praise",
-    "event_text": "At the Gathering, o_c_n's leader seems much more interested in chatting with the other leaders than m_c. {PRONOUN/m_c/subject/CAP} {VERB/m_c/sulk/sulks} like a kit and {VERB/m_c/decide/decides} that c_n doesn't need o_c_n's friendship anyway.",
+    "event_text": "At the Gathering, o_c_n's leader seems much more interested in chatting with the other leaders than m_c. {PRONOUN/m_c/subject/CAP} {VERB/m_c/sulk/sulks} like a pup and {VERB/m_c/decide/decides} that c_n doesn't need o_c_n's friendship anyway.",
     "rel_change": -2,
     "m_c": {
       "trait": [ "childish" ]
@@ -391,7 +391,7 @@
   },
   {
     "interaction_type": "praise",
-    "event_text": "m_c goes on and on about what a great alliance c_n and o_c_n have during {PRONOUN/m_c/poss} speech at the Gathering. o_c_n's leader coughs meaningfully; during their speech, they announce o_c_n will be focusing on its own priorities in the coming moons and suggest c_n does the same.",
+    "event_text": "m_c goes on and on about what a great alliance c_n and o_c_n have during {PRONOUN/m_c/poss} speech at the Gathering. o_c_n's leader coughs meaningfully; during their speech, they announce o_c_n will be focusing on its own priorities in the coming cycles and suggest c_n does the same.",
     "rel_change": -2,
     "m_c": { },
     "player_clan_temper": ["any"],
@@ -495,7 +495,7 @@
   },
   {
     "interaction_type": "provoke",
-    "event_text": "Despite the horrendous weather, m_c strikes out with {PRONOUN/m_c/poss} Gathering patrol to the meeting place. It's deserted. Any provocation of o_c_n will have to wait until next moon.",
+    "event_text": "Despite the horrendous weather, m_c strikes out with {PRONOUN/m_c/poss} Gathering patrol to the meeting place. It's deserted. Any provocation of o_c_n will have to wait until next cycle.",
     "rel_change": 0,
     "m_c": {},
     "player_clan_temper": ["any"],
@@ -552,7 +552,7 @@
   },
   {
     "interaction_type": "provoke",
-    "event_text": "During the Gathering, m_c repeatedly threatens o_c_n and its leader. o_c_n's leader is unimpressed and cracks jokes during their speech about how m_c is full of hot air and stirs up trouble like a bored kit. The other Clans laugh along at c_n's expense.",
+    "event_text": "During the Gathering, m_c repeatedly threatens o_c_n and its leader. o_c_n's leader is unimpressed and cracks jokes during their speech about how m_c is full of hot air and stirs up trouble like a bored pup. The other Clans laugh along at c_n's expense.",
     "rel_change": 0,
     "m_c": {
       "trait": ["shameless", "troublesome", "childish", "cold", "bold", "daring", "bloodthirsty", "rebellious", "fierce", "arrogant" ]
@@ -570,7 +570,7 @@
   },
   {
     "interaction_type": "befriend",
-    "event_text": "During the Gathering, m_c asks after o_c_n's young cats. o_c_n's leader lets a long silence pass before icily suggesting m_c concern {PRONOUN/m_c/self} with {PRONOUN/m_c/poss} own Clanmates.",
+    "event_text": "During the Gathering, m_c asks after o_c_n's young slugcats. o_c_n's leader lets a long silence pass before icily suggesting m_c concern {PRONOUN/m_c/self} with {PRONOUN/m_c/poss} own Clanmates.",
     "rel_change": -1,
     "m_c": {},
     "player_clan_temper": ["any"],
@@ -619,7 +619,7 @@
   },
   {
     "interaction_type": "befriend",
-    "event_text": "At the Gathering, m_c warns o_c_n's leader that {PRONOUN/m_c/subject} had a glimpse of the coming moons, and o_c_n may be headed for conflict with another Clan. o_c_n's leader interprets this as a threat, not an offer of allyship.",
+    "event_text": "At the Gathering, m_c warns o_c_n's leader that {PRONOUN/m_c/subject} had a glimpse of the coming cycles, and o_c_n may be headed for conflict with another Clan. o_c_n's leader interprets this as a threat, not an offer of allyship.",
     "rel_change": -4,
     "m_c": {
       "trait": [ "fierce" ],
@@ -641,7 +641,7 @@
   },
   {
     "interaction_type": "befriend",
-    "event_text": "m_c praises o_c_n during {PRONOUN/m_c/poss} Gathering speech and darts looks at the crowd of o_c_n cats below to gauge their receptiveness to different compliments. o_c_n's leader catches those glances and narrows their eyes at m_c.",
+    "event_text": "m_c praises o_c_n during {PRONOUN/m_c/poss} Gathering speech and darts looks at the crowd of o_c_n slugcats below to gauge their receptiveness to different compliments. o_c_n's leader slugcatches those glances and narrows their eyes at m_c.",
     "rel_change": -5,
     "m_c": {
       "skill": ["SENSE,1"],
@@ -662,7 +662,7 @@
   },
   {
     "interaction_type": "befriend",
-    "event_text": "At the Gathering, m_c pulls o_c_n's leader aside to warn them that fire may be a problem for o_c_n in the coming moons. o_c_n's leader stiffens, staring at m_c with intense mistrust and skepticism.",
+    "event_text": "At the Gathering, m_c pulls o_c_n's leader aside to warn them that fire may be a problem for o_c_n in the coming cycles. o_c_n's leader stiffens, staring at m_c with intense mistrust and skepticism.",
     "rel_change": -2,
     "m_c": {
       "skill": ["CLAIRVOYANT,2"]
@@ -682,7 +682,7 @@
   },
   {
     "interaction_type": "befriend",
-    "event_text": "At the Gathering, o_c_n's leader struggles through a report that an entire litter of o_c_n kits were wiped out by kitten-cough. m_c draws them aside after and reassures them that the kittens are playing moss-ball together in the Void. o_c_n's leader hisses that this means nothing to the grieving parents.",
+    "event_text": "At the Gathering, o_c_n's leader struggles through a report that an entire litter of o_c_n pups were wiped out by kitten-cough. m_c draws them aside after and reassures them that the slugpups are playing moss-ball together in the Void. o_c_n's leader hisses that this means nothing to the grieving parents.",
     "rel_change": -5,
     "m_c": {
       "skill": [ "KIT,3", "STAR,2"],
@@ -722,7 +722,7 @@
   },
   {
     "interaction_type": "befriend",
-    "event_text": "During the Gathering, m_c catches the eye of the o_c_n leader. The two regard each other carefully, but when m_c fumbles {PRONOUN/m_c/poss} words later on, the other leader scoffs.",
+    "event_text": "During the Gathering, m_c slugcatches the eye of the o_c_n leader. The two regard each other carefully, but when m_c fumbles {PRONOUN/m_c/poss} words later on, the other leader scoffs.",
     "rel_change": -3,
     "m_c": {
       "trait": ["nervous", "insecure"]
@@ -750,7 +750,7 @@
   },
   {
     "interaction_type": "befriend",
-    "event_text": "Despite the horrendous weather, m_c strikes out with {PRONOUN/m_c/poss} Gathering patrol to the meeting place. It's deserted. Any befriending of o_c_n will have to wait until next moon.",
+    "event_text": "Despite the horrendous weather, m_c strikes out with {PRONOUN/m_c/poss} Gathering patrol to the meeting place. It's deserted. Any befriending of o_c_n will have to wait until next cycle.",
     "rel_change": 0,
     "m_c": {},
     "player_clan_temper": ["any"],
@@ -776,7 +776,7 @@
   },
   {
     "interaction_type": "befriend",
-    "event_text": "At the Gathering, m_c suggests to o_c_n's leader that they send a joint patrol to explore beyond their borders and find new hunting grounds. o_c_n's leader informs {PRONOUN/m_c/object} that not every cat shares {PRONOUN/m_c/poss} taste for adventure.",
+    "event_text": "At the Gathering, m_c suggests to o_c_n's leader that they send a joint patrol to explore beyond their borders and find new hunting grounds. o_c_n's leader informs {PRONOUN/m_c/object} that not every slugcat shares {PRONOUN/m_c/poss} taste for adventure.",
     "rel_change": 0,
     "m_c": {
       "trait": [ "adventurous" ]
@@ -786,7 +786,7 @@
   },
   {
     "interaction_type": "befriend",
-    "event_text": "At the Gathering, m_c remarks on how a fighting technique developed by o_c_n warriors is something m_c hopes to teach to c_n's apprentices for moons to come. o_c_n's leader scowls and seems unhappy m_c even knows about this special technique.",
+    "event_text": "At the Gathering, m_c remarks on how a fighting technique developed by o_c_n warriors is something m_c hopes to teach to c_n's apprentices for cycles to come. o_c_n's leader scowls and seems unhappy m_c even knows about this special technique.",
     "rel_change": -5,
     "m_c": {
       "trait": ["thoughtful" ],
@@ -826,7 +826,7 @@
   },
   {
     "interaction_type": "befriend",
-    "event_text": "At the Gathering, o_c_n's leader mentions camp renovations intended to make it safer for their kits. m_c interrupts to recommend weaving brambles and thistles into camp walls to deter predators - o_c_n's leader coughs and remarks they are looking to minimize the sharp edges of camp.",
+    "event_text": "At the Gathering, o_c_n's leader mentions camp renovations intended to make it safer for their pups. m_c interrupts to recommend weaving brambles and thistles into camp walls to deter predators - o_c_n's leader coughs and remarks they are looking to minimize the sharp edges of camp.",
     "rel_change": -1,
     "m_c": {
       "skill": [ "CAMP,1" ],
@@ -837,7 +837,7 @@
   },
   {
     "interaction_type": "befriend",
-    "event_text": "During the Gathering, m_c proposes a friendship between o_c_n and c_n, describing a beautiful future for their Clans where no cat goes hungry and half-Clan families might thrive. o_c_n's leader replies that though o_c_n may be an easy-going Clan, even they know life isn't all mice and moonlight'",
+    "event_text": "During the Gathering, m_c proposes a friendship between o_c_n and c_n, describing a beautiful future for their Clans where no slugcat goes hungry and half-Clan families might thrive. o_c_n's leader replies that though o_c_n may be an easy-going Clan, even they know life isn't all mice and moonlight'",
     "rel_change": -1,
     "m_c": { },
     "player_clan_temper": ["any"],
@@ -931,7 +931,7 @@
   },
   {
     "interaction_type": "antagonize",
-    "event_text": "Despite the horrendous weather, m_c strikes out with {PRONOUN/m_c/poss} Gathering patrol to the meeting place. It's deserted. Any antagonizing of o_c_n will have to wait until next moon.",
+    "event_text": "Despite the horrendous weather, m_c strikes out with {PRONOUN/m_c/poss} Gathering patrol to the meeting place. It's deserted. Any antagonizing of o_c_n will have to wait until next cycle.",
     "rel_change": 0,
     "m_c": {},
     "player_clan_temper": ["any"],
@@ -996,7 +996,7 @@
   },
   {
     "interaction_type": "antagonize",
-    "event_text": "m_c comes to the Gathering with {PRONOUN/m_c/poss} arsenal of best put-downs at the ready - but o_c_n's leader cuts {PRONOUN/m_c/object} down with one cold look. Every cat knows m_c can <i>talk</i>, but can c_n back up these words?",
+    "event_text": "m_c comes to the Gathering with {PRONOUN/m_c/poss} arsenal of best put-downs at the ready - but o_c_n's leader cuts {PRONOUN/m_c/object} down with one cold look. Every slugcat knows m_c can <i>talk</i>, but can c_n back up these words?",
     "rel_change": 0,
     "m_c": {
       "skill": [ "SPEAKER,1" ]
@@ -1014,7 +1014,7 @@
   },
   {
     "interaction_type": "appease",
-    "event_text": "Despite the horrendous weather, m_c strikes out with {PRONOUN/m_c/poss} Gathering patrol to the meeting place. It's deserted. Any appeasement of o_c_n will have to wait until next moon.",
+    "event_text": "Despite the horrendous weather, m_c strikes out with {PRONOUN/m_c/poss} Gathering patrol to the meeting place. It's deserted. Any appeasement of o_c_n will have to wait until next cycle.",
     "rel_change": 0,
     "m_c": {},
     "player_clan_temper": ["any"],
@@ -1038,7 +1038,7 @@
   },
   {
     "interaction_type": "appease",
-    "event_text": "During the Gathering, m_c awkwardly compliments o_c_n's strength in a recent border skirmish between their Clans. o_c_n's leader unsheathes their claws and promises {PRONOUN/m_c/subject} {VERB/m_c/has/have}n't seen anything yet.",
+    "event_text": "During the Gathering, m_c awkwardly compliments o_c_n's strength in a recent border skirmish between their Clans. o_c_n's leader unsheathes their spear and promises {PRONOUN/m_c/subject} {VERB/m_c/has/have}n't seen anything yet.",
     "rel_change": -1,
     "m_c": {},
     "player_clan_temper": ["any"],
@@ -1062,7 +1062,7 @@
   },
   {
     "interaction_type": "appease",
-    "event_text": "o_c_n's leader speaks first at the Gathering and uses their whole speech to bait and provoke m_c. m_c decides not to attempt peace this moon; {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} not sure {PRONOUN/m_c/subject}'ll be able to say a word to o_c_n's leader without snarling.",
+    "event_text": "o_c_n's leader speaks first at the Gathering and uses their whole speech to bait and provoke m_c. m_c decides not to attempt peace this cycle; {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} not sure {PRONOUN/m_c/subject}'ll be able to say a word to o_c_n's leader without snarling.",
     "rel_change": 0,
     "m_c": {},
     "player_clan_temper": ["any"],
@@ -1078,7 +1078,7 @@
   },
   {
     "interaction_type": "appease",
-    "event_text": "m_c cajoles o_c_n's leader into agreeing that peace would benefit every cat. o_c_n's leader nods, then scowls and shakes their head. They won't be so easily swayed by {PRONOUN/m_c/poss} skill for persuasion.",
+    "event_text": "m_c cajoles o_c_n's leader into agreeing that peace would benefit every slugcat. o_c_n's leader nods, then scowls and shakes their head. They won't be so easily swayed by {PRONOUN/m_c/poss} skill for persuasion.",
     "rel_change": 0,
     "m_c": {
         "trait": [ "confident", "charismatic" ]
@@ -1088,7 +1088,7 @@
   },
   {
     "interaction_type": "appease",
-    "event_text": "m_c cajoles o_c_n's leader into agreeing that peace would benefit every cat. o_c_n's leader nods, then scowls and shakes their head. They won't be so easily swayed by {PRONOUN/m_c/poss} skill for persuasion.",
+    "event_text": "m_c cajoles o_c_n's leader into agreeing that peace would benefit every slugcat. o_c_n's leader nods, then scowls and shakes their head. They won't be so easily swayed by {PRONOUN/m_c/poss} skill for persuasion.",
     "rel_change": 0,
     "m_c": {
         "skill": [ "SPEAKER,1" ]
@@ -1139,7 +1139,7 @@
   },
   {
     "interaction_type": "appease",
-    "event_text": "At the Gathering, m_c speaks at length about peace and reducing hostilities between c_n and o_c_n. o_c_n's leader nods along, and then lets their gaze travel down to where m_c's claws have unconsciously slid out.",
+    "event_text": "At the Gathering, m_c speaks at length about peace and reducing hostilities between c_n and o_c_n. o_c_n's leader nods along, and then lets their gaze travel down to where m_c's paws have unconsciously gripped {PRONOUN/m_c/poss} spear.",
     "rel_change": -1,
     "m_c": {
       "trait": [ "cold", "bloodthirsty", "vengeful", "fierce" ]
@@ -1149,7 +1149,7 @@
   },
   {
     "interaction_type": "appease",
-    "event_text": "m_c uses {PRONOUN/m_c/poss} speech at the Gathering to discuss peace and forgiveness through gritted teeth. No cat believes m_c, not even {PRONOUN/m_c/poss} own Clanmates.",
+    "event_text": "m_c uses {PRONOUN/m_c/poss} speech at the Gathering to discuss peace and forgiveness through gritted teeth. No slugcat believes m_c, not even {PRONOUN/m_c/poss} own Clanmates.",
     "rel_change": 0,
     "m_c": {
       "trait": [ "bloodthirsty", "vengeful" ]
@@ -1228,7 +1228,7 @@
   },
   {
     "interaction_type": "appease",
-    "event_text": "The leader of o_c_n laughs at the sight of c_n being led by m_c. The cat makes a comment on how piteous m_c's clan must be, to have an apprentice leading them, and sneers that they'll soon have succeeded at wiping c_n out.",
+    "event_text": "The leader of o_c_n laughs at the sight of c_n being led by m_c. The slugcat makes a comment on how piteous m_c's clan must be, to have an apprentice leading them, and sneers that they'll soon have succeeded at wiping c_n out.",
     "rel_change": -1,
     "m_c": {
       "status": ["apprentice", "mediator apprentice", "cleric apprentice"]
@@ -1258,7 +1258,7 @@
   },
   {
     "interaction_type": "appease",
-    "event_text": "During the Gathering, o_c_n's leader goes on and on about c_n wronging them. {PRONOUN/m_c/poss/CAP} temper slips through {PRONOUN/m_c/poss} claws, and m_c eventually snaps at o_c_n's leader to just shut their trap - every slugcat knows they're talking garbage. Far from shutting their trap, o_c_n's leader only yowls louder.",
+    "event_text": "During the Gathering, o_c_n's leader goes on and on about c_n wronging them. {PRONOUN/m_c/poss/CAP} temper slips through {PRONOUN/m_c/poss} paws, and m_c eventually snaps at o_c_n's leader to just shut their trap - every slugcat knows they're talking garbage. Far from shutting their trap, o_c_n's leader only yowls louder.",
     "rel_change": -3,
     "m_c": {
       "skill": ["MEDIATOR,1"],
@@ -1311,7 +1311,7 @@
   },
   {
     "interaction_type": "appease",
-    "event_text": "m_c pulls the o_c_n leader aside during the Gathering. The leader seems angry when they later return to the Gathering proper - nearby cats whisper that they heard m_c say something about the other leader's dreams. When m_c later offers peace to o_c_n, their leader only spits accusations of spies and trespasses.",
+    "event_text": "m_c pulls the o_c_n leader aside during the Gathering. The leader seems angry when they later return to the Gathering proper - nearby slugcats whisper that they heard m_c say something about the other leader's dreams. When m_c later offers peace to o_c_n, their leader only spits accusations of spies and trespasses.",
     "rel_change": -2,
     "m_c": {
       "skill": ["DREAM,2"]
