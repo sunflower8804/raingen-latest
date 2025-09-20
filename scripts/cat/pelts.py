@@ -426,7 +426,7 @@ class Pelt:
         if self.skin in convert_dict["old_sharphorns"]:
             self.skin = convert_dict["old_sharphorns"][self.skin]
 
-        if self.length == 'long':
+        if self.length == 'bulky':
             if self.cat_sprites['adult'] not in [9, 10, 11]:
                 if self.cat_sprites['adult'] == 0:
                     self.cat_sprites['adult'] = 9
@@ -663,16 +663,16 @@ class Pelt:
         )
 
         # ------------------------------------------------------------------------------------------------------------#
-        #   PELT LENGTH
+        #   PELT LENGTH (BUILD)
         # ------------------------------------------------------------------------------------------------------------#
 
-        weights = [0, 0, 0]  # Weights for each length. It goes (short, medium, long)
+        weights = [0, 0, 0]  # Weights for each length (build). It goes (slim, average, bulky)
         for p_ in par_peltlength:
-            if p_ == "short":
+            if p_ == "slim":
                 add_weight = (50, 10, 2)
-            elif p_ == "medium":
+            elif p_ == "average":
                 add_weight = (25, 50, 25)
-            elif p_ == "long":
+            elif p_ == "bulky":
                 add_weight = (2, 10, 50)
             elif p_ is None:
                 add_weight = (10, 10, 10)
@@ -814,7 +814,7 @@ class Pelt:
             random.choices(Pelt.skin_categories, Pelt.skin_weights, k=1)[0]
         )
 
-        if self.length != 'long':
+        if self.length != 'bulky':
             self.cat_sprites['adult'] = random.randint(6, 8)
             self.cat_sprites['para_adult'] = 16
         else:
@@ -1365,7 +1365,7 @@ class Pelt:
 
             if len(cat.pelt.scars) >= 3:
                 color_name = f"scarred {color_name}"
-            if cat.pelt.length == "long":
+            if cat.pelt.length == "bulky":
                 color_name = f"bulky {color_name}"
 
         return color_name
