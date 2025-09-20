@@ -118,7 +118,16 @@ def theHorrors(self, cat, i, accessory, pos_x, pos_y, cat_sprite):
         self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['vulturemasks' + accessory + cat_sprite], manager=MANAGER)
     elif accessory in cat.pelt.iteratormasks:
         self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['iteratormasks' + accessory + cat_sprite], manager=MANAGER)
-
+    elif accessory in cat.pelt.basecollars:
+        self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['basecollars' + accessory + cat_sprite], manager=MANAGER)
+    elif accessory in cat.pelt.pearlcollars:
+        self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['pearlcollars' + accessory + cat_sprite], manager=MANAGER)
+    elif accessory in cat.pelt.studdedcollars:
+        self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['studdedcollars' + accessory + cat_sprite], manager=MANAGER)
+    elif accessory in cat.pelt.newaccs4:
+        self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['newaccs4' + accessory + cat_sprite], manager=MANAGER)
+    elif accessory in cat.pelt.newaccs5:
+        self.cat_list_buttons["cat" + str(i)] = pygame_gui.elements.UIImage(ui_scale(pygame.Rect((100 + pos_x, 365 + pos_y), (50, 50))), sprites.sprites['newaccs5' + accessory + cat_sprite], manager=MANAGER)
 
 
 
@@ -1165,8 +1174,18 @@ class ProfileScreen(Screens):
         # NEWLINE ----------
         output += "\n"
 
-        # PELT LENGTH
-        output += "fur length: " + the_cat.pelt.length
+        # PELT LENGTH (COUGH BUILD COUGH)
+        output += "build: " + the_cat.pelt.length
+        # NEWLINE ----------
+        output += "\n"
+
+        # TEXTURE
+        output += "texture: " + the_cat.pelt.texture
+        # NEWLINE ----------
+        output += "\n"
+
+        # TEXTURE
+        output += "size: " + the_cat.pelt.size
         # NEWLINE ----------
 
 
