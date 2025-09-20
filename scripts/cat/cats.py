@@ -1017,6 +1017,8 @@ class Cat:
             colour = colour.replace("button", "")
         if self.pelt.eye_colour in Pelt.bobaeye_colours:
             colour = colour.replace("boba", "")
+        if self.pelt.eye_colour in Pelt.geckoeye_colours:
+            colour = colour.replace("gecko", "")
             
         if self.pelt.eye_colour2:
             if self.pelt.eye_colour2 in Pelt.multi_eyes:
@@ -1028,6 +1030,8 @@ class Cat:
                     colour2 = colour2.replace("button", "")
                 if self.pelt.eye_colour2 in Pelt.bobaeye_colours:
                     colour2 = colour2.replace("boba", "")
+                if self.pelt.eye_colour2 in Pelt.geckoeye_colours:
+                    colour2 = colour2.replace("gecko", "")
                 if colour2 == "palegreen":
                     colour2 = "pale green"
                 if colour2 == "darkblue":
@@ -1050,6 +1054,8 @@ class Cat:
             colour = colour + " buttons"
         if self.pelt.eye_colour in Pelt.bobaeye_colours:
             colour = colour + ", large"
+        if self.pelt.eye_colour in Pelt.geckoeye_colours:
+            colour = colour + ", huge"
 
         return colour
 
@@ -3492,6 +3498,8 @@ class Cat:
                 "sprite_para_adult": self.pelt.cat_sprites["para_adult"],
                 "eye_colour": self.pelt.eye_colour,
                 "eye_colour2": (self.pelt.eye_colour2 or None),
+                "size": self.pelt.size,
+                "texture": self.pelt.texture,
                 "reverse": self.pelt.reverse,
                 "white_patches": self.pelt.white_patches,
                 "vitiligo": self.pelt.vitiligo,
