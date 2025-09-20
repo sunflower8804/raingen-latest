@@ -1017,7 +1017,7 @@ class Cat:
             colour = colour.replace("button", "")
         if self.pelt.eye_colour in Pelt.bobaeye_colours:
             colour = colour.replace("boba", "")
-        if self.pelt.eye_colour in Pelt.geckoeyes_colours:
+        if self.pelt.eye_colour in Pelt.geckoeyes_colors:
             colour = colour.replace("gecko", "")
             
         if self.pelt.eye_colour2:
@@ -1030,7 +1030,7 @@ class Cat:
                     colour2 = colour2.replace("button", "")
                 if self.pelt.eye_colour2 in Pelt.bobaeye_colours:
                     colour2 = colour2.replace("boba", "")
-                if self.pelt.eye_colour2 in Pelt.geckoeyes_colours:
+                if self.pelt.eye_colour2 in Pelt.geckoeyes_colors:
                     colour2 = colour2.replace("gecko", "")
                 if colour2 == "palegreen":
                     colour2 = "pale green"
@@ -1054,7 +1054,7 @@ class Cat:
             colour = colour + " buttons"
         if self.pelt.eye_colour in Pelt.bobaeye_colours:
             colour = colour + ", large"
-        if self.pelt.eye_colour in Pelt.geckoeyes_colours:
+        if self.pelt.eye_colour in Pelt.geckoeyes_colors:
             colour = colour + ", huge"
 
         return colour
