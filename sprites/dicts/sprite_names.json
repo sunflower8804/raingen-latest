@@ -151,7 +151,7 @@
                 "plated", "mono", "slime", "voidmass", "xelsquid", "mima", "xelstar", "bowie", "xelflame", "toonie", "lunatic",
                 "cosmos", "snuff", "kiwi", "lacuna", "silv"],
   
-  "pelt_length": ["short", "medium", "long"],
+  "pelt_length": ["slim", "average", "bulky"],
   
   "eye_colours": ["YELLOW", "AMBER", "HAZEL", "PALEGREEN", "GREEN", "BLUE", "DARKBLUE", "GREY", "CYAN", "EMERALD", "PALEBLUE", 
         "PALEYELLOW", "GOLD", "HEATHERBLUE", "COPPER", "SAGE", "COBALT", "SUNLITICE", "GREENYELLOW", "BRONZE", "SILVER", "RED", "PURPLE", "MAUVE",
