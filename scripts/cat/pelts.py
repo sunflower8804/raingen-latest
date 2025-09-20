@@ -204,6 +204,10 @@ class Pelt:
     #list for stuff that should logically be behind a cloak
     closest_skin = sprite_names_dict['closest_skin']
 
+    #misc descriptors
+    texture = ["smooth", "fuzzy", "velvety", "greasy", "slimey", "rough", "soft", "fluffy"]
+    size = ["tiny", "small", "medium", "large", "huge"]
+
     """Holds all appearance information for a cat. """
 
     def __init__(self,
@@ -213,7 +217,7 @@ class Pelt:
                  texture: str = "smooth",
                  size: str = "medium",
                  white_patches: str = None,
-                 eye_color: str = "BLUE",
+                 eye_colour: str = "BLUE",
                  eye_colour2: str = None,
                  tortiebase: str = None,
                  tortiecolour: str = None,
@@ -239,10 +243,10 @@ class Pelt:
                  ) -> None:
         self.name = name
         self.colour = colour
-        self.texture = choice("smooth", "fuzzy", "velvety", "greasy", "slimey", "rough", "soft", "fluffy")
-        self.size = choice("tiny", "small", "medium", "large", "huge")
+        self.texture = random.choice(texture)
+        self.size = random.choice(size)
         self.white_patches = white_patches
-        self.eye_colour = eye_color
+        self.eye_colour = eye_colour
         self.eye_colour2 = eye_colour2
         self.tortiebase = tortiebase
         self.pattern = pattern
