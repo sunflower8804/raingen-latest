@@ -217,7 +217,7 @@ class Pelt:
                  texture: str = "smooth",
                  size: str = "medium",
                  white_patches: str = None,
-                 eye_colour: str = "BLUE",
+                 eye_color: str = "BLUE",
                  eye_colour2: str = None,
                  tortiebase: str = None,
                  tortiecolour: str = None,
@@ -246,7 +246,7 @@ class Pelt:
         self.texture = random.choice(texture)
         self.size = random.choice(size)
         self.white_patches = white_patches
-        self.eye_colour = eye_colour
+        self.eye_colour = eye_color
         self.eye_colour2 = eye_colour2
         self.tortiebase = tortiebase
         self.pattern = pattern
