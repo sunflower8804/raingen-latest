@@ -4983,7 +4983,8 @@
     "new_accessory": ["BOOMERANG"],
     "m_c": {
       "age": ["adolescent", "young adult", "adult", "senior adult", "senior"]
-    },
+    }
+  },
   {
     "event_id": "gen_misc_any_vulture_mask",
     "location": ["any"],
@@ -4994,7 +4995,8 @@
     "new_accessory": ["VULTUREMASKS"],
     "m_c": {
       "age": ["adolescent", "young adult", "adult", "senior adult", "senior"]
-    },
+    }
+  },
   {
     "event_id": "gen_misc_any_itty_mask",
     "location": ["any"],
